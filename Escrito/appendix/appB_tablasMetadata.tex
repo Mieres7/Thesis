@@ -1,0 +1,306 @@
+\chapter{Metadatos Reportados por los Conjuntos de Datos Analizados}
+\label{appendix:tablasdatasets}
+
+En este anexo se presentan las tablas resumidas de parámetros, variables y metadatos reportados por cada uno de los conjuntos de datos seleccionados en el Capítulo 4. Su objetivo es complementar la caracterización global de los datasets, proporcionando un detalle estructurado de los atributos clínicos, demográficos, diagnósticos, moleculares y de seguimiento disponibles en cada recurso. Adicionalmente, se incluyen la síntesis global de los recursos revisados con su desenlace en la preselección, las variables con mayor porcentaje de valores faltantes por dataset y los desgloses completos de frecuencias de las variables armonizadas en los dominios de mama y colorrectal; las versiones resumidas de estas tablas y su interpretación se presentan en el Capítulo~\ref{cap:caracterizacion_datasets}.
+
+\begin{table}[ht]
+\centering
+\caption{Parámetros reportados por BCNB}
+\label{tab:parametros_bcnb}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{lX}
+\toprule
+\textbf{Categoría} & \textbf{Variables reportadas} \\
+\midrule
+Identificación & Patient ID \\
+Demográficas & Age(years) \\
+Clínico-patológicas & Tumour Size(cm), Tumour Type, Histological grading, Number of lymph node metastases, ALN status \\
+Biomarcadores / moleculares & ER, PR, HER2, HER2 Expression, Ki67, Molecular subtype \\
+Tratamiento & Surgical \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Parámetros reportados por CLWD}
+\label{tab:parametros_clwd}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{lX}
+\toprule
+\textbf{Categoría} & \textbf{Variables reportadas} \\
+\midrule
+Identificación & SampleNumber, WSI\_ID \\
+Demográficas & Sex, Age \\
+Clínico-patológicas & Pathological\_Diagnosis, Pathological\_Subspecies, Multi\_Subtypes, WHO2015\_GrowthPattern, WHO2021\_GrowthPattern, WHO2021\_category, WHO2021\_MucinousStatus \\
+Etiquetas derivadas & Benchmark\_Label\_7class, Benchmark\_Label\_2021\_6class \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Parámetros reportados por NDB-UFES}
+\label{tab:parametros_ndbufes}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{lX}
+\toprule
+\textbf{Categoría} & \textbf{Variables reportadas} \\
+\midrule
+Identificación & public\_id, lesion\_id, patient\_id, path \\
+Demográficas & gender, skin\_color, age\_group \\
+Clínico-patológicas & localization, larger\_size, diagnosis, dysplasia\_severity \\
+Exposición / factores de riesgo & tobacco\_use, alcohol\_consumption, sun\_exposure \\
+Tareas derivadas & TaskII, TaskIII, TaskIV \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Parámetros reportados por \textit{The Digital Brain Tumour Atlas}}
+\label{tab:parametros_tdbta}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{lX}
+\toprule
+\textbf{Categoría} & \textbf{Variables reportadas} \\
+\midrule
+Identificación & uuid, pat\_id \\
+Demográficas & age, sex \\
+Clínico-patológicas & diagnosis, grade, subtype, secondary\_diagnosis, control, location, laterality, cellularity, tissue\_area \\
+Desenlace / seguimiento & recurrence \\
+Información adicional & comment \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Parámetros reportados por SurGen, diferenciando sus subcohortes SR386 y SR1482}
+\label{tab:parametros_surgen}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{lX}
+\toprule
+\textbf{Subcohorte / categoría} & \textbf{Variables reportadas} \\
+\midrule
+SR386 -- Identificación & case\_id \\
+SR386 -- Demográficas & age\_at\_diagnosis, sex \\
+SR386 -- Clínico-patológicas & site\_of\_tumour, site\_of\_tumour\_grouping, primary\_metastatic, stage, stage\_subgroup, pT, pN, pM, tumour\_type, differentiation, peri\_surface\_involved, distance\_to\_peritoneum\_macroscopic\_measurement, em\_lvi, em\_lvi\_notes \\
+SR386 -- Biomarcadores / moleculares & kras\_ex\_2, kras\_ex\_3, kras\_codon\_117, nras\_ex\_2, nras\_ex\_3, braf\_mutant\_status, mmr\_ihc, mmr\_loss\_binary \\
+SR386 -- Tratamiento / desenlace & pre-op\_radio, pre-op\_chemo, died\_within\_5\_years, days\_till\_death, crc\_primary\_cause\_of\_death \\
+\midrule
+SR1482 -- Identificación & case\_id \\
+SR1482 -- Demográficas & age, sex \\
+SR1482 -- Clínico-patológicas & tumour\_site, stage\_notes, dukes, pT, pN, pM \\
+SR1482 -- Biomarcadores / moleculares & MMR, MSI, KRAS, NRAS, BRAF \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Esquema de parámetros reportados para \textit{Histology HSI-BC-Recurrence}}
+\label{tab:parametros_hsibrca}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{lX}
+\toprule
+\textbf{Categoría} & \textbf{Variables reportadas} \\
+\midrule
+Identificación & Case ID \\
+Demográficas & Race, Ethnicity, Sex at Birth, Age at Diagnosis, Age UOM, Menopausalstatus \\
+Diagnóstico y cirugía & Dxsurgery \\
+Clínico-patológicas & Tumordiameter, Tumorhistologicgrade, LVI, PNI, T, N, M \\
+Biomarcadores / moleculares & ER, PR, HER2, KI67, Molecularsubtype \\
+Estado ganglionar & LNstatus, LNITCnumber, LNMICROnumber, LNMACROnumber, LNnumber, SLNnumber, SLNstatus \\
+Tratamiento & Txhormonal, TxCT, Txtrastuzumab, TxRT \\
+Desenlace / seguimiento & Relapse, Metastasistype, DFS, Vitalstatus, Deathcause, OS \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Parámetros reportados por SOPHIE}
+\label{tab:parametros_sophie}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{lX}
+\toprule
+\textbf{Categoría} & \textbf{Variables reportadas} \\
+\midrule
+Identificación & ID \\
+Demográficas & Age of diagnosis, Gender \\
+Clínico-patológicas & DIAGNOSIS, Tumor location \\
+Desenlace / seguimiento & Local recurrence, Regional relapse, Distant metastasis, Follow up, Time of follow up (months) \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Parámetros reportados por HISTAI}
+\label{tab:parametros_histai}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{lX}
+\toprule
+\textbf{Categoría} & \textbf{Variables reportadas} \\
+\midrule
+Diagnóstico y descripción patológica & Diagnosis, Conclusion, Differential Diagnosis, Micro Protocol, Additional Information \\
+Demográficas & Patient age, gender \\
+Codificación clínica & ICD-10 Codes \\
+Descripción macroscópica & Gross Examination Details \\
+Organización del recurso & Subcolecciones por tejido u órgano, incluyendo hematologic, gastrointestinal, breast, thorax, skin y colorectal \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\clearpage
+
+\begin{table}[htbp]
+\centering
+\caption{Síntesis de los conjuntos de datos revisados y su desenlace en la preselección.}
+\label{tab:resumen_datasets_global}
+\small
+\setlength{\tabcolsep}{4pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lp{3.6cm}p{2.6cm}p{2.6cm}p{2.0cm}p{3.2cm}}
+\toprule
+\textbf{Dataset} & \textbf{Dominio clínico} & \textbf{Escala (N)} & \textbf{Origen / institución} & \textbf{Período} & \textbf{Desenlace en la preselección} \\
+\midrule
+NDB-UFES & Carcinoma oral de células escamosas y leucoplasia & 237 registros & Universidad Federal de Espírito Santo (Brasil) & 2011--2021 & Excluido (dominio sin repetición) \\
+\addlinespace
+Digital Brain Tumour Atlas & Tumores cerebrales & 3.115 registros & Plataforma EBRAINS & 1995--2019 & Excluido (missing elevada y dominio único) \\
+\addlinespace
+HISTAI & Multi-tejido (cólico, mama, etc.) & $>$60.000 WSI ($>$26.000 casos) & No reportado & No reportado & Subcolecciones de mama y colon seleccionadas \\
+\addlinespace
+SOPHIE & Tumores spitzoides & 61 WSI (58 pacientes) & No reportado & 1988--2020 & Excluido (dominio sin repetición) \\
+\addlinespace
+BCNB & Cáncer de mama (predicción de metástasis axilar) & 1.058 pacientes & No reportado & No reportado & Priorizado (mama) \\
+\addlinespace
+CLWD & Adenocarcinoma pulmonar & 408 WSI (210 pacientes) & Yunnan, China & 2020--2023 & Excluido (dominio sin repetición) \\
+\addlinespace
+SurGen & Cáncer colorrectal & 1.020 WSI (843 casos) & NHS Lothian (Escocia) & No reportado & Priorizado (colorrectal) \\
+\addlinespace
+Ovarian Bevacizumab Response & Cáncer de ovario & 288 WSI (78 pacientes) & No reportado & No reportado & Excluido (dominio sin repetición) \\
+\addlinespace
+Histology HSI-BC-Recurrence & Cáncer de mama (recurrencia) & 47 WSI, 677 imágenes hiperespectrales (47 pacientes) & No reportado & 2006--2015 & Priorizado (mama) \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Variables con mayor porcentaje de \textit{missingness} por conjuntos de datos.}
+\label{tab:missingness_top_variables}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{llrr}
+\toprule
+Dataset & Variable & \textit{n} faltantes & \% faltantes \\
+\midrule
+Ovarian       & Fecha de defunción              & 54    & 69.23 \\
+Ovarian       & Fecha de recurrencia            & 28    & 35.90 \\
+BCNB          & Grado histológico               & 132   & 12.48 \\
+CLWD          & --                              & 0     & 0.00 \\
+NDB-UFES      & Severidad de displasia          & 148   & 62.45 \\
+TDBTA         & Diagnóstico secundario          & 3056  & 98.11 \\
+TDBTA         & Comentario                      & 3031  & 97.30 \\
+SurGen        & Etapa de Dukes                & 789   & 93.59 \\
+SurGen        & pM                            & 767   & 90.98 \\
+HSI-BC        & Estado del ganglio centinela    & 11    & 23.40 \\
+SOPHIE        & Tiempo de seguimiento (meses)   & 30    & 49.18 \\
+SOPHIE        & Metástasis a distancia          & 25    & 40.98 \\
+HISTAI-Breast & Información adicional           & 1417  & 95.16 \\
+HISTAI-CRC-B1 & Diagnóstico diferencial  & 870   & 99.09 \\
+HISTAI-CRC-B2 & Información adicional    & 57    & 100 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+
+\begin{table}[htbp]
+\centering
+\caption{Frecuencias de variables armonizadas en los conjuntos de datos de cáncer de mama.}
+\label{tab:frecuencias_mama}
+\small
+\begin{tabular}{lcccc}
+\toprule
+Variable & Categoría & BCNB (\%) & HSI-BC (\%) & HISTAI-Breast (\% sobre n=1489) \\
+\midrule
+\multirow{2}{*}{ER}
+ & Positivo (+) & 831 (78,5\%) & 38 (80,9\%) & 542  (36,4\%) \\
+ & Negativo (--)& 227 (21,5\%) & 9 (19,1\%) & 313  (21,0\%) \\
+ & \textbf{Sin dato} & 0 (0,0\%) & 0 (0,0\%) & 634 (42,6\%) \\
+ & \textbf{Total} & 1058 & 47 & 1489 \\
+\addlinespace
+\multirow{2}{*}{PR}
+ & Positivo (+) & 790 (74,7\%) & 32 (68,1\%) & 483  (32,4\%) \\
+ & Negativo (--)& 268 (25,3\%) & 15 (31,9\%) & 366  (24,6\%) \\
+ & \textbf{Sin dato} & 0 (0,0\%) & 0 (0,0\%) & 640 (43,0\%) \\
+ & \textbf{Total} & 1058 & 47 & 1489 \\
+\addlinespace
+\multirow{3}{*}{HER2}
+ & Negativo/Bajo (0/1+) & 369 (34,9\%) & 37 (78,7\%) & 133  (8,9\%) \\
+ & Equivoco (2+) & 483 (45,7\%) & -- & 554 (37,2\%) \\
+ & Positivo (3+) & 206 (19,5\%) & 10 (21,3\%) & 191   (12,8\%) \\
+ & \textbf{Sin dato} & 0 (0,0\%) & 0 (0,0\%) & 611 (41,0\%) \\
+ & \textbf{Total} & 1058 & 47 & 1489 \\
+\addlinespace
+\multirow{3}{*}{Ki-67}
+ & Bajo ($<$10\%) & 1003 (94,8\%) & 14 (29,8\%) & 377  (25,3\%) \\
+ & Intermedio (10--20\%) & 8 (0,8\%) & 33 (70,2\%) & 145  (9,7\%) \\
+ & Alto ($>$20\%) & 26 (2,5\%) & -- & 367 (24,6\%) \\
+ & \textbf{Sin dato} & 21 (2,0\%) & 0 (0,0\%) & 600 (40,3\%) \\
+ & \textbf{Total} & 1058 & 47 & 1489 \\
+\addlinespace
+\multirow{4}{*}{Subtipo molecular}
+ & Luminal A & 288 (27,2\%) & 10 (21,3\%) & 143  (9,6\%) \\
+ & Luminal B & 372 (35,2\%) & 29 (61,7\%) & 353  (23,7\%) \\
+ & HER2+ & 273 (25,8\%) & 4 (8,5\%) & 281 (18,9\%) \\
+ & Triple negativo & 125 (11,8\%) & 4 (8,5\%) & 75  (5,0\%) \\
+ & \textbf{Sin dato} & 0 (0,0\%) & 0 (0,0\%) & 637 (42,8\%) \\
+ & \textbf{Total} & 1058 & 47 & 1489 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Distribución de variables armonizadas en los conjuntos de datos de cáncer colorrectal.}
+\label{tab:frecuencias_colorrectal}
+\small
+\begin{tabular}{lcrrr}
+\toprule
+Variable & & SurGen & HISTAI-b1 & HISTAI-b2 \\
+\midrule
+\multirow{2}{*}{Sexo}
+ & Femenino & 388 (46,1\%) & 504 (57,4\%) & 32 (56,1\%) \\
+ & Masculino & 453 (53,9\%) & 374 (42,6\%) & 25 (43,9\%) \\
+ & \textbf{Sin dato} & 0 (0,0\%) & 0 (0,0\%) & 0 (0,0\%) \\
+ & \textbf{Total} & 841 & 878 & 57 \\
+\addlinespace
+\multirow{9}{*}{Sitio}
+ & Recto & 254 (30,2\%) & 160 (18,2\%) & 15 (26,3\%) \\
+ & Sigmoide & 145 (17,2\%) & 211 (24,0\%) & 17 (29,8\%) \\
+ & Colon derecho & 194 (23,1\%) & 135 (15,4\%) & 10 (17,5\%) \\
+ & Colon izquierdo & 50 (5,9\%) & 33 (3,8\%) & 2 (3,5\%) \\
+ & Colon transverso & 45 (5,4\%) & 39 (4,4\%) & 1 (1,8\%) \\
+ & Rectosigmoide & 19 (2,3\%) & 37 (4,2\%) & 1 (1,8\%) \\
+ & Colon inespecífico & 26 (3,1\%) & 115 (13,1\%) & 5 (8,8\%) \\
+ & Metástasis hepática & 35 (4,2\%) & 18 (2,1\%) & -- \\
+ & Otros & 73 (8,7\%) & 130 (14,8\%) & 6 (10,5\%) \\
+ & \textbf{Sin dato} & 0 (0,0\%) & 0 (0,0\%) & 0 (0,0\%) \\
+ & \textbf{Total} & 841 & 878 & 57 \\
+\addlinespace
+\multirow{5}{*}{Lateralidad}
+ & Izquierdo & 195 (23,2\%) & 244 (27,8\%) & 19 (33,3\%) \\
+ & Derecho & 194 (23,1\%) & 135 (15,4\%) & 10 (17,5\%) \\
+ & Recto & 254 (30,2\%) & 160 (18,2\%) & 15 (26,3\%) \\
+ & Transverso & 45 (5,4\%) & 39 (4,4\%) & 1 (1,8\%) \\
+ & Rectosigmoide & 19 (2,3\%) & 37 (4,2\%) & 1 (1,8\%) \\
+ & \textbf{Sin dato} & 134 (15,9\%) & 263 (30,0\%) & 11 (19,3\%) \\
+ & \textbf{Total} & 841 & 878 & 57 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,48 @@
+id,age,HER2_status,Molecular_subtype
+15,49,0,Triple Negative
+19,35,0,Luminal B
+20,65,0,Luminal B
+25,57,0,Luminal B
+38,57,0,Luminal B
+40,74,0,Luminal A
+43,56,0,Luminal A
+45,47,0,Luminal B
+47,54,0,Luminal B
+51,56,0,Luminal A
+52,81,0,Luminal B
+57,63,0,Luminal A
+62,62,0,Luminal A
+65,57,0,Triple Negative
+68,70,0,Luminal B
+70,68,0,Luminal B
+80,53,0,Luminal A
+82,65,0,Luminal B
+84,45,2,HER2(+)
+85,83,0,Luminal A
+90,38,2,Luminal B
+100,59,2,Luminal B
+107,55,0,Luminal B
+112,56,0,Luminal B
+124,70,0,Luminal B
+136,39,0,Luminal B
+138,80,2,HER2(+)
+139,53,0,Triple Negative
+141,80,0,Luminal B
+146,54,2,Luminal B
+151,67,0,Luminal B
+152,79,2,Luminal B
+153,60,0,Luminal B
+154,80,2,Luminal B
+162,67,0,Luminal A
+189,74,0,Luminal B
+197,78,0,Luminal A
+205,83,2,HER2(+)
+211,65,0,Luminal B
+213,81,2,HER2(+)
+229,83,0,Luminal B
+238,72,0,Luminal A
+255,76,0,Luminal B
+259,54,2,Luminal B
+269,68,0,Luminal B
+270,51,0,Luminal B
+304,83,0,Triple Negative

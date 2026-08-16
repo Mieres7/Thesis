@@ -1,0 +1,73 @@
+2026-07-02 19:54:06 [INFO] ======================================================================
+2026-07-02 19:54:06 [INFO]  EMBEDDING EXTRACTOR OPT (multi-GPU, AMP real)
+2026-07-02 19:54:06 [INFO]  patches_dir : /home/DIINF/datasets_iacis/HISTAI/HISTAI_colorectal_b2/patches
+2026-07-02 19:54:06 [INFO]  output_dir  : /home/DIINF/datasets_iacis/HISTAI/embeddings/HISTAI_colorectal_b2_embeddins
+2026-07-02 19:54:06 [INFO]  modelos     : ['prov_gigapath', 'uni2', 'virchow2', 'phikon_v2']
+2026-07-02 19:54:06 [INFO]  datasets    : ['HISTAI_colorectal_b2']
+2026-07-02 19:54:06 [INFO]  gpu_ids     : [0, 1]  | num_workers/GPU: 4 | batch_size: 256 | use_amp: True
+2026-07-02 19:54:06 [INFO] ======================================================================
+2026-07-02 19:54:06 [WARNING]  [HISTAI_colorectal_b2] no existe en /home/DIINF/datasets_iacis/HISTAI/HISTAI_colorectal_b2/patches, se omite
+2026-07-02 19:54:06 [WARNING]  [HISTAI_colorectal_b2] no existe en /home/DIINF/datasets_iacis/HISTAI/HISTAI_colorectal_b2/patches, se omite
+2026-07-02 19:54:06 [WARNING]  [HISTAI_colorectal_b2] no existe en /home/DIINF/datasets_iacis/HISTAI/HISTAI_colorectal_b2/patches, se omite
+2026-07-02 19:54:06 [WARNING]  [HISTAI_colorectal_b2] no existe en /home/DIINF/datasets_iacis/HISTAI/HISTAI_colorectal_b2/patches, se omite
+2026-07-02 19:54:06 [ERROR] No hay slides para procesar.
+2026-07-02 19:56:30 [INFO] ======================================================================
+2026-07-02 19:56:30 [INFO]  EMBEDDING EXTRACTOR OPT (multi-GPU, AMP real)
+2026-07-02 19:56:30 [INFO]  patches_dir : /home/DIINF/datasets_iacis/2026_HISTAI/HISTAI_colorectal_b2/patches
+2026-07-02 19:56:30 [INFO]  output_dir  : /home/DIINF/datasets_iacis/2026_HISTAI/embeddings/HISTAI_colorectal_b2_embeddings
+2026-07-02 19:56:30 [INFO]  modelos     : ['prov_gigapath', 'uni2', 'virchow2', 'phikon_v2']
+2026-07-02 19:56:30 [INFO]  datasets    : ['HISTAI_colorectal_b2']
+2026-07-02 19:56:30 [INFO]  gpu_ids     : [0, 1]  | num_workers/GPU: 4 | batch_size: 256 | use_amp: True
+2026-07-02 19:56:30 [INFO] ======================================================================
+2026-07-02 19:56:31 [INFO]  Total de tareas (slide x modelo): 376
+2026-07-02 19:56:34 [INFO] [GPU 1] Cargando modelo: prov_gigapath
+2026-07-02 19:56:34 [INFO] [GPU 0] Cargando modelo: prov_gigapath
+2026-07-02 19:56:35 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-07-02 19:56:35 [INFO]   From: /home/DIINF/vmieres/tesis/models/prov_gigapath
+2026-07-02 19:56:35 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-07-02 19:56:35 [INFO]   From: /home/DIINF/vmieres/tesis/models/prov_gigapath
+2026-07-02 19:57:41 [INFO]   Model loaded on cuda:1
+2026-07-02 19:57:41 [INFO]   Model loaded on cuda:0
+2026-07-02 19:57:47 [INFO] [GPU 0] prov_gigapath embedding_dim=1536
+2026-07-02 19:57:47 [INFO] [GPU 1] prov_gigapath embedding_dim=1536
+2026-07-02 21:14:59 [INFO] [GPU 1] Cargando modelo: uni2
+2026-07-02 21:14:59 [INFO] Loading model: UNI2-h (MahmoodLab) — ViT-H/14, 1536-dim
+2026-07-02 21:14:59 [INFO]   From: /home/DIINF/vmieres/tesis/models/uni2
+2026-07-02 21:15:35 [INFO] [GPU 0] Cargando modelo: uni2
+2026-07-02 21:15:35 [INFO] Loading model: UNI2-h (MahmoodLab) — ViT-H/14, 1536-dim
+2026-07-02 21:15:35 [INFO]   From: /home/DIINF/vmieres/tesis/models/uni2
+2026-07-02 21:15:46 [INFO]   Loaded bin: ['pytorch_model.bin']
+2026-07-02 21:15:46 [INFO]   Loaded bin: ['pytorch_model.bin']
+2026-07-02 21:15:46 [INFO]   Model loaded on cuda:1
+2026-07-02 21:15:47 [INFO]   Model loaded on cuda:0
+2026-07-02 21:15:47 [INFO] [GPU 1] uni2 embedding_dim=1536
+2026-07-02 21:15:47 [INFO] [GPU 0] uni2 embedding_dim=1536
+2026-07-02 22:32:38 [INFO] [GPU 1] Cargando modelo: virchow2
+2026-07-02 22:32:38 [INFO] Loading model: Virchow2 (Paige) — ViT-H/14 con register tokens, 1024-dim
+2026-07-02 22:32:38 [INFO]   From: /home/DIINF/vmieres/tesis/models/virchow2
+2026-07-02 22:32:56 [INFO] [GPU 0] Cargando modelo: virchow2
+2026-07-02 22:32:56 [INFO] Loading model: Virchow2 (Paige) — ViT-H/14 con register tokens, 1024-dim
+2026-07-02 22:32:56 [INFO]   From: /home/DIINF/vmieres/tesis/models/virchow2
+2026-07-02 22:32:57 [INFO]   Loaded safetensors: ['model.safetensors']
+2026-07-02 22:33:03 [INFO]   Loaded safetensors: ['model.safetensors']
+2026-07-02 22:33:22 [INFO]   Model loaded on cuda:1
+2026-07-02 22:33:22 [INFO] [GPU 1] virchow2 embedding_dim=2560
+2026-07-02 22:33:22 [INFO]   Model loaded on cuda:0
+2026-07-02 22:33:22 [INFO] [GPU 0] virchow2 embedding_dim=2560
+2026-07-03 00:11:01 [INFO] [GPU 1] Cargando modelo: phikon_v2
+2026-07-03 00:11:01 [INFO] Loading model: Phikon-v2 (Owkin) — ViT-L/16 transformers, 1024-dim
+2026-07-03 00:11:01 [INFO]   From: /home/DIINF/vmieres/tesis/models/phikon_v2
+2026-07-03 00:11:33 [INFO]   Model loaded on cuda:1
+2026-07-03 00:11:35 [INFO] [GPU 0] Cargando modelo: phikon_v2
+2026-07-03 00:11:35 [INFO] Loading model: Phikon-v2 (Owkin) — ViT-L/16 transformers, 1024-dim
+2026-07-03 00:11:35 [INFO]   From: /home/DIINF/vmieres/tesis/models/phikon_v2
+2026-07-03 00:11:35 [INFO] [GPU 1] phikon_v2 embedding_dim=1024
+2026-07-03 00:11:36 [INFO]   Model loaded on cuda:0
+2026-07-03 00:11:36 [INFO] [GPU 0] phikon_v2 embedding_dim=1024
+2026-07-03 01:25:20 [INFO] 
+======================================================================
+2026-07-03 01:25:20 [INFO]  RESUMEN GLOBAL
+2026-07-03 01:25:20 [INFO]  Tiempo total: 328.8 min
+2026-07-03 01:25:20 [INFO]  Output: /home/DIINF/datasets_iacis/2026_HISTAI/embeddings/HISTAI_colorectal_b2_embeddings
+2026-07-03 01:25:20 [INFO] ======================================================================
+2026-07-03 01:25:20 [INFO]  Stats guardadas en: /home/DIINF/datasets_iacis/2026_HISTAI/embeddings/HISTAI_colorectal_b2_embeddings/embedding_stats.csv

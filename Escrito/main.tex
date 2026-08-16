@@ -1,0 +1,170 @@
+\documentclass[dosguias,openany]{tesisusach}
+% La opción dosguias permite incluir profesor co-guía con \profesorco{}
+% La clase está basada en la clase book, por lo que las opciones de esta son
+% pasadas directamente. La opción openany es para evitar páginas en blanco
+% entre capítulos y es una opción de la clase book, que es un requerimiento
+% del repositorio central
+
+% Acá van todos los paquetes necesarios, aunque la clase ed por sí requiere
+% ya varios, como biblatex, caption, inputenc (con utf8), etc.
+\usepackage{lipsum}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{caption}
+\usepackage{booktabs}
+
+\usepackage[table]{xcolor}
+\definecolor{riesgobajo}{HTML}{D5E8D4}
+\definecolor{riesgomedio}{HTML}{FFE6CC}
+\definecolor{riesgoalto}{HTML}{F4CCCC}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,babel,fit,shapes.geometric}
+
+% \usepackage{resizebox}
+\usepackage{glossaries}
+\makeglossaries
+\loadglsentries{chapters/glosarie.tex}
+
+
+
+
+\title{Evaluación de \textit{fairness} y \textit{bias} en modelos fundacionales clínicos}
+\author{Vicente Renato Mieres Sepúlveda}
+% La fecha de la portada solo requiere el año
+\date{\the\year}
+
+\keywordsEs{Fairness, bias, modelos fundacionales, patología digital, whole slide images}
+\keywordsEn{Fairness, bias, foundation models, digital pathology, whole slide images}
+
+% Acá el texto está en minúscula solo para probar la versalita en la portada
+%\universidad{universidad de santiago de chile}
+% \subtitle{O la memoria, si es que es el caso\ldots}
+
+\facultad{facultad de ingeniería}
+\unidad{Departamento de Ingeniería Informática}
+\profesor{Violeta Chang Camacho}
+\profesorco{José M. Saavedra}
+\propuesta{Tesis para optar al título de Ingeniero Civil en Informática}
+\ciudad{Santiago}
+\pais{Chile}
+
+% Por si hiciera falta reemplazar el logo de la portada,
+% el comando \logo lo puede colocar
+%\logo{\includegraphics[scale=.25]{./images/LogoUsach2.png}}
+
+% Archivo de referencias
+\addbibresource{chapters/referencias.bib}
+
+\begin{document}
+	\maketitle
+	% ----------------------------------------------------------
+	% ----------- PRIMERA PARTE --------------------------------
+	% Temas preliminares: abstract, agradecimientos, 
+	% dedicatorias...
+	\frontmatter
+	
+	% Los resúmenes son "capítulos" en cuanto a formato, pero como deben aparecer
+	% en páginas seguidas, hay dos opciones principales: se utilizan opciones como
+	% oneside (todas las páginas son "páginas derechas") u openany (doble página),
+	% pero los capítulos inician en cualquier página, o se omite el inicio en
+	% cualquier página para el resumen. Estos comandos antes y después del resumen
+	% logran eso
+	%\makeatletter % convierte @ en letra, en vez de caracter especial
+	%\@openrightfalse % anula empezar capítulo en página derecha
+	\begin{resumenEs}
+		Los modelos fundacionales preentrenados sobre \textit{whole slide images} (WSI) de patología digital han mostrado un desempeño prometedor en tareas clínicas, pero su adopción responsable requiere comprender cómo los sesgos (\textit{bias}) presentes en los datos de origen y de evaluación afectan su equidad (\textit{fairness}) y su capacidad de generalización. En esta tesis se caracterizaron nueve recursos públicos de patología digital y se seleccionaron seis cohortes de cáncer de mama y colorrectal, documentando las variables demográficas y técnicas de adquisición disponibles, así como los riesgos de sesgo asociados. Sobre estas cohortes se evaluaron cuatro modelos fundacionales (Phikon-v2, UNI2-h, Prov-GigaPath y Virchow2) en cinco tareas de clasificación (estado HER2, subtipo molecular, sitio anatómico, lateralidad y clasificación de órgano), empleando clasificadores de una capa oculta sobre representaciones congeladas y reportando métricas de utilidad, equidad por edad y sexo, y generalización entre cohortes, con intervalos de confianza obtenidos por \textit{bootstrap} a nivel de paciente.
+	\end{resumenEs}
+	
+	\begin{resumenEn}
+		Foundation models pretrained on whole slide images (WSI) from digital pathology have shown promising performance on clinical tasks, yet their responsible adoption requires understanding how bias in source and evaluation data affects their fairness and generalization ability. In this thesis, nine public digital pathology resources were characterized and six breast and colorectal cancer cohorts were selected, documenting the available demographic and acquisition variables together with their associated bias risks. On these cohorts, four foundation models (Phikon-v2, UNI2-h, Prov-GigaPath, and Virchow2) were evaluated on five classification tasks (HER2 status, molecular subtype, anatomical site, laterality, and organ classification), using single-hidden-layer classifiers on frozen representations and reporting utility, age- and sex-based fairness, and cross-cohort generalization metrics with patient-level bootstrap confidence intervals.
+	\end{resumenEn}
+	%\@openrighttrue % restaura empezar capítulo en página derecha
+	%\makeatother % restaura @ como carácter especial
+
+	% TODO(autor): reemplazar la dedicatoria (actualmente texto de plantilla del template)
+	\dedicatoriaSimple{A mí, unos años atrás}
+	
+	% TODO(autor): reemplazar los agradecimientos (actualmente texto de plantilla del template)
+	\begin{agradecimiento}
+		En este espacio me gustaría agradecer a todos aquellos que son funadamentales para mi.
+
+		A mi profesora guía, Violeta Chang, por estar en su oficina el día que fui por ayuda.
+		
+		A mi novia y amigos, por estar ahí cuando necesitaba hablar, cuando necesitaba apoyo o cuando simplemente necesitaba hacer algo distinto.
+
+		A mis padres, Julia Sepúlveda y Andrés Mieres, por impulsarme a llegar hasta aquí, sin ellos no lo habría logrado.
+
+		A mi hermano, Ignacio Mieres, quien no paraba de repetirme \textit{``¿y la tesis?''}, cuando descansaba.
+
+		Muchas gracias a todos por ser y estar en mi vida.
+	\end{agradecimiento}
+
+	% De acuerdo al formato, lo preliminar termina con las tablas
+	% de contenido.
+	\tableofcontents
+	\newpage
+	%% Indice de tablas
+	\listoftables
+	\newpage
+	%% Indice de figuras
+	\listoffigures
+	\newpage
+	% Acá puede ir cualquier índice adicional del trabajo hecho, como códigos, algoritmo, etc.
+
+	% ----------------------------------------------------------
+	% ----------- SEGUNDA PARTE --------------------------------
+	% Los capítulos solo están de relleno como ejemplo con el paquete lipsum
+	% Los contenidos de estos capítulos son típico código estándar de LaTeX
+	\mainmatter
+	\include{chapters/01-intro}
+	\include{chapters/02-theo}
+	\include{chapters/03-sota}
+	\include{chapters/04-oe1}
+	\include{chapters/05-oe2}
+	\include{chapters/06-oe3}
+	\include{chapters/07-conclusion}
+	
+	% ----------------------------------------------------------
+	% ----------- TERCERA PARTE --------------------------------
+	% ### Bibliografía de este documento ###
+	% La opción heading la coloca en la tabla de contenidos
+	\printbibliography[heading=bibintoc]
+	
+
+	\printglossary[title=Glosario,toctitle=Glosario]
+
+	% Alternativa de apéndices
+	\appendix
+	\include{appendix/appA_cartagant}
+	\include{appendix/appB_tablasMetadata}
+	\include{appendix/appC_graficas}
+	\include{appendix/appD_criterios_preseleccion}
+	\include{appendix/appE_models}
+	\include{appendix/appF_resultados}
+
+	% Alternativa de anexos
+	\annex
+	% Por un bug del kernel de LaTeX (cf. el paquete appendix), si el primer
+	% anexo está en un archivo aparte, debe ser incluido con \input, en lugar
+	% de \include
+	% Puede que lo logre arreglar en una futura versión de este template...
+	% Idealmente :'v
+	% \input{anexos/01-prueba}
+	% \include{anexos/02-otro}
+
+	\newpage
+    \chapter*{Nota}
+    La redacción final de este documento se optimizó utilizando herramientas de asistencia de IA generativa para mejorar la coherencia textual, fluidez académica y precisión terminológica. Se empleó el siguiente prompt:
+
+    \begin{quote}
+    \textit{``Dado el siguiente texto, mejora la coherencia, elimina redundancias y sugiere mejoras en la redacción académica manteniendo el contenido técnico original.''}
+    \end{quote}
+	
+\end{document}

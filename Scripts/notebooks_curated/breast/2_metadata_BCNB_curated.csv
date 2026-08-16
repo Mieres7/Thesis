@@ -1,0 +1,1059 @@
+Patient ID,Age(years),Tumour Size(cm),Tumour Type,ER,PR,HER2,HER2 Expression,Histological grading,Surgical,Ki67,Molecular subtype,Number of lymph node metastases,ALN status,ER_status_norm,PR_status_norm,HER2_status_norm,Ki67_percent,Ki67_cat,N_status_norm,Tumor_size_cat
+1,77,3.0,Other type,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.01,Luminal A,0,N0,1,1,0,0.01,low,N0,T2_>2-≤5cm
+2,39,3.5,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Sentinel lymph node biopsy,0.4,Triple negative,4,N+(>2),0,0,0,0.4,low,N+(>2),T2_>2-≤5cm
+3,52,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.06,Luminal A,7,N+(>2),1,1,0,0.06,low,N+(>2),T2_>2-≤5cm
+4,60,2.3,Other type,Negative,Negative,Positive,3+,,Axillary lymph node dissection,0.6,HER2(+),0,N0,0,0,2,0.6,low,N0,T2_>2-≤5cm
+5,71,3.5,Invasive ductal carcinoma,Negative,Negative,Negative,0,,Axillary lymph node dissection,0.12,Triple negative,0,N0,0,0,0,0.12,low,N0,T2_>2-≤5cm
+6,57,2.5,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Sentinel lymph node biopsy,0.8,Triple negative,0,N0,0,0,0,0.8,low,N0,T2_>2-≤5cm
+7,38,2.1,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,2,N+(1-2),1,1,0,0.15,low,N+(1-2),T2_>2-≤5cm
+8,74,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.05,Luminal A,4,N+(>2),1,1,0,0.05,low,N+(>2),T2_>2-≤5cm
+9,57,4.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T2_>2-≤5cm
+10,54,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,0,0.05,low,N0,T1_≤2cm
+11,62,1.7,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,0,0.05,low,N0,T1_≤2cm
+12,73,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,1.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+13,46,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.9,Triple negative,0,N0,0,0,0,0.9,low,N0,T1_≤2cm
+14,63,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.08,Luminal A,3,N+(>2),1,1,0,0.08,low,N+(>2),T1_≤2cm
+15,62,2.3,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.08,Luminal A,1,N+(1-2),1,1,0,0.08,low,N+(1-2),T2_>2-≤5cm
+16,75,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T2_>2-≤5cm
+17,72,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,3.0,Axillary lymph node dissection,0.8,Luminal B,0,N0,1,1,0,0.8,low,N0,T1_≤2cm
+18,74,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.5,Luminal B,0,N0,1,1,0,0.5,low,N0,T1_≤2cm
+19,54,3.0,Invasive ductal carcinoma,Positive,Negative,Negative,0,3.0,Axillary lymph node dissection,0.2,Luminal B,4,N+(>2),1,0,0,0.2,low,N+(>2),T2_>2-≤5cm
+20,52,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T2_>2-≤5cm
+21,48,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T1_≤2cm
+22,49,0.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T1_≤2cm
+23,58,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.2,HER2(+),0,N0,1,1,2,0.2,low,N0,T1_≤2cm
+24,75,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+25,49,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,5,N+(>2),1,1,1,0.1,low,N+(>2),T2_>2-≤5cm
+26,71,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,1.0,Axillary lymph node dissection,0.05,Luminal A,1,N+(1-2),1,1,1,0.05,low,N+(1-2),T2_>2-≤5cm
+27,30,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.5,HER2(+),6,N+(>2),1,1,2,0.5,low,N+(>2),T2_>2-≤5cm
+28,42,1.8,Invasive ductal carcinoma,Negative,Negative,Negative,0,,Axillary lymph node dissection,0.5,Triple negative,0,N0,0,0,0,0.5,low,N0,T1_≤2cm
+29,57,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.25,Luminal B,0,N0,1,1,0,0.25,low,N0,T1_≤2cm
+30,51,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T2_>2-≤5cm
+31,57,2.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.2,HER2(+),8,N+(>2),0,0,2,0.2,low,N+(>2),T2_>2-≤5cm
+32,46,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,1,0.05,low,N0,T2_>2-≤5cm
+33,74,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,1.0,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,1,0.05,low,N0,T2_>2-≤5cm
+34,52,2.4,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,2,N+(1-2),1,1,0,0.2,low,N+(1-2),T2_>2-≤5cm
+35,40,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,6,N+(>2),1,1,1,0.3,low,N+(>2),T1_≤2cm
+36,61,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,0,0.05,low,N0,T2_>2-≤5cm
+37,35,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.15,Luminal A,1,N+(1-2),1,1,0,0.15,low,N+(1-2),T2_>2-≤5cm
+38,58,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,8,N+(>2),1,1,0,0.15,low,N+(>2),T2_>2-≤5cm
+39,72,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.25,Luminal B,1,N+(1-2),1,1,0,0.25,low,N+(1-2),T1_≤2cm
+40,59,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.8,HER2(+),0,N0,1,1,2,0.8,low,N0,T2_>2-≤5cm
+41,45,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.1,Triple negative,0,N0,0,0,1,0.1,low,N0,T1_≤2cm
+42,54,2.0,Invasive ductal carcinoma,Positive,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,0,2,0.3,low,N0,T1_≤2cm
+43,34,1.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,2,0.3,low,N0,T1_≤2cm
+44,51,2.2,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.3,Triple negative,0,N0,0,0,1,0.3,low,N0,T2_>2-≤5cm
+45,53,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.2,Triple negative,0,N0,0,0,0,0.2,low,N0,T1_≤2cm
+46,66,1.8,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,30-40%,HER2(+),0,N0,0,0,2,35.0,high,N0,T1_≤2cm
+47,67,2.0,Invasive lobular carcinoma,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+48,58,2.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.9,Triple negative,1,N+(1-2),0,0,0,0.9,low,N+(1-2),T2_>2-≤5cm
+49,65,2.8,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.8,Luminal A,1,N+(1-2),0,0,1,0.8,low,N+(1-2),T2_>2-≤5cm
+50,52,2.8,Other type,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.4,Luminal B,0,N0,1,1,0,0.4,low,N0,T2_>2-≤5cm
+51,71,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,2,N+(1-2),1,1,0,0.1,low,N+(1-2),T1_≤2cm
+52,41,1.5,Invasive ductal carcinoma,Negative,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.6,Triple negative,0,N0,0,1,0,0.6,low,N0,T1_≤2cm
+53,67,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,,Axillary lymph node dissection,0.05,Triple negative,0,N0,0,0,1,0.05,low,N0,T1_≤2cm
+54,55,1.0,Invasive ductal carcinoma,Positive,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,0,2,0.3,low,N0,T1_≤2cm
+55,46,1.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,2,0.3,low,N0,T1_≤2cm
+56,49,1.4,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,1,N+(1-2),1,1,0,0.1,low,N+(1-2),T1_≤2cm
+57,54,1.2,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.6,Triple negative,0,N0,0,0,0,0.6,low,N0,T1_≤2cm
+58,56,3.0,Invasive ductal carcinoma,Positive,Negative,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,4,N+(>2),1,0,1,0.2,low,N+(>2),T2_>2-≤5cm
+59,58,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T2_>2-≤5cm
+60,38,4.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,2,N+(1-2),1,1,0,0.15,low,N+(1-2),T2_>2-≤5cm
+61,33,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,3.0,Axillary lymph node dissection,0.5,Luminal B,1,N+(1-2),1,1,0,0.5,low,N+(1-2),T1_≤2cm
+62,56,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+63,48,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.5,Luminal B,0,N0,1,1,1,0.5,low,N0,T1_≤2cm
+64,40,2.5,Invasive ductal carcinoma,Negative,Negative,Positive,2+,3.0,Axillary lymph node dissection,0.7,HER2(+),0,N0,0,0,1,0.7,low,N0,T2_>2-≤5cm
+65,77,3.5,Other type,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T2_>2-≤5cm
+66,57,2.0,Invasive ductal carcinoma,Positive,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.4,Luminal B,0,N0,1,0,1,0.4,low,N0,T1_≤2cm
+67,44,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.5,Luminal B,0,N0,1,1,0,0.5,low,N0,T2_>2-≤5cm
+68,57,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+69,49,3.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.15,HER2(+),0,N0,0,0,2,0.15,low,N0,T2_>2-≤5cm
+70,45,1.7,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+71,63,1.3,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T1_≤2cm
+72,42,1.6,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.1,Luminal A,2,N+(1-2),1,1,1,0.1,low,N+(1-2),T1_≤2cm
+73,48,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.4,Luminal B,1,N+(1-2),1,1,1,0.4,low,N+(1-2),T1_≤2cm
+74,74,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.1,Luminal A,2,N+(1-2),1,1,0,0.1,low,N+(1-2),T1_≤2cm
+75,61,1.7,Invasive lobular carcinoma,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+76,71,4.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,60-80%,Luminal B,6,N+(>2),1,1,1,70.0,high,N+(>2),T2_>2-≤5cm
+77,67,1.2,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),0,N0,0,0,2,0.4,low,N0,T1_≤2cm
+78,76,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,1,0.05,low,N0,T2_>2-≤5cm
+79,42,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,1,N+(1-2),1,1,1,0.2,low,N+(1-2),T1_≤2cm
+80,42,2.5,Other type,Negative,Negative,Positive,3+,,Axillary lymph node dissection,0.6,HER2(+),0,N0,0,0,2,0.6,low,N0,T2_>2-≤5cm
+81,44,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.15,HER2(+),0,N0,1,1,2,0.15,low,N0,T2_>2-≤5cm
+82,45,0.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,,Axillary lymph node dissection,20-30%,Luminal B,0,N0,1,1,1,25.0,high,N0,T1_≤2cm
+83,42,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,1,N+(1-2),1,1,1,0.1,low,N+(1-2),T2_>2-≤5cm
+84,55,2.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),0,N0,0,0,2,0.5,low,N0,T1_≤2cm
+85,50,4.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.5,Luminal B,6,N+(>2),1,1,1,0.5,low,N+(>2),T2_>2-≤5cm
+86,47,1.7,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,2,0.3,low,N0,T1_≤2cm
+87,49,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,2,0.3,low,N0,T2_>2-≤5cm
+88,44,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,1,N+(1-2),1,1,1,0.3,low,N+(1-2),T1_≤2cm
+89,58,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,＞50%,Luminal B,0,N0,1,1,0,,,N0,T1_≤2cm
+90,52,2.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+91,60,4.1,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),0,N0,1,1,2,0.4,low,N0,T2_>2-≤5cm
+92,46,2.3,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.6,HER2(+),0,N0,1,1,2,0.6,low,N0,T2_>2-≤5cm
+93,43,2.3,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T2_>2-≤5cm
+94,47,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.4,Luminal B,3,N+(>2),1,1,0,0.4,low,N+(>2),T2_>2-≤5cm
+95,68,1.7,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,2,0.3,low,N0,T1_≤2cm
+96,60,3.0,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.9,Triple negative,1,N+(1-2),0,0,0,0.9,low,N+(1-2),T2_>2-≤5cm
+97,52,2.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,2.0,Axillary lymph node dissection,0.2,Triple negative,0,N0,0,0,0,0.2,low,N0,T2_>2-≤5cm
+98,47,3.0,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.6,Triple negative,0,N0,0,0,0,0.6,low,N0,T2_>2-≤5cm
+99,72,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.2,Luminal B,1,N+(1-2),1,1,1,0.2,low,N+(1-2),T1_≤2cm
+100,55,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.5,Triple negative,0,N0,0,0,0,0.5,low,N0,T1_≤2cm
+101,46,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.5,HER2(+),0,N0,1,1,1,0.5,low,N0,T2_>2-≤5cm
+102,59,3.0,Invasive ductal carcinoma,Positive,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.1,HER2(+),0,N0,1,0,2,0.1,low,N0,T2_>2-≤5cm
+103,55,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,3,N+(>2),1,1,1,0.1,low,N+(>2),T2_>2-≤5cm
+104,49,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.7,Triple negative,0,N0,0,0,1,0.7,low,N0,T1_≤2cm
+105,57,2.5,Invasive ductal carcinoma,Positive,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.2,HER2(+),0,N0,1,0,2,0.2,low,N0,T2_>2-≤5cm
+106,42,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.3,Luminal B,7,N+(>2),1,1,1,0.3,low,N+(>2),T2_>2-≤5cm
+107,51,3.0,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.2,Triple negative,3,N+(>2),0,0,0,0.2,low,N+(>2),T2_>2-≤5cm
+108,57,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.3,Triple negative,0,N0,0,0,0,0.3,low,N0,T1_≤2cm
+109,61,1.8,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.3,Triple negative,0,N0,0,0,0,0.3,low,N0,T1_≤2cm
+110,49,3.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.7,Triple negative,2,N+(1-2),0,0,1,0.7,low,N+(1-2),T2_>2-≤5cm
+111,46,0.7,Invasive lobular carcinoma,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,0,0.15,low,N0,T1_≤2cm
+112,48,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,2,N+(1-2),1,1,0,0.3,low,N+(1-2),T1_≤2cm
+113,47,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+114,58,1.6,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,0,0.05,low,N0,T1_≤2cm
+115,52,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,0,0.15,low,N0,T1_≤2cm
+116,58,4.0,Invasive ductal carcinoma,Negative,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),0,N0,0,1,2,0.4,low,N0,T2_>2-≤5cm
+117,55,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+118,73,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,4,N+(>2),1,1,0,0.15,low,N+(>2),T1_≤2cm
+119,41,0.8,Other type,Negative,Negative,Negative,0,,Axillary lymph node dissection,0.2,Triple negative,0,N0,0,0,0,0.2,low,N0,T1_≤2cm
+120,40,1.7,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,6,N+(>2),1,1,1,0.2,low,N+(>2),T1_≤2cm
+121,44,4.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),1,N+(1-2),1,1,2,0.4,low,N+(1-2),T2_>2-≤5cm
+122,80,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,3,N+(>2),1,1,0,0.1,low,N+(>2),T2_>2-≤5cm
+123,76,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,3,N+(>2),1,1,1,0.1,low,N+(>2),T1_≤2cm
+124,46,4.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),2,N+(1-2),1,1,2,0.5,low,N+(1-2),T2_>2-≤5cm
+125,69,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T2_>2-≤5cm
+126,39,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+127,77,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+128,49,1.3,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+129,48,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,1,N+(1-2),1,1,1,0.15,low,N+(1-2),T1_≤2cm
+130,59,2.6,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.5,Triple negative,0,N0,0,0,0,0.5,low,N0,T2_>2-≤5cm
+131,59,3.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.15,HER2(+),0,N0,0,0,2,0.15,low,N0,T2_>2-≤5cm
+132,73,1.1,Invasive ductal carcinoma,Positive,Negative,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,0,0,0.2,low,N0,T1_≤2cm
+133,72,2.4,Other type,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,0,0.15,low,N0,T2_>2-≤5cm
+134,56,2.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T2_>2-≤5cm
+135,53,3.0,Other type,Positive,Positive,Positive,2+,,Axillary lymph node dissection,0.3,HER2(+),2,N+(1-2),1,1,1,0.3,low,N+(1-2),T2_>2-≤5cm
+136,59,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,10-20%,Luminal A,0,N0,1,1,1,15.0,intermediate,N0,T1_≤2cm
+137,51,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.05,Luminal A,5,N+(>2),1,1,1,0.05,low,N+(>2),T2_>2-≤5cm
+138,57,1.0,Other type,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,0,0.15,low,N0,T1_≤2cm
+139,57,2.5,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+140,85,1.6,Invasive lobular carcinoma,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,1,0.05,low,N0,T1_≤2cm
+141,66,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+142,62,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,20-30%,HER2(+),0,N0,1,1,2,25.0,high,N0,T2_>2-≤5cm
+143,49,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.03,Luminal A,4,N+(>2),1,1,1,0.03,low,N+(>2),T1_≤2cm
+144,79,3.6,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.1,Luminal A,3,N+(>2),1,1,1,0.1,low,N+(>2),T2_>2-≤5cm
+145,51,3.0,Invasive ductal carcinoma,Positive,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.6,Luminal B,5,N+(>2),1,0,1,0.6,low,N+(>2),T2_>2-≤5cm
+146,74,2.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.6,Luminal B,0,N0,1,1,1,0.6,low,N0,T2_>2-≤5cm
+147,74,2.0,Invasive ductal carcinoma,Negative,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),0,N0,0,1,2,0.4,low,N0,T1_≤2cm
+148,46,2.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,,Axillary lymph node dissection,0.6,HER2(+),0,N0,0,0,2,0.6,low,N0,T1_≤2cm
+149,41,1.7,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),1,N+(1-2),0,0,2,0.4,low,N+(1-2),T1_≤2cm
+150,47,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+151,56,3.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.6,Triple negative,6,N+(>2),0,0,0,0.6,low,N+(>2),T2_>2-≤5cm
+152,68,2.0,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.1,Luminal A,4,N+(>2),1,1,1,0.1,low,N+(>2),T1_≤2cm
+153,80,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+154,72,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.2,HER2(+),5,N+(>2),1,1,2,0.2,low,N+(>2),T2_>2-≤5cm
+155,33,2.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,,Axillary lymph node dissection,0.2,HER2(+),0,N0,0,0,2,0.2,low,N0,T1_≤2cm
+156,33,2.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,,Axillary lymph node dissection,0.3,Triple negative,0,N0,0,0,0,0.3,low,N0,T2_>2-≤5cm
+157,62,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,15-20%,Luminal B,0,N0,1,1,1,17.5,intermediate,N0,T1_≤2cm
+158,62,1.5,Other type,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T1_≤2cm
+159,53,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.4,HER2(+),0,N0,1,1,2,0.4,low,N0,T1_≤2cm
+160,62,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,1.0,Axillary lymph node dissection,＜5%,Luminal A,0,N0,1,1,1,,,N0,T2_>2-≤5cm
+161,69,3.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,,Axillary lymph node dissection,0.6,HER2(+),0,N0,0,0,2,0.6,low,N0,T2_>2-≤5cm
+162,76,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.8,Luminal A,0,N0,0,0,1,0.8,low,N0,T1_≤2cm
+163,62,2.5,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.4,Luminal B,2,N+(1-2),1,1,1,0.4,low,N+(1-2),T2_>2-≤5cm
+164,65,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,1.0,Axillary lymph node dissection,0.2,Luminal B,3,N+(>2),1,1,1,0.2,low,N+(>2),T2_>2-≤5cm
+165,60,4.0,Other type,Negative,Negative,Negative,2+,,Axillary lymph node dissection,0.3,Triple negative,6,N+(>2),0,0,1,0.3,low,N+(>2),T2_>2-≤5cm
+166,58,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.3,Luminal B,1,N+(1-2),1,1,0,0.3,low,N+(1-2),T2_>2-≤5cm
+167,73,2.1,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T2_>2-≤5cm
+168,63,1.7,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.1,HER2(+),0,N0,1,1,2,0.1,low,N0,T1_≤2cm
+169,49,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.05,Luminal A,2,N+(1-2),1,1,1,0.05,low,N+(1-2),T1_≤2cm
+170,73,3.7,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.15,Luminal A,1,N+(1-2),1,1,0,0.15,low,N+(1-2),T2_>2-≤5cm
+171,49,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.6,Luminal B,1,N+(1-2),1,1,0,0.6,low,N+(1-2),T1_≤2cm
+172,46,2.6,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,7,N+(>2),1,1,1,0.2,low,N+(>2),T2_>2-≤5cm
+173,50,4.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,1,N+(1-2),1,1,1,0.2,low,N+(1-2),T2_>2-≤5cm
+174,37,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.8,Luminal A,2,N+(1-2),1,1,1,0.8,low,N+(1-2),T2_>2-≤5cm
+175,61,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T2_>2-≤5cm
+176,62,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.7,Triple negative,0,N0,0,0,1,0.7,low,N0,T1_≤2cm
+177,77,3.0,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.3,Triple negative,1,N+(1-2),0,0,0,0.3,low,N+(1-2),T2_>2-≤5cm
+178,75,2.2,Invasive ductal carcinoma,Positive,Negative,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,0,0,0.2,low,N0,T2_>2-≤5cm
+179,64,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+180,54,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,6,N+(>2),1,1,1,0.2,low,N+(>2),T2_>2-≤5cm
+181,75,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T2_>2-≤5cm
+182,63,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,1,N+(1-2),1,1,1,0.1,low,N+(1-2),T1_≤2cm
+183,33,1.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.2,HER2(+),0,N0,1,1,2,0.2,low,N0,T1_≤2cm
+184,63,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,1+,1.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+185,70,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,1,0.05,low,N0,T2_>2-≤5cm
+186,58,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,1,N+(1-2),1,1,1,0.15,low,N+(1-2),T2_>2-≤5cm
+187,54,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T2_>2-≤5cm
+188,37,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T2_>2-≤5cm
+189,72,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.4,Triple negative,0,N0,0,0,1,0.4,low,N0,T1_≤2cm
+190,78,1.9,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+191,77,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.1,Luminal A,7,N+(>2),1,1,1,0.1,low,N+(>2),T1_≤2cm
+192,59,3.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.7,HER2(+),0,N0,0,0,2,0.7,low,N0,T2_>2-≤5cm
+193,61,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.5,Triple negative,0,N0,0,0,0,0.5,low,N0,T1_≤2cm
+194,63,2.5,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T2_>2-≤5cm
+195,54,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.1,HER2(+),0,N0,1,1,2,0.1,low,N0,T2_>2-≤5cm
+196,55,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,0,0.05,low,N0,T2_>2-≤5cm
+197,63,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.5,HER2(+),0,N0,1,1,1,0.5,low,N0,T1_≤2cm
+198,73,3.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.7,Triple negative,0,N0,0,0,1,0.7,low,N0,T2_>2-≤5cm
+199,81,4.0,Invasive ductal carcinoma,Negative,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.8,Luminal B,0,N0,0,1,1,0.8,low,N0,T2_>2-≤5cm
+200,41,1.7,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.1,Luminal A,7,N+(>2),1,1,1,0.1,low,N+(>2),T1_≤2cm
+201,38,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.9,HER2(+),0,N0,1,1,2,0.9,low,N0,T1_≤2cm
+202,36,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.15,Luminal A,1,N+(1-2),1,1,1,0.15,low,N+(1-2),T1_≤2cm
+203,61,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T1_≤2cm
+204,62,3.5,Invasive ductal carcinoma,Positive,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.2,HER2(+),0,N0,1,0,2,0.2,low,N0,T2_>2-≤5cm
+205,82,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,＜5%,Luminal A,0,N0,1,1,0,,,N0,T1_≤2cm
+206,78,1.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,0,0,2,0.3,low,N0,T1_≤2cm
+207,48,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,1,0.05,low,N0,T1_≤2cm
+208,50,1.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,2,0.3,low,N0,T1_≤2cm
+209,26,3.5,Invasive ductal carcinoma,Positive,Negative,Negative,2+,,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,0,1,0.05,low,N0,T2_>2-≤5cm
+210,37,3.0,Invasive ductal carcinoma,Positive,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.6,Luminal B,5,N+(>2),1,0,0,0.6,low,N+(>2),T2_>2-≤5cm
+211,46,1.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.05,HER2(+),3,N+(>2),1,1,2,0.05,low,N+(>2),T1_≤2cm
+212,63,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,1,N+(1-2),1,1,0,0.1,low,N+(1-2),T2_>2-≤5cm
+213,58,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,2,N+(1-2),1,1,1,0.3,low,N+(1-2),T2_>2-≤5cm
+214,62,2.5,Other type,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,0,0.05,low,N0,T2_>2-≤5cm
+215,52,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+216,46,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,0.5,HER2(+),7,N+(>2),1,1,1,0.5,low,N+(>2),T2_>2-≤5cm
+217,37,0.9,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.08,Luminal A,1,N+(1-2),1,1,1,0.08,low,N+(1-2),T1_≤2cm
+218,67,2.1,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.3,Luminal B,1,N+(1-2),1,1,1,0.3,low,N+(1-2),T2_>2-≤5cm
+219,65,3.0,Invasive ductal carcinoma,Positive,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,0,1,0.3,low,N0,T2_>2-≤5cm
+220,68,4.0,Other type,Positive,Positive,Negative,0,,Axillary lymph node dissection,＜5%,Luminal A,0,N0,1,1,0,,,N0,T2_>2-≤5cm
+221,66,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,5,N+(>2),1,1,0,0.3,low,N+(>2),T2_>2-≤5cm
+222,62,1.7,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+223,51,1.4,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.4,HER2(+),2,N+(1-2),0,0,2,0.4,low,N+(1-2),T1_≤2cm
+224,56,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,3,N+(>2),1,1,1,0.3,low,N+(>2),T1_≤2cm
+225,66,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T1_≤2cm
+226,44,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,1,N+(1-2),1,1,1,0.2,low,N+(1-2),T1_≤2cm
+227,37,1.5,Other type,Negative,Negative,Negative,1+,,Axillary lymph node dissection,0.5,Triple negative,0,N0,0,0,0,0.5,low,N0,T1_≤2cm
+228,62,0.6,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.15,HER2(+),6,N+(>2),1,1,2,0.15,low,N+(>2),T1_≤2cm
+229,36,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,6,N+(>2),1,1,1,0.3,low,N+(>2),T2_>2-≤5cm
+230,72,4.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,7,N+(>2),1,1,1,0.15,low,N+(>2),T2_>2-≤5cm
+231,80,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,4,N+(>2),1,1,1,0.3,low,N+(>2),T2_>2-≤5cm
+232,54,2.2,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.7,HER2(+),1,N+(1-2),1,1,2,0.7,low,N+(1-2),T2_>2-≤5cm
+233,51,4.0,Invasive ductal carcinoma,Positive,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),3,N+(>2),1,0,2,0.4,low,N+(>2),T2_>2-≤5cm
+234,77,1.7,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+235,67,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+236,46,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.5,Luminal B,5,N+(>2),1,1,0,0.5,low,N+(>2),T1_≤2cm
+237,42,2.5,Invasive ductal carcinoma,Positive,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.6,HER2(+),0,N0,1,0,2,0.6,low,N0,T2_>2-≤5cm
+238,32,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,0.6,HER2(+),5,N+(>2),1,1,1,0.6,low,N+(>2),T2_>2-≤5cm
+239,71,2.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),0,N0,0,0,2,0.5,low,N0,T1_≤2cm
+240,57,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,1.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+241,45,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T2_>2-≤5cm
+242,72,3.0,Invasive ductal carcinoma,Positive,Negative,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,0,1,0.15,low,N0,T2_>2-≤5cm
+243,49,2.3,Invasive ductal carcinoma,Positive,Negative,Positive,2+,3.0,Axillary lymph node dissection,0.7,HER2(+),4,N+(>2),1,0,1,0.7,low,N+(>2),T2_>2-≤5cm
+244,55,2.0,Invasive ductal carcinoma,Positive,Negative,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,0,0,0.3,low,N0,T1_≤2cm
+245,60,4.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),0,N0,0,0,2,0.5,low,N0,T2_>2-≤5cm
+246,68,1.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),5,N+(>2),1,1,2,0.3,low,N+(>2),T1_≤2cm
+247,72,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,1,N+(1-2),1,1,0,0.15,low,N+(1-2),T2_>2-≤5cm
+248,56,4.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,30-40%,HER2(+),1,N+(1-2),1,1,2,35.0,high,N+(1-2),T2_>2-≤5cm
+249,62,2.2,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T2_>2-≤5cm
+250,51,0.6,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,1,N+(1-2),1,1,1,0.1,low,N+(1-2),T1_≤2cm
+251,52,3.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.3,HER2(+),1,N+(1-2),0,0,2,0.3,low,N+(1-2),T2_>2-≤5cm
+252,64,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+253,41,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,2,0.3,low,N0,T2_>2-≤5cm
+254,52,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,＞70%,Triple negative,0,N0,0,0,0,,,N0,T1_≤2cm
+255,57,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T2_>2-≤5cm
+256,60,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,1,N+(1-2),1,1,0,0.3,low,N+(1-2),T2_>2-≤5cm
+257,49,2.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T2_>2-≤5cm
+258,60,4.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,0,0,2,0.3,low,N0,T2_>2-≤5cm
+259,54,3.0,Invasive ductal carcinoma,Positive,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.8,HER2(+),2,N+(1-2),1,0,2,0.8,low,N+(1-2),T2_>2-≤5cm
+260,75,1.3,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+261,87,4.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.7,Luminal B,0,N0,1,1,0,0.7,low,N0,T2_>2-≤5cm
+262,59,2.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),0,N0,0,0,2,0.5,low,N0,T2_>2-≤5cm
+263,47,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.4,Luminal B,0,N0,1,1,0,0.4,low,N0,T2_>2-≤5cm
+264,53,2.0,Invasive lobular carcinoma,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.15,Luminal A,1,N+(1-2),1,1,0,0.15,low,N+(1-2),T1_≤2cm
+265,72,2.5,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.3,Triple negative,0,N0,0,0,0,0.3,low,N0,T2_>2-≤5cm
+266,50,4.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.4,Luminal B,4,N+(>2),1,1,0,0.4,low,N+(>2),T2_>2-≤5cm
+267,75,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.4,Luminal B,1,N+(1-2),1,1,1,0.4,low,N+(1-2),T2_>2-≤5cm
+268,78,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.4,Luminal B,0,N0,1,1,0,0.4,low,N0,T2_>2-≤5cm
+269,59,3.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),5,N+(>2),0,0,2,0.5,low,N+(>2),T2_>2-≤5cm
+270,37,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,＞40%,HER2(+),0,N0,1,1,2,,,N0,T1_≤2cm
+271,47,1.8,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,0.6,HER2(+),0,N0,1,1,1,0.6,low,N0,T1_≤2cm
+272,71,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,2.0,Axillary lymph node dissection,0.3,Triple negative,0,N0,0,0,1,0.3,low,N0,T1_≤2cm
+273,32,2.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.9,Triple negative,0,N0,0,0,0,0.9,low,N0,T2_>2-≤5cm
+274,36,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+275,57,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+276,51,4.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),4,N+(>2),0,0,2,0.4,low,N+(>2),T2_>2-≤5cm
+277,70,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+278,65,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal B,0,N0,1,1,0,0.15,low,N0,T1_≤2cm
+279,62,2.5,Other type,Positive,Positive,Positive,2+,,Axillary lymph node dissection,0.5,Luminal B,6,N+(>2),1,1,1,0.5,low,N+(>2),T2_>2-≤5cm
+280,52,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.8,Triple negative,0,N0,0,0,0,0.8,low,N0,T1_≤2cm
+281,73,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.4,Luminal B,0,N0,1,1,0,0.4,low,N0,T1_≤2cm
+282,69,3.0,Invasive ductal carcinoma,Positive,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),0,N0,1,0,2,0.4,low,N0,T2_>2-≤5cm
+283,76,4.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+284,65,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,8,N+(>2),1,1,1,0.3,low,N+(>2),T2_>2-≤5cm
+285,62,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.4,Luminal B,0,N0,1,1,1,0.4,low,N0,T2_>2-≤5cm
+286,72,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.7,Triple negative,4,N+(>2),0,0,0,0.7,low,N+(>2),T1_≤2cm
+287,62,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+288,54,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.8,HER2(+),0,N0,1,1,2,0.8,low,N0,T1_≤2cm
+289,59,1.5,Invasive ductal carcinoma,Positive,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,0,2,0.3,low,N0,T1_≤2cm
+290,57,1.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.8,HER2(+),0,N0,0,0,2,0.8,low,N0,T1_≤2cm
+291,43,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,1.0,Axillary lymph node dissection,0.5,Luminal B,0,N0,1,1,0,0.5,low,N0,T1_≤2cm
+292,55,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,0,0.15,low,N0,T1_≤2cm
+293,60,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T1_≤2cm
+294,59,4.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),0,N0,0,0,2,0.4,low,N0,T2_>2-≤5cm
+295,65,0.8,Invasive ductal carcinoma,Positive,Positive,Negative,0,1.0,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,0,0.05,low,N0,T1_≤2cm
+296,45,1.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,2,0.3,low,N0,T1_≤2cm
+297,47,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T2_>2-≤5cm
+298,63,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T2_>2-≤5cm
+299,72,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,0,0.15,low,N0,T2_>2-≤5cm
+300,35,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+301,39,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.4,Luminal B,2,N+(1-2),1,1,1,0.4,low,N+(1-2),T1_≤2cm
+302,53,2.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),5,N+(>2),0,0,2,0.5,low,N+(>2),T1_≤2cm
+303,82,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,1.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T1_≤2cm
+304,50,5.5,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.9,Triple negative,9,N+(>2),0,0,1,0.9,low,N+(>2),T3+_>5cm
+305,77,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+306,57,4.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,2,N+(1-2),1,1,1,0.3,low,N+(1-2),T2_>2-≤5cm
+307,72,2.2,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,4,N+(>2),1,1,0,0.1,low,N+(>2),T2_>2-≤5cm
+308,83,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.4,Luminal B,4,N+(>2),1,1,0,0.4,low,N+(>2),T2_>2-≤5cm
+309,66,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.4,Triple negative,1,N+(1-2),0,0,0,0.4,low,N+(1-2),T1_≤2cm
+310,35,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,4,N+(>2),1,1,1,0.15,low,N+(>2),T1_≤2cm
+311,55,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.6,Luminal B,0,N0,1,1,0,0.6,low,N0,T1_≤2cm
+312,73,1.5,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+313,85,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,0,0.15,low,N0,T1_≤2cm
+314,35,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,15-20%,Luminal B,1,N+(1-2),1,1,1,17.5,intermediate,N+(1-2),T2_>2-≤5cm
+315,59,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,6,N+(>2),1,1,1,0.3,low,N+(>2),T1_≤2cm
+316,65,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+317,50,2.0,Invasive ductal carcinoma,Positive,Negative,Positive,2+,3.0,Axillary lymph node dissection,0.4,HER2(+),0,N0,1,0,1,0.4,low,N0,T1_≤2cm
+318,68,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+319,79,2.5,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T2_>2-≤5cm
+320,31,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,0.2,HER2(+),3,N+(>2),1,1,1,0.2,low,N+(>2),T2_>2-≤5cm
+321,62,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),1,N+(1-2),1,1,2,0.5,low,N+(1-2),T1_≤2cm
+322,34,2.3,Other type,Positive,Negative,Negative,1+,,Axillary lymph node dissection,＞90%,Luminal B,0,N0,1,0,0,,,N0,T2_>2-≤5cm
+323,55,1.8,Invasive ductal carcinoma,Positive,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.6,HER2(+),0,N0,1,0,2,0.6,low,N0,T1_≤2cm
+324,77,4.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.4,Triple negative,0,N0,0,0,1,0.4,low,N0,T2_>2-≤5cm
+325,50,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.7,Luminal B,0,N0,1,1,0,0.7,low,N0,T1_≤2cm
+326,81,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.5,Luminal B,3,N+(>2),1,1,1,0.5,low,N+(>2),T1_≤2cm
+327,51,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),0,N0,1,1,2,0.4,low,N0,T2_>2-≤5cm
+328,76,1.4,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+329,49,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.7,Triple negative,0,N0,0,0,1,0.7,low,N0,T1_≤2cm
+330,47,2.3,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,6,N+(>2),1,1,1,0.15,low,N+(>2),T2_>2-≤5cm
+331,62,4.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,40-60%,Triple negative,0,N0,0,0,1,50.0,high,N0,T2_>2-≤5cm
+332,53,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,1,0.05,low,N0,T2_>2-≤5cm
+333,44,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,2,N+(1-2),1,1,0,0.15,low,N+(1-2),T1_≤2cm
+334,43,2.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),1,N+(1-2),0,0,2,0.5,low,N+(1-2),T1_≤2cm
+335,43,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,＜5%,Luminal A,0,N0,1,1,0,,,N0,T1_≤2cm
+336,49,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,0,3.0,Axillary lymph node dissection,＜5%,Luminal A,3,N+(>2),1,1,0,,,N+(>2),T1_≤2cm
+337,46,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,2.0,Axillary lymph node dissection,0.05,Triple negative,0,N0,0,0,0,0.05,low,N0,T1_≤2cm
+338,53,0.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,0,0,2,0.3,low,N0,T1_≤2cm
+339,37,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,3,N+(>2),1,1,1,0.1,low,N+(>2),T1_≤2cm
+340,63,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+341,50,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.7,HER2(+),4,N+(>2),1,1,2,0.7,low,N+(>2),T1_≤2cm
+342,76,2.2,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,0.5,HER2(+),0,N0,1,1,1,0.5,low,N0,T2_>2-≤5cm
+343,67,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Sentinel lymph node biopsy,0.35,Triple negative,0,N0,0,0,0,0.35,low,N0,T1_≤2cm
+344,56,2.9,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),2,N+(1-2),1,1,2,0.4,low,N+(1-2),T2_>2-≤5cm
+345,63,3.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),0,N0,0,0,2,0.4,low,N0,T2_>2-≤5cm
+346,46,3.0,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.3,Luminal B,2,N+(1-2),1,1,1,0.3,low,N+(1-2),T2_>2-≤5cm
+347,45,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,1.0,Axillary lymph node dissection,0.05,Luminal A,1,N+(1-2),1,1,1,0.05,low,N+(1-2),T1_≤2cm
+348,39,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,1,N+(1-2),1,1,1,0.2,low,N+(1-2),T1_≤2cm
+349,57,1.6,Invasive ductal carcinoma,Negative,Negative,Negative,1+,2.0,Axillary lymph node dissection,0.1,Triple negative,0,N0,0,0,0,0.1,low,N0,T1_≤2cm
+350,71,4.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T2_>2-≤5cm
+351,69,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+352,51,1.3,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.15,HER2(+),0,N0,1,1,2,0.15,low,N0,T1_≤2cm
+353,43,4.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,0,0,2,0.3,low,N0,T2_>2-≤5cm
+354,50,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.03,Luminal A,0,N0,1,1,0,0.03,low,N0,T1_≤2cm
+355,50,4.5,Invasive ductal carcinoma,Negative,Negative,Positive,2+,3.0,Axillary lymph node dissection,0.8,HER2(+),0,N0,0,0,1,0.8,low,N0,T2_>2-≤5cm
+356,68,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Sentinel lymph node biopsy,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T1_≤2cm
+357,61,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,1,N+(1-2),1,1,1,0.15,low,N+(1-2),T2_>2-≤5cm
+358,46,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.4,Luminal B,6,N+(>2),1,1,1,0.4,low,N+(>2),T1_≤2cm
+359,50,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Sentinel lymph node biopsy,0.9,Triple negative,4,N+(>2),0,0,0,0.9,low,N+(>2),T1_≤2cm
+360,57,1.0,Invasive ductal carcinoma,Positive,Negative,Negative,2+,3.0,Axillary lymph node dissection,30-40%,Luminal B,0,N0,1,0,1,35.0,high,N0,T1_≤2cm
+361,42,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T2_>2-≤5cm
+362,50,3.5,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.3,Triple negative,2,N+(1-2),0,0,0,0.3,low,N+(1-2),T2_>2-≤5cm
+363,57,3.0,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+364,66,1.7,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),0,N0,1,1,2,0.5,low,N0,T1_≤2cm
+365,35,2.2,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.5,Luminal B,3,N+(>2),1,1,0,0.5,low,N+(>2),T2_>2-≤5cm
+366,57,2.3,Invasive lobular carcinoma,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.2,Luminal B,2,N+(1-2),1,1,1,0.2,low,N+(1-2),T2_>2-≤5cm
+367,44,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+368,63,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,2,N+(1-2),1,1,0,0.15,low,N+(1-2),T1_≤2cm
+369,45,2.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.4,Triple negative,0,N0,0,0,0,0.4,low,N0,T2_>2-≤5cm
+370,49,3.0,Other type,Negative,Negative,Negative,0,,Axillary lymph node dissection,0.5,Triple negative,0,N0,0,0,0,0.5,low,N0,T2_>2-≤5cm
+371,69,3.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),0,N0,0,0,2,0.4,low,N0,T2_>2-≤5cm
+372,75,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),2,N+(1-2),1,1,2,0.3,low,N+(1-2),T2_>2-≤5cm
+373,53,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.3,Luminal B,7,N+(>2),1,1,0,0.3,low,N+(>2),T2_>2-≤5cm
+374,66,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.8,Triple negative,2,N+(1-2),0,0,0,0.8,low,N+(1-2),T1_≤2cm
+375,51,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,3,N+(>2),1,1,1,0.3,low,N+(>2),T1_≤2cm
+376,54,1.5,Invasive lobular carcinoma,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.09,Luminal A,0,N0,1,1,1,0.09,low,N0,T1_≤2cm
+377,73,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T2_>2-≤5cm
+378,43,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.4,Luminal B,0,N0,1,1,0,0.4,low,N0,T1_≤2cm
+379,57,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+380,47,2.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,2.0,Axillary lymph node dissection,0.4,Triple negative,0,N0,0,0,0,0.4,low,N0,T2_>2-≤5cm
+381,57,3.5,Invasive ductal carcinoma,Positive,Negative,Negative,2+,,Axillary lymph node dissection,0.1,Luminal A,5,N+(>2),1,0,1,0.1,low,N+(>2),T2_>2-≤5cm
+382,50,1.2,Invasive ductal carcinoma,Negative,Positive,Positive,3+,3.0,Sentinel lymph node biopsy,0.7,HER2(+),0,N0,0,1,2,0.7,low,N0,T1_≤2cm
+383,53,2.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.4,HER2(+),8,N+(>2),0,0,2,0.4,low,N+(>2),T2_>2-≤5cm
+384,48,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,3.0,Axillary lymph node dissection,0.8,Luminal B,0,N0,1,1,0,0.8,low,N0,T2_>2-≤5cm
+385,74,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,15-20%,Luminal B,0,N0,1,1,1,17.5,intermediate,N0,T1_≤2cm
+386,69,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.5,Luminal B,1,N+(1-2),1,1,0,0.5,low,N+(1-2),T1_≤2cm
+387,51,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.8,Triple negative,1,N+(1-2),0,0,0,0.8,low,N+(1-2),T1_≤2cm
+388,63,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.25,Luminal B,0,N0,1,1,1,0.25,low,N0,T1_≤2cm
+389,51,4.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.6,HER2(+),6,N+(>2),1,1,2,0.6,low,N+(>2),T2_>2-≤5cm
+390,47,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,1.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+391,51,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.2,Luminal B,5,N+(>2),1,1,0,0.2,low,N+(>2),T2_>2-≤5cm
+392,41,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,1+,2.0,Axillary lymph node dissection,0.6,Triple negative,0,N0,0,0,0,0.6,low,N0,T1_≤2cm
+393,43,3.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),9,N+(>2),0,0,2,0.4,low,N+(>2),T2_>2-≤5cm
+394,40,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.6,Luminal B,0,N0,1,1,0,0.6,low,N0,T1_≤2cm
+395,52,0.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.4,Luminal B,0,N0,1,1,1,0.4,low,N0,T1_≤2cm
+396,50,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.6,Triple negative,0,N0,0,0,0,0.6,low,N0,T1_≤2cm
+397,59,1.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,0,0,2,0.3,low,N0,T1_≤2cm
+398,61,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.7,Luminal B,7,N+(>2),1,1,1,0.7,low,N+(>2),T2_>2-≤5cm
+399,57,1.2,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.6,Triple negative,0,N0,0,0,0,0.6,low,N0,T1_≤2cm
+400,48,2.5,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.2,Triple negative,0,N0,0,0,1,0.2,low,N0,T2_>2-≤5cm
+401,35,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.8,Triple negative,0,N0,0,0,0,0.8,low,N0,T1_≤2cm
+402,56,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,1,N+(1-2),1,1,0,0.3,low,N+(1-2),T2_>2-≤5cm
+403,62,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,3,N+(>2),1,1,0,0.3,low,N+(>2),T1_≤2cm
+404,44,1.2,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),2,N+(1-2),1,1,2,0.4,low,N+(1-2),T1_≤2cm
+405,38,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,1.0,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,1,0.05,low,N0,T1_≤2cm
+406,62,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.4,Luminal B,0,N0,1,1,0,0.4,low,N0,T1_≤2cm
+407,62,1.1,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T1_≤2cm
+408,71,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,7,N+(>2),1,1,1,0.15,low,N+(>2),T2_>2-≤5cm
+409,52,4.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,3.0,Axillary lymph node dissection,0.4,Luminal B,4,N+(>2),1,1,0,0.4,low,N+(>2),T2_>2-≤5cm
+410,63,1.0,Invasive ductal carcinoma,Negative,Negative,Negative,1+,2.0,Axillary lymph node dissection,0.2,Triple negative,0,N0,0,0,0,0.2,low,N0,T1_≤2cm
+411,51,4.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.6,HER2(+),0,N0,1,1,2,0.6,low,N0,T2_>2-≤5cm
+412,46,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),0,N0,1,1,2,0.4,low,N0,T2_>2-≤5cm
+413,70,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Sentinel lymph node biopsy,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T1_≤2cm
+414,73,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T2_>2-≤5cm
+415,78,2.2,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+416,45,1.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.15,HER2(+),0,N0,1,1,2,0.15,low,N0,T1_≤2cm
+417,48,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.15,HER2(+),1,N+(1-2),1,1,2,0.15,low,N+(1-2),T1_≤2cm
+418,38,0.8,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+419,65,2.8,Invasive ductal carcinoma,Positive,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.6,Luminal B,0,N0,1,0,0,0.6,low,N0,T2_>2-≤5cm
+420,59,3.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.8,Luminal A,1,N+(1-2),0,0,1,0.8,low,N+(1-2),T2_>2-≤5cm
+421,67,1.0,Other type,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T1_≤2cm
+422,50,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+423,76,2.3,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.6,Triple negative,0,N0,0,0,0,0.6,low,N0,T2_>2-≤5cm
+424,59,4.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.4,Triple negative,0,N0,0,0,0,0.4,low,N0,T2_>2-≤5cm
+425,75,4.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.8,Triple negative,1,N+(1-2),0,0,0,0.8,low,N+(1-2),T2_>2-≤5cm
+426,57,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+427,80,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,0,0.15,low,N0,T2_>2-≤5cm
+428,77,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.2,Luminal B,2,N+(1-2),1,1,0,0.2,low,N+(1-2),T1_≤2cm
+429,67,3.0,Invasive lobular carcinoma,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.4,Luminal B,0,N0,1,1,0,0.4,low,N0,T2_>2-≤5cm
+430,48,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+431,57,2.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,1,N+(1-2),1,1,1,0.2,low,N+(1-2),T2_>2-≤5cm
+432,69,3.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.3,Triple negative,0,N0,0,0,1,0.3,low,N0,T2_>2-≤5cm
+433,50,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T1_≤2cm
+434,42,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,30-40%,Luminal B,1,N+(1-2),1,1,0,35.0,high,N+(1-2),T1_≤2cm
+435,71,4.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.2,Luminal B,1,N+(1-2),1,1,1,0.2,low,N+(1-2),T2_>2-≤5cm
+436,64,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,＜3%,Luminal A,0,N0,1,1,0,,,N0,T1_≤2cm
+437,83,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+438,31,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,6,N+(>2),1,1,0,0.2,low,N+(>2),T1_≤2cm
+439,49,1.7,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.7,HER2(+),0,N0,1,1,2,0.7,low,N0,T1_≤2cm
+440,43,2.3,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.6,Triple negative,0,N0,0,0,0,0.6,low,N0,T2_>2-≤5cm
+441,51,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T2_>2-≤5cm
+442,53,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.7,Luminal B,4,N+(>2),1,1,1,0.7,low,N+(>2),T2_>2-≤5cm
+443,43,3.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,40-60%,Triple negative,6,N+(>2),0,0,0,50.0,high,N+(>2),T2_>2-≤5cm
+444,36,2.0,Invasive ductal carcinoma,Negative,Positive,Positive,2+,3.0,Axillary lymph node dissection,0.8,HER2(+),0,N0,0,1,1,0.8,low,N0,T1_≤2cm
+445,76,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,1,N+(1-2),1,1,1,0.15,low,N+(1-2),T1_≤2cm
+446,62,1.3,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.4,Luminal B,0,N0,1,1,0,0.4,low,N0,T1_≤2cm
+447,56,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.25,Luminal B,0,N0,1,1,1,0.25,low,N0,T1_≤2cm
+448,58,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,3,N+(>2),1,1,1,0.1,low,N+(>2),T1_≤2cm
+449,52,0.9,Invasive ductal carcinoma,Negative,Negative,Negative,2+,1.0,Axillary lymph node dissection,0.05,Luminal A,0,N0,0,0,1,0.05,low,N0,T1_≤2cm
+450,49,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,2,N+(1-2),1,1,1,0.2,low,N+(1-2),T1_≤2cm
+451,49,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T2_>2-≤5cm
+452,65,1.2,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.15,HER2(+),0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+453,52,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+454,56,2.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Sentinel lymph node biopsy,0.4,Triple negative,0,N0,0,0,0,0.4,low,N0,T2_>2-≤5cm
+455,52,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.15,Luminal B,0,N0,1,1,0,0.15,low,N0,T1_≤2cm
+456,46,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,3,N+(>2),1,1,0,0.15,low,N+(>2),T1_≤2cm
+457,39,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,1.0,Axillary lymph node dissection,0.01,HER2(+),2,N+(1-2),1,1,2,0.01,low,N+(1-2),T1_≤2cm
+458,62,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.5,Luminal B,1,N+(1-2),1,1,0,0.5,low,N+(1-2),T1_≤2cm
+459,60,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+460,43,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.15,Luminal B,1,N+(1-2),1,1,1,0.15,low,N+(1-2),T1_≤2cm
+461,47,4.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,5,N+(>2),1,1,0,0.1,low,N+(>2),T2_>2-≤5cm
+462,66,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,1.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+463,62,2.8,Other type,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T2_>2-≤5cm
+464,69,4.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,40-50%,HER2(+),2,N+(1-2),1,1,2,45.0,high,N+(1-2),T2_>2-≤5cm
+465,56,1.7,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,2,0.3,low,N0,T1_≤2cm
+466,80,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.5,Triple negative,0,N0,0,0,1,0.5,low,N0,T1_≤2cm
+467,43,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.25,Luminal B,0,N0,1,1,0,0.25,low,N0,T1_≤2cm
+468,63,3.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.15,HER2(+),0,N0,0,0,2,0.15,low,N0,T2_>2-≤5cm
+469,57,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.7,Luminal B,0,N0,1,1,0,0.7,low,N0,T1_≤2cm
+470,48,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,0.4,HER2(+),0,N0,1,1,1,0.4,low,N0,T2_>2-≤5cm
+471,48,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,＞30%,Luminal B,3,N+(>2),1,1,0,,,N+(>2),T2_>2-≤5cm
+472,66,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,3.0,Axillary lymph node dissection,0.6,Luminal B,4,N+(>2),1,1,0,0.6,low,N+(>2),T2_>2-≤5cm
+473,75,2.3,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+474,51,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+475,65,1.8,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.8,Triple negative,0,N0,0,0,0,0.8,low,N0,T1_≤2cm
+476,62,2.0,Invasive ductal carcinoma,Positive,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.6,HER2(+),0,N0,1,0,2,0.6,low,N0,T1_≤2cm
+477,50,1.7,Invasive ductal carcinoma,Positive,Positive,Negative,2+,1.0,Axillary lymph node dissection,0.02,Luminal A,0,N0,1,1,1,0.02,low,N0,T1_≤2cm
+478,65,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,3,N+(>2),1,1,1,0.2,low,N+(>2),T2_>2-≤5cm
+479,59,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+480,73,4.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+481,53,1.7,Invasive ductal carcinoma,Positive,Negative,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal B,3,N+(>2),1,0,1,0.15,low,N+(>2),T1_≤2cm
+482,61,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,4,N+(>2),1,1,1,0.15,low,N+(>2),T1_≤2cm
+483,70,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T1_≤2cm
+484,75,2.7,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,30-40%,Luminal B,3,N+(>2),1,1,1,35.0,high,N+(>2),T2_>2-≤5cm
+485,51,3.5,Invasive ductal carcinoma,Positive,Negative,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,8,N+(>2),1,0,1,0.2,low,N+(>2),T2_>2-≤5cm
+486,55,3.5,Invasive ductal carcinoma,Positive,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.1,HER2(+),0,N0,1,0,2,0.1,low,N0,T2_>2-≤5cm
+487,60,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.5,Luminal B,0,N0,1,1,1,0.5,low,N0,T1_≤2cm
+488,63,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+489,45,3.5,Invasive lobular carcinoma,Positive,Negative,Negative,1+,,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,0,0,0.05,low,N0,T2_>2-≤5cm
+490,46,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.1,HER2(+),1,N+(1-2),1,1,1,0.1,low,N+(1-2),T2_>2-≤5cm
+491,51,2.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.8,Triple negative,0,N0,0,0,0,0.8,low,N0,T2_>2-≤5cm
+492,35,3.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),4,N+(>2),0,0,2,0.5,low,N+(>2),T2_>2-≤5cm
+493,57,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,1.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+494,52,1.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.2,HER2(+),0,N0,1,1,2,0.2,low,N0,T1_≤2cm
+495,54,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.4,Luminal B,3,N+(>2),1,1,1,0.4,low,N+(>2),T1_≤2cm
+496,79,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+497,59,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.1,HER2(+),8,N+(>2),1,1,2,0.1,low,N+(>2),T1_≤2cm
+498,58,2.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),0,N0,0,0,2,0.4,low,N0,T1_≤2cm
+499,84,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,1.0,Axillary lymph node dissection,0.5,Luminal B,5,N+(>2),1,1,1,0.5,low,N+(>2),T1_≤2cm
+500,53,3.5,Invasive ductal carcinoma,Negative,Negative,Positive,2+,3.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,0,0,1,0.3,low,N0,T2_>2-≤5cm
+501,66,0.9,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,3,N+(>2),1,1,0,0.1,low,N+(>2),T1_≤2cm
+502,66,3.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),4,N+(>2),1,1,2,0.5,low,N+(>2),T2_>2-≤5cm
+503,77,1.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,2,0.3,low,N0,T1_≤2cm
+504,38,2.5,Invasive ductal carcinoma,Positive,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.2,HER2(+),1,N+(1-2),1,0,2,0.2,low,N+(1-2),T2_>2-≤5cm
+505,49,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,1.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+506,46,4.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),1,N+(1-2),0,0,2,0.3,low,N+(1-2),T2_>2-≤5cm
+507,51,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.5,Luminal B,1,N+(1-2),1,1,1,0.5,low,N+(1-2),T2_>2-≤5cm
+508,71,1.3,Invasive ductal carcinoma,Positive,Positive,Positive,2+,1.0,Axillary lymph node dissection,60-70%,HER2(+),0,N0,1,1,1,65.0,high,N0,T1_≤2cm
+509,74,4.5,Other type,Negative,Negative,Positive,2+,,Axillary lymph node dissection,0.6,HER2(+),3,N+(>2),0,0,1,0.6,low,N+(>2),T2_>2-≤5cm
+510,39,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,1.0,Axillary lymph node dissection,0.1,HER2(+),3,N+(>2),1,1,1,0.1,low,N+(>2),T1_≤2cm
+511,44,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T1_≤2cm
+512,51,2.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.7,HER2(+),0,N0,0,0,2,0.7,low,N0,T1_≤2cm
+513,47,1.5,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+514,82,2.4,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.6,Luminal B,1,N+(1-2),1,1,0,0.6,low,N+(1-2),T2_>2-≤5cm
+515,58,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),0,N0,1,1,2,0.5,low,N0,T2_>2-≤5cm
+516,51,2.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal B,1,N+(1-2),1,1,1,0.15,low,N+(1-2),T2_>2-≤5cm
+517,60,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.7,Luminal B,0,N0,1,1,0,0.7,low,N0,T1_≤2cm
+518,61,1.8,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.6,HER2(+),0,N0,0,0,2,0.6,low,N0,T1_≤2cm
+519,62,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T2_>2-≤5cm
+520,78,2.2,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T2_>2-≤5cm
+521,64,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+522,42,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.6,HER2(+),0,N0,1,1,2,0.6,low,N0,T1_≤2cm
+523,47,2.2,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,30-40%,HER2(+),5,N+(>2),1,1,2,35.0,high,N+(>2),T2_>2-≤5cm
+524,40,2.8,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.9,Triple negative,0,N0,0,0,0,0.9,low,N0,T2_>2-≤5cm
+525,22,3.5,Other type,Positive,Positive,Negative,2+,,Sentinel lymph node biopsy,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T2_>2-≤5cm
+526,42,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal B,2,N+(1-2),1,1,1,0.15,low,N+(1-2),T1_≤2cm
+527,43,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,＞90%,HER2(+),2,N+(1-2),1,1,1,,,N+(1-2),T2_>2-≤5cm
+528,42,2.2,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.2,HER2(+),0,N0,0,0,2,0.2,low,N0,T2_>2-≤5cm
+529,70,2.7,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.6,Luminal B,0,N0,1,1,1,0.6,low,N0,T2_>2-≤5cm
+530,47,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.5,Luminal B,0,N0,1,1,0,0.5,low,N0,T1_≤2cm
+531,45,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.1,Luminal A,5,N+(>2),1,1,1,0.1,low,N+(>2),T1_≤2cm
+532,65,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,15-20%,Luminal B,0,N0,1,1,0,17.5,intermediate,N0,T2_>2-≤5cm
+533,48,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.5,Luminal B,6,N+(>2),1,1,1,0.5,low,N+(>2),T2_>2-≤5cm
+534,58,2.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.4,Luminal B,0,N0,1,1,1,0.4,low,N0,T2_>2-≤5cm
+535,54,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+536,50,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,7,N+(>2),1,1,0,0.3,low,N+(>2),T2_>2-≤5cm
+537,57,1.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.15,HER2(+),4,N+(>2),1,1,2,0.15,low,N+(>2),T1_≤2cm
+538,60,1.9,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+539,74,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,20-30%,Luminal B,1,N+(1-2),1,1,0,25.0,high,N+(1-2),T1_≤2cm
+540,59,1.6,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),1,N+(1-2),0,0,2,0.4,low,N+(1-2),T1_≤2cm
+541,79,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T2_>2-≤5cm
+542,61,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.18,Luminal B,2,N+(1-2),1,1,1,0.18,low,N+(1-2),T1_≤2cm
+543,63,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T2_>2-≤5cm
+544,43,1.6,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Sentinel lymph node biopsy,0.5,HER2(+),0,N0,1,1,2,0.5,low,N0,T1_≤2cm
+545,38,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal B,1,N+(1-2),1,1,0,0.15,low,N+(1-2),T2_>2-≤5cm
+546,68,1.0,Invasive ductal carcinoma,Positive,Negative,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,0,0,0.1,low,N0,T1_≤2cm
+547,50,2.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),2,N+(1-2),0,0,2,0.4,low,N+(1-2),T2_>2-≤5cm
+548,51,1.4,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+549,62,2.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.2,Luminal B,3,N+(>2),1,1,1,0.2,low,N+(>2),T2_>2-≤5cm
+550,57,2.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T2_>2-≤5cm
+551,52,2.0,Invasive lobular carcinoma,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.2,Luminal B,2,N+(1-2),1,1,0,0.2,low,N+(1-2),T1_≤2cm
+552,55,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.5,Luminal B,0,N0,1,1,1,0.5,low,N0,T1_≤2cm
+553,53,1.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.1,HER2(+),7,N+(>2),0,0,2,0.1,low,N+(>2),T1_≤2cm
+554,60,1.5,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,1,0.05,low,N0,T1_≤2cm
+555,30,2.3,Invasive ductal carcinoma,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.8,Luminal B,2,N+(1-2),1,1,1,0.8,low,N+(1-2),T2_>2-≤5cm
+556,79,1.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.6,HER2(+),0,N0,0,0,2,0.6,low,N0,T1_≤2cm
+557,72,1.6,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T1_≤2cm
+558,76,1.8,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.4,HER2(+),0,N0,1,1,1,0.4,low,N0,T1_≤2cm
+559,69,1.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),1,N+(1-2),0,0,2,0.3,low,N+(1-2),T1_≤2cm
+560,61,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.7,Luminal B,0,N0,1,1,1,0.7,low,N0,T2_>2-≤5cm
+561,56,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+562,56,1.7,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.2,Luminal B,2,N+(1-2),1,1,1,0.2,low,N+(1-2),T1_≤2cm
+563,41,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.5,Luminal B,3,N+(>2),1,1,0,0.5,low,N+(>2),T2_>2-≤5cm
+564,57,2.5,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.4,Luminal B,1,N+(1-2),1,1,1,0.4,low,N+(1-2),T2_>2-≤5cm
+565,40,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,0,3.0,Axillary lymph node dissection,40-50%,Luminal B,0,N0,1,1,0,45.0,high,N0,T1_≤2cm
+566,62,4.0,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.7,Triple negative,0,N0,0,0,0,0.7,low,N0,T2_>2-≤5cm
+567,64,2.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.7,Luminal B,0,N0,1,1,1,0.7,low,N0,T2_>2-≤5cm
+568,43,1.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,40-60%,HER2(+),0,N0,0,0,2,50.0,high,N0,T1_≤2cm
+569,51,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.5,HER2(+),0,N0,1,1,1,0.5,low,N0,T2_>2-≤5cm
+570,66,1.7,Invasive ductal carcinoma,Positive,Positive,Positive,2+,,Axillary lymph node dissection,0.5,HER2(+),0,N0,1,1,1,0.5,low,N0,T1_≤2cm
+571,47,2.5,Invasive ductal carcinoma,Negative,Negative,Positive,2+,3.0,Axillary lymph node dissection,30-40%,HER2(+),3,N+(>2),0,0,1,35.0,high,N+(>2),T2_>2-≤5cm
+572,75,4.0,Invasive ductal carcinoma,Positive,Negative,Positive,2+,3.0,Axillary lymph node dissection,0.5,HER2(+),5,N+(>2),1,0,1,0.5,low,N+(>2),T2_>2-≤5cm
+573,68,1.5,Invasive ductal carcinoma,Positive,Negative,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,0,0,0.15,low,N0,T1_≤2cm
+574,47,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,3,N+(>2),1,1,0,0.1,low,N+(>2),T2_>2-≤5cm
+575,61,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.5,Triple negative,3,N+(>2),0,0,0,0.5,low,N+(>2),T1_≤2cm
+576,51,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.2,Luminal B,2,N+(1-2),1,1,1,0.2,low,N+(1-2),T1_≤2cm
+577,62,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,1,N+(1-2),1,1,1,0.1,low,N+(1-2),T1_≤2cm
+578,71,1.2,Invasive lobular carcinoma,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+579,43,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+580,36,1.1,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+581,56,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T2_>2-≤5cm
+582,47,1.8,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.8,Triple negative,0,N0,0,0,0,0.8,low,N0,T1_≤2cm
+583,65,1.2,Invasive ductal carcinoma,Positive,Positive,Positive,2+,,Axillary lymph node dissection,0.15,HER2(+),4,N+(>2),1,1,1,0.15,low,N+(>2),T1_≤2cm
+584,49,2.5,Invasive ductal carcinoma,Positive,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),0,N0,1,0,2,0.5,low,N0,T2_>2-≤5cm
+585,54,1.3,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+586,66,1.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),8,N+(>2),1,1,2,0.3,low,N+(>2),T1_≤2cm
+587,59,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.1,Triple negative,0,N0,0,0,1,0.1,low,N0,T1_≤2cm
+588,48,3.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.5,Triple negative,1,N+(1-2),0,0,1,0.5,low,N+(1-2),T2_>2-≤5cm
+589,48,2.8,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.2,Luminal B,9,N+(>2),1,1,0,0.2,low,N+(>2),T2_>2-≤5cm
+590,76,2.6,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.3,Triple negative,0,N0,0,0,0,0.3,low,N0,T2_>2-≤5cm
+591,77,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,0,0.15,low,N0,T1_≤2cm
+592,83,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,3,N+(>2),1,1,1,0.15,low,N+(>2),T1_≤2cm
+593,45,2.2,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.3,Luminal B,1,N+(1-2),1,1,1,0.3,low,N+(1-2),T2_>2-≤5cm
+594,66,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.25,Luminal B,1,N+(1-2),1,1,1,0.25,low,N+(1-2),T1_≤2cm
+595,52,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,1.0,Axillary lymph node dissection,0.1,Luminal A,1,N+(1-2),1,1,0,0.1,low,N+(1-2),T1_≤2cm
+596,51,2.7,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T2_>2-≤5cm
+597,66,2.3,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.3,Luminal B,8,N+(>2),1,1,1,0.3,low,N+(>2),T2_>2-≤5cm
+598,54,1.6,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.5,Luminal B,1,N+(1-2),1,1,1,0.5,low,N+(1-2),T1_≤2cm
+599,64,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.4,Luminal B,1,N+(1-2),1,1,1,0.4,low,N+(1-2),T2_>2-≤5cm
+600,46,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,1,N+(1-2),1,1,0,0.1,low,N+(1-2),T2_>2-≤5cm
+601,62,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.15,Triple negative,0,N0,0,0,0,0.15,low,N0,T1_≤2cm
+602,44,2.5,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,1,0.05,low,N0,T2_>2-≤5cm
+603,41,3.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.9,HER2(+),1,N+(1-2),0,0,2,0.9,low,N+(1-2),T2_>2-≤5cm
+604,33,2.3,Other type,Negative,Negative,Negative,0,,Axillary lymph node dissection,0.9,Triple negative,2,N+(1-2),0,0,0,0.9,low,N+(1-2),T2_>2-≤5cm
+605,56,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.5,Luminal B,5,N+(>2),1,1,0,0.5,low,N+(>2),T2_>2-≤5cm
+606,61,2.2,Invasive ductal carcinoma,Negative,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.3,Triple negative,2,N+(1-2),0,1,1,0.3,low,N+(1-2),T2_>2-≤5cm
+607,76,2.0,Other type,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+608,36,2.8,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,30-40%,Luminal B,0,N0,1,1,0,35.0,high,N0,T2_>2-≤5cm
+609,46,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T2_>2-≤5cm
+610,73,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,0,0.15,low,N0,T1_≤2cm
+611,29,1.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.4,HER2(+),2,N+(1-2),1,1,2,0.4,low,N+(1-2),T1_≤2cm
+612,60,3.5,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,1,0.3,low,N0,T2_>2-≤5cm
+613,47,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,1.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T2_>2-≤5cm
+614,46,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,＞60%,Triple negative,0,N0,0,0,0,,,N0,T1_≤2cm
+615,47,2.2,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),1,N+(1-2),1,1,2,0.3,low,N+(1-2),T2_>2-≤5cm
+616,53,1.9,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+617,48,1.5,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,15-20%,HER2(+),0,N0,1,1,1,17.5,intermediate,N0,T1_≤2cm
+618,63,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,＜3%,HER2(+),3,N+(>2),1,1,1,,,N+(>2),T2_>2-≤5cm
+619,90,3.5,Invasive ductal carcinoma,Negative,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.2,Luminal B,1,N+(1-2),0,1,1,0.2,low,N+(1-2),T2_>2-≤5cm
+620,45,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.18,Luminal B,0,N0,1,1,1,0.18,low,N0,T2_>2-≤5cm
+621,79,1.4,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.7,HER2(+),0,N0,0,0,2,0.7,low,N0,T1_≤2cm
+622,76,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.07,Luminal A,8,N+(>2),1,1,0,0.07,low,N+(>2),T1_≤2cm
+623,38,4.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.8,Luminal A,0,N0,0,0,1,0.8,low,N0,T2_>2-≤5cm
+624,55,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,3,N+(>2),1,1,1,0.2,low,N+(>2),T2_>2-≤5cm
+625,73,4.0,Invasive ductal carcinoma,Positive,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.35,HER2(+),1,N+(1-2),1,0,2,0.35,low,N+(1-2),T2_>2-≤5cm
+626,58,2.8,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.3,Luminal B,2,N+(1-2),1,1,0,0.3,low,N+(1-2),T2_>2-≤5cm
+627,46,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Sentinel lymph node biopsy,0.9,Triple negative,0,N0,0,0,0,0.9,low,N0,T1_≤2cm
+628,62,1.0,Invasive lobular carcinoma,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,0,0.05,low,N0,T1_≤2cm
+629,52,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.3,Luminal B,2,N+(1-2),1,1,1,0.3,low,N+(1-2),T1_≤2cm
+630,83,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,1.0,Axillary lymph node dissection,0.15,Luminal A,1,N+(1-2),1,1,0,0.15,low,N+(1-2),T1_≤2cm
+631,50,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,7,N+(>2),1,1,0,0.2,low,N+(>2),T1_≤2cm
+632,62,1.3,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,15-20%,Luminal B,1,N+(1-2),1,1,1,17.5,intermediate,N+(1-2),T1_≤2cm
+633,67,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,0,1.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T1_≤2cm
+634,59,4.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.2,Luminal B,1,N+(1-2),1,1,1,0.2,low,N+(1-2),T2_>2-≤5cm
+635,48,4.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),0,N0,0,0,2,0.5,low,N0,T2_>2-≤5cm
+636,87,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.7,HER2(+),1,N+(1-2),1,1,2,0.7,low,N+(1-2),T2_>2-≤5cm
+637,73,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.4,Luminal B,1,N+(1-2),1,1,0,0.4,low,N+(1-2),T1_≤2cm
+638,37,3.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.6,HER2(+),2,N+(1-2),1,1,2,0.6,low,N+(1-2),T2_>2-≤5cm
+639,82,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.15,Luminal A,7,N+(>2),1,1,1,0.15,low,N+(>2),T1_≤2cm
+640,67,3.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.2,HER2(+),0,N0,0,0,2,0.2,low,N0,T2_>2-≤5cm
+641,81,3.5,Other type,Negative,Negative,Negative,0,,Axillary lymph node dissection,40-50%,Triple negative,0,N0,0,0,0,45.0,high,N0,T2_>2-≤5cm
+642,56,3.0,Invasive ductal carcinoma,Positive,Negative,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,5,N+(>2),1,0,1,0.1,low,N+(>2),T2_>2-≤5cm
+643,40,1.7,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,5,N+(>2),1,1,0,0.15,low,N+(>2),T1_≤2cm
+644,33,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+645,83,2.5,Invasive lobular carcinoma,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.15,Luminal B,0,N0,1,1,0,0.15,low,N0,T2_>2-≤5cm
+646,53,1.8,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.2,HER2(+),0,N0,0,0,2,0.2,low,N0,T1_≤2cm
+647,66,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,15-20%,Luminal B,0,N0,1,1,1,17.5,intermediate,N0,T1_≤2cm
+648,49,0.9,Invasive ductal carcinoma,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.1,Luminal A,1,N+(1-2),1,1,0,0.1,low,N+(1-2),T1_≤2cm
+649,49,2.1,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.2,HER2(+),1,N+(1-2),1,1,2,0.2,low,N+(1-2),T2_>2-≤5cm
+650,44,2.5,Invasive lobular carcinoma,Positive,Negative,Positive,2+,,Sentinel lymph node biopsy,0.7,HER2(+),0,N0,1,0,1,0.7,low,N0,T2_>2-≤5cm
+651,68,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T1_≤2cm
+652,46,2.7,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,0.5,HER2(+),0,N0,1,1,1,0.5,low,N0,T2_>2-≤5cm
+653,39,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal B,1,N+(1-2),1,1,1,0.15,low,N+(1-2),T1_≤2cm
+654,61,2.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T2_>2-≤5cm
+655,45,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T2_>2-≤5cm
+656,53,2.5,Other type,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.4,Luminal B,1,N+(1-2),1,1,0,0.4,low,N+(1-2),T2_>2-≤5cm
+657,47,1.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.15,HER2(+),0,N0,1,1,2,0.15,low,N0,T1_≤2cm
+658,32,1.5,Invasive ductal carcinoma,Negative,Positive,Negative,0,3.0,Sentinel lymph node biopsy,0.6,Triple negative,0,N0,0,1,0,0.6,low,N0,T1_≤2cm
+659,63,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+660,68,2.2,Other type,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T2_>2-≤5cm
+661,54,3.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,0,0,2,0.3,low,N0,T2_>2-≤5cm
+662,59,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T2_>2-≤5cm
+663,58,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,4,N+(>2),1,1,0,0.2,low,N+(>2),T2_>2-≤5cm
+664,67,3.0,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.2,Luminal B,4,N+(>2),1,1,1,0.2,low,N+(>2),T2_>2-≤5cm
+665,64,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T1_≤2cm
+666,55,2.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T2_>2-≤5cm
+667,68,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.4,Luminal B,0,N0,1,1,1,0.4,low,N0,T2_>2-≤5cm
+668,30,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.5,Luminal B,0,N0,1,1,1,0.5,low,N0,T1_≤2cm
+669,37,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.15,Luminal A,1,N+(1-2),1,1,1,0.15,low,N+(1-2),T1_≤2cm
+670,60,1.0,Other type,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T1_≤2cm
+671,65,2.2,Invasive ductal carcinoma,Positive,Positive,Negative,1+,1.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T2_>2-≤5cm
+672,65,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+673,54,2.5,Invasive ductal carcinoma,Negative,Negative,Negative,0,2.0,Axillary lymph node dissection,0.8,Triple negative,0,N0,0,0,0,0.8,low,N0,T2_>2-≤5cm
+674,44,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,0,0.15,low,N0,T1_≤2cm
+675,56,1.7,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.2,HER2(+),0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+676,57,1.5,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.5,Luminal B,0,N0,1,1,1,0.5,low,N0,T1_≤2cm
+677,79,2.2,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.1,Luminal A,2,N+(1-2),1,1,1,0.1,low,N+(1-2),T2_>2-≤5cm
+678,71,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+679,70,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+680,39,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Sentinel lymph node biopsy,0.3,Luminal B,1,N+(1-2),1,1,0,0.3,low,N+(1-2),T2_>2-≤5cm
+681,60,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,2.0,Axillary lymph node dissection,0.15,Triple negative,0,N0,0,0,1,0.15,low,N0,T1_≤2cm
+682,75,2.2,Invasive ductal carcinoma,Negative,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.2,HER2(+),0,N0,0,1,2,0.2,low,N0,T2_>2-≤5cm
+683,60,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,1,0.3,low,N0,T2_>2-≤5cm
+684,53,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,1,0.3,low,N0,T2_>2-≤5cm
+685,60,2.8,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.1,HER2(+),2,N+(1-2),1,1,2,0.1,low,N+(1-2),T2_>2-≤5cm
+686,62,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,＜10%,Luminal A,1,N+(1-2),1,1,0,,,N+(1-2),T2_>2-≤5cm
+687,69,3.0,Invasive ductal carcinoma,Negative,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),5,N+(>2),0,1,2,0.5,low,N+(>2),T2_>2-≤5cm
+688,74,0.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+689,29,1.8,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.2,HER2(+),0,N0,1,1,2,0.2,low,N0,T1_≤2cm
+690,70,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+691,76,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,1,N+(1-2),1,1,1,0.1,low,N+(1-2),T1_≤2cm
+692,57,2.0,Invasive ductal carcinoma,Negative,Negative,Positive,2+,3.0,Axillary lymph node dissection,0.8,HER2(+),0,N0,0,0,1,0.8,low,N0,T1_≤2cm
+693,63,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.6,HER2(+),0,N0,1,1,2,0.6,low,N0,T1_≤2cm
+694,48,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.3,Luminal B,5,N+(>2),1,1,1,0.3,low,N+(>2),T2_>2-≤5cm
+695,50,3.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.6,HER2(+),8,N+(>2),0,0,2,0.6,low,N+(>2),T2_>2-≤5cm
+696,80,1.3,Other type,Negative,Negative,Positive,2+,,Axillary lymph node dissection,0.3,HER2(+),0,N0,0,0,1,0.3,low,N0,T1_≤2cm
+697,65,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,2,N+(1-2),1,1,1,0.1,low,N+(1-2),T2_>2-≤5cm
+698,51,1.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.5,HER2(+),0,N0,1,1,2,0.5,low,N0,T1_≤2cm
+699,55,1.5,Other type,Positive,Positive,Negative,2+,,Sentinel lymph node biopsy,0.4,Luminal B,1,N+(1-2),1,1,1,0.4,low,N+(1-2),T1_≤2cm
+700,65,1.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),5,N+(>2),1,1,2,0.3,low,N+(>2),T1_≤2cm
+701,53,1.5,Invasive lobular carcinoma,Positive,Positive,Negative,1+,,Sentinel lymph node biopsy,0.12,Luminal A,0,N0,1,1,0,0.12,low,N0,T1_≤2cm
+702,46,1.2,Invasive ductal carcinoma,Positive,Positive,Positive,2+,1.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+703,72,2.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),5,N+(>2),0,0,2,0.4,low,N+(>2),T2_>2-≤5cm
+704,84,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+705,56,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,9,N+(>2),1,1,1,0.2,low,N+(>2),T2_>2-≤5cm
+706,44,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.6,HER2(+),0,N0,1,1,2,0.6,low,N0,T2_>2-≤5cm
+707,62,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,0.3,HER2(+),4,N+(>2),1,1,1,0.3,low,N+(>2),T2_>2-≤5cm
+708,54,1.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.3,HER2(+),3,N+(>2),1,1,1,0.3,low,N+(>2),T1_≤2cm
+709,61,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+710,42,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Sentinel lymph node biopsy,0.15,HER2(+),1,N+(1-2),1,1,1,0.15,low,N+(1-2),T2_>2-≤5cm
+711,53,1.9,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.4,Luminal B,1,N+(1-2),1,1,0,0.4,low,N+(1-2),T1_≤2cm
+712,47,1.5,Invasive ductal carcinoma,Positive,Positive,Positive,2+,1.0,Axillary lymph node dissection,0.2,HER2(+),0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+713,44,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+714,61,3.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),9,N+(>2),1,1,2,0.4,low,N+(>2),T2_>2-≤5cm
+715,62,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,0.5,HER2(+),1,N+(1-2),1,1,1,0.5,low,N+(1-2),T2_>2-≤5cm
+716,67,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+717,48,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+718,57,0.9,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Sentinel lymph node biopsy,0.4,Luminal B,0,N0,1,1,0,0.4,low,N0,T1_≤2cm
+719,51,1.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.4,HER2(+),0,N0,1,1,1,0.4,low,N0,T1_≤2cm
+720,59,1.5,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+721,56,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+722,32,3.5,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.3,HER2(+),3,N+(>2),1,1,1,0.3,low,N+(>2),T2_>2-≤5cm
+723,64,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,2,N+(1-2),1,1,1,0.2,low,N+(1-2),T1_≤2cm
+724,47,2.5,Other type,Negative,Negative,Negative,0,,Axillary lymph node dissection,0.8,Triple negative,1,N+(1-2),0,0,0,0.8,low,N+(1-2),T2_>2-≤5cm
+725,75,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+726,64,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T2_>2-≤5cm
+727,59,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,8,N+(>2),1,1,0,0.3,low,N+(>2),T2_>2-≤5cm
+728,72,4.3,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,0,0,2,0.3,low,N0,T2_>2-≤5cm
+729,60,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,7,N+(>2),1,1,0,0.15,low,N+(>2),T1_≤2cm
+730,50,2.5,Invasive ductal carcinoma,Negative,Negative,Negative,2+,2.0,Axillary lymph node dissection,0.5,Triple negative,0,N0,0,0,1,0.5,low,N0,T2_>2-≤5cm
+731,62,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,1.0,Sentinel lymph node biopsy,0.05,Luminal A,0,N0,1,1,1,0.05,low,N0,T1_≤2cm
+732,70,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,,Sentinel lymph node biopsy,0.05,Luminal A,0,N0,1,1,0,0.05,low,N0,T1_≤2cm
+733,49,1.8,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,30-40%,HER2(+),0,N0,1,1,2,35.0,high,N0,T1_≤2cm
+734,55,1.2,Other type,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+735,60,1.1,Invasive ductal carcinoma,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.3,Luminal B,1,N+(1-2),1,1,0,0.3,low,N+(1-2),T1_≤2cm
+736,54,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.7,Luminal B,0,N0,1,1,1,0.7,low,N0,T1_≤2cm
+737,33,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,＜10%,Luminal A,1,N+(1-2),1,1,1,,,N+(1-2),T1_≤2cm
+738,55,1.9,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+739,63,1.0,Other type,Positive,Positive,Negative,1+,,Sentinel lymph node biopsy,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T1_≤2cm
+740,43,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,1,N+(1-2),1,1,1,0.1,low,N+(1-2),T2_>2-≤5cm
+741,54,1.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.2,HER2(+),0,N0,0,0,2,0.2,low,N0,T1_≤2cm
+742,59,1.3,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.15,HER2(+),0,N0,1,1,2,0.15,low,N0,T1_≤2cm
+743,39,2.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.5,HER2(+),4,N+(>2),0,0,2,0.5,low,N+(>2),T2_>2-≤5cm
+744,46,0.9,Other type,Positive,Positive,Positive,3+,,Axillary lymph node dissection,0.4,HER2(+),0,N0,1,1,2,0.4,low,N0,T1_≤2cm
+745,67,4.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.3,Luminal B,2,N+(1-2),1,1,0,0.3,low,N+(1-2),T2_>2-≤5cm
+746,65,1.7,Invasive ductal carcinoma,Negative,Negative,Positive,2+,2.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,0,0,1,0.3,low,N0,T1_≤2cm
+747,77,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T2_>2-≤5cm
+748,67,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,2,N+(1-2),1,1,1,0.2,low,N+(1-2),T1_≤2cm
+749,56,1.7,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.2,HER2(+),0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+750,35,1.7,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.04,Luminal A,0,N0,1,1,1,0.04,low,N0,T1_≤2cm
+751,56,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.12,Luminal A,0,N0,1,1,1,0.12,low,N0,T1_≤2cm
+752,57,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.3,HER2(+),2,N+(1-2),1,1,1,0.3,low,N+(1-2),T1_≤2cm
+753,36,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,2,N+(1-2),1,1,0,0.2,low,N+(1-2),T1_≤2cm
+754,50,1.2,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+755,55,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Sentinel lymph node biopsy,0.15,Luminal A,0,N0,1,1,0,0.15,low,N0,T1_≤2cm
+756,50,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Sentinel lymph node biopsy,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T1_≤2cm
+757,47,4.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T2_>2-≤5cm
+758,37,1.0,Invasive ductal carcinoma,Negative,Positive,Negative,2+,3.0,Sentinel lymph node biopsy,0.7,Triple negative,0,N0,0,1,1,0.7,low,N0,T1_≤2cm
+759,79,3.5,Other type,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T2_>2-≤5cm
+760,58,3.5,Invasive ductal carcinoma,Negative,Negative,Negative,2+,,Axillary lymph node dissection,0.3,Triple negative,0,N0,0,0,1,0.3,low,N0,T2_>2-≤5cm
+761,61,1.8,Invasive ductal carcinoma,Positive,Negative,Negative,0,3.0,Sentinel lymph node biopsy,0.3,Luminal B,0,N0,1,0,0,0.3,low,N0,T1_≤2cm
+762,51,1.9,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+763,49,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+764,57,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.7,Triple negative,0,N0,0,0,0,0.7,low,N0,T1_≤2cm
+765,44,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,2,0.3,low,N0,T2_>2-≤5cm
+766,77,2.5,Invasive lobular carcinoma,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.1,Luminal A,2,N+(1-2),1,1,0,0.1,low,N+(1-2),T2_>2-≤5cm
+767,40,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.03,Luminal A,0,N0,1,1,1,0.03,low,N0,T1_≤2cm
+768,58,1.5,Invasive ductal carcinoma,Positive,Negative,Negative,2+,3.0,Sentinel lymph node biopsy,0.6,Luminal B,0,N0,1,0,1,0.6,low,N0,T1_≤2cm
+769,61,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.3,Luminal B,9,N+(>2),1,1,1,0.3,low,N+(>2),T2_>2-≤5cm
+770,49,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Sentinel lymph node biopsy,0.2,Luminal B,1,N+(1-2),1,1,0,0.2,low,N+(1-2),T1_≤2cm
+771,61,2.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),0,N0,0,0,2,0.4,low,N0,T1_≤2cm
+772,56,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Sentinel lymph node biopsy,0.15,Luminal A,1,N+(1-2),1,1,1,0.15,low,N+(1-2),T1_≤2cm
+773,62,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+774,49,3.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),9,N+(>2),0,0,2,0.4,low,N+(>2),T2_>2-≤5cm
+775,73,1.3,Invasive ductal carcinoma,Positive,Positive,Negative,0,1.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+776,48,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Sentinel lymph node biopsy,0.2,HER2(+),0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+777,45,2.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Sentinel lymph node biopsy,0.4,HER2(+),0,N0,0,0,2,0.4,low,N0,T1_≤2cm
+778,60,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+779,62,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,3.0,Axillary lymph node dissection,0.4,Luminal B,0,N0,1,1,0,0.4,low,N0,T1_≤2cm
+780,55,0.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+781,49,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,＜1%,Luminal A,4,N+(>2),1,1,0,,,N+(>2),T1_≤2cm
+782,54,2.5,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.6,Triple negative,0,N0,0,0,1,0.6,low,N0,T2_>2-≤5cm
+783,57,2.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.7,HER2(+),0,N0,0,0,2,0.7,low,N0,T1_≤2cm
+784,57,2.0,Invasive ductal carcinoma,Positive,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.15,HER2(+),9,N+(>2),1,0,2,0.15,low,N+(>2),T1_≤2cm
+785,66,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,0.3,HER2(+),1,N+(1-2),1,1,1,0.3,low,N+(1-2),T1_≤2cm
+786,62,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Sentinel lymph node biopsy,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T1_≤2cm
+787,62,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,3.0,Axillary lymph node dissection,0.3,Luminal B,1,N+(1-2),1,1,0,0.3,low,N+(1-2),T1_≤2cm
+788,55,2.2,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,1,N+(1-2),1,1,0,0.1,low,N+(1-2),T2_>2-≤5cm
+789,58,1.7,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.3,HER2(+),1,N+(1-2),1,1,1,0.3,low,N+(1-2),T1_≤2cm
+790,36,3.4,Other type,Positive,Positive,Positive,3+,,Axillary lymph node dissection,0.4,HER2(+),7,N+(>2),1,1,2,0.4,low,N+(>2),T2_>2-≤5cm
+791,51,1.0,Other type,Positive,Positive,Negative,0,2.0,Sentinel lymph node biopsy,0.02,Luminal A,0,N0,1,1,0,0.02,low,N0,T1_≤2cm
+792,57,2.2,Invasive ductal carcinoma,Positive,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.5,Luminal B,0,N0,1,0,0,0.5,low,N0,T2_>2-≤5cm
+793,49,0.8,Invasive ductal carcinoma,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,0,0.15,low,N0,T1_≤2cm
+794,61,2.3,Invasive ductal carcinoma,Negative,Negative,Negative,2+,2.0,Axillary lymph node dissection,0.15,Triple negative,0,N0,0,0,1,0.15,low,N0,T2_>2-≤5cm
+795,38,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.18,Luminal B,0,N0,1,1,0,0.18,low,N0,T1_≤2cm
+796,58,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Sentinel lymph node biopsy,0.7,Luminal B,0,N0,1,1,0,0.7,low,N0,T2_>2-≤5cm
+797,52,0.8,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Sentinel lymph node biopsy,0.3,HER2(+),0,N0,1,1,2,0.3,low,N0,T1_≤2cm
+798,40,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,3,N+(>2),1,1,0,0.3,low,N+(>2),T1_≤2cm
+799,62,3.2,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.05,Luminal A,9,N+(>2),1,1,0,0.05,low,N+(>2),T2_>2-≤5cm
+800,60,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+801,74,1.7,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+802,40,0.8,Invasive ductal carcinoma,Positive,Positive,Negative,0,,Sentinel lymph node biopsy,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+803,75,1.5,Other type,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T1_≤2cm
+804,50,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+805,41,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Sentinel lymph node biopsy,0.6,HER2(+),0,N0,1,1,1,0.6,low,N0,T1_≤2cm
+806,59,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+807,56,2.2,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,＞80%,Triple negative,0,N0,0,0,0,,,N0,T2_>2-≤5cm
+808,48,1.8,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+809,50,2.0,Other type,Negative,Negative,Negative,0,,Axillary lymph node dissection,0.6,Triple negative,0,N0,0,0,0,0.6,low,N0,T1_≤2cm
+810,57,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+811,64,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,1,N+(1-2),1,1,1,0.1,low,N+(1-2),T2_>2-≤5cm
+812,66,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,,Axillary lymph node dissection,＜10%,Luminal A,0,N0,1,1,0,,,N0,T1_≤2cm
+813,43,2.5,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.8,Triple negative,1,N+(1-2),0,0,1,0.8,low,N+(1-2),T2_>2-≤5cm
+814,83,2.0,Invasive ductal carcinoma,Positive,Negative,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,2,N+(1-2),1,0,1,0.2,low,N+(1-2),T1_≤2cm
+815,80,3.0,Invasive lobular carcinoma,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T2_>2-≤5cm
+816,55,0.8,Invasive ductal carcinoma,Negative,Negative,Negative,0,,Axillary lymph node dissection,0.6,Triple negative,0,N0,0,0,0,0.6,low,N0,T1_≤2cm
+817,63,2.5,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.7,Triple negative,0,N0,0,0,0,0.7,low,N0,T2_>2-≤5cm
+818,65,2.5,Other type,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T2_>2-≤5cm
+819,76,2.3,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,2,N+(1-2),1,1,1,0.15,low,N+(1-2),T2_>2-≤5cm
+820,44,3.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.3,HER2(+),2,N+(1-2),1,1,2,0.3,low,N+(1-2),T2_>2-≤5cm
+821,58,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.18,Luminal B,0,N0,1,1,0,0.18,low,N0,T1_≤2cm
+822,49,0.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+823,70,3.0,Other type,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.1,Luminal A,2,N+(1-2),1,1,0,0.1,low,N+(1-2),T2_>2-≤5cm
+824,40,2.0,Other type,Positive,Positive,Positive,3+,,Axillary lymph node dissection,0.2,HER2(+),4,N+(>2),1,1,2,0.2,low,N+(>2),T1_≤2cm
+825,63,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.4,Luminal B,3,N+(>2),1,1,1,0.4,low,N+(>2),T1_≤2cm
+826,61,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+827,75,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.18,HER2(+),0,N0,1,1,1,0.18,low,N0,T2_>2-≤5cm
+828,28,3.5,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.7,Triple negative,2,N+(1-2),0,0,0,0.7,low,N+(1-2),T2_>2-≤5cm
+829,65,4.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,3,N+(>2),1,1,1,0.2,low,N+(>2),T2_>2-≤5cm
+830,58,3.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),4,N+(>2),1,1,2,0.4,low,N+(>2),T2_>2-≤5cm
+831,69,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.8,Triple negative,3,N+(>2),0,0,1,0.8,low,N+(>2),T1_≤2cm
+832,53,1.5,Invasive ductal carcinoma,Positive,Negative,Negative,1+,1.0,Axillary lymph node dissection,＜1%,Luminal A,1,N+(1-2),1,0,0,,,N+(1-2),T1_≤2cm
+833,73,2.5,Other type,Positive,Positive,Negative,0,,Sentinel lymph node biopsy,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T2_>2-≤5cm
+834,54,3.0,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.5,Triple negative,0,N0,0,0,0,0.5,low,N0,T2_>2-≤5cm
+835,56,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.4,HER2(+),9,N+(>2),1,1,2,0.4,low,N+(>2),T2_>2-≤5cm
+836,62,4.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,20-30%,HER2(+),0,N0,1,1,1,25.0,high,N0,T2_>2-≤5cm
+837,66,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+838,78,4.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),6,N+(>2),1,1,2,0.5,low,N+(>2),T2_>2-≤5cm
+839,49,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,2,N+(1-2),1,1,1,0.1,low,N+(1-2),T2_>2-≤5cm
+840,73,3.3,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,＞60%,Triple negative,0,N0,0,0,0,,,N0,T2_>2-≤5cm
+841,82,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T2_>2-≤5cm
+842,60,2.0,Invasive ductal carcinoma,Negative,Positive,Negative,2+,3.0,Axillary lymph node dissection,40-60%,Luminal B,0,N0,0,1,1,50.0,high,N0,T1_≤2cm
+843,55,0.6,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+844,47,1.2,Invasive ductal carcinoma,Negative,Positive,Negative,2+,3.0,Sentinel lymph node biopsy,0.7,Luminal B,0,N0,0,1,1,0.7,low,N0,T1_≤2cm
+845,66,3.0,Invasive lobular carcinoma,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.15,Luminal A,4,N+(>2),1,1,1,0.15,low,N+(>2),T2_>2-≤5cm
+846,40,1.3,Invasive ductal carcinoma,Negative,Negative,Positive,3+,,Axillary lymph node dissection,0.2,HER2(+),0,N0,0,0,2,0.2,low,N0,T1_≤2cm
+847,66,2.5,Invasive ductal carcinoma,Negative,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.7,Triple negative,3,N+(>2),0,1,1,0.7,low,N+(>2),T2_>2-≤5cm
+848,76,1.6,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+849,78,0.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,1.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+850,36,3.6,Other type,Positive,Positive,Negative,1+,,Sentinel lymph node biopsy,0.15,Luminal A,0,N0,1,1,0,0.15,low,N0,T2_>2-≤5cm
+851,71,1.9,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+852,43,0.6,Invasive lobular carcinoma,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,0,0.05,low,N0,T1_≤2cm
+853,43,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+854,60,1.8,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.2,HER2(+),0,N0,0,0,2,0.2,low,N0,T1_≤2cm
+855,39,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,30-40%,HER2(+),0,N0,1,1,2,35.0,high,N0,T1_≤2cm
+856,62,4.0,Invasive ductal carcinoma,Positive,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.7,Luminal B,0,N0,1,0,0,0.7,low,N0,T2_>2-≤5cm
+857,47,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+858,65,3.5,Invasive lobular carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,1,0.05,low,N0,T2_>2-≤5cm
+859,72,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.3,Luminal B,2,N+(1-2),1,1,0,0.3,low,N+(1-2),T2_>2-≤5cm
+860,36,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Sentinel lymph node biopsy,0.5,Luminal B,5,N+(>2),1,1,1,0.5,low,N+(>2),T1_≤2cm
+861,60,1.7,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,2,0.3,low,N0,T1_≤2cm
+862,62,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.4,Luminal B,0,N0,1,1,1,0.4,low,N0,T1_≤2cm
+863,66,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,0.2,HER2(+),0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+864,62,1.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),0,N0,0,0,2,0.5,low,N0,T1_≤2cm
+865,62,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.7,Triple negative,0,N0,0,0,0,0.7,low,N0,T1_≤2cm
+866,65,2.5,Invasive ductal carcinoma,Negative,Negative,Negative,2+,2.0,Axillary lymph node dissection,0.3,Triple negative,2,N+(1-2),0,0,1,0.3,low,N+(1-2),T2_>2-≤5cm
+867,68,1.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.2,HER2(+),2,N+(1-2),1,1,2,0.2,low,N+(1-2),T1_≤2cm
+868,37,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Sentinel lymph node biopsy,0.5,Luminal B,0,N0,1,1,0,0.5,low,N0,T2_>2-≤5cm
+869,45,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.8,Luminal B,0,N0,1,1,1,0.8,low,N0,T2_>2-≤5cm
+870,64,3.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.7,HER2(+),8,N+(>2),0,0,2,0.7,low,N+(>2),T2_>2-≤5cm
+871,68,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,3,N+(>2),1,1,1,0.2,low,N+(>2),T1_≤2cm
+872,54,2.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),2,N+(1-2),0,0,2,0.4,low,N+(1-2),T2_>2-≤5cm
+873,69,2.2,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+874,62,1.7,Invasive ductal carcinoma,Positive,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),1,N+(1-2),1,0,2,0.4,low,N+(1-2),T1_≤2cm
+875,62,2.8,Invasive ductal carcinoma,Positive,Negative,Negative,2+,2.0,Sentinel lymph node biopsy,0.2,Luminal B,4,N+(>2),1,0,1,0.2,low,N+(>2),T2_>2-≤5cm
+876,58,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+877,65,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.4,Luminal B,0,N0,1,1,0,0.4,low,N0,T1_≤2cm
+878,55,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+879,40,1.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.05,HER2(+),4,N+(>2),0,0,2,0.05,low,N+(>2),T1_≤2cm
+880,70,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+881,46,3.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.6,HER2(+),7,N+(>2),0,0,2,0.6,low,N+(>2),T2_>2-≤5cm
+882,44,1.0,Invasive lobular carcinoma,Positive,Positive,Negative,1+,,Sentinel lymph node biopsy,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T1_≤2cm
+883,55,2.5,Invasive ductal carcinoma,Positive,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.3,Luminal B,8,N+(>2),1,0,1,0.3,low,N+(>2),T2_>2-≤5cm
+884,41,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.4,Luminal B,0,N0,1,1,1,0.4,low,N0,T1_≤2cm
+885,69,1.3,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Sentinel lymph node biopsy,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+886,51,1.3,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,1,0.05,low,N0,T1_≤2cm
+887,68,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T2_>2-≤5cm
+888,56,4.3,Invasive ductal carcinoma,Negative,Negative,Positive,3+,,Sentinel lymph node biopsy,0.05,HER2(+),0,N0,0,0,2,0.05,low,N0,T2_>2-≤5cm
+889,75,0.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+890,66,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.05,Luminal A,1,N+(1-2),1,1,0,0.05,low,N+(1-2),T1_≤2cm
+891,65,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,1.0,Axillary lymph node dissection,0.15,Luminal B,0,N0,1,1,1,0.15,low,N0,T1_≤2cm
+892,51,2.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.4,Luminal B,1,N+(1-2),1,1,1,0.4,low,N+(1-2),T2_>2-≤5cm
+893,87,4.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,7,N+(>2),1,1,1,0.3,low,N+(>2),T2_>2-≤5cm
+894,79,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Sentinel lymph node biopsy,0.6,Luminal B,0,N0,1,1,0,0.6,low,N0,T2_>2-≤5cm
+895,33,2.8,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,0.3,HER2(+),1,N+(1-2),1,1,1,0.3,low,N+(1-2),T2_>2-≤5cm
+896,44,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),0,N0,1,1,2,0.5,low,N0,T2_>2-≤5cm
+897,69,2.3,Invasive ductal carcinoma,Positive,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.3,HER2(+),2,N+(1-2),1,0,2,0.3,low,N+(1-2),T2_>2-≤5cm
+898,75,2.7,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T2_>2-≤5cm
+899,54,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.3,Luminal B,6,N+(>2),1,1,1,0.3,low,N+(>2),T2_>2-≤5cm
+900,79,3.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.6,Triple negative,1,N+(1-2),0,0,1,0.6,low,N+(1-2),T2_>2-≤5cm
+901,50,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),4,N+(>2),1,1,2,0.3,low,N+(>2),T2_>2-≤5cm
+902,34,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.3,Luminal B,2,N+(1-2),1,1,1,0.3,low,N+(1-2),T2_>2-≤5cm
+903,67,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.15,HER2(+),0,N0,1,1,2,0.15,low,N0,T2_>2-≤5cm
+904,77,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.4,Triple negative,0,N0,0,0,1,0.4,low,N0,T1_≤2cm
+905,84,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+906,83,2.1,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T2_>2-≤5cm
+907,50,1.9,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.3,HER2(+),2,N+(1-2),1,1,1,0.3,low,N+(1-2),T1_≤2cm
+908,76,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.2,HER2(+),0,N0,1,1,2,0.2,low,N0,T1_≤2cm
+909,72,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+910,60,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.8,Triple negative,0,N0,0,0,1,0.8,low,N0,T1_≤2cm
+911,63,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+912,71,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.5,Luminal B,0,N0,1,1,1,0.5,low,N0,T1_≤2cm
+913,82,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.4,Luminal B,2,N+(1-2),1,1,0,0.4,low,N+(1-2),T1_≤2cm
+914,60,2.6,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.3,Luminal B,1,N+(1-2),1,1,0,0.3,low,N+(1-2),T2_>2-≤5cm
+915,32,1.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Sentinel lymph node biopsy,0.3,HER2(+),0,N0,1,1,2,0.3,low,N0,T1_≤2cm
+916,55,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Sentinel lymph node biopsy,0.1,Luminal A,7,N+(>2),1,1,0,0.1,low,N+(>2),T2_>2-≤5cm
+917,38,3.0,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.6,Triple negative,1,N+(1-2),0,0,0,0.6,low,N+(1-2),T2_>2-≤5cm
+918,47,2.5,Other type,Negative,Negative,Negative,0,,Axillary lymph node dissection,0.01,Triple negative,0,N0,0,0,0,0.01,low,N0,T2_>2-≤5cm
+919,32,4.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T2_>2-≤5cm
+920,73,3.5,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,1,0.05,low,N0,T2_>2-≤5cm
+921,58,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,3,N+(>2),1,1,1,0.15,low,N+(>2),T2_>2-≤5cm
+922,77,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,2,N+(1-2),1,1,1,0.1,low,N+(1-2),T1_≤2cm
+923,47,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.4,Luminal B,3,N+(>2),1,1,0,0.4,low,N+(>2),T2_>2-≤5cm
+924,56,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,2.0,Axillary lymph node dissection,0.2,Triple negative,0,N0,0,0,1,0.2,low,N0,T1_≤2cm
+925,74,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.05,Luminal A,7,N+(>2),1,1,0,0.05,low,N+(>2),T1_≤2cm
+926,63,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,2,N+(1-2),1,1,0,0.15,low,N+(1-2),T1_≤2cm
+927,62,1.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.5,HER2(+),5,N+(>2),0,0,2,0.5,low,N+(>2),T1_≤2cm
+928,56,2.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+929,49,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.1,Luminal A,3,N+(>2),1,1,1,0.1,low,N+(>2),T1_≤2cm
+930,72,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T2_>2-≤5cm
+931,62,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+932,70,1.3,Invasive ductal carcinoma,Positive,Positive,Negative,0,1.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T1_≤2cm
+933,79,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T1_≤2cm
+934,68,2.5,Other type,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,0,0.05,low,N0,T2_>2-≤5cm
+935,43,3.5,Invasive ductal carcinoma,Positive,Negative,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,6,N+(>2),1,0,1,0.2,low,N+(>2),T2_>2-≤5cm
+936,59,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.2,HER2(+),1,N+(1-2),1,1,2,0.2,low,N+(1-2),T2_>2-≤5cm
+937,55,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+938,76,3.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.05,Luminal A,1,N+(1-2),1,1,1,0.05,low,N+(1-2),T2_>2-≤5cm
+939,80,1.8,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),0,N0,0,0,2,0.4,low,N0,T1_≤2cm
+940,46,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,1,0.05,low,N0,T1_≤2cm
+941,67,1.0,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+942,50,3.0,Other type,Negative,Negative,Negative,0,,Axillary lymph node dissection,0.6,Triple negative,0,N0,0,0,0,0.6,low,N0,T2_>2-≤5cm
+943,64,3.5,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.3,HER2(+),6,N+(>2),1,1,1,0.3,low,N+(>2),T2_>2-≤5cm
+944,71,1.3,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,4,N+(>2),1,1,0,0.2,low,N+(>2),T1_≤2cm
+945,79,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,1,0.05,low,N0,T1_≤2cm
+946,40,1.0,Invasive lobular carcinoma,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+947,38,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,1,N+(1-2),1,1,1,0.1,low,N+(1-2),T2_>2-≤5cm
+948,52,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.4,Luminal B,1,N+(1-2),1,1,1,0.4,low,N+(1-2),T2_>2-≤5cm
+949,52,1.3,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Sentinel lymph node biopsy,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T1_≤2cm
+950,59,1.2,Invasive ductal carcinoma,Positive,Positive,Negative,1+,1.0,Sentinel lymph node biopsy,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+951,54,4.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.4,Luminal B,8,N+(>2),1,1,1,0.4,low,N+(>2),T2_>2-≤5cm
+952,41,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.1,Luminal A,1,N+(1-2),1,1,0,0.1,low,N+(1-2),T2_>2-≤5cm
+953,55,1.6,Invasive ductal carcinoma,Negative,Positive,Negative,0,3.0,Axillary lymph node dissection,0.8,Luminal A,0,N0,0,1,0,0.8,low,N0,T1_≤2cm
+954,75,4.0,Invasive ductal carcinoma,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.8,Triple negative,1,N+(1-2),0,0,0,0.8,low,N+(1-2),T2_>2-≤5cm
+955,68,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.1,Luminal A,1,N+(1-2),1,1,0,0.1,low,N+(1-2),T2_>2-≤5cm
+956,58,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,1,N+(1-2),1,1,1,0.2,low,N+(1-2),T1_≤2cm
+957,62,1.3,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+958,48,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,2,N+(1-2),1,1,0,0.1,low,N+(1-2),T2_>2-≤5cm
+959,55,3.5,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.5,Triple negative,1,N+(1-2),0,0,1,0.5,low,N+(1-2),T2_>2-≤5cm
+960,63,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.6,Luminal B,0,N0,1,1,0,0.6,low,N0,T2_>2-≤5cm
+961,43,3.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.2,HER2(+),0,N0,0,0,2,0.2,low,N0,T2_>2-≤5cm
+962,67,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,3,N+(>2),1,1,1,0.2,low,N+(>2),T1_≤2cm
+963,46,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T2_>2-≤5cm
+964,48,1.2,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Sentinel lymph node biopsy,0.6,HER2(+),0,N0,1,1,1,0.6,low,N0,T1_≤2cm
+965,50,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,0.2,HER2(+),2,N+(1-2),1,1,1,0.2,low,N+(1-2),T2_>2-≤5cm
+966,52,2.3,Other type,Negative,Negative,Negative,0,,Sentinel lymph node biopsy,0.5,Triple negative,1,N+(1-2),0,0,0,0.5,low,N+(1-2),T2_>2-≤5cm
+967,63,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,2,0.3,low,N0,T2_>2-≤5cm
+968,73,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T2_>2-≤5cm
+969,82,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,2.0,Axillary lymph node dissection,0.4,Triple negative,0,N0,0,0,1,0.4,low,N0,T1_≤2cm
+970,74,4.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.4,Luminal B,0,N0,1,1,0,0.4,low,N0,T2_>2-≤5cm
+971,60,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,1,N+(1-2),1,1,0,0.1,low,N+(1-2),T2_>2-≤5cm
+972,61,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+973,57,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Sentinel lymph node biopsy,0.05,Luminal A,0,N0,1,1,0,0.05,low,N0,T1_≤2cm
+974,68,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Axillary lymph node dissection,0.5,HER2(+),0,N0,1,1,1,0.5,low,N0,T1_≤2cm
+975,53,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,2,0.3,low,N0,T2_>2-≤5cm
+976,44,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,1,N+(1-2),1,1,0,0.2,low,N+(1-2),T2_>2-≤5cm
+977,62,1.8,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,3,N+(>2),1,1,0,0.2,low,N+(>2),T1_≤2cm
+978,49,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,1.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+979,57,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T2_>2-≤5cm
+980,62,2.2,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.4,HER2(+),1,N+(1-2),1,1,2,0.4,low,N+(1-2),T2_>2-≤5cm
+981,55,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T2_>2-≤5cm
+982,53,1.5,Invasive ductal carcinoma,Positive,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.4,HER2(+),0,N0,1,0,2,0.4,low,N0,T1_≤2cm
+983,73,2.3,Invasive lobular carcinoma,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.1,Luminal A,3,N+(>2),1,1,1,0.1,low,N+(>2),T2_>2-≤5cm
+984,64,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.15,HER2(+),1,N+(1-2),1,1,2,0.15,low,N+(1-2),T2_>2-≤5cm
+985,43,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.3,HER2(+),0,N0,1,1,2,0.3,low,N0,T2_>2-≤5cm
+986,54,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,3.0,Axillary lymph node dissection,0.6,Luminal B,0,N0,1,1,0,0.6,low,N0,T2_>2-≤5cm
+987,71,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,4,N+(>2),1,1,1,0.1,low,N+(>2),T1_≤2cm
+988,36,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,3.0,Axillary lymph node dissection,0.3,HER2(+),1,N+(1-2),1,1,1,0.3,low,N+(1-2),T2_>2-≤5cm
+989,54,0.8,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+990,56,2.2,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,3,N+(>2),1,1,0,0.3,low,N+(>2),T2_>2-≤5cm
+991,61,1.7,Invasive ductal carcinoma,Positive,Negative,Positive,3+,3.0,Sentinel lymph node biopsy,0.3,HER2(+),0,N0,1,0,2,0.3,low,N0,T1_≤2cm
+992,65,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+993,48,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.9,Triple negative,7,N+(>2),0,0,1,0.9,low,N+(>2),T1_≤2cm
+994,55,2.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.4,HER2(+),2,N+(1-2),0,0,2,0.4,low,N+(1-2),T1_≤2cm
+995,55,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.7,HER2(+),0,N0,1,1,2,0.7,low,N0,T2_>2-≤5cm
+996,71,4.0,Other type,Negative,Negative,Negative,0,3.0,Axillary lymph node dissection,0.7,Triple negative,6,N+(>2),0,0,0,0.7,low,N+(>2),T2_>2-≤5cm
+997,39,3.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.4,Triple negative,1,N+(1-2),0,0,1,0.4,low,N+(1-2),T2_>2-≤5cm
+998,59,1.5,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Sentinel lymph node biopsy,80-90%,Triple negative,0,N0,0,0,0,85.0,high,N0,T1_≤2cm
+999,60,2.5,Invasive ductal carcinoma,Negative,Negative,Negative,2+,2.0,Axillary lymph node dissection,0.1,Triple negative,0,N0,0,0,1,0.1,low,N0,T2_>2-≤5cm
+1000,65,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T1_≤2cm
+1001,57,1.7,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+1002,51,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,,Sentinel lymph node biopsy,0.2,Luminal B,2,N+(1-2),1,1,1,0.2,low,N+(1-2),T1_≤2cm
+1003,59,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.15,HER2(+),0,N0,1,1,2,0.15,low,N0,T1_≤2cm
+1004,63,1.3,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+1005,66,3.0,Invasive lobular carcinoma,Positive,Positive,Negative,2+,,Sentinel lymph node biopsy,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T2_>2-≤5cm
+1006,82,1.3,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Sentinel lymph node biopsy,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T1_≤2cm
+1007,55,0.6,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Sentinel lymph node biopsy,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T1_≤2cm
+1008,54,1.7,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+1009,73,2.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T2_>2-≤5cm
+1010,78,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.5,Luminal B,2,N+(1-2),1,1,1,0.5,low,N+(1-2),T2_>2-≤5cm
+1011,67,1.3,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,0,0.3,low,N0,T1_≤2cm
+1012,32,1.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.6,HER2(+),0,N0,1,1,2,0.6,low,N0,T1_≤2cm
+1013,89,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T1_≤2cm
+1014,84,3.0,Invasive ductal carcinoma,Positive,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.1,HER2(+),6,N+(>2),1,0,2,0.1,low,N+(>2),T2_>2-≤5cm
+1015,81,3.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,2.0,Axillary lymph node dissection,0.6,HER2(+),0,N0,1,1,2,0.6,low,N0,T2_>2-≤5cm
+1016,74,2.0,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,20-30%,HER2(+),0,N0,0,0,2,25.0,high,N0,T1_≤2cm
+1017,54,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.7,Luminal B,0,N0,1,1,0,0.7,low,N0,T2_>2-≤5cm
+1018,52,2.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.6,HER2(+),0,N0,0,0,2,0.6,low,N0,T2_>2-≤5cm
+1019,38,2.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,2.0,Axillary lymph node dissection,0.7,HER2(+),0,N0,0,0,2,0.7,low,N0,T2_>2-≤5cm
+1020,69,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.2,Luminal B,1,N+(1-2),1,1,1,0.2,low,N+(1-2),T1_≤2cm
+1021,78,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,0,0.2,low,N0,T1_≤2cm
+1022,82,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,1.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+1023,47,2.4,Invasive ductal carcinoma,Positive,Positive,Negative,2+,,Sentinel lymph node biopsy,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T2_>2-≤5cm
+1024,63,1.0,Invasive ductal carcinoma,Positive,Negative,Negative,0,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,0,0,0.1,low,N0,T1_≤2cm
+1025,58,2.5,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.15,Triple negative,1,N+(1-2),0,0,1,0.15,low,N+(1-2),T2_>2-≤5cm
+1026,57,1.7,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.2,Luminal B,2,N+(1-2),1,1,0,0.2,low,N+(1-2),T1_≤2cm
+1027,68,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T1_≤2cm
+1028,66,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+1029,66,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.6,Luminal B,0,N0,1,1,0,0.6,low,N0,T1_≤2cm
+1030,82,3.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T2_>2-≤5cm
+1031,39,3.0,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.3,Triple negative,7,N+(>2),0,0,0,0.3,low,N+(>2),T2_>2-≤5cm
+1032,57,1.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,0,0.15,low,N0,T1_≤2cm
+1033,62,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.6,Luminal B,0,N0,1,1,1,0.6,low,N0,T1_≤2cm
+1034,68,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Sentinel lymph node biopsy,0.6,Luminal B,0,N0,1,1,1,0.6,low,N0,T1_≤2cm
+1035,82,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+1036,71,2.1,Other type,Positive,Positive,Negative,0,,Axillary lymph node dissection,0.05,Luminal A,0,N0,1,1,0,0.05,low,N0,T2_>2-≤5cm
+1037,44,2.5,Invasive ductal carcinoma,Negative,Negative,Positive,3+,3.0,Axillary lymph node dissection,0.7,HER2(+),0,N0,0,0,2,0.7,low,N0,T2_>2-≤5cm
+1038,59,3.0,Other type,Negative,Negative,Negative,0,,Axillary lymph node dissection,0.4,Triple negative,3,N+(>2),0,0,0,0.4,low,N+(>2),T2_>2-≤5cm
+1039,64,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,1,0.1,low,N0,T2_>2-≤5cm
+1040,50,2.0,Invasive ductal carcinoma,Negative,Negative,Negative,1+,3.0,Axillary lymph node dissection,0.9,Triple negative,0,N0,0,0,0,0.9,low,N0,T1_≤2cm
+1041,79,2.2,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Sentinel lymph node biopsy,0.5,Luminal B,0,N0,1,1,1,0.5,low,N0,T2_>2-≤5cm
+1042,61,3.5,Invasive ductal carcinoma,Positive,Positive,Positive,2+,2.0,Sentinel lymph node biopsy,0.6,HER2(+),0,N0,1,1,1,0.6,low,N0,T2_>2-≤5cm
+1043,83,1.5,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+1044,59,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.6,Luminal B,6,N+(>2),1,1,1,0.6,low,N+(>2),T2_>2-≤5cm
+1045,64,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,0,2.0,Sentinel lymph node biopsy,0.4,Luminal B,0,N0,1,1,0,0.4,low,N0,T1_≤2cm
+1046,57,3.0,Invasive lobular carcinoma,Positive,Negative,Negative,2+,,Axillary lymph node dissection,0.4,Luminal B,6,N+(>2),1,0,1,0.4,low,N+(>2),T2_>2-≤5cm
+1047,78,3.8,Other type,Positive,Positive,Negative,2+,,Axillary lymph node dissection,0.03,Luminal A,0,N0,1,1,1,0.03,low,N0,T2_>2-≤5cm
+1048,75,3.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.4,Luminal B,9,N+(>2),1,1,1,0.4,low,N+(>2),T2_>2-≤5cm
+1049,69,4.0,Invasive ductal carcinoma,Negative,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.5,HER2(+),0,N0,0,1,2,0.5,low,N0,T2_>2-≤5cm
+1050,79,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,1+,2.0,Axillary lymph node dissection,0.1,Luminal A,4,N+(>2),1,1,0,0.1,low,N+(>2),T1_≤2cm
+1051,59,4.0,Invasive ductal carcinoma,Negative,Negative,Negative,2+,3.0,Axillary lymph node dissection,0.7,Triple negative,0,N0,0,0,1,0.7,low,N0,T2_>2-≤5cm
+1052,45,2.5,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,0.8,HER2(+),8,N+(>2),1,1,2,0.8,low,N+(>2),T2_>2-≤5cm
+1053,41,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Sentinel lymph node biopsy,0.3,Luminal B,0,N0,1,1,1,0.3,low,N0,T1_≤2cm
+1054,60,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,2+,,Axillary lymph node dissection,0.2,Luminal B,0,N0,1,1,1,0.2,low,N0,T1_≤2cm
+1055,63,2.0,Other type,Positive,Positive,Negative,1+,,Axillary lymph node dissection,0.1,Luminal A,0,N0,1,1,0,0.1,low,N0,T1_≤2cm
+1056,62,2.0,Invasive ductal carcinoma,Positive,Positive,Positive,3+,3.0,Axillary lymph node dissection,30-40%,HER2(+),0,N0,1,1,2,35.0,high,N0,T1_≤2cm
+1057,46,4.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,3.0,Axillary lymph node dissection,0.7,Luminal B,5,N+(>2),1,1,1,0.7,low,N+(>2),T2_>2-≤5cm
+1058,78,2.0,Invasive ductal carcinoma,Positive,Positive,Negative,2+,2.0,Axillary lymph node dissection,0.15,Luminal A,0,N0,1,1,1,0.15,low,N0,T1_≤2cm

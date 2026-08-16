@@ -1,0 +1,28 @@
+\chapter{Atributos técnicos de los modelos fundacionales seleccionados}
+\label{apx:atributos_modelos}
+
+\begin{table}[htbp]
+\centering
+\caption{Atributos relevantes de los modelos fundacionales seleccionados.}
+\label{tab:atributos_modelos}
+\small
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{2.2cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X}
+\toprule
+\textbf{Atributo} & \textbf{Phikon-v2} & \textbf{UNI2-h} & \textbf{Prov-GigaPath} & \textbf{Virchow2} \\
+\midrule
+Tipo de modelo & Encoder visual fundacional & Encoder visual fundacional & Encoder de parche + agregador de slide (LongNet) & Encoder visual fundacional \\
+Arquitectura base & ViT-L/16 & ViT-H/14 & ViT-g/14 (parche) + LongNetViT (slide) & ViT-H/14 \\
+Parámetros & $\sim$0.3B & $\sim$0.68B & $\sim$1.1B (parche) & $\sim$0.63B \\
+Estrategia de preentrenamiento & Auto-supervisado, DINOv2 (DINO+iBOT+KoLeo) & Auto-supervisado, DINOv2 & DINOv2 (parche) + MAE con LongNet (slide) & Auto-supervisado, DINOv2 multiescala \\
+Escala de datos de preentrenamiento & 456M parches / $>$58k WSI (TCGA, CPTAC, GTEx) & 200M+ parches / 350k+ WSI institucionales & 1.3B parches / 171k WSI institucionales & 3.1M WSI H\&E + 400k IHC \\
+Unidad de entrada & Parche & Parche & Parche\textsuperscript{1} & Parche \\
+Dimensión del embedding & 1024 & 1536 & 1536 (encoder de parche) & 2560 \\
+Acceso & Público (CC-BY-NC 4.0) & Restringido (AP\textsuperscript{2}) & Público (CC-BY-NC 4.0) & Restringido (AP\textsuperscript{2})\\
+Transparencia de datos de preentrenamiento & Parcial; datos públicos reportados & Parcial; procedencia agregada, datos institucionales privados & Parcial; datos institucionales privados & Parcial; datos institucionales privados \\
+\bottomrule
+\end{tabularx}
+\begin{flushleft}
+\footnotesize{\textsuperscript{1}Se utiliza únicamente el encoder de parche de Prov-GigaPath como extractor de representaciones; el agregador de slide basado en LongNet no se emplea en esta tesis.}
+\footnotesize{\textsuperscript{2}AP: Aprobación Institucional.}
+\end{flushleft}
+\end{table}

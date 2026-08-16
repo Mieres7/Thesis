@@ -1,0 +1,30 @@
+log_level: INFO
+log_file: embeddings_logs/histai_colorectal_b2_logs.log
+
+patches_dir: /home/DIINF/datasets_iacis/2026_HISTAI/HISTAI_colorectal_b2/patches
+output_dir: /home/DIINF/datasets_iacis/2026_HISTAI/embeddings/HISTAI_colorectal_b2_embeddings
+models_dir: /home/DIINF/vmieres/tesis/models
+
+models:
+  - prov_gigapath
+  - uni2
+  - virchow2
+  - phikon_v2
+
+datasets:
+  - HISTAI_colorectal_b2
+
+# Sube batch_size ahora que AMP reduce el uso de memoria. Prueba 256 y luego 384/512
+# si la GPU no se llena (monitorea con nvidia-smi).
+batch_size: 256
+
+skip_existing: true
+hdf5_compression: lzf
+
+# Ahora SI se usa de verdad: autocast bfloat16 (o float16 en GPUs < Ampere)
+use_amp: true
+
+compute:
+  gpu_ids: [0, 1]
+  # num_workers POR GPU (cada proceso de GPU abre su propio DataLoader)
+  num_workers: 4

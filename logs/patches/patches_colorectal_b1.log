@@ -1,0 +1,79 @@
+2026-07-03 00:17:32 [INFO] ======================================================================
+2026-07-03 00:17:32 [INFO]   WSI PATCH EXTRACTOR  (optimized)
+2026-07-03 00:17:32 [INFO]   Config: config_files/patches_colorectal_b1.yaml
+2026-07-03 00:17:32 [INFO] ======================================================================
+2026-07-03 00:17:32 [INFO] GPUs to use: [0, 1]
+2026-07-03 00:17:32 [INFO]   GPU 0: NVIDIA GeForce RTX 4090 (23 GB)
+2026-07-03 00:17:32 [INFO]   GPU 1: NVIDIA GeForce RTX 4090 (23 GB)
+2026-07-03 00:17:32 [WARNING] [HISTAI_colorectal_b1] No files found!
+2026-07-03 00:17:32 [ERROR] No slides to process.
+2026-07-03 00:20:48 [INFO] ======================================================================
+2026-07-03 00:20:48 [INFO]   WSI PATCH EXTRACTOR  (optimized)
+2026-07-03 00:20:48 [INFO]   Config: config_files/patches_colorectal_b1.yaml
+2026-07-03 00:20:48 [INFO] ======================================================================
+2026-07-03 00:20:48 [INFO] GPUs to use: [0, 1]
+2026-07-03 00:20:48 [INFO]   GPU 0: NVIDIA GeForce RTX 4090 (23 GB)
+2026-07-03 00:20:48 [INFO]   GPU 1: NVIDIA GeForce RTX 4090 (23 GB)
+2026-07-03 00:21:15 [INFO] [HISTAI_colorectal_b1] 5379 file(s) found
+2026-07-03 00:21:18 [ERROR] [slide_H&E_0] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:18 [ERROR] [slide_H&E_0] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:18 [ERROR] [slide_H&E_0] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:18 [ERROR] [slide_H&E_1] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:19 [ERROR] [slide_H&E_0] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:19 [ERROR] [slide_H&E_0] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:20 [ERROR] [slide_H&E_1] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:20 [ERROR] [slide_H&E_0] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:20 [ERROR] [slide_H&E_1] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:21 [ERROR] [slide_H&E_0] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:21 [ERROR] [slide_H&E_2] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:21 [ERROR] [slide_H&E_1] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:22 [ERROR] [slide_H&E_4] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:22 [ERROR] [slide_H&E_3] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:22 [ERROR] [slide_H&E_5] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:22 [ERROR] [slide_H&E_0] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:23 [ERROR] [slide_H&E_10] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:23 [ERROR] [slide_H&E_1] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:23 [WARNING] [slide_H&E_12] No tissue patches after filtering.
+2026-07-03 00:21:23 [ERROR] [slide_H&E_11] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:23 [ERROR] [slide_H&E_14] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:23 [ERROR] [slide_H&E_13] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:23 [ERROR] [slide_H&E_2] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:24 [ERROR] [slide_H&E_3] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:24 [ERROR] [slide_H&E_4] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:24 [ERROR] [slide_H&E_5] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:24 [ERROR] [slide_H&E_6] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:25 [ERROR] [slide_H&E_7] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:25 [ERROR] [slide_H&E_8] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:25 [ERROR] [slide_H&E_9] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:25 [ERROR] [slide_H&E_1] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:26 [ERROR] [slide_H&E_0] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:26 [ERROR] [slide_H&E_10] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:26 [ERROR] [slide_H&E_12] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:21:26 [ERROR] [slide_H&E_11] FAILED: daemonic processes are not allowed to have children
+2026-07-03 00:26:26 [INFO] ======================================================================
+2026-07-03 00:26:26 [INFO]   WSI PATCH EXTRACTOR  (optimized)
+2026-07-03 00:26:26 [INFO]   Config: config_files/patches_colorectal_b1.yaml
+2026-07-03 00:26:26 [INFO] ======================================================================
+2026-07-03 00:26:27 [INFO] GPUs to use: [0, 1]
+2026-07-03 00:26:27 [INFO]   GPU 0: NVIDIA GeForce RTX 4090 (23 GB)
+2026-07-03 00:26:27 [INFO]   GPU 1: NVIDIA GeForce RTX 4090 (23 GB)
+2026-07-03 00:26:45 [INFO] [HISTAI_colorectal_b1] 5379 file(s) found
+2026-07-03 01:04:53 [WARNING] [slide_H&E_12] No tissue patches after filtering.
+2026-07-05 15:10:38 [WARNING] [slide_H&E_14] No tissue patches after filtering.
+2026-07-10 06:53:04 [ERROR] [slide_H&E_12] FAILED: HDF5 writer thread failed: [Errno 5] Can't synchronously write data (file write failed: time = Fri Jul 10 06:53:03 2026
+, filename = '/home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_840__slide_H&E_12.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x7fa0204ea010, total write size = 2231044, bytes this sub-write = 2231044, bytes actually written = 18446744073709551615, offset = 0)
+2026-07-10 06:53:04 [ERROR] [slide_H&E_11] FAILED: HDF5 writer thread failed: [Errno 5] Can't synchronously write data (file write failed: time = Fri Jul 10 06:53:04 2026
+, filename = '/home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_840__slide_H&E_11.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x7f345001d830, total write size = 2408448, bytes this sub-write = 2408448, bytes actually written = 18446744073709551615, offset = 0)
+2026-07-10 15:00:28 [WARNING] [slide_H&E_1] No tissue patches after filtering.
+2026-07-12 02:29:50 [INFO] 
+======================================================================
+2026-07-12 02:29:50 [INFO]   GLOBAL SUMMARY
+2026-07-12 02:29:50 [INFO]   Total slides   : 5379
+2026-07-12 02:29:50 [INFO]   Candidates     : 242,948,021
+2026-07-12 02:29:50 [INFO]   Kept patches   : 45,787,518
+2026-07-12 02:29:50 [INFO]   Filter rate    : 81.2%
+2026-07-12 02:29:50 [INFO]   Errors         : 2
+2026-07-12 02:29:50 [INFO]   Total time     : 13083.1 min
+2026-07-12 02:29:50 [INFO]   Output dir     : /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches
+2026-07-12 02:29:50 [INFO] ======================================================================
+2026-07-12 02:29:50 [INFO]   Stats saved to : /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/extraction_stats.csv

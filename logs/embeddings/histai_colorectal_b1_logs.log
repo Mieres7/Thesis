@@ -1,0 +1,431 @@
+d2026-07-12 19:23:52 [INFO] ======================================================================
+2026-07-12 19:23:52 [INFO]  EMBEDDING EXTRACTOR OPT (multi-GPU, AMP real)
+2026-07-12 19:23:52 [INFO]  patches_dir : /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches
+2026-07-12 19:23:52 [INFO]  output_dir  : /home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins
+2026-07-12 19:23:52 [INFO]  modelos     : ['prov_gigapath', 'uni2', 'virchow2', 'phikon_v2']
+2026-07-12 19:23:52 [INFO]  datasets    : ['HISTAI_colorectal_b1']
+2026-07-12 19:23:52 [INFO]  gpu_ids     : [0, 1]  | num_workers/GPU: 4 | batch_size: 256 | use_amp: True
+2026-07-12 19:23:52 [INFO] ======================================================================
+2026-07-12 19:23:53 [INFO]  Total de tareas (slide x modelo): 21504
+2026-07-12 19:23:56 [INFO] [GPU 0] Cargando modelo: prov_gigapath
+2026-07-12 19:23:56 [INFO] [GPU 1] Cargando modelo: prov_gigapath
+2026-07-12 19:24:17 [INFO] ======================================================================
+2026-07-12 19:24:17 [INFO]  EMBEDDING EXTRACTOR OPT (multi-GPU, AMP real)
+2026-07-12 19:24:17 [INFO]  patches_dir : /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches
+2026-07-12 19:24:17 [INFO]  output_dir  : /home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins
+2026-07-12 19:24:17 [INFO]  modelos     : ['prov_gigapath', 'uni2', 'virchow2', 'phikon_v2']
+2026-07-12 19:24:17 [INFO]  datasets    : ['HISTAI_colorectal_b1']
+2026-07-12 19:24:17 [INFO]  gpu_ids     : [0, 1]  | num_workers/GPU: 4 | batch_size: 256 | use_amp: True
+2026-07-12 19:24:17 [INFO] ======================================================================
+2026-07-12 19:24:18 [INFO]  Total de tareas (slide x modelo): 21504
+2026-07-12 19:24:21 [INFO] [GPU 0] Cargando modelo: prov_gigapath
+2026-07-12 19:24:21 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-07-12 19:24:21 [INFO]   From: /home/vmieres/tesis/models/prov_gigapath
+2026-07-12 19:24:21 [INFO] [GPU 1] Cargando modelo: prov_gigapath
+2026-07-12 19:24:21 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-07-12 19:24:21 [INFO]   From: /home/vmieres/tesis/models/prov_gigapath
+2026-07-12 19:24:58 [INFO]   Model loaded on cuda:0
+2026-07-12 19:24:59 [INFO]   Model loaded on cuda:1
+2026-07-12 19:25:00 [INFO] [GPU 0] prov_gigapath embedding_dim=1536
+2026-07-12 19:25:00 [INFO] [GPU 1] prov_gigapath embedding_dim=1536
+2026-07-12 19:25:06 [ERROR] [case_000__slide_H&E_0] FAILED: CUDA out of memory. Tried to allocate 394.00 MiB. GPU 0 has a total capacity of 23.52 GiB of which 40.38 MiB is free. Process 3422394 has 15.74 GiB memory in use. Including non-PyTorch memory, this process has 7.68 GiB memory in use. Of the allocated memory 6.86 GiB is allocated by PyTorch, and 362.26 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-07-12 19:25:07 [ERROR] [case_001__slide_H&E_0] FAILED: CUDA out of memory. Tried to allocate 394.00 MiB. GPU 1 has a total capacity of 23.52 GiB of which 78.38 MiB is free. Process 3421961 has 15.74 GiB memory in use. Including non-PyTorch memory, this process has 7.68 GiB memory in use. Of the allocated memory 6.86 GiB is allocated by PyTorch, and 362.26 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-07-12 19:25:13 [ERROR] [case_002__slide_H&E_0] FAILED: CUDA out of memory. Tried to allocate 394.00 MiB. GPU 0 has a total capacity of 23.52 GiB of which 336.38 MiB is free. Process 3422394 has 15.74 GiB memory in use. Including non-PyTorch memory, this process has 7.39 GiB memory in use. Of the allocated memory 6.52 GiB is allocated by PyTorch, and 417.29 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-07-12 20:30:41 [INFO] ======================================================================
+2026-07-12 20:30:41 [INFO]  EMBEDDING EXTRACTOR OPT (multi-GPU, AMP real)
+2026-07-12 20:30:41 [INFO]  patches_dir : /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches
+2026-07-12 20:30:41 [INFO]  output_dir  : /home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins
+2026-07-12 20:30:41 [INFO]  modelos     : ['prov_gigapath', 'uni2', 'virchow2', 'phikon_v2']
+2026-07-12 20:30:41 [INFO]  datasets    : ['HISTAI_colorectal_b1']
+2026-07-12 20:30:41 [INFO]  gpu_ids     : [0, 1]  | num_workers/GPU: 4 | batch_size: 256 | use_amp: True
+2026-07-12 20:30:41 [INFO] ======================================================================
+2026-07-12 20:30:41 [INFO]  Total de tareas (slide x modelo): 21504
+2026-07-12 20:30:44 [INFO] [GPU 0] Cargando modelo: prov_gigapath
+2026-07-12 20:30:44 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-07-12 20:30:44 [INFO]   From: /home/vmieres/tesis/models/prov_gigapath
+2026-07-12 20:30:44 [INFO] [GPU 1] Cargando modelo: prov_gigapath
+2026-07-12 20:30:44 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-07-12 20:30:44 [INFO]   From: /home/vmieres/tesis/models/prov_gigapath
+2026-07-12 20:31:14 [INFO] ======================================================================
+2026-07-12 20:31:14 [INFO]  EMBEDDING EXTRACTOR OPT (multi-GPU, AMP real)
+2026-07-12 20:31:14 [INFO]  patches_dir : /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches
+2026-07-12 20:31:14 [INFO]  output_dir  : /home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins
+2026-07-12 20:31:14 [INFO]  modelos     : ['prov_gigapath', 'uni2', 'virchow2', 'phikon_v2']
+2026-07-12 20:31:14 [INFO]  datasets    : ['HISTAI_colorectal_b1']
+2026-07-12 20:31:14 [INFO]  gpu_ids     : [0, 1]  | num_workers/GPU: 4 | batch_size: 128 | use_amp: True
+2026-07-12 20:31:14 [INFO] ======================================================================
+2026-07-12 20:31:14 [INFO]  Total de tareas (slide x modelo): 21504
+2026-07-12 20:31:17 [INFO] [GPU 0] Cargando modelo: prov_gigapath
+2026-07-12 20:31:17 [INFO] [GPU 1] Cargando modelo: prov_gigapath
+2026-07-12 20:31:17 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-07-12 20:31:17 [INFO]   From: /home/vmieres/tesis/models/prov_gigapath
+2026-07-12 20:31:17 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-07-12 20:31:17 [INFO]   From: /home/vmieres/tesis/models/prov_gigapath
+2026-07-12 20:31:55 [INFO]   Model loaded on cuda:0
+2026-07-12 20:31:55 [INFO] [GPU 0] prov_gigapath embedding_dim=1536
+2026-07-12 20:31:55 [INFO]   Model loaded on cuda:1
+2026-07-12 20:31:56 [INFO] [GPU 1] prov_gigapath embedding_dim=1536
+2026-07-12 20:32:01 [ERROR] [case_000__slide_H&E_0] FAILED: CUDA out of memory. Tried to allocate 198.00 MiB. GPU 0 has a total capacity of 23.52 GiB of which 2.38 MiB is free. Process 3422394 has 15.74 GiB memory in use. Including non-PyTorch memory, this process has 7.73 GiB memory in use. Of the allocated memory 6.94 GiB is allocated by PyTorch, and 324.38 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-07-12 20:32:02 [ERROR] [case_001__slide_H&E_0] FAILED: CUDA out of memory. Tried to allocate 198.00 MiB. GPU 1 has a total capacity of 23.52 GiB of which 34.38 MiB is free. Process 3421961 has 15.74 GiB memory in use. Including non-PyTorch memory, this process has 7.73 GiB memory in use. Of the allocated memory 6.94 GiB is allocated by PyTorch, and 324.38 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-07-12 20:34:22 [INFO] ======================================================================
+2026-07-12 20:34:22 [INFO]  EMBEDDING EXTRACTOR OPT (multi-GPU, AMP real)
+2026-07-12 20:34:22 [INFO]  patches_dir : /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches
+2026-07-12 20:34:22 [INFO]  output_dir  : /home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins
+2026-07-12 20:34:22 [INFO]  modelos     : ['prov_gigapath', 'uni2', 'virchow2', 'phikon_v2']
+2026-07-12 20:34:22 [INFO]  datasets    : ['HISTAI_colorectal_b1']
+2026-07-12 20:34:22 [INFO]  gpu_ids     : [0, 1]  | num_workers/GPU: 4 | batch_size: 32 | use_amp: True
+2026-07-12 20:34:22 [INFO] ======================================================================
+2026-07-12 20:34:22 [INFO]  Total de tareas (slide x modelo): 21504
+2026-07-12 20:34:25 [INFO] [GPU 0] Cargando modelo: prov_gigapath
+2026-07-12 20:34:25 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-07-12 20:34:25 [INFO]   From: /home/vmieres/tesis/models/prov_gigapath
+2026-07-12 20:34:25 [INFO] [GPU 1] Cargando modelo: prov_gigapath
+2026-07-12 20:34:25 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-07-12 20:34:25 [INFO]   From: /home/vmieres/tesis/models/prov_gigapath
+2026-07-12 20:35:08 [INFO]   Model loaded on cuda:0
+2026-07-12 20:35:08 [INFO]   Model loaded on cuda:1
+2026-07-12 20:35:08 [INFO] [GPU 0] prov_gigapath embedding_dim=1536
+2026-07-12 20:35:09 [INFO] [GPU 1] prov_gigapath embedding_dim=1536
+2026-07-12 21:09:01 [ERROR] [case_008__slide_H&E_24] FAILED: CUDA out of memory. Tried to allocate 28.00 MiB. GPU 0 has a total capacity of 23.52 GiB of which 2.38 MiB is free. Process 3422394 has 15.74 GiB memory in use. Including non-PyTorch memory, this process has 7.76 GiB memory in use. Of the allocated memory 6.52 GiB is allocated by PyTorch, and 787.42 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-07-13 04:15:13 [ERROR] [case_140__slide_H&E_38] FAILED: Caught OSError in DataLoader worker process 2.
+Original Traceback (most recent call last):
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/vmieres/tesis/embed_from_patches_opt.py", line 92, in __getitem__
+    patch = f["patches"][idx]  # (3,H,W) uint8
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/h5py/_hl/dataset.py", line 758, in __getitem__
+    return self._fast_reader.read(args)
+  File "h5py/_selector.pyx", line 376, in h5py._selector.Reader.read
+OSError: [Errno 5] Can't synchronously read data (file read failed: time = Mon Jul 13 04:15:13 2026
+, filename = '/home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_140__slide_H&E_38.h5', file descriptor = 5, errno = 5, error message = 'Input/output error', buf = 0x55bac973a682, total read size = 1725635, bytes this sub-read = 1725635, bytes actually read = 18446744073709551615, offset = 0)
+
+2026-07-13 15:42:36 [INFO] ======================================================================
+2026-07-13 15:42:36 [INFO]  EMBEDDING EXTRACTOR OPT (multi-GPU, AMP real)
+2026-07-13 15:42:36 [INFO]  patches_dir : /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches
+2026-07-13 15:42:36 [INFO]  output_dir  : /home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins
+2026-07-13 15:42:36 [INFO]  modelos     : ['prov_gigapath', 'uni2', 'virchow2', 'phikon_v2']
+2026-07-13 15:42:36 [INFO]  datasets    : ['HISTAI_colorectal_b1']
+2026-07-13 15:42:36 [INFO]  gpu_ids     : [0]  | num_workers/GPU: 8 | batch_size: 32 | use_amp: True
+2026-07-13 15:42:36 [INFO] ======================================================================
+2026-07-13 15:42:37 [INFO]  Total de tareas (slide x modelo): 21504
+2026-07-13 15:42:40 [INFO] [GPU 0] Cargando modelo: prov_gigapath
+2026-07-13 15:42:40 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-07-13 15:42:40 [INFO]   From: /home/vmieres/tesis/models/prov_gigapath
+2026-07-13 15:43:02 [INFO]   Model loaded on cuda:0
+2026-07-13 15:43:03 [INFO] [GPU 0] prov_gigapath embedding_dim=1536
+2026-07-13 15:44:12 [INFO] ======================================================================
+2026-07-13 15:44:12 [INFO]  EMBEDDING EXTRACTOR OPT (multi-GPU, AMP real)
+2026-07-13 15:44:12 [INFO]  patches_dir : /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches
+2026-07-13 15:44:12 [INFO]  output_dir  : /home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins
+2026-07-13 15:44:12 [INFO]  modelos     : ['prov_gigapath', 'uni2', 'virchow2', 'phikon_v2']
+2026-07-13 15:44:12 [INFO]  datasets    : ['HISTAI_colorectal_b1']
+2026-07-13 15:44:12 [INFO]  gpu_ids     : [0]  | num_workers/GPU: 8 | batch_size: 256 | use_amp: True
+2026-07-13 15:44:12 [INFO] ======================================================================
+2026-07-13 15:44:12 [INFO]  Total de tareas (slide x modelo): 21504
+2026-07-13 15:44:15 [INFO] [GPU 0] Cargando modelo: prov_gigapath
+2026-07-13 15:44:15 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-07-13 15:44:15 [INFO]   From: /home/vmieres/tesis/models/prov_gigapath
+2026-07-13 15:44:36 [INFO]   Model loaded on cuda:0
+2026-07-13 15:44:36 [INFO] [GPU 0] prov_gigapath embedding_dim=1536
+2026-07-13 16:16:43 [INFO] ======================================================================
+2026-07-13 16:16:43 [INFO]  EMBEDDING EXTRACTOR OPT (multi-GPU, AMP real)
+2026-07-13 16:16:43 [INFO]  patches_dir : /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches
+2026-07-13 16:16:43 [INFO]  output_dir  : /home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins
+2026-07-13 16:16:43 [INFO]  modelos     : ['prov_gigapath', 'uni2', 'virchow2', 'phikon_v2']
+2026-07-13 16:16:43 [INFO]  datasets    : ['HISTAI_colorectal_b1']
+2026-07-13 16:16:43 [INFO]  gpu_ids     : [0, 1]  | num_workers/GPU: 8 | batch_size: 256 | use_amp: True
+2026-07-13 16:16:43 [INFO] ======================================================================
+2026-07-13 16:16:43 [INFO]  Total de tareas (slide x modelo): 21504
+2026-07-13 16:16:46 [INFO] [GPU 0] Cargando modelo: prov_gigapath
+2026-07-13 16:16:46 [INFO] [GPU 1] Cargando modelo: prov_gigapath
+2026-07-13 16:16:46 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-07-13 16:16:46 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-07-13 16:16:46 [INFO]   From: /home/vmieres/tesis/models/prov_gigapath
+2026-07-13 16:16:46 [INFO]   From: /home/vmieres/tesis/models/prov_gigapath
+2026-07-13 16:17:09 [INFO]   Model loaded on cuda:1
+2026-07-13 16:17:09 [INFO]   Model loaded on cuda:0
+2026-07-13 16:17:10 [INFO] [GPU 1] prov_gigapath embedding_dim=1536
+2026-07-13 16:17:10 [INFO] [GPU 0] prov_gigapath embedding_dim=1536
+2026-07-13 21:54:55 [ERROR] [case_425__slide_P40 (BC28)_12] FAILED: Caught OSError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/vmieres/tesis/embed_from_patches_opt.py", line 92, in __getitem__
+    patch = f["patches"][idx]  # (3,H,W) uint8
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/h5py/_hl/dataset.py", line 758, in __getitem__
+    return self._fast_reader.read(args)
+  File "h5py/_selector.pyx", line 376, in h5py._selector.Reader.read
+OSError: [Errno 5] Can't synchronously read data (file read failed: time = Mon Jul 13 21:54:55 2026
+, filename = '/home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_425__slide_P40 (BC28)_12.h5', file descriptor = 5, errno = 5, error message = 'Input/output error', buf = 0x7f055bf9a960, total read size = 235806, bytes this sub-read = 235806, bytes actually read = 18446744073709551615, offset = 0)
+
+2026-07-13 21:54:55 [ERROR] [case_425__slide_MCK (AE1& AE3)_1] FAILED: Caught OSError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/vmieres/tesis/embed_from_patches_opt.py", line 92, in __getitem__
+    patch = f["patches"][idx]  # (3,H,W) uint8
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/h5py/_hl/dataset.py", line 758, in __getitem__
+    return self._fast_reader.read(args)
+  File "h5py/_selector.pyx", line 376, in h5py._selector.Reader.read
+OSError: [Errno 5] Can't synchronously read data (file read failed: time = Mon Jul 13 21:54:55 2026
+, filename = '/home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_425__slide_MCK (AE1& AE3)_1.h5', file descriptor = 5, errno = 5, error message = 'Input/output error', buf = 0x55ebc703426e, total read size = 1243404, bytes this sub-read = 1243404, bytes actually read = 18446744073709551615, offset = 0)
+
+2026-07-14 03:19:31 [INFO] ======================================================================
+2026-07-14 03:19:31 [INFO]  EMBEDDING EXTRACTOR OPT (multi-GPU, AMP real)
+2026-07-14 03:19:31 [INFO]  patches_dir : /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches
+2026-07-14 03:19:31 [INFO]  output_dir  : /home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins
+2026-07-14 03:19:31 [INFO]  modelos     : ['prov_gigapath', 'uni2', 'virchow2', 'phikon_v2']
+2026-07-14 03:19:31 [INFO]  datasets    : ['HISTAI_colorectal_b1']
+2026-07-14 03:19:31 [INFO]  gpu_ids     : [0, 1]  | num_workers/GPU: 8 | batch_size: 256 | use_amp: True
+2026-07-14 03:19:31 [INFO] ======================================================================
+2026-07-14 03:19:31 [INFO]  Total de tareas (slide x modelo): 21504
+2026-07-14 03:19:33 [INFO] [GPU 0] Cargando modelo: prov_gigapath
+2026-07-14 03:19:34 [INFO] [GPU 1] Cargando modelo: prov_gigapath
+2026-07-14 03:19:34 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-07-14 03:19:34 [INFO]   From: /home/vmieres/tesis/models/prov_gigapath
+2026-07-14 03:19:34 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-07-14 03:19:34 [INFO]   From: /home/vmieres/tesis/models/prov_gigapath
+2026-07-14 03:19:57 [INFO]   Model loaded on cuda:1
+2026-07-14 03:19:57 [INFO]   Model loaded on cuda:0
+2026-07-14 03:19:58 [INFO] [GPU 1] prov_gigapath embedding_dim=1536
+2026-07-14 03:19:58 [INFO] [GPU 0] prov_gigapath embedding_dim=1536
+2026-07-14 04:47:08 [ERROR] [case_487__slide_H&E_19] FAILED: [Errno 5] Close failed (file write failed: time = Tue Jul 14 04:47:08 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/prov_gigapath/case_487__slide_H&E_19.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x55e5c0451f10, total write size = 2048, bytes this sub-write = 2048, bytes actually written = 18446744073709551615, offset = 0)
+2026-07-14 04:47:16 [ERROR] [case_487__slide_H&E_2] FAILED: Caught OSError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/vmieres/tesis/embed_from_patches_opt.py", line 92, in __getitem__
+    patch = f["patches"][idx]  # (3,H,W) uint8
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/h5py/_hl/dataset.py", line 758, in __getitem__
+    return self._fast_reader.read(args)
+  File "h5py/_selector.pyx", line 376, in h5py._selector.Reader.read
+OSError: [Errno 5] Can't synchronously read data (file read failed: time = Tue Jul 14 04:46:52 2026
+, filename = '/home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_487__slide_H&E_2.h5', file descriptor = 5, errno = 5, error message = 'Input/output error', buf = 0x55d09589ba92, total read size = 1356777, bytes this sub-read = 1356777, bytes actually read = 18446744073709551615, offset = 0)
+
+2026-07-14 05:23:23 [ERROR] [case_488__slide_H&E_26] FAILED: Caught OSError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/vmieres/tesis/embed_from_patches_opt.py", line 92, in __getitem__
+    patch = f["patches"][idx]  # (3,H,W) uint8
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/home/vmieres/tesis/.venv/lib/python3.10/site-packages/h5py/_hl/dataset.py", line 758, in __getitem__
+    return self._fast_reader.read(args)
+  File "h5py/_selector.pyx", line 376, in h5py._selector.Reader.read
+OSError: [Errno 5] Can't synchronously read data (file read failed: time = Tue Jul 14 05:23:13 2026
+, filename = '/home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_488__slide_H&E_26.h5', file descriptor = 5, errno = 5, error message = 'Input/output error', buf = 0x556d29347c77, total read size = 1880078, bytes this sub-read = 1880078, bytes actually read = 18446744073709551615, offset = 0)
+
+2026-07-14 19:12:18 [INFO] ======================================================================
+2026-07-14 19:12:18 [INFO]  EMBEDDING EXTRACTOR OPT (multi-GPU, AMP real)
+2026-07-14 19:12:18 [INFO]  patches_dir : /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches
+2026-07-14 19:12:18 [INFO]  output_dir  : /home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins
+2026-07-14 19:12:18 [INFO]  modelos     : ['prov_gigapath', 'uni2', 'virchow2', 'phikon_v2']
+2026-07-14 19:12:18 [INFO]  datasets    : ['HISTAI_colorectal_b1']
+2026-07-14 19:12:18 [INFO]  gpu_ids     : [0, 1]  | num_workers/GPU: 8 | batch_size: 256 | use_amp: True
+2026-07-14 19:12:18 [INFO] ======================================================================
+2026-07-14 19:12:19 [INFO]  Total de tareas (slide x modelo): 21504
+2026-07-14 19:12:22 [INFO] [GPU 1] Cargando modelo: prov_gigapath
+2026-07-14 19:12:22 [INFO] [GPU 0] Cargando modelo: prov_gigapath
+2026-07-14 19:12:22 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-07-14 19:12:22 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-07-14 19:12:22 [INFO]   From: /home/vmieres/tesis/models/prov_gigapath
+2026-07-14 19:12:22 [INFO]   From: /home/vmieres/tesis/models/prov_gigapath
+2026-07-14 19:12:48 [INFO]   Model loaded on cuda:1
+2026-07-14 19:12:49 [INFO] [GPU 1] prov_gigapath embedding_dim=1536
+2026-07-14 19:12:50 [INFO]   Model loaded on cuda:0
+2026-07-14 19:12:51 [INFO] [GPU 0] prov_gigapath embedding_dim=1536
+2026-07-15 08:29:35 [WARNING]   I/O error (attempt 1/2): Unable to synchronously open file (bad object header version number). Reintentando en 1.0s...
+2026-07-15 08:29:36 [WARNING]   H5 validation failed for /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_840__slide_H&E_11.h5: Unable to synchronously open file (bad object header version number)
+2026-07-15 08:29:36 [ERROR] [case_840__slide_H&E_11] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-15 08:29:36 [INFO] [GPU 0] Reintentando case_840__slide_H&E_11.h5 en 5s...
+2026-07-15 08:29:41 [WARNING]   I/O error (attempt 1/2): Unable to synchronously open file (bad object header version number). Reintentando en 1.0s...
+2026-07-15 08:29:42 [WARNING]   H5 validation failed for /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_840__slide_H&E_11.h5: Unable to synchronously open file (bad object header version number)
+2026-07-15 08:29:42 [ERROR] [case_840__slide_H&E_11] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-15 08:29:42 [WARNING]   I/O error (attempt 1/2): Unable to synchronously open file (bad object header version number). Reintentando en 1.0s...
+2026-07-15 08:29:43 [WARNING]   H5 validation failed for /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_840__slide_H&E_12.h5: Unable to synchronously open file (bad object header version number)
+2026-07-15 08:29:43 [ERROR] [case_840__slide_H&E_12] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-15 08:29:43 [INFO] [GPU 0] Reintentando case_840__slide_H&E_12.h5 en 5s...
+2026-07-15 08:29:48 [WARNING]   I/O error (attempt 1/2): Unable to synchronously open file (bad object header version number). Reintentando en 1.0s...
+2026-07-15 08:29:49 [WARNING]   H5 validation failed for /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_840__slide_H&E_12.h5: Unable to synchronously open file (bad object header version number)
+2026-07-15 08:29:49 [ERROR] [case_840__slide_H&E_12] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-15 15:25:27 [INFO] [GPU 1] Cargando modelo: uni2
+2026-07-15 15:25:27 [INFO] Loading model: UNI2-h (MahmoodLab) — ViT-H/14, 1536-dim
+2026-07-15 15:25:27 [INFO]   From: /home/vmieres/tesis/models/uni2
+2026-07-15 15:25:27 [INFO] [GPU 0] Cargando modelo: uni2
+2026-07-15 15:25:27 [INFO] Loading model: UNI2-h (MahmoodLab) — ViT-H/14, 1536-dim
+2026-07-15 15:25:27 [INFO]   From: /home/vmieres/tesis/models/uni2
+2026-07-15 15:25:39 [INFO]   Loaded bin: ['pytorch_model.bin']
+2026-07-15 15:25:40 [INFO]   Model loaded on cuda:1
+2026-07-15 15:25:40 [INFO] [GPU 1] uni2 embedding_dim=1536
+2026-07-15 15:25:41 [INFO]   Loaded bin: ['pytorch_model.bin']
+2026-07-15 15:25:42 [INFO]   Model loaded on cuda:0
+2026-07-15 15:25:42 [INFO] [GPU 0] uni2 embedding_dim=1536
+2026-07-16 13:09:09 [WARNING]   I/O error (attempt 1/3): [Errno 5] Can't synchronously write data (file write failed: time = Thu Jul 16 13:09:09 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_610__slide_H&E_9.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x559fa653ae80, total write size = 393216, bytes this sub-write = 393216, bytes actually written = 18446744073709551615, offset = 0). Reintentando en 2.0s...
+2026-07-16 13:09:09 [WARNING]   I/O error (attempt 1/3): [Errno 5] Can't synchronously write data (file write failed: time = Thu Jul 16 13:09:09 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_611__slide_H&E_0.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x55710b79fb50, total write size = 393216, bytes this sub-write = 393216, bytes actually written = 18446744073709551615, offset = 0). Reintentando en 2.0s...
+2026-07-16 13:09:12 [ERROR] [case_611__slide_H&E_0] FAILED: Disable slist on flush dest failure failed (file write failed: time = Thu Jul 16 13:09:12 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_611__slide_H&E_0.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x557103ec3d20, total write size = 4096, bytes this sub-write = 4096, bytes actually written = 18446744073709551615, offset = 0)
+2026-07-16 13:09:12 [INFO]   Deleted incomplete output: /home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_611__slide_H&E_0.h5
+2026-07-16 13:09:12 [INFO] [GPU 0] Reintentando case_611__slide_H&E_0.h5 en 5s...
+2026-07-16 13:09:14 [WARNING]   I/O error (attempt 1/3): [Errno 5] Can't synchronously write data (file write failed: time = Thu Jul 16 13:09:14 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_610__slide_H&E_9.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x559f848054f0, total write size = 393216, bytes this sub-write = 393216, bytes actually written = 18446744073709551615, offset = 0). Reintentando en 2.0s...
+2026-07-16 13:09:27 [WARNING]   I/O error (attempt 1/3): [Errno 5] Can't synchronously write data (file write failed: time = Thu Jul 16 13:09:27 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_610__slide_H&E_9.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x559f72c10dd0, total write size = 393216, bytes this sub-write = 393216, bytes actually written = 18446744073709551615, offset = 0). Reintentando en 2.0s...
+2026-07-16 13:09:32 [WARNING]   I/O error (attempt 1/3): [Errno 5] Can't synchronously write data (file write failed: time = Thu Jul 16 13:09:32 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_610__slide_H&E_9.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x559fa653ae80, total write size = 393216, bytes this sub-write = 393216, bytes actually written = 18446744073709551615, offset = 0). Reintentando en 2.0s...
+2026-07-16 13:09:45 [WARNING]   I/O error (attempt 1/3): [Errno 5] Can't synchronously write data (file write failed: time = Thu Jul 16 13:09:45 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_610__slide_H&E_9.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x559f72c10dd0, total write size = 393216, bytes this sub-write = 393216, bytes actually written = 18446744073709551615, offset = 0). Reintentando en 2.0s...
+2026-07-16 13:09:46 [INFO] [GPU 0] case_611__slide_H&E_0.h5 OK en reintento
+2026-07-16 13:09:50 [WARNING]   I/O error (attempt 1/3): [Errno 5] Can't synchronously write data (file write failed: time = Thu Jul 16 13:09:50 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_610__slide_H&E_9.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x559f84b055f0, total write size = 393216, bytes this sub-write = 393216, bytes actually written = 18446744073709551615, offset = 0). Reintentando en 2.0s...
+2026-07-16 13:10:01 [ERROR] [case_610__slide_H&E_9] FAILED: Disable slist on flush dest failure failed (file write failed: time = Thu Jul 16 13:10:01 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_610__slide_H&E_9.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x559fa5f61d60, total write size = 4096, bytes this sub-write = 4096, bytes actually written = 18446744073709551615, offset = 0)
+2026-07-16 13:10:01 [INFO]   Deleted incomplete output: /home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_610__slide_H&E_9.h5
+2026-07-16 13:10:01 [INFO] [GPU 1] Reintentando case_610__slide_H&E_9.h5 en 5s...
+2026-07-16 13:11:28 [INFO] [GPU 1] case_610__slide_H&E_9.h5 OK en reintento
+2026-07-16 16:24:51 [WARNING]   I/O error (attempt 1/3): [Errno 5] Can't synchronously write data (file write failed: time = Thu Jul 16 16:24:51 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_692__slide_H&E_1.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x5570fc43da80, total write size = 393216, bytes this sub-write = 393216, bytes actually written = 18446744073709551615, offset = 0). Reintentando en 2.0s...
+2026-07-16 16:24:51 [WARNING]   I/O error (attempt 1/3): [Errno 5] Can't synchronously write data (file write failed: time = Thu Jul 16 16:24:51 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_692__slide_H&E_0.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x559f84a52e00, total write size = 393216, bytes this sub-write = 393216, bytes actually written = 18446744073709551615, offset = 0). Reintentando en 2.0s...
+2026-07-16 16:24:57 [WARNING]   I/O error (attempt 1/3): [Errno 5] Can't synchronously write data (file write failed: time = Thu Jul 16 16:24:57 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_692__slide_H&E_0.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x559fa23abdc0, total write size = 393216, bytes this sub-write = 393216, bytes actually written = 18446744073709551615, offset = 0). Reintentando en 2.0s...
+2026-07-16 16:25:05 [ERROR] [case_692__slide_H&E_0] FAILED: Disable slist on flush dest failure failed (file write failed: time = Thu Jul 16 16:25:05 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_692__slide_H&E_0.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x559f72c20410, total write size = 4096, bytes this sub-write = 4096, bytes actually written = 18446744073709551615, offset = 0)
+2026-07-16 16:25:05 [INFO]   Deleted incomplete output: /home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_692__slide_H&E_0.h5
+2026-07-16 16:25:05 [INFO] [GPU 1] Reintentando case_692__slide_H&E_0.h5 en 5s...
+2026-07-16 16:25:17 [WARNING]   I/O error (attempt 1/3): [Errno 5] Can't synchronously write data (file write failed: time = Thu Jul 16 16:25:17 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_692__slide_H&E_1.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x5570fc3c4200, total write size = 393216, bytes this sub-write = 393216, bytes actually written = 18446744073709551615, offset = 0). Reintentando en 2.0s...
+2026-07-16 16:25:22 [WARNING]   I/O error (attempt 1/3): [Errno 5] Can't synchronously write data (file write failed: time = Thu Jul 16 16:25:22 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_692__slide_H&E_1.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x5570fc43da80, total write size = 393216, bytes this sub-write = 393216, bytes actually written = 18446744073709551615, offset = 0). Reintentando en 2.0s...
+2026-07-16 16:25:40 [WARNING]   I/O error (attempt 1/3): [Errno 5] Can't synchronously write data (file write failed: time = Thu Jul 16 16:25:40 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_692__slide_H&E_1.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x5571041afcf0, total write size = 393216, bytes this sub-write = 393216, bytes actually written = 18446744073709551615, offset = 0). Reintentando en 2.0s...
+2026-07-16 16:25:42 [ERROR] [case_692__slide_H&E_1] FAILED: Disable slist on flush dest failure failed (file write failed: time = Thu Jul 16 16:25:42 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_692__slide_H&E_1.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x5570fc51e280, total write size = 4096, bytes this sub-write = 4096, bytes actually written = 18446744073709551615, offset = 0)
+2026-07-16 16:25:42 [INFO]   Deleted incomplete output: /home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/uni2/case_692__slide_H&E_1.h5
+2026-07-16 16:25:42 [INFO] [GPU 0] Reintentando case_692__slide_H&E_1.h5 en 5s...
+2026-07-16 16:27:00 [INFO] [GPU 1] case_692__slide_H&E_0.h5 OK en reintento
+2026-07-16 16:27:03 [INFO] [GPU 0] case_692__slide_H&E_1.h5 OK en reintento
+2026-07-16 21:56:17 [WARNING]   I/O error (attempt 1/2): Unable to synchronously open file (bad object header version number). Reintentando en 1.0s...
+2026-07-16 21:56:18 [WARNING]   H5 validation failed for /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_840__slide_H&E_11.h5: Unable to synchronously open file (bad object header version number)
+2026-07-16 21:56:18 [ERROR] [case_840__slide_H&E_11] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-16 21:56:18 [INFO] [GPU 1] Reintentando case_840__slide_H&E_11.h5 en 5s...
+2026-07-16 21:56:23 [WARNING]   I/O error (attempt 1/2): Unable to synchronously open file (bad object header version number). Reintentando en 1.0s...
+2026-07-16 21:56:24 [WARNING]   H5 validation failed for /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_840__slide_H&E_11.h5: Unable to synchronously open file (bad object header version number)
+2026-07-16 21:56:24 [ERROR] [case_840__slide_H&E_11] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-16 21:56:24 [WARNING]   I/O error (attempt 1/2): Unable to synchronously open file (bad object header version number). Reintentando en 1.0s...
+2026-07-16 21:56:25 [WARNING]   H5 validation failed for /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_840__slide_H&E_12.h5: Unable to synchronously open file (bad object header version number)
+2026-07-16 21:56:25 [ERROR] [case_840__slide_H&E_12] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-16 21:56:25 [INFO] [GPU 1] Reintentando case_840__slide_H&E_12.h5 en 5s...
+2026-07-16 21:56:30 [WARNING]   I/O error (attempt 1/2): Unable to synchronously open file (bad object header version number). Reintentando en 1.0s...
+2026-07-16 21:56:31 [WARNING]   H5 validation failed for /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_840__slide_H&E_12.h5: Unable to synchronously open file (bad object header version number)
+2026-07-16 21:56:31 [ERROR] [case_840__slide_H&E_12] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-17 04:10:54 [INFO] [GPU 0] Cargando modelo: virchow2
+2026-07-17 04:10:54 [INFO] Loading model: Virchow2 (Paige) — ViT-H/14 con register tokens, 2560-dim
+2026-07-17 04:10:54 [INFO]   From: /home/vmieres/tesis/models/virchow2
+2026-07-17 04:11:01 [INFO] [GPU 1] Cargando modelo: virchow2
+2026-07-17 04:11:01 [INFO] Loading model: Virchow2 (Paige) — ViT-H/14 con register tokens, 2560-dim
+2026-07-17 04:11:01 [INFO]   From: /home/vmieres/tesis/models/virchow2
+2026-07-17 04:11:08 [INFO]   Loaded safetensors: ['model.safetensors']
+2026-07-17 04:11:09 [INFO]   Model loaded on cuda:0
+2026-07-17 04:11:09 [INFO] [GPU 0] virchow2 embedding_dim=2560
+2026-07-17 04:11:19 [INFO]   Loaded safetensors: ['model.safetensors']
+2026-07-17 04:11:20 [INFO]   Model loaded on cuda:1
+2026-07-17 04:11:20 [INFO] [GPU 1] virchow2 embedding_dim=2560
+2026-07-18 04:36:20 [WARNING]   I/O error (attempt 1/3): [Errno 5] Can't synchronously write data (file write failed: time = Sat Jul 18 04:36:20 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/virchow2/case_664__slide_H&E_14.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x559f83045700, total write size = 655360, bytes this sub-write = 655360, bytes actually written = 18446744073709551615, offset = 0). Reintentando en 2.0s...
+2026-07-18 04:36:25 [WARNING]   I/O error (attempt 1/3): [Errno 5] Can't synchronously write data (file write failed: time = Sat Jul 18 04:36:25 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/virchow2/case_664__slide_H&E_14.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x559f83045700, total write size = 655360, bytes this sub-write = 655360, bytes actually written = 18446744073709551615, offset = 0). Reintentando en 2.0s...
+2026-07-18 04:36:26 [WARNING]   I/O error (attempt 1/3): [Errno 5] Can't synchronously write data (file write failed: time = Sat Jul 18 04:36:26 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/virchow2/case_664__slide_H&E_15.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x55713b7812c0, total write size = 655360, bytes this sub-write = 655360, bytes actually written = 18446744073709551615, offset = 0). Reintentando en 2.0s...
+2026-07-18 04:36:31 [WARNING]   I/O error (attempt 1/3): [Errno 5] Can't synchronously write data (file write failed: time = Sat Jul 18 04:36:31 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/virchow2/case_664__slide_H&E_14.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x559f83045700, total write size = 655360, bytes this sub-write = 655360, bytes actually written = 18446744073709551615, offset = 0). Reintentando en 2.0s...
+2026-07-18 04:36:31 [WARNING]   I/O error (attempt 1/3): [Errno 5] Can't synchronously write data (file write failed: time = Sat Jul 18 04:36:31 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/virchow2/case_664__slide_H&E_15.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x55713b7812c0, total write size = 655360, bytes this sub-write = 655360, bytes actually written = 18446744073709551615, offset = 0). Reintentando en 2.0s...
+2026-07-18 04:36:33 [ERROR] [case_664__slide_H&E_15] FAILED: Disable slist on flush dest failure failed (file write failed: time = Sat Jul 18 04:36:33 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/virchow2/case_664__slide_H&E_15.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x55713e42a200, total write size = 4096, bytes this sub-write = 4096, bytes actually written = 18446744073709551615, offset = 0)
+2026-07-18 04:36:33 [INFO]   Deleted incomplete output: /home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/virchow2/case_664__slide_H&E_15.h5
+2026-07-18 04:36:33 [INFO] [GPU 0] Reintentando case_664__slide_H&E_15.h5 en 5s...
+2026-07-18 04:36:44 [WARNING]   I/O error (attempt 1/3): [Errno 5] Can't synchronously write data (file write failed: time = Sat Jul 18 04:36:44 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/virchow2/case_664__slide_H&E_14.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x559f83045700, total write size = 655360, bytes this sub-write = 655360, bytes actually written = 18446744073709551615, offset = 0). Reintentando en 2.0s...
+2026-07-18 04:36:48 [ERROR] [case_664__slide_H&E_14] FAILED: Disable slist on flush dest failure failed (file write failed: time = Sat Jul 18 04:36:48 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/virchow2/case_664__slide_H&E_14.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x559f8b4f57c0, total write size = 4096, bytes this sub-write = 4096, bytes actually written = 18446744073709551615, offset = 0)
+2026-07-18 04:36:48 [INFO]   Deleted incomplete output: /home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/virchow2/case_664__slide_H&E_14.h5
+2026-07-18 04:36:48 [INFO] [GPU 1] Reintentando case_664__slide_H&E_14.h5 en 5s...
+2026-07-18 04:37:10 [INFO] [GPU 0] case_664__slide_H&E_15.h5 OK en reintento
+2026-07-18 04:38:28 [INFO] [GPU 1] case_664__slide_H&E_14.h5 OK en reintento
+2026-07-18 11:09:53 [WARNING]   I/O error (attempt 1/2): Unable to synchronously open file (bad object header version number). Reintentando en 1.0s...
+2026-07-18 11:09:54 [WARNING]   H5 validation failed for /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_840__slide_H&E_11.h5: Unable to synchronously open file (bad object header version number)
+2026-07-18 11:09:54 [ERROR] [case_840__slide_H&E_11] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-18 11:09:54 [INFO] [GPU 0] Reintentando case_840__slide_H&E_11.h5 en 5s...
+2026-07-18 11:09:59 [WARNING]   I/O error (attempt 1/2): Unable to synchronously open file (bad object header version number). Reintentando en 1.0s...
+2026-07-18 11:10:00 [WARNING]   H5 validation failed for /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_840__slide_H&E_11.h5: Unable to synchronously open file (bad object header version number)
+2026-07-18 11:10:00 [ERROR] [case_840__slide_H&E_11] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-18 11:10:00 [WARNING]   I/O error (attempt 1/2): Unable to synchronously open file (bad object header version number). Reintentando en 1.0s...
+2026-07-18 11:10:01 [WARNING]   H5 validation failed for /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_840__slide_H&E_12.h5: Unable to synchronously open file (bad object header version number)
+2026-07-18 11:10:01 [ERROR] [case_840__slide_H&E_12] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-18 17:33:20 [INFO] [GPU 0] Cargando modelo: phikon_v2
+2026-07-18 17:33:20 [INFO] Loading model: Phikon-v2 (Owkin) — ViT-L/16 transformers, 1024-dim
+2026-07-18 17:33:20 [INFO]   From: /home/vmieres/tesis/models/phikon_v2
+2026-07-18 17:33:22 [INFO]   Model loaded on cuda:0
+2026-07-18 17:33:22 [INFO] [GPU 0] phikon_v2 embedding_dim=1024
+2026-07-18 17:33:26 [INFO] [GPU 1] Cargando modelo: phikon_v2
+2026-07-18 17:33:26 [INFO] Loading model: Phikon-v2 (Owkin) — ViT-L/16 transformers, 1024-dim
+2026-07-18 17:33:26 [INFO]   From: /home/vmieres/tesis/models/phikon_v2
+2026-07-18 17:33:27 [INFO]   Model loaded on cuda:1
+2026-07-18 17:33:27 [INFO] [GPU 1] phikon_v2 embedding_dim=1024
+2026-07-19 18:19:20 [WARNING]   I/O error (attempt 1/2): Unable to synchronously open file (bad object header version number). Reintentando en 1.0s...
+2026-07-19 18:19:21 [WARNING]   H5 validation failed for /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_840__slide_H&E_11.h5: Unable to synchronously open file (bad object header version number)
+2026-07-19 18:19:21 [ERROR] [case_840__slide_H&E_11] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-19 18:19:21 [INFO] [GPU 1] Reintentando case_840__slide_H&E_11.h5 en 5s...
+2026-07-19 18:19:26 [WARNING]   I/O error (attempt 1/2): Unable to synchronously open file (bad object header version number). Reintentando en 1.0s...
+2026-07-19 18:19:27 [WARNING]   H5 validation failed for /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_840__slide_H&E_11.h5: Unable to synchronously open file (bad object header version number)
+2026-07-19 18:19:27 [ERROR] [case_840__slide_H&E_11] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-19 18:19:27 [WARNING]   I/O error (attempt 1/2): Unable to synchronously open file (bad object header version number). Reintentando en 1.0s...
+2026-07-19 18:19:28 [WARNING]   H5 validation failed for /home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_840__slide_H&E_12.h5: Unable to synchronously open file (bad object header version number)
+2026-07-19 18:19:28 [ERROR] [case_840__slide_H&E_12] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-19 19:35:14 [WARNING]   I/O error (attempt 1/2): [Errno 5] Can't synchronously read data (file read failed: time = Sun Jul 19 19:35:14 2026
+, filename = '/home/shared_data/HISTAI/HISTAI_Colorectal_b1/patches/HISTAI_colorectal_b1/case_888__slide_HER2-neu (4B5)_16.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x55711b234d40, total read size = 2616, bytes this sub-read = 2616, bytes actually read = 18446744073709551615, offset = 0). Reintentando en 1.0s...
+2026-07-19 19:35:15 [WARNING]   Error closing writer /home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/phikon_v2/case_888__slide_H&E_8.h5: [Errno 5] Close failed (file write failed: time = Sun Jul 19 19:35:15 2026
+, filename = '/home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/HISTAI_colorectal_b1/phikon_v2/case_888__slide_H&E_8.h5', file descriptor = 55, errno = 5, error message = 'Input/output error', buf = 0x559f80bc9f40, total write size = 2048, bytes this sub-write = 2048, bytes actually written = 18446744073709551615, offset = 0)
+2026-07-19 23:28:10 [WARNING] [GPU 1] 4 slides fallaron definitivamente: ['case_840__slide_H&E_11.h5', 'case_840__slide_H&E_12.h5', 'case_840__slide_H&E_11.h5', 'case_840__slide_H&E_12.h5']
+2026-07-19 23:28:21 [WARNING] [GPU 0] 4 slides fallaron definitivamente: ['case_840__slide_H&E_11.h5', 'case_840__slide_H&E_12.h5', 'case_840__slide_H&E_11.h5', 'case_840__slide_H&E_12.h5']
+2026-07-19 23:31:54 [INFO] 
+======================================================================
+2026-07-19 23:31:54 [INFO]  RESUMEN GLOBAL
+2026-07-19 23:31:54 [INFO]  Tiempo total: 7459.6 min
+2026-07-19 23:31:54 [INFO]  Output: /home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins
+2026-07-19 23:31:54 [INFO]  Procesados: 18794 | Saltados (ya existían): 2702 | Fallidos: 8
+2026-07-19 23:31:54 [WARNING]  Slides fallidos (8): ['case_840__slide_H&E_11', 'case_840__slide_H&E_12', 'case_840__slide_H&E_11', 'case_840__slide_H&E_12', 'case_840__slide_H&E_11', 'case_840__slide_H&E_12', 'case_840__slide_H&E_11', 'case_840__slide_H&E_12']
+2026-07-19 23:31:54 [INFO] ======================================================================
+2026-07-19 23:31:54 [INFO]  Stats guardadas en: /home/shared_data/HISTAI/embeddings/HISTAI_Colorectal_b1_embeddins/embedding_stats.csv

@@ -1,0 +1,417 @@
+case_id,tumour_site,stage_notes,dukes,pT,pN,pM,sex,age,MMR,MSI,KRAS,NRAS,BRAF
+002,rectosigmoid biopsy,,,,,,F,36,Not performed,No MSI,No mutation,c.35G>T p.(Gly12Val) (also known as G12V),No mutation
+003,distal sigmoid colon polyp,,,,,,F,36,Not performed,No MSI,No mutation,c.35G>T p.(Gly12Val) (also known as G12V),No mutation
+004,peritoneal biopsy,,,,,,F,50,No Loss,No MSI,c.35G>A p.(Gly12Asp),Not performed,No mutation
+005,right colon,pT3 pN2b pM1a,,pT3,pN2b,pM1a,F,66,Not performed,No MSI,c.38G>A p.(Gly13Asp),Not performed,No mutation
+007,bronchial biopsy,,,,,,M,63,Not performed,Not performed,Not performed,Not performed,Not performed
+008,right middle lung lobe,,,,,,M,67,No Loss,Not performed,c.34G>T p.(Gly12Cys),No mutation,No mutation
+009,"liver resection, segment v lesion plus gallbladder",,,,,,M,70,Not performed,No MSI,No mutation,No mutation,No mutation
+010,biopsy right vocal chord,,,,,,M,75,Not performed,No MSI,c.35G>T p.(Gly12Val),No mutation,No mutation
+011,left gastric nodes,,,,,,M,68,Not performed,No MSI,No mutation,No mutation,Failed
+012,gall bladder,,,,,,M,72,No Loss,Not performed,No mutation,No mutation,No mutation
+013,liver biopsy,,,,,,F,47,No loss,Not performed,c.35G>T p.(Gly12Val),No mutation,Not performed
+014,ileocaecal valve biopsy,,,,,,M,31,No Loss,Not performed,c.35G>A p.(Gly12Asp),Not performed,No mutation
+015,biopsy of pelvic mass,,,,,,F,74,Not performed,No MSI,No mutation,No mutation,No mutation
+016,left lobe of liver,,,,,,M,73,No Loss,Not performed,c.35G>A p.(Gly12Asp),No mutation,No mutation
+017,proximal sigmoid colon biopsy,,,,,,F,57,No loss,Not performed,c.38G>A p.(Gly13Asp),Not performed,No mutation
+018,rectal biopsy,,,,,,M,47,No loss,Not performed,No mutation,No mutation,No mutation
+019,liver resection,,,,,,M,46,No Loss,Not performed,No mutation,No mutation,No mutation
+020,distal transverse colon,,,,,,F,56,The tumour cells show positive nuclear staining for MSH2 and MSH6 but there is partial loss of nuclear staining for MLH1 and PMS2.  Areas of tumour with similar morphology show a different pattern of staining which is difficult to explain,Not performed,c.35G>A p.(Gly12Asp),No mutation,No mutation
+021,descending colon,,,,,,M,45,No loss,No MSI,c.35G>A p.(Gly12Asp),No mutation,No mutation
+022,proximal rectal lesion biopsy,,,,,,M,46,No Loss,Not performed,No mutation,No mutation,No mutation
+023,native liver biopsy,,,,,,M,45,No loss,Not performed,No mutation,No mutation,No mutation
+024,right adrenal gland,Adrenal (right) - Metastatic adenocarcinoma (in keeping with a colo-rectal primary site of origin),,,,,F,51,No loss,Not performed,c.35G>T p.(Gly12Val),Not performed,Not performed
+025,right hepatectomy,"metastatic adenocarcinoma,",,,,,M,60,No loss,No MSI,No mutation,No mutation,No mutation
+026,section vi liver,,,,,,M,72,No Loss,Not performed,c.34G>T p.(Gly12Cys),Not performed,No mutation
+027,distal sigmoid colon,,,,,,M,56,No loss,Not performed,c.34G>T p.(Gly12Cys),No mutation,Not performed
+029,lung,,,,,,M,61,Not performed,No MSI,No mutation,No mutation,No mutation
+030,colonic biopsy,,,,,,M,82,No Loss,Not performed,c.35G>T p.(Gly12Val),Not performed,No mutation
+031,rectal biopsy,,,,,,M,55,No Loss,Not performed,c.436G>A p.(Ala146Thr),No mutation,No mutation
+032,descending colon biopsy,,,,,,M,79,Not performed,Not performed,No mutation,No mutation,No mutation
+033,distal sigmoid / rectosigmoid biopsy,,,,,,M,52,No loss,Not performed,No mutation,No mutation,No mutation
+034,colonic resection,,,,,,F,66,No Loss,Not performed,c.35G>C p.(Gly12Ala),Not performed,No mutation
+035,partial right hepatectomy,,,,,,F,43,No loss,Not performed,c.38G>A p.(Gly13Asp),No mutation,No mutation
+036,wedge resection segment iii of liver,"Metastatic adenocarcinoma, present at resection margin (R1); Chemotherapy-related nodular regenerative change and sinusoidal obstruction syndrome in background liver",,,,,F,59,No loss,Not performed,No mutation,No mutation,No mutation
+037,small bowel,,,,,,F,70,No loss,Not performed,c.38G>A p.(Gly13Asp),Not performed,Not performed
+038,liver resection segment vi,,,,,,M,71,No Loss,Not performed,c.180_181delinsAA p.(Gln61Lys),Not performed,No mutation
+039,omentum,,,,,,F,72,No Loss,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+040,atypical resection segment viii liver,,,,,,F,65,No loss,Not performed,No mutation,No mutation,Not performed
+041,rectosigmoid junction biopsy,,,,,,M,57,No Loss,Not performed,c.183A>C p.(Gln61His),No mutation,No mutation
+042,ascending colon biopsy,,,,,,M,75,No Loss,Not performed,No mutation,No mutation,No mutation
+043,right hepatectomy,,,,,,M,70,Not performed,No MSI,No mutation,No mutation,No mutation
+044,segment vii liver sectionectomy,,,,,,F,65,No Loss,Not performed,c.38G>A p.(Gly13Asp),No mutation,No mutation
+045,liver,,,,,,M,57,No Loss,Not performed,No mutation,No mutation,No mutation
+046,left lower lobe of lung wedge resection,,,,,,F,65,No Loss,Not performed,c.38G>A p.(Gly13Asp),No mutation,No mutation
+048,rectal biopsy,ypT2 N0 cM1,,ypT2,N0,cM1,M,56,No loss,Not performed,No mutation,No mutation,No mutation
+049,proximal sigmoid colon,,,,,,F,51,No loss,No MSI,No mutation,No mutation,No mutation
+050,proximal sigmoid colon biospy,suspicious but not diagnostic of adenocarcinoma,,,,,F,50,No Loss,Not performed,c.35G>T p.(Gly12Val),No mutation,No mutation
+051,peri-umbilical soft tissue,,,,,,M,67,No Loss,Not performed,No mutation,No mutation,No mutation
+052,proximal and mid appendix,pT4a pNx,,pT4a,pNx,,M,59,No Loss,Not performed,No mutation,No mutation,No mutation
+053,liver biopsy,,,,,,M,51,No loss,Not performed,No mutation,c.181C>A p.(Gln61Lys),Not performed
+055,"liver, segment i",,,,,,F,47,No loss,Not performed,c.34G>C p.(Gly12Arg),No mutation,No mutation
+056,omental biopsy,,,,,,F,67,No Loss,Not performed,No mutation,No mutation,No mutation
+057,rectal biopsy,,,,,,M,55,No loss,No MSI,c.34G>T p.(Gly12Cys),No mutation,No mutation
+058,liver segment v/vi lesion,,,,,,M,53,Not performed,Not performed,Not performed,Not performed,Not performed
+059,colonic resection,,,,,,F,74,Not performed,Not performed,Not performed,Not performed,Not performed
+060,sigmoid colon,pT3 pN0,,pT3,pN0,,F,57,Not performed,No MSI,No mutation,No mutation,No mutation
+061,hepatic flexure,pT3 pN0,,pT3,pN0,,M,65,Not performed,No MSI,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+062,appendix,pT4a&b pN0,,pT4a&b,pN0,,F,73,Not performed,No MSI,No mutation,No mutation,No mutation
+063,caecum,pT4b pN2a,,pT4b,pN2a,,M,72,"ss of nuclear staining for MLH1, PMS2 as well as only focal loss for both MSH2 and MSH6 in an area of the tumour with solid morphology",MSI High,No mutation,No mutation,No mutation
+064,caecum,pT4a pN2a pM1c,,pT4a,pN2a,pM1c,M,58,Not performed,No MSI,c.35G>A p.(Gly12Asp),Not performed,No mutation
+065,caecum,pT4a N0,,pT4a,N0,,F,66,Not performed,No MSI,c.35G>A p.(Gly12Asp),Not performed,No mutation
+066,hepatic flexure,"pT4b, N2a, M1c",,pT4b,2Na,M1c,M,69,Not performed,No MSI,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+067,liver biopsy,,,,,,M,58,Not performed,No MSI,c.38G>A p.(Gly13Asp),Not performed,No mutation
+068,ascending colon biopsy,,,,,,F,41,No Loss,No MSI,c.34G>T p.(Gly12Cys),Not performed,No mutation
+069,rectum,,,,,,M,61,Not performed,No MSI,c.35G>A p.(Gly12Asp),No mutation,No mutation
+070,colonic resection,,,,,,M,71,Loss of MLH1 & PMS2,MSI High,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+071,sigmoid colon,pT4b pN0,,pT4a,pN0,,M,79,Not performed,No MSI,c.35G>C p.(Gly12Ala),Not performed,No mutation
+072,colonic resection,,,,,,M,73,No Loss,MSI Low,No mutation,c.34G>T p.(Gly12Cys),No mutation
+073,anal biopsy,,,,,,F,73,Not performed,No MSI,c.38G>A p.(Gly13Asp),Not performed,No mutation
+074,caecum,pT3 pN0.,,pT3,pN0,,M,56,Not performed,No MSI,c.35G>T p.(Gly12Val),Not performed,No mutation
+075,hepatic flexure,pT3 N1a,,pT3,N1a,,M,71,Not performed,No MSI,c.436G>A p.(Ala146Thr),No mutation,No mutation
+076,probable appendi,,,,,,M,55,No Loss,Insufficient,Insufficient,Insufficient,Insufficient
+077,colonic resection,,,,,,M,64,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+078,rectum,,,,,,F,23,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,No mutation
+079,transverse colon,pT4b pN2b pM1.,,pT4b,pN2b,pM1,F,72,Loss of MLH1 & PMS2,MSI High,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+080,ascending colon,pT4a pN0.,,pT4a,pN0,,M,71,Not performed,No MSI,c.38G>A p.(Gly13Asp),No mutation,No mutation
+081,upper rectum,"ypT3, N1c",,ypT3,N1c,,M,74,Not performed,No MSI,c.35G>A p.(Gly12Asp),No mutation,No mutation
+082,sigmoid,"pT4b, pN0.",,pT4b,pN0,,F,60,Not performed,No MSI,c.183A>T p.(Gln61His),No mutation,No mutation
+083,"caecum with metastatic deposits in umbilicus, surface of left colon and small bowel wall.","pT4a, pN1b, pM1c.",,pT4a,pN1b,pM1c,M,55,Not performed,No MSI,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+084,rectum,"pT3 pN2 Mx R0, Dukes' C1",C1,pT3,pN2,Mx,M,61,No loss,Not performed,c.35G>A p.(Gly12Asp),No mutation,Not performed
+085,sigmoid colon biopsy,,,,,,F,33,No loss,Not performed,No mutation,No mutation,Not performed
+086,rectum,"Dukes b,  pT3, N0.",B,pT3,N0,,M,45,No loss,Not performed,No mutation,No mutation,No mutation
+087,rectosigmoid junction biopsy ,,,,,,F,52,Not performed,No MSI,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+088,liver biopsy,,,,,,F,61,Not performed,Not performed,Not performed,Not performed,Not performed
+089,rectal biopsy,,,,,,F,58,Not performed,No MSI,No mutation,No mutation,No mutation
+090,rectal biopsy,,,,,,F,68,Not performed,No MSI,c.35G>A p.(Gly12Asp),Not performed,No mutation
+091,sigmoid colon,,,,,,M,61,No loss,Not performed,No mutation,No mutation,No mutation
+092,liver biopsy,,,,,,M,65,No Loss,Not performed,No mutation,c.38G>A p.(Gly13Asp),No mutation
+093,rectal sigmoid biopsy,,,,,,F,59,No loss,Not performed,c.35G>A p.(Gly12Asp),No mutation,No mutation
+094,caecum,pT4a N0,,pT4a,N0,,M,72,Not performed,MSI High,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+095,rectum,ypT3 N1 M1 moderately differentiated adenocarcinoma; margins clear,,ypT3,N1,M1,F,46,No loss,Not performed,No mutation,No mutation,No mutation
+096,transverse colon,"Dukes C2,  pT4b N2 with extramural venous invasion",C2,pT4b,N2,,F,48,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,No mutation
+097,caecum / proximal ascending,pT3 N0,,pT3,N0,,F,80,Not performed,MSI High,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+098,rectosigmoid,pT4a pN0,,pT4a,pN0,,M,56,Not performed,No MSI,c.38G>A p.(Gly13Asp),No mutation,No mutation
+099,rectal lesion biopsy,,,,,,F,48,Not performed,No MSI,No mutation,No mutation,No mutation
+100,descending colon,pT3 pN0,,pT3,pN0,,M,66,No Loss,Not performed,c.35G>T p.(Gly12Val),Not performed,Failed
+101,rectum,"Duke's B, pT3 N0 MX (0/12 lymph nodes),",B,pT3,N0,Mx,F,58,No loss,Not performed,No mutation,No mutation,No mutation
+102,colonic biopsy,,,,,,F,64,Not performed,No MSI,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+103,bladder tumour chips,,,,,,M,68,No loss,Not performed,No mutation,No mutation,No mutation
+104,distal transverse,pT3 pN0; histologically Dukes'stage B (clinically Dukes' stage D); extramural venous invasion present; completely resected.,B (clinically D),pT3,pN0,,F,67,No loss,Not performed,No mutation,No mutation,Not performed
+105,peritoneal biopsy,,,,,,M,43,Not performed,No MSI,No mutation,No mutation,No mutation
+106,rectum,"At least high grade dysplasia, highly suspicious of adenocarcinoma",,,,,M,60,No loss,Not performed,c.35G>A p.(Gly12Asp),No mutation,No mutation
+107,proximal transverse colonic biopsy,,,,,,F,77,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+108,rectosigmoid junction,,,,,,F,75,Not performed,No MSI,c.35G>T p.(Gly12Val),No mutation,No mutation
+109,rectal biopsy,,,,,,F,61,Not performed,Not performed,No mutation,No mutation,No mutation
+110,rectal biopsy,,,,,,M,70,No Loss,Not performed,c.35G>C p.(Gly12Ala),No mutation,No mutation
+111,ascending colon biopsy,,,,,,F,57,No Loss,Not performed,c.182A>G p.(Gln61Arg),Not performed,No mutation
+112,rectal biopsy,,,,,,M,53,No Loss,Not performed,c.35G>A p.(Gly12Asp),No mutation,No mutation
+113,caecum,pT3 pN0.,,pT3,pN0,,M,60,Not performed,No MSI,c.35G>A p.(Gly12Asp),No mutation,No mutation
+114,anorectal biopsy,,,,,,F,77,No Loss,Not performed,c.35G>A p.(Gly12Asp),No mutation,No mutation
+115,rectum,pT3 pN0.,,pT3,pN0,,M,63,Not performed,No MSI,No mutation,No mutation,No mutation
+116,caecum,pT4a pN2a,,pT4a,pN2a,,F,77,Not performed,No MSI,c.436G>A p.(Ala146Thr),No mutation,No mutation
+117,rectosigmoid anterior resection,pT3 pN2b,,pT3,pN2b,,M,54,Not performed,No MSI,c.182A>G p.(Gln61Arg),No mutation,No mutation
+118,caecum / ascending colon,"Dukes' C1,  pT4a&b, N1 with direct invasion of fallopian tube and sigmoid colon and extramural venous invasion",C1,pT4a&b,N1,,F,40,No loss,No MSI,c.35G>A p.(Gly12Asp),No mutation,No mutation
+119,liver biopsy,,,,,,M,71,Not performed,Not performed,Not performed,Not performed,Not performed
+120,caecum,Dukes c pT4b pN2; R2 ; extramural venous invasion and extensive peritoneal disease.,C,pT4b,pN2,,M,57,No loss,No MSI,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+121,distal sigmoid colon biopsy,,,,,,F,57,Not performed,No MSI,c.34G>A p.(Gly12Ser),No mutation,No mutation
+122,anorectal biopsy,,,,,,M,81,Not performed,No MSI,No mutation,No mutation,No mutation
+123,anal biopsy,,,,,,F,70,Not performed,No MSI,c.35G>A p.(Gly12Asp),No mutation,No mutation
+124,caecum,pT4 pN2 M1,,pT4,pN2,M1,F,71,Not performed,No MSI,No mutation,No mutation,No mutation
+125,descending / sigmoid colon,pT4a N1a (1 / 17),,pT4a,N1a,,F,82,Not performed,No MSI,No mutation,No mutation,No mutation
+126,descending / sigmoid colon,pT4a N1a (1 / 17),,pT4a,N1a,,F,82,Not performed,No MSI,No mutation,No mutation,No mutation
+128,rectum,Dukes C pT3 pN2 cM1 (TNM 5th Ed.),C,pT3,pN2,cM1,M,60,No loss,Not performed,No mutation,No mutation,Not performed
+129,total pelvic exenteration and distal ureters:,,,,,,M,64,Not performed,No MSI,No mutation,No mutation,No mutation
+130,colonic resection specimen,,,,,,F,62,Loss of MLH1 & PMS2,Not performed,c.35G>T p.(Gly12Val),No mutation,No mutation
+131,sigmoid colon,pT4b pN2a pM1c,,pT4b,pN2a,pM1c,F,57,Not performed,No MSI,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+132,proximal transverse colon,pT3 pN0.,,pT3,pN0,,M,72,Not performed,No MSI,No mutation,No mutation,No mutation
+133,caecal tumour,pT3 pN1b (cM1a).,,pT3,pN1b,cM1a,M,82,No Loss,Not performed,c.35G>T p.(Gly12Val),No mutation,No mutation
+134,peritoneal deposit,,,,,,M,43,No loss,Not performed,No mutation,No mutation,Not performed
+135,liver biopsy,,,,,,M,51,No loss,Not performed,No mutation,No mutation,Not performed
+136,ascending colon,pT4a pN1a,,pT4a,pN1a,,F,75,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+137,anterior resection for a rectosigmoid tumour,"Dukes C1:  pT4b, pN2, completely excised with intra and extramural venous invasion",C1,pT4b,pN2,,M,84,No loss,Not performed,No mutation,No mutation,Not performed
+138,rectal biopsy,,,,,,M,76,Not performed,No MSI,c.35G>A p.(Gly12Asp),No mutation,No mutation
+139,appendix,pT3 pN1b,,pT3,pN1b,,F,62,Not performed,No MSI,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+140,sigmoid colon,,,,,,M,45,No Loss,Not performed,c.37G>T p.(Gly13Cys),Not performed,No mutation
+141,rectal biopsy,,,,,,M,35,Not performed,Not performed,Not performed,Not performed,Not performed
+142,sigmoid colon lesion biopsy,,,,,,F,40,No loss,No MSI,c.35G>A p.(Gly12Asp),Not performed,Not performed
+143,ascending colon,pT3 N2a,,pT3,N2a,,M,59,Not performed,No MSI,c.38G>A p.(Gly13Asp),No mutation,No mutation
+146,rectum,ypT4a ypN2b ypM1c,,ypT4a,ypN2b,ypM1c,M,67,Not performed,No MSI,c.35G>A p.(Gly12As),No mutation,No mutation
+147,caecum,pT4b pN2b cM1(liver),,pT4b,pN2b,cM1 (liver),M,35,Not performed,No MSI,c.436G>A p.(Ala146Thr),No mutation,No mutation
+148,caecum,pT4a pN1b,,pT4a,pN1b,,F,41,Not performed,No MSI,No mutation,No mutation,No mutation
+149,caecum,pT3 pN1b pM1c,,pT3,pN1b,pM1c,F,74,Not performed,Not performed,c.35G>T p.(Gly12Val),No mutation,No mutation
+150,rectal biopsy,,,,,,F,56,No Loss,Not performed,No mutation,No mutation,No mutation
+151,rectum biopsy,,,,,,F,52,No Loss,Not performed,No mutation,No mutation,No mutation
+152,liver,,,,,,M,78,No Loss,Not performed,No mutation,No mutation,No mutation
+153,hepatic flexure biopsy,,,,,,M,69,No Loss,Not performed,No mutation,No mutation,No mutation
+154,rectal biopsy,,,,,,M,60,Not performed,No MSI,c.436G>A p.(Ala146Thr),No mutation,No mutation
+155,hepatic flexure biopsy,pT4b pN2;  7/29 nodes involved; Dukes' stage C1; extramural venous invasion present; completely excised.,C1,pT4b,pN2,,M,59,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+156,rectal biopsy,,,,,,F,52,No Loss,Not performed,No mutation,No mutation,No mutation
+157,colonic resection specimen,,,,,,F,58,Not performed,Not performed,Not performed,Not performed,Not performed
+158,rectal biopsy,,,,,,F,68,Not performed,No MSI,c.35G>T p.(Gly12Val),No mutation,No mutation
+159,descending colon,pT4a pN1b,,pT4a,pN1b,,M,74,Not performed,No MSI,c.34G>A p.(Gly12Ser),No mutation,No mutation
+160,distal sigmoid colon,,,,,,M,60,Not performed,No MSI,No mutation,No mutation,No mutation
+161,distal sigmoid colon,,,,,,M,60,Not performed,No MSI,No mutation,No mutation,No mutation
+162,proximal transverse colon biopsy,,,,,,F,58,No loss,Not performed,c.35G>T p.(Gly12Val),Not performed,Not performed
+163,omental biopsy,,,,,,F,71,Not performed,Not performed,Not performed,Not performed,Not performed
+164,ascending colon,Dukes' D; pT4b pN2 pMx,D,pT4b,pN2,pMx,M,42,Loss of MLH1 & PMS2,MSI HIgh,No mutation,No mutation,No mutation
+165,rectum biopsy,,,,,,F,58,No loss,Not performed,No mutation,c.182A>G p.(Gln61Arg) (also known as Q61R),No mutation
+166,mid transverse colonic biopsy,,,,,,F,83,Loss of MLH1 & PMS2,MSI High,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+167,caecum,pT3 pN1a.,,pT3,pN1a,,F,63,Not performed,No MSI,No mutation,No mutation,No mutation
+168,rectosigmoid biopsy,,,,,,F,37,Not performed,No MSI,c.38G>A p.(Gly13Asp),No mutation,No mutation
+169,rectum,pT4a pN1b.,,pT4a,pN1b,,M,71,Not performed,No MSI,c.35G>A p.(Gly12Asp),No mutation,No mutation
+170,upper rectal adenocarcinoma,"Dukes' C1, pT3 N2 MX, R0 with ischaemic/obstructive colitis and perforation in sigmoid colon",C1,pT3,N2,Mx,F,52,No loss,Not performed,c.35G>A p.(Gly12Asp),No mutation,No mutation
+171,sigmoid,pT3 N1c,,pT3,N1c,,M,74,Not performed,No MSI,c.35G>A p.(Gly12Asp),No mutation,No mutation
+172,sigmoid colon,,,,,,F,69,No Loss,Not performed,No mutation,No mutation,No mutation
+173,caecum/ascending colon,Dukes' C1 pT4b N1 with extramural venous invasion.,C1,pT4b,N1,,F,84,No loss,Not performed,c.38G>A p.(Gly13Asp),No mutation,No mutation
+174,sigmoid,"pT4a,  N2a",,pT4a,N2a,,M,53,Loss of MLH1 & PMS2,Not performed,c.35G>A p.(Gly12Asp),No mutation,No mutation
+175,rectosigmoid,pT4a N2b,,pT4a,N2b,,M,68,Not performed,No MSI,No mutation,No mutation,No mutation
+176,caecum,pT4a N2a,,pT4a,N2a,,M,68,Not performed,MSI High,Not performed,No mutation,c.1799T>A p.(Val600Glu)
+177,appendix,,,,,,M,33,Loss of MSH2 & MSH6,MSI High,c.35G>A p.(Gly12Asp),No mutation,No mutation
+178,caecum/proximal ascending colon,,,,,,M,33,Loss of MSH2 & MSH6,MSI High,c.35G>A p.(Gly12Asp),No mutation,No mutation
+179,caecum,pT3 N0 (0 / 16),,pT3,N0,,F,58,Loss of MLH1 & PMS2,Not performed,c.34G>T p.(Gly12Cys),No mutation,No mutation
+180,transverse colon,pT3N0,,pT3,N0,,M,34,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,No mutation
+182,rectal biopsy,,,,,,F,51,No loss,Not performed,Insufficient,Insufficient,Insufficient
+183,ascending colon,,,,,,F,71,No Loss,Not performed,No mutation,c.181C>A p.(Gln61Lys),No mutation
+184,colonic resection specimen,,,,,,F,36,No Loss,Not performed,No mutation,c.182A>G p.(Gln61Arg) (also known as Q61R),No mutation
+185,sigmoid colon biopsy,,,,,,F,80,No Loss,Failed,No mutation,c.35G>A p.(Gly12Asp),No mutation
+186,rectum,,,,,,M,59,Not performed,No MSI,c.35G>T p.(Gly12Val),No mutation,No mutation
+187,caecum,Dukes c2 pT4 pN2 M1.,C2,pT4,pN2,M1,F,62,No loss,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+188,liver biopsy,,,,,,M,53,Not performed,No MSI,No mutation,No mutation,No mutation
+189,rectum,ypT3 N1b,,ypT3,N1b,,F,50,No loss,Not performed,c.38G>A p.(Gly13Asp),No mutation,No mutation
+190,rectum,,,,,,M,47,No loss,Not performed,c.38G>A p.(Gly13Asp),No mutation,No mutation
+191,liver biopsy,,,,,,M,73,Not performed,No MSI,c.35G>T p.(Gly12Val),No mutation,No mutation
+192,appendix,,,,,,M,69,Not performed,No MSI,c.34G>T p.(Gly12Cys),No mutation,No mutation
+193,rectosigmoid,pT4a pN1b.,,pT4a,pN1b,,F,66,Not performed,No MSI,No mutation,No mutation,No mutation
+194,caecum,"Dukes' C1, pT3 N2 with extramural venous and lymphatic invasion.",C1,pT3,N2,,M,72,No loss,No MSI,No mutation,No mutation,No mutation
+195,rectal cancer,,,,,,F,85,Not performed,No MSI,No mutation,No mutation,No mutation
+196,rectum,,,,,,F,58,No loss,Not performed,c.35G>T p.(Gly12Val),No mutation,No mutation
+197,rectal biopsy,,,,,,F,66,No Loss,Not performed,c.35G>A p.(Gly12Asp),No mutation,No mutation
+198,liver biopsy,,,,,,M,42,No loss,Not performed,c.35G>T p.(Gly12Val),No mutation,Not performed
+199,liver resection,,,,,,M,68,Not performed,No MSI,No mutation,No mutation,No mutation
+200,descending colon biopsy,,,,,,F,74,No loss,Not performed,No mutation,No mutation,No mutation
+201,ascending colon biopsy,,,,,,M,77,No Loss,Not performed,c.37_42delinsAAGAGT p.(Gly13_Val14delinsLysSer),Not performed,No mutation
+202,sigmoid colon,pT3 pN2a.,,pT3,pN2a,,F,60,Not performed,No MSI,No mutation,No mutation,No mutation
+203,sigmoid colon,"Dukes' C1, pT4b N1; completely excised",C1,pT4b,N1,,F,60,No loss,Not performed,c.34G>T p.(Gly12Cys),No mutation,Not performed
+204,hepatic flexure biopsy,,,,,,F,31,No loss,Not performed,No mutation,No mutation,Not performed
+205,rectal biopsy,,,,,,M,38,No loss,Not performed,No mutation,No mutation,Not performed
+206,colonic resection specimen,,,,,,M,41,No Loss,Not performed,No mutation,No mutation,No mutation
+207,rectal biopsy,"Dukes' A, pT2 N0",A,pT2,N0,,M,53,No loss,Not performed,No mutation,No mutation,No mutation
+208,colonic resection specimen,,,,,,F,80,No Loss,Not performed,c.38G>A p.(Gly13Asp),Not performed,No mutation
+209,rectum,pT3 N1b,,pT3,N1b,,M,76,Not performed,No MSI,No mutation,No mutation,No mutation
+210,transverse colon,Perforated poorly differentiated medullary-like adenocarcinoma pT4b N1 cM1 with extramural venous invasion,,pT4b,N1,cM1,F,32,No loss,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+211,right hemicolectomy,,,,,,M,69,No Loss,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+212,rectal biopsy,,,,,,F,48,No loss,Not performed,c.35G>A p.(Gly12Asp),Not performed,Not performed
+213,rectum,,,,,,M,75,No Loss,Not performed,c.38G>A p.(Gly13Asp),No mutation,No mutation
+214,caecum,"pT3, pN0.",,pT3,pN0,,M,57,Not performed,Not performed,c.180_181delTCinsAA p.(Gln61Lys),No mutation,Not performed
+215,caecum,pT4 pN2 pM1; Dukes' D;  with prominent metastatic disease in both ovaries and omentum; R1 resection due to infiltrating tumour at vascular high tie.,D,pT4,pN2,pM1,F,54,No loss,Not performed,c.35G>A p.(Gly12Asp),Not performed,Not performed
+216,distal sigmoid colon,UB059723D/16 1Q-1T,,,,,M,60,No loss,Not performed,No mutation,No mutation,Not performed
+217,rectosigmoid colon biopsy,,,,,,M,60,No loss,Not performed,c.35G>T p.(Gly12Val),No mutation,No mutation
+218,colon,,,,,,M,61,Not performed,No MSI,No mutation,No mutation,Failed
+219,rectosigmoid,pT4a pN1b (cM1).,,pT4a,pN1b,cM1,M,72,No Loss,Not performed,c.436G>A p.(Ala146Thr),No mutation,No mutation
+220,descending colon biopsy,,,,,,F,56,No loss,Not performed,No mutation,No mutation,Not performed
+221,distal sigmoid colon,"Dukes' stage C1, TMN pT3,N",C1,pT3,N,,M,61,No loss,Not performed,No mutation,No mutation,Not performed
+222,descending colon,pT3 pN2;  4/13 nodes show metastatic carcinoma; Dukes' C1; no definite extramural venous invasion; completely resected.,C1,pT3,pN2,,M,58,No loss,Not performed,No mutation,No mutation,No mutation
+223,rectum,,,,,,M,60,No loss,Not performed,c.38G>A p.(Gly13Asp),No mutation,No mutation
+224,caecum,"Dukes' C2, pT3 N2, R2",C2,pT3,N2a,,F,72,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+225,left inguinal nodes,Dukes' D; ypT4a ypN1 ypM1; R0,D,ypT4a,ypN1,ypM1,M,59,No loss,No MSI,No mutation,No mutation,Failed
+226,rectal biopsy,,,,,,M,53,No loss,Not performed,c.35G>T p.(Gly12Val),No mutation,Not performed
+227,splenic flexure invading spleen and tail of pancrea,,,,,,M,64,Loss of MLH1 & PMS2,Not performed,c.35G>A p.(Gly12Asp),No mutation,No mutation
+228,peritoneal mass,,,,,,M,57,Not performed,Not performed,Not performed,Not performed,Not performed
+229,right hemicolectomy,,,,,,F,64,No Loss,Not performed,No mutation,No mutation,No mutation
+230,peritoneal biopsy,,,,,,M,40,No loss,Not performed,No mutation,No mutation,Not performed
+231,ascending colon biopsy,,,,,,F,49,No loss,Not performed,c.38G>A p.(Gly13Asp),Not performed,Not performed
+232,sigmoid colon lesion biopsy,"Dukes' D, pT4b pN1 cM1, extramural venous invasion, local excision complete - BASED ON MORE RECENT RESECTION",D,pT4b,pN1,cM1,M,56,No loss,Not performed,No mutation,No mutation,Not performed
+233,liver biopsy,,,,,,M,53,No loss,Not performed,No mutation,No mutation,Not performed
+234,sigmoid colon,pT4bN1,,pT4b,N1,,F,47,No loss,Not performed,c.35G>A p.(Gly12Asp),Not performed,Not performed
+235,rectum,pT3 pN2.,,pT3,pN2,,M,69,Not performed,No MSI,c.35G>A p.(Gly12Asp),No mutation,No mutation
+236,caecum,pT4a N1b.,,pT4a,N1b,,F,73,Not performed,No MSI,c.35G>T p.(Gly12Val),No mutation,c.1799T>A p.(Val600Glu)
+237,sigmoid colon,,,,,,F,75,Not performed,Not performed,Not performed,Not performed,Not performed
+239,ascending colon,pT3 pN2a,,pT3,pN2a,,F,73,Loss of MLH1 & PMS2. Focal loss of MSH6,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+240,colon at splenic flexure,Liver met in 2017,,,,,F,45,No loss,Not performed,No mutation,No mutation,No mutation
+242,sigmoid colon,pT4a pN1a,,pT4a,pN1a,,F,60,No Loss,Not performed,c.35G>A p.(Gly12Asp),No mutation,No mutation
+243,right colon,,,,,,F,79,No Loss,Not performed,No mutation,No mutation,No mutation
+244,sigmoid colon,"Dukes' C2, pT4b pN2 pM1, extramural venous invasion, local excision complete",C2,pT4b,pN2,pM1,M,50,No loss,Not performed,No mutation,c.35G>A p.(Gly12Asp),Not performed
+245,splenic flexure of colon,"Dukes' C1, pT4b pN2",C1,pT4b,pN2,,M,69,No loss,No MSI,No mutation,No mutation,No mutation
+246,lower rectum,,,,,,M,61,No Loss,Not performed,No mutation,No mutation,No mutation
+247,caecum,"Dukes' C1, pT4b pN1 pM1, extramural venous invasion, local excision complete",C1,pT4b,pN1a,pM1,M,46,No loss,Not performed,c.34G>T p.(Gly12Cys),Not performed,Not performed
+248,rectum,,,,,,F,53,No Loss,Not performed,No mutation,No mutation,No mutation
+249,sigmoid colon,,,,,,F,79,No Loss,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+250,rectal biopsy,,,,,,M,66,No Loss,Not performed,No mutation,No mutation,No mutation
+251,rectal biopsy,,,,,,M,69,No Loss,Not performed,No mutation,No mutation,No mutation
+253,rectal lesion biopsy,,,,,,F,38,No Loss,No MSI,No mutation,c.182A>G p.(Gln61Arg) (also known as Q61R),No mutation
+254,rectal biopsy,,,,,,M,70,No Loss,Not performed,No mutation,No mutation,No mutation
+255,rectal biopsy,,,,,,M,56,No loss,Not performed,No mutation,No mutation,Not performed
+256,bladder tumour resection,,,,,,M,60,No Loss,Not performed,No mutation,No mutation,No mutation
+257,upper rectal polyp,"pT1, focal transection at deep margin",,pT1,,,F,49,No loss,Not performed,c.34G>A p.(Gly12Ser),No mutation,No mutation
+258,rectum,"pT2, N0",,pT2,N0,,F,56,Not performed,No MSI,c.436G>A p.(Ala146Thr),No mutation,No mutation
+259,left colon,,,,,,F,69,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+260,caecum,"Dukes' C2, pT4b pN2 pM1, extensive extramural venous invasion, extranodal tumour present at vascular pedicle (R1)",C2,pT4b,pN2,pM1,M,67,No loss,Not performed,c.436G>A p.(Ala146Thr),No mutation,Not performed
+261,transverse colon biopsy,,,,,,F,60,No loss,Not performed,No mutation,No mutation,Not performed
+262,omentum resection,,,,,,M,53,No Loss,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+263,liver biopsy,,,,,,F,46,No loss,Not performed,c.34G>T p.(Gly12Cys),Not performed,Not performed
+264,rectal tumour & rectosigmoid polyp,Rectum - Adenocarcinoma Dukes' C.  pT2 N1 with submucosal venous invasion.  Recto-sigmoid - Adenocarcinoma Dukes' A pT1 N0 with submucosal venous invasion arising in a tubulovillous adenoma.,"C, A","pT2, pT1","N1, N0",,M,60,No loss,Not performed,"c.35G>T p.(Gly12Val). In rectal tumour, c.34G>T p.(Gly12Cys). Rectosigmoidal lpoly",No mutation,No mutation
+265,sigmoid colon,,,,,,M,42,No loss,No MSI,c.38G>A p.(Gly13Asp),Fail,No mutation
+266,rectal biopsy,,,,,,F,61,No loss,Not performed,c.35G>T p.(Gly12Val),Not performed,Not performed
+267,t5 spinal metastasis,,,,,,M,48,No Loss,Not performed,c.34G>T p.(Gly12Cys),Not performed,No mutation
+268,ascending colon (lymph node tested),"Dukes' C1, pT3 N2",C1,pT3,N2,,F,69,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+269,colon,,,,,,M,71,No Loss,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+270,sigmoid biopsy,,,,,,F,58,No loss,Not performed,c.35G>T p.(Gly12Val),No mutation,Not performed
+271,rectal biopsy,,,,,,M,60,No loss,Not performed,No mutation,No mutation,No mutation
+272,colonic resection specimen,,,,,,F,56,No Loss,Not performed,c.38G>A p.(Gly13Asp),No mutation,No mutation
+273,right hemicolectomy,,,,,,M,62,No Loss,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+274,ascending colon,pT3 pN0,,pT3,pN0,,F,69,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+276,rectal biopsy,,,,,,M,43,No Loss,Not performed,c.34G>T p.(Gly12Cys),No mutation,No mutation
+277,transverse colon,"Dukes' C2, pT3 N2 M1",C2,pT3,N2,M1,F,62,No loss,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+278,rectal biopsy,,,,,,M,64,No Loss,Not performed,No mutation,No mutation,No mutation
+279,caecum and ascending colon,"Dukes' C, pT4a&b, N2 with extramural venous",C,pT4a&b,N2,,F,58,No loss,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+280,colonic resection specimen,,,,,,M,71,No Loss,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+281,lower rectum,pT3 (2 tumours) pN0,,pT3,pN0,,M,72,No Loss,Not performed,No mutation,No mutation,No mutation
+282,distal sigmoid colon,pT3 (2 tumours) pN0,,pT3,pN0,,M,72,No Loss,Not performed,No mutation,No mutation,No mutation
+283,liver biopsy,,,,,,F,58,No Loss,Not performed,c.437C>T p.(Ala147Val),No mutation,No mutation
+284,ascending colon,"Dukes B, pT4,N0.  Incompletely excised (R2).",B,pT4,N0,,M,53,PMS2 Loss,MSI High,No mutation,No mutation,No mutation
+285,peritoneal nodules,In keeping with metastatic colorectal carcinoma,,,,,M,54,No loss,Not performed,c.35G>T p.(Gly12Val),No mutation,Not performed
+286,caecal biopsy,,,,,,F,49,No loss,Not performed,c.35G>T p.(Gly12Val),Not performed,Not performed
+287,sigmoid colon biopsy,,,,,,M,66,No loss,Not performed,No mutation,No mutation,No mutation
+288,liver biopsy,,,,,,F,47,No loss,Not performed,c.436G>A p.(Ala146Thr),No mutation,Not performed
+289,caecum extending into ascending colon,pT4b N2b,,pT4b,N2b,,F,76,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+290,rectosigmoid colon,pT4b pN2; 5/22 nodes involved; Dukes' stage C1 (clinically D),C1 (clinically D),pT4b,pN2,,F,57,No loss,No MSI,c.35G>A p.(Gly12Asp),No mutation,No mutation
+291,sigmoid colon,pT4a N1b,,pT4a,N1b,,M,64,No Loss,Not performed,No mutation (codon 117 failed),No mutation,No mutation
+292,transverse colon / small bowel,,,,,,F,70,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+293,liver biopsy,,,,,,F,78,No Loss,Not performed,c.35G>A p.(Gly12Asp),No mutation,No mutation
+294,liver biopsy,,,,,,M,81,No Loss,Not performed,No mutation,No mutation,No mutation
+295,"right hemicolectomy, lymph node metastisis",,,,,,M,65,No Loss,Not performed,c.38G>A p.(Gly13Asp),No mutation,No mutation
+296,caecum,,,,,,F,79,No loss,Not performed,c.34G>T p.(Gly12Cys),No mutation,Not performed
+297,ascending colon,pT4a pN1a.,,pT4a,pN1a,,F,74,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+298,perineal tissue,,,,,,F,49,Not performed,Not performed,Not performed,Not performed,Not performed
+299,colonic resection specimen,,,,,,F,68,No Loss,Not performed,No mutation,No mutation,No mutation
+300,sigmoid colon,"(Dukes' B, pT4 N0);",B,pT4,N0,,M,59,No loss,Not performed,No mutation,c.182A>T p.(Gln61Leu) (also known as Q61L),No mutation
+301,splenic flexure,"Poorly differentiated mucinous adenocarcinoma of signet ring cell type, pT4b N1 M1, 1/29 nodes, apical node clear, Duke's C1, R0 resection",C1,pT4b,N1,M1,F,53,Loss of MLH1 & PMS2,MSI High,No mutation,No mutation,No mutation
+302,sigmoid colon,"Dukes' C1, pT3 N2 with extramural venous invasion",C1,pT3,N2,,M,50,No loss,No MSI,Not performed,Not performed,No mutation
+303,rectum,Spread to liver - in most recent sample,,,,,M,57,No loss,Not performed,No mutation,No mutation,No mutation
+304,caecum,"(pT4 pN0, Dukes' B).",B,pT4,pN0,,M,58,No loss,No MSI,No mutation,No mutation,No mutation
+305,ascending colon,"Dukes' C2, pT3 pN2",C2,pT3,pN2,,F,56,Not performed,Not performed,No mutation,No mutation,Not performed
+307,caecum,pT4b pN2 pM1; 37/44 lymph nodes involved; Dukes' stage C2,C2,pT4b,pN2,pM1,M,69,No loss,Not performed,No mutation,No mutation,Not performed
+308,peritoneal nodule,,,,,,F,48,No loss,No MSI,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+309,splenic flexure of colon,pT4b pN2 pM1; 10/48 nodes involved; multiple peritoneal deposits of metastatic disease; Dukes' stage D; prominent intramural and extramural venous invasion; R0 excision.,D,pT4b,pN2,pM1,M,19,No loss,No MSI,No mutation,No mutation,No mutation
+310,ascending colon,"pT3, pN0.",,pT3,pN0,,M,32,Loss of MLH1 & PMS2,MSI High,c.38G>A p.(Gly13Asp),No mutation,No mutation
+311,"hepatic flexure (block 1g), proximal transvers colon (block 1k).","×2 invasive adenocarcinomas; hepatic flexure lesion moderately differentiated adenocarcinoma with mucinous features, Dukes B, pT3 pN0;  proximal transverse colon lesion, poorly differentiated adenocarcinoma, Dukes B, pT3 pN0; distal lesion associated with extramural venous invasion; both lesions appear completely excised.",B,pT3,pN0,,M,75,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+313,transverse colon,"Dukes' C1, pT4b N1, extramural venous invasion, local excision complete",C1,pT4b,N1,,F,53,No loss,No MSI,c.35G>A p.(Gly12Asp),No mutation,No mutation
+314,caecum,"Dukes' C1, pT3 N1 M1, with extramural venous invasion",C1,pT3,N1,M1,M,84,No loss,No MSI,c.35G>C p.(Gly12Ala),No mutation,No mutation
+315,sigmoid colon,,,,,,M,66,No loss,Not performed,No mutation,No mutation,Not performed
+316,caecum,"(Dukes'C1, pT4 N2)",C1,pT4,N2,,M,71,No loss,Not performed,c.35G>T p.(Gly12Val),No mutation,No mutation
+317,rectal biopsy,,,,,,F,49,No loss,Not performed,c.35G>C p.(Gly12Ala),No mutation,Not performed
+318,appendix,"pT4b N1 M1, incomplete resection (R1).",,pT4b,N1,M1,F,49,No loss,Not performed,c.35G>A p.(Gly12Asp),No mutation,No mutation
+319,transverse colon,"Dukes' D, pT4b N1 M1, completely excised.",D,pT4b,N1,M1,F,69,No loss,Not performed,No mutation,c.181C>A p.(Gln61Lys),Not performed
+320,sigmoid anastomosis,"Dukes' C1, pT4b N1 M1, local excision complete",C1,pT4b,N1,M1,F,69,No loss,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+321,liver biopsy,,,,,,F,53,No loss,Not performed,No mutation,No mutation,Not performed
+322,upper rectum,"Dukes' C1,  pT3 N2, Completely excised.",C1,pT3,N2,,F,29,No loss,Not performed,c.34G>A p.(Gly12Ser),Not performed,Not performed
+323,sigmoid colon,,,,,,M,60,No loss,Not performed,No mutation,No mutation,Not performed
+324,sigmoid colon,"pT4b pN1, R1, Dukes' C1, with extramural venous invasion",C1,pT4b,pN1,,M,53,No loss,Not performed,c.35G>T p.(Gly12Val),No mutation,No mutation
+325,caecum/ascending colon,"(Dukes' C1, pT4 pN2 pM1)",C1,pT4,pN2,pM1,F,56,No loss,Not performed,c.35G>C p.(Gly12Ala),No mutation,Not performed
+326,liver,,,,,,F,48,No loss,Not performed,No mutation,No mutation,Not performed
+327,caecum,"Dukes' C1 (clinically D), pT3 pN2 cM1, extramural venous invasion, local excision complete",C1,pT3,pN2,cM1,M,54,No loss,Not performed,c.35G>C p.(Gly12Ala),No mutation,Not performed
+328,sigmoid colon,"Dukes' C1, pT4b N1 M1 R1 with extramural venous invasion.  Metastasis to jejunum and omentum.",C1,pT4b,N1,M1,F,54,No loss,Not performed,c.35G>A p.(Gly12Asp),Not performed,Not performed
+330,distal sigmoid colon,,,,,,M,59,No loss,Not performed,No mutation,No mutation,Not performed
+331,caecum,"pT4b, pN2.",,pT4b,pN2,,F,57,No loss,Not performed,c.35G>A p.(Gly12Asp),No mutation,No mutation
+332,lymph node with metastatic disease,"Dukes' D, pT3 N2 M1, R0 with extramural venous invasion",D,pT3,N2,,F,48,No loss,Not performed,c.182A>G p.(Gln61Arg),Not performed,Not performed
+333,splenic flexure,"pT4b pN0, extramural venous invasion, local excision complete",,pT4b,pN0,,M,78,No loss,Not performed,No mutation,No mutation,Not performed
+334,peritoneal biopsy,,,,,,F,64,Not performed,Not performed,Not performed,Not performed,Not performed
+335,sigmoid colon,"PT3, N1",,pT3,N1,,F,52,No loss,Not performed,c.35G>A p.(Gly12Asp),No mutation,Not performed
+336,distal descending/sigmoid junction,"Dukes B pT4b, pN0, pMX.",B,pT4b,pN0,pMx,M,60,No loss,Not performed,No mutation,No mutation,Not performed
+337,transverse colon,TNM5 pT4b).  There is lymph node involvement (TNM5 pN1).  Margins are clear (R0).,,pT4b,pN1,,F,69,No loss,Not performed,No mutation,No mutation,No mutation
+338,appendix,,,,,,M,65,Not performed,No MSI,c.34G>T p.(Gly12Cys),No mutation,No mutation
+339,ileo-anal pouch resection,pT3 pN2 pM1 (seminal vesicle); R1 resection,,pT3,pN2,pM1,M,51,No loss,Not performed,No mutation,No mutation,Not performed
+340,rectum,not a biopsy,,,,,M,65,No Loss,Not performed,No mutation,No mutation,No mutation
+341,rectum,"pT3 pN1 (2/11), Dukes C1, R0",C1,pT3,pN1,,M,73,Not performed,No MSI,No mutation,No mutation,No mutation
+342,descending colon,pT4b pN1.,,pT4b,pN1,,M,71,Not performed,Not performed,Not performed,Not performed,Not performed
+343,caecum/ascending colon,pT4a N1b,,pT4a,N1b,,M,78,Loss of MLH1 & PMS2,MSI High,c.35G>A p.(Gly12Asp),No mutation,No mutation
+344,caecum,pT4a pN0,,pT4a,pN0,,M,81,No Loss,No MSI,c.34G>T p.(Gly12Cys),Not performed,No mutation
+345,lower rectum,ypT3 ypN0,,ypT3,ypN0,,M,38,No Loss,Not performed,c.436G>A p.(Ala146Thr),No mutation,No mutation
+346,descending colon,pT4aN1a,,pT4a,N1a,,M,61,Not performed,No MSI,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+347,caecal biopsy,,,,,,M,73,No Loss,Not performed,No mutation,No mutation,No mutation
+348,duodenal biopsy,,,,,,M,38,No Loss,Not performed,No mutation,c.181C>A p.(Gln61Lys),No mutation
+349,right hemicolectomy,,,,,,M,71,No Loss,Not performed,c.35G>T p.(Gly12Val),Not performed,No mutation
+350,tems of rectal tumour,pT2,,pT2,,,M,79,No Loss,Not performed,No mutation,No mutation,No mutation
+351,omentum,,,,,,M,52,No Loss,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+352,rectal biopsy,,,,,,M,69,No Loss,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+353,sigmoid colon biopsy,,,,,,M,69,No Loss,No MSI,c.34G>A p.(Gly12Ser),No mutation,No mutation
+354,distal sigmoid biopsy,,,,,,F,65,No Loss,Not performed,No mutation,No mutation,No mutation
+355,peritoneal biopsy,,,,,,F,58,No Loss,Not performed,No mutation,No mutation,No mutation
+356,sigmoid colon,pT4a pN2b pM1c.,,pT4a,pN2b,pM1c,M,73,Not performed,Not performed,c.35G>T p.(Gly12Val),No mutation,Not performed
+357,colonic resection specimen,,,,,,M,64,No Loss,Not performed,No mutation,No mutation,No mutation
+358,colonic resection specimen,,,,,,F,70,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+359,rectal biopsy,,,,,,F,59,No Loss,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+360,proximal large bowel,pT4a(2) N1b,,PT4a(2),N1b,,M,74,No Loss,Not performed,c.34G>A p.(Gly12Ser),No mutation,No mutation
+361,distal large bowel,pT4a(2) N1b,,PT4a(2),N1b,,M,74,No Loss,Not performed,c.34G>A p.(Gly12Ser),No mutation,No mutation
+362,rectal biopsy,,,,,,F,52,No Loss,Not performed,c.35G>T p.(Gly12Val),No mutation,No mutation
+363,colonic biopsy,,,,,,M,63,No Loss,Not performed,c.38G>A p.(Gly13Asp),No mutation,No mutation
+364,caecal tumour,,,,,,M,57,No Loss,Not performed,c.436G>A p.(Ala146Thr),No mutation,No mutation
+365,decending colon,,,,,,M,57,No Loss,Not performed,No mutation,No mutation,No mutation
+366,gall bladder,,,,,,M,75,No Loss,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+367,rectal biopsy,,,,,,M,68,No Loss,Not performed,No mutation,No mutation,No mutation
+368,rectal biopsy,,,,,,F,65,No Loss,Not performed,c.38G>A p.(Gly13Asp),Not performed,No mutation
+369,liver biopsy,,,,,,F,39,No Loss,Not performed,c.35G>A p.(Gly12Asp),No mutation,No mutation
+370,liver biopsy,,,,,,M,56,No Loss,Not performed,No mutation,No mutation,No mutation
+371,caecal biopsy,,,,,,F,54,No Loss,Not performed,c.38G>A p.(Gly13Asp),Not performed,No mutation
+372,transverse colon,,,,,,F,86,Loss of MLH1 & PMS2,MSI High,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+373,colonic resection specimen,,,,,,M,80,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+374,ascending colon,,,,,,F,41,No Loss,Not performed,No mutation,No mutation,No mutation
+375,sigmoid colon,pT4a pN2a,,pT4a,pN2a,,F,40,No Loss,Not performed,c.35G>A p.(Gly12Asp),Not performed,No mutation
+376,colonic resection specimen,,,,,,F,70,No Loss,Not performed,c.180_181delTCinsAA p.(Gln61Lys),Not performed,No mutation
+377,rectum,"pT3, pN2a",,pT3,pN2a,,F,67,Not performed,No MSI,No mutation,No mutation,No mutation
+378,kidney,,,,,,M,63,No Loss,Not performed,No mutation,No mutation,No mutation
+379,colonic resection specimen,,,,,,F,67,Loss of MLH1 & PMS2,Not performed,c.180_181delinsAA p.(Gln61Lys),Not performed,No mutation
+380,rectum,pT3 N0,,pT3,N0,,F,76,No Loss,Not performed,c.436G>A p.(Ala146Thr),Not performed,No mutation
+381,sigmoid colon,,,,,,F,62,No Loss,Not performed,c.37G>A p.(Gly13Ser),No mutation,No mutation
+382,colonic resection specimen,,,,,,M,77,No Loss,Not performed,c.34G>C p.(Gly12Arg),Not performed,No mutation
+383,sigmoid colon,pT3 pN1b,,pT3,pN1b,,M,78,No Loss,Not performed,No mutation,No mutation,No mutation
+384,caecum,pT3 N0,,pT3,N0,,F,76,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+385,right hemicolectomy,,,,,,M,41,No Loss,Not performed,No mutation,No mutation,No mutation
+386,caecum,,,,,,F,79,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+387,rectal biopsy,,,,,,M,52,No Loss,Not performed,c.35G>A p.(Gly12Asp),Not performed,No mutation
+388,hepatic flexure biopsy,,,,,,F,78,No Loss,Not performed,No mutation,No mutation,No mutation
+389,rectal biopsy,,,,,,F,66,No Loss,Not performed,No mutation,No mutation,No mutation
+390,rectal biopsy,,,,,,M,50,No Loss,No MSI,c.35G>A p.(Gly12Asp),Not performed,No mutation
+391,splenic flexure lesion biopsy,,,,,,F,57,No Loss,Not performed,c.436G>A p.(Ala146Thr),Not performed,No mutation
+392,rectum,pT3 N1b,,pT3,N1b,,M,37,No Loss,Not performed,c.35G>A p.(Gly12Asp),Not performed,No mutation
+393,sigmoid colon,"pT1, N1b",,pT1,N1b,,F,57,No Loss,Not performed,c.35G>C p.(Gly12Ala),Not performed,No mutation
+394,small bowel resection,,,,,,F,77,No Loss,Not performed,No mutation,c.181C>A p.(Gln61Lys),No mutation
+396,rectosigmoid,pT3 pN0,,pT3,pN0,,F,37,No Loss,Not performed,c.35G>A p.(Gly12Asp),Not performed,No mutation
+397,caecum,pT3 pN0,,pT3,pN0,,F,67,No Loss,Not performed,c.35G>A p.(Gly12Asp),Not performed,No mutation
+398,sigmoid colon,pT3 pN2b.,,pT3,pN1b,,M,37,No Loss,Not performed,c.35G>T p.(Gly12Val),Not performed,No mutation
+399,hepatic flexure,pT4a N1b,,pT4a,N1b,,F,73,Not performed,No MSI,No mutation,No mutation,No mutation
+400,splenic flexure,,,,,,M,63,No Loss,Not performed,No mutation,No mutation,No mutation
+401,hepatic flexure lesion biopsy,,,,,,F,64,Loss of MLH1 & PMS2,Not performed,No mutation,c.34G>T p.(Gly12Cys),c.1799T>A p.(Val600Glu)
+402,proximal descending colon biopsy,,,,,,M,57,No Loss,Not performed,No mutation,No mutation,No mutation
+403,omental biopsy,,,,,,M,73,No Loss,Not performed,c.35G>A p.(Gly12Asp),Not performed,No mutation
+404,right hemicolectomy,,,,,,M,76,No Loss,Not performed,No mutation,No mutation,No mutation
+405,right colon,,,,,,M,74,No Loss,Not performed,No mutation,No mutation,No mutation
+406,transverse colon,pT2 pN0,,pT2,pN0,,M,70,No Loss,Not performed,c.34G>T p.(Gly12Cys),No mutation,No mutation
+407,right hemicolectomy,,,,,,F,75,No Loss,Not performed,c.34G>T p.(Gly12Cys),Not performed,No mutation
+408,rectal polyp,pT1,,pT1,,,F,46,Not performed,No MSI,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+409,right hemicolectomy,,,,,,F,60,No Loss,Not performed,c.38_39delinsTT p.(Gly13Val),Not performed,No mutation
+410,rectal cancer,pT3 N2b,,pT3,N2b,,F,71,No Loss,Not performed,No mutation,No mutation,No mutation
+411,caecum,,,,,,F,63,No Loss,Not performed,c.35G>T p.(Gly12Val),Not performed,No mutation
+412,small bowel resection,,,,,,M,70,Patchy loss of MSH6,No MSI,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+413,rectum,pT3 pN1a,,pT3,pN1a,,F,83,No Loss,Not performed,No mutation,No mutation,No mutation
+414,caecum,pT3 pN1b,,pT3,pN1b,,M,55,No Loss,Not performed,c.35G>A p.(Gly12Asp),No mutation,Not performed
+415,ascending colon,pT4b N0,,pT4b,N0,,F,80,Loss of MLH1 & PMS2,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+416,caecal biopsy,,,,,,M,72,No Loss,Not performed,c.436G>A p.(Ala146Thr),No mutation,No mutation
+417,periteneum,,,,,,M,59,No Loss,Not performed,c.35G>C p.(Gly12Ala),No mutation,No mutation
+418,liver biopsy,,,,,,M,66,No Loss,Not performed,c.35G>A p.(Gly12Asp),Not performed,No mutation
+419,rectal biopsy,,,,,,M,68,Not performed,No MSI,No mutation,No mutation,No mutation
+420,ureter,,,,,,F,70,No Loss,Not performed,c.437C>T p.(Ala146Val),No mutation,No mutation
+421,caecum,pT4a pN2b pM1c,,pT4a,pN2B,pM1c,F,50,No Loss,Not performed,No mutation,No mutation,c.1799T>A p.(Val600Glu)
+423,rectum,,,,,,M,58,No Loss,Not performed,No mutation,No mutation,No mutation
+424,rectosigmoid biopsy,,,,,,M,40,No Loss,Not performed,No mutation,No mutation,No mutation
+425,rectosigmoid junction,,,,,,F,43,Not performed,No MSI,c.34G>T p.(Gly12Cys),No mutation,No mutation
+426,bladder,,,,,,F,77,Not performed,No MSI,c.35G>T p.(Gly12Val),No mutation,No mutation
+427,upper rectum,pT4a pN2a,,pT4a,pN2a,,M,63,Not performed,No MSI,No mutation,No mutation,No mutation
+428,rectosigmoid,,,,,,M,75,No loss,Not performed,No mutation,No mutation,No mutation
+429,decending colon,pT4a pN0,,pT4a,pN0,,M,63,No Loss,Not performed,c.35G>A p.(Gly12Asp),Not performed,No mutation
+430,sigmoid colon,"pT3, N0",,pT3,N0,,M,84,No Loss,Not performed,No mutation,No mutation,No mutation
+431,transverse colon,"pT3, N0",,pT3,N0,,M,84,No Loss,Not performed,No mutation,No mutation,No mutation
+432,right colon,,,,,,F,71,No Loss,Not performed,No mutation,No mutation,No mutation
+433,transverse colon,pT4(a&b) pN2a,,pT4a&b,pN2a,,F,81,Not performed,MSI High,No mutation,No mutation,No mutation
+434,proximal ascending colon,pT1,,pT1,,,F,81,Loss of MLH1 & PMS2,MSI High,No mutation,No mutation,c.1799T>A p.(Val600Glu)

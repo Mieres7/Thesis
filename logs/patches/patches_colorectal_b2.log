@@ -1,0 +1,524 @@
+2026-06-17 22:42:38 [INFO] ======================================================================
+2026-06-17 22:42:38 [INFO]   WSI PATCH EXTRACTOR
+2026-06-17 22:42:38 [INFO]   Config: config_files/patches_colorectal_b2.yaml
+2026-06-17 22:42:38 [INFO] ======================================================================
+2026-06-17 22:42:38 [INFO] GPUs available: 2
+2026-06-17 22:42:38 [INFO]   GPU 0: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-17 22:42:38 [INFO]   GPU 1: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-17 22:42:38 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-17 22:42:38 [INFO] Dataset: BCNB  |  Format: tiff
+2026-06-17 22:42:38 [INFO] Path: /home/DIINF/datasets_iacis/2026_HISTAI/HISTAI_colorectal_b2
+2026-06-17 22:42:38 [INFO] Found 94 file(s)
+2026-06-17 22:42:39 [ERROR] [slide_H&E_0] FAILED: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 513, in __getitem__
+    reader = self._get_reader()
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 502, in _get_reader
+    self._reader = WSIReader(
+                   ^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 129, in __init__
+    self._open()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 134, in _open
+    self._open_openslide()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 153, in _open_openslide
+    raise ValueError(
+ValueError: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+
+2026-06-17 22:42:39 [ERROR] [slide_H&E_0] FAILED: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 513, in __getitem__
+    reader = self._get_reader()
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 502, in _get_reader
+    self._reader = WSIReader(
+                   ^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 129, in __init__
+    self._open()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 134, in _open
+    self._open_openslide()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 153, in _open_openslide
+    raise ValueError(
+ValueError: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+
+2026-06-17 22:42:40 [ERROR] [slide_H&E_0] FAILED: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 513, in __getitem__
+    reader = self._get_reader()
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 502, in _get_reader
+    self._reader = WSIReader(
+                   ^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 129, in __init__
+    self._open()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 134, in _open
+    self._open_openslide()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 153, in _open_openslide
+    raise ValueError(
+ValueError: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+
+2026-06-17 22:42:48 [ERROR] [slide_H&E_0] FAILED: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 513, in __getitem__
+    reader = self._get_reader()
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 502, in _get_reader
+    self._reader = WSIReader(
+                   ^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 129, in __init__
+    self._open()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 134, in _open
+    self._open_openslide()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 153, in _open_openslide
+    raise ValueError(
+ValueError: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+
+2026-06-17 22:42:48 [ERROR] [slide_H&E_0] FAILED: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 513, in __getitem__
+    reader = self._get_reader()
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 502, in _get_reader
+    self._reader = WSIReader(
+                   ^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 129, in __init__
+    self._open()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 134, in _open
+    self._open_openslide()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 153, in _open_openslide
+    raise ValueError(
+ValueError: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+
+2026-06-17 22:42:49 [ERROR] [slide_H&E_0] FAILED: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 513, in __getitem__
+    reader = self._get_reader()
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 502, in _get_reader
+    self._reader = WSIReader(
+                   ^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 129, in __init__
+    self._open()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 134, in _open
+    self._open_openslide()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 153, in _open_openslide
+    raise ValueError(
+ValueError: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+
+2026-06-17 22:43:21 [INFO] ======================================================================
+2026-06-17 22:43:21 [INFO]   WSI PATCH EXTRACTOR
+2026-06-17 22:43:21 [INFO]   Config: config_files/patches_colorectal_b2.yaml
+2026-06-17 22:43:21 [INFO] ======================================================================
+2026-06-17 22:43:21 [INFO] GPUs available: 2
+2026-06-17 22:43:21 [INFO]   GPU 0: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-17 22:43:21 [INFO]   GPU 1: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-17 22:43:21 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-17 22:43:21 [INFO] Dataset: BCNB  |  Format: tiff
+2026-06-17 22:43:21 [INFO] Path: /home/DIINF/datasets_iacis/2026_HISTAI/HISTAI_colorectal_b2
+2026-06-17 22:43:21 [INFO] Found 94 file(s)
+2026-06-17 22:43:21 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:21 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:21 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:22 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_1] FAILED: [slide_H&E_1.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_10] FAILED: [slide_H&E_10.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_11] FAILED: [slide_H&E_11.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_12] FAILED: [slide_H&E_12.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:23 [ERROR] [slide_H&E_13] FAILED: [slide_H&E_13.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_14] FAILED: [slide_H&E_14.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_15] FAILED: [slide_H&E_15.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_16] FAILED: [slide_H&E_16.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_17] FAILED: [slide_H&E_17.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_18] FAILED: [slide_H&E_18.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_19] FAILED: [slide_H&E_19.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_2] FAILED: [slide_H&E_2.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_3] FAILED: [slide_H&E_3.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_4] FAILED: [slide_H&E_4.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_5] FAILED: [slide_H&E_5.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_6] FAILED: [slide_H&E_6.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_7] FAILED: [slide_H&E_7.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_8] FAILED: [slide_H&E_8.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_9] FAILED: [slide_H&E_9.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_1] FAILED: [slide_H&E_1.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_10] FAILED: [slide_H&E_10.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_11] FAILED: [slide_H&E_11.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_12] FAILED: [slide_H&E_12.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_13] FAILED: [slide_H&E_13.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_2] FAILED: [slide_H&E_2.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_3] FAILED: [slide_H&E_3.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_4] FAILED: [slide_H&E_4.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_5] FAILED: [slide_H&E_5.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_6] FAILED: [slide_H&E_6.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_7] FAILED: [slide_H&E_7.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_8] FAILED: [slide_H&E_8.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_9] FAILED: [slide_H&E_9.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:24 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:25 [ERROR] [slide_H&E_0] FAILED: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+2026-06-17 22:43:25 [INFO] 
+[BCNB] Summary: 94 slides | 0/0 patches kept (0.0%) | Errors: 94 | Time: 0.1 min
+2026-06-17 22:43:25 [INFO] 
+======================================================================
+2026-06-17 22:43:25 [INFO]   GLOBAL SUMMARY
+2026-06-17 22:43:25 [INFO]   Total slides processed : 94
+2026-06-17 22:43:25 [INFO]   Candidate patches      : 0
+2026-06-17 22:43:25 [INFO]   Kept patches           : 0
+2026-06-17 22:43:25 [INFO]   Filter rate            : 0.0%
+2026-06-17 22:43:25 [INFO]   Errors                 : 94
+2026-06-17 22:43:25 [INFO]   Total time             : 0.1 min
+2026-06-17 22:43:25 [INFO]   Output directory       : /home/DIINF/datasets_iacis/2026_HISTAI/HISTAI_colorectal_b2/patches
+2026-06-17 22:43:25 [INFO] ======================================================================
+2026-06-17 22:43:25 [INFO]   Stats saved to         : /home/DIINF/datasets_iacis/2026_HISTAI/HISTAI_colorectal_b2/patches/extraction_stats.csv
+2026-06-17 22:44:09 [INFO] ======================================================================
+2026-06-17 22:44:09 [INFO]   WSI PATCH EXTRACTOR
+2026-06-17 22:44:09 [INFO]   Config: config_files/patches_colorectal_b2.yaml
+2026-06-17 22:44:09 [INFO] ======================================================================
+2026-06-17 22:44:09 [INFO] GPUs available: 2
+2026-06-17 22:44:09 [INFO]   GPU 0: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-17 22:44:09 [INFO]   GPU 1: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-17 22:44:09 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-17 22:44:09 [INFO] Dataset: HISTAI_colorectal_b2  |  Format: tiff
+2026-06-17 22:44:09 [INFO] Path: /home/DIINF/datasets_iacis/2026_HISTAI/HISTAI_colorectal_b2
+2026-06-17 22:44:09 [INFO] Found 94 file(s)
+2026-06-17 22:44:10 [ERROR] [slide_H&E_0] FAILED: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 513, in __getitem__
+    reader = self._get_reader()
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 502, in _get_reader
+    self._reader = WSIReader(
+                   ^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 129, in __init__
+    self._open()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 134, in _open
+    self._open_openslide()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 153, in _open_openslide
+    raise ValueError(
+ValueError: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+
+2026-06-17 22:44:11 [ERROR] [slide_H&E_0] FAILED: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 513, in __getitem__
+    reader = self._get_reader()
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 502, in _get_reader
+    self._reader = WSIReader(
+                   ^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 129, in __init__
+    self._open()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 134, in _open
+    self._open_openslide()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 153, in _open_openslide
+    raise ValueError(
+ValueError: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+
+2026-06-17 22:44:12 [ERROR] [slide_H&E_0] FAILED: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 513, in __getitem__
+    reader = self._get_reader()
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 502, in _get_reader
+    self._reader = WSIReader(
+                   ^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 129, in __init__
+    self._open()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 134, in _open
+    self._open_openslide()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 153, in _open_openslide
+    raise ValueError(
+ValueError: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+
+2026-06-17 22:44:14 [ERROR] [slide_H&E_0] FAILED: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 513, in __getitem__
+    reader = self._get_reader()
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 502, in _get_reader
+    self._reader = WSIReader(
+                   ^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 129, in __init__
+    self._open()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 134, in _open
+    self._open_openslide()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 153, in _open_openslide
+    raise ValueError(
+ValueError: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+
+2026-06-17 22:53:55 [INFO] ======================================================================
+2026-06-17 22:53:55 [INFO]   WSI PATCH EXTRACTOR
+2026-06-17 22:53:55 [INFO]   Config: config_files/patches_colorectal_b2.yaml
+2026-06-17 22:53:55 [INFO] ======================================================================
+2026-06-17 22:53:55 [INFO] GPUs available: 2
+2026-06-17 22:53:55 [INFO]   GPU 0: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-17 22:53:55 [INFO]   GPU 1: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-17 22:53:55 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-17 22:53:55 [INFO] Dataset: HISTAI_colorectal_b2  |  Format: tiff
+2026-06-17 22:53:55 [INFO] Path: /home/DIINF/datasets_iacis/2026_HISTAI/HISTAI_colorectal_b2
+2026-06-17 22:53:55 [INFO] Found 94 file(s)
+2026-06-17 22:53:56 [ERROR] [slide_H&E_0] FAILED: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 513, in __getitem__
+    reader = self._get_reader()
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 502, in _get_reader
+    self._reader = WSIReader(
+                   ^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 129, in __init__
+    self._open()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 134, in _open
+    self._open_openslide()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 153, in _open_openslide
+    raise ValueError(
+ValueError: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+
+2026-06-17 22:53:56 [ERROR] [slide_H&E_0] FAILED: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 513, in __getitem__
+    reader = self._get_reader()
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 502, in _get_reader
+    self._reader = WSIReader(
+                   ^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 129, in __init__
+    self._open()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 134, in _open
+    self._open_openslide()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 153, in _open_openslide
+    raise ValueError(
+ValueError: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+
+2026-06-17 22:53:57 [ERROR] [slide_H&E_0] FAILED: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 513, in __getitem__
+    reader = self._get_reader()
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 502, in _get_reader
+    self._reader = WSIReader(
+                   ^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 129, in __init__
+    self._open()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 134, in _open
+    self._open_openslide()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 153, in _open_openslide
+    raise ValueError(
+ValueError: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+
+2026-06-17 22:53:58 [ERROR] [slide_H&E_0] FAILED: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 513, in __getitem__
+    reader = self._get_reader()
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 502, in _get_reader
+    self._reader = WSIReader(
+                   ^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 129, in __init__
+    self._open()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 134, in _open
+    self._open_openslide()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 153, in _open_openslide
+    raise ValueError(
+ValueError: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+
+2026-06-17 22:53:59 [ERROR] [slide_H&E_0] FAILED: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 513, in __getitem__
+    reader = self._get_reader()
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 502, in _get_reader
+    self._reader = WSIReader(
+                   ^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 129, in __init__
+    self._open()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 134, in _open
+    self._open_openslide()
+  File "/home/DIINF/vmieres/tesis/patch_extractor.py", line 153, in _open_openslide
+    raise ValueError(
+ValueError: [slide_H&E_0.tiff] No se pudo leer magnificación y no se especificó native_magnification en el config. Agrégala explícitamente para este dataset.
+
+2026-06-17 22:58:39 [INFO] ======================================================================
+2026-06-17 22:58:39 [INFO]   WSI PATCH EXTRACTOR
+2026-06-17 22:58:39 [INFO]   Config: config_files/patches_colorectal_b2.yaml
+2026-06-17 22:58:39 [INFO] ======================================================================
+2026-06-17 22:58:39 [INFO] GPUs available: 2
+2026-06-17 22:58:39 [INFO]   GPU 0: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-17 22:58:39 [INFO]   GPU 1: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-17 22:58:39 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-17 22:58:39 [INFO] Dataset: HISTAI_colorectal_b2  |  Format: tiff
+2026-06-17 22:58:39 [INFO] Path: /home/DIINF/datasets_iacis/2026_HISTAI/HISTAI_colorectal_b2
+2026-06-17 22:58:40 [INFO] Found 94 file(s)
+2026-06-18 06:38:44 [INFO] 
+[HISTAI_colorectal_b2] Summary: 94 slides | 816,171/4,828,511 patches kept (16.9%) | Errors: 0 | Time: 460.0 min
+2026-06-18 06:38:44 [INFO] 
+======================================================================
+2026-06-18 06:38:44 [INFO]   GLOBAL SUMMARY
+2026-06-18 06:38:44 [INFO]   Total slides processed : 94
+2026-06-18 06:38:44 [INFO]   Candidate patches      : 4,828,511
+2026-06-18 06:38:44 [INFO]   Kept patches           : 816,171
+2026-06-18 06:38:44 [INFO]   Filter rate            : 83.1%
+2026-06-18 06:38:44 [INFO]   Errors                 : 0
+2026-06-18 06:38:44 [INFO]   Total time             : 460.1 min
+2026-06-18 06:38:44 [INFO]   Output directory       : /home/DIINF/datasets_iacis/2026_HISTAI/HISTAI_colorectal_b2/patches
+2026-06-18 06:38:44 [INFO] ======================================================================
+2026-06-18 06:38:44 [INFO]   Stats saved to         : /home/DIINF/datasets_iacis/2026_HISTAI/HISTAI_colorectal_b2/patches/extraction_stats.csv
+2026-06-18 21:33:39 [INFO] ======================================================================
+2026-06-18 21:33:39 [INFO]   WSI PATCH EXTRACTOR
+2026-06-18 21:33:39 [INFO]   Config: config_files/patches_colorectal_b2.yaml
+2026-06-18 21:33:40 [INFO] ======================================================================
+2026-06-18 21:33:40 [INFO] GPUs available: 2
+2026-06-18 21:33:40 [INFO]   GPU 0: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-18 21:33:40 [INFO]   GPU 1: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-18 21:33:40 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-18 21:33:40 [INFO] Dataset: HISTAI_colorectal_b2  |  Format: tiff
+2026-06-18 21:33:40 [INFO] Path: /home/DIINF/datasets_iacis/2026_HISTAI/HISTAI_colorectal_b2
+2026-06-18 21:33:40 [INFO] Found 94 file(s)

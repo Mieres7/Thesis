@@ -1,0 +1,257 @@
+\chapter{Marco Teórico}
+
+\section{Machine Learning}
+
+El aprendizaje automático (\textit{Machine Learning}, ML) es uno de los subcampos más relevantes y activos de la inteligencia 
+artificial, enfocado en el desarrollo de modelos capaces de aprender patrones y relaciones a partir de datos, con el 
+objetivo de realizar predicciones o tomar decisiones sobre información no observada previamente. A diferencia de los 
+enfoques tradicionales basados en reglas explícitas, el Machine Learning permite que los sistemas ajusten su 
+comportamiento en función de la experiencia \textcite{sarker2021machine}.
+
+Este aprendizaje se lleva a cabo mediante un proceso denominado \textbf{entrenamiento} (\textit{training}), en el cual el 
+modelo es expuesto a un conjunto de datos y ajusta sus parámetros internos para capturar las regularidades presentes en 
+estos. Durante este proceso, el modelo busca optimizar una función objetivo que cuantifica el error entre sus predicciones 
+y los valores reales, permitiendo así mejorar progresivamente su desempeño. Una vez entrenado, el modelo puede ser 
+utilizado para inferir resultados sobre nuevos datos, lo que constituye la base de su capacidad de generalización.
+
+
+\subsection{Tipos de Algoritmos}
+
+Los algoritmos de aprendizaje automático se organizan en paradigmas según la disponibilidad de etiquetas, la estructura de los datos y la forma en que el modelo aprende \textcite{Liam_2025,9941371}. El aprendizaje supervisado se entrena con datos etiquetados para predecir salidas en nuevas observaciones, siendo habitual en clasificación y regresión \textcite{sarker2021machine}; el no supervisado descubre estructuras subyacentes en datos sin etiquetar, como \textit{clustering} y reducción de dimensionalidad \textcite{sarker2021machine}; el semi-supervisado combina pocas etiquetas con muchos datos no etiquetados cuando anotar resulta costoso \textcite{9941371}; el aprendizaje por refuerzo aprende políticas de decisión mediante recompensas en problemas secuenciales \textcite{murphy2025reinforcementlearningoverview}; y el auto-supervisado genera señales de entrenamiento desde la propia estructura de los datos, clave en visión por computador y procesamiento del lenguaje natural \textcite{gui2024surveyselfsupervisedlearningalgorithms}.
+
+\subsection{Deep Learning}
+
+El \textit{Deep Learning} (DL) es una rama del aprendizaje automático basada en redes neuronales profundas (DNN), capaces de aprender representaciones jerárquicas a partir de grandes volúmenes de datos \textcite{sarker2021deep}. Una DNN se compone de capas de entrada, ocultas y de salida; las capas tempranas detectan patrones simples como bordes o frecuencias, mientras que las profundas combinan estos patrones en abstracciones de mayor nivel \textcite{mclanddl,lecun2015deep}. Diversas arquitecturas se especializan según el tipo de dato \textcite{shiri2023comprehensive}: las redes convolucionales (CNN) procesan imágenes mediante filtros convolucionales y \textit{pooling} \textcite{lecun2015deep}; las redes recurrentes (RNN) y sus variantes LSTM y GRU capturan dependencias en datos secuenciales o temporales \textcite{shiri2023comprehensive}; y los Transformers, basados en un mecanismo de \textit{self-attention}, relacionan cualquier par de elementos de una secuencia en paralelo y constituyen la base de modelos de gran escala como BERT y GPT \textcite{vaswani2017attention,bengio2021deep}.
+
+\subsection{Modelos Fundacionales}
+
+Los Modelos Fundacionales (FM, \textit{Foundation Model}) constituyen uno de los avances más recientes
+en el área de la inteligencia artificial, estableciendo un nuevo paradigma entre los modelos de 
+\textit{Deep Learning}. \textcite{DBLP}, definen este tipo de modelos como aquellos que son entrenados utilizando 
+una amplia cantidad de datos y que pueden ser adaptados a un amplio número de tareas (\textit{downstream task}), 
+y generalmente están entrenados mediante aprendizaje auto-supervisado. Modelos como BERT \parencite{devlin2019bert}, GPT-3 \parencite{brown2020languagemodelsfewshotlearners} y CLIP \parencite{radford2021learningtransferablevisualmodels}
+son algunos ejemplos de esto. 
+
+En términos técnicos, el paradigma de los modelos fundacionales introduce un cambio estructural
+respecto a los enfoques clásicos del aprendizaje automático supervisado, que requerían el diseño 
+y entrenamiento de modelos independientes para cada tarea particular. La nueva aproximación se 
+organiza en dos etapas principales. En la primera, denominada pre-entrenamiento, el modelo es 
+expuesto a cantidades masivas de datos no etiquetados y
+aprende representaciones generales mediante aprendizaje auto-supervisado.
+En la segunda etapa, el ajuste fino (fine-tuning), el conocimiento previamente adquirido se especializa para 
+dominios o tareas concretas mediante conjuntos de datos más acotados, lo que permite reutilizar eficientemente la 
+representación general sin necesidad de entrenar desde cero. Este proceso de transferencia de
+conocimiento es lo que confiere a los modelos fundacionales su notable versatilidad \parencite{Schneider2024}. 
+
+En esa misma línea, han surgido modelos fundacionales multimodales, los cuales integran diferentes 
+tipos de datos, como texto e imágenes, dentro de una representación compartida. 
+Estos enfoques han demostrado un desempeño sobresaliente en tareas de clasificación, descripción de 
+imágenes, razonamiento visual y análisis médico. \textcite{Liu2024} señalan que modelos como CLIP han 
+comenzado a reemplazar estrategias tradicionales de pre-entrenamiento
+supervisado, consolidándose como una nueva generación de modelos visuales fundacionales.
+
+\section{Inteligencia Artificial Clínica y Particularidades de los Datos}
+
+El despliegue de modelos de inteligencia artificial en entornos clínicos reales introduce un conjunto de 
+desafíos que van más allá de los típicos problemas del aprendizaje automático general. La naturaleza 
+heterogénea, sensible y escasamente anotada de los datos médicos impone restricciones específicas sobre 
+el diseño, el entrenamiento y la validación de modelos, lo que hace necesario abordar estas particularidades 
+de manera explícita antes de proponer soluciones basadas en \textit{deep learning} o modelos fundacionales.
+
+\subsection{Tipos de Datos Clínicos y su Heterogeneidad}
+
+El origen y disponibilidad de datos clínicos, destinados al entrenamiento de modelos de IA es 
+profundamente heterogéneo. En una revisión sobre IA multimodal en medicina, 
+\textcite{schouten2024} presentan dos categorías, modalidades basadas en imágenes, ya sea tomografía 
+computarizada (CT), resonancia magnética (MRI), rayos X, imágenes histopatológicas, entre otras, y 
+modalidades no basadas en imágenes, tales como texto clínico estructurado y no estructurado proveniente 
+de registros electrónicos de salud (EHR), datos ómicos como genómica (\textit{Genomics}) y transcriptómica, y señales 
+fisiológicas como electrocardiogramas (ECG) y electroencefalogramas (EEG). Los autores señalan 
+además que las modalidades de radiología y texto representan cada una aproximadamente el 30\% de 
+las fuentes de datos empleadas en estudios de IA multimodal publicados entre 2018 y 2024, lo que 
+evidencia la diversidad de inputs con los que debe lidiar la inteligencia artificial clínica.
+
+Esta heterogeneidad no es menor, cada modalidad posee dimensionalidades, estructuras 
+y características de ruido profundamente distintas, lo que obliga al uso de arquitecturas especializadas 
+y estrategias de fusión diferenciadas. \textcite{schouten2024} identifican que esta diversidad de 
+características es una de las principales barreras técnicas para el desarrollo de IA multimodal, ya 
+que no existe una arquitectura única capaz de procesar todas las modalidades de manera óptima.
+A modo de ejemplo, \textcite{Makhni2025} documentan que los sistemas EHR presentan 
+problemas persistentes de interoperabilidad, puesto que los registros electrónicos frecuentemente contienen 
+información inconsistente, duplicada y difícil de acceder entre instituciones, comprometiendo la 
+calidad de los datos disponibles.
+
+Un caso de modalidad particularmente desafiante, desde el punto de vista computacional, son las Imágenes de 
+Portaobjetos (\textit{Whole Slide Images}, WSI). Estas corresponden a la digitalización completa de un 
+portaobjetos histopatológico a alta resolución generando imágenes que pueden alcanzar dimensiones de varios 
+gigapíxeles y archivos de entre 1 y 8 GB por \textit{slide}. \textcite{Basak2023} exploran los desafíos propios de las WSI, clasificándolos en tres fases: pre-adquisición, adquisición y post-adquisición. 
+En la fase pre-adquisición destacan problemas de calidad del tejido, fragmentación de la muestra y selección de casos representativos;
+ durante la adquisición surgen inconsistencias dependientes del dispositivo que realiza el escáner, como variaciones de color, artefactos ópticos y 
+ diferencias de magnificación entre equipos; y en la fase post-adquisición aparecen restricciones computacionales más complejas, ya que el 
+ tamaño de las imágenes hace inviable cargarlas directamente en memoria GPU, obligando a dividirlas en parches (\textit{patches}) con el riesgo 
+ de perder información contextual entre parches adyacentes.
+
+Un desafío adicional y transversal en las WSI es la normalización del color (\textit{stain normalization}). La variabilidad en
+los procedimientos de tinción (hematoxilina y eosina (H\&E), u otras tinciones especiales), las condiciones de iluminación y las
+características del escáner generan diferencias cromáticas sistemáticas entre instituciones y estudios multicéntricos, 
+lo que puede comprometer el desempeño de los modelos entrenados en una institución y evaluados en otra. 
+\textcite{Basak2023} señalan que este es uno de los problemas más frecuentes y complejos en 
+aplicaciones de IA sobre WSI, siendo especialmente crítica en tiempo real dadas las restricciones de memoria y procesamiento 
+para imágenes de alta resolución ($40\times$).
+
+\subsection{El Problema de la Anotación y la Escasez de Datos Etiquetados}
+
+Una de las restricciones más críticas en el desarrollo de IA clínica es la dificultad de obtener 
+datos etiquetados de alta calidad. A diferencia de otros dominios donde la anotación puede 
+delegarse a no expertos, el etiquetado de imágenes médicas y registros clínicos requiere de 
+profesionales altamente capacitados, lo que encarece y ralentiza el proceso. \textcite{jin2025labelefficientdeeplearningmedical} 
+señalan en su revisión de más de 350 estudios sobre aprendizaje eficiente en cuanto a etiquetas 
+(\textit{label-efficient learning}) en análisis de imagen médica, que la necesidad de anotaciones 
+precisas a nivel de píxel contrasta con la disponibilidad limitada de expertos médicos, generando 
+una brecha creciente entre el volumen de imágenes disponibles y la capacidad de etiquetarlas. 
+Esta brecha se agrava por la variabilidad entre anotadores. \textcite{Yang2023} documentan que, 
+incluso entre expertos, existe una variabilidad significativa en las anotaciones de lesiones 
+médicas (\textit{inter-annotator variability}), la cual introduce ruido en los conjuntos de 
+entrenamiento que puede afectar negativamente el desempeño de los modelos.
+De esta forma, la variabilidad en anotaciones hace que las etiquetas no sean una verdad absoluta sino
+una aproximación sujeta a incertidumbre, lo que tiene implicancias directas sobre cómo se entrenan y 
+evalúan los modelos clínicos.
+
+\subsection{Desbalance de Clases y Distribución de los Datos}
+
+Un desafío estadístico fundamental en los conjuntos de datos clínicos es el desbalance de clases 
+(\textit{class imbalance}), que ocurre cuando la clase de interés clínico, generalmente la 
+condición patológica, está representada por muchas menos instancias que la clase mayoritaria. 
+Este fenómeno es especialmente pronunciado en medicina, donde la prevalencia de enfermedades 
+raras o condiciones graves es naturalmente baja en la población general. \textcite{Abdelhay2025} 
+establecen que el desequilibrio de clases, definido como aquellos escenarios en que los casos 
+positivos clínicamente relevantes representan menos del 30\% del conjunto de datos, reduce 
+sistemáticamente la sensibilidad y la equidad de los modelos de predicción médica. 
+
+\textcite{Salmi2024} presentan una revisión de una década de investigación sobre técnicas para 
+manejar conjuntos de datos médicos desbalanceados, sintetizando el estado del arte en métodos 
+de sobremuestreo (\textit{oversampling}), submuestreo (\textit{undersampling}) y enfoques 
+híbridos. Los autores concluyen que, a pesar de los avances metodológicos, persisten desafíos 
+en la evaluación rigurosa de estas técnicas, ya que los conjuntos de datos y métricas utilizados 
+varían ampliamente entre estudios, dificultando la comparación y generalización de los resultados. 
+
+
+\subsection{Privacidad, Regulación y Consideraciones Éticas}
+
+Los datos clínicos constituyen información altamente sensible, cuya recopilación, almacenamiento y 
+uso están sujetos a marcos regulatorios estrictos a nivel internacional. En Estados Unidos, la 
+\textit{Health Insurance Portability and Accountability Act} (HIPAA) establece normas para la 
+protección de la información de salud protegida (\textit{Protected Health Information}, PHI), 
+mientras que en la Unión Europea, el Reglamento General de Protección de Datos (\textit{General Data Protection Regulation}, GDPR) 
+clasifica los datos de salud como categoría especial bajo el Artículo 9, prohibiendo su 
+procesamiento salvo excepciones específicas. \textcite{Alhumaidi2025} señalan que adaptar estas 
+normativas al contexto del aprendizaje automático es especialmente complejo, dado el volumen 
+y la diversidad de los datos involucrados, y que estrategias como la desidentificación, los 
+protocolos de intercambio seguro y la gestión explícita del consentimiento son indispensables 
+para garantizar la confidencialidad del paciente sin sacrificar la utilidad de los datos.
+
+Esta tensión entre privacidad e innovación ha impulsado el desarrollo del \textit{federated 
+learning} (aprendizaje federado) como paradigma alternativo al entrenamiento centralizado. 
+En este enfoque, los modelos se entrenan localmente en cada institución y solo se comparten 
+los parámetros actualizados del modelo mediante un servidor central. 
+\textcite{Pati2024} revisan las implicancias de privacidad y seguridad del aprendizaje 
+federado en salud, y argumentan que este paradigma permite cumplir con regulaciones como 
+HIPAA y GDPR al evitar que los datos sensibles abandonen la institución de origen.
+
+Más allá de la privacidad técnica, el uso de datos clínicos en IA también plantea problemas 
+de equidad (\textit{fairness}). \textcite{Alhumaidi2025} advierten que los modelos entrenados 
+con datos que no representan equitativamente a distintos grupos demográficos pueden heredar 
+y amplificar sesgos, generando predicciones menos precisas para poblaciones subrepresentadas.
+Este problema de sesgo es particularmente relevante en contextos donde los datos históricos reflejan desigualdades 
+preexistentes en el acceso a la atención médica.
+
+No obstante, estos marcos regulatorios no tienen alcance uniforme a nivel global. En América 
+Latina, \textcite{Kohan2024} documentan que ningún país de la región cuenta aún con legislación 
+específicamente aprobada sobre IA en salud, y que las iniciativas existentes en Brasil, Chile, 
+Colombia y Argentina se encuentran en distintas etapas de desarrollo, en su mayoría inspiradas 
+en el enfoque de la Unión Europea. Esta brecha normativa genera incertidumbre jurídica para 
+los desarrolladores de sistemas de IA clínica y puede acentuar las inequidades en el acceso a 
+innovación médica \parencite{Lazarotto2025}. A nivel nacional, \textcite{Lazarotto2025} documenta
+además una heterogeneidad marcada: mientras Brasil cuenta con una Ley General de Protección 
+de Datos (LGPD) con autoridad supervisora activa, y Chile promulgó una nueva ley de protección 
+de datos en 2024, otros países carecen de marcos integrales equivalentes, lo que impone 
+consideraciones específicas para proyectos de IA clínica desarrollados o desplegados en 
+contextos latinoamericanos.
+
+
+\subsection{Modelos fundacionales Multimodales en Medicina}
+
+La aparición de modelos fundacionales ha tenido un gran impacto en el área del análisis médico, donde la 
+heterogeneidad de los datos clínicos, sean imágenes de diagnóstico, registros electrónicos de salud (EHR, \textit{Electronic Health Record}),
+informes radiológicos, entre otros, representan tanto un desafío como una oportunidad para este paradigma. 
+En el trabajo de \textcite{Khan2026}, se presenta una revisión sistemática de los modelos fundacionales en medicina,
+realizando un clasificación en base a sus aplicaciones: procesamiento de lenguaje natural clínico (\textit{Clinical NLP}), 
+visión computacional médica (\textit{Medical Computer Vision}), aprendizaje de grafos (\textit{Graph Learning}) y 
+tareas biológicas y ómicas (\textit{Biology and Omics}). Además, plantean la existencia de otras aplicaciones no clasificadas
+en las categorías antes mencionadas, como el uso de \textit{FMs} para la extracción de información desde videos y/o audio, o incluso,
+la generación de aminoácidos a medida a partir de texto (\textit{Text-to-Protein Generation}). 
+Esta taxonomía evidencia que modelos como las familias BERT y GPT están cambiando aspectos centrales 
+de la atención sanitaria, desde la extracción de información en registros clínicos hasta el análisis de 
+imágenes médicas y la investigación en genómica.
+
+Considerando el área de análisis de imágenes, los modelos fundacionales multimodales han emergido como
+herramientas de apoyo al diagnóstico. \textcite{SUN2025103265} caracterizan dos categorías principales de este espacio:
+los Modelos Fundacionales de Visión Médica Multimodal
+(\textit{MMVFMs}), orientados a tareas de integración y procesamiento de
+imágenes de distintas modalidades como resonancia magnética (MRI), tomografía
+computarizada (CT) y rayos X; y los Modelos Fundacionales de Visión-Lenguaje
+Médico (\textit{MMVLFMs}), que extienden el enfoque multimodal incorporando
+tanto datos visuales como texto clínico, permitiendo tareas como la generación
+automática de informes radiológicos y la respuesta visual a preguntas médicas
+(\textit{Visual Question Answering}). Estas capacidades representan un avance
+significativo respecto a los enfoques tradicionales, que requerían modelos
+especializados e independientes para cada tarea y modalidad.
+
+Dentro de los modelos fundacionales médicos destacan varios ejemplos recientes. \textcite{Zhang2024}
+proponen
+BiomedGPT, el primer modelo fundacional de visión y lenguaje de código abierto, diseñado para 
+diversas tareas biomédicas y superando al estado del arte en 16 de
+25 experimentos, incluyendo respuesta a preguntas en radiología, generación de
+informes y clasificación de imágenes. Por su parte, en el ámbito de la patología digital, \textcite{Lu2024}
+introducen CONCH (\textit{CONtrastive learning from Captions for Histopathology}), 
+un modelo fundacional de visión y lenguaje
+pre-entrenado sobre más de 1.17 millones de pares imagen-texto de histopatología
+mediante aprendizaje contrastivo auto-supervisado. Evaluado sobre 14 benchmarks
+distintos, CONCH logra resultados de vanguardia en tareas de clasificación de
+imágenes histológicas, segmentación y descripción automática de tejidos,
+superando ampliamente a los sistemas de
+pre-entrenamiento visión-lenguaje disponibles en el momento de su publicación,
+y demostrando su capacidad para facilitar flujos de trabajo clínico con mínimo
+ajuste fino supervisado (\textit{supervised fine-tuning}).
+
+A pesar del enorme potencial demostrado, la adopción clínica de los modelos
+fundacionales enfrenta desafíos considerables. \textcite{liu2024surveymedicallargelanguage} identifican
+ cuatro
+dimensiones críticas: \textit{fairness}, dado que los modelos pueden amplificar
+los sesgos (\textit{bias}) presente en los datos de entrenamiento clínico; \textit{accountability},
+pues su naturaleza de caja negra dificulta la interpretabilidad de sus decisiones;
+\textit{privacy}, ya que los modelos pueden capturar información sensible y
+provocar fugas de datos durante la generación de texto; y \textit{robustness},
+que exige evaluar la estabilidad del modelo ante distribuciones fuera del dominio. 
+A su vez, \textcite{niu2026foundationmodelsmedicalimaging} argumentan que la medicina es un dominio crítico donde los errores
+tienen consecuencias vitales, por lo que proponen la ciencia regulatoria (\textit{Regulatory Science})
+la cual incluye marcos de evaluación, auditorías de equidad y ensayos clínicos, 
+como procesos indispensables para garantizar que los modelos fundacionales cumplan
+los más altos estándares antes de integrarse en flujos de trabajo clínicos reales.
+
+
+\subsection{\textit{Bias} y \textit{Fairness} en IA Clínica}
+
+El sesgo o \textit{bias} en sistemas de inteligencia artificial para imágenes médicas constituye uno de los problemas más persistentes y de mayor impacto clínico en la actualidad: puede definirse como cualquier desviación sistemática entre los patrones aprendidos por un modelo y los patrones que verdaderamente caracterizan el fenómeno de interés, lo que resulta en predicciones que no reflejan fielmente la realidad para todos los grupos de la población. En IA clínica, el \textit{bias} puede originarse en la representación de la población, en la adquisición de datos, en la anotación y en decisiones de selección o modelamiento, y la \textit{fairness} evalúa si tales procesos se traducen en diferencias sistemáticas de desempeño o error entre subgrupos. Por ello, las métricas agregadas deben complementarse con evaluaciones estratificadas y con el análisis de cambios de distribución entre cohortes; ninguna métrica aislada establece por sí misma la equidad clínica de un sistema. \textcite{ponsiglione2024} presentan una revisión que abarca el \textit{pipeline} completo de IA médica, desde la adquisición de imágenes hasta el despliegue clínico, identificando fuentes de sesgo en cada etapa y sistematizando estrategias de detección, mitigación y evaluación.
+
+\textcite{hanna2024} proponen una taxonomía que organiza el sesgo en \textit{data bias} (desequilibrios en la representación demográfica y en la recolección de datos), \textit{development bias} (diseño, entrenamiento y selección de arquitecturas) e \textit{interaction bias} (despliegue, cuando el contexto de uso difiere del de entrenamiento), clasificación que resulta especialmente pertinente en patología digital, donde las tres categorías se manifiestan de manera simultánea. \textcite{jones2024causal} complementan esta visión señalando que el \textit{bias} no debe interpretarse sólo como un desbalance estadístico: mecanismos como las \textit{spurious correlations} y los \textit{shortcuts} explican cómo el modelo aprende asociaciones superficiales (por ejemplo, el perfil de color de la tinción en lugar de la morfología celular), que elevan el rendimiento en la cohorte de origen pero decaen al evaluar en otras instituciones. A estas fuentes se suma el \textit{bias} de anotación (\textit{annotation bias}), que se origina cuando los expertos que etiquetan los datos incorporan inconsistencias sistemáticas producto de su entrenamiento, experiencia o incluso del diseño de las interfaces de anotación \citep{onofrey2024}. Las fuentes de \textit{bias} se distribuyen a lo largo de todo el \textit{pipeline}, recolección, anotación, entrenamiento y despliegue, \citep{sahiner2023}; en el caso particular de los registros electrónicos de salud (EHR), \textcite{perets2024} elaboran una taxonomía más granular con seis fuentes primarias de sesgo: \textit{bias} de ensayos clínicos, \textit{bias} relacionado con datos, \textit{bias} del anotador, \textit{bias} de derivación o admisión, disparidades diagnósticas y \textit{bias} en dispositivos y algoritmos, con implicaciones directas para cualquier modelo que utilice variables clínicas derivadas de EHR.
+
+La detección y auditoría rigurosa de \textit{bias} en modelos de aprendizaje profundo médico requiere herramientas y metodologías que vayan más allá de la evaluación estándar basada en métricas globales: una auditoría bien fundamentada exige la selección explícita de atributos sensibles, la estratificación del desempeño por subgrupos y la aplicación de pruebas estadísticas que permitan determinar si las disparidades observadas son significativas \citep{stanley2024}. Dado que estos análisis dependen intrínsecamente de la información disponible sobre los datos, la calidad de la documentación de los conjuntos de datos constituye un prerrequisito conceptual: sin una caracterización transparente de las variables demográficas y de adquisición, resulta imposible determinar si un subgrupo está subrepresentado o si las condiciones de captura introducen correlaciones espurias \citep{galanty2024}, una limitación especialmente pronunciada cuando se trabaja con conjuntos de datos médicos con protocolos de documentación heterogéneos \citep{drenkow2025}. Las estrategias de mitigación del \textit{bias} pueden organizarse según la etapa del ciclo de vida del modelo en que intervienen. A nivel de los datos, el principio subyacente consiste en modificar la distribución de las instancias de entrenamiento, ya sea mediante la generación de ejemplos sintéticos, el submuestreo de grupos mayoritarios o la asignación de pesos diferenciales a las observaciones, con el fin de que los subgrupos subrepresentados tengan una influencia equitativa en el aprendizaje del modelo \citep{yang2024survey}. A nivel de la arquitectura y el entrenamiento, los enfoques basados en aprendizaje adversarial buscan que las representaciones internas del modelo sean invariantes respecto a atributos sensibles, mientras que el aprendizaje federado permite incorporar datos de múltiples instituciones sin centralizar información sensible, abordando simultáneamente el sesgo de distribución y las restricciones de privacidad \citep{yang2024survey}. Sin embargo, la evidencia disponible indica que ninguna de estas intervenciones ofrece una solución universal: la efectividad de una estrategia de mitigación depende de la naturaleza específica del sesgo identificado y del contexto clínico de aplicación \citep{mittermaier2023}, por lo que la mitigación responsable exige además un monitoreo continuo post-despliegue capaz de detectar derivas en la distribución de los datos a medida que la población atendida evoluciona \citep{prenner2024}.
+
+El concepto de \textit{fairness} o equidad en sistemas de aprendizaje automático se refiere a la capacidad de un modelo de producir resultados que no perjudiquen injustamente a individuos o grupos basándose en atributos sensibles como género, edad, etnia o nivel socioeconómico. En el contexto de la inteligencia artificial clínica, la equidad va más allá del apartado técnico para convertirse en un imperativo ético y de seguridad del paciente: un modelo inequitativo puede sistematizar y amplificar desigualdades sanitarias preexistentes, negando diagnósticos precisos o tratamientos adecuados a poblaciones que históricamente ya han sido subatendidas. \textcite{liu2023translational} enmarcan esta problemática desde una perspectiva de implementación clínica, argumentando que existe una brecha significativa entre los avances técnicos en \textit{fairness} algorítmica y su implementación efectiva en entornos clínicos reales, y proponen el concepto de \textit{equity}, que va más allá de la igualdad estadística entre grupos para incorporar consideraciones de justicia distributiva en la atención sanitaria. Por su parte, \textcite{williamson2023} sitúan el problema en el contexto más amplio de la IA para la salud, identificando tres fuentes principales de inequidad: los sesgos introducidos durante la adquisición de datos, la variación genética no representada en los conjuntos de datos de entrenamiento y la variabilidad en las anotaciones realizadas por expertos de diferentes contextos culturales e institucionales.
+
+La literatura especializada ha desarrollado una amplia variedad de definiciones formales de \textit{fairness}, que difieren en sus fundamentos filosóficos y en la manera en que traducen la equidad a criterios operativos. \textcite{gao2024} identifican tres grandes familias: la \textit{group fairness}, que exige que las métricas de rendimiento sean similares entre subgrupos protegidos; la \textit{individual fairness}, según la cual individuos similares deben recibir predicciones similares; y los criterios basados en calibración, que requieren que las probabilidades predichas reflejen fielmente las frecuencias reales dentro de cada grupo. Estos criterios son en muchos casos matemáticamente incompatibles entre sí, por lo que la elección de la definición a maximizar debe ser una decisión informada por el contexto clínico específico y no una elección arbitraria del desarrollador. Las métricas más utilizadas incluyen la \textit{accuracy parity}, las brechas de AUC, los \textit{equalized odds} y la \textit{equalized opportunity}. Un desafío central es el \textit{trade-off} entre utilidad global y \textit{fairness} por subgrupos: \textcite{kashif2025} documentan que optimizar el rendimiento global de un modelo concentra sus capacidades en los subgrupos más representados del conjunto de entrenamiento, un \textit{trade-off} inherente a la mayoría de los enfoques actuales que se manifiesta tanto en tareas de clasificación como de segmentación, afectando de manera consistente a grupos definidos por edad, género y etnia.
+
+En modelos fundacionales, la \textit{fairness} no es únicamente una propiedad emergente de los datos de entrenamiento, sino que está condicionada por el diseño del preentrenamiento, las decisiones de \textit{fine-tuning} y las estrategias de adaptación o despliegue \citep{queiroz2026}. \textcite{queiroz2026} identifican tres momentos críticos de intervención: durante la selección y preparación de los datos de preentrenamiento, donde la subrepresentación de ciertos grupos puede establecer sesgos difíciles de revertir en etapas posteriores; durante el \textit{fine-tuning}, donde la elección del conjunto de adaptación puede mitigar o amplificar los sesgos heredados; y durante el despliegue, donde el monitoreo de las métricas de equidad en distribuciones reales de pacientes es indispensable para detectar degradaciones post-implementación. \textcite{shi2024} enmarcan esta problemática dentro del concepto más amplio de \textit{trustworthiness} en modelos fundacionales para análisis de imágenes médicas, que incluye robustez, explicabilidad, privacidad y \textit{fairness} como dimensiones interdependientes, argumentando que ninguna de ellas puede maximizarse de manera aislada sin considerar sus interacciones con las demás. La brecha entre los avances técnicos en \textit{fairness} y su implementación efectiva en la práctica clínica constituye uno de los obstáculos más señalados en la literatura reciente: \textcite{liu2024gaps} identifican que los desarrollos técnicos frecuentemente se evalúan en condiciones de laboratorio que difieren sustancialmente de los flujos de trabajo clínicos reales, donde las variables sensibles pueden no estar disponibles en el momento de la inferencia, las definiciones de subgrupos relevantes son objeto de debate clínico y las restricciones regulatorias pueden limitar el uso de ciertos atributos demográficos. Además, esta brecha tiene una dimensión geopolítica importante: los datos empleados para preentrenar los grandes modelos fundacionales médicos provienen de manera desproporcionada de instituciones norteamericanas y europeas, lo que genera sesgos de representación que perjudican especialmente a las poblaciones de América Latina, África y Asia \citep{queiroz2026}.
+
+Los conceptos de \textit{bias} y \textit{fairness} están estrechamente relacionados, pero no son equivalentes. Mientras el \textit{bias} refiere a desviaciones sistemáticas introducidas en los datos, en las anotaciones o en el proceso de entrenamiento, la \textit{fairness} corresponde al análisis de si dichas desviaciones generan diferencias injustas en el desempeño del modelo entre subgrupos definidos por atributos sensibles, tales como sexo, edad o etnia \parencite{williamson2023,sahiner2023}. En este sentido, el \textit{bias} puede entenderse como una causa potencial de inequidad, mientras que la \textit{fairness} entrega un marco para identificar y medir sus efectos en las predicciones del modelo \parencite{liu2023translational,gao2024}. Esto resulta especialmente relevante en inteligencia artificial clínica, donde un modelo puede alcanzar un buen rendimiento global y, aun así, presentar brechas importantes al evaluarse por subgrupos \parencite{NEURIPS2024_c9826b9e,williamson2023}. Por ello, ambos conceptos deben abordarse de manera complementaria: primero caracterizar las fuentes de \textit{bias} presentes en los conjuntos de datos y en los modelos, y luego evaluar mediante criterios de \textit{fairness} si estos sesgos se traducen en disparidades de desempeño que afecten la equidad y confiabilidad del sistema en contextos clínicos reales.

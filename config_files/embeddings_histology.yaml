@@ -1,0 +1,29 @@
+log_level: INFO
+log_file: embeddings_logs/histology_logs.log
+
+# Carpeta que contiene <dataset_name>/<slide>.h5 generados por patch_extractor.py
+patches_dir: /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/patches_histology
+
+# Carpeta destino: output_dir/<dataset_name>/<model_name>/<slide>.h5
+output_dir: /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/embeddings
+
+# Carpeta base donde están las carpetas de cada modelo descargado (HF local)
+models_dir: /home/DIINF/vmieres/tesis/models
+
+# Modelos a correr (claves del MODEL_REGISTRY en patch_extractor.py)
+models:
+  - uni2
+  - virchow2
+
+# Si se omite, se infiere de las subcarpetas dentro de patches_dir
+datasets:
+  - HistologyHSI
+
+batch_size: 128
+skip_existing: true        # no recalcula si ya existe el .h5 de embeddings
+hdf5_compression: lzf
+
+compute:
+  gpu_ids: [0, 1]
+  num_workers: 4
+

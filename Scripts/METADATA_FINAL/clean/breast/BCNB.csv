@@ -1,0 +1,1059 @@
+id,age,HER2_status,Molecular_subtype
+1,77,0,Luminal A
+2,39,0,Triple negative
+3,52,0,Luminal A
+4,60,2,HER2(+)
+5,71,0,Triple negative
+6,57,0,Triple negative
+7,38,0,Luminal A
+8,74,0,Luminal A
+9,57,0,Luminal B
+10,54,0,Luminal A
+11,62,0,Luminal A
+12,73,0,Luminal A
+13,46,0,Triple negative
+14,63,0,Luminal A
+15,62,0,Luminal A
+16,75,0,Luminal A
+17,72,0,Luminal B
+18,74,0,Luminal B
+19,54,0,Luminal B
+20,52,0,Luminal B
+21,48,0,Luminal B
+22,49,0,Luminal B
+23,58,2,HER2(+)
+24,75,1,Luminal A
+25,49,1,Luminal A
+26,71,1,Luminal A
+27,30,2,HER2(+)
+28,42,0,Triple negative
+29,57,0,Luminal B
+30,51,1,Luminal A
+31,57,2,HER2(+)
+32,46,1,Luminal A
+33,74,1,Luminal A
+34,52,0,Luminal B
+35,40,1,Luminal B
+36,61,0,Luminal A
+37,35,0,Luminal A
+38,58,0,Luminal A
+39,72,0,Luminal B
+40,59,2,HER2(+)
+41,45,1,Triple negative
+42,54,2,HER2(+)
+43,34,2,HER2(+)
+44,51,1,Triple negative
+45,53,0,Triple negative
+46,66,2,HER2(+)
+47,67,0,Luminal A
+48,58,0,Triple negative
+49,65,1,Luminal A
+50,52,0,Luminal B
+51,71,0,Luminal A
+52,41,0,Triple negative
+53,67,1,Triple negative
+54,55,2,HER2(+)
+55,46,2,HER2(+)
+56,49,0,Luminal A
+57,54,0,Triple negative
+58,56,1,Luminal B
+59,58,1,Luminal A
+60,38,0,Luminal A
+61,33,0,Luminal B
+62,56,0,Luminal A
+63,48,1,Luminal B
+64,40,1,HER2(+)
+65,77,0,Luminal A
+66,57,1,Luminal B
+67,44,0,Luminal B
+68,57,1,Luminal B
+69,49,2,HER2(+)
+70,45,0,Luminal A
+71,63,0,Luminal B
+72,42,1,Luminal A
+73,48,1,Luminal B
+74,74,0,Luminal A
+75,61,0,Luminal A
+76,71,1,Luminal B
+77,67,2,HER2(+)
+78,76,1,Luminal A
+79,42,1,Luminal B
+80,42,2,HER2(+)
+81,44,2,HER2(+)
+82,45,1,Luminal B
+83,42,1,Luminal A
+84,55,2,HER2(+)
+85,50,1,Luminal B
+86,47,2,HER2(+)
+87,49,2,HER2(+)
+88,44,1,Luminal B
+89,58,0,Luminal B
+90,52,1,Luminal B
+91,60,2,HER2(+)
+92,46,2,HER2(+)
+93,43,1,Luminal B
+94,47,0,Luminal B
+95,68,2,HER2(+)
+96,60,0,Triple negative
+97,52,0,Triple negative
+98,47,0,Triple negative
+99,72,1,Luminal B
+100,55,0,Triple negative
+101,46,1,HER2(+)
+102,59,2,HER2(+)
+103,55,1,Luminal A
+104,49,1,Triple negative
+105,57,2,HER2(+)
+106,42,1,Luminal B
+107,51,0,Triple negative
+108,57,0,Triple negative
+109,61,0,Triple negative
+110,49,1,Triple negative
+111,46,0,Luminal A
+112,48,0,Luminal B
+113,47,1,Luminal B
+114,58,0,Luminal A
+115,52,0,Luminal A
+116,58,2,HER2(+)
+117,55,1,Luminal A
+118,73,0,Luminal A
+119,41,0,Triple negative
+120,40,1,Luminal B
+121,44,2,HER2(+)
+122,80,0,Luminal A
+123,76,1,Luminal A
+124,46,2,HER2(+)
+125,69,0,Luminal B
+126,39,1,Luminal A
+127,77,1,Luminal A
+128,49,1,Luminal B
+129,48,1,Luminal A
+130,59,0,Triple negative
+131,59,2,HER2(+)
+132,73,0,Luminal B
+133,72,0,Luminal A
+134,56,1,Luminal A
+135,53,1,HER2(+)
+136,59,1,Luminal A
+137,51,1,Luminal A
+138,57,0,Luminal A
+139,57,1,Luminal B
+140,85,1,Luminal A
+141,66,0,Luminal A
+142,62,2,HER2(+)
+143,49,1,Luminal A
+144,79,1,Luminal A
+145,51,1,Luminal B
+146,74,1,Luminal B
+147,74,2,HER2(+)
+148,46,2,HER2(+)
+149,41,2,HER2(+)
+150,47,1,Luminal B
+151,56,0,Triple negative
+152,68,1,Luminal A
+153,80,1,Luminal B
+154,72,2,HER2(+)
+155,33,2,HER2(+)
+156,33,0,Triple negative
+157,62,1,Luminal B
+158,62,0,Luminal B
+159,53,2,HER2(+)
+160,62,1,Luminal A
+161,69,2,HER2(+)
+162,76,1,Luminal A
+163,62,1,Luminal B
+164,65,1,Luminal B
+165,60,1,Triple negative
+166,58,0,Luminal B
+167,73,1,Luminal A
+168,63,2,HER2(+)
+169,49,1,Luminal A
+170,73,0,Luminal A
+171,49,0,Luminal B
+172,46,1,Luminal B
+173,50,1,Luminal B
+174,37,1,Luminal A
+175,61,1,Luminal A
+176,62,1,Triple negative
+177,77,0,Triple negative
+178,75,0,Luminal B
+179,64,1,Luminal B
+180,54,1,Luminal B
+181,75,1,Luminal A
+182,63,1,Luminal A
+183,33,2,HER2(+)
+184,63,0,Luminal A
+185,70,1,Luminal A
+186,58,1,Luminal A
+187,54,1,Luminal B
+188,37,1,Luminal B
+189,72,1,Triple negative
+190,78,1,Luminal A
+191,77,1,Luminal A
+192,59,2,HER2(+)
+193,61,0,Triple negative
+194,63,1,Luminal A
+195,54,2,HER2(+)
+196,55,0,Luminal A
+197,63,1,HER2(+)
+198,73,1,Triple negative
+199,81,1,Luminal B
+200,41,1,Luminal A
+201,38,2,HER2(+)
+202,36,1,Luminal A
+203,61,0,Luminal B
+204,62,2,HER2(+)
+205,82,0,Luminal A
+206,78,2,HER2(+)
+207,48,1,Luminal A
+208,50,2,HER2(+)
+209,26,1,Luminal A
+210,37,0,Luminal B
+211,46,2,HER2(+)
+212,63,0,Luminal A
+213,58,1,Luminal B
+214,62,0,Luminal A
+215,52,1,Luminal A
+216,46,1,HER2(+)
+217,37,1,Luminal A
+218,67,1,Luminal B
+219,65,1,Luminal B
+220,68,0,Luminal A
+221,66,0,Luminal B
+222,62,1,Luminal B
+223,51,2,HER2(+)
+224,56,1,Luminal B
+225,66,0,Luminal B
+226,44,1,Luminal B
+227,37,0,Triple negative
+228,62,2,HER2(+)
+229,36,1,Luminal B
+230,72,1,Luminal A
+231,80,1,Luminal B
+232,54,2,HER2(+)
+233,51,2,HER2(+)
+234,77,1,Luminal A
+235,67,1,Luminal B
+236,46,0,Luminal B
+237,42,2,HER2(+)
+238,32,1,HER2(+)
+239,71,2,HER2(+)
+240,57,1,Luminal B
+241,45,1,Luminal B
+242,72,1,Luminal A
+243,49,1,HER2(+)
+244,55,0,Luminal B
+245,60,2,HER2(+)
+246,68,2,HER2(+)
+247,72,0,Luminal A
+248,56,2,HER2(+)
+249,62,0,Luminal B
+250,51,1,Luminal A
+251,52,2,HER2(+)
+252,64,1,Luminal B
+253,41,2,HER2(+)
+254,52,0,Triple negative
+255,57,1,Luminal A
+256,60,0,Luminal B
+257,49,1,Luminal B
+258,60,2,HER2(+)
+259,54,2,HER2(+)
+260,75,0,Luminal A
+261,87,0,Luminal B
+262,59,2,HER2(+)
+263,47,0,Luminal B
+264,53,0,Luminal A
+265,72,0,Triple negative
+266,50,0,Luminal B
+267,75,1,Luminal B
+268,78,0,Luminal B
+269,59,2,HER2(+)
+270,37,2,HER2(+)
+271,47,1,HER2(+)
+272,71,1,Triple negative
+273,32,0,Triple negative
+274,36,1,Luminal A
+275,57,1,Luminal B
+276,51,2,HER2(+)
+277,70,1,Luminal B
+278,65,0,Luminal B
+279,62,1,Luminal B
+280,52,0,Triple negative
+281,73,0,Luminal B
+282,69,2,HER2(+)
+283,76,1,Luminal B
+284,65,1,Luminal B
+285,62,1,Luminal B
+286,72,0,Triple negative
+287,62,1,Luminal A
+288,54,2,HER2(+)
+289,59,2,HER2(+)
+290,57,2,HER2(+)
+291,43,0,Luminal B
+292,55,0,Luminal A
+293,60,0,Luminal B
+294,59,2,HER2(+)
+295,65,0,Luminal A
+296,45,2,HER2(+)
+297,47,1,Luminal A
+298,63,0,Luminal B
+299,72,0,Luminal A
+300,35,1,Luminal A
+301,39,1,Luminal B
+302,53,2,HER2(+)
+303,82,0,Luminal B
+304,50,1,Triple negative
+305,77,1,Luminal A
+306,57,1,Luminal B
+307,72,0,Luminal A
+308,83,0,Luminal B
+309,66,0,Triple negative
+310,35,1,Luminal A
+311,55,0,Luminal B
+312,73,1,Luminal A
+313,85,0,Luminal A
+314,35,1,Luminal B
+315,59,1,Luminal B
+316,65,0,Luminal A
+317,50,1,HER2(+)
+318,68,0,Luminal A
+319,79,1,Luminal A
+320,31,1,HER2(+)
+321,62,2,HER2(+)
+322,34,0,Luminal B
+323,55,2,HER2(+)
+324,77,1,Triple negative
+325,50,0,Luminal B
+326,81,1,Luminal B
+327,51,2,HER2(+)
+328,76,1,Luminal A
+329,49,1,Triple negative
+330,47,1,Luminal A
+331,62,1,Triple negative
+332,53,1,Luminal A
+333,44,0,Luminal A
+334,43,2,HER2(+)
+335,43,0,Luminal A
+336,49,0,Luminal A
+337,46,0,Triple negative
+338,53,2,HER2(+)
+339,37,1,Luminal A
+340,63,0,Luminal A
+341,50,2,HER2(+)
+342,76,1,HER2(+)
+343,67,0,Triple negative
+344,56,2,HER2(+)
+345,63,2,HER2(+)
+346,46,1,Luminal B
+347,45,1,Luminal A
+348,39,1,Luminal B
+349,57,0,Triple negative
+350,71,0,Luminal A
+351,69,0,Luminal A
+352,51,2,HER2(+)
+353,43,2,HER2(+)
+354,50,0,Luminal A
+355,50,1,HER2(+)
+356,68,0,Luminal B
+357,61,1,Luminal A
+358,46,1,Luminal B
+359,50,0,Triple negative
+360,57,1,Luminal B
+361,42,1,Luminal A
+362,50,0,Triple negative
+363,57,1,Luminal B
+364,66,2,HER2(+)
+365,35,0,Luminal B
+366,57,1,Luminal B
+367,44,1,Luminal A
+368,63,0,Luminal A
+369,45,0,Triple negative
+370,49,0,Triple negative
+371,69,2,HER2(+)
+372,75,2,HER2(+)
+373,53,0,Luminal B
+374,66,0,Triple negative
+375,51,1,Luminal B
+376,54,1,Luminal A
+377,73,1,Luminal A
+378,43,0,Luminal B
+379,57,1,Luminal A
+380,47,0,Triple negative
+381,57,1,Luminal A
+382,50,2,HER2(+)
+383,53,2,HER2(+)
+384,48,0,Luminal B
+385,74,1,Luminal B
+386,69,0,Luminal B
+387,51,0,Triple negative
+388,63,1,Luminal B
+389,51,2,HER2(+)
+390,47,1,Luminal B
+391,51,0,Luminal B
+392,41,0,Triple negative
+393,43,2,HER2(+)
+394,40,0,Luminal B
+395,52,1,Luminal B
+396,50,0,Triple negative
+397,59,2,HER2(+)
+398,61,1,Luminal B
+399,57,0,Triple negative
+400,48,1,Triple negative
+401,35,0,Triple negative
+402,56,0,Luminal B
+403,62,0,Luminal B
+404,44,2,HER2(+)
+405,38,1,Luminal A
+406,62,0,Luminal B
+407,62,0,Luminal B
+408,71,1,Luminal A
+409,52,0,Luminal B
+410,63,0,Triple negative
+411,51,2,HER2(+)
+412,46,2,HER2(+)
+413,70,0,Luminal B
+414,73,0,Luminal B
+415,78,1,Luminal B
+416,45,2,HER2(+)
+417,48,2,HER2(+)
+418,38,1,HER2(+)
+419,65,0,Luminal B
+420,59,1,Luminal A
+421,67,0,Luminal B
+422,50,1,Luminal B
+423,76,0,Triple negative
+424,59,0,Triple negative
+425,75,0,Triple negative
+426,57,1,Luminal A
+427,80,0,Luminal A
+428,77,0,Luminal B
+429,67,0,Luminal B
+430,48,1,Luminal B
+431,57,1,Luminal B
+432,69,1,Triple negative
+433,50,0,Luminal B
+434,42,0,Luminal B
+435,71,1,Luminal B
+436,64,0,Luminal A
+437,83,1,Luminal A
+438,31,0,Luminal B
+439,49,2,HER2(+)
+440,43,0,Triple negative
+441,51,1,Luminal B
+442,53,1,Luminal B
+443,43,0,Triple negative
+444,36,1,HER2(+)
+445,76,1,Luminal A
+446,62,0,Luminal B
+447,56,1,Luminal B
+448,58,1,Luminal A
+449,52,1,Luminal A
+450,49,1,Luminal B
+451,49,1,Luminal A
+452,65,1,HER2(+)
+453,52,1,Luminal B
+454,56,0,Triple negative
+455,52,0,Luminal B
+456,46,0,Luminal A
+457,39,2,HER2(+)
+458,62,0,Luminal B
+459,60,1,Luminal A
+460,43,1,Luminal B
+461,47,0,Luminal A
+462,66,1,Luminal A
+463,62,0,Luminal B
+464,69,2,HER2(+)
+465,56,2,HER2(+)
+466,80,1,Triple negative
+467,43,0,Luminal B
+468,63,2,HER2(+)
+469,57,0,Luminal B
+470,48,1,HER2(+)
+471,48,0,Luminal B
+472,66,0,Luminal B
+473,75,1,Luminal B
+474,51,1,Luminal B
+475,65,0,Triple negative
+476,62,2,HER2(+)
+477,50,1,Luminal A
+478,65,1,Luminal B
+479,59,1,Luminal B
+480,73,1,Luminal B
+481,53,1,Luminal B
+482,61,1,Luminal A
+483,70,0,Luminal B
+484,75,1,Luminal B
+485,51,1,Luminal B
+486,55,2,HER2(+)
+487,60,1,Luminal B
+488,63,1,Luminal A
+489,45,0,Luminal A
+490,46,1,HER2(+)
+491,51,0,Triple negative
+492,35,2,HER2(+)
+493,57,0,Luminal A
+494,52,2,HER2(+)
+495,54,1,Luminal B
+496,79,1,Luminal B
+497,59,2,HER2(+)
+498,58,2,HER2(+)
+499,84,1,Luminal B
+500,53,1,HER2(+)
+501,66,0,Luminal A
+502,66,2,HER2(+)
+503,77,2,HER2(+)
+504,38,2,HER2(+)
+505,49,1,Luminal B
+506,46,2,HER2(+)
+507,51,1,Luminal B
+508,71,1,HER2(+)
+509,74,1,HER2(+)
+510,39,1,HER2(+)
+511,44,0,Luminal B
+512,51,2,HER2(+)
+513,47,1,Luminal B
+514,82,0,Luminal B
+515,58,2,HER2(+)
+516,51,1,Luminal B
+517,60,0,Luminal B
+518,61,2,HER2(+)
+519,62,0,Luminal B
+520,78,0,Luminal A
+521,64,1,Luminal B
+522,42,2,HER2(+)
+523,47,2,HER2(+)
+524,40,0,Triple negative
+525,22,1,Luminal B
+526,42,1,Luminal B
+527,43,1,HER2(+)
+528,42,2,HER2(+)
+529,70,1,Luminal B
+530,47,0,Luminal B
+531,45,1,Luminal A
+532,65,0,Luminal B
+533,48,1,Luminal B
+534,58,1,Luminal B
+535,54,1,Luminal A
+536,50,0,Luminal B
+537,57,2,HER2(+)
+538,60,1,Luminal B
+539,74,0,Luminal B
+540,59,2,HER2(+)
+541,79,1,Luminal B
+542,61,1,Luminal B
+543,63,1,Luminal B
+544,43,2,HER2(+)
+545,38,0,Luminal B
+546,68,0,Luminal A
+547,50,2,HER2(+)
+548,51,1,Luminal B
+549,62,1,Luminal B
+550,57,1,Luminal B
+551,52,0,Luminal B
+552,55,1,Luminal B
+553,53,2,HER2(+)
+554,60,1,Luminal A
+555,30,1,Luminal B
+556,79,2,HER2(+)
+557,72,0,Luminal B
+558,76,1,HER2(+)
+559,69,2,HER2(+)
+560,61,1,Luminal B
+561,56,1,Luminal A
+562,56,1,Luminal B
+563,41,0,Luminal B
+564,57,1,Luminal B
+565,40,0,Luminal B
+566,62,0,Triple negative
+567,64,1,Luminal B
+568,43,2,HER2(+)
+569,51,1,HER2(+)
+570,66,1,HER2(+)
+571,47,1,HER2(+)
+572,75,1,HER2(+)
+573,68,0,Luminal A
+574,47,0,Luminal A
+575,61,0,Triple negative
+576,51,1,Luminal B
+577,62,1,Luminal A
+578,71,1,Luminal B
+579,43,1,Luminal B
+580,36,1,Luminal B
+581,56,0,Luminal B
+582,47,0,Triple negative
+583,65,1,HER2(+)
+584,49,2,HER2(+)
+585,54,1,Luminal B
+586,66,2,HER2(+)
+587,59,1,Triple negative
+588,48,1,Triple negative
+589,48,0,Luminal B
+590,76,0,Triple negative
+591,77,0,Luminal A
+592,83,1,Luminal A
+593,45,1,Luminal B
+594,66,1,Luminal B
+595,52,0,Luminal A
+596,51,0,Luminal B
+597,66,1,Luminal B
+598,54,1,Luminal B
+599,64,1,Luminal B
+600,46,0,Luminal A
+601,62,0,Triple negative
+602,44,1,Luminal A
+603,41,2,HER2(+)
+604,33,0,Triple negative
+605,56,0,Luminal B
+606,61,1,Triple negative
+607,76,0,Luminal A
+608,36,0,Luminal B
+609,46,1,Luminal B
+610,73,0,Luminal A
+611,29,2,HER2(+)
+612,60,1,HER2(+)
+613,47,1,Luminal A
+614,46,0,Triple negative
+615,47,2,HER2(+)
+616,53,1,Luminal A
+617,48,1,HER2(+)
+618,63,1,HER2(+)
+619,90,1,Luminal B
+620,45,1,Luminal B
+621,79,2,HER2(+)
+622,76,0,Luminal A
+623,38,1,Luminal A
+624,55,1,Luminal B
+625,73,2,HER2(+)
+626,58,0,Luminal B
+627,46,0,Triple negative
+628,62,0,Luminal A
+629,52,1,Luminal B
+630,83,0,Luminal A
+631,50,0,Luminal B
+632,62,1,Luminal B
+633,67,0,Luminal B
+634,59,1,Luminal B
+635,48,2,HER2(+)
+636,87,2,HER2(+)
+637,73,0,Luminal B
+638,37,2,HER2(+)
+639,82,1,Luminal A
+640,67,2,HER2(+)
+641,81,0,Triple negative
+642,56,1,Luminal A
+643,40,0,Luminal A
+644,33,1,Luminal B
+645,83,0,Luminal B
+646,53,2,HER2(+)
+647,66,1,Luminal B
+648,49,0,Luminal A
+649,49,2,HER2(+)
+650,44,1,HER2(+)
+651,68,0,Luminal B
+652,46,1,HER2(+)
+653,39,1,Luminal B
+654,61,1,Luminal A
+655,45,1,Luminal A
+656,53,0,Luminal B
+657,47,2,HER2(+)
+658,32,0,Triple negative
+659,63,1,Luminal A
+660,68,0,Luminal A
+661,54,2,HER2(+)
+662,59,0,Luminal A
+663,58,0,Luminal B
+664,67,1,Luminal B
+665,64,0,Luminal B
+666,55,1,Luminal B
+667,68,1,Luminal B
+668,30,1,Luminal B
+669,37,1,Luminal A
+670,60,0,Luminal B
+671,65,0,Luminal B
+672,65,1,Luminal A
+673,54,0,Triple negative
+674,44,0,Luminal A
+675,56,1,HER2(+)
+676,57,1,Luminal B
+677,79,1,Luminal A
+678,71,0,Luminal A
+679,70,1,Luminal B
+680,39,0,Luminal B
+681,60,1,Triple negative
+682,75,2,HER2(+)
+683,60,1,HER2(+)
+684,53,1,HER2(+)
+685,60,2,HER2(+)
+686,62,0,Luminal A
+687,69,2,HER2(+)
+688,74,1,Luminal A
+689,29,2,HER2(+)
+690,70,1,Luminal B
+691,76,1,Luminal A
+692,57,1,HER2(+)
+693,63,2,HER2(+)
+694,48,1,Luminal B
+695,50,2,HER2(+)
+696,80,1,HER2(+)
+697,65,1,Luminal A
+698,51,2,HER2(+)
+699,55,1,Luminal B
+700,65,2,HER2(+)
+701,53,0,Luminal A
+702,46,1,HER2(+)
+703,72,2,HER2(+)
+704,84,1,Luminal A
+705,56,1,Luminal B
+706,44,2,HER2(+)
+707,62,1,HER2(+)
+708,54,1,HER2(+)
+709,61,1,Luminal A
+710,42,1,HER2(+)
+711,53,0,Luminal B
+712,47,1,HER2(+)
+713,44,1,Luminal B
+714,61,2,HER2(+)
+715,62,1,HER2(+)
+716,67,1,Luminal A
+717,48,1,Luminal A
+718,57,0,Luminal B
+719,51,1,HER2(+)
+720,59,1,HER2(+)
+721,56,1,Luminal B
+722,32,1,HER2(+)
+723,64,1,Luminal B
+724,47,0,Triple negative
+725,75,1,Luminal B
+726,64,0,Luminal B
+727,59,0,Luminal B
+728,72,2,HER2(+)
+729,60,0,Luminal A
+730,50,1,Triple negative
+731,62,1,Luminal A
+732,70,0,Luminal A
+733,49,2,HER2(+)
+734,55,0,Luminal A
+735,60,0,Luminal B
+736,54,1,Luminal B
+737,33,1,Luminal A
+738,55,0,Luminal A
+739,63,0,Luminal B
+740,43,1,Luminal A
+741,54,2,HER2(+)
+742,59,2,HER2(+)
+743,39,2,HER2(+)
+744,46,2,HER2(+)
+745,67,0,Luminal B
+746,65,1,HER2(+)
+747,77,1,Luminal A
+748,67,1,Luminal B
+749,56,1,HER2(+)
+750,35,1,Luminal A
+751,56,1,Luminal A
+752,57,1,HER2(+)
+753,36,0,Luminal B
+754,50,1,HER2(+)
+755,55,0,Luminal A
+756,50,0,Luminal B
+757,47,1,Luminal A
+758,37,1,Triple negative
+759,79,0,Luminal A
+760,58,1,Triple negative
+761,61,0,Luminal B
+762,51,1,Luminal B
+763,49,1,Luminal B
+764,57,0,Triple negative
+765,44,2,HER2(+)
+766,77,0,Luminal A
+767,40,1,Luminal A
+768,58,1,Luminal B
+769,61,1,Luminal B
+770,49,0,Luminal B
+771,61,2,HER2(+)
+772,56,1,Luminal A
+773,62,1,Luminal A
+774,49,2,HER2(+)
+775,73,0,Luminal A
+776,48,1,HER2(+)
+777,45,2,HER2(+)
+778,60,0,Luminal A
+779,62,0,Luminal B
+780,55,1,Luminal A
+781,49,0,Luminal A
+782,54,1,Triple negative
+783,57,2,HER2(+)
+784,57,2,HER2(+)
+785,66,1,HER2(+)
+786,62,0,Luminal B
+787,62,0,Luminal B
+788,55,0,Luminal A
+789,58,1,HER2(+)
+790,36,2,HER2(+)
+791,51,0,Luminal A
+792,57,0,Luminal B
+793,49,0,Luminal A
+794,61,1,Triple negative
+795,38,0,Luminal B
+796,58,0,Luminal B
+797,52,2,HER2(+)
+798,40,0,Luminal B
+799,62,0,Luminal A
+800,60,1,Luminal B
+801,74,1,Luminal B
+802,40,0,Luminal A
+803,75,0,Luminal B
+804,50,1,Luminal B
+805,41,1,HER2(+)
+806,59,1,Luminal B
+807,56,0,Triple negative
+808,48,1,Luminal B
+809,50,0,Triple negative
+810,57,1,Luminal A
+811,64,1,Luminal A
+812,66,0,Luminal A
+813,43,1,Triple negative
+814,83,1,Luminal B
+815,80,0,Luminal B
+816,55,0,Triple negative
+817,63,0,Triple negative
+818,65,0,Luminal A
+819,76,1,Luminal A
+820,44,2,HER2(+)
+821,58,0,Luminal B
+822,49,1,Luminal B
+823,70,0,Luminal A
+824,40,2,HER2(+)
+825,63,1,Luminal B
+826,61,1,Luminal B
+827,75,1,HER2(+)
+828,28,0,Triple negative
+829,65,1,Luminal B
+830,58,2,HER2(+)
+831,69,1,Triple negative
+832,53,0,Luminal A
+833,73,0,Luminal A
+834,54,0,Triple negative
+835,56,2,HER2(+)
+836,62,1,HER2(+)
+837,66,1,Luminal A
+838,78,2,HER2(+)
+839,49,1,Luminal A
+840,73,0,Triple negative
+841,82,0,Luminal B
+842,60,1,Luminal B
+843,55,1,Luminal A
+844,47,1,Luminal B
+845,66,1,Luminal A
+846,40,2,HER2(+)
+847,66,1,Triple negative
+848,76,0,Luminal A
+849,78,1,Luminal A
+850,36,0,Luminal A
+851,71,1,Luminal B
+852,43,0,Luminal A
+853,43,1,Luminal A
+854,60,2,HER2(+)
+855,39,2,HER2(+)
+856,62,0,Luminal B
+857,47,1,Luminal A
+858,65,1,Luminal A
+859,72,0,Luminal B
+860,36,1,Luminal B
+861,60,2,HER2(+)
+862,62,1,Luminal B
+863,66,1,HER2(+)
+864,62,2,HER2(+)
+865,62,0,Triple negative
+866,65,1,Triple negative
+867,68,2,HER2(+)
+868,37,0,Luminal B
+869,45,1,Luminal B
+870,64,2,HER2(+)
+871,68,1,Luminal B
+872,54,2,HER2(+)
+873,69,1,Luminal B
+874,62,2,HER2(+)
+875,62,1,Luminal B
+876,58,1,Luminal A
+877,65,0,Luminal B
+878,55,1,Luminal B
+879,40,2,HER2(+)
+880,70,1,Luminal B
+881,46,2,HER2(+)
+882,44,0,Luminal B
+883,55,1,Luminal B
+884,41,1,Luminal B
+885,69,1,Luminal B
+886,51,1,Luminal A
+887,68,1,Luminal A
+888,56,2,HER2(+)
+889,75,1,Luminal A
+890,66,0,Luminal A
+891,65,1,Luminal B
+892,51,1,Luminal B
+893,87,1,Luminal B
+894,79,0,Luminal B
+895,33,1,HER2(+)
+896,44,2,HER2(+)
+897,69,2,HER2(+)
+898,75,0,Luminal B
+899,54,1,Luminal B
+900,79,1,Triple negative
+901,50,2,HER2(+)
+902,34,1,Luminal B
+903,67,2,HER2(+)
+904,77,1,Triple negative
+905,84,1,Luminal A
+906,83,0,Luminal B
+907,50,1,HER2(+)
+908,76,2,HER2(+)
+909,72,1,Luminal B
+910,60,1,Triple negative
+911,63,1,Luminal A
+912,71,1,Luminal B
+913,82,0,Luminal B
+914,60,0,Luminal B
+915,32,2,HER2(+)
+916,55,0,Luminal A
+917,38,0,Triple negative
+918,47,0,Triple negative
+919,32,1,Luminal A
+920,73,1,Luminal A
+921,58,1,Luminal A
+922,77,1,Luminal A
+923,47,0,Luminal B
+924,56,1,Triple negative
+925,74,0,Luminal A
+926,63,0,Luminal A
+927,62,2,HER2(+)
+928,56,1,Luminal B
+929,49,1,Luminal A
+930,72,1,Luminal A
+931,62,0,Luminal A
+932,70,0,Luminal B
+933,79,0,Luminal B
+934,68,0,Luminal A
+935,43,1,Luminal B
+936,59,2,HER2(+)
+937,55,0,Luminal A
+938,76,1,Luminal A
+939,80,2,HER2(+)
+940,46,1,Luminal A
+941,67,1,Luminal A
+942,50,0,Triple negative
+943,64,1,HER2(+)
+944,71,0,Luminal B
+945,79,1,Luminal A
+946,40,0,Luminal A
+947,38,1,Luminal A
+948,52,1,Luminal B
+949,52,0,Luminal B
+950,59,0,Luminal A
+951,54,1,Luminal B
+952,41,0,Luminal A
+953,55,0,Luminal A
+954,75,0,Triple negative
+955,68,0,Luminal A
+956,58,1,Luminal B
+957,62,1,HER2(+)
+958,48,0,Luminal A
+959,55,1,Triple negative
+960,63,0,Luminal B
+961,43,2,HER2(+)
+962,67,1,Luminal B
+963,46,1,Luminal A
+964,48,1,HER2(+)
+965,50,1,HER2(+)
+966,52,0,Triple negative
+967,63,2,HER2(+)
+968,73,1,Luminal B
+969,82,1,Triple negative
+970,74,0,Luminal B
+971,60,0,Luminal A
+972,61,1,Luminal A
+973,57,0,Luminal A
+974,68,1,HER2(+)
+975,53,2,HER2(+)
+976,44,0,Luminal B
+977,62,0,Luminal B
+978,49,1,Luminal A
+979,57,1,Luminal B
+980,62,2,HER2(+)
+981,55,1,Luminal A
+982,53,2,HER2(+)
+983,73,1,Luminal A
+984,64,2,HER2(+)
+985,43,2,HER2(+)
+986,54,0,Luminal B
+987,71,1,Luminal A
+988,36,1,HER2(+)
+989,54,1,Luminal A
+990,56,0,Luminal B
+991,61,2,HER2(+)
+992,65,1,Luminal B
+993,48,1,Triple negative
+994,55,2,HER2(+)
+995,55,2,HER2(+)
+996,71,0,Triple negative
+997,39,1,Triple negative
+998,59,0,Triple negative
+999,60,1,Triple negative
+1000,65,0,Luminal B
+1001,57,1,Luminal B
+1002,51,1,Luminal B
+1003,59,2,HER2(+)
+1004,63,1,Luminal B
+1005,66,1,Luminal A
+1006,82,0,Luminal B
+1007,55,0,Luminal B
+1008,54,1,Luminal B
+1009,73,1,Luminal A
+1010,78,1,Luminal B
+1011,67,0,Luminal B
+1012,32,2,HER2(+)
+1013,89,0,Luminal B
+1014,84,2,HER2(+)
+1015,81,2,HER2(+)
+1016,74,2,HER2(+)
+1017,54,0,Luminal B
+1018,52,2,HER2(+)
+1019,38,2,HER2(+)
+1020,69,1,Luminal B
+1021,78,0,Luminal B
+1022,82,1,Luminal A
+1023,47,1,Luminal A
+1024,63,0,Luminal A
+1025,58,1,Triple negative
+1026,57,0,Luminal B
+1027,68,1,Luminal A
+1028,66,1,Luminal B
+1029,66,0,Luminal B
+1030,82,1,Luminal A
+1031,39,0,Triple negative
+1032,57,0,Luminal A
+1033,62,1,Luminal B
+1034,68,1,Luminal B
+1035,82,1,Luminal B
+1036,71,0,Luminal A
+1037,44,2,HER2(+)
+1038,59,0,Triple negative
+1039,64,1,Luminal A
+1040,50,0,Triple negative
+1041,79,1,Luminal B
+1042,61,1,HER2(+)
+1043,83,0,Luminal A
+1044,59,1,Luminal B
+1045,64,0,Luminal B
+1046,57,1,Luminal B
+1047,78,1,Luminal A
+1048,75,1,Luminal B
+1049,69,2,HER2(+)
+1050,79,0,Luminal A
+1051,59,1,Triple negative
+1052,45,2,HER2(+)
+1053,41,1,Luminal B
+1054,60,1,Luminal B
+1055,63,0,Luminal A
+1056,62,2,HER2(+)
+1057,46,1,Luminal B
+1058,78,1,Luminal A

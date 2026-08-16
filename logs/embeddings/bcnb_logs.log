@@ -1,0 +1,159 @@
+2026-06-19 19:14:54 [INFO] ======================================================================
+2026-06-19 19:14:54 [INFO]   EMBEDDING EXTRACTOR (desde patches ya guardados)
+2026-06-19 19:14:54 [INFO]   patches_dir : /home/DIINF/datasets_iacis/2026_BCNB/2026_BCNB_patches/BCNB
+2026-06-19 19:14:54 [INFO]   output_dir  : /home/DIINF/datasets_iacis/2026_BCNB/embeddings
+2026-06-19 19:14:54 [INFO]   modelos     : ['uni2', 'virchow2', 'phikonv2', 'provgigapath']
+2026-06-19 19:14:54 [INFO]   datasets    : ['bcnb']
+2026-06-19 19:14:54 [INFO] ======================================================================
+2026-06-19 19:14:54 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-19 19:14:54 [INFO] Modelo: uni2
+2026-06-19 19:14:55 [INFO] Cargando modelo: UNI2-h (MahmoodLab) — ViT-H/14, 1024-dim
+2026-06-19 19:14:55 [INFO]   Desde: /home/DIINF/vmieres/tesis/models/uni2
+2026-06-19 19:15:31 [INFO]   Cargado bin: ['pytorch_model.bin']
+2026-06-19 19:30:51 [INFO] ======================================================================
+2026-06-19 19:30:51 [INFO]   EMBEDDING EXTRACTOR (desde patches ya guardados)
+2026-06-19 19:30:51 [INFO]   patches_dir : /home/DIINF/datasets_iacis/2026_BCNB/2026_BCNB_patches/BCNB
+2026-06-19 19:30:51 [INFO]   output_dir  : /home/DIINF/datasets_iacis/2026_BCNB/embeddings
+2026-06-19 19:30:51 [INFO]   modelos     : ['uni2', 'virchow2', 'phikonv2', 'provgigapath']
+2026-06-19 19:30:51 [INFO]   datasets    : ['bcnb']
+2026-06-19 19:30:51 [INFO] ======================================================================
+2026-06-19 19:30:51 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-19 19:30:51 [INFO] Modelo: uni2
+2026-06-19 19:30:51 [INFO] Cargando modelo: UNI2-h (MahmoodLab) — ViT-H/14, 1536-dim
+2026-06-19 19:30:51 [INFO]   Desde: /home/DIINF/vmieres/tesis/models/uni2
+2026-06-19 19:30:59 [INFO]   Cargado bin: ['pytorch_model.bin']
+2026-06-19 19:30:59 [INFO]   Modelo cargado correctamente en cuda:0
+2026-06-19 19:31:06 [INFO]   Embedding dim: 1536
+2026-06-19 19:31:06 [WARNING]   [bcnb] no existe en /home/DIINF/datasets_iacis/2026_BCNB/2026_BCNB_patches/BCNB, se omite
+2026-06-19 19:31:06 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-19 19:31:06 [INFO] Modelo: virchow2
+2026-06-19 19:31:06 [INFO] Cargando modelo: Virchow2 (Paige) — ViT-H/14 con register tokens, 1024-dim
+2026-06-19 19:31:06 [INFO]   Desde: /home/DIINF/vmieres/tesis/models/virchow2
+2026-06-19 19:31:17 [INFO]   Cargado safetensors: ['model.safetensors']
+2026-06-19 19:32:30 [INFO] ======================================================================
+2026-06-19 19:32:30 [INFO]   EMBEDDING EXTRACTOR (desde patches ya guardados)
+2026-06-19 19:32:30 [INFO]   patches_dir : /home/DIINF/datasets_iacis/2026_BCNB/2026_BCNB_patches/BCNB
+2026-06-19 19:32:30 [INFO]   output_dir  : /home/DIINF/datasets_iacis/2026_BCNB/embeddings
+2026-06-19 19:32:30 [INFO]   modelos     : ['uni2', 'virchow2', 'phikonv2', 'provgigapath']
+2026-06-19 19:32:30 [INFO]   datasets    : ['BCNB']
+2026-06-19 19:32:30 [INFO] ======================================================================
+2026-06-19 19:32:30 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-19 19:32:30 [INFO] Modelo: uni2
+2026-06-19 19:32:30 [INFO] Cargando modelo: UNI2-h (MahmoodLab) — ViT-H/14, 1536-dim
+2026-06-19 19:32:30 [INFO]   Desde: /home/DIINF/vmieres/tesis/models/uni2
+2026-06-19 19:32:38 [INFO]   Cargado bin: ['pytorch_model.bin']
+2026-06-19 19:32:39 [INFO]   Modelo cargado correctamente en cuda:0
+2026-06-19 19:32:39 [INFO]   Embedding dim: 1536
+2026-06-19 19:32:39 [WARNING]   [BCNB] no existe en /home/DIINF/datasets_iacis/2026_BCNB/2026_BCNB_patches/BCNB, se omite
+2026-06-19 19:32:39 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-19 19:32:39 [INFO] Modelo: virchow2
+2026-06-19 19:32:39 [INFO] Cargando modelo: Virchow2 (Paige) — ViT-H/14 con register tokens, 1024-dim
+2026-06-19 19:32:39 [INFO]   Desde: /home/DIINF/vmieres/tesis/models/virchow2
+2026-06-19 19:32:45 [INFO]   Cargado safetensors: ['model.safetensors']
+2026-06-19 19:33:16 [INFO] ======================================================================
+2026-06-19 19:33:16 [INFO]   EMBEDDING EXTRACTOR (desde patches ya guardados)
+2026-06-19 19:33:16 [INFO]   patches_dir : /home/DIINF/datasets_iacis/2026_BCNB/2026_BCNB_patches
+2026-06-19 19:33:16 [INFO]   output_dir  : /home/DIINF/datasets_iacis/2026_BCNB/embeddings
+2026-06-19 19:33:16 [INFO]   modelos     : ['uni2', 'virchow2', 'phikonv2', 'provgigapath']
+2026-06-19 19:33:16 [INFO]   datasets    : ['BCNB']
+2026-06-19 19:33:16 [INFO] ======================================================================
+2026-06-19 19:33:16 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-19 19:33:16 [INFO] Modelo: uni2
+2026-06-19 19:33:16 [INFO] Cargando modelo: UNI2-h (MahmoodLab) — ViT-H/14, 1536-dim
+2026-06-19 19:33:16 [INFO]   Desde: /home/DIINF/vmieres/tesis/models/uni2
+2026-06-19 19:33:24 [INFO]   Cargado bin: ['pytorch_model.bin']
+2026-06-19 19:33:24 [INFO]   Modelo cargado correctamente en cuda:0
+2026-06-19 19:33:25 [INFO]   Embedding dim: 1536
+2026-06-19 19:33:25 [INFO]   [BCNB] 1058 slide(s)
+2026-06-20 00:41:50 [INFO]   [BCNB/uni2] Resumen: 1,569,115 patches | Errores: 0
+2026-06-20 00:41:50 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-20 00:41:50 [INFO] Modelo: virchow2
+2026-06-20 00:41:50 [INFO] Cargando modelo: Virchow2 (Paige) — ViT-H/14 con register tokens, 1024-dim
+2026-06-20 00:41:50 [INFO]   Desde: /home/DIINF/vmieres/tesis/models/virchow2
+2026-06-20 00:41:56 [INFO]   Cargado safetensors: ['model.safetensors']
+2026-06-20 17:59:03 [INFO] ======================================================================
+2026-06-20 17:59:03 [INFO]   EMBEDDING EXTRACTOR (desde patches ya guardados)
+2026-06-20 17:59:03 [INFO]   patches_dir : /home/DIINF/datasets_iacis/2026_BCNB/2026_BCNB_patches
+2026-06-20 17:59:03 [INFO]   output_dir  : /home/DIINF/datasets_iacis/2026_BCNB/embeddings
+2026-06-20 17:59:03 [INFO]   modelos     : ['virchow2', 'phikonv2', 'provgigapath']
+2026-06-20 17:59:03 [INFO]   datasets    : ['BCNB']
+2026-06-20 17:59:03 [INFO] ======================================================================
+2026-06-20 17:59:03 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-20 17:59:03 [INFO] Modelo: virchow2
+2026-06-20 17:59:03 [INFO] Cargando modelo: Virchow2 (Paige) — ViT-H/14 con register tokens, 1024-dim
+2026-06-20 17:59:03 [INFO]   Desde: /home/DIINF/vmieres/tesis/models/virchow2
+2026-06-20 17:59:10 [INFO]   Cargado safetensors: ['model.safetensors']
+2026-06-20 17:59:29 [INFO]   Modelo cargado correctamente en cuda:0
+2026-06-20 17:59:30 [INFO]   Embedding dim: 2560
+2026-06-20 17:59:30 [INFO]   [BCNB] 1058 slide(s)
+2026-06-20 23:17:36 [INFO]   [BCNB/virchow2] Resumen: 1,569,115 patches | Errores: 0
+2026-06-20 23:17:36 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-20 23:17:36 [INFO] Modelo: phikonv2
+2026-06-21 01:43:52 [INFO] ======================================================================
+2026-06-21 01:43:52 [INFO]   EMBEDDING EXTRACTOR (desde patches ya guardados)
+2026-06-21 01:43:52 [INFO]   patches_dir : /home/DIINF/datasets_iacis/2026_BCNB/2026_BCNB_patches
+2026-06-21 01:43:52 [INFO]   output_dir  : /home/DIINF/datasets_iacis/2026_BCNB/embeddings
+2026-06-21 01:43:52 [INFO]   modelos     : ['phikon_v2', 'prov_gigapath']
+2026-06-21 01:43:52 [INFO]   datasets    : ['BCNB']
+2026-06-21 01:43:52 [INFO] ======================================================================
+2026-06-21 01:43:52 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-21 01:43:52 [INFO] Modelo: phikon_v2
+2026-06-21 01:43:53 [INFO] Cargando modelo: Phikon-v2 (Owkin) — ViT-L/16 transformers, 1024-dim
+2026-06-21 01:43:53 [INFO]   Desde: /home/DIINF/vmieres/tesis/models/phikon_v2
+2026-06-21 01:44:13 [INFO]   Modelo cargado correctamente en cuda:0
+2026-06-21 01:44:14 [INFO]   Embedding dim: 1024
+2026-06-21 01:44:14 [INFO]   [BCNB] 1058 slide(s)
+2026-06-21 04:10:41 [INFO]   [BCNB/phikon_v2] Resumen: 1,569,115 patches | Errores: 0
+2026-06-21 04:10:41 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-21 04:10:41 [INFO] Modelo: prov_gigapath
+2026-06-21 04:10:41 [INFO] Cargando modelo: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-06-21 04:10:41 [INFO]   Desde: /home/DIINF/vmieres/tesis/models/prov_gigapath
+2026-06-21 04:10:57 [INFO]   Extraído state_dict desde clave 'model' en slide_encoder.pth
+2026-06-21 17:50:29 [INFO] ======================================================================
+2026-06-21 17:50:29 [INFO]   EMBEDDING EXTRACTOR (desde patches ya guardados)
+2026-06-21 17:50:29 [INFO]   patches_dir : /home/DIINF/datasets_iacis/2026_BCNB/2026_BCNB_patches
+2026-06-21 17:50:29 [INFO]   output_dir  : /home/DIINF/datasets_iacis/2026_BCNB/embeddings
+2026-06-21 17:50:29 [INFO]   modelos     : ['prov_gigapath']
+2026-06-21 17:50:29 [INFO]   datasets    : ['BCNB']
+2026-06-21 17:50:29 [INFO] ======================================================================
+2026-06-21 17:50:29 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-21 17:50:29 [INFO] Modelo: prov_gigapath
+2026-06-21 17:50:30 [INFO] Cargando modelo: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-06-21 17:50:30 [INFO]   Desde: /home/DIINF/vmieres/tesis/models/prov_gigapath
+2026-06-21 17:51:29 [INFO]   Cargado: pytorch_model.bin
+2026-06-21 17:56:10 [INFO] ======================================================================
+2026-06-21 17:56:10 [INFO]   EMBEDDING EXTRACTOR (desde patches ya guardados)
+2026-06-21 17:56:10 [INFO]   patches_dir : /home/DIINF/datasets_iacis/2026_BCNB/2026_BCNB_patches
+2026-06-21 17:56:10 [INFO]   output_dir  : /home/DIINF/datasets_iacis/2026_BCNB/embeddings
+2026-06-21 17:56:10 [INFO]   modelos     : ['prov_gigapath']
+2026-06-21 17:56:10 [INFO]   datasets    : ['BCNB']
+2026-06-21 17:56:10 [INFO] ======================================================================
+2026-06-21 17:56:10 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-21 17:56:10 [INFO] Modelo: prov_gigapath
+2026-06-21 17:56:11 [INFO] Cargando modelo: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-06-21 17:56:11 [INFO]   Desde: /home/DIINF/vmieres/tesis/models/prov_gigapath
+2026-06-21 17:56:24 [INFO]   Cargado: pytorch_model.bin
+2026-06-21 17:56:25 [INFO]   Modelo cargado correctamente en cuda:0
+2026-06-21 17:56:25 [INFO]   Embedding dim: 1536
+2026-06-21 17:56:25 [INFO]   [BCNB] 1058 slide(s)
+2026-06-22 00:27:05 [INFO]   [BCNB/prov_gigapath] Resumen: 1,569,115 patches | Errores: 0
+2026-06-22 00:27:05 [INFO] 
+======================================================================
+2026-06-22 00:27:05 [INFO]   RESUMEN GLOBAL
+2026-06-22 00:27:05 [INFO]   Tiempo total: 390.9 min
+2026-06-22 00:27:05 [INFO]   Output: /home/DIINF/datasets_iacis/2026_BCNB/embeddings
+2026-06-22 00:27:05 [INFO] ======================================================================
+2026-06-22 00:27:06 [INFO]   Stats guardadas en: /home/DIINF/datasets_iacis/2026_BCNB/embeddings/embedding_stats.csv

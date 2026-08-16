@@ -1,0 +1,173 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# WSI Patch Extractor - Configuration File
+# Uso: python patch_extractor.py config.yaml
+#      python patch_extractor.py config.yaml --dry-run
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ── Logging ───────────────────────────────────────────────────────────────────
+log_level: INFO          # DEBUG | INFO | WARNING | ERROR
+log_file: null           # null = solo consola | "run.log" = también a archivo
+
+
+# ── Cómputo ───────────────────────────────────────────────────────────────────
+compute:
+  gpu_ids: [0, 1]        # IDs de GPUs a usar (RTX 6000 Ada x2)
+  num_workers: 8         # Workers CPU para lectura paralela de WSIs
+  prefetch_factor: 2     # Batches a precargar por worker
+  pin_memory: true       # Acelera transferencia CPU→GPU
+
+
+# ── Extracción de parches ─────────────────────────────────────────────────────
+extraction:
+  patch_size: 224        # Tamaño del parche en píxeles (estándar modelos fundacionales)
+  magnification: 20.0    # Magnificación objetivo (20x = estándar histología)
+  overlap: 0.0           # Overlap entre parches: 0.0=sin overlap | 0.5=50% | 0.25=25%
+  padding: true          # true = incluir parches de borde con padding blanco
+
+
+# ── Filtrado de parches ───────────────────────────────────────────────────────
+filtering:
+  enabled: true
+  tissue_threshold: 0.5      # Mínimo % de tejido por parche (0.0–1.0)
+                             # 0.5 = al menos 50% del parche debe ser tejido
+                             # Sube a 0.7–0.8 para ser más estricto
+  saturation_filter: true    # Filtro adicional por saturación HSV
+                             # Descarta píxeles sin color (fondo blanco/gris)
+  saturation_threshold: 0.05 # Umbral mínimo de saturación (0.0–1.0)
+
+
+# ── Salida ─────────────────────────────────────────────────────────────────────
+output:
+  base_dir: /home/DIINF/vmieres/patch_output   # Directorio raíz de salida
+
+  # ── Parches en disco ──────────────────────────────────────────────────────
+  save_patches: true
+  patches_format: hdf5       # hdf5 (recomendado) | png | jpeg
+                             # HDF5: 1 archivo por WSI, acceso rápido, comprimido
+                             # PNG/JPEG: 1 imagen por parche, ocupa mucho más espacio
+
+  hdf5_compression: lzf      # lzf (rápido, buena compresión) | gzip | null (sin compresión)
+  jpeg_quality: 95           # Solo aplica si patches_format: jpeg
+
+  # ── Embeddings ────────────────────────────────────────────────────────────
+  save_embeddings: false     # true = extrae y guarda embeddings con el modelo abajo
+
+  # Nombre corto del modelo (debe coincidir con la carpeta dentro de models_dir)
+  embedding_model: uni2      # uni2 | virchow2 | phikonv2 | provgigapath
+                             #
+                             # Modelo         Arquitectura        Dim
+                             # ─────────────  ──────────────────  ────
+                             # uni2           ViT-H/14 (timm)     1024
+                             # virchow2       ViT-H/14 + regs     2048  (CLS + mean patches)
+                             # phikonv2       ViT-L/16 (transf.)  1024
+                             # provgigapath   ViT-g/14 (timm)     1536
+
+  # Ruta base donde están todas las carpetas de modelos en el servidor
+  models_dir: /home/DIINF/vmieres/tesis/models
+  #   └── uni2/             (config.json + model.safetensors)
+  #   └── virchow2/         (config.json + model.safetensors)
+  #   └── phikon_v2/        (config.json + model.safetensors)
+  #   └── prov_gigapath/    (config.json + model.safetensors)
+
+  embedding_batch_size: 64   # Parches por batch para embeddings (ajustar según VRAM)
+                             # RTX 6000 Ada (49GB): puedes subir a 128 o 256
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# DATASETS
+# Cada dataset tiene su propia configuración de rutas y formato
+# ══════════════════════════════════════════════════════════════════════════════
+datasets:
+
+  # ── HistologyHSI (.mrxs) ──────────────────────────────────────────────────
+  - name: HistologyHSI
+    enabled: true
+    path: /home/DIINF/vmieres/PKG - HistologyHSI-BC-Recurrence/01_01_Histological_Images
+    format: mrxs
+    native_magnification: 20
+    subfolder_structure: flat   # Los .mrxs están directamente en la carpeta
+    select: all                 # "all" o lista de nombres:
+    # select:                   # Ejemplo para seleccionar solo algunas imágenes:
+    #   - slide_001
+    #   - slide_023
+    #   - slide_047
+
+  # ── BCNB (.jpg) ───────────────────────────────────────────────────────────
+  - name: BCNB
+    enabled: true
+    path: /home/DIINF/datasets_iacis/2026_BCNB/WSIs
+    format: jpg
+    subfolder_structure: flat   # Los .jpg están directamente en la carpeta
+    select: all
+
+  # ── HISTAI Breast (.tiff) ─────────────────────────────────────────────────
+  - name: HISTAI_Breast
+    enabled: true
+    path: /home/DIINF/datasets_iacis/2026_HISTAI/HISTAI_Breast
+    format: tiff
+    subfolder_structure: case_folders  # Estructura: case_xxxx/imagen.tiff
+    select: all
+
+  # ── HISTAI Colorectal B1 (.tiff) ──────────────────────────────────────────
+  - name: HISTAI_Colorectal_B1
+    enabled: true
+    path: /home/DIINF/datasets_iacis/2026_HISTAI/HISTAI_colorectal_b1
+    format: tiff
+    subfolder_structure: case_folders
+    select: all
+
+  # ── HISTAI Colorectal B2 (.tiff) ──────────────────────────────────────────
+  - name: HISTAI_Colorectal_B2
+    enabled: true
+    path: /home/DIINF/datasets_iacis/2026_HISTAI/HISTAI_colorectal_b2
+    format: tiff
+    subfolder_structure: case_folders
+    select: all
+
+  # ── SurGen (.czi) ─────────────────────────────────────────────────────────
+  - name: SurGen
+    enabled: true
+    path: /home/DIINF/datasets_iacis/2026_SurGen
+    format: czi
+    subfolder_structure: split_folders  # SR1482_WSIs/ y SR386_WSIs/
+    select: all
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# GUÍA RÁPIDA DE CONFIGURACIONES TÍPICAS
+# ══════════════════════════════════════════════════════════════════════════════
+#
+# 1) Solo quiero explorar cuántos parches habrá (sin extraer nada):
+#    → python patch_extractor.py config.yaml --dry-run
+#
+# 2) Solo guardar parches en HDF5 (más eficiente):
+#    save_patches: true | patches_format: hdf5 | save_embeddings: false
+#
+# 3) Solo extraer embeddings (para evaluación de modelos fundacionales):
+#    save_patches: false | save_embeddings: true
+#
+# 4) Guardar todo (parches + embeddings):
+#    save_patches: true | save_embeddings: true
+#
+# 5) Quiero ser más estricto con el tejido:
+#    tissue_threshold: 0.75
+#
+# 6) Quiero parches con 50% de overlap (más contexto, más parches):
+#    overlap: 0.5
+#
+# 7) Solo quiero procesar algunos datasets:
+#    Poner enabled: false en los que no quieras
+#
+# ── Estructura del HDF5 generado por slide ────────────────────────────────────
+#
+#  slide_name.h5
+#  ├── patches      (N, 3, 224, 224) uint8   ← los parches
+#  ├── coords       (N, 2)           int32   ← coordenadas (x, y) en el WSI
+#  └── embeddings   (N, D)           float32 ← solo si save_embeddings: true
+#
+#  Atributos del archivo HDF5:
+#    slide, wsi_path, patch_size, magnification, n_patches
+#
+# ── Dependencia extra para .czi ───────────────────────────────────────────────
+#  pip install czifile
+# ══════════════════════════════════════════════════════════════════════════════

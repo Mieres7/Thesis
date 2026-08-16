@@ -1,0 +1,238 @@
+public_id,lesion_id,patient_id,path,localization,larger_size,tobacco_use,alcohol_consumption,sun_exposure,gender,skin_color,age_group,diagnosis,dysplasia_severity,TaskII,TaskIII,TaskIV
+0,50,48,0000.png,Tongue,2.0,Yes,No,No,M,Black,2,OSCC,,OSCC,Presence,OSCC
+1,50,48,0001.png,Tongue,2.0,Yes,No,No,M,Black,2,OSCC,,OSCC,Presence,OSCC
+2,41,39,0002.png,Tongue,2.5,Yes,Former,Yes,M,White,1,OSCC,,OSCC,Presence,OSCC
+3,41,39,0003.png,Tongue,2.5,Yes,Former,Yes,M,White,1,OSCC,,OSCC,Presence,OSCC
+4,87,81,0004.png,Lip,1.5,Former,Yes,Yes,F,White,2,OSCC,,OSCC,Presence,OSCC
+5,87,81,0005.png,Lip,1.5,Former,Yes,Yes,F,White,2,OSCC,,OSCC,Presence,OSCC
+6,103,78,0006.png,Tongue,0.4,No,Yes,No,F,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+7,103,78,0007.png,Tongue,0.4,No,Yes,No,F,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+8,103,78,0008.png,Tongue,0.4,No,Yes,No,F,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+9,103,78,0009.png,Tongue,0.4,No,Yes,No,F,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+10,101,14,0010.png,Floor of mouth,3.0,Yes,Former,No,M,White,1,OSCC,,OSCC,Presence,OSCC
+11,101,14,0011.png,Floor of mouth,3.0,Yes,Former,No,M,White,1,OSCC,,OSCC,Presence,OSCC
+12,101,14,0012.png,Floor of mouth,3.0,Yes,Former,No,M,White,1,OSCC,,OSCC,Presence,OSCC
+13,101,14,0013.png,Floor of mouth,3.0,Yes,Former,No,M,White,1,OSCC,,OSCC,Presence,OSCC
+14,54,52,0014.png,Tongue,0.0,Not informed,Not informed,Not informed,M,White,2,Leukoplakia with dysplasia,Severe,Leukoplakia,Presence,Leukoplakia with dysplasia
+15,54,52,0015.png,Tongue,0.0,Not informed,Not informed,Not informed,M,White,2,Leukoplakia with dysplasia,Severe,Leukoplakia,Presence,Leukoplakia with dysplasia
+16,129,24,0016.png,Buccal mucosa,6.0,Not informed,Not informed,Not informed,F,Not informed,2,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+17,129,24,0017.png,Buccal mucosa,6.0,Not informed,Not informed,Not informed,F,Not informed,2,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+18,11,10,0018.png,Palate,1.5,Former,No,No,M,White,2,OSCC,,OSCC,Presence,OSCC
+19,11,10,0019.png,Palate,1.5,Former,No,No,M,White,2,OSCC,,OSCC,Presence,OSCC
+20,11,10,0020.png,Palate,1.5,Former,No,No,M,White,2,OSCC,,OSCC,Presence,OSCC
+21,11,10,0021.png,Palate,1.5,Former,No,No,M,White,2,OSCC,,OSCC,Presence,OSCC
+22,22,20,0022.png,Gingiva,2.0,Former,No,No,F,Black,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+23,22,20,0023.png,Gingiva,2.0,Former,No,No,F,Black,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+24,68,63,0024.png,Gingiva,0.7,Not informed,Not informed,Not informed,F,Not informed,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+25,68,63,0025.png,Gingiva,0.7,Not informed,Not informed,Not informed,F,Not informed,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+26,68,63,0026.png,Gingiva,0.7,Not informed,Not informed,Not informed,F,Not informed,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+27,68,63,0027.png,Gingiva,0.7,Not informed,Not informed,Not informed,F,Not informed,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+28,58,55,0028.png,Tongue,2.0,Not informed,Not informed,Not informed,F,Not informed,1,Leukoplakia with dysplasia,Moderate,Leukoplakia,Presence,Leukoplakia with dysplasia
+29,58,55,0029.png,Tongue,2.0,Not informed,Not informed,Not informed,F,Not informed,1,Leukoplakia with dysplasia,Moderate,Leukoplakia,Presence,Leukoplakia with dysplasia
+30,77,71,0030.png,Lip,0.3,No,No,Yes,M,White,2,OSCC,,OSCC,Presence,OSCC
+31,77,71,0031.png,Lip,0.3,No,No,Yes,M,White,2,OSCC,,OSCC,Presence,OSCC
+32,102,31,0032.png,Tongue,1.2,Not informed,Not informed,Not informed,F,White,2,OSCC,,OSCC,Presence,OSCC
+33,102,31,0033.png,Tongue,1.2,Not informed,Not informed,Not informed,F,White,2,OSCC,,OSCC,Presence,OSCC
+34,33,31,0034.png,Tongue,1.0,Not informed,Not informed,Not informed,F,White,2,OSCC,,OSCC,Presence,OSCC
+35,33,31,0035.png,Tongue,1.0,Not informed,Not informed,Not informed,F,White,2,OSCC,,OSCC,Presence,OSCC
+36,96,90,0036.png,Buccal mucosa,0.2,Yes,Yes,Yes,F,Not informed,2,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+37,96,90,0037.png,Buccal mucosa,0.2,Yes,Yes,Yes,F,Not informed,2,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+38,96,90,0038.png,Buccal mucosa,0.2,Yes,Yes,Yes,F,Not informed,2,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+39,96,90,0039.png,Buccal mucosa,0.2,Yes,Yes,Yes,F,Not informed,2,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+40,84,78,0040.png,Tongue,0.4,No,Yes,No,F,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+41,84,78,0041.png,Tongue,0.4,No,Yes,No,F,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+42,106,78,0042.png,Tongue,0.4,No,Yes,No,F,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+43,106,78,0043.png,Tongue,0.4,No,Yes,No,F,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+44,106,78,0044.png,Tongue,0.4,No,Yes,No,F,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+45,106,78,0045.png,Tongue,0.4,No,Yes,No,F,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+46,53,51,0046.png,Lip,1.5,Not informed,Not informed,Not informed,F,Not informed,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+47,53,51,0047.png,Lip,1.5,Not informed,Not informed,Not informed,F,Not informed,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+48,88,82,0048.png,Buccal mucosa,4.5,Not informed,Not informed,Not informed,M,Not informed,2,Leukoplakia with dysplasia,Severe,Leukoplakia,Presence,Leukoplakia with dysplasia
+49,88,82,0049.png,Buccal mucosa,4.5,Not informed,Not informed,Not informed,M,Not informed,2,Leukoplakia with dysplasia,Severe,Leukoplakia,Presence,Leukoplakia with dysplasia
+50,130,82,0050.png,Buccal mucosa,4.5,Not informed,Not informed,Not informed,M,Not informed,2,Leukoplakia with dysplasia,Severe,Leukoplakia,Presence,Leukoplakia with dysplasia
+51,130,82,0051.png,Buccal mucosa,4.5,Not informed,Not informed,Not informed,M,Not informed,2,Leukoplakia with dysplasia,Severe,Leukoplakia,Presence,Leukoplakia with dysplasia
+52,130,82,0052.png,Buccal mucosa,4.5,Not informed,Not informed,Not informed,M,Not informed,2,Leukoplakia with dysplasia,Severe,Leukoplakia,Presence,Leukoplakia with dysplasia
+53,130,82,0053.png,Buccal mucosa,4.5,Not informed,Not informed,Not informed,M,Not informed,2,Leukoplakia with dysplasia,Severe,Leukoplakia,Presence,Leukoplakia with dysplasia
+54,15,13,0054.png,Buccal mucosa,0.0,Yes,Yes,Not informed,F,Black,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+55,15,13,0055.png,Buccal mucosa,0.0,Yes,Yes,Not informed,F,Black,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+56,15,13,0056.png,Buccal mucosa,0.0,Yes,Yes,Not informed,F,Black,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+57,15,13,0057.png,Buccal mucosa,0.0,Yes,Yes,Not informed,F,Black,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+58,64,60,0058.png,Tongue,0.0,Not informed,Not informed,Not informed,F,Not informed,1,OSCC,,OSCC,Presence,OSCC
+59,64,60,0059.png,Tongue,0.0,Not informed,Not informed,Not informed,F,Not informed,1,OSCC,,OSCC,Presence,OSCC
+60,104,60,0060.png,Tongue,0.1,Not informed,Not informed,Not informed,F,Not informed,1,OSCC,,OSCC,Presence,OSCC
+61,104,60,0061.png,Tongue,0.1,Not informed,Not informed,Not informed,F,Not informed,1,OSCC,,OSCC,Presence,OSCC
+62,104,60,0062.png,Tongue,0.1,Not informed,Not informed,Not informed,F,Not informed,1,OSCC,,OSCC,Presence,OSCC
+63,104,60,0063.png,Tongue,0.1,Not informed,Not informed,Not informed,F,Not informed,1,OSCC,,OSCC,Presence,OSCC
+64,104,60,0064.png,Tongue,0.1,Not informed,Not informed,Not informed,F,Not informed,1,OSCC,,OSCC,Presence,OSCC
+65,104,60,0065.png,Tongue,0.1,Not informed,Not informed,Not informed,F,Not informed,1,OSCC,,OSCC,Presence,OSCC
+66,24,22,0066.png,Tongue,2.0,No,Yes,No,M,White,2,OSCC,,OSCC,Presence,OSCC
+67,24,22,0067.png,Tongue,2.0,No,Yes,No,M,White,2,OSCC,,OSCC,Presence,OSCC
+68,73,67,0068.png,Gingiva,1.5,Yes,No,Yes,M,Brown,0,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+69,73,67,0069.png,Gingiva,1.5,Yes,No,Yes,M,Brown,0,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+70,73,67,0070.png,Gingiva,1.5,Yes,No,Yes,M,Brown,0,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+71,73,67,0071.png,Gingiva,1.5,Yes,No,Yes,M,Brown,0,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+72,31,28,0072.png,Floor of mouth,3.5,Yes,Former,Yes,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+73,31,28,0073.png,Floor of mouth,3.5,Yes,Former,Yes,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+74,31,28,0074.png,Floor of mouth,3.5,Yes,Former,Yes,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+75,31,28,0075.png,Floor of mouth,3.5,Yes,Former,Yes,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+76,30,27,0076.png,Lip,0.0,Yes,Former,Yes,M,Not informed,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+77,30,27,0077.png,Lip,0.0,Yes,Former,Yes,M,Not informed,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+78,42,40,0078.png,Tongue,1.0,Not informed,Not informed,Not informed,M,Not informed,1,Leukoplakia with dysplasia,Severe,Leukoplakia,Presence,Leukoplakia with dysplasia
+79,42,40,0079.png,Tongue,1.0,Not informed,Not informed,Not informed,M,Not informed,1,Leukoplakia with dysplasia,Severe,Leukoplakia,Presence,Leukoplakia with dysplasia
+80,6,6,0080.png,Gingiva,3.2,Not informed,Not informed,Not informed,F,Not informed,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+81,6,6,0081.png,Gingiva,3.2,Not informed,Not informed,Not informed,F,Not informed,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+82,27,25,0082.png,Gingiva,0.3,Yes,No,No,F,Black,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+83,27,25,0083.png,Gingiva,0.3,Yes,No,No,F,Black,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+84,27,25,0084.png,Gingiva,0.3,Yes,No,No,F,Black,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+85,27,25,0085.png,Gingiva,0.3,Yes,No,No,F,Black,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+86,27,25,0086.png,Gingiva,0.3,Yes,No,No,F,Black,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+87,78,72,0087.png,Gingiva,4.5,Not informed,Not informed,Not informed,M,Not informed,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+88,78,72,0088.png,Gingiva,4.5,Not informed,Not informed,Not informed,M,Not informed,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+89,78,72,0089.png,Gingiva,4.5,Not informed,Not informed,Not informed,M,Not informed,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+90,78,72,0090.png,Gingiva,4.5,Not informed,Not informed,Not informed,M,Not informed,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+91,78,72,0091.png,Gingiva,4.5,Not informed,Not informed,Not informed,M,Not informed,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+92,78,72,0092.png,Gingiva,4.5,Not informed,Not informed,Not informed,M,Not informed,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+93,78,72,0093.png,Gingiva,4.5,Not informed,Not informed,Not informed,M,Not informed,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+94,78,72,0094.png,Gingiva,4.5,Not informed,Not informed,Not informed,M,Not informed,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+95,18,16,0095.png,Tongue,0.1,Not informed,Not informed,Not informed,F,Black,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+96,18,16,0096.png,Tongue,0.1,Not informed,Not informed,Not informed,F,Black,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+97,18,16,0097.png,Tongue,0.1,Not informed,Not informed,Not informed,F,Black,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+98,18,16,0098.png,Tongue,0.1,Not informed,Not informed,Not informed,F,Black,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+99,83,77,0099.png,Floor of mouth,1.0,Not informed,Not informed,Not informed,M,Not informed,1,OSCC,,OSCC,Presence,OSCC
+100,83,77,0100.png,Floor of mouth,1.0,Not informed,Not informed,Not informed,M,Not informed,1,OSCC,,OSCC,Presence,OSCC
+101,83,77,0101.png,Floor of mouth,1.0,Not informed,Not informed,Not informed,M,Not informed,1,OSCC,,OSCC,Presence,OSCC
+102,83,77,0102.png,Floor of mouth,1.0,Not informed,Not informed,Not informed,M,Not informed,1,OSCC,,OSCC,Presence,OSCC
+103,74,68,0103.png,Tongue,1.0,Not informed,Not informed,Not informed,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+104,74,68,0104.png,Tongue,1.0,Not informed,Not informed,Not informed,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+105,95,89,0105.png,Gingiva,0.0,No,No,Yes,M,White,0,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+106,95,89,0106.png,Gingiva,0.0,No,No,Yes,M,White,0,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+107,95,89,0107.png,Gingiva,0.0,No,No,Yes,M,White,0,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+108,95,89,0108.png,Gingiva,0.0,No,No,Yes,M,White,0,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+109,62,58,0109.png,Tongue,2.0,No,No,No,F,White,2,OSCC,,OSCC,Presence,OSCC
+110,62,58,0110.png,Tongue,2.0,No,No,No,F,White,2,OSCC,,OSCC,Presence,OSCC
+111,62,58,0111.png,Tongue,2.0,No,No,No,F,White,2,OSCC,,OSCC,Presence,OSCC
+112,62,58,0112.png,Tongue,2.0,No,No,No,F,White,2,OSCC,,OSCC,Presence,OSCC
+113,56,53,0113.png,Tongue,5.0,Not informed,Not informed,Not informed,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+114,56,53,0114.png,Tongue,5.0,Not informed,Not informed,Not informed,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+115,56,53,0115.png,Tongue,5.0,Not informed,Not informed,Not informed,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+116,56,53,0116.png,Tongue,5.0,Not informed,Not informed,Not informed,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+117,59,56,0117.png,Buccal mucosa,2.0,Yes,No,Yes,F,Brown,1,Leukoplakia with dysplasia,Moderate,Leukoplakia,Presence,Leukoplakia with dysplasia
+118,59,56,0118.png,Buccal mucosa,2.0,Yes,No,Yes,F,Brown,1,Leukoplakia with dysplasia,Moderate,Leukoplakia,Presence,Leukoplakia with dysplasia
+119,59,56,0119.png,Buccal mucosa,2.0,Yes,No,Yes,F,Brown,1,Leukoplakia with dysplasia,Moderate,Leukoplakia,Presence,Leukoplakia with dysplasia
+120,1,1,0120.png,Gingiva,1.0,Not informed,Not informed,Not informed,F,Not informed,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+121,1,1,0121.png,Gingiva,1.0,Not informed,Not informed,Not informed,F,Not informed,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+122,1,1,0122.png,Gingiva,1.0,Not informed,Not informed,Not informed,F,Not informed,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+123,1,1,0123.png,Gingiva,1.0,Not informed,Not informed,Not informed,F,Not informed,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+124,47,45,0124.png,Buccal mucosa,1.5,Yes,No,No,M,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+125,47,45,0125.png,Buccal mucosa,1.5,Yes,No,No,M,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+126,47,45,0126.png,Buccal mucosa,1.5,Yes,No,No,M,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+127,47,45,0127.png,Buccal mucosa,1.5,Yes,No,No,M,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+128,47,45,0128.png,Buccal mucosa,1.5,Yes,No,No,M,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+129,47,45,0129.png,Buccal mucosa,1.5,Yes,No,No,M,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+130,47,45,0130.png,Buccal mucosa,1.5,Yes,No,No,M,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+131,47,45,0131.png,Buccal mucosa,1.5,Yes,No,No,M,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+132,45,43,0132.png,Floor of mouth,2.0,Yes,No,Yes,M,White,1,OSCC,,OSCC,Presence,OSCC
+133,45,43,0133.png,Floor of mouth,2.0,Yes,No,Yes,M,White,1,OSCC,,OSCC,Presence,OSCC
+134,45,43,0134.png,Floor of mouth,2.0,Yes,No,Yes,M,White,1,OSCC,,OSCC,Presence,OSCC
+135,45,43,0135.png,Floor of mouth,2.0,Yes,No,Yes,M,White,1,OSCC,,OSCC,Presence,OSCC
+136,85,79,0136.png,Tongue,3.0,Not informed,Not informed,Not informed,F,Not informed,1,OSCC,,OSCC,Presence,OSCC
+137,85,79,0137.png,Tongue,3.0,Not informed,Not informed,Not informed,F,Not informed,1,OSCC,,OSCC,Presence,OSCC
+138,85,79,0138.png,Tongue,3.0,Not informed,Not informed,Not informed,F,Not informed,1,OSCC,,OSCC,Presence,OSCC
+139,85,79,0139.png,Tongue,3.0,Not informed,Not informed,Not informed,F,Not informed,1,OSCC,,OSCC,Presence,OSCC
+140,67,62,0140.png,Gingiva,0.1,Not informed,Not informed,Not informed,F,Not informed,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+141,67,62,0141.png,Gingiva,0.1,Not informed,Not informed,Not informed,F,Not informed,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+142,23,21,0142.png,Gingiva,0.8,No,No,No,F,Black,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+143,23,21,0143.png,Gingiva,0.8,No,No,No,F,Black,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+144,23,21,0144.png,Gingiva,0.8,No,No,No,F,Black,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+145,23,21,0145.png,Gingiva,0.8,No,No,No,F,Black,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+146,23,21,0146.png,Gingiva,0.8,No,No,No,F,Black,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+147,23,21,0147.png,Gingiva,0.8,No,No,No,F,Black,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+148,107,29,0148.png,Tongue,1.0,Not informed,Not informed,Not informed,M,Not informed,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+149,107,29,0149.png,Tongue,1.0,Not informed,Not informed,Not informed,M,Not informed,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+150,80,74,0150.png,Gingiva,0.5,Not informed,Not informed,Not informed,M,Not informed,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+151,80,74,0151.png,Gingiva,0.5,Not informed,Not informed,Not informed,M,Not informed,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+152,80,74,0152.png,Gingiva,0.5,Not informed,Not informed,Not informed,M,Not informed,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+153,80,74,0153.png,Gingiva,0.5,Not informed,Not informed,Not informed,M,Not informed,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+154,94,88,0154.png,Lip,2.0,Not informed,Not informed,Not informed,F,Not informed,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+155,94,88,0155.png,Lip,2.0,Not informed,Not informed,Not informed,F,Not informed,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+156,90,84,0156.png,Tongue,0.4,Not informed,Not informed,Not informed,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+157,90,84,0157.png,Tongue,0.4,Not informed,Not informed,Not informed,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+158,0,0,0158.png,Tongue,0.3,Not informed,Not informed,Not informed,F,Black,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+159,0,0,0159.png,Tongue,0.3,Not informed,Not informed,Not informed,F,Black,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+160,32,30,0160.png,Tongue,3.0,Yes,Yes,No,F,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+161,32,30,0161.png,Tongue,3.0,Yes,Yes,No,F,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+162,32,30,0162.png,Tongue,3.0,Yes,Yes,No,F,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+163,32,30,0163.png,Tongue,3.0,Yes,Yes,No,F,White,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+164,51,49,0164.png,Tongue,1.5,Not informed,Not informed,Not informed,M,Not informed,1,Leukoplakia with dysplasia,Moderate,Leukoplakia,Presence,Leukoplakia with dysplasia
+165,51,49,0165.png,Tongue,1.5,Not informed,Not informed,Not informed,M,Not informed,1,Leukoplakia with dysplasia,Moderate,Leukoplakia,Presence,Leukoplakia with dysplasia
+166,12,11,0166.png,Floor of mouth,5.0,Yes,Former,Yes,M,Brown,1,OSCC,,OSCC,Presence,OSCC
+167,12,11,0167.png,Floor of mouth,5.0,Yes,Former,Yes,M,Brown,1,OSCC,,OSCC,Presence,OSCC
+168,36,34,0168.png,Tongue,2.5,No,No,No,F,White,0,OSCC,,OSCC,Presence,OSCC
+169,36,34,0169.png,Tongue,2.5,No,No,No,F,White,0,OSCC,,OSCC,Presence,OSCC
+170,36,34,0170.png,Tongue,2.5,No,No,No,F,White,0,OSCC,,OSCC,Presence,OSCC
+171,86,80,0171.png,Lip,1.0,No,Former,No,M,White,2,Leukoplakia with dysplasia,Moderate,Leukoplakia,Presence,Leukoplakia with dysplasia
+172,86,80,0172.png,Lip,1.0,No,Former,No,M,White,2,Leukoplakia with dysplasia,Moderate,Leukoplakia,Presence,Leukoplakia with dysplasia
+173,72,66,0173.png,Palate,3.0,Yes,No,Yes,F,White,2,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+174,72,66,0174.png,Palate,3.0,Yes,No,Yes,F,White,2,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+175,89,83,0175.png,Floor of mouth,0.0,Not informed,Not informed,Not informed,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+176,89,83,0176.png,Floor of mouth,0.0,Not informed,Not informed,Not informed,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+177,89,83,0177.png,Floor of mouth,0.0,Not informed,Not informed,Not informed,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+178,89,83,0178.png,Floor of mouth,0.0,Not informed,Not informed,Not informed,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+179,89,83,0179.png,Floor of mouth,0.0,Not informed,Not informed,Not informed,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+180,89,83,0180.png,Floor of mouth,0.0,Not informed,Not informed,Not informed,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+181,26,24,0181.png,Buccal mucosa,2.0,Not informed,Not informed,Not informed,F,Not informed,2,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+182,26,24,0182.png,Buccal mucosa,2.0,Not informed,Not informed,Not informed,F,Not informed,2,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+183,91,85,0183.png,Tongue,0.5,Not informed,Not informed,Not informed,M,Not informed,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+184,91,85,0184.png,Tongue,0.5,Not informed,Not informed,Not informed,M,Not informed,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+185,57,54,0185.png,Lip,1.5,Yes,Former,No,M,White,1,Leukoplakia with dysplasia,Moderate,Leukoplakia,Presence,Leukoplakia with dysplasia
+186,57,54,0186.png,Lip,1.5,Yes,Former,No,M,White,1,Leukoplakia with dysplasia,Moderate,Leukoplakia,Presence,Leukoplakia with dysplasia
+187,57,54,0187.png,Lip,1.5,Yes,Former,No,M,White,1,Leukoplakia with dysplasia,Moderate,Leukoplakia,Presence,Leukoplakia with dysplasia
+188,57,54,0188.png,Lip,1.5,Yes,Former,No,M,White,1,Leukoplakia with dysplasia,Moderate,Leukoplakia,Presence,Leukoplakia with dysplasia
+189,57,54,0189.png,Lip,1.5,Yes,Former,No,M,White,1,Leukoplakia with dysplasia,Moderate,Leukoplakia,Presence,Leukoplakia with dysplasia
+190,57,54,0190.png,Lip,1.5,Yes,Former,No,M,White,1,Leukoplakia with dysplasia,Moderate,Leukoplakia,Presence,Leukoplakia with dysplasia
+191,38,36,0191.png,Gingiva,3.0,Not informed,Not informed,Not informed,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+192,38,36,0192.png,Gingiva,3.0,Not informed,Not informed,Not informed,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+193,38,36,0193.png,Gingiva,3.0,Not informed,Not informed,Not informed,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+194,38,36,0194.png,Gingiva,3.0,Not informed,Not informed,Not informed,M,Not informed,2,OSCC,,OSCC,Presence,OSCC
+195,70,65,0195.png,Buccal mucosa,1.5,No,Yes,No,M,Black,2,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+196,70,65,0196.png,Buccal mucosa,1.5,No,Yes,No,M,Black,2,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+197,70,65,0197.png,Buccal mucosa,1.5,No,Yes,No,M,Black,2,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+198,70,65,0198.png,Buccal mucosa,1.5,No,Yes,No,M,Black,2,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+199,75,69,0199.png,Buccal mucosa,2.0,Not informed,Not informed,Not informed,F,Not informed,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+200,75,69,0200.png,Buccal mucosa,2.0,Not informed,Not informed,Not informed,F,Not informed,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+201,131,12,0201.png,Lip,2.0,Not informed,Not informed,Not informed,M,Not informed,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+202,131,12,0202.png,Lip,2.0,Not informed,Not informed,Not informed,M,Not informed,2,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+203,52,50,0203.png,Gingiva,3.0,Not informed,Not informed,Not informed,F,Not informed,0,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+204,52,50,0204.png,Gingiva,3.0,Not informed,Not informed,Not informed,F,Not informed,0,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+205,20,18,0205.png,Gingiva,3.0,Former,Former,No,M,White,2,OSCC,,OSCC,Presence,OSCC
+206,20,18,0206.png,Gingiva,3.0,Former,Former,No,M,White,2,OSCC,,OSCC,Presence,OSCC
+207,20,18,0207.png,Gingiva,3.0,Former,Former,No,M,White,2,OSCC,,OSCC,Presence,OSCC
+208,20,18,0208.png,Gingiva,3.0,Former,Former,No,M,White,2,OSCC,,OSCC,Presence,OSCC
+209,20,18,0209.png,Gingiva,3.0,Former,Former,No,M,White,2,OSCC,,OSCC,Presence,OSCC
+210,20,18,0210.png,Gingiva,3.0,Former,Former,No,M,White,2,OSCC,,OSCC,Presence,OSCC
+211,98,92,0211.png,Floor of mouth,0.0,Yes,No,No,M,Brown,2,OSCC,,OSCC,Presence,OSCC
+212,98,92,0212.png,Floor of mouth,0.0,Yes,No,No,M,Brown,2,OSCC,,OSCC,Presence,OSCC
+213,98,92,0213.png,Floor of mouth,0.0,Yes,No,No,M,Brown,2,OSCC,,OSCC,Presence,OSCC
+214,98,92,0214.png,Floor of mouth,0.0,Yes,No,No,M,Brown,2,OSCC,,OSCC,Presence,OSCC
+215,37,35,0215.png,Palate,0.3,Not informed,Not informed,Not informed,M,Not informed,1,Leukoplakia with dysplasia,Severe,Leukoplakia,Presence,Leukoplakia with dysplasia
+216,37,35,0216.png,Palate,0.3,Not informed,Not informed,Not informed,M,Not informed,1,Leukoplakia with dysplasia,Severe,Leukoplakia,Presence,Leukoplakia with dysplasia
+217,123,108,0217.png,Floor of mouth,1.5,Not informed,Not informed,Not informed,F,White,2,Leukoplakia with dysplasia,Severe,Leukoplakia,Presence,Leukoplakia with dysplasia
+218,123,108,0218.png,Floor of mouth,1.5,Not informed,Not informed,Not informed,F,White,2,Leukoplakia with dysplasia,Severe,Leukoplakia,Presence,Leukoplakia with dysplasia
+219,124,108,0219.png,Gingiva,1.5,Not informed,Not informed,Not informed,F,White,2,Leukoplakia with dysplasia,Severe,Leukoplakia,Presence,Leukoplakia with dysplasia
+220,124,108,0220.png,Gingiva,1.5,Not informed,Not informed,Not informed,F,White,2,Leukoplakia with dysplasia,Severe,Leukoplakia,Presence,Leukoplakia with dysplasia
+221,190,160,0221.png,Tongue,1.5,Yes,Yes,Not informed,M,Brown,1,OSCC,,OSCC,Presence,OSCC
+222,190,160,0222.png,Tongue,1.5,Yes,Yes,Not informed,M,Brown,1,OSCC,,OSCC,Presence,OSCC
+223,191,161,0223.png,Tongue,5.0,Yes,Yes,No,M,White,1,OSCC,,OSCC,Presence,OSCC
+224,191,161,0224.png,Tongue,5.0,Yes,Yes,No,M,White,1,OSCC,,OSCC,Presence,OSCC
+225,192,162,0225.png,Palate,1.5,Not informed,Not informed,Not informed,M,Brown,2,OSCC,,OSCC,Presence,OSCC
+226,192,162,0226.png,Palate,1.5,Not informed,Not informed,Not informed,M,Brown,2,OSCC,,OSCC,Presence,OSCC
+227,193,163,0227.png,Floor of mouth,0.5,Not informed,Not informed,Not informed,F,Black,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+228,193,163,0228.png,Floor of mouth,0.5,Not informed,Not informed,Not informed,F,Black,1,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+229,194,164,0229.png,Tongue,1.4,Not informed,Not informed,Not informed,F,White,1,OSCC,,OSCC,Presence,OSCC
+230,194,164,0230.png,Tongue,1.4,Not informed,Not informed,Not informed,F,White,1,OSCC,,OSCC,Presence,OSCC
+231,195,165,0231.png,Tongue,1.2,No,No,No,M,White,0,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+232,195,165,0232.png,Tongue,1.2,No,No,No,M,White,0,Leukoplakia with dysplasia,Mild,Leukoplakia,Presence,Leukoplakia with dysplasia
+233,215,183,0233.png,Tongue,1.0,No,No,Not informed,M,White,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+234,215,183,0234.png,Tongue,1.0,No,No,Not informed,M,White,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+235,216,183,0235.png,Palate,0.7,No,No,Not informed,M,White,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia
+236,216,183,0236.png,Palate,0.7,No,No,Not informed,M,White,1,Leukoplakia without dysplasia,,Leukoplakia,Absence,Leukoplakia without dysplasia

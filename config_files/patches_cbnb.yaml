@@ -1,0 +1,38 @@
+log_level: INFO
+log_file: patches_logs/patches_bcnb.log   # guarda log en archivo también, útil para revisar después
+
+compute:
+  gpu_ids: [0, 1]
+  num_workers: 4
+  prefetch_factor: 2
+  pin_memory: true
+
+extraction:
+  patch_size: 224
+  magnification: 20.0
+  overlap: 0.0
+  padding: true
+
+filtering:
+  enabled: true
+  tissue_threshold: 0.5
+  saturation_filter: true
+  saturation_threshold: 0.03
+
+output:
+  base_dir: /home/DIINF/datasets_iacis/2026_BCNB/2026_BCNB_patches
+  save_patches: true
+  patches_format: hdf5
+  hdf5_compression: lzf
+  save_embeddings: false   # ponlo en true si también quieres probar embeddings
+  embedding_model: uni2
+  models_dir: /home/DIINF/vmieres/tesis/models
+  embedding_batch_size: 64
+
+datasets:
+  - name: BCNB
+    enabled: true
+    path: /home/DIINF/datasets_iacis/2026_BCNB/WSIs
+    format: jpg
+    subfolder_structure: flat
+    select: all

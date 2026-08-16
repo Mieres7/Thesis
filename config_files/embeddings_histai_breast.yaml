@@ -1,0 +1,98 @@
+# log_level: INFO
+# log_file: embeddings_logs/histai_breast_logs.log
+
+# # Carpeta que contiene <dataset_name>/<slide>.h5 generados por patch_extractor.py
+# patches_dir: /home/shared_data/HISTAI/HISTAI_Breast/patches
+
+# # Carpeta destino: output_dir/<dataset_name>/<model_name>/<slide>.h5
+# output_dir: /home/shared_data/HISTAI/embeddings/HISTAI_Breast_embeddins
+
+# # Carpeta base donde están las carpetas de cada modelo descargado (HF local)
+# models_dir: /home/vmieres/tesis/models
+
+# # Modelos a correr (claves del MODEL_REGISTRY en patch_extractor.py)
+# models:
+#   - prov_gigapath
+#   - uni2
+#   - virchow2
+#   - phikon_v2
+
+# # Si se omite, se infiere de las subcarpetas dentro de patches_dir
+# datasets:
+#   - HISTAI_Breast
+
+# batch_size: 128
+# skip_existing: true        # no recalcula si ya existe el .h5 de embeddings
+# hdf5_compression: lzf
+
+# compute:
+#   gpu_ids: [0, 1]
+#   num_workers: 2
+
+
+########################################
+
+# log_level: INFO
+# log_file: embeddings_logs/histai_breast_logs.log
+
+# # Carpeta que contiene <dataset_name>/<slide>.h5 generados por patch_extractor.py
+# patches_dir: /home/shared_data/HISTAI/HISTAI_Breast/patches
+
+# # Carpeta destino: output_dir/<dataset_name>/<model_name>/<slide>.h5
+# output_dir: /home/shared_data/HISTAI/embeddings/HISTAI_Breast_embeddins
+
+# # Carpeta base donde están las carpetas de cada modelo descargado (HF local)
+# models_dir: /home/vmieres/tesis/models
+
+# # Modelos a correr (claves del MODEL_REGISTRY en patch_extractor.py)
+# models:
+#   - prov_gigapath
+#   - uni2
+#   - virchow2
+#   - phikon_v2
+
+# # Si se omite, se infiere de las subcarpetas dentro de patches_dir
+# datasets:
+#   - HISTAI_Breast
+
+# batch_size: 128
+# skip_existing: true        # no recalcula si ya existe el .h5 de embeddings
+# hdf5_compression: lzf
+# use_amp: true               # autocast bfloat16, ~1.5-3x más rápido. Poner false si algún modelo da resultados raros
+
+# compute:
+#   gpu_ids: [0, 1]
+#   num_workers: 2
+
+########################################
+
+log_level: INFO
+log_file: embeddings_logs/histai_breast_logs.log
+
+patches_dir: /home/shared_data/HISTAI/HISTAI_Breast/patches
+output_dir: /home/shared_data/HISTAI/embeddings/HISTAI_Breast_embeddins
+models_dir: /home/vmieres/tesis/models
+
+models:
+  # - prov_gigapath
+  # - uni2
+  - virchow2
+  - phikon_v2
+
+datasets:
+  - HISTAI_Breast
+
+# Sube batch_size ahora que AMP reduce el uso de memoria. Prueba 256 y luego 384/512
+# si la GPU no se llena (monitorea con nvidia-smi).
+batch_size: 256
+
+skip_existing: true
+hdf5_compression: lzf
+
+# Ahora SI se usa de verdad: autocast bfloat16 (o float16 en GPUs < Ampere)
+use_amp: true
+
+compute:
+  gpu_ids: [0, 1]
+  # num_workers POR GPU (cada proceso de GPU abre su propio DataLoader)
+  num_workers: 4

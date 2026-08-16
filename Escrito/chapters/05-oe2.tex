@@ -1,0 +1,204 @@
+\chapter{Selección de Modelos Fundacionales y Definición de Tareas}
+\label{cap:seleccion_modelos}
+
+El Capítulo \ref{cap:caracterizacion_datasets} presentó la caracterización, preselección y armonización de los conjuntos de datos considerados en este estudio. A partir de dicho proceso, se priorizaron los dominios de cáncer de mama y cáncer colorrectal, debido a la disponibilidad de más de una cohorte por dominio y a la posibilidad de construir espacios de comparación mediante variables clínicas, demográficas y anatómicas armonizadas.
+
+De esta forma, el presente capítulo aborda la selección de modelos fundacionales representativos para las tareas definidas en el ámbito del análisis de \textit{Whole Slide Images} de patología digital, de acuerdo con las características de los conjuntos de datos analizados. La selección no busca identificar un modelo universalmente superior, sino construir un conjunto de modelos que permita realizar una comparación experimental controlada de sus representaciones y de su comportamiento frente a variaciones entre cohortes y subgrupos. Este capítulo se limita a la selección de modelos y la definición de las tareas de evaluación.
+
+Los modelos fundacionales en patología digital han demostrado que el preentrenamiento auto-supervisado a gran escala permite obtener representaciones visuales transferibles a múltiples tareas posteriores. Sin embargo, las diferencias entre los datos de preentrenamiento, las arquitecturas utilizadas, las estrategias de aprendizaje y el grado de documentación disponible pueden afectar tanto la reproducibilidad de los experimentos como la interpretación de sus resultados.
+
+\section{Criterios de selección}
+\label{sec:criterios_seleccion}
+
+\begin{table}[htbp]
+\centering
+\caption{Criterios empleados para la selección de modelos fundacionales.}
+\label{tab:criterios_seleccion_modelos}
+\small
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{p{3.7cm} p{10.3cm}}
+\toprule
+\textbf{Criterio} & \textbf{Descripción y relevancia para el estudio} \\
+\midrule
+
+Pertinencia de dominio &
+Se priorizaron modelos preentrenados para patología computacional o con uso predominante de imágenes histopatológicas. Esto permite mantener coherencia entre el dominio de preentrenamiento y las WSI de patología digital empleadas en el estudio. \\
+
+Compatibilidad con WSI H\&E &
+Se consideró la capacidad de procesar parches provenientes de WSI teñidas principalmente con hematoxilina y eosina (H\&E), modalidad predominante en las cohortes seleccionadas. Además, los modelos debían poder utilizarse como extractores de representaciones bajo un protocolo experimental común. \\
+
+Accesibilidad y reproducibilidad &
+Se requirió acceso público a pesos preentrenados e implementación documentada, mediante repositorios oficiales, código de referencia o interfaces de uso. Esto permite reproducir los experimentos sin reentrenar los modelos desde cero y reduce ambigüedades de implementación. \\
+
+Documentación técnica &
+Se evaluó la disponibilidad de artículos, \textit{model cards} o documentación oficial que describiera la arquitectura, los requisitos de entrada, el preprocesamiento y la estrategia de preentrenamiento. Esta información permite utilizar los modelos de manera consistente e interpretar sus resultados. \\
+
+Trazabilidad del preentrenamiento &
+Se revisó la información pública sobre procedencia, modalidad y escala de los datos de preentrenamiento, incluyendo posibles solapamientos con las cohortes de evaluación. Las limitaciones de documentación se registran explícitamente, debido a su relevancia para interpretar generalización y sesgo. \\
+
+Diversidad metodológica controlada &
+Se buscaron diferencias en arquitectura, estrategia de aprendizaje, escala o procedencia de los datos de preentrenamiento. Sin embargo, se exigió compatibilidad con una comparación homogénea basada en embeddings, evitando que componentes adicionales del \textit{pipeline} condicionen los resultados. \\
+
+Viabilidad computacional &
+Se evaluó la factibilidad de ejecutar la inferencia en la infraestructura disponible, considerando memoria GPU, tiempo de procesamiento y almacenamiento. Se priorizó el uso de los modelos como extractores de representaciones, sin realizar reentrenamiento completo. \\
+
+\bottomrule
+\end{tabular}
+\end{table}
+
+Los criterios se orientan a equilibrar la representatividad de los modelos con la reproducibilidad del estudio. En particular, la disponibilidad de código y pesos constituye una condición práctica necesaria para construir un protocolo de evaluación homogéneo. Por otra parte, la trazabilidad de los datos de preentrenamiento es especialmente relevante en un estudio de \textit{bias} y \textit{fairness}, ya que un posible solapamiento entre los datos usados para preentrenar un modelo y las cohortes de evaluación podría sobreestimar su capacidad de generalización.
+
+\section{Modelos seleccionados}
+\label{sec:modelos_seleccionados}
+
+Como resultado del proceso descrito, se seleccionaron los modelos Phikon-v2 \parencite{filiot2024phikonv2}, UNI2 \parencite{chen2024uni}, Prov-GigaPath \parencite{xu2024provgigapath} y Virchow2 \parencite{vorontsov2024virchow}. Los cuatro modelos fueron diseñados para el dominio de patología computacional y disponen de mecanismos de acceso documentados a sus pesos e implementación, ya sea abierto o mediante registro y aceptación de términos. Esto permite utilizarlos como extractores de representaciones visuales dentro de un protocolo experimental común.
+
+La selección busca mantener un equilibrio entre diversidad metodológica y factibilidad experimental. Los modelos seleccionados difieren en la escala y composición reportada de sus datos de preentrenamiento, en sus arquitecturas base y en sus estrategias de aprendizaje auto-supervisado. Sin embargo, comparten una característica central para este estudio: pueden utilizarse como extractores de representaciones visuales para parches provenientes de WSI.
+
+La comparación experimental se realizará manteniendo constante el protocolo posterior al \textit{encoder}. Para cada tarea se utilizarán procedimientos equivalentes de preparación de datos, extracción de embeddings, agregación a nivel de WSI y entrenamiento del clasificador final. De esta manera, las diferencias observadas en utilidad predictiva, estabilidad entre cohortes y disparidades entre subgrupos podrán atribuirse con mayor claridad a las representaciones generadas por cada modelo.
+
+La Tabla~\ref{tab:atributos_modelos}, presentada en el Anexo~\ref{apx:atributos_modelos}, resume los atributos técnicos y de trazabilidad de cada modelo. La disponibilidad desigual de información sobre los datos de preentrenamiento se registrará explícitamente como limitación, particularmente ante la posibilidad de solapamiento entre dichos datos y las cohortes de evaluación. Esta limitación no invalida el análisis, pero restringe la atribución causal de las diferencias de rendimiento y debe considerarse al discutir los resultados obtenidos.
+
+Con el fin de complementar la Tabla~\ref{tab:atributos_modelos} (Anexo~\ref{apx:atributos_modelos}),
+a continuación se describe brevemente la arquitectura y el
+esquema de preentrenamiento de cada modelo seleccionado.
+
+\textbf{Phikon-v2} corresponde a un \textit{Vision Transformer} de tipo ViT-L/16
+(aproximadamente 0.3 mil millones de parámetros), preentrenado mediante la receta
+auto-supervisada DINOv2 sobre el corpus público PANCAN-XL, compuesto por 456
+millones de parches de $224\times224$ píxeles a 20x de magnificación, extraídos de
+más de 58.000 WSI provenientes de TCGA, CPTAC y GTEx \citep{filiot2024phikonv2}.
+El token \texttt{[CLS]} resultante entrega un embedding de 1024 dimensiones por parche.
+
+\textbf{UNI2-h} utiliza una variante personalizada ViT-H/14 (681 millones de
+parámetros), entrenada con la receta DINOv2 sobre más de 200 millones de parches
+H\&E e IHC muestreados de 350.000 WSI institucionales de Mass General Brigham
+\citep{chen2024uni}. Entrega un embedding de 1536 dimensiones.
+
+\textbf{Prov-GigaPath} adopta una arquitectura jerárquica de dos etapas: un
+encoder de parche ViT-g/14 preentrenado con DINOv2 sobre 1.300 millones de
+parches de $256\times256$ píxeles provenientes de 171.189 WSI H\&E e IHC del
+sistema de salud Providence, seguido de un encoder de \textit{slide} basado en
+LongNet, un transformer con atención dilatada de complejidad lineal, entrenado
+mediante un autoencoder enmascarado \citep{xu2024provgigapath}. En esta tesis se
+utiliza únicamente el encoder de parche como extractor de representaciones
+(1536 dimensiones), sin emplear el agregador de \textit{slide} completo.
+
+\textbf{Virchow2} corresponde a un ViT-H/14 (632 millones de parámetros)
+entrenado con una variante multiescala de DINOv2 sobre 3.1 millones de WSI
+H\&E y 400.000 WSI IHC que abarcan 40 tipos de tejido, incorporando durante el
+preentrenamiento parches muestreados a 5x, 10x, 20x y 40x de magnificación
+\citep{vorontsov2024virchow}. Entrega un embedding de 2560 dimensiones por parche, compuesto por la
+concatenación del token \texttt{[CLS]} y el promedio de los tokens de parche
+de la última capa del transformer.
+
+La Figura~\ref{fig:arquitecturas_modelos} resume de forma esquemática las
+cuatro arquitecturas descritas, destacando las diferencias en unidad de
+entrada (parche vs.\ parche + slide), mecanismo de agregación de contexto y
+dimensión del embedding resultante.
+
+\input{Figuras/figuramodelos}
+
+Los cuatro modelos se utilizaron como extractores de representaciones congelados (\textit{frozen}), sin realizar ajuste fino (\textit{fine-tuning}) de sus pesos durante el entrenamiento de los clasificadores posteriores. Esta decisión, consistente con el protocolo experimental del Capítulo~\ref{cap:evaluacion_modelos}, garantiza que las diferencias observadas en las métricas de evaluación sean atribuibles a las representaciones preentrenadas y no a adaptaciones específicas del clasificador a cada tarea. El registro de versiones de \textit{checkpoints}, repositorios y entorno de ejecución de cada modelo se documenta en el registro de modelos del estudio (Sección~\ref{sec:protocolo-inferencia}, Capítulo~\ref{cap:evaluacion_modelos}).
+
+\section{Definición de tareas de evaluación}
+\label{sec:definicion_tareas}
+
+La selección de modelos se complementa con la definición de tareas de evaluación, dado que el valor de una representación fundacional depende de su desempeño en problemas concretos y de su comportamiento frente a variaciones entre cohortes y subgrupos. Las tareas se definieron utilizando las variables armonizadas en el Capítulo \ref{cap:caracterizacion_datasets}, priorizando aquellas que presentan significado clínico, cobertura suficiente y potencial de comparación entre conjuntos de datos.
+
+En el dominio de cáncer de mama, las variables armonizadas incluyeron, entre otras, edad, estado de receptores hormonales, HER2, Ki-67 y subtipo molecular. Esta disponibilidad permite plantear tareas de clasificación basadas en biomarcadores relevantes, en particular la predicción del estado de HER2 y la clasificación del subtipo molecular.
+
+La variable HER2 se define en tres categorías: negativo (HER2 0/1+), equívoco (HER2 2+) y positivo (HER2 3+), de acuerdo con los criterios de reporte de cada cohorte. El subtipo molecular incluye cuatro categorías (Luminal A, Luminal B, HER2+ y Triple negativo), aunque en HISTAI-Breast dicha variable se extrajo desde texto libre no estructurado, lo que introduce incertidumbre en la comparabilidad semántica entre cohortes.
+
+En el dominio de cáncer colorrectal, el espacio común de variables resultó más acotado y se concentró principalmente en edad, sexo, sitio anatómico y lateralidad. Por esta razón, son las escogidas para su análisis. Además, estas variables se encuentran disponibles de manera más consistente entre las cohortes seleccionadas. Cabe notar que la lateralidad se deriva directamente del sitio anatómico, por lo que ambas tareas capturan en gran medida la misma señal morfológica, con distinto nivel de granularidad.
+
+La Tabla \ref{tab:tareas_evaluacion_preliminares} resume las tareas propuestas. Su definición final dependerá de la disponibilidad efectiva de WSI asociadas a cada registro, de la cobertura de las etiquetas y de la cantidad de casos por clase una vez aplicados los criterios de inclusión experimental.
+
+\begin{table}[htbp]
+\centering
+\caption{Tareas de evaluación definidas a partir de las variables armonizadas.}
+\label{tab:tareas_evaluacion_preliminares}
+\small
+\resizebox{\textwidth}{!}{
+\begin{tabular}{p{1.9cm} p{2.4cm} p{2.4cm} p{2.4cm} p{3.0cm} c}
+\hline
+\textbf{Código} &
+\textbf{Dominio} &
+\textbf{Tarea} &
+\textbf{Variable objetivo} &
+\textbf{Cohortes candidatas} &
+\textbf{Tipo} \\
+\hline
+
+T1-HER2 &
+Cáncer de mama &
+Clasificación de estado HER2 &
+Estado de HER2 &
+BCNB, HSI-BC e HISTAI-Breast &
+Multiclase \\ \\
+
+T2-MOLSUB &
+Cáncer de mama &
+Clasificación de subtipo molecular &
+Subtipo molecular &
+BCNB, HSI-BC, HISTAI-Breast &
+Multiclase \\ \\
+
+T3-SITE &
+Cáncer colorrectal &
+Clasificación de sitio anatómico &
+Sitio tumoral &
+SurGen, HISTAI-CRC-B1, HISTAI-CRC-B2 &
+Multiclase \\ \\
+
+T4-SIDE &
+Cáncer colorrectal &
+Clasificación de lateralidad &
+Lateralidad (derivada del sitio tumoral) &
+SurGen, HISTAI-CRC-B1, HISTAI-CRC-B2 &
+Multiclase \\ \\
+
+T5-ORGAN &
+Transversal (Órgano) &
+Clasificación de órgano (Mama vs.\ Colorrectal) &
+Mama o Colorrectal &
+BCNB, HSI-BC, HISTAI-Breast, HISTAI-CRC-B1, HISTAI-CRC-B2, SurGen &
+Binaria \\ \\
+
+\hline
+\end{tabular}
+}
+\end{table}
+
+Las tareas se entrenan y evalúan de forma independiente para cada conjunto de datos; el Capítulo~\ref{cap:evaluacion_modelos} describe el protocolo común de entrenamiento y las métricas aplicadas a cada combinación de tarea, modelo y cohorte.
+
+Las tareas propuestas no deben interpretarse únicamente como problemas de clasificación aislados. Su propósito es generar escenarios controlados para estudiar tres dimensiones del comportamiento de los modelos: la utilidad predictiva global, las diferencias de desempeño entre subgrupos y la estabilidad ante cambios de distribución entre cohortes. En particular, las variables demográficas, como edad y sexo cuando estén disponibles, se utilizarán principalmente para estratificar las métricas de desempeño. Cabe señalar que el sexo no puede utilizarse como estratificador en las tareas de cáncer de mama: BCNB e HSI-BC son exclusivamente femeninos, e HISTAI-Breast contiene una fracción masculina marginal (n=20; 1,3\%), insuficiente para un análisis estratificado estable; en esos casos, la estratificación demográfica se limitará a la edad. En contraste, los biomarcadores y las variables anatómicas pueden actuar como etiquetas objetivo o como factores clínicos de análisis, según la tarea considerada.
+
+Adicionalmente, se incluye una tarea transversal de clasificación de órgano (mama vs.\ colorrectal) que integra las seis cohortes del estudio en una evaluación única. Dado que ninguna cohorte contiene ambos órganos, la etiqueta de órgano está perfectamente correlacionada con el conjunto de datos de origen; en consecuencia, la señal disponible para el clasificador puede combinar diferencias morfológicas entre tejidos con firmas de adquisición específicas de cada cohorte (escáner, tinción y magnificación), aspecto que debe considerarse al interpretar los resultados. El sexo permanece además como confusor estructural, ya que las cohortes de mama son femeninas en su práctica totalidad (fracción masculina marginal del 1,3\% en HISTAI-Breast) mientras que las colorrectales incluyen ambos sexos. La Sección~\ref{sec:resultado_organ} describe en detalle esta tarea.
+
+% La evaluación de cohortes con tamaño reducido, como HISTAI-CRC-B2 ($n=57$), requiere un tratamiento especial. Para estas cohortes se emplea un esquema de validación cruzada de $k=5$ pliegues con agrupación por paciente (\texttt{StratifiedGroupKFold}), que maximiza el uso de los datos disponibles generando $k$ predicciones de prueba por observación. Este esquema se describe en detalle en la Sección~6.3.2.
+
+\section{Conclusiones del capítulo}
+
+Este capítulo abordó la selección de modelos fundacionales y la definición
+de tareas de evaluación, dando continuidad a la caracterización de conjuntos
+de datos presentada en el Capítulo~\ref{cap:caracterizacion_datasets}. Se seleccionaron
+cuatro encoders visuales: Phikon-v2, UNI2-h, Prov-GigaPath y Virchow2, que,
+si bien comparten el paradigma de preentrenamiento auto-supervisado basado en
+DINOv2, difieren sustancialmente en escala de parámetros (desde 0.3B hasta
+más de 1B), volumen y procedencia de los datos de preentrenamiento, y grado
+de transparencia documental \citep{filiot2024phikonv2,chen2024uni,xu2024provgigapath,vorontsov2024virchow}.
+
+Esta heterogeneidad responde a un criterio deliberado de selección: la literatura
+reciente sobre evaluación comparativa de modelos fundacionales en patología digital
+respalda priorizar la coherencia entre el dominio de preentrenamiento y las tareas
+de evaluación por sobre la escala nominal del modelo \citep{filiot2024phikonv2},
+criterio que guio la selección realizada en este capítulo. Su comportamiento frente
+a subgrupos demográficos es precisamente el objeto de estudio de esta tesis: si bien
+existen evaluaciones de equidad en modelos fundacionales de patología~\parencite{lin2025fairpath, huang2025flex},
+no se ha realizado una comparación sistemática de estos cuatro encoders específicos
+sobre las tareas y cohortes aquí definidas.
+
+Los cuatro encoders difieren en escala, datos de preentrenamiento y transparencia documental, por lo que sus resultados no permiten atribuciones causales simples a la arquitectura o al tamaño del modelo. Persisten riesgos de solapamiento no documentado entre datos de preentrenamiento y evaluación, así como limitaciones por la procedencia predominantemente institucional de los datos. El Capítulo~\ref{cap:evaluacion_modelos} controla el protocolo posterior y compara los modelos bajo las mismas tareas, pero no elimina estas incertidumbres de origen.
+
+Las tareas definidas en este capítulo abarcan cinco problemas de clasificación distribuidos en tres dominios (mama, colorrectal y transversal), respaldados por un total de seis conjuntos de datos. Para cada tarea, la evaluación se realiza de forma independiente por cohorte, salvo la tarea transversal, que integra todas las cohortes en una evaluación única, generando 13 pares tarea-dataset válidos (tres por tarea en T1--T4 y la evaluación combinada de T5-ORGAN). Los atributos sensibles disponibles para el análisis de equidad son la edad (en todos los dominios) y el sexo (en colorrectal). Las covariables técnicas de adquisición (escáner, magnificación, tinción) no se controlan estadísticamente en el diseño intra-cohorte, pero su influencia se evalúa indirectamente mediante el protocolo \textit{cross-dataset} del Capítulo~\ref{cap:evaluacion_modelos}.

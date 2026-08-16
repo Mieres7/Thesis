@@ -1,0 +1,126 @@
+2026-07-29 00:38:52 [INFO] ======================================================================
+2026-07-29 00:38:52 [INFO]  EMBEDDING EXTRACTOR OPT (multi-GPU, AMP real)
+2026-07-29 00:38:52 [INFO]  patches_dir : /mnt/data1/vmieres/SurGen/patches/SurGen
+2026-07-29 00:38:52 [INFO]  output_dir  : /mnt/data1/vmieres/SurGen/embeddings
+2026-07-29 00:38:52 [INFO]  modelos     : ['uni2', 'virchow2', 'phikon_v2', 'prov_gigapath']
+2026-07-29 00:38:52 [INFO]  datasets    : ['SURGEN']
+2026-07-29 00:38:52 [INFO]  gpu_ids     : [0, 1]  | num_workers/GPU: 12 | batch_size: 256 | use_amp: True
+2026-07-29 00:38:52 [INFO] ======================================================================
+2026-07-29 00:38:52 [WARNING]  [SURGEN] no existe en /mnt/data1/vmieres/SurGen/patches/SurGen, se omite
+2026-07-29 00:38:52 [WARNING]  [SURGEN] no existe en /mnt/data1/vmieres/SurGen/patches/SurGen, se omite
+2026-07-29 00:38:52 [WARNING]  [SURGEN] no existe en /mnt/data1/vmieres/SurGen/patches/SurGen, se omite
+2026-07-29 00:38:52 [WARNING]  [SURGEN] no existe en /mnt/data1/vmieres/SurGen/patches/SurGen, se omite
+2026-07-29 00:38:52 [ERROR] No hay slides para procesar.
+2026-07-29 00:39:58 [INFO] ======================================================================
+2026-07-29 00:39:58 [INFO]  EMBEDDING EXTRACTOR OPT (multi-GPU, AMP real)
+2026-07-29 00:39:58 [INFO]  patches_dir : /mnt/data1/vmieres/SurGen/patches
+2026-07-29 00:39:59 [INFO]  output_dir  : /mnt/data1/vmieres/SurGen/embeddings
+2026-07-29 00:39:59 [INFO]  modelos     : ['uni2', 'virchow2', 'phikon_v2', 'prov_gigapath']
+2026-07-29 00:39:59 [INFO]  datasets    : ['SURGEN']
+2026-07-29 00:39:59 [INFO]  gpu_ids     : [0, 1]  | num_workers/GPU: 12 | batch_size: 256 | use_amp: True
+2026-07-29 00:39:59 [INFO] ======================================================================
+2026-07-29 00:39:59 [WARNING]  [SURGEN] no existe en /mnt/data1/vmieres/SurGen/patches, se omite
+2026-07-29 00:39:59 [WARNING]  [SURGEN] no existe en /mnt/data1/vmieres/SurGen/patches, se omite
+2026-07-29 00:39:59 [WARNING]  [SURGEN] no existe en /mnt/data1/vmieres/SurGen/patches, se omite
+2026-07-29 00:39:59 [WARNING]  [SURGEN] no existe en /mnt/data1/vmieres/SurGen/patches, se omite
+2026-07-29 00:39:59 [ERROR] No hay slides para procesar.
+2026-07-29 00:40:15 [INFO] ======================================================================
+2026-07-29 00:40:15 [INFO]  EMBEDDING EXTRACTOR OPT (multi-GPU, AMP real)
+2026-07-29 00:40:15 [INFO]  patches_dir : /mnt/data1/vmieres/SurGen/patches
+2026-07-29 00:40:15 [INFO]  output_dir  : /mnt/data1/vmieres/SurGen/embeddings
+2026-07-29 00:40:15 [INFO]  modelos     : ['uni2', 'virchow2', 'phikon_v2', 'prov_gigapath']
+2026-07-29 00:40:15 [INFO]  datasets    : ['SurGen']
+2026-07-29 00:40:15 [INFO]  gpu_ids     : [0, 1]  | num_workers/GPU: 12 | batch_size: 256 | use_amp: True
+2026-07-29 00:40:15 [INFO] ======================================================================
+2026-07-29 00:40:15 [INFO]  Total de tareas (slide x modelo): 3792
+2026-07-29 00:40:18 [INFO] [GPU 0] Cargando modelo: uni2
+2026-07-29 00:40:18 [INFO] [GPU 1] Cargando modelo: uni2
+2026-07-29 00:40:20 [INFO] Loading model: UNI2-h (MahmoodLab) — ViT-H/14, 1536-dim
+2026-07-29 00:40:20 [INFO]   From: /home/DIINF/vmieres/tesis/models/uni2
+2026-07-29 00:40:20 [INFO] Loading model: UNI2-h (MahmoodLab) — ViT-H/14, 1536-dim
+2026-07-29 00:40:20 [INFO]   From: /home/DIINF/vmieres/tesis/models/uni2
+2026-07-29 00:41:02 [INFO]   Loaded bin: ['pytorch_model.bin']
+2026-07-29 00:41:02 [INFO]   Loaded bin: ['pytorch_model.bin']
+2026-07-29 00:41:02 [INFO]   Model loaded on cuda:1
+2026-07-29 00:41:02 [INFO]   Model loaded on cuda:0
+2026-07-29 00:41:09 [INFO] [GPU 0] uni2 embedding_dim=1536
+2026-07-29 00:41:09 [INFO] [GPU 1] uni2 embedding_dim=1536
+2026-07-29 10:43:21 [ERROR] [SR1482_40X_HE_T159_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-29 10:43:21 [INFO] [GPU 1] Reintentando SR1482_40X_HE_T159_01.h5 en 5s...
+2026-07-29 10:43:26 [ERROR] [SR1482_40X_HE_T159_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-30 04:56:01 [ERROR] [SR386_40X_HE_T035_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-30 04:56:01 [INFO] [GPU 1] Reintentando SR386_40X_HE_T035_01.h5 en 5s...
+2026-07-30 04:56:06 [ERROR] [SR386_40X_HE_T035_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-30 05:58:49 [ERROR] [SR386_40X_HE_T106_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-30 05:58:49 [INFO] [GPU 0] Reintentando SR386_40X_HE_T106_01.h5 en 5s...
+2026-07-30 05:58:54 [ERROR] [SR386_40X_HE_T106_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-30 05:58:54 [ERROR] [SR386_40X_HE_T114_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-30 05:58:54 [INFO] [GPU 0] Reintentando SR386_40X_HE_T114_01.h5 en 5s...
+2026-07-30 05:58:59 [ERROR] [SR386_40X_HE_T114_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-30 05:58:59 [ERROR] [SR386_40X_HE_T138_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-30 05:58:59 [INFO] [GPU 0] Reintentando SR386_40X_HE_T138_01.h5 en 5s...
+2026-07-30 05:59:00 [ERROR] [SR386_40X_HE_T155_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-30 05:59:00 [INFO] [GPU 1] Reintentando SR386_40X_HE_T155_01.h5 en 5s...
+2026-07-30 05:59:04 [ERROR] [SR386_40X_HE_T138_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-30 05:59:05 [ERROR] [SR386_40X_HE_T155_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-07-30 23:10:57 [INFO] [GPU 0] Cargando modelo: virchow2
+2026-07-30 23:10:57 [INFO] Loading model: Virchow2 (Paige) — ViT-H/14 con register tokens, 2560-dim
+2026-07-30 23:10:57 [INFO]   From: /home/DIINF/vmieres/tesis/models/virchow2
+2026-07-30 23:11:33 [INFO]   Loaded safetensors: ['model.safetensors']
+2026-07-30 23:11:51 [INFO] [GPU 1] Cargando modelo: virchow2
+2026-07-30 23:11:51 [INFO] Loading model: Virchow2 (Paige) — ViT-H/14 con register tokens, 2560-dim
+2026-07-30 23:11:51 [INFO]   From: /home/DIINF/vmieres/tesis/models/virchow2
+2026-07-30 23:11:59 [INFO]   Loaded safetensors: ['model.safetensors']
+2026-07-30 23:12:09 [INFO]   Model loaded on cuda:0
+2026-07-30 23:12:09 [INFO]   Model loaded on cuda:1
+2026-07-30 23:12:20 [INFO] [GPU 0] virchow2 embedding_dim=2560
+2026-07-30 23:12:20 [INFO] [GPU 1] virchow2 embedding_dim=2560
+2026-07-31 09:31:20 [ERROR] [SR1482_40X_HE_T159_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-08-01 03:56:25 [ERROR] [SR386_40X_HE_T035_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-08-01 05:00:32 [ERROR] [SR386_40X_HE_T106_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-08-01 05:00:32 [ERROR] [SR386_40X_HE_T114_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-08-01 05:00:32 [ERROR] [SR386_40X_HE_T138_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-08-01 05:00:32 [ERROR] [SR386_40X_HE_T155_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-08-01 22:13:06 [INFO] [GPU 1] Cargando modelo: phikon_v2
+2026-08-01 22:13:07 [INFO] Loading model: Phikon-v2 (Owkin) — ViT-L/16 transformers, 1024-dim
+2026-08-01 22:13:07 [INFO]   From: /home/DIINF/vmieres/tesis/models/phikon_v2
+2026-08-01 22:13:16 [INFO] [GPU 0] Cargando modelo: phikon_v2
+2026-08-01 22:13:16 [INFO] Loading model: Phikon-v2 (Owkin) — ViT-L/16 transformers, 1024-dim
+2026-08-01 22:13:16 [INFO]   From: /home/DIINF/vmieres/tesis/models/phikon_v2
+2026-08-01 22:13:43 [INFO]   Model loaded on cuda:1
+2026-08-01 22:13:43 [INFO]   Model loaded on cuda:0
+2026-08-01 22:13:48 [INFO] [GPU 0] phikon_v2 embedding_dim=1024
+2026-08-01 22:13:48 [INFO] [GPU 1] phikon_v2 embedding_dim=1024
+2026-08-02 04:53:49 [ERROR] [SR1482_40X_HE_T159_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-08-02 16:49:29 [ERROR] [SR386_40X_HE_T035_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-08-02 17:28:40 [ERROR] [SR386_40X_HE_T106_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-08-02 17:28:40 [ERROR] [SR386_40X_HE_T114_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-08-02 17:28:41 [ERROR] [SR386_40X_HE_T138_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-08-02 17:28:41 [ERROR] [SR386_40X_HE_T155_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-08-03 04:14:43 [INFO] [GPU 0] Cargando modelo: prov_gigapath
+2026-08-03 04:14:43 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-08-03 04:14:43 [INFO]   From: /home/DIINF/vmieres/tesis/models/prov_gigapath
+2026-08-03 04:15:05 [INFO] [GPU 1] Cargando modelo: prov_gigapath
+2026-08-03 04:15:05 [INFO] Loading model: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-08-03 04:15:05 [INFO]   From: /home/DIINF/vmieres/tesis/models/prov_gigapath
+2026-08-03 04:16:07 [INFO]   Model loaded on cuda:0
+2026-08-03 04:16:07 [INFO]   Model loaded on cuda:1
+2026-08-03 04:16:11 [INFO] [GPU 0] prov_gigapath embedding_dim=1536
+2026-08-03 04:16:11 [INFO] [GPU 1] prov_gigapath embedding_dim=1536
+2026-08-03 15:49:30 [ERROR] [SR1482_40X_HE_T159_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-08-04 12:37:44 [ERROR] [SR386_40X_HE_T035_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-08-04 13:49:39 [ERROR] [SR386_40X_HE_T106_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-08-04 13:49:39 [ERROR] [SR386_40X_HE_T114_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-08-04 13:49:39 [ERROR] [SR386_40X_HE_T138_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-08-04 13:49:39 [ERROR] [SR386_40X_HE_T155_01] SKIP: patches H5 validation failed (corrupt or inaccessible)
+2026-08-05 09:19:28 [WARNING] [GPU 1] 9 slides fallaron definitivamente: ['SR1482_40X_HE_T159_01.h5', 'SR386_40X_HE_T035_01.h5', 'SR386_40X_HE_T155_01.h5', 'SR386_40X_HE_T035_01.h5', 'SR386_40X_HE_T106_01.h5', 'SR386_40X_HE_T114_01.h5', 'SR386_40X_HE_T138_01.h5', 'SR386_40X_HE_T155_01.h5', 'SR386_40X_HE_T035_01.h5']
+2026-08-05 09:20:04 [WARNING] [GPU 0] 15 slides fallaron definitivamente: ['SR386_40X_HE_T106_01.h5', 'SR386_40X_HE_T114_01.h5', 'SR386_40X_HE_T138_01.h5', 'SR1482_40X_HE_T159_01.h5', 'SR386_40X_HE_T106_01.h5', 'SR386_40X_HE_T114_01.h5', 'SR386_40X_HE_T138_01.h5', 'SR386_40X_HE_T155_01.h5', 'SR1482_40X_HE_T159_01.h5', 'SR386_40X_HE_T035_01.h5']...
+2026-08-05 09:20:08 [INFO] 
+======================================================================
+2026-08-05 09:20:08 [INFO]  RESUMEN GLOBAL
+2026-08-05 09:20:08 [INFO]  Tiempo total: 10599.9 min
+2026-08-05 09:20:08 [INFO]  Output: /mnt/data1/vmieres/SurGen/embeddings
+2026-08-05 09:20:08 [INFO]  Procesados: 3768 | Saltados (ya existían): 0 | Fallidos: 24
+2026-08-05 09:20:08 [WARNING]  Slides fallidos (24): ['SR1482_40X_HE_T159_01', 'SR386_40X_HE_T035_01', 'SR386_40X_HE_T106_01', 'SR386_40X_HE_T114_01', 'SR386_40X_HE_T138_01', 'SR386_40X_HE_T155_01', 'SR1482_40X_HE_T159_01', 'SR386_40X_HE_T035_01', 'SR386_40X_HE_T106_01', 'SR386_40X_HE_T114_01', 'SR386_40X_HE_T138_01', 'SR386_40X_HE_T155_01', 'SR1482_40X_HE_T159_01', 'SR386_40X_HE_T035_01', 'SR386_40X_HE_T106_01', 'SR386_40X_HE_T114_01', 'SR386_40X_HE_T138_01', 'SR386_40X_HE_T155_01', 'SR1482_40X_HE_T159_01', 'SR386_40X_HE_T035_01']...
+2026-08-05 09:20:08 [INFO] ======================================================================
+2026-08-05 09:20:08 [INFO]  Stats guardadas en: /mnt/data1/vmieres/SurGen/embeddings/embedding_stats.csv

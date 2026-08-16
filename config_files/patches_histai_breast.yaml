@@ -1,0 +1,39 @@
+log_level: INFO
+log_file: patches_logs/patches_breast_histai.log   # guarda log en archivo también, útil para revisar después
+
+compute:
+  gpu_ids: [0, 1]
+  num_workers: 4
+  prefetch_factor: 2
+  pin_memory: true
+
+extraction:
+  patch_size: 224
+  magnification: 20.0
+  native_magnification: 20
+  overlap: 0.0
+  padding: true
+
+filtering:
+  enabled: true
+  tissue_threshold: 0.8
+  saturation_filter: true
+  saturation_threshold: 0.03
+
+output:
+  base_dir: /home/shared_data/HISTAI/HISTAI_Breast/patches
+  save_patches: true
+  patches_format: hdf5
+  hdf5_compression: lzf
+  save_embeddings: false   # ponlo en true si también quieres probar embeddings
+  embedding_model: uni2
+  models_dir: /home/DIINF/vmieres/tesis/models
+  embedding_batch_size: 64
+
+datasets:
+  - name: HISTAI_Breast
+    enabled: true
+    path: /home/shared_data/HISTAI/HISTAI_Breast
+    format: tiff
+    subfolder_structure: case_folders
+    select: all

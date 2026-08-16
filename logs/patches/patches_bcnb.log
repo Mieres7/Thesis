@@ -1,0 +1,74 @@
+d2026-06-16 19:46:00 [INFO] ======================================================================
+2026-06-16 19:46:00 [INFO]   WSI PATCH EXTRACTOR
+2026-06-16 19:46:00 [INFO]   Config: config_files/patches_cbnb.yaml
+2026-06-16 19:46:00 [INFO] ======================================================================
+2026-06-16 19:46:01 [INFO] GPUs available: 2
+2026-06-16 19:46:01 [INFO]   GPU 0: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-16 19:46:01 [INFO]   GPU 1: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-16 19:46:01 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-16 19:46:01 [INFO] Dataset: BCNB  |  Format: jpg
+2026-06-16 19:46:01 [INFO] Path: /home/DIINF/datasets_iacis/2026_BCNB/WSIs
+2026-06-16 19:46:01 [INFO] Found 1058 file(s)
+2026-06-16 20:00:35 [INFO] ======================================================================
+2026-06-16 20:00:35 [INFO]   WSI PATCH EXTRACTOR
+2026-06-16 20:00:35 [INFO]   Config: config_files/patches_cbnb.yaml
+2026-06-16 20:00:35 [INFO] ======================================================================
+2026-06-16 20:00:35 [INFO] GPUs available: 2
+2026-06-16 20:00:35 [INFO]   GPU 0: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-16 20:00:35 [INFO]   GPU 1: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-16 20:00:35 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-16 20:00:35 [INFO] Dataset: BCNB  |  Format: jpg
+2026-06-16 20:00:35 [INFO] Path: /home/DIINF/datasets_iacis/2026_BCNB/WSIs
+2026-06-16 20:00:35 [INFO] Found 1058 file(s)
+2026-06-16 20:17:54 [INFO] ======================================================================
+2026-06-16 20:17:54 [INFO]   WSI PATCH EXTRACTOR
+2026-06-16 20:17:54 [INFO]   Config: config_files/patches_cbnb.yaml
+2026-06-16 20:17:54 [INFO] ======================================================================
+2026-06-16 20:17:54 [INFO] GPUs available: 2
+2026-06-16 20:17:54 [INFO]   GPU 0: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-16 20:17:54 [INFO]   GPU 1: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-16 20:17:54 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-16 20:17:54 [INFO] Dataset: BCNB  |  Format: jpg
+2026-06-16 20:17:54 [INFO] Path: /home/DIINF/datasets_iacis/2026_BCNB/WSIs
+2026-06-16 20:17:54 [INFO] Found 1058 file(s)
+2026-06-16 20:30:16 [INFO] ======================================================================
+2026-06-16 20:30:16 [INFO]   WSI PATCH EXTRACTOR
+2026-06-16 20:30:16 [INFO]   Config: config_files/patches_cbnb.yaml
+2026-06-16 20:30:16 [INFO] ======================================================================
+2026-06-16 20:30:16 [INFO] GPUs available: 2
+2026-06-16 20:30:16 [INFO]   GPU 0: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-16 20:30:16 [INFO]   GPU 1: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-16 20:30:16 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-16 20:30:16 [INFO] Dataset: BCNB  |  Format: jpg
+2026-06-16 20:30:16 [INFO] Path: /home/DIINF/datasets_iacis/2026_BCNB/WSIs
+2026-06-16 20:30:16 [INFO] Found 1058 file(s)
+2026-06-16 20:45:23 [INFO] ======================================================================
+2026-06-16 20:45:23 [INFO]   WSI PATCH EXTRACTOR
+2026-06-16 20:45:23 [INFO]   Config: config_files/patches_cbnb.yaml
+2026-06-16 20:45:23 [INFO] ======================================================================
+2026-06-16 20:45:23 [INFO] GPUs available: 2
+2026-06-16 20:45:23 [INFO]   GPU 0: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-16 20:45:23 [INFO]   GPU 1: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-06-16 20:45:23 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-16 20:45:23 [INFO] Dataset: BCNB  |  Format: jpg
+2026-06-16 20:45:23 [INFO] Path: /home/DIINF/datasets_iacis/2026_BCNB/WSIs
+2026-06-16 20:45:23 [INFO] Found 1058 file(s)
+2026-06-17 02:10:38 [INFO] 
+[BCNB] Summary: 1058 slides | 1,569,115/10,142,741 patches kept (15.5%) | Errors: 0 | Time: 325.2 min
+2026-06-17 02:10:38 [INFO] 
+======================================================================
+2026-06-17 02:10:38 [INFO]   GLOBAL SUMMARY
+2026-06-17 02:10:38 [INFO]   Total slides processed : 1058
+2026-06-17 02:10:38 [INFO]   Candidate patches      : 10,142,741
+2026-06-17 02:10:38 [INFO]   Kept patches           : 1,569,115
+2026-06-17 02:10:38 [INFO]   Filter rate            : 84.5%
+2026-06-17 02:10:38 [INFO]   Errors                 : 0
+2026-06-17 02:10:38 [INFO]   Total time             : 325.2 min
+2026-06-17 02:10:38 [INFO]   Output directory       : /home/DIINF/datasets_iacis/2026_BCNB/2026_BCNB_patches
+2026-06-17 02:10:38 [INFO] ======================================================================
+2026-06-17 02:10:38 [INFO]   Stats saved to         : /home/DIINF/datasets_iacis/2026_BCNB/2026_BCNB_patches/extraction_stats.csv

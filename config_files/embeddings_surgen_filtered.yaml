@@ -1,0 +1,23 @@
+batch_size: 256
+compute:
+  gpu_ids:
+  - 0
+  - 1
+  num_workers: 12
+datasets:
+- SurGen
+hdf5_compression: lzf
+log_file: embeddings_logs/embeddings_surgen_filtered.log
+log_level: INFO
+models:
+- uni2
+- virchow2
+- phikon_v2
+- prov_gigapath
+models_dir: /home/DIINF/vmieres/tesis/models
+output_dir: /mnt/data1/vmieres/SurGen/embeddings
+patches_dir: /mnt/data1/vmieres/SurGen/patches/
+skip_existing: true
+use_amp: true
+
+

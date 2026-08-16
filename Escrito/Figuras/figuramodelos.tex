@@ -1,0 +1,64 @@
+% Borrador de la Figura "fig:arquitecturas_modelos"
+% Resume esquemáticamente las cuatro arquitecturas descritas en la Sección 5.2:
+% unidad de entrada, encoder/estrategia de preentrenamiento, mecanismo de
+% agregación de contexto y dimensión del embedding resultante.
+%
+% Requiere en el preámbulo del documento:
+% \usepackage{tikz}
+% \usetikzlibrary{shapes.geometric, arrows.meta, positioning, fit}
+
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  font=\small,
+  node distance=6mm,
+  box/.style={draw, rounded corners, minimum width=3.1cm, minimum height=0.9cm,
+              align=center, fill=gray!8},
+  boxdashed/.style={box, dashed, fill=gray!3},
+  embed/.style={draw, rounded corners, minimum width=3.1cm, minimum height=0.9cm,
+                align=center, fill=blue!8, thick},
+  title/.style={font=\small\bfseries},
+  arr/.style={-{Latex[length=2mm]}}
+]
+
+% ---------- Columna 1: Phikon-v2 ----------
+\node[title] (t1) at (0,0) {Phikon-v2};
+\node[box, below=of t1] (in1) {Parche $224\times224$};
+\node[box, below=of in1] (enc1) {ViT-L/16\\DINOv2 (DINO+iBOT+KoLeo)};
+\node[box, below=of enc1] (agg1) {Token \texttt{[CLS]}};
+\node[embed, below=of agg1] (emb1) {Embedding\\\textbf{1024} dim};
+\draw[arr] (in1)--(enc1); \draw[arr] (enc1)--(agg1); \draw[arr] (agg1)--(emb1);
+
+% ---------- Columna 2: UNI2-h ----------
+\node[title] (t2) at (4.2,0) {UNI2-h};
+\node[box, below=of t2] (in2) {Parche};
+\node[box, below=of in2] (enc2) {ViT-H/14 (SwiGLU,\\8 tokens de registro)\\DINOv2};
+\node[box, below=of enc2] (agg2) {Token \texttt{[CLS]}};
+\node[embed, below=of agg2] (emb2) {Embedding\\\textbf{1536} dim};
+\draw[arr] (in2)--(enc2); \draw[arr] (enc2)--(agg2); \draw[arr] (agg2)--(emb2);
+
+% ---------- Columna 3: Prov-GigaPath ----------
+\node[title] (t3) at (8.4,0) {Prov-GigaPath};
+\node[box, below=of t3] (in3) {Parche $256\times256$};
+\node[box, below=of in3] (enc3) {ViT-g/14 (parche)\\DINOv2};
+\node[box, below=of enc3] (agg3) {Token \texttt{[CLS]}\\(encoder de parche)};
+\node[boxdashed, below=of agg3] (slide3) {LongNet (slide)\\MAE -- \emph{no usado}\\\emph{en esta tesis}};
+\node[embed, below=of slide3] (emb3) {Embedding\\\textbf{1536} dim};
+\draw[arr] (in3)--(enc3); \draw[arr] (enc3)--(agg3);
+\draw[arr, dashed] (agg3)--(slide3);
+\draw[arr] (agg3) -- ++(1.9,0) |- (emb3.east);
+
+% ---------- Columna 4: Virchow2 ----------
+\node[title] (t4) at (12.9,0) {Virchow2};
+\node[box, below=of t4] (in4) {Parche multiescala\\(5x, 10x, 20x, 40x)};
+\node[box, below=of in4] (enc4) {ViT-H/14\\DINOv2 multiescala};
+\node[box, below=of enc4] (agg4) {Concat \texttt{[CLS]} +\\promedio de tokens};
+\node[embed, below=of agg4] (emb4) {Embedding\\\textbf{2560} dim};
+\draw[arr] (in4)--(enc4); \draw[arr] (enc4)--(agg4); \draw[arr] (agg4)--(emb4);
+
+\end{tikzpicture}
+}
+\caption{Comparación esquemática de las arquitecturas de los cuatro modelos fundacionales seleccionados, destacando la unidad de entrada, el mecanismo de agregación de contexto y la dimensión del embedding resultante. El bloque punteado en Prov-GigaPath indica el agregador de \textit{slide} basado en LongNet, no utilizado en esta tesis.}
+\label{fig:arquitecturas_modelos}
+\end{figure}

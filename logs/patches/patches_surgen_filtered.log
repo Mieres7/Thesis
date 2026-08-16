@@ -1,0 +1,490 @@
+2026-07-26 02:00:16 [INFO] ======================================================================
+2026-07-26 02:00:16 [INFO]   WSI PATCH EXTRACTOR  (optimized)
+2026-07-26 02:00:16 [INFO]   Config: config_files/patches_surgen_filtered.yaml
+2026-07-26 02:00:16 [INFO] ======================================================================
+2026-07-26 02:00:17 [INFO] GPUs to use: [0, 1]
+2026-07-26 02:00:17 [INFO]   GPU 0: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-07-26 02:00:17 [INFO]   GPU 1: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-07-26 02:00:17 [INFO] [SurGen] 1 file(s) found
+2026-07-26 02:01:34 [INFO] 
+======================================================================
+2026-07-26 02:01:34 [INFO]   GLOBAL SUMMARY
+2026-07-26 02:01:34 [INFO]   Total slides   : 1
+2026-07-26 02:01:34 [INFO]   Candidates     : 32,136
+2026-07-26 02:01:34 [INFO]   Kept patches   : 8,851
+2026-07-26 02:01:34 [INFO]   Filter rate    : 72.5%
+2026-07-26 02:01:34 [INFO]   Errors         : 0
+2026-07-26 02:01:34 [INFO]   Total time     : 1.3 min
+2026-07-26 02:01:34 [INFO]   Output dir     : /mnt/data1/vmieres/SurGen/patches
+2026-07-26 02:01:34 [INFO] ======================================================================
+2026-07-26 02:01:35 [INFO]   Stats saved to : /mnt/data1/vmieres/SurGen/patches/extraction_stats.csv
+2026-07-26 02:05:46 [INFO] ======================================================================
+2026-07-26 02:05:46 [INFO]   WSI PATCH EXTRACTOR  (optimized)
+2026-07-26 02:05:46 [INFO]   Config: config_files/patches_surgen_filtered.yaml
+2026-07-26 02:05:46 [INFO] ======================================================================
+2026-07-26 02:05:47 [INFO] GPUs to use: [0, 1]
+2026-07-26 02:05:47 [INFO]   GPU 0: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-07-26 02:05:47 [INFO]   GPU 1: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-07-26 02:05:47 [INFO] [SurGen] 1 file(s) found
+2026-07-26 02:13:23 [INFO] 
+======================================================================
+2026-07-26 02:13:23 [INFO]   GLOBAL SUMMARY
+2026-07-26 02:13:23 [INFO]   Total slides   : 1
+2026-07-26 02:13:23 [INFO]   Candidates     : 257,920
+2026-07-26 02:13:23 [INFO]   Kept patches   : 151,001
+2026-07-26 02:13:23 [INFO]   Filter rate    : 41.5%
+2026-07-26 02:13:23 [INFO]   Errors         : 0
+2026-07-26 02:13:23 [INFO]   Total time     : 7.6 min
+2026-07-26 02:13:23 [INFO]   Output dir     : /mnt/data1/vmieres/SurGen/patches
+2026-07-26 02:13:23 [INFO] ======================================================================
+2026-07-26 02:13:23 [INFO]   Stats saved to : /mnt/data1/vmieres/SurGen/patches/extraction_stats.csv
+2026-07-26 02:30:41 [INFO] ======================================================================
+2026-07-26 02:30:41 [INFO]   WSI PATCH EXTRACTOR  (optimized)
+2026-07-26 02:30:41 [INFO]   Config: config_files/patches_surgen_filtered.yaml
+2026-07-26 02:30:41 [INFO] ======================================================================
+2026-07-26 02:30:42 [INFO] GPUs to use: [0, 1]
+2026-07-26 02:30:42 [INFO]   GPU 0: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-07-26 02:30:42 [INFO]   GPU 1: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-07-26 02:30:42 [INFO] [SurGen] 426 file(s) found
+2026-07-26 03:23:40 [ERROR] [SR386_40X_HE_T027_01] FAILED: Not enough data read at offset 5242373472 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 03:23:40 [ERROR] [SR386_40X_HE_T028_01] FAILED: Not enough data read at offset 3852676704 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 03:23:40 [ERROR] [SR386_40X_HE_T030_01] FAILED: Not enough data read at offset 2656646976 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 03:23:40 [ERROR] [SR386_40X_HE_T032_01] FAILED: Not enough data read at offset 2639066944 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 03:23:40 [ERROR] [SR386_40X_HE_T033_01] FAILED: Not enough data read at offset 2050961472 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 03:23:40 [ERROR] [SR386_40X_HE_T034_01] FAILED: Not enough data read at offset 3062616928 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 03:24:22 [ERROR] [SR386_40X_HE_T035_01] FAILED: Caught RuntimeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor_opt.py", line 518, in __getitem__
+    patch = reader.read_region(x, y, self.patch_size, self.patch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor_opt.py", line 322, in read_region
+    arr = self._czi.read_mosaic(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/aicspylibczi/CziFile.py", line 628, in read_mosaic
+    img = self.reader.read_mosaic(
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Not enough data read at offset 356951008 -> requested: 880 bytes, actually got 0 bytes.
+
+2026-07-26 03:53:48 [ERROR] [SR386_40X_HE_T044_01] FAILED: Not enough data read at offset 3676321696 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 03:53:49 [ERROR] [SR386_40X_HE_T046_01] FAILED: Not enough data read at offset 6789555904 -> requested: 880 bytes, actually got 0 bytes.
+2026-07-26 04:09:04 [ERROR] [SR386_40X_HE_T057_01] FAILED: Not enough data read at offset 3677627200 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:09:04 [ERROR] [SR386_40X_HE_T058_01] FAILED: Not enough data read at offset 4049962368 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:14:15 [ERROR] [SR386_40X_HE_T063_01] FAILED: Not enough data read at offset 5353130464 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:14:16 [ERROR] [SR386_40X_HE_T065_01] FAILED: Not enough data read at offset 4523503648 -> requested: 880 bytes, actually got 0 bytes.
+2026-07-26 04:14:16 [ERROR] [SR386_40X_HE_T066_01] FAILED: Not enough data read at offset 3675685088 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:17:24 [ERROR] [SR386_40X_HE_T069_01] FAILED: Not enough data read at offset 3499094240 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:17:24 [ERROR] [SR386_40X_HE_T070_01] FAILED: Not enough data read at offset 4863385824 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:17:24 [ERROR] [SR386_40X_HE_T072_01] FAILED: Not enough data read at offset 5591205792 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:20:21 [ERROR] [SR386_40X_HE_T075_01] FAILED: Not enough data read at offset 4219543936 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:21:31 [ERROR] [SR386_40X_HE_T079_01] FAILED: Not enough data read at offset 3802385248 -> requested: 880 bytes, actually got 0 bytes.
+2026-07-26 04:21:31 [ERROR] [SR386_40X_HE_T080_01] FAILED: Not enough data read at offset 3098718400 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:23:48 [ERROR] [SR386_40X_HE_T082_01] FAILED: Not enough data read at offset 5055111776 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:23:48 [ERROR] [SR386_40X_HE_T083_01] FAILED: Not enough data read at offset 6682112832 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:23:48 [ERROR] [SR386_40X_HE_T084_01] FAILED: Not enough data read at offset 7881441952 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:23:48 [ERROR] [SR386_40X_HE_T085_01] FAILED: Not enough data read at offset 2739240960 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:23:48 [ERROR] [SR386_40X_HE_T086_01] FAILED: Not enough data read at offset 1224848416 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:23:48 [ERROR] [SR386_40X_HE_T087_01] FAILED: Not enough data read at offset 5534431168 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:23:48 [ERROR] [SR386_40X_HE_T088_01] FAILED: Not enough data read at offset 3803132800 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:23:48 [ERROR] [SR386_40X_HE_T091_01] FAILED: Not enough data read at offset 4652215936 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:23:48 [ERROR] [SR386_40X_HE_T092_01] FAILED: Not enough data read at offset 3116382944 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:23:48 [ERROR] [SR386_40X_HE_T094_01] FAILED: Not enough data read at offset 2220162208 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:25:40 [ERROR] [SR386_40X_HE_T096_01] FAILED: Not enough data read at offset 1794771744 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:25:40 [ERROR] [SR386_40X_HE_T097_01] FAILED: Not enough data read at offset 2711208608 -> requested: 880 bytes, actually got 0 bytes.
+2026-07-26 04:25:40 [ERROR] [SR386_40X_HE_T098_01] FAILED: Not enough data read at offset 4628051840 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:25:40 [ERROR] [SR386_40X_HE_T099_01] FAILED: Not enough data read at offset 6535940544 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:06 [ERROR] [SR386_40X_HE_T104_01] FAILED: Not enough data read at offset 3960919776 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:06 [ERROR] [SR386_40X_HE_T105_01] FAILED: Not enough data read at offset 2429050816 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:30 [ERROR] [SR386_40X_HE_T107_01] FAILED: Not enough data read at offset 4416583744 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:30 [ERROR] [SR386_40X_HE_T108_01] FAILED: Not enough data read at offset 3684404000 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:30 [ERROR] [SR386_40X_HE_T109_01] FAILED: Not enough data read at offset 7002316960 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:30 [ERROR] [SR386_40X_HE_T110_01] FAILED: Not enough data read at offset 2975275392 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:30 [ERROR] [SR386_40X_HE_T112_01] FAILED: Not enough data read at offset 3857225312 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:30 [ERROR] [SR386_40X_HE_T113_01] FAILED: Not enough data read at offset 5191428896 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:50 [ERROR] [SR386_40X_HE_T106_01] FAILED: Caught RuntimeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor_opt.py", line 518, in __getitem__
+    patch = reader.read_region(x, y, self.patch_size, self.patch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor_opt.py", line 322, in read_region
+    arr = self._czi.read_mosaic(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/aicspylibczi/CziFile.py", line 628, in read_mosaic
+    img = self.reader.read_mosaic(
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Not enough data read at offset 279120608 -> requested: 880 bytes, actually got 0 bytes.
+
+2026-07-26 04:27:50 [ERROR] [SR386_40X_HE_T117_01] FAILED: Not enough data read at offset 3896876384 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:50 [ERROR] [SR386_40X_HE_T119_01] FAILED: Not enough data read at offset 3889818528 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:50 [ERROR] [SR386_40X_HE_T122_01] FAILED: Not enough data read at offset 3190045312 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:50 [ERROR] [SR386_40X_HE_T123_01] FAILED: Not enough data read at offset 4595024896 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:50 [ERROR] [SR386_40X_HE_T126_01] FAILED: Not enough data read at offset 3099016608 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:50 [ERROR] [SR386_40X_HE_T127_01] FAILED: Not enough data read at offset 3512619744 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:50 [ERROR] [SR386_40X_HE_T128_01] FAILED: Not enough data read at offset 3487594944 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:50 [ERROR] [SR386_40X_HE_T129_01] FAILED: Not enough data read at offset 1292325920 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:50 [ERROR] [SR386_40X_HE_T130_01] FAILED: Not enough data read at offset 3217902656 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:50 [ERROR] [SR386_40X_HE_T131_01] FAILED: Not enough data read at offset 3355387104 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:50 [ERROR] [SR386_40X_HE_T132_01] FAILED: Not enough data read at offset 2571032352 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:50 [ERROR] [SR386_40X_HE_T133_01] FAILED: Not enough data read at offset 2841521088 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:50 [ERROR] [SR386_40X_HE_T135_01] FAILED: Not enough data read at offset 4127054112 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:27:50 [ERROR] [SR386_40X_HE_T136_01] FAILED: Not enough data read at offset 2708624832 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:28:04 [ERROR] [SR386_40X_HE_T114_01] FAILED: Caught RuntimeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor_opt.py", line 518, in __getitem__
+    patch = reader.read_region(x, y, self.patch_size, self.patch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor_opt.py", line 322, in read_region
+    arr = self._czi.read_mosaic(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/aicspylibczi/CziFile.py", line 628, in read_mosaic
+    img = self.reader.read_mosaic(
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Not enough data read at offset 299106688 -> requested: 880 bytes, actually got 0 bytes.
+
+2026-07-26 04:28:04 [ERROR] [SR386_40X_HE_T140_01] FAILED: Not enough data read at offset 3292900640 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:28:04 [ERROR] [SR386_40X_HE_T142_01] FAILED: Not enough data read at offset 5086960832 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:28:04 [ERROR] [SR386_40X_HE_T144_01] FAILED: Not enough data read at offset 3962292384 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:28:04 [ERROR] [SR386_40X_HE_T145_01] FAILED: Not enough data read at offset 8467967232 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:28:04 [ERROR] [SR386_40X_HE_T147_01] FAILED: Not enough data read at offset 3498864608 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:28:04 [ERROR] [SR386_40X_HE_T148_01] FAILED: Not enough data read at offset 3018406336 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:28:04 [ERROR] [SR386_40X_HE_T149_01] FAILED: Not enough data read at offset 2000762912 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:28:04 [ERROR] [SR386_40X_HE_T150_01] FAILED: Not enough data read at offset 4077909728 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:28:04 [ERROR] [SR386_40X_HE_T152_01] FAILED: Not enough data read at offset 3036845344 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:28:04 [ERROR] [SR386_40X_HE_T154_01] FAILED: Not enough data read at offset 3536875104 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:28:24 [ERROR] [SR386_40X_HE_T138_01] FAILED: Caught RuntimeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor_opt.py", line 518, in __getitem__
+    patch = reader.read_region(x, y, self.patch_size, self.patch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor_opt.py", line 322, in read_region
+    arr = self._czi.read_mosaic(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/aicspylibczi/CziFile.py", line 628, in read_mosaic
+    img = self.reader.read_mosaic(
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Not enough data read at offset 278011904 -> requested: 880 bytes, actually got 0 bytes.
+
+2026-07-26 04:28:24 [ERROR] [SR386_40X_HE_T157_01] FAILED: Not enough data read at offset 5377933920 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:28:24 [ERROR] [SR386_40X_HE_T160_01] FAILED: Not enough data read at offset 3694933568 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:28:24 [ERROR] [SR386_40X_HE_T164_01] FAILED: Not enough data read at offset 3454212832 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:28:24 [ERROR] [SR386_40X_HE_T165_01] FAILED: Not enough data read at offset 4765861216 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:28:24 [ERROR] [SR386_40X_HE_T166_01] FAILED: Not enough data read at offset 3203433024 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:28:24 [ERROR] [SR386_40X_HE_T168_01] FAILED: Not enough data read at offset 3231318464 -> requested: 160 bytes, actually got 0 bytes.
+2026-07-26 04:28:39 [ERROR] [SR386_40X_HE_T155_01] FAILED: Caught RuntimeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor_opt.py", line 518, in __getitem__
+    patch = reader.read_region(x, y, self.patch_size, self.patch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor_opt.py", line 322, in read_region
+    arr = self._czi.read_mosaic(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/aicspylibczi/CziFile.py", line 628, in read_mosaic
+    img = self.reader.read_mosaic(
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Not enough data read at offset 327042304 -> requested: 880 bytes, actually got 0 bytes.
+
+2026-07-26 22:27:13 [INFO] 
+======================================================================
+2026-07-26 22:27:13 [INFO]   GLOBAL SUMMARY
+2026-07-26 22:27:13 [INFO]   Total slides   : 426
+2026-07-26 22:27:13 [INFO]   Candidates     : 58,121,890
+2026-07-26 22:27:13 [INFO]   Kept patches   : 27,492,307
+2026-07-26 22:27:13 [INFO]   Filter rate    : 52.7%
+2026-07-26 22:27:13 [INFO]   Errors         : 76
+2026-07-26 22:27:13 [INFO]   Total time     : 1196.5 min
+2026-07-26 22:27:13 [INFO]   Output dir     : /mnt/data1/vmieres/SurGen/patches
+2026-07-26 22:27:13 [INFO] ======================================================================
+2026-07-26 22:27:13 [INFO]   Stats saved to : /mnt/data1/vmieres/SurGen/patches/extraction_stats.csv
+2026-07-27 13:03:45 [INFO] ======================================================================
+2026-07-27 13:03:45 [INFO]   WSI PATCH EXTRACTOR  (optimized)
+2026-07-27 13:03:45 [INFO]   Config: config_files/patches_surgen_filtered.yaml
+2026-07-27 13:03:45 [INFO] ======================================================================
+2026-07-27 13:03:45 [INFO] GPUs to use: [0, 1]
+2026-07-27 13:03:45 [INFO]   GPU 0: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-07-27 13:03:45 [INFO]   GPU 1: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-07-27 13:03:45 [INFO] [SurGen] 593 file(s) found
+2026-07-27 13:20:51 [ERROR] [SR1482_40X_HE_T008_01] FAILED: Caught RuntimeError in DataLoader worker process 10.
+Original Traceback (most recent call last):
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor_opt.py", line 518, in __getitem__
+    patch = reader.read_region(x, y, self.patch_size, self.patch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/patch_extractor_opt.py", line 322, in read_region
+    arr = self._czi.read_mosaic(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/DIINF/vmieres/tesis/tesis_patologia_env/lib/python3.12/site-packages/aicspylibczi/CziFile.py", line 628, in read_mosaic
+    img = self.reader.read_mosaic(
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError:  - ERR=-1 (WMP_errFail)
+
+2026-07-28 00:40:01 [INFO] ======================================================================
+2026-07-28 00:40:01 [INFO]   WSI PATCH EXTRACTOR  (optimized)
+2026-07-28 00:40:01 [INFO]   Config: config_files/patches_surgen_filtered.yaml
+2026-07-28 00:40:01 [INFO] ======================================================================
+2026-07-28 00:40:02 [INFO] GPUs to use: [0, 1]
+2026-07-28 00:40:02 [INFO]   GPU 0: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-07-28 00:40:02 [INFO]   GPU 1: NVIDIA RTX 6000 Ada Generation (47 GB)
+2026-07-28 00:40:02 [INFO] [SurGen] 593 file(s) found
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T002_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T003_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T004_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T004_02.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T005_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T005_02.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T007_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T008_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T009_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T009_02.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T010_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T011_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T012_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T013_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T014_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T015_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T016_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T016_02.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T017_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T017_02.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T018_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T019_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T020_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T021_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T022_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T023_01.h5
+2026-07-28 00:40:02 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T024_01.h5
+2026-07-28 00:40:03 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T024_02.h5
+2026-07-28 00:40:03 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T025_01.h5
+2026-07-28 00:40:03 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T025_02.h5
+2026-07-28 00:40:03 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T026_01.h5
+2026-07-28 00:40:03 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T026_02.h5
+2026-07-28 00:40:03 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T027_01.h5
+2026-07-28 00:40:03 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T029_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T029_02.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T030_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T031_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T032_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T033_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T034_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T035_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T036_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T036_02.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T037_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T037_02.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T038_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T039_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T040_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T040_02.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T041_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T042_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T043_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T043_02.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T044_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T044_02.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T045_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T045_02.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T046_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T048_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T048_02.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T049_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T050_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T051_01.h5
+2026-07-28 00:40:04 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T052_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T052_02.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T053_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T053_02.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T055_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T055_02.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T056_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T057_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T058_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T058_02.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T059_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T060_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T061_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T061_02.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T062_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T062_02.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T063_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T063_02.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T064_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T064_02.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T065_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T065_02.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T066_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T066_02.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T067_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T068_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T069_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T069_02.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T070_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T071_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T071_02.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T072_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T073_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T074_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T074_02.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T075_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T075_02.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T076_01.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T076_02.h5
+2026-07-28 00:40:05 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T077_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T078_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T079_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T079_02.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T080_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T080_02.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T081_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T081_02.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T082_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T082_02.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T083_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T083_02.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T084_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T084_02.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T085_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T086_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T086_02.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T087_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T088_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T089_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T090_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T091_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T092_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T093_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T094_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T094_02.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T095_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T095_02.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T096_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T097_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T097_02.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T098_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T098_02.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T099_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T100_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T100_02.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T101_01.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T101_02.h5
+2026-07-28 00:40:06 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T102_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T103_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T104_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T104_02.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T105_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T106_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T107_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T108_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T109_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T110_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T111_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T112_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T113_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T113_02.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T114_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T115_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T115_02.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T116_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T117_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T117_02.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T118_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T118_02.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T119_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T120_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T120_02.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T121_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T122_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T123_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T124_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T124_02.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T125_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T125_02.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T126_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T128_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T128_02.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T129_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T129_02.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T130_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T131_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T131_02.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T132_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T132_02.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T133_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T133_02.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T134_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T135_01.h5
+2026-07-28 00:40:07 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T136_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T136_02.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T137_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T137_02.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T138_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T139_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T139_02.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T140_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T140_02.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T141_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T142_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T143_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T143_02.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T146_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T147_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T147_02.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T148_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T148_02.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T149_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T149_02.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T150_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T151_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T152_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T153_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T154_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T155_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T156_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T157_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T157_02.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T158_01.h5
+2026-07-28 00:40:08 [INFO] [SurGen] SKIP (already exists): SR1482_40X_HE_T159_01.h5
+2026-07-28 20:08:38 [INFO] 
+======================================================================
+2026-07-28 20:08:38 [INFO]   GLOBAL SUMMARY
+2026-07-28 20:08:38 [INFO]   Total slides   : 376
+2026-07-28 20:08:38 [INFO]   Candidates     : 53,819,506
+2026-07-28 20:08:38 [INFO]   Kept patches   : 24,297,258
+2026-07-28 20:08:38 [INFO]   Filter rate    : 54.9%
+2026-07-28 20:08:38 [INFO]   Errors         : 0
+2026-07-28 20:08:38 [INFO]   Total time     : 1168.5 min
+2026-07-28 20:08:38 [INFO]   Output dir     : /mnt/data1/vmieres/SurGen/patches
+2026-07-28 20:08:38 [INFO] ======================================================================
+2026-07-28 20:08:38 [INFO]   Stats saved to : /mnt/data1/vmieres/SurGen/patches/extraction_stats.csv

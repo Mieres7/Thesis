@@ -1,0 +1,879 @@
+case_mapping,age,HER2_status,Molecular_subtype
+histai/HISTAI-breast/case_1551,93,1.0,Luminal A
+histai/HISTAI-breast/case_0400,50,0.0,HER2+
+histai/HISTAI-breast/case_0575,61,1.0,HER2+
+histai/HISTAI-breast/case_0260,39,2.0,Luminal B
+histai/HISTAI-breast/case_0735,44,1.0,Triple negative
+histai/HISTAI-breast/case_1064,34,2.0,Luminal B
+histai/HISTAI-breast/case_0951,48,1.0,Luminal B
+histai/HISTAI-breast/case_1155,73,2.0,Luminal B
+histai/HISTAI-breast/case_0198,47,0.0,Luminal B
+histai/HISTAI-breast/case_0189,85,1.0,Luminal B
+histai/HISTAI-breast/case_0342,63,1.0,Luminal B
+histai/HISTAI-breast/case_1157,70,1.0,HER2+
+histai/HISTAI-breast/case_0203,49,1.0,Luminal B
+histai/HISTAI-breast/case_1133,67,2.0,Luminal B
+histai/HISTAI-breast/case_0598,66,1.0,Luminal B
+histai/HISTAI-breast/case_0091,50,1.0,HER2+
+histai/HISTAI-breast/case_1126,51,1.0,HER2+
+histai/HISTAI-breast/case_1008,64,1.0,Luminal A
+histai/HISTAI-breast/case_1194,85,1.0,Luminal A
+histai/HISTAI-breast/case_0880,85,1.0,Luminal B
+histai/HISTAI-breast/case_1348,50,2.0,Luminal B
+histai/HISTAI-breast/case_0646,75,1.0,HER2+
+histai/HISTAI-breast/case_0105,94,1.0,Triple negative
+histai/HISTAI-breast/case_0064,62,1.0,HER2+
+histai/HISTAI-breast/case_0177,76,2.0,Luminal B
+histai/HISTAI-breast/case_0002,76,1.0,Triple negative
+histai/HISTAI-breast/case_0134,92,2.0,HER2+
+histai/HISTAI-breast/case_0863,85,0.0,HER2+
+histai/HISTAI-breast/case_0141,71,1.0,Luminal A
+histai/HISTAI-breast/case_0021,75,2.0,Luminal B
+histai/HISTAI-breast/case_0163,75,2.0,Luminal B
+histai/HISTAI-breast/case_1442,41,1.0,Luminal A
+histai/HISTAI-breast/case_0237,65,2.0,HER2+
+histai/HISTAI-breast/case_0191,59,0.0,Triple negative
+histai/HISTAI-breast/case_0221,70,1.0,HER2+
+histai/HISTAI-breast/case_0205,62,1.0,Triple negative
+histai/HISTAI-breast/case_0200,51,1.0,HER2+
+histai/HISTAI-breast/case_1555,50,1.0,HER2+
+histai/HISTAI-breast/case_0490,75,1.0,HER2+
+histai/HISTAI-breast/case_1018,66,2.0,Luminal B
+histai/HISTAI-breast/case_0723,57,2.0,HER2+
+histai/HISTAI-breast/case_0482,76,1.0,HER2+
+histai/HISTAI-breast/case_0886,62,1.0,Luminal A
+histai/HISTAI-breast/case_1113,69,1.0,Luminal A
+histai/HISTAI-breast/case_0539,70,1.0,Triple negative
+histai/HISTAI-breast/case_1083,65,2.0,HER2+
+histai/HISTAI-breast/case_1145,37,1.0,Luminal B
+histai/HISTAI-breast/case_0473,58,1.0,Luminal B
+histai/HISTAI-breast/case_1288,64,2.0,Luminal B
+histai/HISTAI-breast/case_1318,57,1.0,Triple negative
+histai/HISTAI-breast/case_0393,48,1.0,
+histai/HISTAI-breast/case_0250,85,1.0,Luminal A
+histai/HISTAI-breast/case_1333,69,0.0,Luminal B
+histai/HISTAI-breast/case_1144,68,1.0,Luminal B
+histai/HISTAI-breast/case_0174,72,1.0,HER2+
+histai/HISTAI-breast/case_1418,44,1.0,Luminal A
+histai/HISTAI-breast/case_0236,59,1.0,HER2+
+histai/HISTAI-breast/case_1275,70,2.0,Luminal B
+histai/HISTAI-breast/case_0725,68,1.0,Luminal A
+histai/HISTAI-breast/case_0366,73,1.0,Luminal A
+histai/HISTAI-breast/case_0693,48,1.0,HER2+
+histai/HISTAI-breast/case_0990,54,2.0,Luminal B
+histai/HISTAI-breast/case_0588,38,0.0,
+histai/HISTAI-breast/case_0632,72,1.0,Luminal B
+histai/HISTAI-breast/case_1435,50,2.0,HER2+
+histai/HISTAI-breast/case_0211,52,1.0,
+histai/HISTAI-breast/case_1509,63,1.0,HER2+
+histai/HISTAI-breast/case_0718,47,1.0,HER2+
+histai/HISTAI-breast/case_0658,36,1.0,Luminal B
+histai/HISTAI-breast/case_0086,41,1.0,Luminal B
+histai/HISTAI-breast/case_1074,61,1.0,
+histai/HISTAI-breast/case_0320,63,2.0,Luminal B
+histai/HISTAI-breast/case_1366,46,1.0,HER2+
+histai/HISTAI-breast/case_0049,61,1.0,Luminal B
+histai/HISTAI-breast/case_1466,77,1.0,Luminal A
+histai/HISTAI-breast/case_0740,67,1.0,HER2+
+histai/HISTAI-breast/case_0129,34,2.0,Luminal B
+histai/HISTAI-breast/case_0130,45,1.0,Luminal B
+histai/HISTAI-breast/case_1056,48,0.0,Luminal B
+histai/HISTAI-breast/case_0336,68,1.0,Luminal A
+histai/HISTAI-breast/case_0253,81,1.0,Luminal A
+histai/HISTAI-breast/case_1443,38,1.0,
+histai/HISTAI-breast/case_0152,62,1.0,Luminal B
+histai/HISTAI-breast/case_0435,66,0.0,Luminal B
+histai/HISTAI-breast/case_0193,51,1.0,
+histai/HISTAI-breast/case_0448,75,1.0,
+histai/HISTAI-breast/case_0701,49,2.0,Luminal B
+histai/HISTAI-breast/case_0633,80,1.0,HER2+
+histai/HISTAI-breast/case_0316,58,1.0,Luminal A
+histai/HISTAI-breast/case_1477,58,1.0,HER2+
+histai/HISTAI-breast/case_1426,83,2.0,Luminal A
+histai/HISTAI-breast/case_0079,53,1.0,HER2+
+histai/HISTAI-breast/case_0738,66,1.0,Luminal B
+histai/HISTAI-breast/case_0583,43,1.0,Luminal B
+histai/HISTAI-breast/case_0799,70,2.0,Luminal B
+histai/HISTAI-breast/case_1131,34,2.0,HER2+
+histai/HISTAI-breast/case_0495,48,2.0,HER2+
+histai/HISTAI-breast/case_1668,67,0.0,HER2+
+histai/HISTAI-breast/case_1453,63,0.0,HER2+
+histai/HISTAI-breast/case_0442,60,1.0,Luminal B
+histai/HISTAI-breast/case_0695,51,2.0,HER2+
+histai/HISTAI-breast/case_0107,76,2.0,Luminal B
+histai/HISTAI-breast/case_1100,52,0.0,Triple negative
+histai/HISTAI-breast/case_1061,63,1.0,Luminal A
+histai/HISTAI-breast/case_0983,56,1.0,Luminal A
+histai/HISTAI-breast/case_0472,62,1.0,HER2+
+histai/HISTAI-breast/case_1396,48,2.0,Luminal B
+histai/HISTAI-breast/case_0938,80,1.0,Luminal A
+histai/HISTAI-breast/case_0860,70,1.0,Luminal B
+histai/HISTAI-breast/case_0686,69,1.0,Luminal B
+histai/HISTAI-breast/case_0843,63,1.0,Luminal A
+histai/HISTAI-breast/case_0554,62,1.0,HER2+
+histai/HISTAI-breast/case_0994,77,1.0,Luminal A
+histai/HISTAI-breast/case_0465,47,0.0,Luminal B
+histai/HISTAI-breast/case_0147,65,1.0,Luminal A
+histai/HISTAI-breast/case_0269,39,2.0,Luminal B
+histai/HISTAI-breast/case_1299,46,1.0,Luminal B
+histai/HISTAI-breast/case_0304,72,1.0,Luminal B
+histai/HISTAI-breast/case_0019,42,1.0,HER2+
+histai/HISTAI-breast/case_1368,53,1.0,Triple negative
+histai/HISTAI-breast/case_0714,85,1.0,Luminal B
+histai/HISTAI-breast/case_0309,66,1.0,Luminal A
+histai/HISTAI-breast/case_0341,62,2.0,HER2+
+histai/HISTAI-breast/case_1007,80,1.0,HER2+
+histai/HISTAI-breast/case_0846,65,1.0,Luminal A
+histai/HISTAI-breast/case_0649,72,1.0,HER2+
+histai/HISTAI-breast/case_0743,63,1.0,Luminal B
+histai/HISTAI-breast/case_0503,63,1.0,Luminal A
+histai/HISTAI-breast/case_0565,43,1.0,HER2+
+histai/HISTAI-breast/case_0803,64,2.0,Luminal B
+histai/HISTAI-breast/case_0775,60,1.0,Luminal B
+histai/HISTAI-breast/case_1445,61,1.0,Luminal A
+histai/HISTAI-breast/case_0792,63,1.0,HER2+
+histai/HISTAI-breast/case_0604,57,1.0,HER2+
+histai/HISTAI-breast/case_0835,53,1.0,HER2+
+histai/HISTAI-breast/case_1169,68,1.0,Luminal A
+histai/HISTAI-breast/case_1500,55,1.0,HER2+
+histai/HISTAI-breast/case_0589,49,2.0,Luminal B
+histai/HISTAI-breast/case_0631,66,0.0,
+histai/HISTAI-breast/case_1215,59,0.0,
+histai/HISTAI-breast/case_1164,74,2.0,Luminal B
+histai/HISTAI-breast/case_1554,55,2.0,HER2+
+histai/HISTAI-breast/case_0207,51,0.0,HER2+
+histai/HISTAI-breast/case_0462,62,1.0,Luminal A
+histai/HISTAI-breast/case_0871,65,1.0,HER2+
+histai/HISTAI-breast/case_1213,72,2.0,Luminal B
+histai/HISTAI-breast/case_0238,55,1.0,Luminal A
+histai/HISTAI-breast/case_1279,67,0.0,Luminal A
+histai/HISTAI-breast/case_0832,62,1.0,Luminal A
+histai/HISTAI-breast/case_0439,76,1.0,Luminal A
+histai/HISTAI-breast/case_0133,82,1.0,Luminal A
+histai/HISTAI-breast/case_1102,70,1.0,Luminal B
+histai/HISTAI-breast/case_1315,38,2.0,Luminal B
+histai/HISTAI-breast/case_1407,45,0.0,HER2+
+histai/HISTAI-breast/case_1214,52,0.0,HER2+
+histai/HISTAI-breast/case_0399,40,1.0,Luminal A
+histai/HISTAI-breast/case_0913,66,2.0,Luminal B
+histai/HISTAI-breast/case_1161,75,1.0,HER2+
+histai/HISTAI-breast/case_0628,43,0.0,
+histai/HISTAI-breast/case_1031,61,1.0,Luminal B
+histai/HISTAI-breast/case_0962,56,1.0,Luminal B
+histai/HISTAI-breast/case_0167,75,2.0,HER2+
+histai/HISTAI-breast/case_1048,59,1.0,Luminal A
+histai/HISTAI-breast/case_0905,67,1.0,Luminal A
+histai/HISTAI-breast/case_0085,49,1.0,HER2+
+histai/HISTAI-breast/case_0765,77,1.0,Luminal B
+histai/HISTAI-breast/case_0601,68,1.0,Luminal B
+histai/HISTAI-breast/case_0208,81,2.0,Luminal B
+histai/HISTAI-breast/case_0382,83,1.0,Triple negative
+histai/HISTAI-breast/case_1192,54,1.0,Luminal A
+histai/HISTAI-breast/case_0784,47,1.0,HER2+
+histai/HISTAI-breast/case_0438,68,0.0,HER2+
+histai/HISTAI-breast/case_0696,71,1.0,Triple negative
+histai/HISTAI-breast/case_0364,68,0.0,HER2+
+histai/HISTAI-breast/case_0500,59,1.0,Triple negative
+histai/HISTAI-breast/case_0232,64,2.0,HER2+
+histai/HISTAI-breast/case_1434,58,2.0,Luminal B
+histai/HISTAI-breast/case_0188,68,1.0,Luminal A
+histai/HISTAI-breast/case_0918,83,1.0,HER2+
+histai/HISTAI-breast/case_1540,76,2.0,HER2+
+histai/HISTAI-breast/case_0180,74,1.0,Luminal B
+histai/HISTAI-breast/case_0159,69,1.0,Luminal B
+histai/HISTAI-breast/case_0201,59,1.0,Luminal B
+histai/HISTAI-breast/case_1208,72,0.0,Triple negative
+histai/HISTAI-breast/case_1245,86,2.0,Luminal B
+histai/HISTAI-breast/case_1179,51,1.0,Luminal A
+histai/HISTAI-breast/case_1236,70,2.0,Luminal B
+histai/HISTAI-breast/case_1438,63,2.0,Luminal B
+histai/HISTAI-breast/case_0754,53,2.0,HER2+
+histai/HISTAI-breast/case_0444,73,1.0,HER2+
+histai/HISTAI-breast/case_0992,65,1.0,Triple negative
+histai/HISTAI-breast/case_1308,80,1.0,Triple negative
+histai/HISTAI-breast/case_0437,53,1.0,Luminal B
+histai/HISTAI-breast/case_0082,82,2.0,Luminal B
+histai/HISTAI-breast/case_0317,82,2.0,Luminal B
+histai/HISTAI-breast/case_0170,60,1.0,Luminal B
+histai/HISTAI-breast/case_0244,65,1.0,Luminal A
+histai/HISTAI-breast/case_1385,71,1.0,HER2+
+histai/HISTAI-breast/case_0576,42,1.0,Luminal A
+histai/HISTAI-breast/case_0749,57,1.0,HER2+
+histai/HISTAI-breast/case_1112,72,1.0,Luminal A
+histai/HISTAI-breast/case_0893,33,1.0,Triple negative
+histai/HISTAI-breast/case_1457,52,1.0,Luminal A
+histai/HISTAI-breast/case_0726,54,2.0,HER2+
+histai/HISTAI-breast/case_1429,45,1.0,Luminal B
+histai/HISTAI-breast/case_0941,54,1.0,Luminal A
+histai/HISTAI-breast/case_0179,63,1.0,Luminal B
+histai/HISTAI-breast/case_0541,54,0.0,Luminal B
+histai/HISTAI-breast/case_0413,45,0.0,Luminal B
+histai/HISTAI-breast/case_1140,86,0.0,Triple negative
+histai/HISTAI-breast/case_1011,64,1.0,Triple negative
+histai/HISTAI-breast/case_1400,65,1.0,Luminal B
+histai/HISTAI-breast/case_0741,42,2.0,HER2+
+histai/HISTAI-breast/case_0155,60,2.0,Luminal B
+histai/HISTAI-breast/case_1248,44,2.0,HER2+
+histai/HISTAI-breast/case_0904,51,2.0,HER2+
+histai/HISTAI-breast/case_0556,64,1.0,Luminal B
+histai/HISTAI-breast/case_1350,59,1.0,Luminal B
+histai/HISTAI-breast/case_0469,77,0.0,
+histai/HISTAI-breast/case_0136,71,1.0,Triple negative
+histai/HISTAI-breast/case_0837,81,2.0,Luminal B
+histai/HISTAI-breast/case_0339,74,1.0,Luminal A
+histai/HISTAI-breast/case_1176,72,1.0,Luminal B
+histai/HISTAI-breast/case_0527,89,1.0,Luminal A
+histai/HISTAI-breast/case_0040,74,1.0,Triple negative
+histai/HISTAI-breast/case_0216,74,1.0,Triple negative
+histai/HISTAI-breast/case_1254,67,2.0,Luminal B
+histai/HISTAI-breast/case_1058,52,1.0,Triple negative
+histai/HISTAI-breast/case_1014,45,2.0,Luminal B
+histai/HISTAI-breast/case_0474,92,0.0,Luminal B
+histai/HISTAI-breast/case_1559,63,0.0,HER2+
+histai/HISTAI-breast/case_0625,81,0.0,Luminal B
+histai/HISTAI-breast/case_0389,66,1.0,Luminal B
+histai/HISTAI-breast/case_1129,83,1.0,HER2+
+histai/HISTAI-breast/case_1088,61,2.0,Luminal B
+histai/HISTAI-breast/case_0266,78,1.0,Luminal A
+histai/HISTAI-breast/case_0299,65,1.0,Triple negative
+histai/HISTAI-breast/case_0567,51,1.0,Luminal B
+histai/HISTAI-breast/case_1182,43,1.0,Luminal B
+histai/HISTAI-breast/case_0514,67,1.0,Luminal B
+histai/HISTAI-breast/case_0004,71,0.0,HER2+
+histai/HISTAI-breast/case_0277,65,1.0,HER2+
+histai/HISTAI-breast/case_0132,65,1.0,HER2+
+histai/HISTAI-breast/case_1201,43,1.0,Luminal B
+histai/HISTAI-breast/case_0950,58,0.0,HER2+
+histai/HISTAI-breast/case_0884,57,1.0,Luminal A
+histai/HISTAI-breast/case_0694,55,1.0,Triple negative
+histai/HISTAI-breast/case_1397,72,1.0,HER2+
+histai/HISTAI-breast/case_0661,86,2.0,Luminal B
+histai/HISTAI-breast/case_0420,41,1.0,HER2+
+histai/HISTAI-breast/case_0185,50,1.0,Luminal B
+histai/HISTAI-breast/case_1562,64,0.0,HER2+
+histai/HISTAI-breast/case_0618,41,2.0,
+histai/HISTAI-breast/case_0259,72,2.0,Luminal B
+histai/HISTAI-breast/case_0371,73,1.0,Triple negative
+histai/HISTAI-breast/case_1231,46,2.0,Luminal B
+histai/HISTAI-breast/case_0636,73,1.0,Luminal B
+histai/HISTAI-breast/case_1004,43,2.0,Luminal B
+histai/HISTAI-breast/case_0355,64,1.0,Luminal B
+histai/HISTAI-breast/case_1261,69,1.0,HER2+
+histai/HISTAI-breast/case_1238,72,2.0,Luminal B
+histai/HISTAI-breast/case_0219,76,1.0,Luminal B
+histai/HISTAI-breast/case_0786,78,2.0,Luminal B
+histai/HISTAI-breast/case_1291,51,1.0,Triple negative
+histai/HISTAI-breast/case_1068,47,1.0,Luminal B
+histai/HISTAI-breast/case_0944,68,1.0,Luminal B
+histai/HISTAI-breast/case_1546,76,0.0,HER2+
+histai/HISTAI-breast/case_1510,43,0.0,HER2+
+histai/HISTAI-breast/case_1314,61,2.0,Luminal B
+histai/HISTAI-breast/case_0689,72,1.0,HER2+
+histai/HISTAI-breast/case_1515,45,1.0,HER2+
+histai/HISTAI-breast/case_1363,41,2.0,Luminal B
+histai/HISTAI-breast/case_1378,67,1.0,Luminal B
+histai/HISTAI-breast/case_1511,64,0.0,HER2+
+histai/HISTAI-breast/case_0478,86,1.0,HER2+
+histai/HISTAI-breast/case_1374,51,1.0,HER2+
+histai/HISTAI-breast/case_0808,85,1.0,HER2+
+histai/HISTAI-breast/case_0831,64,0.0,
+histai/HISTAI-breast/case_0858,55,1.0,Luminal A
+histai/HISTAI-breast/case_1066,52,1.0,HER2+
+histai/HISTAI-breast/case_0815,65,1.0,HER2+
+histai/HISTAI-breast/case_1307,60,1.0,Luminal B
+histai/HISTAI-breast/case_1109,50,1.0,HER2+
+histai/HISTAI-breast/case_1202,63,1.0,HER2+
+histai/HISTAI-breast/case_0796,38,1.0,Luminal B
+histai/HISTAI-breast/case_0882,56,0.0,HER2+
+histai/HISTAI-breast/case_0626,74,1.0,Luminal A
+histai/HISTAI-breast/case_0281,54,2.0,Luminal B
+histai/HISTAI-breast/case_1063,75,1.0,Luminal A
+histai/HISTAI-breast/case_1464,69,1.0,Luminal B
+histai/HISTAI-breast/case_1219,81,2.0,Luminal B
+histai/HISTAI-breast/case_1410,58,2.0,Luminal B
+histai/HISTAI-breast/case_0621,51,1.0,Luminal A
+histai/HISTAI-breast/case_0685,71,0.0,HER2+
+histai/HISTAI-breast/case_0358,84,1.0,HER2+
+histai/HISTAI-breast/case_1522,70,1.0,HER2+
+histai/HISTAI-breast/case_1142,83,1.0,Luminal B
+histai/HISTAI-breast/case_0184,73,1.0,Luminal A
+histai/HISTAI-breast/case_0344,65,0.0,Luminal B
+histai/HISTAI-breast/case_0118,73,0.0,
+histai/HISTAI-breast/case_0294,57,1.0,Triple negative
+histai/HISTAI-breast/case_0388,70,1.0,HER2+
+histai/HISTAI-breast/case_1534,68,1.0,HER2+
+histai/HISTAI-breast/case_0730,55,1.0,
+histai/HISTAI-breast/case_1391,64,1.0,Luminal B
+histai/HISTAI-breast/case_1548,73,2.0,Luminal B
+histai/HISTAI-breast/case_1252,73,1.0,Luminal A
+histai/HISTAI-breast/case_0460,44,2.0,Luminal B
+histai/HISTAI-breast/case_0468,71,0.0,HER2+
+histai/HISTAI-breast/case_1451,63,1.0,HER2+
+histai/HISTAI-breast/case_0762,76,1.0,Luminal A
+histai/HISTAI-breast/case_0417,75,2.0,Luminal B
+histai/HISTAI-breast/case_1303,83,2.0,HER2+
+histai/HISTAI-breast/case_0745,64,1.0,Luminal A
+histai/HISTAI-breast/case_1151,58,1.0,Triple negative
+histai/HISTAI-breast/case_0507,46,0.0,Triple negative
+histai/HISTAI-breast/case_0850,62,0.0,HER2+
+histai/HISTAI-breast/case_0619,72,1.0,HER2+
+histai/HISTAI-breast/case_0920,73,1.0,Luminal B
+histai/HISTAI-breast/case_1241,62,2.0,Luminal B
+histai/HISTAI-breast/case_1439,36,1.0,Luminal B
+histai/HISTAI-breast/case_0412,56,0.0,Luminal B
+histai/HISTAI-breast/case_0947,59,1.0,Luminal A
+histai/HISTAI-breast/case_1136,86,1.0,Luminal A
+histai/HISTAI-breast/case_1344,90,2.0,HER2+
+histai/HISTAI-breast/case_1437,66,1.0,HER2+
+histai/HISTAI-breast/case_1322,66,1.0,Luminal B
+histai/HISTAI-breast/case_0493,70,1.0,Triple negative
+histai/HISTAI-breast/case_0664,70,2.0,Luminal B
+histai/HISTAI-breast/case_1313,44,2.0,Triple negative
+histai/HISTAI-breast/case_1532,43,0.0,HER2+
+histai/HISTAI-breast/case_0517,66,1.0,HER2+
+histai/HISTAI-breast/case_1324,84,1.0,HER2+
+histai/HISTAI-breast/case_0505,69,2.0,HER2+
+histai/HISTAI-breast/case_0901,65,1.0,Luminal A
+histai/HISTAI-breast/case_0182,70,1.0,HER2+
+histai/HISTAI-breast/case_1370,83,1.0,Triple negative
+histai/HISTAI-breast/case_0989,70,1.0,HER2+
+histai/HISTAI-breast/case_1181,68,1.0,HER2+
+histai/HISTAI-breast/case_1105,64,1.0,Triple negative
+histai/HISTAI-breast/case_1283,74,2.0,HER2+
+histai/HISTAI-breast/case_0279,59,2.0,Luminal B
+histai/HISTAI-breast/case_0666,72,0.0,Luminal B
+histai/HISTAI-breast/case_1094,33,1.0,HER2+
+histai/HISTAI-breast/case_1198,37,2.0,HER2+
+histai/HISTAI-breast/case_0383,44,1.0,Luminal B
+histai/HISTAI-breast/case_0660,52,1.0,Luminal B
+histai/HISTAI-breast/case_0542,58,1.0,HER2+
+histai/HISTAI-breast/case_1121,68,1.0,Luminal B
+histai/HISTAI-breast/case_1134,67,1.0,Luminal B
+histai/HISTAI-breast/case_0076,50,1.0,HER2+
+histai/HISTAI-breast/case_0595,51,0.0,
+histai/HISTAI-breast/case_0637,37,1.0,Luminal B
+histai/HISTAI-breast/case_1675,51,0.0,HER2+
+histai/HISTAI-breast/case_0739,45,1.0,
+histai/HISTAI-breast/case_0369,64,0.0,Triple negative
+histai/HISTAI-breast/case_0972,73,0.0,Luminal B
+histai/HISTAI-breast/case_0343,52,1.0,Luminal B
+histai/HISTAI-breast/case_1458,69,1.0,Luminal B
+histai/HISTAI-breast/case_0797,79,1.0,Luminal A
+histai/HISTAI-breast/case_0187,45,0.0,HER2+
+histai/HISTAI-breast/case_1095,88,0.0,Luminal B
+histai/HISTAI-breast/case_1567,63,1.0,HER2+
+histai/HISTAI-breast/case_0802,48,2.0,Luminal B
+histai/HISTAI-breast/case_1452,59,2.0,HER2+
+histai/HISTAI-breast/case_1116,55,1.0,HER2+
+histai/HISTAI-breast/case_1251,66,1.0,Luminal B
+histai/HISTAI-breast/case_1430,66,1.0,Luminal A
+histai/HISTAI-breast/case_1002,63,1.0,HER2+
+histai/HISTAI-breast/case_1448,52,0.0,HER2+
+histai/HISTAI-breast/case_0043,66,1.0,HER2+
+histai/HISTAI-breast/case_0228,66,1.0,HER2+
+histai/HISTAI-breast/case_1233,41,1.0,HER2+
+histai/HISTAI-breast/case_0818,58,2.0,Luminal B
+histai/HISTAI-breast/case_1456,45,1.0,HER2+
+histai/HISTAI-breast/case_0372,46,0.0,Luminal B
+histai/HISTAI-breast/case_0397,43,1.0,Luminal B
+histai/HISTAI-breast/case_1263,62,1.0,Luminal A
+histai/HISTAI-breast/case_0153,47,2.0,Luminal B
+histai/HISTAI-breast/case_0779,52,2.0,Luminal B
+histai/HISTAI-breast/case_0719,61,2.0,HER2+
+histai/HISTAI-breast/case_0227,75,1.0,Triple negative
+histai/HISTAI-breast/case_0346,43,1.0,Luminal A
+histai/HISTAI-breast/case_0489,49,1.0,Luminal B
+histai/HISTAI-breast/case_1078,51,1.0,Luminal A
+histai/HISTAI-breast/case_0148,62,2.0,Luminal B
+histai/HISTAI-breast/case_0175,75,0.0,Luminal B
+histai/HISTAI-breast/case_1047,67,2.0,Luminal B
+histai/HISTAI-breast/case_0623,44,0.0,Luminal B
+histai/HISTAI-breast/case_0692,48,1.0,Triple negative
+histai/HISTAI-breast/case_1403,46,1.0,Luminal B
+histai/HISTAI-breast/case_0606,48,1.0,Luminal B
+histai/HISTAI-breast/case_1197,61,1.0,Triple negative
+histai/HISTAI-breast/case_1195,61,1.0,Triple negative
+histai/HISTAI-breast/case_0160,79,1.0,Luminal B
+histai/HISTAI-breast/case_0090,63,0.0,Luminal A
+histai/HISTAI-breast/case_0484,60,2.0,Luminal B
+histai/HISTAI-breast/case_1035,51,1.0,Luminal A
+histai/HISTAI-breast/case_0270,66,1.0,Luminal A
+histai/HISTAI-breast/case_0041,43,2.0,Luminal B
+histai/HISTAI-breast/case_0218,43,2.0,Luminal B
+histai/HISTAI-breast/case_0455,95,2.0,Luminal B
+histai/HISTAI-breast/case_1372,62,1.0,Luminal A
+histai/HISTAI-breast/case_1049,42,2.0,Luminal B
+histai/HISTAI-breast/case_0627,50,2.0,Luminal B
+histai/HISTAI-breast/case_0348,66,2.0,Luminal B
+histai/HISTAI-breast/case_1087,54,1.0,HER2+
+histai/HISTAI-breast/case_0956,76,1.0,Luminal B
+histai/HISTAI-breast/case_1103,66,1.0,Triple negative
+histai/HISTAI-breast/case_1189,47,1.0,Luminal B
+histai/HISTAI-breast/case_0222,68,1.0,HER2+
+histai/HISTAI-breast/case_0897,43,1.0,Luminal B
+histai/HISTAI-breast/case_1141,75,1.0,Luminal B
+histai/HISTAI-breast/case_1247,68,1.0,Luminal A
+histai/HISTAI-breast/case_0058,43,1.0,HER2+
+histai/HISTAI-breast/case_0262,43,1.0,HER2+
+histai/HISTAI-breast/case_0703,65,1.0,HER2+
+histai/HISTAI-breast/case_0536,50,2.0,HER2+
+histai/HISTAI-breast/case_1293,73,1.0,Luminal A
+histai/HISTAI-breast/case_0877,75,2.0,Luminal B
+histai/HISTAI-breast/case_1225,74,1.0,HER2+
+histai/HISTAI-breast/case_0766,73,0.0,Triple negative
+histai/HISTAI-breast/case_1563,76,0.0,HER2+
+histai/HISTAI-breast/case_0249,64,1.0,
+histai/HISTAI-breast/case_1149,40,1.0,Luminal A
+histai/HISTAI-breast/case_0734,60,1.0,Triple negative
+histai/HISTAI-breast/case_0836,70,1.0,Luminal A
+histai/HISTAI-breast/case_0800,58,1.0,Luminal B
+histai/HISTAI-breast/case_1039,79,0.0,HER2+
+histai/HISTAI-breast/case_0431,60,2.0,Luminal B
+histai/HISTAI-breast/case_1329,63,0.0,Triple negative
+histai/HISTAI-breast/case_0557,46,1.0,Luminal A
+histai/HISTAI-breast/case_0581,64,1.0,Triple negative
+histai/HISTAI-breast/case_0454,66,2.0,HER2+
+histai/HISTAI-breast/case_1117,61,1.0,
+histai/HISTAI-breast/case_1382,47,1.0,HER2+
+histai/HISTAI-breast/case_0673,81,1.0,Luminal A
+histai/HISTAI-breast/case_0607,69,1.0,HER2+
+histai/HISTAI-breast/case_0476,68,2.0,Luminal B
+histai/HISTAI-breast/case_1118,66,1.0,Luminal B
+histai/HISTAI-breast/case_1427,46,1.0,Luminal B
+histai/HISTAI-breast/case_0033,83,2.0,HER2+
+histai/HISTAI-breast/case_1226,76,1.0,Luminal A
+histai/HISTAI-breast/case_1572,52,1.0,HER2+
+histai/HISTAI-breast/case_0995,76,2.0,Luminal B
+histai/HISTAI-breast/case_0035,58,1.0,HER2+
+histai/HISTAI-breast/case_0436,68,1.0,HER2+
+histai/HISTAI-breast/case_0569,87,2.0,Luminal B
+histai/HISTAI-breast/case_1036,51,1.0,Luminal A
+histai/HISTAI-breast/case_0881,91,1.0,Luminal B
+histai/HISTAI-breast/case_0662,91,1.0,Luminal B
+histai/HISTAI-breast/case_0943,76,1.0,HER2+
+histai/HISTAI-breast/case_0374,76,1.0,HER2+
+histai/HISTAI-breast/case_1295,71,1.0,Luminal B
+histai/HISTAI-breast/case_0875,55,1.0,HER2+
+histai/HISTAI-breast/case_0677,57,1.0,Luminal A
+histai/HISTAI-breast/case_1306,76,1.0,HER2+
+histai/HISTAI-breast/case_0331,72,0.0,HER2+
+histai/HISTAI-breast/case_0073,40,1.0,Luminal B
+histai/HISTAI-breast/case_1573,68,1.0,Luminal A
+histai/HISTAI-breast/case_1376,47,0.0,HER2+
+histai/HISTAI-breast/case_0071,45,1.0,Luminal A
+histai/HISTAI-breast/case_0287,45,1.0,Luminal A
+histai/HISTAI-breast/case_1514,83,0.0,HER2+
+histai/HISTAI-breast/case_0805,86,2.0,HER2+
+histai/HISTAI-breast/case_1547,42,1.0,HER2+
+histai/HISTAI-breast/case_0866,37,0.0,HER2+
+histai/HISTAI-breast/case_1227,74,1.0,HER2+
+histai/HISTAI-breast/case_0571,46,1.0,HER2+
+histai/HISTAI-breast/case_1390,40,1.0,Luminal B
+histai/HISTAI-breast/case_0025,52,1.0,HER2+
+histai/HISTAI-breast/case_0301,51,1.0,Luminal A
+histai/HISTAI-breast/case_0544,79,0.0,HER2+
+histai/HISTAI-breast/case_0335,55,0.0,HER2+
+histai/HISTAI-breast/case_1527,28,1.0,Triple negative
+histai/HISTAI-breast/case_0240,59,1.0,Luminal B
+histai/HISTAI-breast/case_0404,54,1.0,HER2+
+histai/HISTAI-breast/case_0924,64,1.0,HER2+
+histai/HISTAI-breast/case_1258,51,2.0,Luminal B
+histai/HISTAI-breast/case_0403,88,1.0,HER2+
+histai/HISTAI-breast/case_1691,61,1.0,HER2+
+histai/HISTAI-breast/case_1621,41,1.0,HER2+
+histai/HISTAI-breast/case_0780,51,2.0,Luminal B
+histai/HISTAI-breast/case_0699,81,1.0,Luminal B
+histai/HISTAI-breast/case_1171,47,2.0,Luminal B
+histai/HISTAI-breast/case_0922,60,1.0,Luminal A
+histai/HISTAI-breast/case_0280,68,2.0,Luminal B
+histai/HISTAI-breast/case_1122,61,2.0,Luminal B
+histai/HISTAI-breast/case_0864,73,1.0,Luminal B
+histai/HISTAI-breast/case_0916,67,1.0,Triple negative
+histai/HISTAI-breast/case_1120,62,1.0,Luminal B
+histai/HISTAI-breast/case_0848,66,1.0,HER2+
+histai/HISTAI-breast/case_0817,67,0.0,Luminal B
+histai/HISTAI-breast/case_0602,40,0.0,HER2+
+histai/HISTAI-breast/case_0876,54,0.0,Luminal B
+histai/HISTAI-breast/case_1365,59,1.0,Triple negative
+histai/HISTAI-breast/case_0715,73,1.0,
+histai/HISTAI-breast/case_0257,65,1.0,Luminal B
+histai/HISTAI-breast/case_1221,52,1.0,
+histai/HISTAI-breast/case_1462,69,1.0,Luminal B
+histai/HISTAI-breast/case_1360,82,1.0,Luminal B
+histai/HISTAI-breast/case_0937,72,0.0,HER2+
+histai/HISTAI-breast/case_1535,37,0.0,Triple negative
+histai/HISTAI-breast/case_1395,34,1.0,HER2+
+histai/HISTAI-breast/case_0930,67,1.0,Luminal B
+histai/HISTAI-breast/case_1683,51,1.0,Luminal B
+histai/HISTAI-breast/case_1673,41,0.0,HER2+
+histai/HISTAI-breast/case_1519,39,0.0,HER2+
+histai/HISTAI-breast/case_0528,46,1.0,
+histai/HISTAI-breast/case_0421,63,1.0,Luminal B
+histai/HISTAI-breast/case_0137,67,1.0,Luminal A
+histai/HISTAI-breast/case_0518,59,0.0,Triple negative
+histai/HISTAI-breast/case_1240,71,1.0,Triple negative
+histai/HISTAI-breast/case_0055,67,2.0,Luminal B
+histai/HISTAI-breast/case_0247,67,2.0,Luminal B
+histai/HISTAI-breast/case_0513,75,2.0,Luminal B
+histai/HISTAI-breast/case_0977,72,2.0,Luminal B
+histai/HISTAI-breast/case_0839,89,1.0,Luminal A
+histai/HISTAI-breast/case_0668,61,1.0,Luminal A
+histai/HISTAI-breast/case_1432,59,1.0,
+histai/HISTAI-breast/case_1184,83,0.0,Triple negative
+histai/HISTAI-breast/case_1055,69,1.0,HER2+
+histai/HISTAI-breast/case_0764,63,1.0,HER2+
+histai/HISTAI-breast/case_0974,61,1.0,Luminal B
+histai/HISTAI-breast/case_0670,78,0.0,HER2+
+histai/HISTAI-breast/case_0568,75,1.0,HER2+
+histai/HISTAI-breast/case_0139,61,1.0,Luminal B
+histai/HISTAI-breast/case_1073,65,1.0,Triple negative
+histai/HISTAI-breast/case_1148,66,1.0,Luminal B
+histai/HISTAI-breast/case_0425,72,0.0,Luminal B
+histai/HISTAI-breast/case_0697,72,1.0,Luminal A
+histai/HISTAI-breast/case_0772,76,1.0,HER2+
+histai/HISTAI-breast/case_0385,42,2.0,Luminal B
+histai/HISTAI-breast/case_0582,57,1.0,Luminal B
+histai/HISTAI-breast/case_1065,62,0.0,Luminal B
+histai/HISTAI-breast/case_0106,40,0.0,Triple negative
+histai/HISTAI-breast/case_0416,68,1.0,HER2+
+histai/HISTAI-breast/case_0748,82,1.0,Triple negative
+histai/HISTAI-breast/case_0811,38,1.0,Luminal A
+histai/HISTAI-breast/case_0790,45,2.0,Luminal B
+histai/HISTAI-breast/case_1079,60,1.0,HER2+
+histai/HISTAI-breast/case_0844,56,1.0,Luminal B
+histai/HISTAI-breast/case_0307,70,1.0,Luminal B
+histai/HISTAI-breast/case_1525,45,2.0,Luminal B
+histai/HISTAI-breast/case_0522,35,1.0,
+histai/HISTAI-breast/case_0763,61,1.0,Luminal B
+histai/HISTAI-breast/case_1455,95,1.0,Luminal B
+histai/HISTAI-breast/case_0210,48,1.0,Luminal A
+histai/HISTAI-breast/case_1051,63,1.0,Luminal B
+histai/HISTAI-breast/case_1029,38,2.0,Luminal B
+histai/HISTAI-breast/case_0450,44,1.0,Triple negative
+histai/HISTAI-breast/case_0225,59,1.0,Luminal B
+histai/HISTAI-breast/case_0492,46,1.0,HER2+
+histai/HISTAI-breast/case_1019,64,1.0,Luminal A
+histai/HISTAI-breast/case_0100,56,1.0,Luminal B
+histai/HISTAI-breast/case_1178,81,2.0,HER2+
+histai/HISTAI-breast/case_0958,50,1.0,HER2+
+histai/HISTAI-breast/case_0401,75,1.0,HER2+
+histai/HISTAI-breast/case_0888,48,0.0,HER2+
+histai/HISTAI-breast/case_0657,69,1.0,Luminal B
+histai/HISTAI-breast/case_0551,61,2.0,HER2+
+histai/HISTAI-breast/case_0278,53,0.0,Luminal B
+histai/HISTAI-breast/case_0036,60,1.0,HER2+
+histai/HISTAI-breast/case_0785,50,0.0,HER2+
+histai/HISTAI-breast/case_1384,68,0.0,HER2+
+histai/HISTAI-breast/case_0120,68,1.0,HER2+
+histai/HISTAI-breast/case_0296,61,1.0,HER2+
+histai/HISTAI-breast/case_0241,68,1.0,Luminal B
+histai/HISTAI-breast/case_0480,78,1.0,Luminal A
+histai/HISTAI-breast/case_0853,78,1.0,HER2+
+histai/HISTAI-breast/case_0302,75,1.0,Triple negative
+histai/HISTAI-breast/case_1076,49,1.0,Luminal A
+histai/HISTAI-breast/case_0234,62,1.0,Luminal A
+histai/HISTAI-breast/case_0449,69,2.0,Luminal B
+histai/HISTAI-breast/case_0524,83,1.0,Luminal B
+histai/HISTAI-breast/case_0192,73,2.0,Luminal B
+histai/HISTAI-breast/case_0291,74,1.0,Luminal B
+histai/HISTAI-breast/case_1281,81,1.0,Luminal B
+histai/HISTAI-breast/case_0275,47,1.0,Luminal A
+histai/HISTAI-breast/case_1264,65,1.0,HER2+
+histai/HISTAI-breast/case_1414,43,1.0,HER2+
+histai/HISTAI-breast/case_0157,68,1.0,HER2+
+histai/HISTAI-breast/case_0186,58,1.0,HER2+
+histai/HISTAI-breast/case_0284,55,1.0,HER2+
+histai/HISTAI-breast/case_0378,53,2.0,Luminal B
+histai/HISTAI-breast/case_1017,52,1.0,Luminal A
+histai/HISTAI-breast/case_0334,38,0.0,HER2+
+histai/HISTAI-breast/case_0104,36,0.0,HER2+
+histai/HISTAI-breast/case_0774,43,2.0,Luminal B
+histai/HISTAI-breast/case_1000,38,2.0,Luminal B
+histai/HISTAI-breast/case_1478,63,1.0,
+histai/HISTAI-breast/case_0895,55,1.0,HER2+
+histai/HISTAI-breast/case_1447,84,1.0,Luminal A
+histai/HISTAI-breast/case_0430,45,2.0,Luminal B
+histai/HISTAI-breast/case_0757,46,2.0,Luminal B
+histai/HISTAI-breast/case_0906,53,1.0,Luminal A
+histai/HISTAI-breast/case_0980,82,1.0,Luminal A
+histai/HISTAI-breast/case_1111,84,2.0,Luminal B
+histai/HISTAI-breast/case_0057,81,1.0,Luminal B
+histai/HISTAI-breast/case_0252,81,1.0,Luminal B
+histai/HISTAI-breast/case_0643,82,1.0,Luminal A
+histai/HISTAI-breast/case_0761,71,1.0,Luminal A
+histai/HISTAI-breast/case_0945,69,1.0,Luminal B
+histai/HISTAI-breast/case_0308,76,1.0,Luminal A
+histai/HISTAI-breast/case_1347,54,1.0,Luminal A
+histai/HISTAI-breast/case_1375,74,1.0,Luminal A
+histai/HISTAI-breast/case_0587,45,2.0,HER2+
+histai/HISTAI-breast/case_0855,66,0.0,HER2+
+histai/HISTAI-breast/case_1096,54,1.0,HER2+
+histai/HISTAI-breast/case_1311,34,1.0,Luminal B
+histai/HISTAI-breast/case_0552,67,1.0,Luminal B
+histai/HISTAI-breast/case_0940,68,1.0,Luminal A
+histai/HISTAI-breast/case_0361,66,1.0,Luminal A
+histai/HISTAI-breast/case_0548,60,1.0,HER2+
+histai/HISTAI-breast/case_0426,70,0.0,HER2+
+histai/HISTAI-breast/case_1268,64,2.0,Luminal B
+histai/HISTAI-breast/case_1057,50,1.0,
+histai/HISTAI-breast/case_1228,45,2.0,Luminal B
+histai/HISTAI-breast/case_1114,50,1.0,HER2+
+histai/HISTAI-breast/case_0496,82,0.0,HER2+
+histai/HISTAI-breast/case_0586,55,1.0,Triple negative
+histai/HISTAI-breast/case_0869,61,2.0,Luminal B
+histai/HISTAI-breast/case_1595,49,1.0,
+histai/HISTAI-breast/case_0987,41,1.0,Luminal A
+histai/HISTAI-breast/case_1389,75,0.0,Luminal B
+histai/HISTAI-breast/case_1188,53,2.0,Luminal B
+histai/HISTAI-breast/case_1287,42,2.0,Luminal B
+histai/HISTAI-breast/case_0479,64,0.0,HER2+
+histai/HISTAI-breast/case_0634,61,1.0,HER2+
+histai/HISTAI-breast/case_1471,81,0.0,HER2+
+histai/HISTAI-breast/case_1211,38,0.0,HER2+
+histai/HISTAI-breast/case_0178,74,0.0,
+histai/HISTAI-breast/case_1104,82,1.0,Luminal B
+histai/HISTAI-breast/case_0577,70,1.0,Luminal B
+histai/HISTAI-breast/case_0717,48,2.0,Luminal B
+histai/HISTAI-breast/case_1092,37,1.0,Luminal B
+histai/HISTAI-breast/case_1357,63,1.0,Luminal A
+histai/HISTAI-breast/case_0597,49,1.0,Luminal A
+histai/HISTAI-breast/case_1326,68,2.0,
+histai/HISTAI-breast/case_0197,50,2.0,Luminal B
+histai/HISTAI-breast/case_0363,74,1.0,HER2+
+histai/HISTAI-breast/case_1571,53,1.0,HER2+
+histai/HISTAI-breast/case_0849,59,1.0,Luminal B
+histai/HISTAI-breast/case_0907,92,2.0,Luminal B
+histai/HISTAI-breast/case_0965,46,1.0,HER2+
+histai/HISTAI-breast/case_0742,44,1.0,Triple negative
+histai/HISTAI-breast/case_0537,51,1.0,Luminal A
+histai/HISTAI-breast/case_1199,69,1.0,Luminal B
+histai/HISTAI-breast/case_0560,65,1.0,Luminal B
+histai/HISTAI-breast/case_0243,59,2.0,Luminal B
+histai/HISTAI-breast/case_0102,53,2.0,Luminal B
+histai/HISTAI-breast/case_1454,50,1.0,Luminal A
+histai/HISTAI-breast/case_0984,87,2.0,HER2+
+histai/HISTAI-breast/case_1428,74,1.0,Luminal B
+histai/HISTAI-breast/case_1361,42,0.0,HER2+
+histai/HISTAI-breast/case_0847,50,2.0,Luminal B
+histai/HISTAI-breast/case_0671,80,1.0,Luminal A
+histai/HISTAI-breast/case_1253,61,2.0,Luminal B
+histai/HISTAI-breast/case_0173,49,2.0,Luminal B
+histai/HISTAI-breast/case_1331,68,1.0,Luminal B
+histai/HISTAI-breast/case_1335,53,1.0,Luminal B
+histai/HISTAI-breast/case_0872,54,1.0,Luminal A
+histai/HISTAI-breast/case_0370,59,0.0,HER2+
+histai/HISTAI-breast/case_0683,62,1.0,Triple negative
+histai/HISTAI-breast/case_0600,73,1.0,HER2+
+histai/HISTAI-breast/case_0408,85,1.0,Luminal B
+histai/HISTAI-breast/case_0498,63,0.0,
+histai/HISTAI-breast/case_0477,37,0.0,Luminal B
+histai/HISTAI-breast/case_0663,66,1.0,Luminal B
+histai/HISTAI-breast/case_0289,40,1.0,Luminal B
+histai/HISTAI-breast/case_0873,77,0.0,HER2+
+histai/HISTAI-breast/case_0750,35,2.0,Luminal B
+histai/HISTAI-breast/case_0168,53,1.0,Luminal A
+histai/HISTAI-breast/case_1203,70,2.0,Luminal B
+histai/HISTAI-breast/case_1269,76,1.0,Luminal B
+histai/HISTAI-breast/case_0375,53,1.0,Luminal A
+histai/HISTAI-breast/case_0645,66,1.0,HER2+
+histai/HISTAI-breast/case_0822,61,2.0,Luminal B
+histai/HISTAI-breast/case_0820,43,1.0,Luminal B
+histai/HISTAI-breast/case_0926,57,1.0,Luminal A
+histai/HISTAI-breast/case_1153,49,2.0,HER2+
+histai/HISTAI-breast/case_0909,28,2.0,HER2+
+histai/HISTAI-breast/case_0349,65,1.0,HER2+
+histai/HISTAI-breast/case_1386,63,1.0,Luminal B
+histai/HISTAI-breast/case_0559,74,1.0,Luminal A
+histai/HISTAI-breast/case_1409,45,0.0,Luminal A
+histai/HISTAI-breast/case_0912,71,1.0,Luminal A
+histai/HISTAI-breast/case_0813,58,1.0,Luminal B
+histai/HISTAI-breast/case_0322,52,2.0,Luminal B
+histai/HISTAI-breast/case_0840,57,1.0,Luminal A
+histai/HISTAI-breast/case_0969,63,1.0,Luminal B
+histai/HISTAI-breast/case_0675,57,1.0,
+histai/HISTAI-breast/case_0110,69,1.0,Luminal B
+histai/HISTAI-breast/case_1183,61,2.0,Luminal B
+histai/HISTAI-breast/case_0365,50,1.0,Luminal A
+histai/HISTAI-breast/case_0379,53,1.0,Luminal A
+histai/HISTAI-breast/case_1232,58,1.0,Triple negative
+histai/HISTAI-breast/case_0285,37,2.0,Luminal B
+histai/HISTAI-breast/case_0678,72,2.0,Luminal B
+histai/HISTAI-breast/case_0009,70,2.0,Luminal B
+histai/HISTAI-breast/case_1401,64,1.0,Luminal A
+histai/HISTAI-breast/case_0770,38,0.0,Luminal B
+histai/HISTAI-breast/case_0852,80,0.0,HER2+
+histai/HISTAI-breast/case_1072,45,0.0,HER2+
+histai/HISTAI-breast/case_0463,74,1.0,HER2+
+histai/HISTAI-breast/case_0288,27,1.0,HER2+
+histai/HISTAI-breast/case_0948,76,2.0,Luminal B
+histai/HISTAI-breast/case_1166,68,2.0,Luminal B
+histai/HISTAI-breast/case_1310,71,1.0,Luminal B
+histai/HISTAI-breast/case_0402,55,1.0,Luminal A
+histai/HISTAI-breast/case_1387,48,1.0,Triple negative
+histai/HISTAI-breast/case_0700,69,1.0,Triple negative
+histai/HISTAI-breast/case_1521,58,1.0,HER2+
+histai/HISTAI-breast/case_1302,54,1.0,Luminal A
+histai/HISTAI-breast/case_0838,84,1.0,HER2+
+histai/HISTAI-breast/case_1688,61,0.0,Luminal A
+histai/HISTAI-breast/case_0062,74,1.0,HER2+
+histai/HISTAI-breast/case_0264,74,1.0,HER2+
+histai/HISTAI-breast/case_0759,50,1.0,Luminal B
+histai/HISTAI-breast/case_0612,84,0.0,Triple negative
+histai/HISTAI-breast/case_0354,46,1.0,
+histai/HISTAI-breast/case_0891,69,1.0,Luminal B
+histai/HISTAI-breast/case_0330,75,2.0,Luminal B
+histai/HISTAI-breast/case_0204,72,1.0,Luminal B
+histai/HISTAI-breast/case_1152,85,2.0,Luminal B
+histai/HISTAI-breast/case_0594,93,1.0,HER2+
+histai/HISTAI-breast/case_1259,93,1.0,Luminal A
+histai/HISTAI-breast/case_0319,71,1.0,HER2+
+histai/HISTAI-breast/case_0810,72,1.0,Triple negative
+histai/HISTAI-breast/case_1338,73,1.0,HER2+
+histai/HISTAI-breast/case_1271,60,0.0,Luminal B
+histai/HISTAI-breast/case_0016,74,2.0,HER2+
+histai/HISTAI-breast/case_0572,64,1.0,HER2+
+histai/HISTAI-breast/case_1383,68,1.0,HER2+
+histai/HISTAI-breast/case_0804,81,2.0,HER2+
+histai/HISTAI-breast/case_1093,66,1.0,Luminal B
+histai/HISTAI-breast/case_1557,52,2.0,HER2+
+histai/HISTAI-breast/case_1565,69,0.0,Luminal A
+histai/HISTAI-breast/case_0457,72,1.0,Triple negative
+histai/HISTAI-breast/case_0862,73,2.0,HER2+
+histai/HISTAI-breast/case_1217,63,1.0,Luminal B
+histai/HISTAI-breast/case_0535,74,1.0,HER2+
+histai/HISTAI-breast/case_0256,52,1.0,Luminal A
+histai/HISTAI-breast/case_0540,38,1.0,Luminal B
+histai/HISTAI-breast/case_1242,46,2.0,HER2+
+histai/HISTAI-breast/case_0758,65,2.0,Luminal B
+histai/HISTAI-breast/case_1336,58,2.0,Luminal B
+histai/HISTAI-breast/case_1098,51,1.0,Luminal A
+histai/HISTAI-breast/case_0562,82,2.0,Luminal B
+histai/HISTAI-breast/case_1027,49,1.0,Luminal B
+histai/HISTAI-breast/case_0140,56,1.0,Luminal B
+histai/HISTAI-breast/case_0231,63,2.0,HER2+
+histai/HISTAI-breast/case_0605,73,1.0,Luminal B
+histai/HISTAI-breast/case_0321,74,1.0,Luminal B
+histai/HISTAI-breast/case_1089,63,1.0,Luminal B
+histai/HISTAI-breast/case_1256,70,1.0,Luminal B
+histai/HISTAI-breast/case_0690,69,1.0,Luminal A
+histai/HISTAI-breast/case_0776,51,2.0,Luminal B
+histai/HISTAI-breast/case_0135,3,2.0,Luminal B
+histai/HISTAI-breast/case_0220,66,1.0,Triple negative
+histai/HISTAI-breast/case_1154,63,1.0,Luminal B
+histai/HISTAI-breast/case_1371,42,1.0,
+histai/HISTAI-breast/case_0171,49,1.0,Luminal A
+histai/HISTAI-breast/case_0283,68,1.0,Luminal B
+histai/HISTAI-breast/case_0949,40,2.0,Luminal B
+histai/HISTAI-breast/case_0778,59,2.0,Luminal B
+histai/HISTAI-breast/case_1084,83,2.0,Luminal B
+histai/HISTAI-breast/case_0908,84,0.0,HER2+
+histai/HISTAI-breast/case_1010,72,1.0,Luminal A
+histai/HISTAI-breast/case_1412,66,0.0,HER2+
+histai/HISTAI-breast/case_1461,83,2.0,HER2+
+histai/HISTAI-breast/case_1284,72,1.0,Luminal B
+histai/HISTAI-breast/case_1082,28,1.0,Triple negative
+histai/HISTAI-breast/case_0097,64,0.0,Luminal B
+histai/HISTAI-breast/case_0652,73,0.0,HER2+
+histai/HISTAI-breast/case_0676,73,1.0,Luminal A
+histai/HISTAI-breast/case_0456,58,1.0,HER2+
+histai/HISTAI-breast/case_0964,65,1.0,Luminal B
+histai/HISTAI-breast/case_1472,63,1.0,Luminal A
+histai/HISTAI-breast/case_1257,71,1.0,HER2+
+histai/HISTAI-breast/case_1417,46,0.0,Triple negative
+histai/HISTAI-breast/case_1394,91,1.0,Triple negative
+histai/HISTAI-breast/case_0149,64,1.0,Luminal B
+histai/HISTAI-breast/case_1143,84,1.0,Triple negative
+histai/HISTAI-breast/case_0013,73,2.0,Luminal B
+histai/HISTAI-breast/case_1377,48,1.0,Luminal A
+histai/HISTAI-breast/case_1277,69,0.0,Luminal B
+histai/HISTAI-breast/case_0865,55,1.0,Luminal B
+histai/HISTAI-breast/case_0161,63,1.0,Luminal B
+histai/HISTAI-breast/case_1450,86,1.0,HER2+
+histai/HISTAI-breast/case_0499,53,1.0,Luminal B
+histai/HISTAI-breast/case_1393,49,2.0,Luminal B
+histai/HISTAI-breast/case_1016,34,0.0,Luminal B
+histai/HISTAI-breast/case_0794,49,0.0,HER2+
+histai/HISTAI-breast/case_0162,73,1.0,HER2+
+histai/HISTAI-breast/case_0620,66,1.0,Luminal B
+histai/HISTAI-breast/case_0290,54,1.0,Luminal B
+histai/HISTAI-breast/case_1388,41,1.0,Triple negative
+histai/HISTAI-breast/case_1282,71,1.0,HER2+
+histai/HISTAI-breast/case_0806,46,2.0,Luminal B
+histai/HISTAI-breast/case_0123,67,2.0,HER2+
+histai/HISTAI-breast/case_1339,81,2.0,Luminal B
+histai/HISTAI-breast/case_0547,88,1.0,HER2+
+histai/HISTAI-breast/case_1304,70,1.0,Luminal A
+histai/HISTAI-breast/case_0440,47,1.0,Luminal B
+histai/HISTAI-breast/case_1249,53,0.0,HER2+
+histai/HISTAI-breast/case_0050,35,1.0,
+histai/HISTAI-breast/case_0239,35,1.0,
+histai/HISTAI-breast/case_1099,73,0.0,Luminal B
+histai/HISTAI-breast/case_1516,66,1.0,HER2+
+histai/HISTAI-breast/case_1163,54,1.0,Luminal B
+histai/HISTAI-breast/case_1276,50,0.0,Luminal B
+histai/HISTAI-breast/case_1413,35,1.0,Luminal B
+histai/HISTAI-breast/case_0103,45,2.0,Luminal B
+histai/HISTAI-breast/case_0979,64,1.0,Luminal A
+histai/HISTAI-breast/case_0711,71,1.0,Luminal B
+histai/HISTAI-breast/case_1345,60,1.0,Luminal B
+histai/HISTAI-breast/case_0946,65,2.0,HER2+
+histai/HISTAI-breast/case_1023,43,1.0,Luminal B
+histai/HISTAI-breast/case_1325,60,0.0,
+histai/HISTAI-breast/case_0892,29,2.0,HER2+
+histai/HISTAI-breast/case_1046,75,2.0,Luminal B
+histai/HISTAI-breast/case_0272,70,1.0,Luminal A
+histai/HISTAI-breast/case_0773,87,1.0,Luminal B
+histai/HISTAI-breast/case_0051,49,2.0,Luminal B
+histai/HISTAI-breast/case_0617,65,2.0,Luminal B
+histai/HISTAI-breast/case_1193,40,2.0,Luminal B
+histai/HISTAI-breast/case_0206,46,1.0,HER2+
+histai/HISTAI-breast/case_0350,76,1.0,Luminal B
+histai/HISTAI-breast/case_0101,61,2.0,Luminal B
+histai/HISTAI-breast/case_1280,54,1.0,Luminal A
+histai/HISTAI-breast/case_1070,58,2.0,Luminal B
+histai/HISTAI-breast/case_1423,57,1.0,Luminal B
+histai/HISTAI-breast/case_0630,46,1.0,Luminal B
+histai/HISTAI-breast/case_0859,41,1.0,HER2+
+histai/HISTAI-breast/case_0981,40,1.0,Luminal B
+histai/HISTAI-breast/case_1346,68,0.0,Luminal B
+histai/HISTAI-breast/case_0991,49,1.0,Triple negative
+histai/HISTAI-breast/case_1086,60,1.0,Luminal B
+histai/HISTAI-breast/case_0900,48,1.0,Luminal B
+histai/HISTAI-breast/case_0298,53,1.0,
+histai/HISTAI-breast/case_0172,59,1.0,HER2+
+histai/HISTAI-breast/case_1545,47,2.0,HER2+
+histai/HISTAI-breast/case_0125,53,0.0,HER2+
+histai/HISTAI-breast/case_0446,44,1.0,Luminal B
+histai/HISTAI-breast/case_1524,53,0.0,Luminal B
+histai/HISTAI-breast/case_1323,38,2.0,Triple negative
+histai/HISTAI-breast/case_0789,72,1.0,Luminal A
+histai/HISTAI-breast/case_0613,73,0.0,HER2+
+histai/HISTAI-breast/case_0975,36,1.0,Luminal B
+histai/HISTAI-breast/case_0094,74,1.0,Triple negative
+histai/HISTAI-breast/case_0176,64,0.0,Luminal B
+histai/HISTAI-breast/case_0327,51,0.0,Triple negative
+histai/HISTAI-breast/case_1406,56,1.0,Luminal B
+histai/HISTAI-breast/case_0691,44,1.0,
+histai/HISTAI-breast/case_0707,41,0.0,HER2+
+histai/HISTAI-breast/case_1147,42,0.0,Luminal B
+histai/HISTAI-breast/case_0410,78,1.0,HER2+
+histai/HISTAI-breast/case_1501,51,2.0,HER2+
+histai/HISTAI-breast/case_0561,55,1.0,HER2+
+histai/HISTAI-breast/case_0293,56,1.0,Luminal B
+histai/HISTAI-breast/case_1024,37,0.0,Luminal B
+histai/HISTAI-breast/case_1460,58,1.0,Luminal A
+histai/HISTAI-breast/case_0396,62,1.0,Luminal B
+histai/HISTAI-breast/case_1574,52,0.0,HER2+
+histai/HISTAI-breast/case_0933,46,1.0,Luminal B
+histai/HISTAI-breast/case_0564,60,1.0,Luminal B
+histai/HISTAI-breast/case_1337,69,0.0,Luminal A
+histai/HISTAI-breast/case_1507,39,1.0,Luminal A
+histai/HISTAI-breast/case_0313,43,2.0,HER2+
+histai/HISTAI-breast/case_0952,74,1.0,HER2+
+histai/HISTAI-breast/case_0501,63,0.0,Luminal B
+histai/HISTAI-breast/case_1552,76,2.0,HER2+
+histai/HISTAI-breast/case_1498,37,1.0,HER2+
+histai/HISTAI-breast/case_1518,43,1.0,HER2+
+histai/HISTAI-breast/case_1146,89,0.0,
+histai/HISTAI-breast/case_1309,51,1.0,Luminal A
+histai/HISTAI-breast/case_1186,63,0.0,HER2+

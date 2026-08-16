@@ -1,0 +1,74 @@
+\chapter{Criterios de Asignación de Indicadores de Preselección}
+\label{appendix:criterios_preseleccion}
+
+En este apéndice se documentan los criterios utilizados para asignar los niveles cualitativos (bajo, medio, alto) a cada indicador de la Tabla~\ref{tab:indicadores_preseleccion} del Capítulo~\ref{cap:caracterizacion_datasets}. Su propósito es garantizar la reproducibilidad de la evaluación y explicitar los umbrales aplicados.
+
+La clasificación de \textbf{Escala} se basa en el número de registros de la cohorte \textit{raw}. La \textbf{Completitud} se evalúa mediante el porcentaje global de celdas pobladas en los metadatos, complementado con el nivel de \textit{missingness} de variables clave cuando el valor global resulta limítrofe. La \textbf{Cobertura} considera la disponibilidad de variables demográficas y clínicas relevantes para el análisis de \textit{bias}. La \textbf{Compatibilidad} evalúa la existencia de otros conjuntos de datos del mismo dominio clínico con variables comparables.
+
+\begin{table}[htbp]
+\centering
+\caption{Criterios de asignación de niveles por indicador de preselección.}
+\label{tab:criterios_preseleccion}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{p{2.5cm} p{3.8cm} p{3.8cm} p{3.8cm}}
+\toprule
+\textbf{Indicador} & \textbf{Bajo} & \textbf{Medio} & \textbf{Alto} \\
+\midrule
+
+\textbf{Escala} &
+$\geq$1500 registros &
+100--1499 registros &
+$<$100 registros \\
+& (\textit{Grande}) & (\textit{Mediana}) & (\textit{Pequeña}) \\
+\addlinespace
+
+\textbf{Completitud} &
+$\geq$90\% de celdas pobladas &
+75--89\% de celdas pobladas &
+$<$75\% de celdas pobladas \\
+& Se considera \textit{Completa} cuando alcanza el 100\%. &
+Si variables clave presentan $>$50\% de valores faltantes, la clasificación se degrada un nivel. &
+\\
+\addlinespace
+
+\textbf{Cobertura} &
+Dispone de edad, sexo y al menos un biomarcador relevante (HER2, subtipo molecular, estado mutacional). &
+Dispone de edad y sexo, más variables clínicas básicas sin biomarcadores moleculares. &
+Solo dispone de variables demográficas básicas sin biomarcadores ni variables clínicas específicas del dominio. \\
+\addlinespace
+
+\textbf{Compatibilidad} &
+Existen al menos dos conjuntos de datos del mismo dominio clínico con variables comparables y armonizables. &
+Existe un conjunto de datos del mismo dominio, pero la comparabilidad es parcial o requiere armonización adicional. &
+No existe repetición del dominio clínico en otros conjuntos de datos de la revisión. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+La verificación de estos criterios contra los valores numéricos de cada conjunto de datos se realizó a partir de las tablas de caracterización global (Tabla~\ref{tab:dataset_global_summary} del Capítulo~\ref{cap:caracterizacion_datasets}) y de síntesis de recursos (Tabla~\ref{tab:resumen_datasets_global} del Apéndice~\ref{appendix:tablasdatasets}).
+
+\begin{table}[htbp]
+\centering
+\caption{Verificación de la asignación de niveles para cada conjunto de datos.}
+\label{tab:verificacion_preseleccion}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Dataset} & \textbf{n} & \textbf{Completitud (\%)} & \textbf{Cobertura vars.} & \textbf{Compatibilidad} \\
+\midrule
+Ovarian          & 78   & 91,9  & Demográficas + clínicas bás.       & Ninguna \\
+BCNB             & 1058 & 99,0  & Edad, sexo, HER2, subtipo mol.     & Mama (HSI-BC, HISTAI-Br) \\
+CLWD             & 408  & 100   & Demográficas + clínicas bás.       & Ninguna \\
+NDB-UFES         & 237  & 95,5  & Edad, sexo, etnia                  & Ninguna \\
+TDBTA            & 3115 & 71,2  & Edad, sexo, diagnóstico, grado     & Ninguna \\
+SurGen           & 843 & 53,4  & Edad, sexo, sitio, biomarcadores   & Colorrectal (HISTAI-CRC) \\
+HSI-BC          & 47   & 99,3  & Edad, sexo, etnia, HER2, subtipo   & Mama (BCNB, HISTAI-Br) \\
+SOPHIE           & 61   & 70,3  & Edad, sexo, diagnóstico            & Ninguna \\
+HISTAI-Breast    & 1489 & 85,3  & Edad, sexo, HER2, subtipo mol.     & Mama (BCNB, HSI-BC) \\
+HISTAI-CRC-B1    & 878  & 82,9  & Edad, sexo, sitio anatómico        & Colorrectal (SurGen) \\
+HISTAI-CRC-B2    & 57   & 98,2  & Edad, sexo, sitio anatómico        & Colorrectal (SurGen) \\
+\bottomrule
+\end{tabular}
+\end{table}

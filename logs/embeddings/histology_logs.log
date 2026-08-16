@@ -1,0 +1,210 @@
+2026-06-22 01:06:24 [INFO] ======================================================================
+2026-06-22 01:06:24 [INFO]   EMBEDDING EXTRACTOR (desde patches ya guardados)
+2026-06-22 01:06:24 [INFO]   patches_dir : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/patches_histology
+2026-06-22 01:06:24 [INFO]   output_dir  : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/embeddings
+2026-06-22 01:06:24 [INFO]   modelos     : ['phikon_v2', 'uni2', 'virchow2', 'prov_gigapath']
+2026-06-22 01:06:24 [INFO]   datasets    : ['HistologyHSI']
+2026-06-22 01:06:24 [INFO] ======================================================================
+2026-06-22 01:06:24 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-22 01:06:24 [INFO] Modelo: phikon_v2
+2026-06-22 01:06:26 [INFO] Cargando modelo: Phikon-v2 (Owkin) — ViT-L/16 transformers, 1024-dim
+2026-06-22 01:06:26 [INFO]   Desde: /home/DIINF/vmieres/tesis/models/phikon_v2
+2026-06-22 01:06:29 [INFO]   Modelo cargado correctamente en cuda:0
+2026-06-22 01:06:29 [INFO]   Embedding dim: 1024
+2026-06-22 01:06:29 [INFO]   [HistologyHSI] 47 slide(s)
+2026-06-22 01:07:53 [INFO] ======================================================================
+2026-06-22 01:07:53 [INFO]   EMBEDDING EXTRACTOR (desde patches ya guardados)
+2026-06-22 01:07:53 [INFO]   patches_dir : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/patches_histology
+2026-06-22 01:07:53 [INFO]   output_dir  : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/embeddings
+2026-06-22 01:07:53 [INFO]   modelos     : ['phikon_v2']
+2026-06-22 01:07:53 [INFO]   datasets    : ['HistologyHSI']
+2026-06-22 01:07:53 [INFO] ======================================================================
+2026-06-22 01:07:53 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-22 01:07:53 [INFO] Modelo: phikon_v2
+2026-06-22 01:07:54 [INFO] Cargando modelo: Phikon-v2 (Owkin) — ViT-L/16 transformers, 1024-dim
+2026-06-22 01:07:54 [INFO]   Desde: /home/DIINF/vmieres/tesis/models/phikon_v2
+2026-06-22 01:07:55 [INFO]   Modelo cargado correctamente en cuda:0
+2026-06-22 01:07:55 [INFO]   Embedding dim: 1024
+2026-06-22 01:07:55 [INFO]   [HistologyHSI] 47 slide(s)
+2026-06-22 05:05:07 [ERROR] [84] FAILED: Unable to synchronously open file (bad object header version number)
+2026-06-22 05:05:08 [ERROR] [85] FAILED: Unable to synchronously open file (bad object header version number)
+2026-06-22 05:05:08 [ERROR] [90] FAILED: Unable to synchronously open file (bad object header version number)
+2026-06-22 05:05:08 [INFO]   [HistologyHSI/phikon_v2] Resumen: 3,090,157 patches | Errores: 3
+2026-06-22 05:05:08 [INFO] 
+======================================================================
+2026-06-22 05:05:08 [INFO]   RESUMEN GLOBAL
+2026-06-22 05:05:08 [INFO]   Tiempo total: 237.2 min
+2026-06-22 05:05:08 [INFO]   Output: /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/embeddings
+2026-06-22 05:05:08 [INFO] ======================================================================
+2026-06-22 05:05:08 [INFO]   Stats guardadas en: /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/embeddings/embedding_stats.csv
+2026-06-22 13:29:33 [INFO] ======================================================================
+2026-06-22 13:29:33 [INFO]   EMBEDDING EXTRACTOR (desde patches ya guardados)
+2026-06-22 13:29:33 [INFO]   patches_dir : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/patches_histology
+2026-06-22 13:29:33 [INFO]   output_dir  : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/embeddings
+2026-06-22 13:29:33 [INFO]   modelos     : ['prov_gigapath', 'uni2', 'virchow2']
+2026-06-22 13:29:33 [INFO]   datasets    : ['HistologyHSI']
+2026-06-22 13:29:33 [INFO] ======================================================================
+2026-06-22 13:29:33 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-22 13:29:33 [INFO] Modelo: prov_gigapath
+2026-06-22 13:29:34 [INFO] Cargando modelo: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-06-22 13:29:34 [INFO]   Desde: /home/DIINF/vmieres/tesis/models/prov_gigapath
+2026-06-22 13:30:37 [INFO]   Cargado: pytorch_model.bin
+2026-06-22 13:30:38 [INFO]   Modelo cargado correctamente en cuda:0
+2026-06-22 13:30:40 [INFO]   Embedding dim: 1536
+2026-06-22 13:30:40 [INFO]   [HistologyHSI] 47 slide(s)
+2026-06-23 00:26:54 [INFO] ======================================================================
+2026-06-23 00:26:54 [INFO]   EMBEDDING EXTRACTOR (desde patches ya guardados)
+2026-06-23 00:26:54 [INFO]   patches_dir : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/patches_histology
+2026-06-23 00:26:54 [INFO]   output_dir  : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/embeddings
+2026-06-23 00:26:54 [INFO]   modelos     : ['prov_gigapath', 'uni2', 'virchow2']
+2026-06-23 00:26:54 [INFO]   datasets    : ['HistologyHSI']
+2026-06-23 00:26:54 [INFO] ======================================================================
+2026-06-23 00:26:54 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-23 00:26:54 [INFO] Modelo: prov_gigapath
+2026-06-23 00:26:56 [INFO] Cargando modelo: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-06-23 00:26:56 [INFO]   Desde: /home/DIINF/vmieres/tesis/models/prov_gigapath
+2026-06-23 00:27:57 [INFO]   Cargado: pytorch_model.bin
+2026-06-23 00:27:58 [INFO]   Modelo cargado correctamente en cuda:0
+2026-06-23 00:27:59 [INFO]   Embedding dim: 1536
+2026-06-23 00:27:59 [INFO]   [HistologyHSI] 47 slide(s)
+2026-06-23 00:42:23 [INFO] ======================================================================
+2026-06-23 00:42:23 [INFO]   EMBEDDING EXTRACTOR (desde patches ya guardados)
+2026-06-23 00:42:23 [INFO]   patches_dir : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/patches_histology
+2026-06-23 00:42:23 [INFO]   output_dir  : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/embeddings
+2026-06-23 00:42:23 [INFO]   modelos     : ['prov_gigapath']
+2026-06-23 00:42:23 [INFO]   datasets    : ['HistologyHSI']
+2026-06-23 00:42:23 [INFO] ======================================================================
+2026-06-23 00:42:23 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-23 00:42:23 [INFO] Modelo: prov_gigapath
+2026-06-23 00:42:23 [INFO] Cargando modelo: ProvGigaPath (Microsoft) — ViT-g/14 tile encoder, 1536-dim
+2026-06-23 00:42:23 [INFO]   Desde: /home/DIINF/vmieres/tesis/models/prov_gigapath
+2026-06-23 00:42:37 [INFO]   Cargado: pytorch_model.bin
+2026-06-23 00:42:37 [INFO]   Modelo cargado correctamente en cuda:0
+2026-06-23 00:42:38 [INFO]   Embedding dim: 1536
+2026-06-23 00:42:38 [INFO]   [HistologyHSI] 47 slide(s)
+2026-06-23 02:17:30 [ERROR] [84] FAILED: Unable to synchronously open file (bad object header version number)
+2026-06-23 02:17:30 [ERROR] [85] FAILED: Unable to synchronously open file (bad object header version number)
+2026-06-23 02:17:31 [ERROR] [90] FAILED: Unable to synchronously open file (bad object header version number)
+2026-06-23 02:17:31 [INFO]   [HistologyHSI/prov_gigapath] Resumen: 366,143 patches | Errores: 3
+2026-06-23 02:17:31 [INFO] 
+======================================================================
+2026-06-23 02:17:31 [INFO]   RESUMEN GLOBAL
+2026-06-23 02:17:31 [INFO]   Tiempo total: 95.1 min
+2026-06-23 02:17:31 [INFO]   Output: /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/embeddings
+2026-06-23 02:17:31 [INFO] ======================================================================
+2026-06-23 02:17:31 [INFO]   Stats guardadas en: /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/embeddings/embedding_stats.csv
+2026-06-26 13:55:09 [INFO] ======================================================================
+2026-06-26 13:55:09 [INFO]   EMBEDDING EXTRACTOR (desde patches ya guardados)
+2026-06-26 13:55:09 [INFO]   patches_dir : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/patches_histology
+2026-06-26 13:55:09 [INFO]   output_dir  : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/embeddings
+2026-06-26 13:55:09 [INFO]   modelos     : ['uni2', 'virchow2']
+2026-06-26 13:55:09 [INFO]   datasets    : ['HistologyHSI']
+2026-06-26 13:55:09 [INFO] ======================================================================
+2026-06-26 13:55:09 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-26 13:55:09 [INFO] Modelo: uni2
+2026-06-26 13:55:10 [INFO] Loading model: UNI2-h (MahmoodLab) — ViT-H/14, 1024-dim
+2026-06-26 13:55:10 [INFO]   From: /home/DIINF/vmieres/tesis/models/uni2
+2026-06-26 13:55:49 [INFO]   Loaded bin: ['pytorch_model.bin']
+2026-06-26 13:56:11 [INFO] ======================================================================
+2026-06-26 13:56:11 [INFO]   EMBEDDING EXTRACTOR (desde patches ya guardados)
+2026-06-26 13:56:11 [INFO]   patches_dir : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/patches_histology
+2026-06-26 13:56:11 [INFO]   output_dir  : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/embeddings
+2026-06-26 13:56:11 [INFO]   modelos     : ['uni2', 'virchow2']
+2026-06-26 13:56:11 [INFO]   datasets    : ['HistologyHSI']
+2026-06-26 13:56:11 [INFO] ======================================================================
+2026-06-26 13:56:11 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-26 13:56:11 [INFO] Modelo: uni2
+2026-06-26 13:56:12 [INFO] Cargando modelo: UNI2-h (MahmoodLab) — ViT-H/14, 1536-dim
+2026-06-26 13:56:12 [INFO]   Desde: /home/DIINF/vmieres/tesis/models/uni2
+2026-06-26 13:56:20 [INFO]   Cargado bin: ['pytorch_model.bin']
+2026-06-26 13:56:20 [INFO]   Modelo cargado correctamente en cuda:0
+2026-06-26 13:56:21 [INFO]   Embedding dim: 1536
+2026-06-26 13:56:21 [INFO]   [HistologyHSI] 47 slide(s)
+2026-06-26 14:02:43 [INFO] ======================================================================
+2026-06-26 14:02:43 [INFO]   EMBEDDING EXTRACTOR (desde patches ya guardados)
+2026-06-26 14:02:43 [INFO]   patches_dir : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/patches_histology
+2026-06-26 14:02:43 [INFO]   output_dir  : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/embeddings
+2026-06-26 14:02:43 [INFO]   modelos     : ['uni2', 'virchow2']
+2026-06-26 14:02:43 [INFO]   datasets    : ['HistologyHSI']
+2026-06-26 14:02:43 [INFO] ======================================================================
+2026-06-26 14:02:43 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-26 14:02:43 [INFO] Modelo: uni2
+2026-06-26 14:02:43 [INFO] Cargando modelo: UNI2-h (MahmoodLab) — ViT-H/14, 1536-dim
+2026-06-26 14:02:43 [INFO]   Desde: /home/DIINF/vmieres/tesis/models/uni2
+2026-06-26 14:03:11 [INFO] ======================================================================
+2026-06-26 14:03:11 [INFO]   EMBEDDING EXTRACTOR (desde patches ya guardados)
+2026-06-26 14:03:11 [INFO]   patches_dir : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/patches_histology
+2026-06-26 14:03:11 [INFO]   output_dir  : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/embeddings
+2026-06-26 14:03:11 [INFO]   modelos     : ['uni2', 'virchow2']
+2026-06-26 14:03:11 [INFO]   datasets    : ['HistologyHSI']
+2026-06-26 14:03:11 [INFO] ======================================================================
+2026-06-26 14:03:11 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-26 14:03:11 [INFO] Modelo: uni2
+2026-06-26 14:03:12 [INFO] Loading model: UNI2-h (MahmoodLab) — ViT-H/14, 1536-dim
+2026-06-26 14:03:12 [INFO]   From: /home/DIINF/vmieres/tesis/models/uni2
+2026-06-26 14:03:20 [INFO]   Loaded bin: ['pytorch_model.bin']
+2026-06-26 14:05:40 [INFO] ======================================================================
+2026-06-26 14:05:40 [INFO]   EMBEDDING EXTRACTOR (desde patches ya guardados)
+2026-06-26 14:05:40 [INFO]   patches_dir : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/patches_histology
+2026-06-26 14:05:40 [INFO]   output_dir  : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/embeddings
+2026-06-26 14:05:40 [INFO]   modelos     : ['uni2', 'virchow2']
+2026-06-26 14:05:40 [INFO]   datasets    : ['HistologyHSI']
+2026-06-26 14:05:40 [INFO] ======================================================================
+2026-06-26 14:05:40 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-26 14:05:40 [INFO] Modelo: uni2
+2026-06-26 14:05:40 [INFO] Loading model: UNI2-h (MahmoodLab) — ViT-H/14, 1536-dim
+2026-06-26 14:05:40 [INFO]   From: /home/DIINF/vmieres/tesis/models/uni2
+2026-06-26 14:05:48 [INFO]   Loaded bin: ['pytorch_model.bin']
+2026-06-26 14:05:49 [INFO]   Model loaded on cuda:0
+2026-06-26 14:05:49 [INFO]   Embedding dim: 1536
+2026-06-26 14:05:49 [INFO]   [HistologyHSI] 47 slide(s)
+2026-06-26 14:13:04 [INFO] ======================================================================
+2026-06-26 14:13:04 [INFO]   EMBEDDING EXTRACTOR (desde patches ya guardados)
+2026-06-26 14:13:04 [INFO]   patches_dir : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/patches_histology
+2026-06-26 14:13:04 [INFO]   output_dir  : /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/embeddings
+2026-06-26 14:13:04 [INFO]   modelos     : ['uni2', 'virchow2']
+2026-06-26 14:13:04 [INFO]   datasets    : ['HistologyHSI']
+2026-06-26 14:13:04 [INFO] ======================================================================
+2026-06-26 14:13:04 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-26 14:13:04 [INFO] Modelo: uni2
+2026-06-26 14:13:04 [INFO] Loading model: UNI2-h (MahmoodLab) — ViT-H/14, 1536-dim
+2026-06-26 14:13:04 [INFO]   From: /home/DIINF/vmieres/tesis/models/uni2
+2026-06-26 14:13:12 [INFO]   Loaded bin: ['pytorch_model.bin']
+2026-06-26 14:13:13 [INFO]   Model loaded on cuda:0
+2026-06-26 14:13:13 [INFO]   Embedding dim: 1536
+2026-06-26 14:13:13 [INFO]   [HistologyHSI] 47 slide(s)
+2026-06-26 23:51:48 [ERROR] [84] FAILED: Unable to synchronously open file (bad object header version number)
+2026-06-26 23:51:48 [ERROR] [85] FAILED: Unable to synchronously open file (bad object header version number)
+2026-06-26 23:51:48 [ERROR] [90] FAILED: Unable to synchronously open file (bad object header version number)
+2026-06-26 23:51:48 [INFO]   [HistologyHSI/uni2] Resumen: 3,018,791 patches | Errores: 3
+2026-06-26 23:51:49 [INFO] 
+────────────────────────────────────────────────────────────
+2026-06-26 23:51:49 [INFO] Modelo: virchow2
+2026-06-26 23:51:49 [INFO] Loading model: Virchow2 (Paige) — ViT-H/14 con register tokens, 1024-dim
+2026-06-26 23:51:49 [INFO]   From: /home/DIINF/vmieres/tesis/models/virchow2
+2026-06-26 23:52:02 [INFO]   Loaded safetensors: ['model.safetensors']
+2026-06-26 23:52:27 [INFO]   Model loaded on cuda:0
+2026-06-26 23:52:28 [INFO]   Embedding dim: 2560
+2026-06-26 23:52:28 [INFO]   [HistologyHSI] 47 slide(s)
+2026-06-27 12:34:20 [ERROR] [84] FAILED: Unable to synchronously open file (bad object header version number)
+2026-06-27 12:34:21 [ERROR] [85] FAILED: Unable to synchronously open file (bad object header version number)
+2026-06-27 12:34:21 [ERROR] [90] FAILED: Unable to synchronously open file (bad object header version number)
+2026-06-27 12:34:21 [INFO]   [HistologyHSI/virchow2] Resumen: 3,164,756 patches | Errores: 3
+2026-06-27 12:34:21 [INFO] 
+======================================================================
+2026-06-27 12:34:21 [INFO]   RESUMEN GLOBAL
+2026-06-27 12:34:21 [INFO]   Tiempo total: 1341.3 min
+2026-06-27 12:34:21 [INFO]   Output: /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/embeddings
+2026-06-27 12:34:21 [INFO] ======================================================================
+2026-06-27 12:34:21 [INFO]   Stats guardadas en: /home/DIINF/datasets_iacis/2026_HistologyHSI-BC-Recurrence/embeddings/embedding_stats.csv
