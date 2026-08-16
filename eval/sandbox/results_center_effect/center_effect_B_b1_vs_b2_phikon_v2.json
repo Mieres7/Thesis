@@ -1,0 +1,233 @@
+{
+  "experiment": "B",
+  "key": "B_b1_vs_b2",
+  "domain": "colorectal",
+  "comparison": "HISTAI-CRC-B1 vs HISTAI-CRC-B2",
+  "datasets": [
+    "HISTAI_CRC_B1",
+    "HISTAI_CRC_B2"
+  ],
+  "task_key": "crc_site",
+  "note": "mismo esc\u00e1ner, mismo dominio -> se\u00f1al de sitio/instituci\u00f3n",
+  "model": "phikon_v2",
+  "seed": 42,
+  "n_bootstrap": 1000,
+  "protocol": {
+    "probe": "MLPClassifier(hidden_layer_sizes=(256,), alpha=1e-4, max_iter=500, early_stopping=False)",
+    "oversampling": "minority classes to max class size (fit_mlp_probe balanced=True)",
+    "cv": "StratifiedGroupKFold(n_splits=5, shuffle=True) grouped by uid",
+    "bootstrap_level": "patient (uid)",
+    "auc": "one-vs-rest macro (multiclass) / ROC AUC (binary)"
+  },
+  "n_total": 935,
+  "n_test": 935,
+  "classes": [
+    "HISTAI_CRC_B1",
+    "HISTAI_CRC_B2"
+  ],
+  "test_metrics": {
+    "accuracy": 0.9775401069518717,
+    "balanced_accuracy": 0.8568017423969947,
+    "f1_macro": 0.8921159773847396,
+    "auc": 0.9878112136834113,
+    "per_class_sensitivity": {
+      "class_0": 0.9943052391799544,
+      "class_1": 0.7192982456140351
+    }
+  },
+  "bootstrap": {
+    "accuracy": {
+      "point": 0.9775401069518717,
+      "ci_low": 0.9668449197860962,
+      "ci_high": 0.986096256684492,
+      "n_valid_bootstrap": 1000
+    },
+    "balanced_accuracy": {
+      "point": 0.8568017423969947,
+      "ci_low": 0.8007287690690238,
+      "ci_high": 0.9150938772305773,
+      "n_valid_bootstrap": 1000
+    },
+    "f1_macro": {
+      "point": 0.8921159773847396,
+      "ci_low": 0.8444355653026083,
+      "ci_high": 0.9324070708621232,
+      "n_valid_bootstrap": 1000
+    },
+    "auc": {
+      "point": 0.9878112136834113,
+      "ci_low": 0.9785818135966659,
+      "ci_high": 0.9947687924878955,
+      "n_valid_bootstrap": 1000
+    },
+    "per_class_sensitivity": {
+      "class_0": {
+        "point": 0.9943052391799544,
+        "ci_low": 0.9885442587984359,
+        "ci_high": 0.9988545900834561,
+        "n_valid_bootstrap": 1000
+      },
+      "class_1": {
+        "point": 0.7192982456140351,
+        "ci_low": 0.6071428571428571,
+        "ci_high": 0.835820895522388,
+        "n_valid_bootstrap": 1000
+      }
+    }
+  },
+  "confusion_matrix": {
+    "confusion_matrix": [
+      [
+        873,
+        5
+      ],
+      [
+        16,
+        41
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "tp": 873,
+        "fp": 16,
+        "fn": 5,
+        "tn": 41,
+        "precision": 0.9820022497187851,
+        "recall": 0.9943052391799544,
+        "f1": 0.9881154499151104,
+        "support": 878
+      },
+      "1": {
+        "tp": 41,
+        "fp": 5,
+        "fn": 16,
+        "tn": 873,
+        "precision": 0.8913043478260869,
+        "recall": 0.7192982456140351,
+        "f1": 0.7961165048543689,
+        "support": 57
+      }
+    },
+    "labels": [
+      "0",
+      "1"
+    ]
+  },
+  "per_fold": [
+    {
+      "fold": 0,
+      "n_train": 748,
+      "n_test": 187,
+      "classes_in_train": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2"
+      ],
+      "classes_in_test": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2"
+      ],
+      "metrics": {
+        "accuracy": 0.9946524064171123,
+        "balanced_accuracy": 0.9971428571428571,
+        "f1_macro": 0.978567335243553,
+        "auc": 1.0,
+        "per_class_sensitivity": {
+          "class_0": 0.9942857142857143,
+          "class_1": 1.0
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "n_train": 748,
+      "n_test": 187,
+      "classes_in_train": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2"
+      ],
+      "classes_in_test": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2"
+      ],
+      "metrics": {
+        "accuracy": 0.9732620320855615,
+        "balanced_accuracy": 0.8153409090909091,
+        "f1_macro": 0.8613787991104522,
+        "auc": 0.9834710743801652,
+        "per_class_sensitivity": {
+          "class_0": 0.9943181818181818,
+          "class_1": 0.6363636363636364
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "n_train": 748,
+      "n_test": 187,
+      "classes_in_train": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2"
+      ],
+      "classes_in_test": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2"
+      ],
+      "metrics": {
+        "accuracy": 0.9786096256684492,
+        "balanced_accuracy": 0.8721428571428571,
+        "f1_macro": 0.9034090909090909,
+        "auc": 0.9923809523809524,
+        "per_class_sensitivity": {
+          "class_0": 0.9942857142857143,
+          "class_1": 0.75
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "n_train": 748,
+      "n_test": 187,
+      "classes_in_train": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2"
+      ],
+      "classes_in_test": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2"
+      ],
+      "metrics": {
+        "accuracy": 0.9732620320855615,
+        "balanced_accuracy": 0.8153409090909091,
+        "f1_macro": 0.8613787991104522,
+        "auc": 0.9958677685950413,
+        "per_class_sensitivity": {
+          "class_0": 0.9943181818181818,
+          "class_1": 0.6363636363636364
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "n_train": 748,
+      "n_test": 187,
+      "classes_in_train": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2"
+      ],
+      "classes_in_test": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2"
+      ],
+      "metrics": {
+        "accuracy": 0.9679144385026738,
+        "balanced_accuracy": 0.7698863636363635,
+        "f1_macro": 0.8249063670411985,
+        "auc": 0.9726239669421487,
+        "per_class_sensitivity": {
+          "class_0": 0.9943181818181818,
+          "class_1": 0.5454545454545454
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "experiment": "A",
+  "key": "A_colorectal",
+  "domain": "colorectal",
+  "comparison": "SurGen vs HISTAI-CRC-B1 vs HISTAI-CRC-B2",
+  "datasets": [
+    "SurGen",
+    "HISTAI_CRC_B1",
+    "HISTAI_CRC_B2"
+  ],
+  "task_key": "crc_site",
+  "note": null,
+  "model": "phikon_v2",
+  "seed": 42,
+  "n_bootstrap": 1000,
+  "protocol": {
+    "probe": "MLPClassifier(hidden_layer_sizes=(256,), alpha=1e-4, max_iter=500, early_stopping=False)",
+    "oversampling": "minority classes to max class size (fit_mlp_probe balanced=True)",
+    "cv": "StratifiedGroupKFold(n_splits=5, shuffle=True) grouped by uid",
+    "bootstrap_level": "patient (uid)",
+    "auc": "one-vs-rest macro (multiclass) / ROC AUC (binary)"
+  },
+  "n_total": 1700,
+  "n_test": 1700,
+  "classes": [
+    "HISTAI_CRC_B1",
+    "HISTAI_CRC_B2",
+    "SurGen"
+  ],
+  "test_metrics": {
+    "accuracy": 0.9894117647058823,
+    "balanced_accuracy": 0.9275466570754906,
+    "f1_macro": 0.9410392231050574,
+    "auc_ovr_macro": 0.9975249934925042,
+    "per_class_sensitivity": {
+      "class_0": 0.9931662870159453,
+      "class_1": 0.7894736842105263,
+      "class_2": 1.0
+    }
+  },
+  "bootstrap": {
+    "accuracy": {
+      "point": 0.9894117647058823,
+      "ci_low": 0.9841176470588235,
+      "ci_high": 0.9935294117647059,
+      "n_valid_bootstrap": 1000
+    },
+    "balanced_accuracy": {
+      "point": 0.9275466570754906,
+      "ci_low": 0.8902964402866909,
+      "ci_high": 0.9598446477303678,
+      "n_valid_bootstrap": 1000
+    },
+    "f1_macro": {
+      "point": 0.9410392231050574,
+      "ci_low": 0.9097778109348346,
+      "ci_high": 0.965510701323656,
+      "n_valid_bootstrap": 1000
+    },
+    "auc_ovr_macro": {
+      "point": 0.9975249934925042,
+      "ci_low": 0.9956976351878102,
+      "ci_high": 0.999052823469835,
+      "n_valid_bootstrap": 1000
+    },
+    "per_class_sensitivity": {
+      "class_0": {
+        "point": 0.9931662870159453,
+        "ci_low": 0.9873271889400922,
+        "ci_high": 0.9987879885814668,
+        "n_valid_bootstrap": 1000
+      },
+      "class_1": {
+        "point": 0.7894736842105263,
+        "ci_low": 0.67785368384642,
+        "ci_high": 0.8870967741935484,
+        "n_valid_bootstrap": 1000
+      },
+      "class_2": {
+        "point": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n_valid_bootstrap": 1000
+      }
+    }
+  },
+  "confusion_matrix": {
+    "confusion_matrix": [
+      [
+        872,
+        6,
+        0
+      ],
+      [
+        12,
+        45,
+        0
+      ],
+      [
+        0,
+        0,
+        765
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "tp": 872,
+        "fp": 12,
+        "fn": 6,
+        "tn": 810,
+        "precision": 0.9864253393665159,
+        "recall": 0.9931662870159453,
+        "f1": 0.9897843359818389,
+        "support": 878
+      },
+      "1": {
+        "tp": 45,
+        "fp": 6,
+        "fn": 12,
+        "tn": 1637,
+        "precision": 0.8823529411764706,
+        "recall": 0.7894736842105263,
+        "f1": 0.8333333333333333,
+        "support": 57
+      },
+      "2": {
+        "tp": 765,
+        "fp": 0,
+        "fn": 0,
+        "tn": 935,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 765
+      }
+    },
+    "labels": [
+      "0",
+      "1",
+      "2"
+    ]
+  },
+  "per_fold": [
+    {
+      "fold": 0,
+      "n_train": 1360,
+      "n_test": 340,
+      "classes_in_train": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2",
+        "SurGen"
+      ],
+      "classes_in_test": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2",
+        "SurGen"
+      ],
+      "metrics": {
+        "accuracy": 0.9735294117647059,
+        "balanced_accuracy": 0.8276190476190477,
+        "f1_macro": 0.8486442735734521,
+        "auc_ovr_macro": 0.9913275437299828,
+        "per_class_sensitivity": {
+          "class_0": 0.9828571428571429,
+          "class_1": 0.5,
+          "class_2": 1.0
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "n_train": 1360,
+      "n_test": 340,
+      "classes_in_train": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2",
+        "SurGen"
+      ],
+      "classes_in_test": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2",
+        "SurGen"
+      ],
+      "metrics": {
+        "accuracy": 0.9970588235294118,
+        "balanced_accuracy": 0.9696969696969697,
+        "f1_macro": 0.9831826970637169,
+        "auc_ovr_macro": 0.9996890353419284,
+        "per_class_sensitivity": {
+          "class_0": 1.0,
+          "class_1": 0.9090909090909091,
+          "class_2": 1.0
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "n_train": 1360,
+      "n_test": 340,
+      "classes_in_train": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2",
+        "SurGen"
+      ],
+      "classes_in_test": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2",
+        "SurGen"
+      ],
+      "metrics": {
+        "accuracy": 0.9911764705882353,
+        "balanced_accuracy": 0.9375,
+        "f1_macro": 0.9495480911911507,
+        "auc_ovr_macro": 0.9990671060257853,
+        "per_class_sensitivity": {
+          "class_0": 0.9943181818181818,
+          "class_1": 0.8181818181818182,
+          "class_2": 1.0
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "n_train": 1360,
+      "n_test": 340,
+      "classes_in_train": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2",
+        "SurGen"
+      ],
+      "classes_in_test": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2",
+        "SurGen"
+      ],
+      "metrics": {
+        "accuracy": 0.9882352941176471,
+        "balanced_accuracy": 0.9147619047619048,
+        "f1_macro": 0.9356060606060606,
+        "auc_ovr_macro": 0.9990261324041811,
+        "per_class_sensitivity": {
+          "class_0": 0.9942857142857143,
+          "class_1": 0.75,
+          "class_2": 1.0
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "n_train": 1360,
+      "n_test": 340,
+      "classes_in_train": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2",
+        "SurGen"
+      ],
+      "classes_in_test": [
+        "HISTAI_CRC_B1",
+        "HISTAI_CRC_B2",
+        "SurGen"
+      ],
+      "metrics": {
+        "accuracy": 0.9970588235294118,
+        "balanced_accuracy": 0.9981060606060606,
+        "f1_macro": 0.9845575787604773,
+        "auc_ovr_macro": 0.999435531926126,
+        "per_class_sensitivity": {
+          "class_0": 0.9943181818181818,
+          "class_1": 1.0,
+          "class_2": 1.0
+        }
+      }
+    }
+  ]
+}

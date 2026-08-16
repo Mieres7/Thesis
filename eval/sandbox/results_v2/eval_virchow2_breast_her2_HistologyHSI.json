@@ -1,0 +1,384 @@
+{
+  "task": "her2_status",
+  "model": "virchow2",
+  "dataset": "HistologyHSI",
+  "seed": 42,
+  "cv_used": true,
+  "eval_method_id": "cv5",
+  "eval_method_reason": "small_n",
+  "mlp_early_stopping": true,
+  "n_total": 44,
+  "n_train": 35,
+  "n_val": null,
+  "n_test": 44,
+  "classes": [
+    0.0,
+    2.0
+  ],
+  "probes": {
+    "mlp": {
+      "val_metrics": {
+        "accuracy": 0.4444444444444444,
+        "balanced_accuracy": 0.4,
+        "f1_macro": 0.3076923076923077,
+        "auc": 0.19999999999999998,
+        "per_class_sensitivity": {
+          "class_0": 0.8,
+          "class_1": 0.0
+        }
+      },
+      "test_metrics": {
+        "accuracy": 0.6818181818181818,
+        "balanced_accuracy": 0.4166666666666667,
+        "f1_macro": 0.40540540540540543,
+        "auc": 0.4826388888888889,
+        "per_class_sensitivity": {
+          "class_0": 0.8333333333333334,
+          "class_1": 0.0
+        },
+        "auc_ba_diagnostics": {
+          "k_check": {
+            "k_canonical": 2,
+            "k_observed": 2,
+            "observed_labels": [
+              0,
+              1
+            ],
+            "missing_canonical_labels": [],
+            "matches": true
+          },
+          "per_class_ovr_auc": {
+            "class_0": 0.4826388888888889,
+            "class_1": 0.4826388888888889
+          },
+          "hand_till_ovo_auc": [
+            {
+              "class_a": 0,
+              "class_b": 1,
+              "auc": 0.4826388888888889,
+              "n_a": 36,
+              "n_b": 8
+            }
+          ],
+          "null_auc_permutation": {
+            "class_0": {
+              "auc_observed": 0.4826388888888889,
+              "null_mean": 0.5052152777777777,
+              "null_sd": 0.11272289732270303,
+              "null_p95": 0.6944444444444444,
+              "p_value_one_sided": 0.5964035964035964,
+              "n_permutations": 1000
+            },
+            "class_1": {
+              "auc_observed": 0.4826388888888889,
+              "null_mean": 0.5007430555555555,
+              "null_sd": 0.11390626838369111,
+              "null_p95": 0.6909722222222222,
+              "p_value_one_sided": 0.5754245754245755,
+              "n_permutations": 1000
+            }
+          },
+          "chance_adjusted_auc_ba": {
+            "auc_relative_to_chance": -0.03472222222222221,
+            "ba_relative_to_chance": -0.16666666666666663,
+            "auc_minus_ba_relative": 0.13194444444444442,
+            "auc_chance": 0.5,
+            "ba_chance": 0.5
+          }
+        }
+      },
+      "confusion_matrix": {
+        "confusion_matrix": [
+          [
+            30,
+            6
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        "per_class": {
+          "0": {
+            "tp": 30,
+            "fp": 8,
+            "fn": 6,
+            "tn": 0,
+            "precision": 0.7894736842105263,
+            "recall": 0.8333333333333334,
+            "f1": 0.8108108108108109,
+            "support": 36
+          },
+          "1": {
+            "tp": 0,
+            "fp": 6,
+            "fn": 8,
+            "tn": 30,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 8
+          }
+        },
+        "labels": [
+          "0",
+          "1"
+        ]
+      },
+      "error_distribution": {
+        "total_errors": 14,
+        "total_samples": 44,
+        "error_rate": 0.3181818181818182,
+        "confused_pairs": [
+          [
+            "1",
+            "0",
+            8
+          ],
+          [
+            "0",
+            "1",
+            6
+          ]
+        ],
+        "most_confused": [
+          "1",
+          "0",
+          8
+        ]
+      },
+      "bootstrap": {
+        "accuracy": {
+          "point": 0.6818181818181818,
+          "ci_low": 0.5454545454545454,
+          "ci_high": 0.8181818181818182,
+          "n_valid_bootstrap": 1000
+        },
+        "balanced_accuracy": {
+          "point": 0.4166666666666667,
+          "ci_low": 0.35294117647058826,
+          "ci_high": 0.472240990990991,
+          "n_valid_bootstrap": 1000
+        },
+        "f1_macro": {
+          "point": 0.40540540540540543,
+          "ci_low": 0.35294117647058826,
+          "ci_high": 0.45,
+          "n_valid_bootstrap": 1000
+        },
+        "auc": {
+          "point": 0.4826388888888889,
+          "ci_low": 0.2569884169884172,
+          "ci_high": 0.7221122908622908,
+          "n_valid_bootstrap": 1000
+        },
+        "per_class_sensitivity": {
+          "class_0": {
+            "point": 0.8333333333333334,
+            "ci_low": 0.7058823529411765,
+            "ci_high": 0.944481981981982,
+            "n_valid_bootstrap": 1000
+          },
+          "class_1": {
+            "point": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0,
+            "n_valid_bootstrap": 1000
+          }
+        }
+      },
+      "fairness_summary": {
+        "age": {
+          "delta_ba": {
+            "delta_ba": 0.12318840579710144,
+            "best_group": "50-70",
+            "worst_group": ">=70",
+            "best_ba": 0.45652173913043476,
+            "worst_ba": 0.3333333333333333
+          },
+          "delta_f1": {
+            "delta_f1": 0.14680851063829786,
+            "best_group": "50-70",
+            "worst_group": ">=70",
+            "best_f1": 0.44680851063829785,
+            "worst_f1": 0.3
+          },
+          "delta_auc": {
+            "delta_auc": 0.10724637681159421,
+            "best_group": "50-70",
+            "worst_group": ">=70",
+            "best_auc": 0.5072463768115942,
+            "worst_auc": 0.4
+          },
+          "avg_gap": {
+            "avg_gap": 0.053623188405797106,
+            "per_group": {
+              "50-70": 0.02460748792270534,
+              ">=70": 0.08263888888888887
+            }
+          },
+          "equalized_odds": {
+            "tpr_gap": 0.12318840579710144,
+            "fpr_gap": 0.12318840579710144,
+            "tpr_best_group": "50-70",
+            "tpr_worst_group": ">=70",
+            "fpr_best_group": "50-70",
+            "fpr_worst_group": ">=70"
+          },
+          "auc_es": 0.3753925120772947,
+          "n_subgroups": 2
+        }
+      },
+      "fairness_gaps_bootstrap": {
+        "age": {
+          "delta_ba": {
+            "point": 0.12318840579710144,
+            "ci_low": 0.007886904761904807,
+            "ci_high": 0.2786538461538461,
+            "n_valid_bootstrap": 959
+          },
+          "delta_f1": {
+            "point": 0.14680851063829786,
+            "ci_low": 0.02535714285714291,
+            "ci_high": 0.29672014260249546,
+            "n_valid_bootstrap": 959
+          },
+          "delta_auc": {
+            "point": 0.10724637681159421,
+            "ci_low": 0.010720899470899445,
+            "ci_high": 0.6399909420289853,
+            "n_valid_bootstrap": 959
+          },
+          "avg_gap": {
+            "point": 0.053623188405797106,
+            "ci_low": 0.0170436507936508,
+            "ci_high": 0.321208592132505,
+            "n_valid_bootstrap": 959
+          },
+          "tpr_gap": {
+            "point": 0.12318840579710144,
+            "ci_low": 0.007886904761904807,
+            "ci_high": 0.2786538461538461,
+            "n_valid_bootstrap": 959
+          },
+          "fpr_gap": {
+            "point": 0.12318840579710144,
+            "ci_low": 0.00788690476190476,
+            "ci_high": 0.2786538461538461,
+            "n_valid_bootstrap": 959
+          },
+          "auc_es": {
+            "point": 0.3753925120772947,
+            "ci_low": -0.21063959727752837,
+            "ci_high": 0.5841370275256141,
+            "n_valid_bootstrap": 959
+          },
+          "_n_bootstrap_requested": 1000,
+          "_n_bootstrap_failed": 41
+        }
+      },
+      "error_by_subgroup": {},
+      "cv_fold_k_checks": [
+        {
+          "fold": 0,
+          "k_canonical": 2,
+          "k_observed": 2,
+          "observed_labels": [
+            0,
+            1
+          ],
+          "missing_canonical_labels": [],
+          "matches": true
+        },
+        {
+          "fold": 1,
+          "k_canonical": 2,
+          "k_observed": 2,
+          "observed_labels": [
+            0,
+            1
+          ],
+          "missing_canonical_labels": [],
+          "matches": true
+        },
+        {
+          "fold": 2,
+          "k_canonical": 2,
+          "k_observed": 2,
+          "observed_labels": [
+            0,
+            1
+          ],
+          "missing_canonical_labels": [],
+          "matches": true
+        },
+        {
+          "fold": 3,
+          "k_canonical": 2,
+          "k_observed": 2,
+          "observed_labels": [
+            0,
+            1
+          ],
+          "missing_canonical_labels": [],
+          "matches": true
+        },
+        {
+          "fold": 4,
+          "k_canonical": 2,
+          "k_observed": 2,
+          "observed_labels": [
+            0,
+            1
+          ],
+          "missing_canonical_labels": [],
+          "matches": true
+        }
+      ],
+      "fairness_age": [
+        {
+          "group": "50-70",
+          "n": 26,
+          "low_n": false,
+          "accuracy": 0.8076923076923077,
+          "balanced_accuracy": 0.45652173913043476,
+          "f1_macro": 0.44680851063829785,
+          "auc": 0.5072463768115942,
+          "per_class_sensitivity": {
+            "class_0": 0.9130434782608695,
+            "class_1": 0.0
+          },
+          "tpr": 0.45652173913043476,
+          "fpr": 0.5434782608695652
+        },
+        {
+          "group": "<50",
+          "n": 4,
+          "low_n": true,
+          "accuracy": NaN,
+          "balanced_accuracy": NaN,
+          "f1_macro": NaN,
+          "auc": NaN,
+          "per_class_sensitivity": NaN,
+          "tpr": NaN,
+          "fpr": NaN
+        },
+        {
+          "group": ">=70",
+          "n": 14,
+          "low_n": false,
+          "accuracy": 0.42857142857142855,
+          "balanced_accuracy": 0.3333333333333333,
+          "f1_macro": 0.3,
+          "auc": 0.4,
+          "per_class_sensitivity": {
+            "class_0": 0.6666666666666666,
+            "class_1": 0.0
+          },
+          "tpr": 0.3333333333333333,
+          "fpr": 0.6666666666666666
+        }
+      ]
+    }
+  }
+}

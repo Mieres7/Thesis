@@ -1,0 +1,4 @@
+group,n,low_n,accuracy,balanced_accuracy,f1_macro,auc_ovr_macro,auc_error,per_class_sensitivity,tpr,fpr
+50-70,21,False,0.23809523809523808,0.15625,0.125,,Number of classes in y_true not equal to the number of columns in 'y_score',"{'class_0': 0.0, 'class_1': 0.0, 'class_2': 0.625, 'class_3': 0.0}",0.15625,0.24711538461538463
+<50,3,True,,,,,,,,
+>=70,22,False,0.13636363636363635,0.1875,0.08571428571428572,,Number of classes in y_true not equal to the number of columns in 'y_score',"{'class_0': 0.0, 'class_1': 0.0, 'class_2': 0.75, 'class_3': 0.0, 'class_4': 0.0}",0.15,0.18686868686868685

@@ -1,0 +1,4 @@
+group,n,low_n,accuracy,balanced_accuracy,f1_macro,auc,per_class_sensitivity,tpr,fpr
+50-70,263,False,1.0,1.0,1.0,1.0,"{'class_0': 1.0, 'class_1': 1.0}",1.0,0.0
+<50,131,False,1.0,1.0,1.0,1.0,"{'class_0': 1.0, 'class_1': 1.0}",1.0,0.0
+>=70,131,False,1.0,1.0,1.0,1.0,"{'class_0': 1.0, 'class_1': 1.0}",1.0,0.0

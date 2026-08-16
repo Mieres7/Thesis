@@ -1,0 +1,299 @@
+{
+  "task": "her2_status",
+  "model": "virchow2",
+  "train_dataset": "BCNB",
+  "test_dataset": "HistologyHSI",
+  "probe": "mlp",
+  "n_train": 1058,
+  "n_test": 44,
+  "eval_method_ood": "full_data_model",
+  "eval_method_id": "cv5",
+  "metrics": {
+    "accuracy": 0.13636363636363635,
+    "balanced_accuracy": 0.08333333333333333,
+    "f1_macro": 0.09523809523809523,
+    "auc_ovr_macro": null,
+    "auc_error": "Only one class present in y_true. ROC AUC score is not defined in that case.",
+    "per_class_sensitivity": {
+      "class_0": 0.16666666666666666,
+      "class_1": 0.0,
+      "class_2": 0.0
+    },
+    "auc_ba_diagnostics": {
+      "k_check": {
+        "k_canonical": 3,
+        "k_observed": 2,
+        "observed_labels": [
+          0,
+          2
+        ],
+        "missing_canonical_labels": [
+          1
+        ],
+        "matches": false
+      },
+      "per_class_ovr_auc": {
+        "class_0": 0.4236111111111111,
+        "class_1": null,
+        "class_2": 0.6666666666666666
+      },
+      "hand_till_ovo_auc": [
+        {
+          "class_a": 0,
+          "class_b": 1,
+          "auc": null,
+          "n_a": 36,
+          "n_b": 0
+        },
+        {
+          "class_a": 0,
+          "class_b": 2,
+          "auc": 0.5694444444444444,
+          "n_a": 36,
+          "n_b": 8
+        },
+        {
+          "class_a": 1,
+          "class_b": 2,
+          "auc": null,
+          "n_a": 0,
+          "n_b": 8
+        }
+      ],
+      "null_auc_permutation": {
+        "class_0": {
+          "auc_observed": 0.4236111111111111,
+          "null_mean": 0.4994895833333334,
+          "null_sd": 0.1131638494235901,
+          "null_p95": 0.6875,
+          "p_value_one_sided": 0.7632367632367633,
+          "n_permutations": 1000
+        },
+        "class_1": null,
+        "class_2": {
+          "auc_observed": 0.6666666666666666,
+          "null_mean": 0.5029965277777778,
+          "null_sd": 0.11822779544229538,
+          "null_p95": 0.6980902777777777,
+          "p_value_one_sided": 0.0969030969030969,
+          "n_permutations": 1000
+        }
+      },
+      "chance_adjusted_auc_ba": {
+        "auc_relative_to_chance": null,
+        "ba_relative_to_chance": null,
+        "auc_minus_ba_relative": null
+      }
+    }
+  },
+  "confusion_matrix": {
+    "confusion_matrix": [
+      [
+        6,
+        29,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        8,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "tp": 6,
+        "fp": 0,
+        "fn": 30,
+        "tn": 8,
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857,
+        "support": 36
+      },
+      "1": {
+        "tp": 0,
+        "fp": 37,
+        "fn": 0,
+        "tn": 7,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "2": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 8,
+        "tn": 35,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8
+      }
+    },
+    "labels": [
+      "0",
+      "1",
+      "2"
+    ]
+  },
+  "error_distribution": {
+    "total_errors": 38,
+    "total_samples": 44,
+    "error_rate": 0.8636363636363636,
+    "confused_pairs": [
+      [
+        "0",
+        "1",
+        29
+      ],
+      [
+        "2",
+        "1",
+        8
+      ],
+      [
+        "0",
+        "2",
+        1
+      ]
+    ],
+    "most_confused": [
+      "0",
+      "1",
+      29
+    ]
+  },
+  "bootstrap": {
+    "accuracy": {
+      "point": 0.13636363636363635,
+      "ci_low": 0.045454545454545456,
+      "ci_high": 0.25,
+      "n_valid_bootstrap": 1000
+    },
+    "balanced_accuracy": {
+      "point": 0.08333333333333333,
+      "ci_low": 0.02702702702702703,
+      "ci_high": 0.15003787878787875,
+      "n_valid_bootstrap": 1000
+    },
+    "f1_macro": {
+      "point": 0.09523809523809523,
+      "ci_low": 0.034188034188034185,
+      "ci_high": 0.15387596899224804,
+      "n_valid_bootstrap": 1000
+    },
+    "per_class_sensitivity": {
+      "class_0": {
+        "point": 0.16666666666666666,
+        "ci_low": 0.05405405405405406,
+        "ci_high": 0.3000757575757575,
+        "n_valid_bootstrap": 1000
+      },
+      "class_1": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_valid_bootstrap": 1000
+      },
+      "class_2": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_valid_bootstrap": 1000
+      }
+    }
+  },
+  "fairness_summary": {
+    "age": {
+      "delta_ba": {
+        "delta_ba": 0.024154589371980673,
+        "best_group": ">=70",
+        "worst_group": "50-70",
+        "best_ba": 0.1111111111111111,
+        "worst_ba": 0.08695652173913043
+      },
+      "delta_f1": {
+        "delta_f1": 0.02244668911335579,
+        "best_group": ">=70",
+        "worst_group": "50-70",
+        "best_f1": 0.12121212121212122,
+        "worst_f1": 0.09876543209876543
+      },
+      "delta_auc": {
+        "delta_auc": null,
+        "best_group": null,
+        "worst_group": null,
+        "best_auc": null,
+        "worst_auc": null
+      },
+      "avg_gap": {
+        "avg_gap": null,
+        "per_group": null
+      },
+      "equalized_odds": {
+        "tpr_gap": 0.016103059581320446,
+        "fpr_gap": 0.01689051689051685,
+        "tpr_best_group": ">=70",
+        "tpr_worst_group": "50-70",
+        "fpr_best_group": "50-70",
+        "fpr_worst_group": ">=70"
+      },
+      "auc_es": null,
+      "n_subgroups": 0
+    }
+  },
+  "fairness_gaps_bootstrap": {
+    "age": {
+      "delta_ba": {
+        "point": 0.024154589371980673,
+        "ci_low": 0.0028143274853801264,
+        "ci_high": 0.20504148629148625,
+        "n_valid_bootstrap": 950
+      },
+      "delta_f1": {
+        "point": 0.02244668911335579,
+        "ci_low": 0.002914541885130121,
+        "ci_high": 0.17107448107448103,
+        "n_valid_bootstrap": 950
+      },
+      "delta_auc": {
+        "point": null,
+        "ci_low": null,
+        "ci_high": null,
+        "n_valid_bootstrap": 0
+      },
+      "avg_gap": {
+        "point": null,
+        "ci_low": null,
+        "ci_high": null,
+        "n_valid_bootstrap": 0
+      },
+      "tpr_gap": {
+        "point": 0.016103059581320446,
+        "ci_low": 0.0018762183235867523,
+        "ci_high": 0.13669432419432417,
+        "n_valid_bootstrap": 950
+      },
+      "fpr_gap": {
+        "point": 0.01689051689051685,
+        "ci_low": 0.0018950163398693072,
+        "ci_high": 0.11416004738015609,
+        "n_valid_bootstrap": 950
+      },
+      "auc_es": {
+        "point": null,
+        "ci_low": null,
+        "ci_high": null,
+        "n_valid_bootstrap": 0
+      },
+      "_n_bootstrap_requested": 1000,
+      "_n_bootstrap_failed": 50
+    }
+  }
+}

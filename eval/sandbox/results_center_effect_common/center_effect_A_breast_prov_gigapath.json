@@ -1,0 +1,275 @@
+{
+  "experiment": "A",
+  "key": "A_breast",
+  "domain": "breast",
+  "comparison": "BCNB vs HISTAI-Breast vs HSI-BC",
+  "datasets": [
+    "BCNB",
+    "HISTAI_Breast",
+    "HistologyHSI"
+  ],
+  "task_key": "breast_molsub",
+  "note": null,
+  "model": "prov_gigapath",
+  "seed": 42,
+  "n_bootstrap": 1000,
+  "protocol": {
+    "probe": "MLPClassifier(hidden_layer_sizes=(256,), alpha=1e-4, max_iter=500, early_stopping=False)",
+    "oversampling": "minority classes to max class size (fit_mlp_probe balanced=True)",
+    "cv": "StratifiedGroupKFold(n_splits=5, shuffle=True) grouped by uid",
+    "bootstrap_level": "patient (uid)",
+    "auc": "one-vs-rest macro (multiclass) / ROC AUC (binary)"
+  },
+  "n_total": 1944,
+  "n_test": 1944,
+  "classes": [
+    "BCNB",
+    "HISTAI_Breast",
+    "HistologyHSI"
+  ],
+  "test_metrics": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "f1_macro": 1.0,
+    "auc_ovr_macro": 1.0,
+    "per_class_sensitivity": {
+      "class_0": 1.0,
+      "class_1": 1.0,
+      "class_2": 1.0
+    }
+  },
+  "bootstrap": {
+    "accuracy": {
+      "point": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0,
+      "n_valid_bootstrap": 1000
+    },
+    "balanced_accuracy": {
+      "point": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0,
+      "n_valid_bootstrap": 1000
+    },
+    "f1_macro": {
+      "point": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0,
+      "n_valid_bootstrap": 1000
+    },
+    "auc_ovr_macro": {
+      "point": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0,
+      "n_valid_bootstrap": 1000
+    },
+    "per_class_sensitivity": {
+      "class_0": {
+        "point": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n_valid_bootstrap": 1000
+      },
+      "class_1": {
+        "point": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n_valid_bootstrap": 1000
+      },
+      "class_2": {
+        "point": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n_valid_bootstrap": 1000
+      }
+    }
+  },
+  "confusion_matrix": {
+    "confusion_matrix": [
+      [
+        1058,
+        0,
+        0
+      ],
+      [
+        0,
+        842,
+        0
+      ],
+      [
+        0,
+        0,
+        44
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "tp": 1058,
+        "fp": 0,
+        "fn": 0,
+        "tn": 886,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1058
+      },
+      "1": {
+        "tp": 842,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1102,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 842
+      },
+      "2": {
+        "tp": 44,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1900,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 44
+      }
+    },
+    "labels": [
+      "0",
+      "1",
+      "2"
+    ]
+  },
+  "per_fold": [
+    {
+      "fold": 0,
+      "n_train": 1555,
+      "n_test": 389,
+      "classes_in_train": [
+        "BCNB",
+        "HISTAI_Breast",
+        "HistologyHSI"
+      ],
+      "classes_in_test": [
+        "BCNB",
+        "HISTAI_Breast",
+        "HistologyHSI"
+      ],
+      "metrics": {
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "f1_macro": 1.0,
+        "auc_ovr_macro": 1.0,
+        "per_class_sensitivity": {
+          "class_0": 1.0,
+          "class_1": 1.0,
+          "class_2": 1.0
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "n_train": 1555,
+      "n_test": 389,
+      "classes_in_train": [
+        "BCNB",
+        "HISTAI_Breast",
+        "HistologyHSI"
+      ],
+      "classes_in_test": [
+        "BCNB",
+        "HISTAI_Breast",
+        "HistologyHSI"
+      ],
+      "metrics": {
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "f1_macro": 1.0,
+        "auc_ovr_macro": 1.0,
+        "per_class_sensitivity": {
+          "class_0": 1.0,
+          "class_1": 1.0,
+          "class_2": 1.0
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "n_train": 1555,
+      "n_test": 389,
+      "classes_in_train": [
+        "BCNB",
+        "HISTAI_Breast",
+        "HistologyHSI"
+      ],
+      "classes_in_test": [
+        "BCNB",
+        "HISTAI_Breast",
+        "HistologyHSI"
+      ],
+      "metrics": {
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "f1_macro": 1.0,
+        "auc_ovr_macro": 1.0,
+        "per_class_sensitivity": {
+          "class_0": 1.0,
+          "class_1": 1.0,
+          "class_2": 1.0
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "n_train": 1555,
+      "n_test": 389,
+      "classes_in_train": [
+        "BCNB",
+        "HISTAI_Breast",
+        "HistologyHSI"
+      ],
+      "classes_in_test": [
+        "BCNB",
+        "HISTAI_Breast",
+        "HistologyHSI"
+      ],
+      "metrics": {
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "f1_macro": 1.0,
+        "auc_ovr_macro": 1.0,
+        "per_class_sensitivity": {
+          "class_0": 1.0,
+          "class_1": 1.0,
+          "class_2": 1.0
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "n_train": 1556,
+      "n_test": 388,
+      "classes_in_train": [
+        "BCNB",
+        "HISTAI_Breast",
+        "HistologyHSI"
+      ],
+      "classes_in_test": [
+        "BCNB",
+        "HISTAI_Breast",
+        "HistologyHSI"
+      ],
+      "metrics": {
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "f1_macro": 1.0,
+        "auc_ovr_macro": 1.0,
+        "per_class_sensitivity": {
+          "class_0": 1.0,
+          "class_1": 1.0,
+          "class_2": 1.0
+        }
+      }
+    }
+  ]
+}

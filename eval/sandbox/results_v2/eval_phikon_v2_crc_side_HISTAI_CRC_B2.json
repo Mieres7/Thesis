@@ -1,0 +1,958 @@
+{
+  "task": "side",
+  "model": "phikon_v2",
+  "dataset": "HISTAI_CRC_B2",
+  "seed": 42,
+  "cv_used": true,
+  "eval_method_id": "cv5",
+  "eval_method_reason": "small_n",
+  "mlp_early_stopping": true,
+  "n_total": 46,
+  "n_train": 37,
+  "n_val": null,
+  "n_test": 46,
+  "classes": [
+    "left",
+    "rectosigmoid",
+    "rectum",
+    "right",
+    "transverse"
+  ],
+  "probes": {
+    "mlp": {
+      "val_metrics": {
+        "accuracy": 0.1111111111111111,
+        "balanced_accuracy": 0.1111111111111111,
+        "f1_macro": 0.0625,
+        "auc_ovr_macro": null,
+        "auc_error": "Only one class present in y_true. ROC AUC score is not defined in that case.",
+        "per_class_sensitivity": {
+          "class_0": 0.3333333333333333,
+          "class_1": 0.0,
+          "class_2": 0.0,
+          "class_3": 0.0,
+          "class_4": 0.0
+        }
+      },
+      "test_metrics": {
+        "accuracy": 0.21739130434782608,
+        "balanced_accuracy": 0.11473684210526316,
+        "f1_macro": 0.1035294117647059,
+        "auc_ovr_macro": 0.2756640256555367,
+        "per_class_sensitivity": {
+          "class_0": 0.47368421052631576,
+          "class_1": 0.0,
+          "class_2": 0.0,
+          "class_3": 0.1,
+          "class_4": 0.0
+        },
+        "auc_ba_diagnostics": {
+          "k_check": {
+            "k_canonical": 5,
+            "k_observed": 5,
+            "observed_labels": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "missing_canonical_labels": [],
+            "matches": true
+          },
+          "per_class_ovr_auc": {
+            "class_0": 0.46783625730994155,
+            "class_1": 0.0888888888888889,
+            "class_2": 0.2021505376344086,
+            "class_3": 0.5194444444444445,
+            "class_4": 0.09999999999999998
+          },
+          "hand_till_ovo_auc": [
+            {
+              "class_a": 0,
+              "class_b": 1,
+              "auc": 0.07894736842105265,
+              "n_a": 19,
+              "n_b": 1
+            },
+            {
+              "class_a": 0,
+              "class_b": 2,
+              "auc": 0.18596491228070175,
+              "n_a": 19,
+              "n_b": 15
+            },
+            {
+              "class_a": 0,
+              "class_b": 3,
+              "auc": 0.39473684210526316,
+              "n_a": 19,
+              "n_b": 10
+            },
+            {
+              "class_a": 0,
+              "class_b": 4,
+              "auc": 0.13157894736842107,
+              "n_a": 19,
+              "n_b": 1
+            },
+            {
+              "class_a": 1,
+              "class_b": 2,
+              "auc": 0.13333333333333333,
+              "n_a": 1,
+              "n_b": 15
+            },
+            {
+              "class_a": 1,
+              "class_b": 3,
+              "auc": 0.05,
+              "n_a": 1,
+              "n_b": 10
+            },
+            {
+              "class_a": 1,
+              "class_b": 4,
+              "auc": 0.0,
+              "n_a": 1,
+              "n_b": 1
+            },
+            {
+              "class_a": 2,
+              "class_b": 3,
+              "auc": 0.30666666666666664,
+              "n_a": 15,
+              "n_b": 10
+            },
+            {
+              "class_a": 2,
+              "class_b": 4,
+              "auc": 0.0,
+              "n_a": 15,
+              "n_b": 1
+            },
+            {
+              "class_a": 3,
+              "class_b": 4,
+              "auc": 0.2,
+              "n_a": 10,
+              "n_b": 1
+            }
+          ],
+          "null_auc_permutation": {
+            "class_0": {
+              "auc_observed": 0.46783625730994155,
+              "null_mean": 0.5012826510721248,
+              "null_sd": 0.0855033294561573,
+              "null_p95": 0.6432748538011696,
+              "p_value_one_sided": 0.6403596403596403,
+              "n_permutations": 1000
+            },
+            "class_1": {
+              "auc_observed": 0.0888888888888889,
+              "null_mean": 0.49008888888888885,
+              "null_sd": 0.2994287900592823,
+              "null_p95": 0.9555555555555556,
+              "p_value_one_sided": 1.0,
+              "n_permutations": 1000
+            },
+            "class_2": {
+              "auc_observed": 0.2021505376344086,
+              "null_mean": 0.501636559139785,
+              "null_sd": 0.09190375306483868,
+              "null_p95": 0.6537634408602151,
+              "p_value_one_sided": 1.0,
+              "n_permutations": 1000
+            },
+            "class_3": {
+              "auc_observed": 0.5194444444444445,
+              "null_mean": 0.504838888888889,
+              "null_sd": 0.10487856635341186,
+              "null_p95": 0.675,
+              "p_value_one_sided": 0.45054945054945056,
+              "n_permutations": 1000
+            },
+            "class_4": {
+              "auc_observed": 0.09999999999999998,
+              "null_mean": 0.4901111111111111,
+              "null_sd": 0.2926721761317499,
+              "null_p95": 0.9777777777777777,
+              "p_value_one_sided": 1.0,
+              "n_permutations": 1000
+            }
+          },
+          "chance_adjusted_auc_ba": {
+            "auc_relative_to_chance": -0.44867194868892657,
+            "ba_relative_to_chance": -0.10657894736842105,
+            "auc_minus_ba_relative": -0.3420930013205055,
+            "auc_chance": 0.5,
+            "ba_chance": 0.2
+          }
+        }
+      },
+      "confusion_matrix": {
+        "confusion_matrix": [
+          [
+            9,
+            1,
+            5,
+            4,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            10,
+            3,
+            0,
+            2,
+            0
+          ],
+          [
+            6,
+            1,
+            2,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "0": {
+            "tp": 9,
+            "fp": 17,
+            "fn": 10,
+            "tn": 10,
+            "precision": 0.34615384615384615,
+            "recall": 0.47368421052631576,
+            "f1": 0.39999999999999997,
+            "support": 19
+          },
+          "1": {
+            "tp": 0,
+            "fp": 6,
+            "fn": 1,
+            "tn": 39,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "2": {
+            "tp": 0,
+            "fp": 7,
+            "fn": 15,
+            "tn": 24,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 15
+          },
+          "3": {
+            "tp": 1,
+            "fp": 6,
+            "fn": 9,
+            "tn": 30,
+            "precision": 0.14285714285714285,
+            "recall": 0.1,
+            "f1": 0.11764705882352941,
+            "support": 10
+          },
+          "4": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "tn": 45,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          }
+        },
+        "labels": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "error_distribution": {
+        "total_errors": 36,
+        "total_samples": 46,
+        "error_rate": 0.782608695652174,
+        "confused_pairs": [
+          [
+            "2",
+            "0",
+            10
+          ],
+          [
+            "3",
+            "0",
+            6
+          ],
+          [
+            "0",
+            "2",
+            5
+          ],
+          [
+            "0",
+            "3",
+            4
+          ],
+          [
+            "2",
+            "1",
+            3
+          ],
+          [
+            "2",
+            "3",
+            2
+          ],
+          [
+            "3",
+            "2",
+            2
+          ],
+          [
+            "0",
+            "1",
+            1
+          ],
+          [
+            "1",
+            "0",
+            1
+          ],
+          [
+            "3",
+            "1",
+            1
+          ],
+          [
+            "4",
+            "1",
+            1
+          ]
+        ],
+        "most_confused": [
+          "2",
+          "0",
+          10
+        ]
+      },
+      "bootstrap": {
+        "accuracy": {
+          "point": 0.21739130434782608,
+          "ci_low": 0.10869565217391304,
+          "ci_high": 0.34782608695652173,
+          "n_valid_bootstrap": 1000
+        },
+        "balanced_accuracy": {
+          "point": 0.11473684210526316,
+          "ci_low": 0.06666666666666667,
+          "ci_high": 0.2401771156832298,
+          "n_valid_bootstrap": 1000
+        },
+        "f1_macro": {
+          "point": 0.1035294117647059,
+          "ci_low": 0.05333333333333333,
+          "ci_high": 0.18451603241719514,
+          "n_valid_bootstrap": 1000
+        },
+        "auc_ovr_macro": {
+          "point": 0.2756640256555367,
+          "ci_low": 0.2268528378960364,
+          "ci_high": 0.3240246671657169,
+          "n_valid_bootstrap": 414
+        },
+        "per_class_sensitivity": {
+          "class_0": {
+            "point": 0.47368421052631576,
+            "ci_low": 0.23529411764705882,
+            "ci_high": 0.6875,
+            "n_valid_bootstrap": 1000
+          },
+          "class_1": {
+            "point": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0,
+            "n_valid_bootstrap": 1000
+          },
+          "class_2": {
+            "point": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0,
+            "n_valid_bootstrap": 1000
+          },
+          "class_3": {
+            "point": 0.1,
+            "ci_low": 0.0,
+            "ci_high": 0.3333333333333333,
+            "n_valid_bootstrap": 1000
+          },
+          "class_4": {
+            "point": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0,
+            "n_valid_bootstrap": 633
+          }
+        }
+      },
+      "fairness_summary": {
+        "sex": {
+          "delta_ba": {
+            "delta_ba": 0.23650793650793644,
+            "best_group": "f",
+            "worst_group": "m",
+            "best_ba": 0.2809523809523809,
+            "worst_ba": 0.04444444444444444
+          },
+          "delta_f1": {
+            "delta_f1": 0.14545454545454548,
+            "best_group": "f",
+            "worst_group": "m",
+            "best_f1": 0.18545454545454548,
+            "worst_f1": 0.04
+          },
+          "delta_auc": {
+            "delta_auc": null,
+            "best_group": null,
+            "worst_group": null,
+            "best_auc": null,
+            "worst_auc": null
+          },
+          "avg_gap": {
+            "avg_gap": null,
+            "per_group": null
+          },
+          "equalized_odds": {
+            "tpr_gap": 0.16626984126984123,
+            "fpr_gap": 0.021223204040541455,
+            "tpr_best_group": "f",
+            "tpr_worst_group": "m",
+            "fpr_best_group": "f",
+            "fpr_worst_group": "m"
+          },
+          "auc_es": null,
+          "n_subgroups": 1
+        },
+        "age": {
+          "delta_ba": {
+            "delta_ba": 0.175,
+            "best_group": "50-70",
+            "worst_group": ">=70",
+            "best_ba": 0.25,
+            "worst_ba": 0.075
+          },
+          "delta_f1": {
+            "delta_f1": 0.14186335403726708,
+            "best_group": "50-70",
+            "worst_group": ">=70",
+            "best_f1": 0.20186335403726707,
+            "worst_f1": 0.06
+          },
+          "delta_auc": {
+            "delta_auc": null,
+            "best_group": null,
+            "worst_group": null,
+            "best_auc": null,
+            "worst_auc": null
+          },
+          "avg_gap": {
+            "avg_gap": null,
+            "per_group": null
+          },
+          "equalized_odds": {
+            "tpr_gap": 0.19,
+            "fpr_gap": 0.001958041958041945,
+            "tpr_best_group": "50-70",
+            "tpr_worst_group": ">=70",
+            "fpr_best_group": ">=70",
+            "fpr_worst_group": "50-70"
+          },
+          "auc_es": null,
+          "n_subgroups": 0
+        }
+      },
+      "fairness_gaps_bootstrap": {
+        "sex": {
+          "delta_ba": {
+            "point": 0.23650793650793644,
+            "ci_low": 0.060109126984127015,
+            "ci_high": 0.3910416666666667,
+            "n_valid_bootstrap": 1000
+          },
+          "delta_f1": {
+            "point": 0.14545454545454548,
+            "ci_low": 0.028506493506493563,
+            "ci_high": 0.27778935185185183,
+            "n_valid_bootstrap": 1000
+          },
+          "delta_auc": {
+            "point": null,
+            "ci_low": null,
+            "ci_high": null,
+            "n_valid_bootstrap": 0
+          },
+          "avg_gap": {
+            "point": null,
+            "ci_low": null,
+            "ci_high": null,
+            "n_valid_bootstrap": 0
+          },
+          "tpr_gap": {
+            "point": 0.16626984126984123,
+            "ci_low": 0.036347402597402594,
+            "ci_high": 0.30531498015873015,
+            "n_valid_bootstrap": 1000
+          },
+          "fpr_gap": {
+            "point": 0.021223204040541455,
+            "ci_low": 0.002207138009270024,
+            "ci_high": 0.17282043385536025,
+            "n_valid_bootstrap": 1000
+          },
+          "auc_es": {
+            "point": null,
+            "ci_low": null,
+            "ci_high": null,
+            "n_valid_bootstrap": 0
+          },
+          "_n_bootstrap_requested": 1000,
+          "_n_bootstrap_failed": 0
+        },
+        "age": {
+          "delta_ba": {
+            "point": 0.175,
+            "ci_low": 0.015124909812409824,
+            "ci_high": 0.44236111111111104,
+            "n_valid_bootstrap": 1000
+          },
+          "delta_f1": {
+            "point": 0.14186335403726708,
+            "ci_low": 0.009351604278074868,
+            "ci_high": 0.29706538865546217,
+            "n_valid_bootstrap": 1000
+          },
+          "delta_auc": {
+            "point": null,
+            "ci_low": null,
+            "ci_high": null,
+            "n_valid_bootstrap": 0
+          },
+          "avg_gap": {
+            "point": null,
+            "ci_low": null,
+            "ci_high": null,
+            "n_valid_bootstrap": 0
+          },
+          "tpr_gap": {
+            "point": 0.19,
+            "ci_low": 0.013825757575757627,
+            "ci_high": 0.38931547619047613,
+            "n_valid_bootstrap": 1000
+          },
+          "fpr_gap": {
+            "point": 0.001958041958041945,
+            "ci_low": 0.002366158180559502,
+            "ci_high": 0.16933045682387765,
+            "n_valid_bootstrap": 1000
+          },
+          "auc_es": {
+            "point": null,
+            "ci_low": null,
+            "ci_high": null,
+            "n_valid_bootstrap": 0
+          },
+          "_n_bootstrap_requested": 1000,
+          "_n_bootstrap_failed": 0
+        }
+      },
+      "error_by_subgroup": {
+        "sex": {
+          "f": {
+            "n": 26,
+            "error_rate": 0.6923076923076923,
+            "total_errors": 18,
+            "most_confused": [
+              "2",
+              "0",
+              5
+            ],
+            "confusion_matrix": [
+              [
+                7,
+                0,
+                2,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                5,
+                2,
+                0,
+                2,
+                0
+              ],
+              [
+                3,
+                1,
+                2,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "per_class": {
+              "0": {
+                "tp": 7,
+                "fp": 8,
+                "fn": 3,
+                "tn": 8,
+                "precision": 0.4666666666666667,
+                "recall": 0.7,
+                "f1": 0.56,
+                "support": 10
+              },
+              "1": {
+                "tp": 0,
+                "fp": 3,
+                "fn": 0,
+                "tn": 23,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+              },
+              "2": {
+                "tp": 0,
+                "fp": 4,
+                "fn": 9,
+                "tn": 13,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 9
+              },
+              "3": {
+                "tp": 1,
+                "fp": 3,
+                "fn": 6,
+                "tn": 16,
+                "precision": 0.25,
+                "recall": 0.14285714285714285,
+                "f1": 0.18181818181818182,
+                "support": 7
+              },
+              "4": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 0,
+                "tn": 26,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 0
+              }
+            }
+          },
+          "m": {
+            "n": 20,
+            "error_rate": 0.9,
+            "total_errors": 18,
+            "most_confused": [
+              "2",
+              "0",
+              5
+            ],
+            "confusion_matrix": [
+              [
+                2,
+                1,
+                3,
+                3,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                5,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                3,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0
+              ]
+            ],
+            "per_class": {
+              "0": {
+                "tp": 2,
+                "fp": 9,
+                "fn": 7,
+                "tn": 2,
+                "precision": 0.18181818181818182,
+                "recall": 0.2222222222222222,
+                "f1": 0.19999999999999998,
+                "support": 9
+              },
+              "1": {
+                "tp": 0,
+                "fp": 3,
+                "fn": 1,
+                "tn": 16,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 1
+              },
+              "2": {
+                "tp": 0,
+                "fp": 3,
+                "fn": 6,
+                "tn": 11,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 6
+              },
+              "3": {
+                "tp": 0,
+                "fp": 3,
+                "fn": 3,
+                "tn": 14,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 3
+              },
+              "4": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "tn": 19,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 1
+              }
+            }
+          }
+        }
+      },
+      "cv_fold_k_checks": [
+        {
+          "fold": 0,
+          "k_canonical": 5,
+          "k_observed": 3,
+          "observed_labels": [
+            0,
+            2,
+            3
+          ],
+          "missing_canonical_labels": [
+            1,
+            4
+          ],
+          "matches": false
+        },
+        {
+          "fold": 1,
+          "k_canonical": 5,
+          "k_observed": 3,
+          "observed_labels": [
+            0,
+            2,
+            3
+          ],
+          "missing_canonical_labels": [
+            1,
+            4
+          ],
+          "matches": false
+        },
+        {
+          "fold": 2,
+          "k_canonical": 5,
+          "k_observed": 3,
+          "observed_labels": [
+            0,
+            3,
+            4
+          ],
+          "missing_canonical_labels": [
+            1,
+            2
+          ],
+          "matches": false
+        },
+        {
+          "fold": 3,
+          "k_canonical": 5,
+          "k_observed": 4,
+          "observed_labels": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "missing_canonical_labels": [
+            4
+          ],
+          "matches": false
+        },
+        {
+          "fold": 4,
+          "k_canonical": 5,
+          "k_observed": 3,
+          "observed_labels": [
+            0,
+            2,
+            3
+          ],
+          "missing_canonical_labels": [
+            1,
+            4
+          ],
+          "matches": false
+        }
+      ],
+      "fairness_sex": [
+        {
+          "group": "f",
+          "n": 26,
+          "low_n": false,
+          "accuracy": 0.3076923076923077,
+          "balanced_accuracy": 0.2809523809523809,
+          "f1_macro": 0.18545454545454548,
+          "auc_ovr_macro": NaN,
+          "auc_error": "Number of classes in y_true not equal to the number of columns in 'y_score'",
+          "per_class_sensitivity": {
+            "class_0": 0.7,
+            "class_1": 0.0,
+            "class_2": 0.0,
+            "class_3": 0.14285714285714285
+          },
+          "tpr": 0.2107142857142857,
+          "fpr": 0.2521433674684449
+        },
+        {
+          "group": "m",
+          "n": 20,
+          "low_n": false,
+          "accuracy": 0.1,
+          "balanced_accuracy": 0.04444444444444444,
+          "f1_macro": 0.04,
+          "auc_ovr_macro": 0.2527877179579966,
+          "auc_error": NaN,
+          "per_class_sensitivity": {
+            "class_0": 0.2222222222222222,
+            "class_1": 0.0,
+            "class_2": 0.0,
+            "class_3": 0.0,
+            "class_4": 0.0
+          },
+          "tpr": 0.04444444444444444,
+          "fpr": 0.27336657150898636
+        }
+      ],
+      "fairness_age": [
+        {
+          "group": "50-70",
+          "n": 21,
+          "low_n": false,
+          "accuracy": 0.3333333333333333,
+          "balanced_accuracy": 0.25,
+          "f1_macro": 0.20186335403726707,
+          "auc_ovr_macro": NaN,
+          "auc_error": "Number of classes in y_true not equal to the number of columns in 'y_score'",
+          "per_class_sensitivity": {
+            "class_0": 0.6666666666666666,
+            "class_1": 0.0,
+            "class_2": 0.0,
+            "class_3": 0.3333333333333333
+          },
+          "tpr": 0.25,
+          "fpr": 0.25256410256410255
+        },
+        {
+          "group": "<50",
+          "n": 3,
+          "low_n": true,
+          "accuracy": NaN,
+          "balanced_accuracy": NaN,
+          "f1_macro": NaN,
+          "auc_ovr_macro": NaN,
+          "auc_error": NaN,
+          "per_class_sensitivity": NaN,
+          "tpr": NaN,
+          "fpr": NaN
+        },
+        {
+          "group": ">=70",
+          "n": 22,
+          "low_n": false,
+          "accuracy": 0.13636363636363635,
+          "balanced_accuracy": 0.075,
+          "f1_macro": 0.06,
+          "auc_ovr_macro": NaN,
+          "auc_error": "Number of classes in y_true not equal to the number of columns in 'y_score'",
+          "per_class_sensitivity": {
+            "class_0": 0.3,
+            "class_1": 0.0,
+            "class_2": 0.0,
+            "class_3": 0.0,
+            "class_4": 0.0
+          },
+          "tpr": 0.06,
+          "fpr": 0.2506060606060606
+        }
+      ]
+    }
+  }
+}

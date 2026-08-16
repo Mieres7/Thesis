@@ -12,16 +12,28 @@ patches_logs/
 *.pkl
 *.npz
 
-eval/sandbox/results*/
-eval/sandbox/pkl_final/
-eval/sandbox/pkl_common/
-eval/sandbox/npz/
-eval/sandbox/munay/
-eval/sandbox/prime/
-eval/sandbox/log*.log
+# Resultados de evaluación del Apéndice: se versionan explícitamente
+!eval/sandbox/results_center_effect/*
+!eval/sandbox/results_center_effect_common/*
+!eval/sandbox/results_v2/*
+!eval/sandbox/results_v2/npz/*.npz
 
-tareas_cap6/figures/
-tareas_cap6/outputs/
-tareas_cap6/snapshots/
-tareas_cap6/pngs/
-tareas_cap6/seleccion/
+
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.xml
+*.lof
+*.lot
+*.toc
+*.ist
+*.bbl-SAVE-ERROR
+*.pyc
+*.glo
+
+Escrito/build/
