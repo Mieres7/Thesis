@@ -97,7 +97,7 @@ cuatro arquitecturas descritas, destacando las diferencias en unidad de
 entrada (parche vs.\ parche + slide), mecanismo de agregación de contexto y
 dimensión del embedding resultante.
 
-\input{Figuras/figuramodelos}
+\input{chapters/figuramodelos}
 
 Los cuatro modelos se utilizaron como extractores de representaciones congelados (\textit{frozen}), sin realizar ajuste fino (\textit{fine-tuning}) de sus pesos durante el entrenamiento de los clasificadores posteriores. Esta decisión, consistente con el protocolo experimental del Capítulo~\ref{cap:evaluacion_modelos}, garantiza que las diferencias observadas en las métricas de evaluación sean atribuibles a las representaciones preentrenadas y no a adaptaciones específicas del clasificador a cada tarea. El registro de versiones de \textit{checkpoints}, repositorios y entorno de ejecución de cada modelo se documenta en el registro de modelos del estudio (Sección~\ref{sec:protocolo-inferencia}, Capítulo~\ref{cap:evaluacion_modelos}).
 
