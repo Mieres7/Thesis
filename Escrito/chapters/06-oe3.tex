@@ -68,7 +68,7 @@ Prov-GigaPath & ViT-g/14\textsuperscript{c} & 1536 & 224$\times$224 \\
 \begin{flushleft}
 \footnotesize
 \textsuperscript{a}Variante personalizada con \textit{embed\_dim}=1536, 24 capas y 24 cabezas de atención, difiriendo de la configuración estándar de ViT-H (1280, 32 capas, 16 cabezas).\\
-\textsuperscript{b}Corresponde a la concatenación del token \texttt{[CLS]} con el promedio de los tokens de parche (1280 $\times$ 2), conforme a la estrategia recomendada por el autor~\parencite{zimmermann2024virchow2}. La dimensión nativa del \textit{encoder} es 1280.\\
+\textsuperscript{b}Corresponde a la concatenación del token \texttt{[CLS]} con el promedio de los tokens de parche (1280 $\times$ 2). La dimensión nativa del \textit{encoder} es 1280.\\
 \textsuperscript{c}Arquitectura base ViT-g/14 (DINOv2); los pesos \textit{released} en HuggingFace utilizan \texttt{patch\_size}=16, resultando en 196 tokens de parche para entradas de 224$\times$224~\parencite{xu2024provgigapath}.
 \end{flushleft}
 \end{table}
