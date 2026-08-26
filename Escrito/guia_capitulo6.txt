@@ -1,0 +1,37 @@
+6. Evaluación de Modelos Fundacionales
+   6.1. Introducción al capítulo (contexto desde cap. 4 y 5)
+   
+   6.2. Preparación de datos
+        6.2.1. Extracción de parches desde WSI
+               - Estrategia de tiling (tamaño, stride, filtrado por tissue content)
+               - Normalización de color (si aplica)
+        6.2.2. Filtrado de parches
+               - Criterios de exclusión (background, low tissue, artefactos)
+               - Impacto del filtrado en la cantidad de parches por dataset
+        
+   6.3. Extracción de representaciones (embeddings)
+        6.3.1. Protocolo de inferencia
+               - Preprocesamiento por modelo (resize, normalización)
+               - Batch size, dispositivo, tiempos de ejecución
+        6.3.2. Almacenamiento y verificación de embeddings
+               - Estructura de datos generada
+               - Validación de integridad
+        
+   6.4. Diseño del clasificador y estrategia de evaluación
+        6.4.1. Arquitectura del clasificador (MLP)
+        6.4.2. Partición de datos (train/val/test por paciente)
+        6.4.3. Esquema de validación
+        
+   6.5. Métricas de evaluación
+        6.5.1. Utilidad global (balanced accuracy, macro-F1, macro-AUC)
+        6.5.2. Fairness por subgrupos (gaps por sexo y edad)
+        6.5.3. Generalización cross-dataset (ID vs OOD)
+        6.5.4. Incertidumbre estadística (bootstrap CI 95%)
+        
+   6.6. Resultados
+        6.6.1. Utilidad global por tarea y modelo
+        6.6.2. Análisis de fairness por subgrupos
+        6.6.3. Generalización cross-dataset
+        6.6.4. Análisis integrado de resultados
+        
+   6.7. Discusión

@@ -1,0 +1,211 @@
+\begin{table}[H]
+\centering
+\caption{Utilidad global por modelo, tarea T2-MolSub. IC 95\% obtenido por bootstrap (1000 remuestreos, a nivel de paciente).}
+\label{tab:anexo_molsub_utilidad}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l c c c c c c}
+\toprule
+\textbf{Dataset} & \textbf{Modelo} & \textbf{n\_test} & \textbf{BA} & \textbf{IC95\% BA} & \textbf{Macro-F1} & \textbf{IC95\% F1} & \textbf{AUC (OVR macro)} \\
+\midrule
+BCNB & UNI2 & 1058 & 0.482 & [0.450, 0.514] & 0.479 & [0.445, 0.510] & 0.740 \\
+BCNB & Virchow2 & 1058 & 0.427 & [0.396, 0.458] & 0.422 & [0.392, 0.451] & 0.706 \\
+BCNB & Phikon-v2 & 1058 & 0.434 & [0.403, 0.466] & 0.429 & [0.398, 0.461] & 0.697 \\
+BCNB & Prov-GigaPath & 1058 & 0.472 & [0.441, 0.506] & 0.470 & [0.438, 0.504] & 0.727 \\
+HISTAI-Breast & UNI2 & 842 & 0.361 & [0.326, 0.398] & 0.361 & [0.325, 0.398] & 0.626 \\
+HISTAI-Breast & Virchow2 & 842 & 0.354 & [0.320, 0.390] & 0.351 & [0.316, 0.386] & 0.622 \\
+HISTAI-Breast & Phikon-v2 & 842 & 0.327 & [0.291, 0.363] & 0.327 & [0.289, 0.360] & 0.607 \\
+HISTAI-Breast & Prov-GigaPath & 842 & 0.341 & [0.309, 0.378] & 0.341 & [0.308, 0.379] & 0.619 \\
+HSI-BC & UNI2 & 44 & 0.317 & [0.216, 0.445] & 0.307 & [0.208, 0.390] & 0.595 \\
+HSI-BC & Virchow2 & 44 & 0.172 & [0.098, 0.274] & 0.171 & [0.105, 0.244] & 0.473 \\
+HSI-BC & Phikon-v2 & 44 & 0.217 & [0.133, 0.319] & 0.210 & [0.139, 0.281] & 0.473 \\
+HSI-BC & Prov-GigaPath & 44 & 0.334 & [0.202, 0.506] & 0.317 & [0.205, 0.449] & 0.616 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Sensibilidad (recall) por clase, tarea T2-MolSub, dataset BCNB ($K=4$). Clases en filas y un modelo por columna; las clases ausentes en la cohorte se marcan con ``--''.}
+\label{tab:anexo_molsub_sensibilidad}
+\begin{tabular}{l c c c c}
+\toprule
+\textbf{Clase} & \textbf{UNI2} & \textbf{Virchow2} & \textbf{Phikon-v2} & \textbf{Prov-GigaPath} \\
+\midrule
+\textbf{n\_test} & 1058 & 1058 & 1058 & 1058 \\
+Luminal A & 0.403 & 0.365 & 0.351 & 0.403 \\
+Luminal B & 0.559 & 0.492 & 0.503 & 0.543 \\
+HER2+ & 0.399 & 0.403 & 0.363 & 0.388 \\
+Triple Negative & 0.568 & 0.448 & 0.520 & 0.552 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Sensibilidad (recall) por clase, tarea T2-MolSub, dataset HISTAI-Breast ($K=4$). Clases en filas y un modelo por columna; las clases ausentes en la cohorte se marcan con ``--''.}
+\label{tab:anexo_molsub_sensibilidad_histai}
+\begin{tabular}{l c c c c}
+\toprule
+\textbf{Clase} & \textbf{UNI2} & \textbf{Virchow2} & \textbf{Phikon-v2} & \textbf{Prov-GigaPath} \\
+\midrule
+\textbf{n\_test} & 842 & 842 & 842 & 842 \\
+Luminal A & 0.315 & 0.329 & 0.259 & 0.273 \\
+Luminal B & 0.617 & 0.597 & 0.540 & 0.591 \\
+HER2+ & 0.284 & 0.262 & 0.280 & 0.284 \\
+Triple Negative & 0.230 & 0.230 & 0.230 & 0.216 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Sensibilidad (recall) por clase, tarea T2-MolSub, dataset HSI-BC ($K=4$). Clases en filas y un modelo por columna; las clases ausentes en la cohorte se marcan con ``--''.}
+\label{tab:anexo_molsub_sensibilidad_hsibc}
+\begin{tabular}{l c c c c}
+\toprule
+\textbf{Clase} & \textbf{UNI2} & \textbf{Virchow2} & \textbf{Phikon-v2} & \textbf{Prov-GigaPath} \\
+\midrule
+\textbf{n\_test} & 44 & 44 & 44 & 44 \\
+Luminal A & 0.556 & 0.222 & 0.333 & 0.444 \\
+Luminal B & 0.714 & 0.464 & 0.536 & 0.643 \\
+HER2+ & 0.000 & 0.000 & 0.000 & 0.000 \\
+Triple Negative & 0.000 & 0.000 & 0.000 & 0.250 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Fairness por subgrupo de edad, tarea T2-MolSub, dataset BCNB. Solo se incluyen celdas con $n\geq 10$; el resto se marca como excluida. En tareas multiclase el TPR por subgrupo es la media del recall por clase (equivalente a la balanced accuracy cuando todas las clases están presentes en el subgrupo). $\Delta$BA y $\Delta$AUC corresponden a la brecha máxima entre subgrupos por combinación dataset-modelo.}
+\label{tab:anexo_molsub_fairness}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l l c c c c c}
+\toprule
+\textbf{Dataset} & \textbf{Modelo} & \textbf{Subgrupo} & \textbf{n} & \textbf{BA} & \textbf{TPR} & \textbf{FPR} & \textbf{$\Delta$BA / $\Delta$AUC} \\
+\midrule
+BCNB & UNI2 & <50 & 326 & 0.502 & 0.502 & 0.179 &  \\
+BCNB & UNI2 & 50-70 & 542 & 0.483 & 0.483 & 0.184 &  \\
+BCNB & UNI2 & >=70 & 190 & 0.423 & 0.423 & 0.205 & $\Delta$BA=0.078; $\Delta$AUC=0.029 \\
+\midrule
+BCNB & Virchow2 & <50 & 326 & 0.421 & 0.421 & 0.198 &  \\
+BCNB & Virchow2 & 50-70 & 542 & 0.424 & 0.424 & 0.200 &  \\
+BCNB & Virchow2 & >=70 & 190 & 0.414 & 0.414 & 0.204 & $\Delta$BA=0.010; $\Delta$AUC=0.043 \\
+\midrule
+BCNB & Phikon-v2 & <50 & 326 & 0.440 & 0.440 & 0.199 &  \\
+BCNB & Phikon-v2 & 50-70 & 542 & 0.422 & 0.422 & 0.206 &  \\
+BCNB & Phikon-v2 & >=70 & 190 & 0.446 & 0.446 & 0.205 & $\Delta$BA=0.023; $\Delta$AUC=0.010 \\
+\midrule
+BCNB & Prov-GigaPath & <50 & 326 & 0.461 & 0.461 & 0.191 &  \\
+BCNB & Prov-GigaPath & 50-70 & 542 & 0.486 & 0.486 & 0.184 &  \\
+BCNB & Prov-GigaPath & >=70 & 190 & 0.446 & 0.446 & 0.211 & $\Delta$BA=0.041; $\Delta$AUC=0.042 \\
+\midrule
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Fairness por subgrupo de edad, tarea T2-MolSub, dataset HISTAI-Breast. Solo se incluyen celdas con $n\geq 10$; el resto se marca como excluida. En tareas multiclase el TPR por subgrupo es la media del recall por clase (equivalente a la balanced accuracy cuando todas las clases están presentes en el subgrupo). $\Delta$BA y $\Delta$AUC corresponden a la brecha máxima entre subgrupos por combinación dataset-modelo.}
+\label{tab:anexo_molsub_fairness_histai}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l l c c c c c}
+\toprule
+\textbf{Dataset} & \textbf{Modelo} & \textbf{Subgrupo} & \textbf{n} & \textbf{BA} & \textbf{TPR} & \textbf{FPR} & \textbf{$\Delta$BA / $\Delta$AUC} \\
+\midrule
+HISTAI-Breast & UNI2 & <50 & 206 & 0.413 & 0.413 & 0.224 &  \\
+HISTAI-Breast & UNI2 & 50-70 & 407 & 0.351 & 0.351 & 0.215 &  \\
+HISTAI-Breast & UNI2 & >=70 & 229 & 0.349 & 0.349 & 0.216 & $\Delta$BA=0.063; $\Delta$AUC=0.052 \\
+\midrule
+HISTAI-Breast & Virchow2 & <50 & 206 & 0.379 & 0.379 & 0.223 &  \\
+HISTAI-Breast & Virchow2 & 50-70 & 407 & 0.305 & 0.305 & 0.231 &  \\
+HISTAI-Breast & Virchow2 & >=70 & 229 & 0.412 & 0.412 & 0.201 & $\Delta$BA=0.107; $\Delta$AUC=0.061 \\
+\midrule
+HISTAI-Breast & Phikon-v2 & <50 & 206 & 0.373 & 0.373 & 0.237 &  \\
+HISTAI-Breast & Phikon-v2 & 50-70 & 407 & 0.298 & 0.298 & 0.237 &  \\
+HISTAI-Breast & Phikon-v2 & >=70 & 229 & 0.347 & 0.347 & 0.218 & $\Delta$BA=0.075; $\Delta$AUC=0.053 \\
+\midrule
+HISTAI-Breast & Prov-GigaPath & <50 & 206 & 0.361 & 0.361 & 0.239 &  \\
+HISTAI-Breast & Prov-GigaPath & 50-70 & 407 & 0.309 & 0.309 & 0.225 &  \\
+HISTAI-Breast & Prov-GigaPath & >=70 & 229 & 0.383 & 0.383 & 0.209 & $\Delta$BA=0.074; $\Delta$AUC=0.078 \\
+\midrule
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Fairness por subgrupo de edad, tarea T2-MolSub, dataset HSI-BC. Solo se incluyen celdas con $n\geq 10$; el resto se marca como excluida. En tareas multiclase el TPR por subgrupo es la media del recall por clase (equivalente a la balanced accuracy cuando todas las clases están presentes en el subgrupo). $\Delta$BA y $\Delta$AUC corresponden a la brecha máxima entre subgrupos por combinación dataset-modelo.}
+\label{tab:anexo_molsub_fairness_hsibc}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l l c c c c c}
+\toprule
+\textbf{Dataset} & \textbf{Modelo} & \textbf{Subgrupo} & \textbf{n} & \textbf{BA} & \textbf{TPR} & \textbf{FPR} & \textbf{$\Delta$BA / $\Delta$AUC} \\
+\midrule
+HSI-BC & UNI2 & <50 (excluida) & 4 & -- & -- & -- & \\
+HSI-BC & UNI2 & 50-70 & 26 & 0.407 & 0.306 & 0.171 &  \\
+HSI-BC & UNI2 & >=70 & 14 & 0.345 & 0.345 & 0.195 & $\Delta$BA=0.074; $\Delta$AUC=-- \\
+\midrule
+HSI-BC & Virchow2 & <50 (excluida) & 4 & -- & -- & -- & \\
+HSI-BC & Virchow2 & 50-70 & 26 & 0.259 & 0.194 & 0.267 &  \\
+HSI-BC & Virchow2 & >=70 & 14 & 0.143 & 0.143 & 0.285 & $\Delta$BA=0.116; $\Delta$AUC=-- \\
+\midrule
+HSI-BC & Phikon-v2 & <50 (excluida) & 4 & -- & -- & -- & \\
+HSI-BC & Phikon-v2 & 50-70 & 26 & 0.278 & 0.208 & 0.255 &  \\
+HSI-BC & Phikon-v2 & >=70 & 14 & 0.226 & 0.226 & 0.250 & $\Delta$BA=0.107; $\Delta$AUC=-- \\
+\midrule
+HSI-BC & Prov-GigaPath & <50 (excluida) & 4 & -- & -- & -- & \\
+HSI-BC & Prov-GigaPath & 50-70 & 26 & 0.593 & 0.593 & 0.175 &  \\
+HSI-BC & Prov-GigaPath & >=70 & 14 & 0.190 & 0.190 & 0.262 & $\Delta$BA=0.426; $\Delta$AUC=-- \\
+\midrule
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Generalización cross-dataset (ID vs. OOD), tarea T2-MolSub. $\Delta_{\text{OOD}} = BA_{ID} - BA_{OOD}$; $\Delta_{\text{rel}}$ en \%.}
+\label{tab:anexo_molsub_crossdataset}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l l c c c c c}
+\toprule
+\textbf{Train (ID)} & \textbf{Test (OOD)} & \textbf{Modelo} & \textbf{BA ID} & \textbf{BA OOD} & \textbf{$\Delta_{\text{OOD}}$} & \textbf{IC95\% $\Delta$} & \textbf{$\Delta_{\text{rel}}$ (\%)} \\
+\midrule
+BCNB & HISTAI-Breast & UNI2 & 0.482 & 0.326 & 0.156 & [0.116, 0.200] & 32.4 \\
+BCNB & HISTAI-Breast & Virchow2 & 0.427 & 0.357 & 0.070 & [0.022, 0.118] & 16.5 \\
+BCNB & HISTAI-Breast & Phikon-v2 & 0.434 & 0.327 & 0.107 & [0.062, 0.149] & 24.6 \\
+BCNB & HISTAI-Breast & Prov-GigaPath & 0.472 & 0.308 & 0.163 & [0.117, 0.209] & 34.6 \\
+\midrule
+BCNB & HSI-BC & UNI2 & 0.482 & 0.229 & 0.253 & [0.075, 0.471] & 52.5 \\
+BCNB & HSI-BC & Virchow2 & 0.427 & 0.222 & 0.205 & [0.058, 0.398] & 47.9 \\
+BCNB & HSI-BC & Phikon-v2 & 0.434 & 0.326 & 0.108 & [-0.094, 0.247] & 24.8 \\
+BCNB & HSI-BC & Prov-GigaPath & 0.472 & 0.467 & 0.004 & [-0.196, 0.263] & 0.9 \\
+\midrule
+HISTAI-Breast & BCNB & UNI2 & 0.361 & 0.251 & 0.110 & [0.066, 0.153] & 30.4 \\
+HISTAI-Breast & BCNB & Virchow2 & 0.354 & 0.258 & 0.097 & [0.056, 0.140] & 27.3 \\
+HISTAI-Breast & BCNB & Phikon-v2 & 0.327 & 0.256 & 0.071 & [0.033, 0.114] & 21.8 \\
+HISTAI-Breast & BCNB & Prov-GigaPath & 0.341 & 0.259 & 0.082 & [0.043, 0.120] & 24.1 \\
+\midrule
+HISTAI-Breast & HSI-BC & UNI2 & 0.361 & 0.465 & -0.104 & [-0.331, 0.120] & -28.8 \\
+HISTAI-Breast & HSI-BC & Virchow2 & 0.354 & 0.257 & 0.097 & [-0.129, 0.279] & 27.5 \\
+HISTAI-Breast & HSI-BC & Phikon-v2 & 0.327 & 0.330 & -0.003 & [-0.156, 0.229] & -1.0 \\
+HISTAI-Breast & HSI-BC & Prov-GigaPath & 0.341 & 0.408 & -0.067 & [-0.264, 0.150] & -19.6 \\
+\midrule
+HSI-BC & BCNB & UNI2 & 0.317 & 0.284 & 0.034 & [-0.071, 0.165] & 10.6 \\
+HSI-BC & BCNB & Virchow2 & 0.172 & 0.268 & -0.096 & [-0.172, 0.011] & -56.1 \\
+HSI-BC & BCNB & Phikon-v2 & 0.217 & 0.321 & -0.104 & [-0.200, 0.011] & -47.9 \\
+HSI-BC & BCNB & Prov-GigaPath & 0.334 & 0.270 & 0.065 & [-0.067, 0.269] & 19.3 \\
+\midrule
+HSI-BC & HISTAI-Breast & UNI2 & 0.317 & 0.277 & 0.041 & [-0.064, 0.175] & 12.8 \\
+HSI-BC & HISTAI-Breast & Virchow2 & 0.172 & 0.281 & -0.110 & [-0.193, 0.005] & -63.9 \\
+HSI-BC & HISTAI-Breast & Phikon-v2 & 0.217 & 0.274 & -0.056 & [-0.151, 0.071] & -26.0 \\
+HSI-BC & HISTAI-Breast & Prov-GigaPath & 0.334 & 0.269 & 0.065 & [-0.076, 0.241] & 19.6 \\
+\midrule
+\bottomrule
+\end{tabular}
+}
+\end{table}
+

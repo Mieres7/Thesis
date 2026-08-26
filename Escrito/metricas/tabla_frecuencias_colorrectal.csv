@@ -1,0 +1,14 @@
+Variable,Categoria,SurGen-SR386,SurGen-SR1482,HISTAI-b1,HISTAI-b2
+Sexo,Femenino,197 (46.1%),191 (45.9%),504 (57.4%),32 (56.1%)
+Sexo,Masculino,230 (53.9%),225 (54.1%),374 (42.6%),25 (43.9%)
+Sitio,Recto,166 (39.1%),88 (22.7%),160 (19.0%),15 (26.8%)
+Sitio,Sigmoide,89 (20.9%),56 (14.5%),211 (25.1%),17 (30.4%)
+Sitio,Colon derecho,115 (27.1%),79 (20.4%),135 (16.1%),10 (17.9%)
+Sitio,Colon izquierdo,30 (7.1%),20 (5.2%),33 (3.9%),2 (3.6%)
+Sitio,Colon transverso,25 (5.9%),20 (5.2%),39 (4.6%),1 (1.8%)
+Sitio,Otros / inespecífico,--,77 (19.9%),245 (29.1%),11 (19.6%)
+Sitio,Metástasis hepática,--,47 (12.1%),18 (2.1%),--
+Lateralidad,Izquierdo,119 (28.0%),76 (28.9%),244 (42.2%),19 (42.2%)
+Lateralidad,Derecho,115 (27.1%),79 (30.0%),135 (23.4%),10 (22.2%)
+Lateralidad,Recto,166 (39.1%),88 (33.5%),160 (27.7%),15 (33.3%)
+Lateralidad,Transverso,25 (5.9%),20 (7.6%),39 (6.7%),1 (2.2%)

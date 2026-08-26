@@ -1,0 +1,13 @@
+Dataset,Escala,Completitud,Cobertura,Compatibilidad
+Ovarian,Pequeña (78),Media,Media,Baja
+BCNB,Mediana (1058),Alta,Media,Alta (mama)
+CLWD,Mediana (408),Completa,Baja,Baja
+NDB-UFES,Pequeña (237),Alta,Baja,Baja
+TDBTA,Grande (3115),Baja,Alta,Baja
+SurGen-SR386,Mediana (427),Media,Alta,Alta (colorrectal)
+SurGen-SR1482,Mediana (416),Baja,Alta,Alta (colorrectal)
+HSI-BRCA,Pequeña (47),Alta,Media,Alta (mama)
+SOPHIE,Pequeña (61),Baja,Media,Baja
+HISTAI-Breast,Mediana (1489),Media,Media,Alta (mama)
+HISTAI-Colorectal-b1,Mediana (878),Media,Alta,Alta (colorrectal)
+HISTAI-Colorectal-b2,Pequeña (57),Media,Alta,Alta (colorrectal)

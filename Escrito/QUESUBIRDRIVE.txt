@@ -1,0 +1,34 @@
+Buena pregunta. El problema principal es que Scripts/datasets_metadata/ no existe — los metadatos originales que alimentaron DatasetAnalyzer no están en el repo. Eso significa que los outputs no son 100% reproducibles desde este repositorio solo.
+Dicho eso, para Drive te recomiendo esta estructura:
+Anexo_Datos_Tesis/
+├── 01_DatasetAnalyzer_Outputs/          # Cap 4.2 — caracterización inicial
+│   ├── all_dataset_summary.csv          # (1) Resumen global: n_rows, missing%
+│   ├── all_missing_summary.csv          # (1) Missing por variable
+│   ├── all_categorical_summary.csv      # (3) Frecuencias categóricas
+│   └── all_numeric_summary.csv          #     Resumen numérico
+│
+├── 02_Metadata_Curado/                  # Cap 4.3 — curación y armonización
+│   ├── breast/
+│   │   ├── BCNB_final.csv              # (3) Frecuencias mama
+│   │   ├── HSI_BRCA_final.xlsx         # (3)
+│   │   └── HISTAI_final.csv            # (3) Cobertura biomarcadores
+│   └── colorectal/
+│       ├── surgen386_final.csv          # (4) Frecuencias colorrectales
+│       ├── surgen1482_final.csv         # (4)
+│       ├── HISTAI_B1_final.csv          # (4)
+│       └── HISTAI_B2_final.csv          # (4)
+│
+├── 03_Tablas_Capitulo4/                 # Respaldo de tablas insertadas
+│   ├── tabla_completitud_agregada.csv
+│   ├── tabla_indicadores_preseleccion.csv
+│   ├── tabla_frecuencias_mama.csv
+│   ├── tabla_frecuencias_colorrectal.csv
+│   └── exportar_tablas_capitulo4.py     # Script que genera las tablas
+│
+└── LEEME.txt                            # Descripción, fuentes y dependencias
+NO incluiría en Drive:
+- Los 84 reportes individuales por dataset (son ~7 MB y se regeneran desde DatasetAnalyzer)
+- Los splits *_BC*.csv, *_CRC*.csv (son subproductos de curación, los *_final.csv bastan)
+- clean/ (archivos intermedios, no necesarios para trazabilidad)
+- metricas.md (no es un dato, es un documento de diseño metodológico)
+Problema pendiente: los metadatos originales (Scripts/datasets_metadata/) no existen en el repo. Si los tienes en otro lado, valdría la pena agregar una carpeta 00_Metadata_Original/ en Drive para completar la trazabilidad. Sin esos archivos, los outputs de DatasetAnalyzer no se pueden regenerar desde cero.

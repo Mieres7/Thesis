@@ -1,0 +1,13 @@
+Variable,Categoria,BCNB (%),HSI-BRCA (%),HISTAI-Breast (% cubierto)
+ER,Positivo (+),831 (78.54),38 (80.85),855 de 1489 (57.4)
+ER,Negativo (--),227 (21.46),9 (19.15),
+PR,Positivo (+),790 (74.67),32 (68.09),849 de 1489 (57.0)
+PR,Negativo (--),268 (25.33),15 (31.91),
+HER2,Negativo (0),781 (73.82),37 (78.72),878 de 1489 (59.0)
+HER2,Positivo (+),277 (26.18),10 (21.28),
+Ki-67,Bajo (<20%),--,14 (29.79),889 de 1489 (59.7)
+Ki-67,Alto (>=20%),--,33 (70.21),
+Subtipo molecular,Luminal A,288 (27.22),--,852 de 1489 (57.2)
+Subtipo molecular,Luminal B,372 (35.16),23 (48.94),
+Subtipo molecular,HER2+,273 (25.8),4 (8.51),
+Subtipo molecular,Triple negativo,125 (11.81),4 (8.51),

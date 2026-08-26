@@ -1,0 +1,148 @@
+\begin{table}[htbp]
+\centering
+\caption{Generalización cross-dataset en la tarea de estado HER2. BA-ID corresponde a la balanced accuracy del conjunto de prueba del dataset de entrenamiento; BA-OOD al rendimiento al evaluar en el dataset objetivo. $\Delta$BA y $\Delta$F1 reportan la caída absoluta de cada métrica con su intervalo de confianza al 95\% por bootstrap de la diferencia (percentiles 2,5 y 97,5; conjuntos ID y OOD independientes); la caída relativa se calcula sobre BA-ID. Los conjuntos marcados con * se evaluaron con validación cruzada de 5 pliegues por su tamaño reducido.}
+\label{tab:resultados_cross_dataset_mama_her2}
+\footnotesize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l c c c c c c c}
+\toprule
+\textbf{Modelo} & \textbf{Train $\rightarrow$ Test} & \textbf{n\textsubscript{test}} & \textbf{BA-ID} & \textbf{BA-OOD} & \textbf{$\Delta$BA [IC 95\%]} & \textbf{$\Delta$rel (\%)} & \textbf{Macro-F1 OOD} & \textbf{$\Delta$F1 [IC 95\%]} \\
+\midrule
+\multicolumn{9}{c}{\textit{HER2}} \\
+\midrule
+Phikon-v2 & BCNB* $\rightarrow$ HISTAI-Breast* & 870 & 0.418 & 0.329 & 0.089 [0.053,0.127] & 21.2 & 0.168 & 0.248 [0.209,0.288] \\
+Phikon-v2 & BCNB* $\rightarrow$ HSI-BC* & 44 & 0.418 & 0.111 & 0.307 [0.229,0.375] & 73.4 & 0.119 & 0.297 [0.232,0.363] \\
+Phikon-v2 & HISTAI-Breast* $\rightarrow$ BCNB* & 1058 & 0.381 & 0.327 & 0.055 [0.015,0.099] & 14.4 & 0.224 & 0.160 [0.121,0.202] \\
+Phikon-v2 & HISTAI-Breast* $\rightarrow$ HSI-BC* & 44 & 0.381 & 0.056 & 0.326 [0.261,0.383] & 85.4 & 0.067 & 0.318 [0.252,0.382] \\
+Phikon-v2 & HSI-BC* $\rightarrow$ BCNB* & 575 & 0.278 & 0.526 & -0.249 [-0.344,-0.157] & -89.5 & 0.504 & -0.192 [-0.283,-0.112] \\
+Phikon-v2 & HSI-BC* $\rightarrow$ HISTAI-Breast* & 320 & 0.278 & 0.495 & -0.218 [-0.313,-0.127] & -78.3 & 0.445 & -0.132 [-0.222,-0.049] \\
+Prov-GigaPath & BCNB* $\rightarrow$ HISTAI-Breast* & 870 & 0.447 & 0.339 & 0.108 [0.060,0.154] & 24.1 & 0.329 & 0.116 [0.072,0.162] \\
+Prov-GigaPath & BCNB* $\rightarrow$ HSI-BC* & 44 & 0.447 & 0.000 & 0.447 [0.416,0.478] & 100.0 & 0.000 & 0.445 [0.414,0.475] \\
+Prov-GigaPath & HISTAI-Breast* $\rightarrow$ BCNB* & 1058 & 0.377 & 0.326 & 0.051 [0.012,0.091] & 13.4 & 0.210 & 0.169 [0.128,0.210] \\
+Prov-GigaPath & HISTAI-Breast* $\rightarrow$ HSI-BC* & 44 & 0.377 & 0.000 & 0.377 [0.346,0.408] & 100.0 & 0.000 & 0.378 [0.344,0.413] \\
+Prov-GigaPath & HSI-BC* $\rightarrow$ BCNB* & 575 & 0.562 & 0.482 & 0.081 [-0.104,0.296] & 14.3 & 0.438 & 0.109 [-0.051,0.281] \\
+Prov-GigaPath & HSI-BC* $\rightarrow$ HISTAI-Breast* & 320 & 0.562 & 0.499 & 0.063 [-0.144,0.267] & 11.2 & 0.353 & 0.194 [0.027,0.362] \\
+UNI2 & BCNB* $\rightarrow$ HISTAI-Breast* & 870 & 0.455 & 0.380 & 0.075 [0.024,0.121] & 16.5 & 0.346 & 0.111 [0.063,0.154] \\
+UNI2 & BCNB* $\rightarrow$ HSI-BC* & 44 & 0.455 & 0.062 & 0.392 [0.231,0.478] & 86.3 & 0.056 & 0.401 [0.304,0.480] \\
+UNI2 & HISTAI-Breast* $\rightarrow$ BCNB* & 1058 & 0.364 & 0.327 & 0.036 [0.002,0.069] & 9.9 & 0.228 & 0.136 [0.097,0.176] \\
+UNI2 & HISTAI-Breast* $\rightarrow$ HSI-BC* & 44 & 0.364 & 0.056 & 0.308 [0.245,0.367] & 84.7 & 0.065 & 0.299 [0.235,0.365] \\
+UNI2 & HSI-BC* $\rightarrow$ BCNB* & 575 & 0.438 & 0.495 & -0.057 [-0.186,0.109] & -13.1 & 0.359 & 0.082 [-0.029,0.231] \\
+UNI2 & HSI-BC* $\rightarrow$ HISTAI-Breast* & 320 & 0.438 & 0.529 & -0.091 [-0.224,0.073] & -20.8 & 0.529 & -0.087 [-0.203,0.050] \\
+Virchow2 & BCNB* $\rightarrow$ HISTAI-Breast* & 870 & 0.434 & 0.329 & 0.105 [0.057,0.154] & 24.1 & 0.288 & 0.147 [0.104,0.192] \\
+Virchow2 & BCNB* $\rightarrow$ HSI-BC* & 44 & 0.434 & 0.083 & 0.351 [0.281,0.412] & 80.8 & 0.095 & 0.339 [0.277,0.403] \\
+Virchow2 & HISTAI-Breast* $\rightarrow$ BCNB* & 1058 & 0.366 & 0.336 & 0.031 [-0.006,0.070] & 8.4 & 0.194 & 0.175 [0.137,0.212] \\
+Virchow2 & HISTAI-Breast* $\rightarrow$ HSI-BC* & 44 & 0.366 & 0.188 & 0.179 [-0.008,0.356] & 48.8 & 0.095 & 0.273 [0.182,0.363] \\
+Virchow2 & HSI-BC* $\rightarrow$ BCNB* & 575 & 0.417 & 0.484 & -0.067 [-0.143,0.003] & -16.1 & 0.483 & -0.078 [-0.141,-0.015] \\
+Virchow2 & HSI-BC* $\rightarrow$ HISTAI-Breast* & 320 & 0.417 & 0.516 & -0.099 [-0.164,-0.039] & -23.8 & 0.347 & 0.059 [-0.012,0.123] \\
+\bottomrule
+\end{tabular}}%
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Generalización cross-dataset en la tarea de subtipo molecular. BA-ID corresponde a la balanced accuracy del conjunto de prueba del dataset de entrenamiento; BA-OOD al rendimiento al evaluar en el dataset objetivo. $\Delta$BA y $\Delta$F1 reportan la caída absoluta de cada métrica con su intervalo de confianza al 95\% por bootstrap de la diferencia (percentiles 2,5 y 97,5; conjuntos ID y OOD independientes); la caída relativa se calcula sobre BA-ID. Los conjuntos marcados con * se evaluaron con validación cruzada de 5 pliegues por su tamaño reducido.}
+\label{tab:resultados_cross_dataset_mama_molsub}
+\footnotesize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l c c c c c c c}
+\toprule
+\textbf{Modelo} & \textbf{Train $\rightarrow$ Test} & \textbf{n\textsubscript{test}} & \textbf{BA-ID} & \textbf{BA-OOD} & \textbf{$\Delta$BA [IC 95\%]} & \textbf{$\Delta$rel (\%)} & \textbf{Macro-F1 OOD} & \textbf{$\Delta$F1 [IC 95\%]} \\
+\midrule
+\multicolumn{9}{c}{\textit{MolSub}} \\
+\midrule
+Phikon-v2 & BCNB* $\rightarrow$ HISTAI-Breast* & 842 & 0.434 & 0.327 & 0.107 [0.062,0.149] & 24.6 & 0.281 & 0.148 [0.103,0.191] \\
+Phikon-v2 & BCNB* $\rightarrow$ HSI-BC* & 44 & 0.434 & 0.326 & 0.108 [-0.094,0.247] & 24.8 & 0.301 & 0.128 [-0.008,0.245] \\
+Phikon-v2 & HISTAI-Breast* $\rightarrow$ BCNB* & 1058 & 0.327 & 0.256 & 0.071 [0.033,0.114] & 21.8 & 0.174 & 0.153 [0.110,0.197] \\
+Phikon-v2 & HISTAI-Breast* $\rightarrow$ HSI-BC* & 44 & 0.327 & 0.330 & -0.003 [-0.156,0.229] & -1.0 & 0.167 & 0.159 [0.010,0.311] \\
+Phikon-v2 & HSI-BC* $\rightarrow$ BCNB* & 1058 & 0.217 & 0.321 & -0.104 [-0.200,0.011] & -47.9 & 0.213 & -0.004 [-0.083,0.075] \\
+Phikon-v2 & HSI-BC* $\rightarrow$ HISTAI-Breast* & 842 & 0.217 & 0.274 & -0.056 [-0.151,0.071] & -26.0 & 0.193 & 0.016 [-0.063,0.097] \\
+Prov-GigaPath & BCNB* $\rightarrow$ HISTAI-Breast* & 842 & 0.472 & 0.308 & 0.163 [0.117,0.209] & 34.6 & 0.294 & 0.176 [0.131,0.220] \\
+Prov-GigaPath & BCNB* $\rightarrow$ HSI-BC* & 44 & 0.472 & 0.467 & 0.004 [-0.196,0.263] & 0.9 & 0.271 & 0.199 [0.064,0.352] \\
+Prov-GigaPath & HISTAI-Breast* $\rightarrow$ BCNB* & 1058 & 0.341 & 0.259 & 0.082 [0.043,0.120] & 24.1 & 0.225 & 0.116 [0.075,0.157] \\
+Prov-GigaPath & HISTAI-Breast* $\rightarrow$ HSI-BC* & 44 & 0.341 & 0.408 & -0.067 [-0.264,0.150] & -19.6 & 0.335 & 0.006 [-0.154,0.166] \\
+Prov-GigaPath & HSI-BC* $\rightarrow$ BCNB* & 1058 & 0.334 & 0.270 & 0.065 [-0.067,0.269] & 19.3 & 0.198 & 0.119 [0.004,0.248] \\
+Prov-GigaPath & HSI-BC* $\rightarrow$ HISTAI-Breast* & 842 & 0.334 & 0.269 & 0.065 [-0.076,0.241] & 19.6 & 0.181 & 0.136 [0.014,0.264] \\
+UNI2 & BCNB* $\rightarrow$ HISTAI-Breast* & 842 & 0.482 & 0.326 & 0.156 [0.116,0.200] & 32.4 & 0.243 & 0.236 [0.191,0.282] \\
+UNI2 & BCNB* $\rightarrow$ HSI-BC* & 44 & 0.482 & 0.229 & 0.253 [0.075,0.471] & 52.5 & 0.067 & 0.412 [0.330,0.483] \\
+UNI2 & HISTAI-Breast* $\rightarrow$ BCNB* & 1058 & 0.361 & 0.251 & 0.110 [0.066,0.153] & 30.4 & 0.254 & 0.107 [0.059,0.153] \\
+UNI2 & HISTAI-Breast* $\rightarrow$ HSI-BC* & 44 & 0.361 & 0.465 & -0.104 [-0.331,0.120] & -28.8 & 0.250 & 0.111 [-0.014,0.256] \\
+UNI2 & HSI-BC* $\rightarrow$ BCNB* & 1058 & 0.317 & 0.284 & 0.034 [-0.071,0.165] & 10.6 & 0.195 & 0.112 [0.008,0.193] \\
+UNI2 & HSI-BC* $\rightarrow$ HISTAI-Breast* & 842 & 0.317 & 0.277 & 0.041 [-0.064,0.175] & 12.8 & 0.248 & 0.059 [-0.039,0.146] \\
+Virchow2 & BCNB* $\rightarrow$ HISTAI-Breast* & 842 & 0.427 & 0.357 & 0.070 [0.022,0.118] & 16.5 & 0.261 & 0.161 [0.117,0.204] \\
+Virchow2 & BCNB* $\rightarrow$ HSI-BC* & 44 & 0.427 & 0.222 & 0.205 [0.058,0.398] & 47.9 & 0.079 & 0.343 [0.263,0.418] \\
+Virchow2 & HISTAI-Breast* $\rightarrow$ BCNB* & 1058 & 0.354 & 0.258 & 0.097 [0.056,0.140] & 27.3 & 0.225 & 0.126 [0.082,0.168] \\
+Virchow2 & HISTAI-Breast* $\rightarrow$ HSI-BC* & 44 & 0.354 & 0.257 & 0.097 [-0.129,0.279] & 27.5 & 0.182 & 0.169 [0.017,0.321] \\
+Virchow2 & HSI-BC* $\rightarrow$ BCNB* & 1058 & 0.172 & 0.268 & -0.096 [-0.172,0.011] & -56.1 & 0.168 & 0.003 [-0.070,0.090] \\
+Virchow2 & HSI-BC* $\rightarrow$ HISTAI-Breast* & 842 & 0.172 & 0.281 & -0.110 [-0.193,0.005] & -63.9 & 0.255 & -0.084 [-0.157,-0.004] \\
+\bottomrule
+\end{tabular}}%
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Generalización cross-dataset en tareas colorrectales. BA-ID corresponde a la balanced accuracy del conjunto de prueba del dataset de entrenamiento; BA-OOD al rendimiento al evaluar en el dataset objetivo. $\Delta$BA y $\Delta$F1 reportan la caída absoluta de cada métrica con su intervalo de confianza al 95\% por bootstrap de la diferencia (percentiles 2,5 y 97,5; conjuntos ID y OOD independientes); la caída relativa se calcula sobre BA-ID. Los conjuntos marcados con * se evaluaron con validación cruzada de 5 pliegues por su tamaño reducido.}
+\label{tab:resultados_cross_dataset_colorrectal}
+\footnotesize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l c c c c c c c}
+\toprule
+\textbf{Modelo} & \textbf{Train $\rightarrow$ Test} & \textbf{n\textsubscript{test}} & \textbf{BA-ID} & \textbf{BA-OOD} & \textbf{$\Delta$BA [IC 95\%]} & \textbf{$\Delta$rel (\%)} & \textbf{Macro-F1 OOD} & \textbf{$\Delta$F1 [IC 95\%]} \\
+\midrule
+\multicolumn{9}{c}{\textit{Site}} \\
+\midrule
+Phikon-v2 & HISTAI-CRC-b1* $\rightarrow$ HISTAI-CRC-b2* & 57 & 0.209 & 0.110 & 0.099 [-0.011,0.154] & 47.5 & 0.083 & 0.128 [0.051,0.167] \\
+Phikon-v2 & HISTAI-CRC-b1* $\rightarrow$ SurGen* & 765 & 0.209 & 0.128 & 0.081 [0.048,0.117] & 38.8 & 0.055 & 0.156 [0.129,0.183] \\
+Phikon-v2 & HISTAI-CRC-b2* $\rightarrow$ HISTAI-CRC-b1* & 860 & 0.094 & 0.141 & -0.047 [-0.106,0.055] & -50.1 & 0.121 & -0.031 [-0.092,0.041] \\
+Phikon-v2 & HISTAI-CRC-b2* $\rightarrow$ SurGen* & 730 & 0.094 & 0.128 & -0.034 [-0.096,0.069] & -35.9 & 0.051 & 0.039 [-0.023,0.111] \\
+Phikon-v2 & SurGen* $\rightarrow$ HISTAI-CRC-b1* & 878 & 0.315 & 0.084 & 0.231 [0.190,0.274] & 73.4 & 0.045 & 0.268 [0.233,0.303] \\
+Phikon-v2 & SurGen* $\rightarrow$ HISTAI-CRC-b2* & 57 & 0.315 & 0.145 & 0.170 [0.111,0.329] & 54.0 & 0.043 & 0.269 [0.212,0.323] \\
+Prov-GigaPath & HISTAI-CRC-b1* $\rightarrow$ HISTAI-CRC-b2* & 57 & 0.206 & 0.159 & 0.047 [-0.097,0.119] & 22.9 & 0.155 & 0.052 [-0.050,0.125] \\
+Prov-GigaPath & HISTAI-CRC-b1* $\rightarrow$ SurGen* & 765 & 0.206 & 0.111 & 0.095 [0.068,0.123] & 46.3 & 0.030 & 0.177 [0.153,0.200] \\
+Prov-GigaPath & HISTAI-CRC-b2* $\rightarrow$ HISTAI-CRC-b1* & 860 & 0.126 & 0.140 & -0.014 [-0.068,0.097] & -10.9 & 0.117 & 0.003 [-0.054,0.086] \\
+Prov-GigaPath & HISTAI-CRC-b2* $\rightarrow$ SurGen* & 730 & 0.126 & 0.120 & 0.007 [-0.049,0.110] & 5.2 & 0.044 & 0.077 [0.019,0.161] \\
+Prov-GigaPath & SurGen* $\rightarrow$ HISTAI-CRC-b1* & 878 & 0.322 & 0.156 & 0.166 [0.124,0.210] & 51.6 & 0.102 & 0.218 [0.181,0.258] \\
+Prov-GigaPath & SurGen* $\rightarrow$ HISTAI-CRC-b2* & 57 & 0.322 & 0.127 & 0.195 [0.107,0.244] & 60.5 & 0.089 & 0.231 [0.171,0.273] \\
+UNI2 & HISTAI-CRC-b1* $\rightarrow$ HISTAI-CRC-b2* & 57 & 0.203 & 0.102 & 0.101 [0.011,0.152] & 49.6 & 0.108 & 0.096 [0.015,0.152] \\
+UNI2 & HISTAI-CRC-b1* $\rightarrow$ SurGen* & 765 & 0.203 & 0.117 & 0.086 [0.060,0.112] & 42.4 & 0.049 & 0.155 [0.130,0.179] \\
+UNI2 & HISTAI-CRC-b2* $\rightarrow$ HISTAI-CRC-b1* & 860 & 0.117 & 0.142 & -0.025 [-0.073,0.070] & -21.2 & 0.120 & -0.005 [-0.058,0.074] \\
+UNI2 & HISTAI-CRC-b2* $\rightarrow$ SurGen* & 730 & 0.117 & 0.153 & -0.036 [-0.082,0.054] & -30.6 & 0.103 & 0.011 [-0.040,0.085] \\
+UNI2 & SurGen* $\rightarrow$ HISTAI-CRC-b1* & 878 & 0.367 & 0.129 & 0.238 [0.197,0.277] & 64.9 & 0.049 & 0.314 [0.276,0.350] \\
+UNI2 & SurGen* $\rightarrow$ HISTAI-CRC-b2* & 57 & 0.367 & 0.225 & 0.142 [0.027,0.344] & 38.6 & 0.111 & 0.252 [0.166,0.346] \\
+Virchow2 & HISTAI-CRC-b1* $\rightarrow$ HISTAI-CRC-b2* & 57 & 0.210 & 0.170 & 0.040 [-0.114,0.110] & 19.0 & 0.160 & 0.049 [-0.035,0.124] \\
+Virchow2 & HISTAI-CRC-b1* $\rightarrow$ SurGen* & 765 & 0.210 & 0.104 & 0.106 [0.078,0.135] & 50.3 & 0.074 & 0.135 [0.109,0.161] \\
+Virchow2 & HISTAI-CRC-b2* $\rightarrow$ HISTAI-CRC-b1* & 860 & 0.138 & 0.140 & -0.002 [-0.058,0.112] & -1.4 & 0.120 & 0.016 [-0.044,0.104] \\
+Virchow2 & HISTAI-CRC-b2* $\rightarrow$ SurGen* & 730 & 0.138 & 0.135 & 0.003 [-0.054,0.119] & 2.2 & 0.054 & 0.082 [0.020,0.176] \\
+Virchow2 & SurGen* $\rightarrow$ HISTAI-CRC-b1* & 878 & 0.309 & 0.125 & 0.184 [0.145,0.226] & 59.6 & 0.110 & 0.199 [0.162,0.234] \\
+Virchow2 & SurGen* $\rightarrow$ HISTAI-CRC-b2* & 57 & 0.309 & 0.201 & 0.107 [0.020,0.265] & 34.8 & 0.123 & 0.186 [0.103,0.264] \\
+\midrule
+\multicolumn{9}{c}{\textit{Side}} \\
+\midrule
+Phikon-v2 & HISTAI-CRC-b1* $\rightarrow$ HISTAI-CRC-b2* & 46 & 0.293 & 0.269 & 0.025 [-0.210,0.096] & 8.4 & 0.262 & 0.032 [-0.126,0.127] \\
+Phikon-v2 & HISTAI-CRC-b1* $\rightarrow$ SurGen* & 631 & 0.293 & 0.179 & 0.115 [0.079,0.155] & 39.1 & 0.154 & 0.139 [0.101,0.181] \\
+Phikon-v2 & HISTAI-CRC-b2* $\rightarrow$ HISTAI-CRC-b1* & 615 & 0.115 & 0.253 & -0.138 [-0.197,-0.003] & -120.4 & 0.228 & -0.125 [-0.186,-0.041] \\
+Phikon-v2 & HISTAI-CRC-b2* $\rightarrow$ SurGen* & 631 & 0.115 & 0.199 & -0.085 [-0.135,0.040] & -73.8 & 0.088 & 0.015 [-0.037,0.094] \\
+Phikon-v2 & SurGen* $\rightarrow$ HISTAI-CRC-b1* & 615 & 0.321 & 0.174 & 0.148 [0.097,0.200] & 46.0 & 0.119 & 0.200 [0.162,0.246] \\
+Phikon-v2 & SurGen* $\rightarrow$ HISTAI-CRC-b2* & 46 & 0.321 & 0.484 & -0.163 [-0.209,0.231] & -50.8 & 0.149 & 0.171 [0.070,0.265] \\
+Prov-GigaPath & HISTAI-CRC-b1* $\rightarrow$ HISTAI-CRC-b2* & 46 & 0.331 & 0.265 & 0.066 [-0.169,0.151] & 19.9 & 0.285 & 0.046 [-0.081,0.158] \\
+Prov-GigaPath & HISTAI-CRC-b1* $\rightarrow$ SurGen* & 631 & 0.331 & 0.246 & 0.085 [0.040,0.131] & 25.8 & 0.226 & 0.105 [0.063,0.149] \\
+Prov-GigaPath & HISTAI-CRC-b2* $\rightarrow$ HISTAI-CRC-b1* & 615 & 0.164 & 0.280 & -0.116 [-0.189,0.064] & -70.7 & 0.246 & -0.075 [-0.167,0.031] \\
+Prov-GigaPath & HISTAI-CRC-b2* $\rightarrow$ SurGen* & 631 & 0.164 & 0.222 & -0.058 [-0.124,0.120] & -35.4 & 0.137 & 0.035 [-0.043,0.127] \\
+Prov-GigaPath & SurGen* $\rightarrow$ HISTAI-CRC-b1* & 615 & 0.318 & 0.233 & 0.085 [0.037,0.133] & 26.8 & 0.204 & 0.113 [0.067,0.157] \\
+Prov-GigaPath & SurGen* $\rightarrow$ HISTAI-CRC-b2* & 46 & 0.318 & 0.245 & 0.073 [-0.132,0.137] & 23.0 & 0.219 & 0.098 [-0.037,0.201] \\
+UNI2 & HISTAI-CRC-b1* $\rightarrow$ HISTAI-CRC-b2* & 46 & 0.325 & 0.328 & -0.003 [-0.282,0.075] & -0.9 & 0.357 & -0.027 [-0.134,0.077] \\
+UNI2 & HISTAI-CRC-b1* $\rightarrow$ SurGen* & 631 & 0.325 & 0.233 & 0.092 [0.042,0.139] & 28.3 & 0.162 & 0.168 [0.126,0.211] \\
+UNI2 & HISTAI-CRC-b2* $\rightarrow$ HISTAI-CRC-b1* & 615 & 0.116 & 0.233 & -0.116 [-0.179,0.015] & -99.9 & 0.195 & -0.080 [-0.143,0.027] \\
+UNI2 & HISTAI-CRC-b2* $\rightarrow$ SurGen* & 631 & 0.116 & 0.206 & -0.089 [-0.152,0.037] & -76.7 & 0.197 & -0.082 [-0.147,0.018] \\
+UNI2 & SurGen* $\rightarrow$ HISTAI-CRC-b1* & 615 & 0.372 & 0.205 & 0.166 [0.123,0.215] & 44.7 & 0.052 & 0.316 [0.271,0.362] \\
+UNI2 & SurGen* $\rightarrow$ HISTAI-CRC-b2* & 46 & 0.372 & 0.227 & 0.145 [0.044,0.383] & 39.0 & 0.052 & 0.316 [0.237,0.377] \\
+Virchow2 & HISTAI-CRC-b1* $\rightarrow$ HISTAI-CRC-b2* & 46 & 0.324 & 0.260 & 0.063 [-0.169,0.151] & 19.6 & 0.268 & 0.061 [-0.070,0.169] \\
+Virchow2 & HISTAI-CRC-b1* $\rightarrow$ SurGen* & 631 & 0.324 & 0.244 & 0.080 [0.025,0.126] & 24.6 & 0.137 & 0.193 [0.146,0.234] \\
+Virchow2 & HISTAI-CRC-b2* $\rightarrow$ HISTAI-CRC-b1* & 615 & 0.174 & 0.261 & -0.087 [-0.160,0.091] & -50.0 & 0.215 & -0.041 [-0.121,0.063] \\
+Virchow2 & HISTAI-CRC-b2* $\rightarrow$ SurGen* & 631 & 0.174 & 0.200 & -0.026 [-0.087,0.149] & -15.2 & 0.085 & 0.090 [0.014,0.208] \\
+Virchow2 & SurGen* $\rightarrow$ HISTAI-CRC-b1* & 615 & 0.339 & 0.215 & 0.124 [0.072,0.180] & 36.6 & 0.126 & 0.208 [0.166,0.252] \\
+Virchow2 & SurGen* $\rightarrow$ HISTAI-CRC-b2* & 46 & 0.339 & 0.133 & 0.205 [0.074,0.263] & 60.6 & 0.103 & 0.232 [0.156,0.289] \\
+\bottomrule
+\end{tabular}}%
+\end{table}
+
+\par\medskip\noindent\footnotesize \textbf{Nota.} Cuando el conjunto de entrenamiento no contiene todas las clases del objetivo, la evaluación OOD se restringe a las clases compartidas. En HER2, HSI-BC* contiene solo dos de las tres clases, de modo que la BA-OOD de los pares con HSI-BC* como fuente se interpreta frente a un nivel de azar de 0,5 y no es directamente comparable con los demás pares.

@@ -1,0 +1,13 @@
+Dataset,Tarea,N_raw,N_cohorte_curada,N_elegible_por_tarea,%_retenido_raw,%_retenido_curated
+BCNB,HER2,1058,1058,1058,100.0,100.0
+BCNB,Subtipo mol.,1058,1058,1058,100.0,100.0
+HISTAI-Breast,HER2,1489,1489,878,59.0,59.0
+HISTAI-Breast,Subtipo mol.,1489,1489,852,57.2,57.2
+HSI-BRCA,HER2,47,47,47,100.0,100.0
+HSI-BRCA,Subtipo mol.,47,47,47,100.0,100.0
+SurGen,Sitio,843,841,841,99.8,100.0
+SurGen,Lateralidad,843,841,707,83.9,84.1
+HISTAI-CRC-B1,Sitio,878,878,878,100.0,100.0
+HISTAI-CRC-B1,Lateralidad,878,878,615,70.0,70.0
+HISTAI-CRC-B2,Sitio,57,57,57,100.0,100.0
+HISTAI-CRC-B2,Lateralidad,57,57,46,80.7,80.7

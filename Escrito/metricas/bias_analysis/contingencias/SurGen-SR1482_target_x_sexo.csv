@@ -1,0 +1,14 @@
+,F,M,Total
+appendix,3,4,7
+colon_unspecified,12,14,26
+left_colon,6,14,20
+metastatic_liver,13,22,35
+metastatic_lung,1,2,3
+metastatic_peritoneal,5,7,12
+other,18,33,51
+rectosigmoid,8,11,19
+rectum,37,51,88
+right_colon,44,35,79
+sigmoid,28,28,56
+transverse_colon,16,4,20
+Total,191,225,416

@@ -371,10 +371,10 @@
 		\begin{minipage}{0.5\linewidth}
 			\begin{flushright}
 				\begin{tabular}{ll}
-				\ifdosguias{Profesores:}\else{Profesor:}\fi
+				\ifdosguias{Profesora guía:}\else{Profesor:}\fi
 				&\ifdosguias
 					\@profesor \\
-					&\@profesorco
+					Profesor co-guía: & \@profesorco
 				\else
 					\@profesor
 				\fi

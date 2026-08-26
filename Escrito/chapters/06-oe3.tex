@@ -46,24 +46,31 @@ Tras la extracción se aplicó un proceso de filtrado destinado a descartar parc
 
 El impacto del filtrado fue variable entre cohortes: la reducción del número de parches osciló entre 54,4\% en SurGen y 84,5\% en BCNB, reflejando diferencias en la calidad de las WSI y en las condiciones de adquisición de las imágenes (Tabla~\ref{tab:anexo_impacto_filtrado}, Apéndice~\ref{anexo:resultados_completos}).
 
-Los parches retenidos se procesaron con Phikon-v2, UNI2-h, Prov-GigaPath y Virchow2 como extractores congelados, es decir, sin ajuste fino (\textit{fine-tuning}) de sus parámetros, con el objetivo de evaluar directamente la calidad de las representaciones aprendidas durante el preentrenamiento, siguiendo la práctica estándar de evaluación de modelos fundacionales mediante \textit{feature extraction}. Cada imagen se normalizó con las medias y desviaciones estándar asociadas al \textit{encoder} correspondiente, la extracción se ejecutó en modo de evaluación dentro de un contexto \texttt{torch.inference\_mode()} (evitando el cálculo y almacenamiento de gradientes) y los \textit{embeddings} se almacenaron junto con las coordenadas espaciales de sus parches, conservando la correspondencia entre cada representación y su ubicación original en la WSI. Cabe señalar que Prov-GigaPath fue preentrenado con parches de $256 \times 256$ px~\parencite{xu2024provgigapath}, mientras que en este estudio todos los modelos se evaluaron a $224 \times 224$ px; las representaciones de Prov-GigaPath se obtienen, por tanto, a una resolución menor que la de su preentrenamiento, una diferencia metodológica que debe considerarse al comparar su desempeño con el de los demás encoders.
+Los parches retenidos se procesaron con Phikon-v2, UNI2-h, Prov-GigaPath y Virchow2 como \textit{encoders} congelados, es decir, sin ajuste fino (\textit{fine-tuning}) de sus parámetros, con el objetivo de evaluar directamente la calidad de las representaciones aprendidas durante el preentrenamiento, siguiendo la práctica estándar de evaluación de modelos fundacionales mediante generación de \textit{embeddings}. Cada imagen se normalizó con las medias y desviaciones estándar asociadas al \textit{encoder} correspondiente, la extracción se ejecutó en modo de evaluación dentro de un contexto \texttt{torch.inference\_mode()} (evitando el cálculo y almacenamiento de gradientes) y los \textit{embeddings} se almacenaron junto con las coordenadas espaciales de sus parches, conservando la correspondencia entre cada representación y su ubicación original en la WSI. Cabe señalar que Prov-GigaPath fue preentrenado con parches de $256 \times 256$ px~\parencite{xu2024provgigapath}, mientras que en este estudio todos los modelos se evaluaron a $224 \times 224$ px; las representaciones de Prov-GigaPath se obtienen, por tanto, a una resolución menor que la de su preentrenamiento, una diferencia metodológica que debe considerarse al comparar su desempeño con el de los demás \textit{encoders}.
 
-La agregación desde el nivel de parche hasta el nivel de paciente se realizó en dos etapas de promedio aritmético: en primer lugar se promediaron los \textit{embeddings} de los parches de cada WSI y, en segundo lugar, los vectores de las WSI de un mismo paciente, de modo que cada paciente queda representado por un único vector de dimensión $D$ independientemente del número de parches y WSI disponibles. La verificación de integridad incluyó la confirmación de que la dimensión del \textit{embedding} coincide con la reportada por cada modelo en su documentación oficial, la detección de valores faltantes (\texttt{NaN}) o infinitos, y la validación de que cada paciente posee exactamente un \textit{embedding} final tras la etapa de agregación; los resultados se registraron en archivos de log para trazabilidad. Las dimensiones y entradas de los encoders se resumen en la Tabla~\ref{tab:embedding_models}.
+La agregación desde el nivel de parche hasta el nivel de paciente se realizó en dos etapas de promedio aritmético: en primer lugar se promediaron los \textit{embeddings} de los parches de cada WSI y, en segundo lugar, los vectores de las WSI de un mismo paciente, de modo que cada paciente queda representado por un único vector de dimensión $D$ independientemente del número de parches y WSI disponibles. La verificación de integridad incluyó la confirmación de que la dimensión del \textit{embedding} coincide con la reportada por cada modelo en su documentación oficial, la detección de valores faltantes (\texttt{NaN}) o infinitos, y la validación de que cada paciente posee exactamente un \textit{embedding} final tras la etapa de agregación; los resultados se registraron en archivos de \textit{log} para trazabilidad. Las dimensiones y entradas de los \textit{encoders} se resumen en la Tabla~\ref{tab:embedding_models}.
 
 \begin{table}[h]
 \centering
-\caption{Características de los modelos fundacionales utilizados para extracción de representaciones.}
+\caption{Características de los modelos fundacionales utilizados para generación de \textit{embeddings}.}
 \label{tab:embedding_models}
 \begin{tabular}{lccc}
 \hline
 \textbf{Modelo} & \textbf{Arquitectura} & \textbf{Dim. embedding} & \textbf{Entrada} \\
 \hline
-UNI2-h        & ViT-H/14 & 1536 & 224$\times$224 \\
-Virchow2      & ViT-H/14 & 2560 & 224$\times$224 \\
+UNI2-h        & ViT-H/14\textsuperscript{a} & 1536 & 224$\times$224 \\
+Virchow2      & ViT-H/14 & 2560\textsuperscript{b} & 224$\times$224 \\
 Phikon-v2     & ViT-L/16 & 1024 & 224$\times$224 \\
-Prov-GigaPath & ViT-g/14 & 1536 & 224$\times$224 \\
+Prov-GigaPath & ViT-g/14\textsuperscript{c} & 1536 & 224$\times$224 \\
 \hline
 \end{tabular}
+
+\begin{flushleft}
+\footnotesize
+\textsuperscript{a}Variante personalizada con \textit{embed\_dim}=1536, 24 capas y 24 cabezas de atención, difiriendo de la configuración estándar de ViT-H (1280, 32 capas, 16 cabezas).\\
+\textsuperscript{b}Corresponde a la concatenación del token \texttt{[CLS]} con el promedio de los tokens de parche (1280 $\times$ 2), conforme a la estrategia recomendada por el autor~\parencite{zimmermann2024virchow2}. La dimensión nativa del \textit{encoder} es 1280.\\
+\textsuperscript{c}Arquitectura base ViT-g/14 (DINOv2); los pesos \textit{released} en HuggingFace utilizan \texttt{patch\_size}=16, resultando en 196 tokens de parche para entradas de 224$\times$224~\parencite{xu2024provgigapath}.
+\end{flushleft}
 \end{table}
 
 \subsection{Clasificador, particiones y métricas}
@@ -73,35 +80,43 @@ Sobre cada \textit{embedding} de paciente se entrenó un \texttt{MLPClassifier} 
 
 La estrategia de partición se adaptó al tamaño muestral de cada tarea, garantizando en todos los casos dos propiedades mediante \texttt{StratifiedGroupKFold}: la estratificación por etiqueta, que preserva la proporción de clases en cada partición, y la agrupación por paciente, que asegura que cada paciente aparezca en una única partición y evita fugas de información (\textit{data leakage}) cuando un mismo paciente puede tener múltiples WSI. Para las tareas T1--T4 se empleó validación cruzada de cinco pliegues (CV5): en cada iteración el 80\% de los pacientes se destinó al entrenamiento y el 20\% restante a prueba, y las métricas finales se reportan sobre las predicciones de prueba combinadas de los pliegues, de modo que cada paciente contribuye exactamente una vez al conjunto de prueba. Este esquema maximiza el aprovechamiento de los datos y resulta esencial para disponer de tamaños de subgrupo suficientes en el análisis de equidad, especialmente en las cohortes pequeñas (p.\ ej., HSI-BC, $n=44$; HISTAI-CRC-B2, $n=46$--$57$). Para T5-ORGAN, que integra las seis cohortes ($n=3.675$), se empleó en cambio una partición fija en entrenamiento (70\%), validación (15\%) y prueba (15\%), con 2.625, 525 y 525 pacientes, respectivamente, suficiente para sostener un conjunto de prueba amplio ($n=525$) sin la complejidad adicional de la validación cruzada. Todas las particiones se ejecutaron con una semilla fija (\texttt{seed=42}); el conjunto de validación se utilizó exclusivamente para monitorear la convergencia del clasificador, mientras que el conjunto de prueba se reservó para la evaluación final.
 
-La utilidad predictiva global se midió mediante tres métricas complementarias, cada una capturando un aspecto diferente del rendimiento del clasificador en escenarios con desbalance de clases. La \textit{balanced accuracy} corresponde a la media aritmética del \textit{recall} (sensibilidad) por clase:
+La utilidad predictiva global se midió mediante tres métricas complementarias, cada una capturando un aspecto diferente del rendimiento del clasificador en escenarios con desbalance de clases. 
+
+La \textit{balanced accuracy} corresponde a la media aritmética del \textit{recall} (sensibilidad) por clase:
 
 \begin{equation}
     \text{BA} = \frac{1}{K} \sum_{k=1}^{K} \frac{TP_k}{TP_k + FN_k}
     \label{eq:balanced_accuracy}
 \end{equation}
 
-donde $K$ es el número de clases, $TP_k$ los verdaderos positivos y $FN_k$ los falsos negativos de la clase $k$. Esta métrica asigna igual peso a cada clase independientemente de su frecuencia, lo que la hace robusta al desbalance; su valor varía entre 0 (rendimiento aleatorio uniforme) y 1 (clasificación perfecta). La \textit{balanced accuracy} fue elegida como métrica principal de utilidad por su amplia adopción en evaluaciones de \textit{fairness} en IA clínica~\parencite{tertytchny2024balanced}. El macro-F1 calcula el F1-score (media armónica de precisión y \textit{recall}) por clase y luego promedia sin ponderar:
+donde $K$ es el número de clases, $TP_k$ los verdaderos positivos y $FN_k$ los falsos negativos de la clase $k$. Esta métrica asigna igual peso a cada clase independientemente de su frecuencia, lo que la hace robusta al desbalance; su valor varía entre 0 (rendimiento aleatorio uniforme) y 1 (clasificación perfecta). La \textit{balanced accuracy} fue elegida como métrica principal de utilidad por su amplia adopción en evaluaciones de \textit{fairness} en IA clínica~\parencite{tertytchny2024balanced}. 
+
+El macro-F1 calcula el F1-score (media armónica de precisión y \textit{recall}) por clase y luego promedia sin ponderar:
 
 \begin{equation}
     \text{Macro-F1} = \frac{1}{K} \sum_{k=1}^{K} \frac{2 \cdot P_k \cdot R_k}{P_k + R_k}
     \label{eq:macro_f1}
 \end{equation}
 
-donde $P_k$ es la precisión y $R_k$ el \textit{recall} de la clase $k$. A diferencia de la \textit{balanced accuracy}, el macro-F1 penaliza tanto falsos positivos como falsos negativos, proporcionando una visión más completa del rendimiento; su complementariedad con la BA permite detectar patrones de error distintos~\parencite{chen2023algorithmic}. El AUC macro corresponde al área bajo la curva ROC calculada mediante la estrategia \textit{one-vs-rest} y promediada macro:
+donde $P_k$ es la precisión y $R_k$ el \textit{recall} de la clase $k$. A diferencia de la \textit{balanced accuracy}, el macro-F1 penaliza tanto falsos positivos como falsos negativos, proporcionando una visión más completa del rendimiento; su complementariedad con la BA permite detectar patrones de error distintos~\parencite{chen2023algorithmic}. 
+
+El AUC macro corresponde al área bajo la curva ROC calculada mediante la estrategia \textit{one-vs-rest} y promediada macro:
 
 \begin{equation}
     \text{AUC}_{\text{OVR}} = \frac{1}{K} \sum_{k=1}^{K} \text{AUC}_k
     \label{eq:macro_auc}
 \end{equation}
 
-El AUC mide la capacidad de discriminación del clasificador independientemente del umbral de decisión, lo que la hace útil para comparar modelos en escenarios con distribuciones de clase desiguales~\parencite{NEURIPS2024_c9826b9e}. Complementariamente, se reporta la sensibilidad de cada clase, definida como la proporción de muestras de esa clase correctamente clasificadas:
+El AUC mide la capacidad de discriminación del clasificador independientemente del umbral de decisión, lo que la hace útil para comparar modelos en escenarios con distribuciones de clase desiguales~\parencite{NEURIPS2024_c9826b9e}. 
+
+Complementariamente, se reporta la sensibilidad de cada clase, definida como la proporción de muestras de esa clase correctamente clasificadas:
 
 \begin{equation}
     \text{Sens}_k = \frac{TP_k}{TP_k + FN_k}
     \label{eq:sensibilidad}
 \end{equation}
 
-La sensibilidad por clase permite identificar qué clases se detectan de forma confiable y cuáles quedan sistemáticamente omitidas, un aspecto relevante en contexto clínico donde un falso negativo puede tener consecuencias graves. Dado que la \textit{balanced accuracy} (Ecuación~\ref{eq:balanced_accuracy}) corresponde a la media aritmética de estas sensibilidades, su desglose por clase no constituye una métrica global nueva, pero sí visibiliza la heterogeneidad que la BA promedia. Los intervalos de confianza al 95\% de cada sensibilidad se estimaron mediante bootstrap (percentiles 2,5 y 97,5) remuestreando pacientes con reposición, conforme al protocolo descrito más adelante.
+La sensibilidad por clase permite identificar qué clases se detectan de forma confiable y cuáles quedan sistemáticamente omitidas, un aspecto relevante en contexto clínico donde un falso negativo puede tener consecuencias graves. Dado que la \textit{balanced accuracy} (Ecuación~\ref{eq:balanced_accuracy}) corresponde a la media aritmética de estas sensibilidades, su desglose por clase no constituye una métrica global nueva, pero sí visibiliza la heterogeneidad que la BA promedia. Los intervalos de confianza al 95\% de cada sensibilidad se estimaron mediante \textit{bootstrap} (percentiles 2,5 y 97,5) remuestreando pacientes con reposición, conforme al protocolo descrito más adelante.
 
 La equidad entre subgrupos se evaluó mediante métricas de \textit{group fairness}, que cuantifican las diferencias de rendimiento entre grupos demográficos definidos por sexo y edad. La brecha de rendimiento (\textit{gap}) se define como la diferencia máxima de rendimiento entre el subgrupo con mejor desempeño y el de peor desempeño:
 
@@ -110,16 +125,22 @@ La equidad entre subgrupos se evaluó mediante métricas de \textit{group fairne
     \label{eq:gap}
 \end{equation}
 
-donde $M$ es la métrica de rendimiento (\textit{balanced accuracy} o macro-F1) y $G$ el conjunto de subgrupos; se calcula tanto para BA como para macro-F1, manteniendo coherencia con las métricas de utilidad global~\parencite{huang2025flex}. La brecha de AUC mide la diferencia máxima de AUC entre cualquier par de subgrupos:
+donde $M$ es la métrica de rendimiento (\textit{balanced accuracy} o macro-F1) y $G$ el conjunto de subgrupos; se calcula tanto para BA como para macro-F1, manteniendo coherencia con las métricas de utilidad global~\parencite{huang2025flex}. 
+
+La brecha de AUC mide la diferencia máxima de AUC entre cualquier par de subgrupos:
 
 \begin{equation}
     \Delta\text{AUC} = \max_{g \in G} \text{AUC}(g) - \min_{g \in G} \text{AUC}(g)
     \label{eq:delta_auc}
 \end{equation}
 
-Un valor elevado de $\Delta$AUC indica que el modelo discrimina de forma desigual entre grupos demográficos, lo que constituye una forma de inequidad algorítmica~\parencite{obermeyer2019dissecting}. Complementariamente, se reportan las tasas de verdaderos positivos (TPR) y falsos positivos (FPR) por subgrupo como evidencia de \textit{equalized odds}. En tareas multiclase, el TPR y el FPR por subgrupo se definen como el promedio sobre clases del \textit{recall} y del \textit{false positive rate} \textit{one-vs-rest}, respectivamente; cuando todas las clases están presentes en el subgrupo, el TPR promedio coincide con la \textit{balanced accuracy} del subgrupo. En este trabajo la brecha agregada de \textit{equalized odds} no se reporta como métrica resumen, porque su extensión a escenarios multiclase requiere adaptaciones no triviales; la información que la sustenta (TPR y FPR por subgrupo) se presenta directamente en las tablas de \textit{fairness} del Apéndice~\ref{anexo:resultados_completos}~\parencite{matos2025critical}.
+Un valor elevado de $\Delta$AUC indica que el modelo discrimina de forma desigual entre grupos demográficos, lo que constituye una forma de inequidad algorítmica~\parencite{obermeyer2019dissecting}. 
 
-Los subgrupos evaluados fueron sexo (masculino vs.\ femenino, cuando la variable estuvo disponible: en las tareas de cáncer de mama las cohortes son femeninas en su práctica totalidad, BCNB y HSI-BC exclusivamente, e HISTAI-Breast con una fracción masculina marginal del 1,3\%, por lo que esta dimensión no se evaluó en dichas tareas) y edad en tres grupos ($<50$, 50--70 y $\geq 70$ años), basados en rangos clínicamente relevantes para cáncer de mama~\parencite{lin2025fairpath}. Los mismos cortes se aplicaron a las tareas colorrectales para mantener la comparabilidad entre tareas y con la literatura, aunque no derivan de una justificación clínica específica para ese dominio; esta es una limitación del análisis de equidad por edad en colorrectal. Los subgrupos con menos de diez pacientes se excluyeron del análisis de equidad: con tamaños inferiores, la \textit{balanced accuracy} por subgrupo puede tomar un número muy reducido de valores posibles y los intervalos bootstrap resultan demasiado amplios o degenerados para sostener comparaciones entre grupos. Los resultados de equidad se reportan en las tablas de \textit{fairness} del Apéndice~\ref{anexo:resultados_completos}. En HISTAI-Breast, además, la cohorte analítica presenta un sesgo de selección hacia pacientes mayores: la mediana de edad se desplaza de 58 a 63 años al filtrar por la disponibilidad de biomarcadores (Capítulo~\ref{cap:caracterizacion_datasets}). Este sesgo debe considerarse al interpretar las comparaciones por grupo etario de las tareas T1 y T2, donde el grupo $<50$ años es el menos representado.
+Complementariamente, se reportan las tasas de verdaderos positivos (TPR) y falsos positivos (FPR) por subgrupo como evidencia de \textit{equalized odds}. En tareas multiclase, el TPR y el FPR por subgrupo se definen como el promedio sobre clases del \textit{recall} y del \textit{false positive rate} \textit{one-vs-rest}, respectivamente; cuando todas las clases están presentes en el subgrupo, el TPR promedio coincide con la \textit{balanced accuracy} del subgrupo. 
+
+En este trabajo la brecha agregada de \textit{equalized odds} no se reporta como métrica resumen, porque su extensión a escenarios multiclase requiere adaptaciones no triviales; la información que la sustenta (TPR y FPR por subgrupo) se presenta directamente en las tablas de \textit{fairness} del Apéndice~\ref{anexo:resultados_completos}~\parencite{matos2025critical}.
+
+Los subgrupos evaluados fueron sexo (masculino vs.\ femenino, cuando la variable estuvo disponible: en las tareas de cáncer de mama las cohortes son femeninas en su práctica totalidad, BCNB y HSI-BC exclusivamente, e HISTAI-Breast con una fracción masculina marginal del 1,3\%, por lo que esta dimensión no se evaluó en dichas tareas) y edad en tres grupos ($<50$, 50--70 y $\geq 70$ años), basados en rangos clínicamente relevantes para cáncer de mama~\parencite{lin2025fairpath}. Los mismos cortes se aplicaron a las tareas colorrectales para mantener la comparabilidad entre tareas y con la literatura, aunque no derivan de una justificación clínica específica para ese dominio; esta es una limitación del análisis de equidad por edad en colorrectal. Los subgrupos con menos de diez pacientes se excluyeron del análisis de equidad: con tamaños inferiores, la \textit{balanced accuracy} por subgrupo puede tomar un número muy reducido de valores posibles y los intervalos \textit{bootstrap} resultan demasiado amplios o degenerados para sostener comparaciones entre grupos. Los resultados de equidad se reportan en las tablas de \textit{fairness} del Apéndice~\ref{anexo:resultados_completos}. En HISTAI-Breast, además, la cohorte analítica presenta un sesgo de selección hacia pacientes mayores: la mediana de edad se desplaza de 58 a 63 años al filtrar por la disponibilidad de biomarcadores (Capítulo~\ref{cap:caracterizacion_datasets}). Este sesgo debe considerarse al interpretar las comparaciones por grupo etario de las tareas T1 y T2, donde el grupo $<50$ años es el menos representado.
 
 La generalización se cuantificó mediante la caída absoluta y relativa entre el rendimiento \textit{in-distribution} y \textit{out-of-distribution}:
 
@@ -130,9 +151,11 @@ La generalización se cuantificó mediante la caída absoluta y relativa entre e
 \label{eq:delta_m}
 \end{equation}
 
-Una caída elevada indica que el modelo aprendió representaciones específicas del sitio de entrenamiento que no se generalizan a otros centros o cohortes, un fenómeno ampliamente documentado en patología computacional~\parencite{huang2025flex, openmibood2025} y una de las principales amenazas al despliegue clínico de modelos de IA. Una consideración metodológica necesaria se refiere al número de clases efectivamente presentes en cada conjunto de prueba, ya que la \textit{balanced accuracy} se calcula sobre las clases presentes en el conjunto evaluado: en las transferencias hacia HSI-BC, la cohorte solo contiene dos de las tres clases de HER2 (0/1+ y 3+), de modo que la evaluación OOD se realiza con un denominador $K=2$ frente al $K=3$ de la evaluación ID; las caídas hacia esta cohorte combinan, por tanto, un cambio de distribución con un cambio de denominador. En la dirección inversa, cuando HSI-BC actúa como fuente, la evaluación OOD se restringe a los pacientes de las clases compartidas ($n=575$ en BCNB y $n=320$ en HISTAI-Breast, Tabla~\ref{tab:anexo_her2_crossdataset}); los deltas negativos que se observan en esa dirección se discuten en la Sección~\ref{sec:resultado_her2}.
+Una caída elevada indica que el modelo aprendió representaciones específicas del sitio de entrenamiento que no se generalizan a otros centros o cohortes, un fenómeno ampliamente documentado en patología computacional~\parencite{huang2025flex, openmibood2025} y una de las principales amenazas al despliegue clínico de modelos de IA. 
 
-Las métricas principales de utilidad (\textit{balanced accuracy} y macro-F1), la sensibilidad por clase y las brechas derivadas ($\Delta$BA) se acompañaron de intervalos de confianza al 95\% calculados mediante bootstrap no paramétrico~\parencite{riley2025uncertainty}: se remuestreó con reemplazo el conjunto de prueba a nivel de paciente (1.000 remuestreos del mismo tamaño que el original), se recalcularon las métricas en cada muestra y se obtuvieron los intervalos a partir de los percentiles 2,5 y 97,5 de la distribución bootstrap. El AUC y su brecha $\Delta$AUC se reportan como estimaciones puntuales, complementarias de la BA y su incertidumbre. Esta estrategia es especialmente relevante en las evaluaciones por subgrupos, donde los tamaños de muestra son más pequeños y la varianza de las métricas es mayor~\parencite{matos2025critical}, y permite distinguir entre diferencias de rendimiento estadísticamente significativas y fluctuaciones debidas al azar: una brecha de \textit{fairness} de cinco puntos en BA puede ser estadísticamente indistinguible de cero en cohortes pequeñas.
+Una consideración metodológica necesaria se refiere al número de clases efectivamente presentes en cada conjunto de prueba, ya que la \textit{balanced accuracy} se calcula sobre las clases presentes en el conjunto evaluado: en las transferencias hacia HSI-BC, la cohorte solo contiene dos de las tres clases de HER2 (0/1+ y 3+), de modo que la evaluación OOD se realiza con un denominador $K=2$ frente al $K=3$ de la evaluación ID; las caídas hacia esta cohorte combinan, por tanto, un cambio de distribución con un cambio de denominador. En la dirección inversa, cuando HSI-BC actúa como fuente, la evaluación OOD se restringe a los pacientes de las clases compartidas ($n=575$ en BCNB y $n=320$ en HISTAI-Breast, Tabla~\ref{tab:anexo_her2_crossdataset}); los deltas negativos que se observan en esa dirección se discuten en la Sección~\ref{sec:resultado_her2}.
+
+Las métricas principales de utilidad (\textit{balanced accuracy} y macro-F1), la sensibilidad por clase y las brechas derivadas ($\Delta$BA) se acompañaron de intervalos de confianza al 95\% calculados mediante \textit{bootstrap} no paramétrico~\parencite{riley2025uncertainty}: se remuestreó con reemplazo el conjunto de prueba a nivel de paciente (1.000 remuestreos del mismo tamaño que el original), se recalcularon las métricas en cada muestra y se obtuvieron los intervalos a partir de los percentiles 2,5 y 97,5 de la distribución \textit{bootstrap}. El AUC y su brecha $\Delta$AUC se reportan como estimaciones puntuales, complementarias de la BA y su incertidumbre. Esta estrategia es especialmente relevante en las evaluaciones por subgrupos, donde los tamaños de muestra son más pequeños y la varianza de las métricas es mayor~\parencite{matos2025critical}, y permite distinguir entre diferencias de rendimiento estadísticamente significativas y fluctuaciones debidas al azar: una brecha de \textit{fairness} de cinco puntos en BA puede ser estadísticamente indistinguible de cero en cohortes pequeñas.
 
 \section{Resultados}
 \label{sec:resultados}
@@ -148,17 +171,17 @@ Los resultados se organizan por tarea. Para cada tarea se presenta la descripci�
 \centering
 \begin{subfigure}[b]{0.3\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/her2_01plus}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/her2_01plus}
 \caption{0/1+}
 \end{subfigure}\hfill
 \begin{subfigure}[b]{0.3\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/her2_2plus}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/her2_2plus}
 \caption{2+}
 \end{subfigure}\hfill
 \begin{subfigure}[b]{0.3\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/her2_3plus}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/her2_3plus}
 \caption{3+}
 \end{subfigure}
 \caption{Ejemplos representativos de parches para cada clase de HER2.}
@@ -171,12 +194,12 @@ El análisis por clase muestra una marcada heterogeneidad. En las cohortes grand
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.75\textwidth]{images/balanced_accuracy_her2}
-\caption{Balanced accuracy por modelo y conjunto de datos en la tarea HER2. Barras de error: IC 95\% bootstrap.}
+\includegraphics[width=0.75\textwidth]{figures/balanced_accuracy/ba_her2}
+\caption{Balanced accuracy por modelo y conjunto de datos en la tarea de identificación de estado HER2. Barras de error: IC 95\% \textit{bootstrap}.}
 \label{fig:ba_her2}
 \end{figure}
 
-\paragraph{Equidad entre subgrupos.} En BCNB, las brechas de BA por edad variaron entre modelos: UNI2 y Phikon-v2 presentaron las brechas más altas (0,113 y 0,105, respectivamente, con el grupo de $\geq 70$ años como el de mayor desempeño y el de $<50$ años como el de menor), mientras que Virchow2 y Prov-GigaPath presentaron brechas menores (0,032 y 0,019). En HISTAI-Breast, las brechas oscilaron entre 0,022 y 0,065, pero la dirección de la diferencia no fue consistente entre encoders: el grupo de mayor desempeño varía según el modelo evaluado. En HSI-BC, solo los grupos de 50--70 y $\geq 70$ años cumplen el umbral mínimo de inclusión ($n=26$ y $n=14$); las brechas estimadas varían entre 0,003 y 0,123, pero los intervalos de confianza son amplios, por lo que los resultados deben considerarse exploratorios y no permiten inferir de manera robusta la presencia o ausencia de disparidad por edad. No se observó una dirección de favorecimiento consistente entre encoders en las cohortes grandes.
+\paragraph{Equidad entre subgrupos.} En BCNB, las brechas de BA por edad variaron entre modelos: UNI2 y Phikon-v2 presentaron las brechas más altas (0,113 y 0,105, respectivamente, con el grupo de $\geq 70$ años como el de mayor desempeño y el de $<50$ años como el de menor), mientras que Virchow2 y Prov-GigaPath presentaron brechas menores (0,032 y 0,019). En HISTAI-Breast, las brechas oscilaron entre 0,022 y 0,065, pero la dirección de la diferencia no fue consistente entre \textit{encoders}: el grupo de mayor desempeño varía según el modelo evaluado. En HSI-BC, solo los grupos de 50--70 y $\geq 70$ años cumplen el umbral mínimo de inclusión ($n=26$ y $n=14$); las brechas estimadas varían entre 0,003 y 0,123, pero los intervalos de confianza son amplios, por lo que los resultados deben considerarse exploratorios y no permiten inferir de manera robusta la presencia o ausencia de disparidad por edad. No se observó una dirección de favorecimiento consistente entre \textit{encoders} en las cohortes grandes.
 
 \paragraph{Generalización cross-dataset.} La transferencia BCNB $\rightarrow$ HISTAI-Breast redujo la BA en 0,075--0,108 (16,5--24,1\%), y la transferencia inversa en 0,031--0,055 (8,4--14,4\%). Este patrón es compatible con una mayor proximidad entre ambas cohortes que la observada respecto de HSI-BC; sin embargo, el diseño no permite atribuir esta diferencia exclusivamente a similitudes morfológicas, ya que pueden intervenir factores de adquisición, composición clínica, prevalencia de clases y calidad de las etiquetas. Las transferencias que involucran HSI-BC combinan un cambio de cohorte con un cambio en el número de clases efectivamente evaluadas (la cohorte no contiene la categoría 2+) y, por ello, no son directamente comparables con las transferencias entre BCNB e HISTAI-Breast. Cuando HSI-BC actúa como fuente de entrenamiento, algunos modelos presentan valores OOD superiores a sus valores ID (p.\ ej., $\Delta M = -0{,}249$ para Phikon-v2 al evaluar en BCNB); este resultado no debe interpretarse como generalización superior, sino como una consecuencia posible de la estimación inestable del desempeño ID en una cohorte pequeña y con dos clases.
 
@@ -191,23 +214,23 @@ El análisis por clase muestra una marcada heterogeneidad. En las cohortes grand
 \centering
 \begin{subfigure}[b]{0.45\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/molsub_her2plus}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/molsub_her2plus}
 \caption{HER2+}
 \end{subfigure}\hfill
 \begin{subfigure}[b]{0.45\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/molsub_luminal_a}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/molsub_luminal_a}
 \caption{Luminal A}
 \end{subfigure}
 \\[2ex]
 \begin{subfigure}[b]{0.45\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/molsub_luminal_b}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/molsub_luminal_b}
 \caption{Luminal B}
 \end{subfigure}\hfill
 \begin{subfigure}[b]{0.45\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/molsub_triple_neg}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/molsub_triple_neg}
 \caption{Triple Negative}
 \end{subfigure}
 \caption{Ejemplos representativos de parches para cada clase de MolSub.}
@@ -220,8 +243,8 @@ El análisis por clase evidenció una heterogeneidad relevante. Luminal B fue la
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.72\textwidth]{images/balanced_accuracy_molsub}
-\caption{Balanced accuracy por modelo y conjunto de datos en la tarea MolSub. Barras de error: IC 95\% bootstrap.}
+\includegraphics[width=0.72\textwidth]{figures/balanced_accuracy/ba_molsub}
+\caption{Balanced accuracy por modelo y conjunto de datos en la tarea de identificación de subtipo molecular. Barras de error: IC 95\% \textit{bootstrap}.}
 \label{fig:ba_molsub}
 \end{figure}
 
@@ -240,49 +263,49 @@ El análisis por clase evidenció una heterogeneidad relevante. Luminal B fue la
 \centering
 \begin{subfigure}[b]{0.3\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/site_colon_sin_especificar}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/site_colon_sin_especificar}
 \caption{Colon sin especificar}
 \end{subfigure}\hfill
 \begin{subfigure}[b]{0.3\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/site_colon_izquierdo}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/site_colon_izquierdo}
 \caption{Colon izquierdo}
 \end{subfigure}\hfill
 \begin{subfigure}[b]{0.3\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/site_met_higado}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/site_met_higado}
 \caption{Metástasis hepática}
 \end{subfigure}
 \\[2ex]
 \begin{subfigure}[b]{0.3\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/site_otro}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/site_otro}
 \caption{Otro}
 \end{subfigure}\hfill
 \begin{subfigure}[b]{0.3\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/site_rectosigmoide}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/site_rectosigmoide}
 \caption{Rectosigmoide}
 \end{subfigure}\hfill
 \begin{subfigure}[b]{0.3\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/site_recto}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/site_recto}
 \caption{Recto}
 \end{subfigure}
 \\[2ex]
 \begin{subfigure}[b]{0.3\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/site_colon_derecho}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/site_colon_derecho}
 \caption{Colon derecho}
 \end{subfigure}\hfill
 \begin{subfigure}[b]{0.3\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/site_sigmoide}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/site_sigmoide}
 \caption{Sigmoide}
 \end{subfigure}\hfill
 \begin{subfigure}[b]{0.3\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/site_colon_transverso}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/site_colon_transverso}
 \caption{Colon transverso}
 \end{subfigure}
 \caption{Ejemplos representativos de parches para cada clase de Site.}
@@ -295,8 +318,8 @@ La sensibilidad por clase fue heterogénea entre cohortes. En SurGen, recto, col
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.72\textwidth]{images/balanced_accuracy_site}
-\caption{Balanced accuracy por modelo y conjunto de datos en la tarea Site. Barras de error: IC 95\% bootstrap.}
+\includegraphics[width=0.72\textwidth]{figures/balanced_accuracy/ba_site}
+\caption{Balanced accuracy por modelo y conjunto de datos en la tarea de identificación de sitio anatómico. Barras de error: IC 95\% \textit{bootstrap}.}
 \label{fig:ba_site}
 \end{figure}
 
@@ -315,17 +338,17 @@ La sensibilidad por clase fue heterogénea entre cohortes. En SurGen, recto, col
 \centering
 \begin{subfigure}[b]{0.3\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/side_izquierdo}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/side_izquierdo}
 \caption{Izquierdo}
 \end{subfigure}\hfill
 \begin{subfigure}[b]{0.3\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/side_rectosigmoide}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/side_rectosigmoide}
 \caption{Rectosigmoide}
 \end{subfigure}\hfill
 \begin{subfigure}[b]{0.3\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/side_recto}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/side_recto}
 \caption{Recto}
 \end{subfigure}
 \\[2ex]
@@ -333,12 +356,12 @@ La sensibilidad por clase fue heterogénea entre cohortes. En SurGen, recto, col
 \centering
 \begin{subfigure}[b]{0.48\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/side_derecho}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/side_derecho}
 \caption{Derecho}
 \end{subfigure}\hfill
 \begin{subfigure}[b]{0.48\textwidth}
 \centering
-\includegraphics[width=\textwidth]{images/side_transverso}
+\includegraphics[width=\textwidth]{figures/ejemplos_clase/parches/side_transverso}
 \caption{Transverso}
 \end{subfigure}
 \end{minipage}
@@ -352,8 +375,8 @@ El análisis por clase mostró diferencias relevantes entre cohortes: en HISTAI-
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.72\textwidth]{images/balanced_accuracy_side}
-\caption{Balanced accuracy por modelo y conjunto de datos en la tarea Side. Barras de error: IC 95\% bootstrap.}
+\includegraphics[width=0.72\textwidth]{figures/balanced_accuracy/ba_side}
+\caption{Balanced accuracy por modelo y conjunto de datos en la tarea de identificación de lateralidad. Barras de error: IC 95\% \textit{bootstrap}.}
 \label{fig:ba_side}
 \end{figure}
 
@@ -369,7 +392,7 @@ El análisis por clase mostró diferencias relevantes entre cohortes: en HISTAI-
 
 \paragraph{Descripción de la tarea.} T5 clasifica el órgano de origen (mama vs.\ colorrectal) en los 3.675 pacientes integrados (para HSI-BC se usa su cohorte curada completa, $n=47$, pues la etiqueta de órgano está disponible en todos sus casos), con una distribución de 53,7\% para mama y 46,3\% para colorrectal. La tarea debe interpretarse como un experimento auxiliar de separabilidad entre cohortes: ninguna cohorte incluida contiene muestras de ambos órganos, por lo que la etiqueta de órgano está asociada al origen de la cohorte y el clasificador puede utilizar tanto diferencias entre tejidos como señales técnicas o institucionales asociadas al dataset, tales como tinción, escáner, preparación de la muestra o composición clínica.
 
-\paragraph{Desempeño por modelo y dataset.} Los cuatro modelos resolvieron la tarea con desempeño casi perfecto: BA entre 0,996 (Prov-GigaPath) y 1,000 (Virchow2), AUC = 1,000 para los cuatro encoders, sensibilidad de 1,000 para mama en todos los casos y de 0,992--1,000 para colorrectal. Este resultado no debe interpretarse como una validación aislada de clasificación de órgano: demuestra la separabilidad de las cohortes integradas, no una capacidad de clasificación de órgano independiente de los factores de adquisición, institución, composición clínica, anotación y curación, que varían simultáneamente con el órgano. Las brechas por edad (0,000--0,010) están dominadas por un efecto de techo: cuando el desempeño es prácticamente perfecto para todos los grupos, la brecha de rendimiento queda limitada y aporta poca información sobre la capacidad del modelo para mantener un desempeño equitativo en una tarea clínicamente más exigente. La equidad por sexo no se evaluó debido a la cobertura incompleta de esta variable en la cohorte integrada. Los valores numéricos completos se presentan en las Tablas~\ref{tab:anexo_organ_utilidad}, \ref{tab:anexo_organ_sensibilidad} y \ref{tab:anexo_organ_fairness} del Apéndice~\ref{anexo:resultados_completos}.
+\paragraph{Desempeño por modelo y dataset.} Los cuatro modelos resolvieron la tarea con desempeño casi perfecto: BA entre 0,996 (Prov-GigaPath) y 1,000 (Virchow2), AUC = 1,000 para los cuatro \textit{encoders}, sensibilidad de 1,000 para mama en todos los casos y de 0,992--1,000 para colorrectal. Este resultado no debe interpretarse como una validación aislada de clasificación de órgano: demuestra la separabilidad de las cohortes integradas, no una capacidad de clasificación de órgano independiente de los factores de adquisición, institución, composición clínica, anotación y curación, que varían simultáneamente con el órgano. Las brechas por edad (0,000--0,010) están dominadas por un efecto de techo: cuando el desempeño es prácticamente perfecto para todos los grupos, la brecha de rendimiento queda limitada y aporta poca información sobre la capacidad del modelo para mantener un desempeño equitativo en una tarea clínicamente más exigente. La equidad por sexo no se evaluó debido a la cobertura incompleta de esta variable en la cohorte integrada. Los valores numéricos completos se presentan en las Tablas~\ref{tab:anexo_organ_utilidad}, \ref{tab:anexo_organ_sensibilidad} y \ref{tab:anexo_organ_fairness} del Apéndice~\ref{anexo:resultados_completos}.
 
 \paragraph{Verificación experimental del \textit{center effect}.} Para evaluar directamente la señal de origen, se entrenaron clasificadores de dataset sobre los \textit{embeddings}, reutilizando la configuración del protocolo: MLP con 256 unidades ocultas y activación ReLU, $\alpha = 10^{-4}$, \texttt{max\_iter = 500}, sobremuestreo de las clases minoritarias y validación cruzada de cinco pliegues mediante \texttt{StratifiedGroupKFold}, agrupada por paciente y con \texttt{seed = 42}. El Experimento A evalúa la separabilidad entre datasets dentro de cada dominio clínico mediante clasificación de tres cohortes (nivel de referencia 1/3); el Experimento B compara pares de cohortes colorrectales (nivel de referencia 0,5). En el dominio de mama, BCNB, HISTAI-Breast y HSI-BC presentaron una separabilidad prácticamente perfecta dentro de la cohorte común de 1.944 pacientes utilizada en este experimento: los cuatro modelos alcanzaron BA y AUC de 1,000 para clasificar el dataset de origen. Este resultado muestra que los \textit{embeddings} contienen una firma de cohorte muy marcada; sin embargo, las tres cohortes difieren simultáneamente en institución, condiciones de adquisición, composición de pacientes, disponibilidad de metadatos y procesos de curación, por lo que esta comparación no permite atribuir la separación a un factor técnico o biológico específico.
 
@@ -414,7 +437,7 @@ SurGen frente a HISTAI-CRC-B2, escáner diferente &
 
 \medskip
 \footnotesize
-\parbox{0.95\textwidth}{\textit{Nota:} La comparación de mama utiliza la cohorte común de 1944 pacientes disponible para los cuatro encoders, correspondiente a la cohorte analítica de T2-MOLSUB. Por ello, su tamaño difiere del reportado en T1-HER2.}
+\parbox{0.95\textwidth}{\textit{Nota:} La comparación de mama utiliza la cohorte común de 1944 pacientes disponible para los cuatro \textit{encoders}, correspondiente a la cohorte analítica de T2-MOLSUB. Por ello, su tamaño difiere del reportado en T1-HER2.}
 \end{table}
 
 \paragraph{Síntesis.} Estos experimentos demuestran que el origen de la cohorte es altamente recuperable desde los \textit{embeddings} evaluados, hallazgo consistente con las caídas OOD observadas en T1--T4 y que refuerza la necesidad de interpretar tales caídas como el resultado potencial de múltiples fuentes de cambio de distribución. No permiten asignar causalmente esa separabilidad al escáner ni a un único factor, porque adquisición, institución, composición clínica, anotación y curación varían simultáneamente; el diseño actual no permite determinar qué proporción corresponde a diferencias morfológicas reales, factores técnicos de adquisición o características institucionales y clínicas de las cohortes. El detalle completo de las métricas e intervalos de confianza se presenta en las Tablas~\ref{tab:anexo_center_effect_a} y \ref{tab:anexo_center_effect_b} del Apéndice~\ref{anexo:resultados_completos}.
@@ -529,8 +552,8 @@ Cohorte combinada &
 \parbox{0.97\textwidth}{\textit{Nota:} Verde indica resultados relativamente estables y sin un patrón demográfico consistente entre modelos. Amarillo indica resultados interpretables con limitaciones de utilidad, variabilidad entre modelos o caída de generalización. Rojo indica resultados exploratorios, condicionados por tamaño muestral reducido o soporte insuficiente de clases y subgrupos. Azul indica una dimensión no evaluable, no aplicable o dominada por confusión estructural. Los colores no constituyen una clasificación definitiva de equidad, inequidad o sesgo.}
 \end{table}
 
-No se identificó un patrón de favorecimiento por edad o sexo que fuese consistente entre encoders y cohortes grandes. Las brechas pequeñas no prueban por sí mismas equidad clínicamente satisfactoria cuando la utilidad global es limitada; las estimaciones de HSI-BC e HISTAI-CRC-B2 son exploratorias por tamaño y soporte de clases.
+No se identificó un patrón de favorecimiento por edad o sexo que fuese consistente entre \textit{encoders} y cohortes grandes. Las brechas pequeñas no prueban por sí mismas equidad clínicamente satisfactoria cuando la utilidad global es limitada; las estimaciones de HSI-BC e HISTAI-CRC-B2 son exploratorias por tamaño y soporte de clases.
 
-Las diferencias entre cohortes fueron más consistentes que las diferencias entre modelos fundacionales: ningún encoder dominó de manera transversal en todas las tareas y cohortes. BCNB, SurGen e HISTAI-CRC-B1 presentaron resultados más estables, mientras que HSI-BC e HISTAI-CRC-B2 concentraron la mayor incertidumbre debido a su tamaño reducido, la representación limitada de algunas clases y la menor estabilidad de las estimaciones; HISTAI-Breast presentó resultados intermedios, en un contexto donde la disponibilidad y trazabilidad de biomarcadores constituye una fuente adicional de incertidumbre.
+Las diferencias entre cohortes fueron más consistentes que las diferencias entre modelos fundacionales: ningún \textit{encoder} dominó de manera transversal en todas las tareas y cohortes. BCNB, SurGen e HISTAI-CRC-B1 presentaron resultados más estables, mientras que HSI-BC e HISTAI-CRC-B2 concentraron la mayor incertidumbre debido a su tamaño reducido, la representación limitada de algunas clases y la menor estabilidad de las estimaciones; HISTAI-Breast presentó resultados intermedios, en un contexto donde la disponibilidad y trazabilidad de biomarcadores constituye una fuente adicional de incertidumbre.
 
 La transferencia entre cohortes produjo caídas relevantes y el origen de dataset fue altamente separable desde los \textit{embeddings}. En consecuencia, la evaluación de modelos fundacionales en patología debe interpretar conjuntamente la tarea clínica, la calidad y trazabilidad de las cohortes, la estabilidad de las métricas por subgrupo y el cambio de distribución entre centros.

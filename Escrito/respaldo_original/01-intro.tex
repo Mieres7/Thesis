@@ -1,0 +1,147 @@
+\chapter{Introducción}
+
+\section{Motivación y Contexto}
+
+El análisis de imágenes médicas cumple un rol fundamental en el diagnóstico, seguimiento y tratamiento de múltiples enfermedades, permitiendo estudiar estructuras internas del cuerpo humano y detectar anomalías que no son visibles a simple vista, facilitando diagnósticos tempranos y decisiones clínicas tempranas. La patología digital y las \glspl{WSI} (WSI) son ejemplos de esto. Sin embargo, el aumento del volumen y la complejidad de los datos ha superado la capacidad de análisis manual. De esta forma se ha impulsado la adopción de técnicas de \gls{IA} (IA), particularmente aquellas basadas en aprendizaje profundo.
+
+En el último tiempo, diferentes modelos de aprendizaje profundo han demostrado resultados sobresalientes en diferentes tareas, tales como detección de objetos en imágenes, segmentación y clasificación de imágenes, e incluso en síntesis de imágenes. Recientemente, se ha establecido un nuevo paradigma, los modelos fundacionales (FM). Estos, en contraste al aprendizaje profundo tradicional, que dependen de datos a gran escala, específicos para cada tarea y etiquetados manualmente, ofrecen una mejor alternativa. Los modelos fundacionales son entrenados con volúmenes de datos casi ilimitados, lo que permite su aplicación directa en tareas específicas (downstream tasks) utilizando solo una cantidad limitada de datos etiquetados. Además, la posibilidad de entrenar con enormes volúmenes de datos no etiquetados mediante estrategias de aprendizaje auto-supervisado, aporta un gran optimismo al campo de estudio.
+
+A pesar de estos avances, existen diferentes limitantes a la hora de utilizar modelos fundacionales en entornos clínicos. En primer lugar, la falta de generalización se presenta cuando estos son utilizados en contextos distintos a aquellos en los que fueron entrenados, limitante que surge debido al \textit{bias} presente en los datos utilizados, ya sea por diferentes factores, tales como desbalance de clases, condiciones de adquisición, variabilidad inherentes para pacientes específicos, entre otros. Por otro lado, la interpretabilidad de los FM es un desafío claro, al igual que otros modelos de \textit{\gls{DL}} sufren el efecto \textbf{caja negra}, es decir, no es claro entender la lógica detrás de sus resultados, y es complejo comprender su proceso de toma de decisiones. Finalmente, los datos médicos siempre serán un recurso valioso y sujeto a temas de privacidad, esto obstaculiza directamente la eficacia de los modelos fundacionales al requerir de grandes cantidades de datos \parencite{ubae018}.
+
+La existencia de \textit{bias} no solo impacta el rendimiento técnico de los modelos, sino que también lleva a que este entregue resultados errados o imprecisos para una población específica. En este contexto se vuelve fundamental comprender, caracterizar y evaluar los \textit{bias} presentes en conjuntos de datos con imágenes médicas, con particular enfoque en WSI de patología digital, y evaluar su impacto en el desarrollo de modelos de inteligencia artificial en estos dominios específicos.
+
+\section{Enunciado del Problema}
+
+La capacidad de generalización de modelos fundacionales en contextos clínicos se ve limitada por la presencia de \textit{bias} en los conjuntos de datos utilizados para su entrenamiento. En particular, los conjuntos de datos clínicos de WSI de patología digital, presentan desbalances en la representación de subgrupos poblacionales y variaciones en las condiciones de adquisición de las imágenes, lo que puede inducir a los modelos a aprender patrones no relacionados con la patología de interés. Sin embargo, actualmente existe una falta de caracterización sistemática de estos \textit{bias} y de su impacto potencial, lo que dificulta el desarrollo de modelos más robustos, confiables y equitativos en el ámbito clínico.
+
+\section{Descripción de la solución Propuesta}
+
+\subsection{Enfoques de solución}
+
+Abordar el problema de \textit{fairness} y \textit{bias} en modelos fundacionales, específicamente para imágenes médicas, implica una perspectiva que considere todo el ciclo de vida del modelo, desde la construcción u obtención de conjuntos de datos hasta su evaluación \parencite{queiroz2026}. Investigaciones actuales sugieren que los \textit{bias} surgen desde múltiples fuentes, tales como la distribución de los datos, procesos de anotación o estrategias de entrenamiento \parencite{jones2024causal}. De esta forma, un enfoque efectivo debe combinar metodologías de análisis, evaluación y mitigación de \textit{bias} de manera sistemática \parencite{NEURIPS2024_c9826b9e}.
+
+En primer lugar, se propone un enfoque centrado directamente en el análisis y caracterización del bias en conjuntos de datos, considerando atributos sensibles como sexo, edad o grupo étnico, dado que incluso modelos ideales pueden reflejar \textit{bias} presentes en los datos. De esta forma es necesario identificar distintos mecanismos de \textit{bias}, como disparidades de prevalencia, de presentación o de anotación, puesto que cada una de estas requiere una estrategia de mitigación distinta \parencite{jones2024causal}. Este enfoque permite entender como los modelos aprenden correlaciones entre clases y como estas afectan a la generalización. 
+
+En segundo lugar, la utilización de frameworks de evaluación de fairness en modelos fundacionales, tomando apoyo en métricas de equidad (fairness metrics) a nivel de subgrupos (por ejemplo accuracy parity) y en \textit{pipelines} estandarizados de \textit{benchmarking}. Literatura reciente presenta la necesidad de evaluaciones sistemáticas, puesto que los modelos fundacionales pueden presentar \textit{trade-offs} entre rendimiento global y fairness. En este contexto el objetivo no es solo mejorar el desempeño global del modelo, sino también identificar brechas de rendimiento que pueden permanecer ocultas cuando se utilizan métricas agregadas \parencite{NEURIPS2024_c9826b9e}.
+
+Por último, se consideran estrategias de mitigación de bias en distintas etapas del \textit{pipeline}, incluyendo técnicas a nivel de los datos, como balanceo o re-muestreo, estrategias durante el entrenamiento y \textit{fine-tuning} utilizando conjuntos de datos más balanceados. Sin embargo la evidencia muestra que intervenciones individuales no son suficientes para eliminar completamente los \textit{bias}, por ello se propone un enfoque combinado que actúe en múltiples niveles del sistema \parencite{khan23a}. 
+
+\subsection{Justificación del enfoque seleccionado}
+
+El enfoque seleccionado adopta una perspectiva integral que considera tanto los datos como los modelos, reconociendo que los problemas de generalización y equidad en modelos fundacionales surgen de la interacción entre ambos. En este contexto, no basta con optimizar arquitecturas, sino que es necesario analizar los conjuntos de datos que los sustentan para comprender cómo los \textit{bias} afectan el desempeño en distintos subgrupos. Este enfoque permite evaluar de manera más completa el comportamiento de los modelos y contribuir al desarrollo de soluciones más robustas y confiables en contextos clínicos.
+
+\subsection{Características de la solución}
+
+La solución propuesta se basa en un enfoque centrado en los datos (data-centric), la cual busca analizar de manera sistemática los conjuntos de datos de imágenes médicas y su impacto en el desempeño de modelos fundacionales. 
+Algunas de las características a analizar de los conjuntos de datos son la disponibilidad del mismo, distribución demográfica, balance de clases y subgrupos, presencia de correlaciones espurias (\textit{spurious correlations}), entre otros. En este contexto, se definen las siguientes características principales:
+
+\begin{itemize}
+    \item \textbf{Enfoque centrado en los datos:} La solución prioriza el análisis de los conjuntos de datos como elemento fundamental en el desarrollo de modelos, considerando su composición como un factor determinante en la presencia de \textit{bias} y en la capacidad de generalización. 
+    \item \textbf{Análisis estructurado del problema de bias:} Se aborda el \textit{bias} en los datos como un fenómeno multidimensional, considerando distintas fuentes y su impacto potencial en el aprendizaje de los modelos.
+    \item \textbf{Evaluación integral del desempeño:} Se propone una evaluación que va más allá de métricas globales, incorporando una visión más completa del comportamiento de los modelos en distintos contextos.
+    \item \textbf{Enfoque orientado a la comprensión:} La solución no solo busca medir desempeño, sino también comprender la relación entre los datos y los resultados obtenidos, aportando evidencia sobre el impacto del bias en modelos fundacionales.
+    
+\end{itemize}
+
+En el marco del desarrollo del proyecto, se consideran de forma preliminar distintos modelos fundacionales representativos del estado del arte en imágenes médicas, tales como aquellos mencionados en la literatura, ya sea Merlin \parencite{Blankemeier_2026}, SegVol \parencite{du2025segvoluniversalinteractivevolumetric}, MI-Zero \parencite{lu2023visuallanguagepretrainedmultiple}, entre otros.
+
+En cuanto a los datos, se utilizarán conjuntos de datos públicos de imágenes médicas, considerando preliminarmente aquellos no utilizados por los modelos a evaluar, con foco en conjuntos de datos de WSI de patología digital, priorizando repositorios ampliamente utilizados en la literatura. Estos conjuntos de datos permitirán analizar tanto la distribución de subgrupos como las posibles fuentes de \textit{bias} asociadas a variables demográficas y condiciones de adquisición. Ejemplos de conjuntos de datos a considerar incluyen, BRCA \parencite{lu2023visuallanguagepretrainedmultiple}, StructSeg Task 3 \parencite{Ulrich_2023} o AMOS22 \parencite{du2025segvoluniversalinteractivevolumetric}.
+
+La selección específica de modelos y conjuntos de datos podrá ajustarse durante el desarrollo del proyecto, en función de su disponibilidad, calidad y pertinencia para los escenarios de evaluación definidos.
+
+\subsection{Alcances y Limitaciones de la solución}
+
+\paragraph{Alcances}
+
+\begin{itemize}
+    \item \textbf{Conjuntos de datos de imágenes médicas:} El estudio estará centrado en conjuntos de datos con foco en WSI de patología digital.
+    \item \textbf{Caracterización de variables relevantes:} Se consideran atributos demográficos y condiciones de adquisición de las imágenes para identificar posibles fuentes de \textit{bias}.
+    \item \textbf{Evaluación de modelos fundacionales:} Se analiza el desempeño de modelos en tareas específicas para WSI de patología digital, utilizando métricas tanto globales como separadas por subgrupos.
+    \item \textbf{Impacto en la generalización:} Se estudia cómo los \textit{bias} presentes en los datos afectan la capacidad de generalización de los modelos.
+\end{itemize}
+
+\paragraph{Limitaciones}
+
+\begin{itemize}
+    \item \textbf{Dependencia de conjuntos de datos públicos:} La solución se basa en datos disponibles públicamente, los cuales pueden contener \textit{bias} inherentes y limitaciones en su documentación.
+    \item \textbf{Enfoque centrado en evaluación:} La propuesta se enfoca en identificar y analizar \textit{bias}, sin abordar directamente su mitigación mediante técnicas específicas.
+    \item \textbf{Cobertura acotada de modalidades:} El estudio se limita a WSI, lo que puede dificultar la extrapolación de los resultados a otras modalidades de imágenes médicas.
+    \item \textbf{Evaluación sobre modelos específicos:} El análisis se realiza sobre un conjunto limitado de modelos fundacionales, lo que puede influir en la generalización de los hallazgos.
+\end{itemize}
+
+\subsection{Evaluación de la solución}
+
+La evaluación de la solución se abordará de manera integral, considerando tanto el rendimiento global de los modelos como su comportamiento en términos de equidad y su capacidad de generalización. Esta evaluación se estructurará en tres niveles.
+
+\begin{itemize}
+    \item \textbf{Utilidad global \textit{in-distribution}:} Se evaluará el desempeño de los modelos dentro de cada conjunto de datos, utilizando particiones separadas a nivel de paciente. Para clasificación, las métricas principales serán \textbf{balanced accuracy} y \textbf{macro-F1}, adecuadas para escenarios con desbalance de clases. Como métrica complementaria se utilizará \textbf{macro-AUC} bajo un esquema \textit{one-vs-rest}, cuando corresponda. El análisis de errores se complementará con la sensibilidad por clase y su distribución por subgrupo.
+
+    \item \textbf{Fairness por subgrupos:} Se calcularán brechas de rendimiento (\textit{gaps}) entre subgrupos definidos por atributos sensibles, tales como sexo y grupo etario. El \textbf{gap máximo} corresponderá a la diferencia entre el subgrupo con mejor y peor desempeño. 
+    \item \textbf{Generalización ante cambios de distribución:} Se realizarán experimentos \textit{cross-dataset} entre conjuntos de datos del mismo dominio clínico cuyas etiquetas, clases y criterios de anotación sean compatibles. Se medirá la \textbf{caída absoluta} y la \textbf{caída relativa} de las métricas entre escenarios \textit{in-distribution} y \textit{out-of-distribution}, y se evaluará si las brechas de equidad se amplían al cambiar de distribución.
+\end{itemize}
+
+Además, se considerarán los siguientes aspectos complementarios:
+
+\begin{itemize}
+    \item \textbf{Incertidumbre estadística:} Las métricas principales de utilidad, incluyendo las métricas por subgrupo, las brechas de rendimiento y las caídas entre escenarios ID y OOD, se acompañarán de \textbf{intervalos de confianza al 95\%} calculados mediante bootstrap no paramétrico. Estos intervalos permitirán cuantificar la incertidumbre asociada a las estimaciones y evaluar la estabilidad de las diferencias observadas frente a la variación muestral.
+\end{itemize}
+
+\section{Objetivos del Proyecto}
+
+\subsection{Objetivo General}
+
+Evaluación de diferentes niveles de \textit{bias} presente en modelos fundacionales clínicos a través de  una caracterización sistemática de diversos conjuntos de datos clínicos en términos de \textit{\gls{Fairness}} y \textit{\gls{Bias}}.
+
+\subsection{Objetivos Específicos}
+
+\begin{enumerate}
+    \item Caracterizar conjuntos de datos de imágenes médicas (WSI de patología digital) mediante la identificación de variables demográficas y parámetros de adquisición críticos para el estudio de \textit{bias}.
+
+    \item Seleccionar modelos fundacionales representativos para tareas específicas definidas en el ámbito de análisis de WSI de patología digital, acordes a los conjuntos de datos analizados.
+
+    \item Evaluar el desempeño de los modelos fundacionales seleccionados utilizando métricas de evaluación acorde a las tareas definidas, analizando el impacto del \textit{bias} en su capacidad de generalización.
+\end{enumerate}
+
+
+\section{Metodología, Herramientas y Ambiente de Desarrollo}
+
+\subsection{Metodología a usar}
+
+\paragraph{Hipótesis de Investigación}
+
+Los conjuntos de datos de imágenes médicas presentan bias demográficos y de adquisición significativos, los cuales afectan negativamente la capacidad de generalización de modelos fundacionales enfocados en WSI de patología digital, produciendo diferencias de desempeño entre subgrupos poblacionales.
+
+\paragraph{Diseño Experimental}
+
+La investigación se desarrollará siguiendo el método científico, mediante un enfoque experimental orientado a analizar la presencia de \textit{bias} en conjuntos de datos de WSI de patología digital, y evaluar su impacto en la capacidad de generalización de modelos fundacionales. A partir de la hipótesis planteada, se diseñarán experimentos controlados que permitan caracterizar los \textit{bias} presentes en los datos y cuantificar su efecto en el desempeño de los modelos.
+
+En una primera etapa, se realizará la recopilación y caracterización de conjuntos de datos públicos de imágenes médicas, con foco en WSI de patología digital. Esta etapa busca identificar variables relevantes para el análisis de fairness, tales como atributos demográficos y condiciones de adquisición. A partir de esta información, se construirá una taxonomía de conjuntos de datos y se analizará la distribución de los distintos subgrupos, permitiendo detectar desbalances y posibles fuentes de \textit{bias}. Además, se realizará un análisis de bias en los conjuntos de datos, evaluando distintas formas de \textit{bias}.
+
+En una siguiente etapa, se seleccionarán modelos fundacionales representativos del estado del arte en imágenes médicas. Estos serán evaluados en tareas específicas que se definirán dentro de la ejecución del proyecto, siempre relacionadas con WSI de patología digital, por ejemplo clasificación de biopsias de cáncer de mama según puntaje HER2 o segmentación de grano fino de lesiones hepáticas , utilizando los conjuntos de datos previamente caracterizados. El proceso experimental seguirá un esquema controlado, donde se analizará el desempeño del modelo tanto a nivel global como dividido por subgrupos, permitiendo identificar brechas de rendimiento asociadas a \textit{bias}.
+
+Para la evaluación, se emplearán métricas estándar de desempeño, como AUC, complementadas con métricas de fairness a nivel de subgrupos. Esto, considerando una evaluación \textit{in-distribution} y \textit{out-of-distribution}. Y de esta forma, no solo medir el rendimiento global del modelo, sino también evaluar su comportamiento en distintos segmentos de la población.
+
+Finalmente, se analizará la relación entre las características de los conjuntos de datos y el desempeño de los modelos, con el objetivo de determinar cómo los distintos tipos de \textit{bias} impactan en la generalización. A partir de estos resultados, se propondrán lineamientos y recomendaciones para la construcción y uso de conjuntos de datos más balanceados, contribuyendo al desarrollo de modelos fundacionales más robustos y equitativos en el contexto clínico.
+
+\subsection{Herramientas de Desarrollo}
+
+El desarrollo de esta investigación se apoyará en herramientas computacionales especializadas en \gls{AA} y procesamiento de imágenes médicas. Se utilizará Python como lenguaje principal, junto con frameworks como PyTorch y TensorFlow, y librerías científicas como NumPy y Pandas. Además, se considerará Git y GitHub para el versionado del codigo, y Overleaf para la escritura del informe final.
+
+\subsection{Ambiente de Desarrollo}
+
+El desarrollo de la solución se realiza en una estación de trabajo de gama media-alta, equipada con un procesador AMD Ryzen 5 9600X y una tarjeta gráfica ASUS Dual GeForce RTX 5060 Ti. El sistema cuenta con 32 GB de memoria RAM a 5600 MHz y utiliza el sistema operativo Pop!\_OS 22.04 LTS. En cuanto al almacenamiento, se dispone de una unidad de estado sólido (SSD de 250 GB) para el sistema y operaciones principales, complementada con dos discos duros (HDD de 1 TB) para el manejo de datos. 
+
+Para la ejecución de los experimentos se hará uso del servidor Munay, el cual cuenta con las siguientes especificaciones: CPU 4th Gen AMD EPYC 9124, 192 GB de memoria RAM y dos GPU NVIDIA RTX 6000 Ada Gen 48 GB. Además, se tendrá acceso al servidor de datos QNAP TS-673 con 32 TB de capacidad de almacenamiento. Ambos equipos se encuentran instalados en la sala de servidores del Departamento de Ingeniería Informática de la USACH.
+
+\section{Plan de Trabajo}
+
+El presente proyecto se desarrollará en un periodo de \textbf{17 semanas}, con una dedicación estimada de \textbf{680 horas hombre}, estructurado en cuatro etapas principales que siguen una adaptación del método científico, integrando además prácticas iterativas de desarrollo para la implementación experimental.
+
+\begin{enumerate}
+    \item \textbf{Observación y caracterización del problema:} Revisión del estado del arte y análisis de conjuntos de datos de imágenes médicas para identificar fuentes de bias y definir métricas de evaluación de utilidad y equidad.
+    \item \textbf{Diseño experimental y preparación de datos:} Selección y caracterización de conjuntos de datos, selección de tareas específicas de evaluación e implementación de modelos base y pipelines de evaluación.
+    \item \textbf{Experimentación y evaluación controlada:} Entrenamiento de modelos y evaluación de su desempeño global y por subgrupos, analizando métricas de fairness, robustez y generalización.
+    \item \textbf{Análisis de resultados y conclusiones:} Interpretación de resultados, evaluación del impacto del bias en la generalización y formulación de conclusiones y lineamientos para conjuntos de datos más equitativos.
+\end{enumerate}
+
+De forma transversal, se contempla la redacción progresiva de los capítulos del informe en cada etapa. El Apéndice \ref{appendix:carta} desarrolla esta planificación por medio de una Carta Gantt.

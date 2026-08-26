@@ -1,0 +1,78 @@
+\subsection{Guía para reforzar cuantitativamente la preselección de conjuntos de datos}
+
+Cuando se disponga nuevamente de las salidas generadas por \texttt{DatasetAnalyzer}, la justificación de la preselección podrá complementarse mediante un análisis cuantitativo orientado a comparar escala, estructura y completitud de los metadatos entre recursos. Para ello, se recomienda trabajar con los reportes producidos en la etapa de caracterización descriptiva previa a la curación, ya que esta subsección busca justificar la decisión de qué conjuntos de datos avanzaron a las fases posteriores del estudio.
+
+\subsubsection*{Paso 1: reunir las salidas correctas}
+Para cada unidad de análisis considerada en la Sección 4.2 se deben recopilar, al menos, los archivos \texttt{dataset\_summary}, \texttt{column\_summary} y \texttt{missing\_summary}. En el caso de los conjuntos posteriormente priorizados, también es conveniente disponer de \texttt{categorical\_summary}, ya que este reporte permite verificar si las variables candidatas a tareas posteriores presentan categorías utilizables y no solo presencia nominal.
+
+Las unidades de análisis a considerar corresponden a:
+\begin{itemize}
+    \item Ovarian
+    \item BCNB
+    \item CLWD
+    \item NDB-UFES
+    \item TDBTA
+    \item SurGen-SR386
+    \item SurGen-SR1482
+    \item HSI-BRCA
+    \item SOPHIE
+    \item HISTAI-Breast
+    \item HISTAI-Colorectal-b1
+    \item HISTAI-Colorectal-b2
+\end{itemize}
+
+\subsubsection*{Paso 2: construir una matriz comparativa global}
+A partir de \texttt{dataset\_summary}, se debe construir una tabla consolidada con las siguientes columnas:
+\begin{itemize}
+    \item Dataset
+    \item Número de registros
+    \item Número total de variables
+    \item Número de variables numéricas
+    \item Número de variables categóricas
+    \item Número de variables temporales
+    \item Número de variables de texto libre
+    \item Porcentaje global de celdas faltantes
+\end{itemize}
+
+Esta tabla permitirá evaluar diferencias de escala, nivel de estructuración y completitud general entre recursos. Su objetivo no es definir por sí sola la selección final, sino entregar una base cuantitativa para distinguir recursos más comparables de otros cuya utilidad dependa de mayor procesamiento adicional.
+
+\subsubsection*{Paso 3: evaluar completitud por variable}
+A partir de \texttt{missing\_summary}, se debe identificar para cada dataset:
+\begin{itemize}
+    \item las tres a cinco variables con mayor porcentaje de missingness;
+    \item el porcentaje de variables sin valores faltantes;
+    \item el porcentaje de variables con missingness superior a 30\%, 50\% y 80\%.
+\end{itemize}
+
+Con ello se podrá distinguir entre datasets cuyo problema de completitud se concentra en pocas columnas específicas y datasets donde la ausencia de datos compromete de manera más transversal el valor analítico del metadata.
+
+\subsubsection*{Paso 4: evaluar cobertura útil de variables}
+A partir de \texttt{column\_summary}, se debe contabilizar cuántas variables potencialmente relevantes para bias y fairness están efectivamente disponibles y con un nivel razonable de completitud. Para ello, conviene revisar especialmente la presencia de atributos demográficos, clínico-patológicos, moleculares, anatómicos, de tratamiento y de seguimiento.
+
+En esta etapa no basta con verificar que una variable exista nominalmente. También debe evaluarse si su porcentaje de datos observados permite un uso razonable en comparación entre cohortes o en formulación de tareas posteriores.
+
+\subsubsection*{Paso 5: revisar variables candidatas para tareas downstream}
+En los datasets finalmente priorizados, \texttt{categorical\_summary} debe utilizarse para inspeccionar si las variables comunes del dominio presentan categorías utilizables. En cáncer de mama esto debiera aplicarse, cuando estén disponibles, a ER, PR, HER2, Ki-67 y subtipo molecular; en cáncer colorrectal, a sitio anatómico y lateralidad.
+
+Este paso permite justificar no solo que el dataset posea metadata, sino que dicha metadata pueda sostener tareas comparables entre cohortes.
+
+\subsubsection*{Paso 6: definir indicadores de apoyo a la decisión}
+Con los reportes anteriores se recomienda construir, para cada dataset, cuatro indicadores simples:
+\begin{enumerate}
+    \item Escala relativa del recurso.
+    \item Completitud global del metadata.
+    \item Cobertura de variables relevantes para bias y fairness.
+    \item Compatibilidad potencial con otros recursos del mismo dominio.
+\end{enumerate}
+
+Estos indicadores pueden expresarse como categorías cualitativas respaldadas por números, por ejemplo: alta, media o baja. No es necesario definir un puntaje único rígido, pero sí dejar explícita la lógica comparativa utilizada.
+
+\subsubsection*{Paso 7: redactar la justificación cuantitativa}
+Una vez consolidada la evidencia, la redacción debe explicar que la preselección no dependió exclusivamente del dominio clínico, sino también de condiciones empíricas observables en los reportes generados. En particular, se debe destacar si un recurso fue favorecido por mayor completitud, mejor cobertura de variables compartidas o mayor potencial para armonización y comparación entre cohortes.
+
+De manera complementaria, los recursos no priorizados deben describirse como valiosos para la caracterización global, pero menos adecuados para las etapas posteriores cuando no existía un dominio repetido, cuando la compatibilidad con otros datasets era baja o cuando la cobertura útil de metadata era insuficiente.
+
+\subsubsection*{Paso 8: integrar la evidencia al texto principal}
+La evidencia cuantitativa puede incorporarse de dos maneras. La primera consiste en agregar un párrafo breve dentro de la Sección 4.2.8 que sintetice los principales contrastes observados. La segunda consiste en añadir una tabla auxiliar de preselección con columnas de escala, completitud, cobertura de variables y decisión final.
+
+En ambos casos, la recomendación es que esta cuantificación se presente como apoyo a una decisión metodológica multicriterio y no como una regla automática de selección.

@@ -1,0 +1,461 @@
+[
+  {
+    "dataset": "BCNB",
+    "domain": "Mama",
+    "n_total": 1058,
+    "sex": {
+      "F_n": 1058,
+      "F_pct": 100.0,
+      "total": 1058
+    },
+    "age": {
+      "n": 1058,
+      "mean": 57.6,
+      "median": 57.0,
+      "IQR": "[49-66]",
+      "missing_n": 0,
+      "missing_pct": 0.0
+    },
+    "age_group": {
+      "<50_n": 295,
+      "<50_pct": 27.9,
+      "50-70_n": 562,
+      "50-70_pct": 53.1,
+      ">=70_n": 201,
+      ">=70_pct": 19.0,
+      "MISSING_n": 0,
+      "MISSING_pct": 0.0
+    },
+    "target_dist": {
+      "1": 483,
+      "0": 369,
+      "2": 206
+    },
+    "target_x_sex": {},
+    "target_x_age": {}
+  },
+  {
+    "dataset": "HISTAI-Breast",
+    "domain": "Mama",
+    "n_total": 1489,
+    "sex": {
+      "F_n": 1469,
+      "F_pct": 98.7,
+      "M_n": 20,
+      "M_pct": 1.3,
+      "total": 1489
+    },
+    "age": {
+      "n": 1489,
+      "mean": 57.6,
+      "median": 58.0,
+      "IQR": "[46-69]",
+      "missing_n": 0,
+      "missing_pct": 0.0
+    },
+    "age_group": {
+      "<50_n": 490,
+      "<50_pct": 32.9,
+      "50-70_n": 649,
+      "50-70_pct": 43.6,
+      ">=70_n": 350,
+      ">=70_pct": 23.5,
+      "MISSING_n": 0,
+      "MISSING_pct": 0.0
+    },
+    "target_dist": {
+      "1.0": 554,
+      "2.0": 191,
+      "0.0": 133
+    },
+    "target_x_sex": {},
+    "target_x_age": {}
+  },
+  {
+    "dataset": "HSI-BRCA",
+    "domain": "Mama",
+    "n_total": 47,
+    "sex": {
+      "FEMALE_n": 47,
+      "FEMALE_pct": 100.0,
+      "total": 47
+    },
+    "age": {
+      "n": 47,
+      "mean": 63.9,
+      "median": 65.0,
+      "IQR": "[54-75]",
+      "missing_n": 0,
+      "missing_pct": 0.0
+    },
+    "age_group": {
+      "<50_n": 6,
+      "<50_pct": 12.8,
+      "50-70_n": 24,
+      "50-70_pct": 51.1,
+      ">=70_n": 17,
+      ">=70_pct": 36.2,
+      "MISSING_n": 0,
+      "MISSING_pct": 0.0
+    },
+    "target_dist": "None"
+  },
+  {
+    "dataset": "BCNB (Subtipo mol.)",
+    "domain": "Mama",
+    "n_total": 1058,
+    "sex": {
+      "F_n": 1058,
+      "F_pct": 100.0,
+      "total": 1058
+    },
+    "age": {
+      "n": 1058,
+      "mean": 57.6,
+      "median": 57.0,
+      "IQR": "[49-66]",
+      "missing_n": 0,
+      "missing_pct": 0.0
+    },
+    "age_group": {
+      "<50_n": 295,
+      "<50_pct": 27.9,
+      "50-70_n": 562,
+      "50-70_pct": 53.1,
+      ">=70_n": 201,
+      ">=70_pct": 19.0,
+      "MISSING_n": 0,
+      "MISSING_pct": 0.0
+    },
+    "target_dist": {
+      "Luminal B": 372,
+      "Luminal A": 288,
+      "HER2(+)": 273,
+      "Triple negative": 125
+    },
+    "target_x_sex": {},
+    "target_x_age": {}
+  },
+  {
+    "dataset": "HISTAI-Breast (Subtipo mol.)",
+    "domain": "Mama",
+    "n_total": 852,
+    "sex": {
+      "F_n": 848,
+      "F_pct": 99.5,
+      "M_n": 4,
+      "M_pct": 0.5,
+      "total": 852
+    },
+    "age": {
+      "n": 852,
+      "mean": 61.5,
+      "median": 63.0,
+      "IQR": "[51-72]",
+      "missing_n": 0,
+      "missing_pct": 0.0
+    },
+    "age_group": {
+      "<50_n": 185,
+      "<50_pct": 21.7,
+      "50-70_n": 412,
+      "50-70_pct": 48.4,
+      ">=70_n": 255,
+      ">=70_pct": 29.9,
+      "MISSING_n": 0,
+      "MISSING_pct": 0.0
+    },
+    "target_dist": {
+      "Luminal B": 353,
+      "HER2+": 281,
+      "Luminal A": 143,
+      "Triple negative": 75
+    },
+    "target_x_sex": {},
+    "target_x_age": {}
+  },
+  {
+    "dataset": "HSI-BRCA (Subtipo mol.)",
+    "domain": "Mama",
+    "n_total": 47,
+    "sex": {
+      "FEMALE_n": 47,
+      "FEMALE_pct": 100.0,
+      "total": 47
+    },
+    "age": {
+      "n": 47,
+      "mean": 63.9,
+      "median": 65.0,
+      "IQR": "[54-75]",
+      "missing_n": 0,
+      "missing_pct": 0.0
+    },
+    "age_group": {
+      "<50_n": 6,
+      "<50_pct": 12.8,
+      "50-70_n": 24,
+      "50-70_pct": 51.1,
+      ">=70_n": 17,
+      ">=70_pct": 36.2,
+      "MISSING_n": 0,
+      "MISSING_pct": 0.0
+    },
+    "target_dist": {
+      "Luminal B": 29,
+      "Luminal A": 10,
+      "Triple Negative": 4,
+      "HER2+": 4
+    },
+    "target_x_sex": {},
+    "target_x_age": {}
+  },
+  {
+    "dataset": "SurGen",
+    "domain": "Colorrectal",
+    "n_total": 841,
+    "sex": {
+      "M_n": 453,
+      "M_pct": 53.9,
+      "F_n": 388,
+      "F_pct": 46.1,
+      "total": 841
+    },
+    "age": {
+      "n": 841,
+      "mean": 64.6,
+      "median": 66.0,
+      "IQR": "[57-74]",
+      "missing_n": 0,
+      "missing_pct": 0.0
+    },
+    "age_group": {
+      "<50_n": 102,
+      "<50_pct": 12.1,
+      "50-70_n": 412,
+      "50-70_pct": 49.0,
+      ">=70_n": 327,
+      ">=70_pct": 38.9,
+      "MISSING_n": 0,
+      "MISSING_pct": 0.0
+    },
+    "target_dist": {
+      "rectum": 254,
+      "right_colon": 194,
+      "sigmoid": 145,
+      "other": 51,
+      "left_colon": 50,
+      "transverse_colon": 45,
+      "metastatic_liver": 35,
+      "colon_unspecified": 26,
+      "rectosigmoid": 19,
+      "metastatic_peritoneal": 12,
+      "appendix": 7,
+      "metastatic_lung": 3
+    },
+    "target_x_sex": {},
+    "target_x_age": {}
+  },
+  {
+    "dataset": "HISTAI-CRC-B1",
+    "domain": "Colorrectal",
+    "n_total": 878,
+    "sex": {
+      "F_n": 504,
+      "F_pct": 57.4,
+      "M_n": 374,
+      "M_pct": 42.6,
+      "total": 878
+    },
+    "age": {
+      "n": 878,
+      "mean": 60.9,
+      "median": 63.0,
+      "IQR": "[51-71]",
+      "missing_n": 0,
+      "missing_pct": 0.0
+    },
+    "age_group": {
+      "<50_n": 200,
+      "<50_pct": 22.8,
+      "50-70_n": 427,
+      "50-70_pct": 48.6,
+      ">=70_n": 251,
+      ">=70_pct": 28.6,
+      "MISSING_n": 0,
+      "MISSING_pct": 0.0
+    },
+    "target_dist": {
+      "sigmoid": 211,
+      "rectum": 160,
+      "right_colon": 135,
+      "other": 130,
+      "colon_unspecified": 115,
+      "transverse_colon": 39,
+      "rectosigmoid": 37,
+      "left_colon": 33,
+      "metastatic_liver": 18
+    },
+    "target_x_sex": {},
+    "target_x_age": {}
+  },
+  {
+    "dataset": "HISTAI-CRC-B2",
+    "domain": "Colorrectal",
+    "n_total": 57,
+    "sex": {
+      "F_n": 32,
+      "F_pct": 56.1,
+      "M_n": 25,
+      "M_pct": 43.9,
+      "total": 57
+    },
+    "age": {
+      "n": 57,
+      "mean": 69.1,
+      "median": 70.0,
+      "IQR": "[62-79]",
+      "missing_n": 0,
+      "missing_pct": 0.0
+    },
+    "age_group": {
+      "<50_n": 4,
+      "<50_pct": 7.0,
+      "50-70_n": 24,
+      "50-70_pct": 42.1,
+      ">=70_n": 29,
+      ">=70_pct": 50.9,
+      "MISSING_n": 0,
+      "MISSING_pct": 0.0
+    },
+    "target_dist": {
+      "sigmoid": 17,
+      "rectum": 15,
+      "right_colon": 10,
+      "other": 6,
+      "colon_unspecified": 5,
+      "left_colon": 2,
+      "transverse_colon": 1,
+      "rectosigmoid": 1
+    },
+    "target_x_sex": {},
+    "target_x_age": {}
+  },
+  {
+    "dataset": "SurGen (Lateralidad)",
+    "domain": "Colorrectal",
+    "n_total": 707,
+    "sex": {
+      "M_n": 371,
+      "M_pct": 52.5,
+      "F_n": 336,
+      "F_pct": 47.5,
+      "total": 707
+    },
+    "age": {
+      "n": 707,
+      "mean": 65.2,
+      "median": 66.0,
+      "IQR": "[57-75]",
+      "missing_n": 0,
+      "missing_pct": 0.0
+    },
+    "age_group": {
+      "<50_n": 77,
+      "<50_pct": 10.9,
+      "50-70_n": 347,
+      "50-70_pct": 49.1,
+      ">=70_n": 283,
+      ">=70_pct": 40.0,
+      "MISSING_n": 0,
+      "MISSING_pct": 0.0
+    },
+    "target_dist": {
+      "rectum": 254,
+      "left": 195,
+      "right": 194,
+      "transverse": 45,
+      "rectosigmoid": 19
+    },
+    "target_x_sex": {},
+    "target_x_age": {}
+  },
+  {
+    "dataset": "HISTAI-CRC-B1 (Lateralidad)",
+    "domain": "Colorrectal",
+    "n_total": 615,
+    "sex": {
+      "F_n": 350,
+      "F_pct": 56.9,
+      "M_n": 265,
+      "M_pct": 43.1,
+      "total": 615
+    },
+    "age": {
+      "n": 615,
+      "mean": 61.2,
+      "median": 63.0,
+      "IQR": "[51-71]",
+      "missing_n": 0,
+      "missing_pct": 0.0
+    },
+    "age_group": {
+      "<50_n": 138,
+      "<50_pct": 22.4,
+      "50-70_n": 302,
+      "50-70_pct": 49.1,
+      ">=70_n": 175,
+      ">=70_pct": 28.5,
+      "MISSING_n": 0,
+      "MISSING_pct": 0.0
+    },
+    "target_dist": {
+      "left": 244,
+      "rectum": 160,
+      "right": 135,
+      "transverse": 39,
+      "rectosigmoid": 37
+    },
+    "target_x_sex": {},
+    "target_x_age": {}
+  },
+  {
+    "dataset": "HISTAI-CRC-B2 (Lateralidad)",
+    "domain": "Colorrectal",
+    "n_total": 46,
+    "sex": {
+      "F_n": 26,
+      "F_pct": 56.5,
+      "M_n": 20,
+      "M_pct": 43.5,
+      "total": 46
+    },
+    "age": {
+      "n": 46,
+      "mean": 69.0,
+      "median": 70.0,
+      "IQR": "[62-78]",
+      "missing_n": 0,
+      "missing_pct": 0.0
+    },
+    "age_group": {
+      "<50_n": 3,
+      "<50_pct": 6.5,
+      "50-70_n": 19,
+      "50-70_pct": 41.3,
+      ">=70_n": 24,
+      ">=70_pct": 52.2,
+      "MISSING_n": 0,
+      "MISSING_pct": 0.0
+    },
+    "target_dist": {
+      "left": 19,
+      "rectum": 15,
+      "right": 10,
+      "transverse": 1,
+      "rectosigmoid": 1
+    },
+    "target_x_sex": {},
+    "target_x_age": {}
+  }
+]

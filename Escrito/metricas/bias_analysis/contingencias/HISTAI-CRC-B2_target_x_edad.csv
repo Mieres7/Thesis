@@ -1,0 +1,10 @@
+,50-70,<50,>=70,Total
+colon_unspecified,2,1,2,5
+left_colon,1,0,1,2
+other,3,0,3,6
+rectosigmoid,1,0,0,1
+rectum,6,3,6,15
+right_colon,3,0,7,10
+sigmoid,8,0,9,17
+transverse_colon,0,0,1,1
+Total,24,4,29,57

@@ -1,0 +1,11 @@
+,50-70,<50,>=70,Total
+colon_unspecified,57,21,37,115
+left_colon,20,7,6,33
+metastatic_liver,9,3,6,18
+other,59,38,33,130
+rectosigmoid,14,12,11,37
+rectum,81,30,49,160
+right_colon,70,17,48,135
+sigmoid,101,58,52,211
+transverse_colon,16,14,9,39
+Total,427,200,251,878

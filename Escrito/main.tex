@@ -51,7 +51,7 @@
 \unidad{Departamento de Ingeniería Informática}
 \profesor{Violeta Chang Camacho}
 \profesorco{José M. Saavedra}
-\propuesta{Tesis para optar al título de Ingeniero Civil en Informática}
+\propuesta{Memoria para optar al título de Ingeniero Civil en Informática}
 \ciudad{Santiago}
 \pais{Chile}
 
@@ -78,6 +78,12 @@
 	% logran eso
 	%\makeatletter % convierte @ en letra, en vez de caracter especial
 	%\@openrightfalse % anula empezar capítulo en página derecha
+	% Página de mención al financiamiento
+	\thispagestyle{empty}
+	\vspace*{1cm}
+	\noindent Esta memoria fue elaborada en el marco del proyecto FONDECYT Exploración \textbf{13250156}.
+	\newpage
+
 	\begin{resumenEs}
 		Los modelos fundacionales preentrenados sobre \textit{whole slide images} (WSI) de patología digital han mostrado un desempeño prometedor en tareas clínicas, pero su adopción responsable requiere comprender cómo los sesgos (\textit{bias}) presentes en los datos de origen y de evaluación afectan su equidad (\textit{fairness}) y su capacidad de generalización. En esta tesis se caracterizaron nueve recursos públicos de patología digital y se seleccionaron seis cohortes de cáncer de mama y colorrectal, documentando las variables demográficas y técnicas de adquisición disponibles, así como los riesgos de sesgo asociados. Sobre estas cohortes se evaluaron cuatro modelos fundacionales (Phikon-v2, UNI2-h, Prov-GigaPath y Virchow2) en cinco tareas de clasificación (estado HER2, subtipo molecular, sitio anatómico, lateralidad y clasificación de órgano), empleando clasificadores de una capa oculta sobre representaciones congeladas y reportando métricas de utilidad, equidad por edad y sexo, y generalización entre cohortes, con intervalos de confianza obtenidos por \textit{bootstrap} a nivel de paciente.
 	\end{resumenEs}
@@ -146,16 +152,16 @@
 	\include{appendix/appB_tablasMetadata}
 	\include{appendix/appC_graficas}
 	\include{appendix/appD_criterios_preseleccion}
-	\include{appendix/appE_models}
 	\include{appendix/appF_resultados}
-	\include{appendix/appG_repositorio}
 
 	% Alternativa de anexos
 	\annex
 	% Por un bug del kernel de LaTeX (cf. el paquete appendix), si el primer
 	% anexo está en un archivo aparte, debe ser incluido con \input, en lugar
 	% de \include
-	% \input{appendix/appG_repositorio}
+	% Puede que lo logre arreglar en una futura versión de este template...
+	% Idealmente :'v
+	% \input{anexos/01-prueba}
 	% \include{anexos/02-otro}
 
 	\newpage

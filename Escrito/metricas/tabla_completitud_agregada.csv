@@ -1,0 +1,11 @@
+Dataset,Variables,Sin missing,>30% missing,>50% missing,>80% missing
+Ovarian,13,11 (84.6%),2,1,0
+BCNB,13,12 (92.3%),0,0,0
+CLWD,11,11 (100.0%),0,0,0
+NDB-UFES,14,13 (92.9%),1,1,0
+TDBTA,13,4 (30.8%),4,4,3
+SurGen-SR386,29,11 (37.9%),3,3,1
+SurGen-SR1482,13,8 (61.5%),5,5,2
+HSI-BRCA,35,34 (97.1%),0,0,0
+SOPHIE,9,1 (11.1%),5,0,0
+HISTAI,9,0 (0.0%),6,3,2

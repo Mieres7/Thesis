@@ -1,0 +1,63 @@
+\begin{table}[H]
+\centering
+\caption{Utilidad global por modelo, tarea T5-Organ. IC 95\% obtenido por bootstrap (1000 remuestreos, a nivel de paciente).}
+\label{tab:anexo_organ_utilidad}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l c c c c c c}
+\toprule
+\textbf{Dataset} & \textbf{Modelo} & \textbf{n\_test} & \textbf{BA} & \textbf{IC95\% BA} & \textbf{Macro-F1} & \textbf{IC95\% F1} & \textbf{AUC (OVR macro)} \\
+\midrule
+Combinado & UNI2 & 525 & 0.998 & [0.994, 1.000] & 0.998 & [0.994, 1.000] & 1.000 \\
+Combinado & Virchow2 & 525 & 1.000 & [1.000, 1.000] & 1.000 & [1.000, 1.000] & 1.000 \\
+Combinado & Phikon-v2 & 525 & 0.998 & [0.994, 1.000] & 0.998 & [0.994, 1.000] & 1.000 \\
+Combinado & Prov-GigaPath & 525 & 0.996 & [0.990, 1.000] & 0.996 & [0.990, 1.000] & 1.000 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Sensibilidad (recall) por clase, tarea T5-Organ, dataset Combinado ($K=2$). Clases en filas y un modelo por columna; las clases ausentes en la cohorte se marcan con ``--''.}
+\label{tab:anexo_organ_sensibilidad}
+\begin{tabular}{l c c c c}
+\toprule
+\textbf{Clase} & \textbf{UNI2} & \textbf{Virchow2} & \textbf{Phikon-v2} & \textbf{Prov-GigaPath} \\
+\midrule
+\textbf{n\_test} & 525 & 525 & 525 & 525 \\
+mama & 1.000 & 1.000 & 1.000 & 1.000 \\
+colorrectal & 0.996 & 1.000 & 0.996 & 0.992 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Fairness por subgrupo de edad, tarea T5-Organ, dataset Combinado. Solo se incluyen celdas con $n\geq 10$; el resto se marca como excluida. En tareas multiclase el TPR por subgrupo es la media del recall por clase (equivalente a la balanced accuracy cuando todas las clases están presentes en el subgrupo). $\Delta$BA y $\Delta$AUC corresponden a la brecha máxima entre subgrupos por combinación dataset-modelo.}
+\label{tab:anexo_organ_fairness}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l l c c c c c}
+\toprule
+\textbf{Dataset} & \textbf{Modelo} & \textbf{Subgrupo} & \textbf{n} & \textbf{BA} & \textbf{TPR} & \textbf{FPR} & \textbf{$\Delta$BA / $\Delta$AUC} \\
+\midrule
+Combinado & UNI2 & <50 & 131 & 0.990 & 0.990 & 0.010 &  \\
+Combinado & UNI2 & 50-70 & 263 & 1.000 & 1.000 & 0.000 &  \\
+Combinado & UNI2 & >=70 & 131 & 1.000 & 1.000 & 0.000 & $\Delta$BA=0.010; $\Delta$AUC=0.000 \\
+\midrule
+Combinado & Virchow2 & <50 & 131 & 1.000 & 1.000 & 0.000 &  \\
+Combinado & Virchow2 & 50-70 & 263 & 1.000 & 1.000 & 0.000 &  \\
+Combinado & Virchow2 & >=70 & 131 & 1.000 & 1.000 & 0.000 & $\Delta$BA=0.000; $\Delta$AUC=0.000 \\
+\midrule
+Combinado & Phikon-v2 & <50 & 131 & 0.990 & 0.990 & 0.010 &  \\
+Combinado & Phikon-v2 & 50-70 & 263 & 1.000 & 1.000 & 0.000 &  \\
+Combinado & Phikon-v2 & >=70 & 131 & 1.000 & 1.000 & 0.000 & $\Delta$BA=0.010; $\Delta$AUC=0.000 \\
+\midrule
+Combinado & Prov-GigaPath & <50 & 131 & 0.990 & 0.990 & 0.010 &  \\
+Combinado & Prov-GigaPath & 50-70 & 263 & 0.996 & 0.996 & 0.004 &  \\
+Combinado & Prov-GigaPath & >=70 & 131 & 1.000 & 1.000 & 0.000 & $\Delta$BA=0.010; $\Delta$AUC=0.000 \\
+\midrule
+\bottomrule
+\end{tabular}
+}
+\end{table}
+

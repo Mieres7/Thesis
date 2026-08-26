@@ -32,7 +32,7 @@ La tipología adoptada no pretende ser original ni exhaustiva, sino operativa: c
 
 El primer mecanismo corresponde al \textit{bias} de representación. Este se refiere a la distribución desigual de subgrupos demográficos dentro de una cohorte o entre cohortes comparables. En este estudio, dicho mecanismo se examina principalmente mediante las variables edad y sexo, debido a su utilidad para la posterior estratificación del desempeño por subgrupos. La subrepresentación de determinados grupos puede limitar la estabilidad de las estimaciones y contribuir a disparidades de rendimiento en sistemas de patología computacional \parencite{vaidya2024demographic}.
 
-De manera complementaria, se analiza la distribución de las variables objetivo de cada dominio: HER2 y subtipo molecular en cáncer de mama, y sitio anatómico y lateralidad en cáncer colorrectal. Estas variables no se interpretan como atributos sensibles, sino como indicadores de desbalance de clases, diferencias de prevalencia y heterogeneidad clínica entre cohortes. Su análisis permite determinar si las tareas definidas dentro de cada dominio se sustentan en categorías suficientemente representadas y comparables entre conjuntos de datos.
+De manera complementaria, se analiza la distribución de las variables objetivo de cada dominio: Estado HER2 y subtipo molecular en cáncer de mama, y sitio anatómico y lateralidad en cáncer colorrectal. Estas variables no se interpretan como atributos sensibles, sino como indicadores de desbalance de clases, diferencias de prevalencia y heterogeneidad clínica entre cohortes. Su análisis permite determinar si las tareas definidas dentro de cada dominio se sustentan en categorías suficientemente representadas y comparables entre conjuntos de datos.
 
 El segundo mecanismo corresponde al \textit{bias} de adquisición. Este mecanismo se asocia a las diferencias técnicas involucradas en la generación y digitalización de las imágenes histopatológicas. Entre los factores de interés se encuentran el escáner utilizado, el período de adquisición, la magnificación y la tinción. Tales condiciones pueden producir variaciones sistemáticas en la apariencia visual de las imágenes, incluso cuando los casos pertenecen a un mismo dominio clínico.
 
@@ -97,65 +97,98 @@ Se revisaron nueve recursos públicos de patología digital con dominios, escala
 
 La Tabla \ref{tab:acquisition-all-datasets} muestra los parámetros de adquisición reportados por cada recurso, con el fin de identificar posibles fuentes de variabilidad técnica entre cohortes. En particular, se consideraron el período de adquisición, el escáner utilizado, la magnificación, la tinción y la presencia de modalidades complementarias cuando tales antecedentes estaban explícitamente documentados. Esta síntesis permite complementar la caracterización global de los conjuntos de datos y hacer visible qué tan trazables son sus condiciones de adquisición para análisis posteriores de \textit{bias} y \textit{fairness}.
 
-\begin{table}[htbp]
-\centering
-\caption{Parámetros de adquisición reportados en los datasets revisados}
-\label{tab:acquisition-all-datasets}
-\renewcommand{\arraystretch}{1.15}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{p{3.2cm} p{3.0cm} p{3.4cm} p{2.6cm} p{2.8cm}}
-\hline
-\textbf{Dataset} & \textbf{Scanner} & \textbf{Período de adquisición} & \textbf{Magnificación} & \textbf{Tinción} \\
-\hline
-NDB-UFES &
-Olympus DP73 &
-2011--2021 &
-10x y 40x &
-H\&E \\
-The Digital Brain Tumour Atlas &
-Hamamatsu NanoZoomer 2.0 HT &
-1995--2019 &
-40x &
-H\&E \\
-HISTAI &
-Leica Aperio GT450 y AT2; algunos Hamamatsu y 3DHISTECH &
-No reportado &
-20x; fracción a 40x &
-H\&E mayoría \\
-SOPHIE &
-Ventana iScan HT (Roche) &
-1988--2020 &
-40x  &
-H\&E \\
-BCNB &
-No reportado &
-No reportado &
-20x &
-H\&E \\
-CLWD &
-SQS-600P &
-2020--2023 &
-80x  &
-H\&E \\
-SurGen &
-ZEISS AxioScan.Z1 &
-No reportado &
-40x  &
-H\&E \\
-Ovarian Bevacizumab Response &
-Leica AT Turbo (Leica, Germany) &
-No reportado &
-20x &
-H\&E \\
-Histology HSI-BC-Recurrence &
-Pannoramic 250 Flash III (3DHISTECH Ltd.) &
-2006--2015 &
-20x &
-H\&E \\
-\hline
-\end{tabular}%
-}
-\end{table}
+\begin{table*}[htbp]
+    \centering
+    \caption{Parámetros de adquisición reportados en los datasets revisados}
+    \label{tab:acquisition-all-datasets}
+    \renewcommand{\arraystretch}{1.15}
+
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{p{3.0cm} p{2.5cm} p{3.0cm} p{3.4cm} p{2.6cm} p{2.8cm}}
+        \hline
+        \textbf{Dataset} &
+        \textbf{Órgano} &
+        \textbf{Scanner} &
+        \textbf{Período de adquisición} &
+        \textbf{Magnificación} &
+        \textbf{Tinción} \\
+        \hline
+
+        NDB-UFES &
+        Cavidad oral &
+        Olympus DP73 &
+        2011--2021 &
+        10x y 40x &
+        H\&E \\
+        \hline
+
+        The Digital Brain Tumour Atlas &
+        Cerebro &
+        Hamamatsu NanoZoomer 2.0 HT &
+        1995--2019 &
+        40x &
+        H\&E \\
+        \hline
+
+        HISTAI &
+        Multiórgano; incluye Mama y colorrectal &
+        Leica Aperio GT450 y AT2; algunos Hamamatsu y 3DHISTECH &
+        No reportado &
+        20x; fracción a 40x &
+        H\&E mayoría \\
+        \hline
+
+        SOPHIE &
+        Piel &
+        Ventana iScan HT (Roche) &
+        1988--2020 &
+        40x &
+        H\&E \\
+        \hline
+
+        BCNB &
+        Mama &
+        No reportado &
+        No reportado &
+        20x &
+        H\&E \\
+        \hline
+
+        CLWD &
+        Pulmón &
+        SQS-600P &
+        2020--2023 &
+        80x &
+        H\&E \\
+        \hline
+
+        SurGen &
+        Colorrectal &
+        ZEISS AxioScan.Z1 &
+        No reportado &
+        40x &
+        H\&E \\
+        \hline
+
+        Ovarian Bevacizumab Response &
+        Ovario &
+        Leica AT Turbo (Leica, Germany) &
+        No reportado &
+        20x &
+        H\&E \\
+        \hline
+
+        Histology HSI-BC-Recurrence &
+        Mama &
+        Pannoramic 250 Flash III (3DHISTECH Ltd.) &
+        2006--2015 &
+        20x &
+        H\&E \\
+        \hline
+
+    \end{tabular}%
+    }
+\end{table*}
 
 \section{Metodología de caracterización descriptiva}
 
@@ -270,29 +303,69 @@ La selección de estos dominios respondió no solo a la disponibilidad de más d
 
 \subsection{Dominio de cáncer de mama}
 
-En el dominio de cáncer de mama, la curación se desarrolló sobre los conjuntos BCNB, HSI-BC e HISTAI-Breast. Aunque los tres recursos abordaban un mismo tipo de cáncer, la manera en que reportaban su información era marcadamente distinta: en algunos casos los biomarcadores de interés se encontraban organizados en columnas explícitas; en otros, aparecían codificados mediante valores numéricos cuya interpretación dependía del propio \textit{dataset}; y en otros, la información estaba incluida dentro de descripciones textuales más amplias. Esta heterogeneidad impedía una comparación directa y hacía necesario reconstruir un vocabulario común para representar los casos bajo criterios clínicos compartidos.
+En el dominio de cáncer de mama, la curación se desarrolló sobre los conjuntos BCNB, HSI-BC e HISTAI-Breast. La Tabla~\ref{tab:resumen_mama} resume el tamaño y la estructura de cada recurso. Aunque los tres recursos abordaban un mismo tipo de cáncer, la manera en que reportaban su información era marcadamente distinta: en algunos casos los biomarcadores de interés se encontraban organizados en columnas explícitas; en otros, aparecían codificados mediante valores numéricos cuya interpretación dependía del propio \textit{dataset}; y en otros, la información estaba incluida dentro de descripciones textuales más amplias. Esta heterogeneidad impedía una comparación directa y hacía necesario reconstruir un vocabulario común para representar los casos bajo criterios clínicos compartidos.
 
-La curación en este dominio se concentró principalmente en edad, sexo, estado de receptores hormonales (ER, PR), HER2, índice proliferativo Ki-67 y subtipo molecular. BCNB contenía variables estructuradas; HSI-BC requirió recodificación de códigos internos; en HISTAI-Breast los biomarcadores se extrajeron de texto libre mediante reglas documentadas en el Apéndice~\ref{appendix:extraccion_histai}. La lógica general consistió en traducir formas de reporte distintas hacia categorías comparables, procurando mantener el significado clínico principal de cada atributo: más que sustituir la información original, se añadió una capa de interpretación común que permitiera observar los tres conjuntos de datos dentro de un mismo marco descriptivo. Este paso fue especialmente relevante porque muchas de las tareas posteriores dependen de la posibilidad de distinguir subgrupos biológicos y clínicos equivalentes entre cohortes diferentes. Las variables, categorías retenidas y cobertura resultante se presentan en las Tablas~\ref{tab:variables_armonizadas_significado}, \ref{tab:resumen_frecuencias_mama} y~\ref{tab:trazabilidad_mama}.
-
-\begin{table}
+\begin{table}[htbp]
 \centering
-\caption{Variables armonizadas consideradas en el dominio de mama, su significado y uso analítico}
-\label{tab:variables_armonizadas_significado}
-\begin{tabular}{p{2.2cm}p{2.8cm}p{5.0cm}p{4.8cm}}
+\caption{Síntesis de los conjuntos de datos del dominio de mama.}
+\label{tab:resumen_mama}
+\small
+\begin{tabular}{lrr}
 \toprule
-\textbf{Dominio} & \textbf{Variable} & \textbf{Qué representa} & \textbf{Uso dentro del análisis} \\
+\textbf{Dataset} & \textbf{Muestras (N)} & \textbf{Variables} \\
 \midrule
-
-\multirow{7}{*}{Mama}
-& Edad & Edad al diagnóstico o al momento del registro del caso. & Permite estratificar distribuciones demográficas entre \textit{datasets}. \\
-& ER & Estado del receptor de estrógeno, armonizado en categorías comparables entre datasets. & Describir subgrupos biológicos y para formular tareas de clasificación asociadas a biomarcadores. \\
-& PR & Estado del receptor de progesterona, armonizado en categorías comparables entre datasets. & Caracterización molecular del tumor y permite análisis estratificados por subtipo biológico. \\
-& HER2 & Estado de HER2, reorganizado en categorías comparables entre cohortes. & Definir tareas de clasificación molecular y estudiar diferencias entre subgrupos clínicamente relevantes. \\
-& Ki67 categórico & Nivel de proliferación tumoral derivado desde valores porcentuales o extraído desde texto libre y luego agrupado en categorías. & Comparar perfiles biológicos entre cohortes y como variable auxiliar en la definición de subtipos. \\
-& Subtipo molecular & Agrupación clínica derivada a partir de biomarcadores como ER, PR, HER2 y Ki67. & Formular tareas de clasificación entre datasets de mama. \\
+BCNB & 1.058 & 13 \\
+HISTAI-Breast & 1.489 & 14 \\
+HSI-BC & 47 & 35 \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+La curación en este dominio se concentró principalmente en edad, sexo, estado de receptores hormonales (ER, PR), estado HER2, índice proliferativo Ki-67 y subtipo molecular. BCNB contenía variables estructuradas; HSI-BC requirió recodificación de códigos internos; en HISTAI-Breast los biomarcadores se extrajeron de texto libre mediante reglas documentadas en el Apéndice~\ref{appendix:extraccion_histai}. La lógica general consistió en traducir formas de reporte distintas hacia categorías comparables, procurando mantener el significado clínico principal de cada atributo: más que sustituir la información original, se añadió una capa de interpretación común que permitiera observar los tres conjuntos de datos dentro de un mismo marco descriptivo. Este paso fue especialmente relevante porque muchas de las tareas posteriores dependen de la posibilidad de distinguir subgrupos biológicos y clínicos equivalentes entre cohortes diferentes. Las variables, categorías retenidas y cobertura resultante se presentan en las Tablas~\ref{tab:variables_armonizadas_significado}, \ref{tab:resumen_frecuencias_mama} y~\ref{tab:trazabilidad_mama}.
+
+\begin{table*}
+    \centering
+    \caption{Variables armonizadas consideradas en el dominio de mama, su significado y uso analítico}
+    \label{tab:variables_armonizadas_significado}
+
+    \begin{tabular}{p{2.8cm}p{5.0cm}p{6.0cm}}
+
+        \toprule
+
+        \textbf{Variable} &
+        \textbf{Qué representa} &
+        \textbf{Uso dentro del análisis} \\
+
+        \midrule
+
+        Edad &
+        Edad al diagnóstico o al momento del registro del caso. &
+        Permite estratificar distribuciones demográficas entre \textit{datasets}. \\
+
+        ER &
+        Estado del receptor de estrógeno, armonizado en categorías comparables entre datasets. &
+        Describir subgrupos biológicos y para formular tareas de clasificación asociadas a biomarcadores. \\
+
+        PR &
+        Estado del receptor de progesterona, armonizado en categorías comparables entre datasets. &
+        Caracterización molecular del tumor y permite análisis estratificados por subtipo biológico. \\
+
+        HER2 &
+        Estado de HER2, reorganizado en categorías comparables entre cohortes. &
+        Definir tareas de clasificación molecular y estudiar diferencias entre subgrupos clínicamente relevantes. \\
+
+        Ki67 categórico &
+        Nivel de proliferación tumoral derivado desde valores porcentuales o extraído desde texto libre y luego agrupado en categorías. &
+        Comparar perfiles biológicos entre cohortes y como variable auxiliar en la definición de subtipos. \\
+
+        Subtipo molecular &
+        Agrupación clínica derivada a partir de biomarcadores como ER, PR, HER2 y Ki67. &
+        Formular tareas de clasificación entre datasets de mama. \\
+
+        \bottomrule
+
+    \end{tabular}
+\end{table*}
 
 Para verificar que las variables armonizadas presentan categorías realmente utilizables en los tres conjuntos de datos, la Tabla~\ref{tab:resumen_frecuencias_mama} resume, para cada variable objetivo, las categorías retenidas y su clase minoritaria en BCNB, HSI-BC e HISTAI-Breast. La cobertura alcanzada por cohorte tras la curación se reporta en la Sección~\ref{sec:trazabilidad_muestras} (Tabla~\ref{tab:trazabilidad_mama}), y el desglose completo de las frecuencias observadas, incluyendo ER, PR y Ki-67, se presenta en la Tabla~\ref{tab:frecuencias_mama} del Apéndice~\ref{appendix:tablasdatasets}.
 
@@ -313,34 +386,64 @@ Subtipo molecular & Luminal A, Luminal B, HER2+, Triple negativo & Triple negati
 }
 
 \vspace{4pt}
-Nota: los porcentajes se calculan sobre el total de cada cohorte (BCNB n=1058; HSI-BC n=47; HISTAI-Breast n=1489). La cobertura de etiquetas por cohorte se reporta en la Tabla~\ref{tab:trazabilidad_mama} y el desglose completo de frecuencias, incluyendo ER, PR y Ki-67, en la Tabla~\ref{tab:frecuencias_mama} del Apéndice~\ref{appendix:tablasdatasets}.
+Nota: los porcentajes se calculan sobre el total de cada cohorte (véase la Tabla~\ref{tab:resumen_mama} para el tamaño de cada cohorte). La cobertura de etiquetas por cohorte se reporta en la Tabla~\ref{tab:trazabilidad_mama} y el desglose completo de frecuencias, incluyendo ER, PR y Ki-67, en la Tabla~\ref{tab:frecuencias_mama} del Apéndice~\ref{appendix:tablasdatasets}.
 \end{table}
 
 Cabe señalar que la edad no siempre corresponde al mismo hito clínico entre cohortes (diagnóstico en BCNB y SurGen; registro en HISTAI; HSI-BC reporta ``Age at Diagnosis'), lo que debe considerarse al comparar distribuciones etarias.
 
 \subsection{Dominio de cáncer colorrectal}
 
-A diferencia de lo observado en mama, el espacio de comparación posible en colorrectal fue más restringido desde el inicio: las cohortes compartían ciertos atributos relevantes, pero presentaban diferencias más marcadas en la cobertura de variables moleculares, en la documentación de desenlaces clínicos y en la forma de expresar información histopatológica y anatómica. Por ello, el trabajo de curación en este dominio estuvo menos orientado a recuperar un conjunto amplio de atributos y más enfocado en determinar con claridad cuáles de ellos podían alinearse de manera robusta entre los distintos recursos.
+A diferencia de lo observado en mama, el espacio de comparación posible en colorrectal fue más restringido desde el inicio: las cohortes compartían ciertos atributos relevantes, pero presentaban diferencias más marcadas en la cobertura de variables moleculares, en la documentación de desenlaces clínicos y en la forma de expresar información histopatológica y anatómica. La Tabla~\ref{tab:resumen_colorrectal} resume el tamaño y la estructura de cada recurso. Por ello, el trabajo de curación en este dominio estuvo menos orientado a recuperar un conjunto amplio de atributos y más enfocado en determinar con claridad cuáles de ellos podían alinearse de manera robusta entre los distintos recursos.
+
+\begin{table}[H]
+\centering
+\caption{Síntesis de los conjuntos de datos del dominio colorrectal.}
+\label{tab:resumen_colorrectal}
+\small
+\begin{tabular}{lrr}
+\toprule
+\textbf{Dataset} & \textbf{Muestras (N)} & \textbf{Variables} \\
+\midrule
+SurGen & 843 & 34 \\
+HISTAI-CRC-B1 & 878 & 14 \\
+HISTAI-CRC-B2 & 57 & 14 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 En el conjunto SurGen (unión de las subcohortes SR386 y SR1482; Sección~\ref{sec:nota_unificacion_surgen}), una parte importante del proceso consistió en reorganizar variables ya existentes pero expresadas mediante nomenclaturas o escalas distintas: se estabilizó la representación de edad y sexo, se simplificó el reporte del sitio tumoral, agrupando en una categoría residual las localizaciones de baja frecuencia (apéndice, metástasis peritoneales y pulmonares), y, a partir de éste, se derivó una lateralidad anatómica más compacta cuando ello era posible. La información histológica y de estadificación fue reinterpretada mediante categorías más resumidas, con el fin de facilitar su comparación con otras cohortes del mismo dominio, y los biomarcadores disponibles (MMR/MSI, KRAS, NRAS, BRAF) se llevaron a un formato común. La variable de supervivencia, conservada en la subcohorte SR386, queda con cobertura parcial dentro del conjunto unificado (425 de 843 registros, aproximadamente 50,4\% con dato), sin posibilidad de extenderse de manera homogénea a los demás conjuntos de datos colorrectales considerados.
 
 Las subcohortes colorrectales de HISTAI presentaron nuevamente el problema del texto libre: parte de la información relevante para este trabajo no aparecía organizada como una tabla clínica convencional, sino dispersa en descripciones diagnósticas, comentarios microscópicos y otros fragmentos narrativos. En este escenario, la curación consistió en integrar esas fuentes textuales para luego recuperar, a partir de ellas, elementos como sitio anatómico, clase de lesión, tipo histológico, grado de diferenciación y menciones relacionadas con estadificación o compromiso ganglionar, utilizando el mismo enfoque basado en reglas de expresiones regulares aplicadas sobre los campos de diagnóstico, conclusión, \textit{grossing}, protocolo microscópico e información adicional. El sitio anatómico alcanzó cobertura completa (100\%) mediante un esquema de nueve categorías con categoría residual \textit{Otros}, mientras que la lateralidad derivada presentó cobertura parcial (70,0\% en HISTAI-CRC-B1 y 80,7\% en HISTAI-CRC-B2), consistente con la Sección~\ref{sec:trazabilidad_muestras}. El detalle de las reglas, la resolución de conflictos y las limitaciones de este proceso se documentan en el Apéndice~\ref{appendix:extraccion_histai}. Las categorías y su cobertura se presentan en las Tablas~\ref{tab:variables_armonizadas_significado_2}, \ref{tab:resumen_frecuencias_colorrectal} y~\ref{tab:trazabilidad_colorrectal}.
 
 \begin{table}[H]
-\centering
-\caption{Variables armonizadas consideradas en el dominio colorrectal, su significado y uso analítico}
-\label{tab:variables_armonizadas_significado_2}
-\begin{tabular}{p{2.2cm}p{2.8cm}p{5.0cm}p{4.8cm}}
-\toprule
-\textbf{Dominio} & \textbf{Variable} & \textbf{Qué representa} & \textbf{Uso dentro del análisis} \\
-\midrule
-\multirow{4}{*}{Colorrectal}
-& Edad & Edad del paciente al momento del diagnóstico o registro. & Permite estratificar distribuciones demográficas entre \textit{datasets}. \\
-& Sexo & Sexo reportado en cada caso clínico. & Permite estratificar distribuciones demográficas entre \textit{datasets}. \\
-& Sitio anatómico & Localización anatómica del tumor, armonizada en grupos comparables entre cohortes. & Formular tareas de clasificación. \\
-& Lateralidad & Derivación simplificada del sitio tumoral hacia categorías anatómicas más compactas. & Formular tareas de clasificación.\\
-\bottomrule
-\end{tabular}
+    \centering
+    \caption{Variables armonizadas consideradas en el dominio colorrectal, su significado y uso analítico}
+    \label{tab:variables_armonizadas_significado_2}
+
+    \begin{tabular}{p{2.8cm}p{5.0cm}p{6.0cm}}
+        \toprule
+        \textbf{Variable} &
+        \textbf{Qué representa} &
+        \textbf{Uso dentro del análisis} \\
+        \midrule
+
+        Edad &
+        Edad del paciente al momento del diagnóstico o registro. &
+        Permite estratificar distribuciones demográficas entre \textit{datasets}. \\
+
+        Sexo &
+        Sexo reportado en cada caso clínico. &
+        Permite estratificar distribuciones demográficas entre \textit{datasets}. \\
+
+        Sitio anatómico &
+        Localización anatómica del tumor, armonizada en grupos comparables entre cohortes. &
+        Formular tareas de clasificación. \\
+
+        Lateralidad &
+        Derivación simplificada del sitio tumoral hacia categorías anatómicas más compactas. &
+        Formular tareas de clasificación. \\
+        \bottomrule
+    \end{tabular}
 \end{table}
 
 \begin{table}[htbp]
@@ -360,7 +463,7 @@ Lateralidad & Izquierdo, Derecho, Recto, Transverso, Rectosigmoide & Rectosigmoi
 }
 
 \vspace{4pt}
-Nota: los porcentajes se calculan sobre el total de cada cohorte (SurGen n=841; HISTAI-CRC-B1 n=878; HISTAI-CRC-B2 n=57). La categoría \textit{Otros} integra las localizaciones de baja frecuencia: apéndice, metástasis peritoneales y metástasis pulmonares. La cobertura de la lateralidad por cohorte se reporta en la Tabla~\ref{tab:trazabilidad_colorrectal} y el desglose completo de frecuencias en la Tabla~\ref{tab:frecuencias_colorrectal} del Apéndice~\ref{appendix:tablasdatasets}.
+Nota: los porcentajes se calculan sobre el total de cada cohorte (véase la Tabla~\ref{tab:resumen_colorrectal} para el tamaño de cada cohorte). La categoría \textit{Otros} integra las localizaciones de baja frecuencia: apéndice, metástasis peritoneales y metástasis pulmonares. La cobertura de la lateralidad por cohorte se reporta en la Tabla~\ref{tab:trazabilidad_colorrectal} y el desglose completo de frecuencias en la Tabla~\ref{tab:frecuencias_colorrectal} del Apéndice~\ref{appendix:tablasdatasets}.
 \end{table}
 
 
@@ -381,52 +484,66 @@ El análisis se organizó en torno a tres componentes complementarios: una matri
 
 \subsection{Distribución demográfica por dominio}
 
-La Tabla~\ref{tab:distribucion_demografica} presenta la distribución de sexo y edad en los seis conjuntos de datos seleccionados. Las Figuras~\ref{fig:sexo_mama}~y~\ref{fig:sexo_colorrectal} muestran la composición por sexo en cada dominio, y las Figuras~\ref{fig:edad_mama}~y~\ref{fig:edad_colorrectal} la distribución etaria.
+Las Tablas~\ref{tab:distribucion_demografica_mama}~y~\ref{tab:distribucion_demografica_colorrectal} presentan la distribución de sexo y edad en los seis conjuntos de datos seleccionados, desagregadas por dominio clínico. Las Figuras~\ref{fig:sexo_mama}~y~\ref{fig:sexo_colorrectal} muestran la composición por sexo en cada dominio, y las Figuras~\ref{fig:edad_mama}~y~\ref{fig:edad_colorrectal} la distribución etaria.
 
 \begin{table}[htbp]
 \centering
-\caption{Distribución demográfica de los conjuntos de datos seleccionados.}
-\label{tab:distribucion_demografica}
+\caption{Distribución demográfica de los conjuntos de datos de cáncer de mama.}
+\label{tab:distribucion_demografica_mama}
 \small
 \setlength{\tabcolsep}{4pt}
-\begin{tabular}{lcrll}
+\begin{tabular}{lrl}
 \toprule
-\textbf{Dataset} & \textbf{Dominio} & \textbf{n} & \textbf{Sexo} & \textbf{Edad} \\
+\textbf{Dataset} & \textbf{Sexo} & \textbf{Edad} \\
 \midrule
-BCNB & Mama & 1058 & F: 1058 (100\%) & $\bar{x}=57{,}6$, med=57, IQR=[49--66] \\
-HISTAI-Breast & Mama & 1489 & F: 1469 (98,7\%), M: 20 (1,3\%) & $\bar{x}=57{,}6$, med=58, IQR=[46--69] \\
-HSI-BC & Mama & 47 & F: 47 (100\%) & $\bar{x}=63{,}9$, med=65, IQR=[54--75] \\
-SurGen & Colorrectal & 841 & F: 388 (46,1\%), M: 453 (53,9\%) & $\bar{x}=64{,}6$, med=66, IQR=[57--74] \\
-HISTAI-CRC-B1 & Colorrectal & 878 & F: 504 (57,4\%), M: 374 (42,6\%) & $\bar{x}=60{,}9$, med=63, IQR=[51--71] \\
-HISTAI-CRC-B2 & Colorrectal & 57 & F: 32 (56,1\%), M: 25 (43,9\%) & $\bar{x}=69{,}1$, med=70, IQR=[62--79] \\
+BCNB & F: 1058 (100\%) & $\bar{x}=57{,}6$, med=57, IQR=[49--66] \\
+HISTAI-Breast & F: 1469 (98,7\%), M: 20 (1,3\%) & $\bar{x}=57{,}6$, med=58, IQR=[46--69] \\
+HSI-BC & F: 47 (100\%) & $\bar{x}=63{,}9$, med=65, IQR=[54--75] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Distribución demográfica de los conjuntos de datos de cáncer colorrectal.}
+\label{tab:distribucion_demografica_colorrectal}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrl}
+\toprule
+\textbf{Dataset} & \textbf{Sexo} & \textbf{Edad} \\
+\midrule
+SurGen & F: 388 (46,1\%), M: 453 (53,9\%) & $\bar{x}=64{,}6$, med=66, IQR=[57--74] \\
+HISTAI-CRC-B1 & F: 504 (57,4\%), M: 374 (42,6\%) & $\bar{x}=60{,}9$, med=63, IQR=[51--71] \\
+HISTAI-CRC-B2 & F: 32 (56,1\%), M: 25 (43,9\%) & $\bar{x}=69{,}1$, med=70, IQR=[62--79] \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.65\textwidth]{images/fig_sexo_mama.png}
+\includegraphics[width=0.65\textwidth]{metricas/bias_analysis/fig_sexo_mama.png}
 \caption{Distribución por sexo en los conjuntos de datos de cáncer de mama.}
 \label{fig:sexo_mama}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.65\textwidth]{images/fig_sexo_colorrectal.png}
+\includegraphics[width=0.65\textwidth]{metricas/bias_analysis/fig_sexo_colorrectal.png}
 \caption{Distribución por sexo en los conjuntos de datos de cáncer colorrectal.}
 \label{fig:sexo_colorrectal}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.65\textwidth]{images/fig_edad_mama.png}
+\includegraphics[width=0.65\textwidth]{metricas/bias_analysis/fig_edad_mama.png}
 \caption{Distribución por grupos etarios en los conjuntos de datos de cáncer de mama.}
 \label{fig:edad_mama}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.65\textwidth]{images/fig_edad_colorrectal.png}
+\includegraphics[width=0.65\textwidth]{metricas/bias_analysis/fig_edad_colorrectal.png}
 \caption{Distribución por grupos etarios en los conjuntos de datos de cáncer colorrectal.}
 \label{fig:edad_colorrectal}
 \end{figure}
@@ -435,9 +552,9 @@ En mama, las tres cohortes muestran un patrón consistente: distribuciones etari
 
 \subsection{Distribución de variables objetivo en el dominio de mama}
 
-Se consideraron dos variables objetivo: HER2 (tres clases) y subtipo molecular (cuatro clases), disponibles en las tres cohortes con diferencias de cobertura y forma de reporte (Tabla~\ref{tab:resumen_frecuencias_mama}; cobertura por cohorte en la Tabla~\ref{tab:trazabilidad_mama}).
+Se consideraron dos variables objetivo: Estado HER2 (tres clases) y subtipo molecular (cuatro clases), disponibles en las tres cohortes con diferencias de cobertura y forma de reporte (Tabla~\ref{tab:resumen_frecuencias_mama}; cobertura por cohorte en la Tabla~\ref{tab:trazabilidad_mama}).
 
-\subsubsection*{HER2}
+\subsubsection*{Estado HER2}
 
 La distribución difiere marcadamente entre cohortes: BCNB concentra sus casos entre negativo/bajo y equívoco con baja proporción de positivos; HISTAI-Breast muestra un patrón similar pero con una fracción considerable sin dato recuperable desde texto libre; y HSI-BC presenta fuerte predominio de la categoría negativa, sin equívocos registrados. Estas diferencias podrían reflejar tanto variación real en prevalencia como diferencias en criterios de reporte. En HISTAI-Breast existe además una representación masculina marginal (1,3\%) que, junto con la ausencia total de varianza en sexo en BCNB y HSI-BC, impide el análisis estratificado por sexo en este dominio.
 
@@ -451,7 +568,7 @@ Se consideraron el sitio anatómico del tumor y la lateralidad, armonizados en l
 
 \subsubsection*{Sitio anatómico}
 
-Recto, sigmoide y colon derecho concentran la mayoría de los casos en las tres cohortes, con diferencias en la granularidad reportada. Las categorías de baja frecuencia relevantes para \textit{fairness}, rectosigmoide en SurGen (2,3\%) y metástasis hepática en HISTAI-CRC-B1 (2,1\%), concentran pocos casos, implicando mayor variabilidad en esos subgrupos; en HISTAI-CRC-B2 (n=57), cualquier desagregación por sitio debe interpretarse con cautela.
+Recto, sigmoide y colon derecho concentran la mayoría de los casos en las tres cohortes, con diferencias en la granularidad reportada. Las categorías de baja frecuencia relevantes para \textit{fairness}, rectosigmoide en SurGen (2,3\%) y metástasis hepática en HISTAI-CRC-B1 (2,1\%), concentran pocos casos, implicando mayor variabilidad en esos subgrupos; en HISTAI-CRC-B2 (n=57). Por lo tanto, cualquier desagregación por sitio debe interpretarse con cautela.
 
 \subsubsection*{Lateralidad}
 
@@ -506,7 +623,7 @@ HISTAI-CRC-B2 & 57 & 57 & 57 & 100,0 & 46 & 80,7 \\
 
 Como se observa en las tablas, HISTAI-Breast presenta la mayor pérdida de casos en mama (56--58\% de retención), debido a la naturaleza no estructurada de los informes desde los que se extrajeron los biomarcadores. En colorrectal, la lateralidad tiene sistemáticamente menor cobertura que el sitio anatómico, reflejando que no todos los casos con sitio clasificable admiten una lateralidad definida (por ejemplo, sitios inespecíficos o metastásicos). La descripción de las reglas de extracción empleadas, sus criterios de resolución de conflictos y sus errores esperables se presenta en el Apéndice~\ref{appendix:extraccion_histai}.
 
-Esta pérdida puede además alterar la composición demográfica de la población analizable: en HISTAI-Breast, la mediana de edad se desplaza de 58 a 63 años al filtrar por HER2 o subtipo molecular, con menos casos menores de 50 años y más mayores de 70, lo que sugiere que los pacientes mayores tienen mayor probabilidad de contar con biomarcadores extraíbles, un sesgo de selección indirecto por edad en la cohorte elegible.
+Esta pérdida puede además alterar la composición demográfica de la población analizable: en HISTAI-Breast, la mediana de edad se desplaza de 58 a 63 años al filtrar por estado HER2 o subtipo molecular, con menos casos menores de 50 años y más mayores de 70, lo que sugiere que los pacientes mayores tienen mayor probabilidad de contar con biomarcadores extraíbles, un sesgo de selección indirecto por edad en la cohorte elegible.
 
 \subsection{Condiciones de adquisición y potencial de confusión}
 \label{sec:adquisicion}
@@ -515,21 +632,21 @@ La Tabla~\ref{tab:adquisicion_bias} resume los parámetros de adquisición docum
 
 \begin{table}[htbp]
 \centering
-\caption{Parámetros de adquisición y riesgo de confusión entre cohortes.}
+\caption{Parámetros de adquisición y riesgo de confusión entre cohortes de Mama y Colorrectal.}
 \label{tab:adquisicion_bias}
 \small
 \setlength{\tabcolsep}{4pt}
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{lllll}
+\begin{tabular}{llllll}
 \toprule
 \textbf{Dataset} & \textbf{Escáner} & \textbf{Magnif.} & \textbf{Tinción} & \textbf{Período} \\
 \midrule
-BCNB & No reportado & 20x & H\&E & No reportado \\
-HISTAI-Breast & Leica Aperio GT450/AT2 & 20x (40x frac.) & H\&E (mayoría) & No reportado \\
-HSI-BC & 3DHISTECH P250 Flash III & 20x & H\&E + hiperesp. & 2006--2015 \\
-SurGen & ZEISS AxioScan.Z1 & 40x & H\&E & No reportado \\
-HISTAI-CRC-B1 & Leica Aperio GT450/AT2 & 20x (40x frac.) & H\&E (mayoría) & No reportado \\
-HISTAI-CRC-B2 & Leica Aperio GT450/AT2 & 20x (40x frac.) & H\&E (mayoría) & No reportado \\
+Mama &BCNB & No reportado & 20x & H\&E & No reportado \\
+Mama &HISTAI-Breast & Leica Aperio GT450/AT2 & 20x (40x frac.) & H\&E (mayoría) & No reportado \\
+Mama &HSI-BC & 3DHISTECH P250 Flash III & 20x & H\&E + hiperesp. & 2006--2015 \\
+Colorrectal & SurGen & ZEISS AxioScan.Z1 & 40x & H\&E & No reportado \\
+Colorrectal & HISTAI-CRC-B1 & Leica Aperio GT450/AT2 & 20x (40x frac.) & H\&E (mayoría) & No reportado \\
+Colorrectal & HISTAI-CRC-B2 & Leica Aperio GT450/AT2 & 20x (40x frac.) & H\&E (mayoría) & No reportado \\
 \bottomrule
 \end{tabular}%
 }
@@ -548,40 +665,41 @@ A modo de síntesis, la Tabla~\ref{tab:matriz_riesgo_unificada} presenta una vis
 \label{tab:matriz_riesgo_unificada}
 \small
 \setlength{\tabcolsep}{5pt}
-\begin{tabular}{lcccc}
+\begin{tabular}{llcccc}
 \toprule
+\textbf{Dominio} &
 \textbf{Dataset} &
   \textbf{Representación} &
   \textbf{Adquisición} &
   \textbf{Documentación} &
   \textbf{Riesgo global} \\
 \midrule
-BCNB &
+Mama & BCNB &
   \cellcolor{riesgobajo}Bajo &
   \cellcolor{riesgomedio}Medio &
   \cellcolor{riesgobajo}Bajo &
   \cellcolor{riesgobajo}Bajo--Medio \\
-HISTAI-Breast &
+Mama & HISTAI-Breast &
   \cellcolor{riesgomedio}Medio &
   \cellcolor{riesgomedio}Medio &
   \cellcolor{riesgoalto}Alto &
   \cellcolor{riesgomedio}Medio--Alto \\
-HSI-BC &
+Mama & HSI-BC &
   \cellcolor{riesgoalto}Alto &
   \cellcolor{riesgobajo}Bajo &
   \cellcolor{riesgobajo}Bajo &
   \cellcolor{riesgoalto}Alto \\
-SurGen &
+Colorrectal & SurGen &
   \cellcolor{riesgobajo}Bajo--Medio &
   \cellcolor{riesgomedio}Medio &
   \cellcolor{riesgomedio}Medio &
   \cellcolor{riesgomedio}Medio \\
-HISTAI-CRC-B1 &
+Colorrectal & HISTAI-CRC-B1 &
   \cellcolor{riesgomedio}Medio &
   \cellcolor{riesgomedio}Medio &
   \cellcolor{riesgomedio}Medio &
   \cellcolor{riesgomedio}Medio \\
-HISTAI-CRC-B2 &
+Colorrectal & HISTAI-CRC-B2 &
   \cellcolor{riesgoalto}Alto &
   \cellcolor{riesgomedio}Medio &
   \cellcolor{riesgobajo}Bajo &
@@ -607,7 +725,7 @@ En tercer lugar, el análisis de las variables objetivo en cada dominio reveló 
 
 La heterogeneidad observada no invalida el uso de estos conjuntos de datos, sino que define los límites dentro de los cuales pueden realizarse inferencias válidas, límites que se retoman en la formulación experimental de los Capítulos~\ref{cap:seleccion_modelos}~y~\ref{cap:evaluacion_modelos}.
 
-El análisis de sesgo racial/étnico se declara fuera de alcance (ver §\ref{sec:conclusiones_capitulo4}).
+El análisis de sesgo racial/étnico se declara fuera de alcance (ver Sección \ref{sec:conclusiones_capitulo4}).
 
 \section{Conclusiones del capítulo}
 \label{sec:conclusiones_capitulo4}

@@ -1,0 +1,292 @@
+\begin{table}[H]
+\centering
+\caption{Utilidad global por modelo, tarea T4-Side. IC 95\% obtenido por bootstrap (1000 remuestreos, a nivel de paciente).}
+\label{tab:anexo_side_utilidad}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l c c c c c c}
+\toprule
+\textbf{Dataset} & \textbf{Modelo} & \textbf{n\_test} & \textbf{BA} & \textbf{IC95\% BA} & \textbf{Macro-F1} & \textbf{IC95\% F1} & \textbf{AUC (OVR macro)} \\
+\midrule
+HISTAI-CRC-B1 & UNI2 & 615 & 0.325 & [0.292, 0.361] & 0.330 & [0.295, 0.367] & 0.640 \\
+HISTAI-CRC-B1 & Virchow2 & 615 & 0.324 & [0.289, 0.363] & 0.329 & [0.293, 0.368] & 0.645 \\
+HISTAI-CRC-B1 & Phikon-v2 & 615 & 0.293 & [0.263, 0.324] & 0.293 & [0.260, 0.325] & 0.609 \\
+HISTAI-CRC-B1 & Prov-GigaPath & 615 & 0.331 & [0.301, 0.365] & 0.331 & [0.297, 0.366] & 0.654 \\
+HISTAI-CRC-B2 & UNI2 & 46 & 0.116 & [0.055, 0.254] & 0.115 & [0.052, 0.210] & 0.308 \\
+HISTAI-CRC-B2 & Virchow2 & 46 & 0.174 & [0.102, 0.359] & 0.175 & [0.090, 0.282] & 0.321 \\
+HISTAI-CRC-B2 & Phikon-v2 & 46 & 0.115 & [0.067, 0.240] & 0.104 & [0.053, 0.185] & 0.276 \\
+HISTAI-CRC-B2 & Prov-GigaPath & 46 & 0.164 & [0.097, 0.332] & 0.171 & [0.095, 0.267] & 0.320 \\
+SurGen & UNI2 & 631 & 0.372 & [0.329, 0.415] & 0.368 & [0.326, 0.408] & 0.730 \\
+SurGen & Virchow2 & 631 & 0.339 & [0.301, 0.381] & 0.334 & [0.296, 0.374] & 0.699 \\
+SurGen & Phikon-v2 & 631 & 0.321 & [0.287, 0.360] & 0.320 & [0.285, 0.357] & 0.687 \\
+SurGen & Prov-GigaPath & 631 & 0.318 & [0.285, 0.357] & 0.317 & [0.284, 0.353] & 0.689 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Sensibilidad (recall) por clase, tarea T4-Side, dataset HISTAI-CRC-B1 ($K=5$). Clases en filas y un modelo por columna; las clases ausentes en la cohorte se marcan con ``--''.}
+\label{tab:anexo_side_sensibilidad}
+\begin{tabular}{l c c c c}
+\toprule
+\textbf{Clase} & \textbf{UNI2} & \textbf{Virchow2} & \textbf{Phikon-v2} & \textbf{Prov-GigaPath} \\
+\midrule
+\textbf{n\_test} & 615 & 615 & 615 & 615 \\
+izquierdo & 0.643 & 0.607 & 0.615 & 0.660 \\
+derecho & 0.496 & 0.496 & 0.481 & 0.519 \\
+transverso & 0.103 & 0.154 & 0.077 & 0.103 \\
+rectosigmoide & 0.027 & 0.000 & 0.000 & 0.000 \\
+recto & 0.356 & 0.362 & 0.294 & 0.375 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Sensibilidad (recall) por clase, tarea T4-Side, dataset HISTAI-CRC-B2 ($K=5$). Clases en filas y un modelo por columna; las clases ausentes en la cohorte se marcan con ``--''.}
+\label{tab:anexo_side_sensibilidad_b2}
+\begin{tabular}{l c c c c}
+\toprule
+\textbf{Clase} & \textbf{UNI2} & \textbf{Virchow2} & \textbf{Phikon-v2} & \textbf{Prov-GigaPath} \\
+\midrule
+\textbf{n\_test} & 46 & 46 & 46 & 46 \\
+izquierdo & 0.316 & 0.368 & 0.474 & 0.421 \\
+derecho & 0.200 & 0.300 & 0.100 & 0.200 \\
+transverso & 0.000 & 0.000 & 0.000 & 0.000 \\
+rectosigmoide & 0.000 & 0.000 & 0.000 & 0.000 \\
+recto & 0.067 & 0.200 & 0.000 & 0.200 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Sensibilidad (recall) por clase, tarea T4-Side, dataset SurGen ($K=5$). Clases en filas y un modelo por columna; las clases ausentes en la cohorte se marcan con ``--''.}
+\label{tab:anexo_side_sensibilidad_surgen}
+\begin{tabular}{l c c c c}
+\toprule
+\textbf{Clase} & \textbf{UNI2} & \textbf{Virchow2} & \textbf{Phikon-v2} & \textbf{Prov-GigaPath} \\
+\midrule
+\textbf{n\_test} & 631 & 631 & 631 & 631 \\
+izquierdo & 0.353 & 0.282 & 0.335 & 0.318 \\
+derecho & 0.560 & 0.497 & 0.434 & 0.469 \\
+transverso & 0.051 & 0.103 & 0.077 & 0.077 \\
+rectosigmoide & 0.158 & 0.105 & 0.053 & 0.053 \\
+recto & 0.737 & 0.706 & 0.706 & 0.675 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Fairness por subgrupo de edad, tarea T4-Side, dataset HISTAI-CRC-B1. Solo se incluyen celdas con $n\geq 10$; el resto se marca como excluida. En tareas multiclase el TPR por subgrupo es la media del recall por clase (equivalente a la balanced accuracy cuando todas las clases están presentes en el subgrupo). $\Delta$BA y $\Delta$AUC corresponden a la brecha máxima entre subgrupos por combinación dataset-modelo.}
+\label{tab:anexo_side_fairness_edad}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l l c c c c c}
+\toprule
+\textbf{Dataset} & \textbf{Modelo} & \textbf{Subgrupo} & \textbf{n} & \textbf{BA} & \textbf{TPR} & \textbf{FPR} & \textbf{$\Delta$BA / $\Delta$AUC} \\
+\midrule
+HISTAI-CRC-B1 & UNI2 & <50 & 150 & 0.376 & 0.376 & 0.155 &  \\
+HISTAI-CRC-B1 & UNI2 & 50-70 & 307 & 0.310 & 0.310 & 0.153 &  \\
+HISTAI-CRC-B1 & UNI2 & >=70 & 158 & 0.327 & 0.327 & 0.156 & $\Delta$BA=0.066; $\Delta$AUC=0.048 \\
+\midrule
+HISTAI-CRC-B1 & Virchow2 & <50 & 150 & 0.342 & 0.342 & 0.163 &  \\
+HISTAI-CRC-B1 & Virchow2 & 50-70 & 307 & 0.318 & 0.318 & 0.154 &  \\
+HISTAI-CRC-B1 & Virchow2 & >=70 & 158 & 0.313 & 0.313 & 0.158 & $\Delta$BA=0.028; $\Delta$AUC=0.061 \\
+\midrule
+HISTAI-CRC-B1 & Phikon-v2 & <50 & 150 & 0.356 & 0.356 & 0.156 &  \\
+HISTAI-CRC-B1 & Phikon-v2 & 50-70 & 307 & 0.283 & 0.283 & 0.170 &  \\
+HISTAI-CRC-B1 & Phikon-v2 & >=70 & 158 & 0.282 & 0.282 & 0.156 & $\Delta$BA=0.074; $\Delta$AUC=0.040 \\
+\midrule
+HISTAI-CRC-B1 & Prov-GigaPath & <50 & 150 & 0.342 & 0.342 & 0.153 &  \\
+HISTAI-CRC-B1 & Prov-GigaPath & 50-70 & 307 & 0.319 & 0.319 & 0.151 &  \\
+HISTAI-CRC-B1 & Prov-GigaPath & >=70 & 158 & 0.360 & 0.360 & 0.147 & $\Delta$BA=0.041; $\Delta$AUC=0.034 \\
+\midrule
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Fairness por subgrupo de edad, tarea T4-Side, dataset HISTAI-CRC-B2. Solo se incluyen celdas con $n\geq 10$; el resto se marca como excluida. En tareas multiclase el TPR por subgrupo es la media del recall por clase (equivalente a la balanced accuracy cuando todas las clases están presentes en el subgrupo). $\Delta$BA y $\Delta$AUC corresponden a la brecha máxima entre subgrupos por combinación dataset-modelo.}
+\label{tab:anexo_side_fairness_edad_b2}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l l c c c c c}
+\toprule
+\textbf{Dataset} & \textbf{Modelo} & \textbf{Subgrupo} & \textbf{n} & \textbf{BA} & \textbf{TPR} & \textbf{FPR} & \textbf{$\Delta$BA / $\Delta$AUC} \\
+\midrule
+HISTAI-CRC-B2 & UNI2 & <50 (excluida) & 3 & -- & -- & -- & \\
+HISTAI-CRC-B2 & UNI2 & 50-70 & 21 & 0.253 & 0.203 & 0.183 &  \\
+HISTAI-CRC-B2 & UNI2 & >=70 & 22 & 0.061 & 0.061 & 0.328 & $\Delta$BA=0.193; $\Delta$AUC=-- \\
+\midrule
+HISTAI-CRC-B2 & Virchow2 & <50 (excluida) & 3 & -- & -- & -- & \\
+HISTAI-CRC-B2 & Virchow2 & 50-70 & 21 & 0.257 & 0.206 & 0.199 &  \\
+HISTAI-CRC-B2 & Virchow2 & >=70 & 22 & 0.146 & 0.117 & 0.225 & $\Delta$BA=0.111; $\Delta$AUC=-- \\
+\midrule
+HISTAI-CRC-B2 & Phikon-v2 & <50 (excluida) & 3 & -- & -- & -- & \\
+HISTAI-CRC-B2 & Phikon-v2 & 50-70 & 21 & 0.250 & 0.250 & 0.253 &  \\
+HISTAI-CRC-B2 & Phikon-v2 & >=70 & 22 & 0.075 & 0.060 & 0.251 & $\Delta$BA=0.175; $\Delta$AUC=-- \\
+\midrule
+HISTAI-CRC-B2 & Prov-GigaPath & <50 (excluida) & 3 & -- & -- & -- & \\
+HISTAI-CRC-B2 & Prov-GigaPath & 50-70 & 21 & 0.198 & 0.158 & 0.187 &  \\
+HISTAI-CRC-B2 & Prov-GigaPath & >=70 & 22 & 0.121 & 0.097 & 0.223 & $\Delta$BA=0.076; $\Delta$AUC=-- \\
+\midrule
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Fairness por subgrupo de edad, tarea T4-Side, dataset SurGen. Solo se incluyen celdas con $n\geq 10$; el resto se marca como excluida. En tareas multiclase el TPR por subgrupo es la media del recall por clase (equivalente a la balanced accuracy cuando todas las clases están presentes en el subgrupo). $\Delta$BA y $\Delta$AUC corresponden a la brecha máxima entre subgrupos por combinación dataset-modelo.}
+\label{tab:anexo_side_fairness_edad_surgen}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l l c c c c c}
+\toprule
+\textbf{Dataset} & \textbf{Modelo} & \textbf{Subgrupo} & \textbf{n} & \textbf{BA} & \textbf{TPR} & \textbf{FPR} & \textbf{$\Delta$BA / $\Delta$AUC} \\
+\midrule
+SurGen & UNI2 & <50 & 86 & 0.352 & 0.352 & 0.141 &  \\
+SurGen & UNI2 & 50-70 & 306 & 0.385 & 0.385 & 0.131 &  \\
+SurGen & UNI2 & >=70 & 239 & 0.354 & 0.354 & 0.128 & $\Delta$BA=0.033; $\Delta$AUC=0.072 \\
+\midrule
+SurGen & Virchow2 & <50 & 86 & 0.357 & 0.357 & 0.144 &  \\
+SurGen & Virchow2 & 50-70 & 306 & 0.340 & 0.340 & 0.151 &  \\
+SurGen & Virchow2 & >=70 & 239 & 0.316 & 0.316 & 0.140 & $\Delta$BA=0.041; $\Delta$AUC=0.012 \\
+\midrule
+SurGen & Phikon-v2 & <50 & 86 & 0.250 & 0.250 & 0.162 &  \\
+SurGen & Phikon-v2 & 50-70 & 306 & 0.322 & 0.322 & 0.142 &  \\
+SurGen & Phikon-v2 & >=70 & 239 & 0.365 & 0.365 & 0.148 & $\Delta$BA=0.115; $\Delta$AUC=0.017 \\
+\midrule
+SurGen & Prov-GigaPath & <50 & 86 & 0.315 & 0.315 & 0.153 &  \\
+SurGen & Prov-GigaPath & 50-70 & 306 & 0.309 & 0.309 & 0.151 &  \\
+SurGen & Prov-GigaPath & >=70 & 239 & 0.319 & 0.319 & 0.142 & $\Delta$BA=0.011; $\Delta$AUC=0.033 \\
+\midrule
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Fairness por subgrupo de sexo, tarea T4-Side, dataset HISTAI-CRC-B1. Solo se incluyen celdas con $n\geq 10$; el resto se marca como excluida. En tareas multiclase el TPR por subgrupo es la media del recall por clase (equivalente a la balanced accuracy cuando todas las clases están presentes en el subgrupo). $\Delta$BA y $\Delta$AUC corresponden a la brecha máxima entre subgrupos por combinación dataset-modelo.}
+\label{tab:anexo_side_fairness_sexo}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l l c c c c c}
+\toprule
+\textbf{Dataset} & \textbf{Modelo} & \textbf{Subgrupo} & \textbf{n} & \textbf{BA} & \textbf{TPR} & \textbf{FPR} & \textbf{$\Delta$BA / $\Delta$AUC} \\
+\midrule
+HISTAI-CRC-B1 & UNI2 & F & 350 & 0.338 & 0.338 & 0.150 &  \\
+HISTAI-CRC-B1 & UNI2 & M & 265 & 0.306 & 0.306 & 0.159 & $\Delta$BA=0.032; $\Delta$AUC=0.103 \\
+\midrule
+HISTAI-CRC-B1 & Virchow2 & F & 350 & 0.341 & 0.341 & 0.149 &  \\
+HISTAI-CRC-B1 & Virchow2 & M & 265 & 0.297 & 0.297 & 0.168 & $\Delta$BA=0.044; $\Delta$AUC=0.099 \\
+\midrule
+HISTAI-CRC-B1 & Phikon-v2 & F & 350 & 0.308 & 0.308 & 0.153 &  \\
+HISTAI-CRC-B1 & Phikon-v2 & M & 265 & 0.271 & 0.271 & 0.174 & $\Delta$BA=0.036; $\Delta$AUC=0.072 \\
+\midrule
+HISTAI-CRC-B1 & Prov-GigaPath & F & 350 & 0.353 & 0.353 & 0.142 &  \\
+HISTAI-CRC-B1 & Prov-GigaPath & M & 265 & 0.291 & 0.291 & 0.161 & $\Delta$BA=0.061; $\Delta$AUC=0.061 \\
+\midrule
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Fairness por subgrupo de sexo, tarea T4-Side, dataset HISTAI-CRC-B2. Solo se incluyen celdas con $n\geq 10$; el resto se marca como excluida. En tareas multiclase el TPR por subgrupo es la media del recall por clase (equivalente a la balanced accuracy cuando todas las clases están presentes en el subgrupo). $\Delta$BA y $\Delta$AUC corresponden a la brecha máxima entre subgrupos por combinación dataset-modelo.}
+\label{tab:anexo_side_fairness_sexo_b2}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l l c c c c c}
+\toprule
+\textbf{Dataset} & \textbf{Modelo} & \textbf{Subgrupo} & \textbf{n} & \textbf{BA} & \textbf{TPR} & \textbf{FPR} & \textbf{$\Delta$BA / $\Delta$AUC} \\
+\midrule
+HISTAI-CRC-B2 & UNI2 & F & 26 & 0.266 & 0.266 & 0.373 &  \\
+HISTAI-CRC-B2 & UNI2 & M & 20 & 0.044 & 0.044 & 0.260 & $\Delta$BA=0.221; $\Delta$AUC=-- \\
+\midrule
+HISTAI-CRC-B2 & Virchow2 & F & 26 & 0.303 & 0.227 & 0.261 &  \\
+HISTAI-CRC-B2 & Virchow2 & M & 20 & 0.167 & 0.167 & 0.220 & $\Delta$BA=0.136; $\Delta$AUC=-- \\
+\midrule
+HISTAI-CRC-B2 & Phikon-v2 & F & 26 & 0.281 & 0.211 & 0.252 &  \\
+HISTAI-CRC-B2 & Phikon-v2 & M & 20 & 0.044 & 0.044 & 0.273 & $\Delta$BA=0.237; $\Delta$AUC=-- \\
+\midrule
+HISTAI-CRC-B2 & Prov-GigaPath & F & 26 & 0.373 & 0.280 & 0.224 &  \\
+HISTAI-CRC-B2 & Prov-GigaPath & M & 20 & 0.067 & 0.067 & 0.235 & $\Delta$BA=0.306; $\Delta$AUC=-- \\
+\midrule
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Fairness por subgrupo de sexo, tarea T4-Side, dataset SurGen. Solo se incluyen celdas con $n\geq 10$; el resto se marca como excluida. En tareas multiclase el TPR por subgrupo es la media del recall por clase (equivalente a la balanced accuracy cuando todas las clases están presentes en el subgrupo). $\Delta$BA y $\Delta$AUC corresponden a la brecha máxima entre subgrupos por combinación dataset-modelo.}
+\label{tab:anexo_side_fairness_sexo_surgen}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l l c c c c c}
+\toprule
+\textbf{Dataset} & \textbf{Modelo} & \textbf{Subgrupo} & \textbf{n} & \textbf{BA} & \textbf{TPR} & \textbf{FPR} & \textbf{$\Delta$BA / $\Delta$AUC} \\
+\midrule
+SurGen & UNI2 & F & 299 & 0.351 & 0.351 & 0.138 &  \\
+SurGen & UNI2 & M & 332 & 0.408 & 0.408 & 0.127 & $\Delta$BA=0.057; $\Delta$AUC=0.010 \\
+\midrule
+SurGen & Virchow2 & F & 299 & 0.341 & 0.341 & 0.149 &  \\
+SurGen & Virchow2 & M & 332 & 0.317 & 0.317 & 0.141 & $\Delta$BA=0.024; $\Delta$AUC=0.010 \\
+\midrule
+SurGen & Phikon-v2 & F & 299 & 0.310 & 0.310 & 0.158 &  \\
+SurGen & Phikon-v2 & M & 332 & 0.334 & 0.334 & 0.136 & $\Delta$BA=0.025; $\Delta$AUC=0.008 \\
+\midrule
+SurGen & Prov-GigaPath & F & 299 & 0.298 & 0.298 & 0.153 &  \\
+SurGen & Prov-GigaPath & M & 332 & 0.334 & 0.334 & 0.143 & $\Delta$BA=0.035; $\Delta$AUC=0.032 \\
+\midrule
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Generalización cross-dataset (ID vs. OOD), tarea T4-Side. $\Delta_{\text{OOD}} = BA_{ID} - BA_{OOD}$; $\Delta_{\text{rel}}$ en \%.}
+\label{tab:anexo_side_crossdataset}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l l c c c c c}
+\toprule
+\textbf{Train (ID)} & \textbf{Test (OOD)} & \textbf{Modelo} & \textbf{BA ID} & \textbf{BA OOD} & \textbf{$\Delta_{\text{OOD}}$} & \textbf{IC95\% $\Delta$} & \textbf{$\Delta_{\text{rel}}$ (\%)} \\
+\midrule
+HISTAI-CRC-B1 & HISTAI-CRC-B2 & UNI2 & 0.325 & 0.328 & -0.003 & [-0.282, 0.075] & -0.9 \\
+HISTAI-CRC-B1 & HISTAI-CRC-B2 & Virchow2 & 0.324 & 0.260 & 0.063 & [-0.169, 0.151] & 19.6 \\
+HISTAI-CRC-B1 & HISTAI-CRC-B2 & Phikon-v2 & 0.293 & 0.269 & 0.025 & [-0.210, 0.096] & 8.4 \\
+HISTAI-CRC-B1 & HISTAI-CRC-B2 & Prov-GigaPath & 0.331 & 0.265 & 0.066 & [-0.169, 0.151] & 19.9 \\
+\midrule
+HISTAI-CRC-B1 & SurGen & UNI2 & 0.325 & 0.233 & 0.092 & [0.042, 0.139] & 28.3 \\
+HISTAI-CRC-B1 & SurGen & Virchow2 & 0.324 & 0.244 & 0.080 & [0.025, 0.126] & 24.6 \\
+HISTAI-CRC-B1 & SurGen & Phikon-v2 & 0.293 & 0.179 & 0.115 & [0.079, 0.155] & 39.1 \\
+HISTAI-CRC-B1 & SurGen & Prov-GigaPath & 0.331 & 0.246 & 0.085 & [0.040, 0.131] & 25.8 \\
+\midrule
+HISTAI-CRC-B2 & HISTAI-CRC-B1 & UNI2 & 0.116 & 0.233 & -0.116 & [-0.179, 0.015] & -99.9 \\
+HISTAI-CRC-B2 & HISTAI-CRC-B1 & Virchow2 & 0.174 & 0.261 & -0.087 & [-0.160, 0.091] & -50.0 \\
+HISTAI-CRC-B2 & HISTAI-CRC-B1 & Phikon-v2 & 0.115 & 0.253 & -0.138 & [-0.197, -0.003] & -120.4 \\
+HISTAI-CRC-B2 & HISTAI-CRC-B1 & Prov-GigaPath & 0.164 & 0.280 & -0.116 & [-0.189, 0.064] & -70.7 \\
+\midrule
+HISTAI-CRC-B2 & SurGen & UNI2 & 0.116 & 0.206 & -0.089 & [-0.152, 0.037] & -76.7 \\
+HISTAI-CRC-B2 & SurGen & Virchow2 & 0.174 & 0.200 & -0.026 & [-0.087, 0.149] & -15.2 \\
+HISTAI-CRC-B2 & SurGen & Phikon-v2 & 0.115 & 0.199 & -0.085 & [-0.135, 0.040] & -73.8 \\
+HISTAI-CRC-B2 & SurGen & Prov-GigaPath & 0.164 & 0.222 & -0.058 & [-0.124, 0.120] & -35.4 \\
+\midrule
+SurGen & HISTAI-CRC-B1 & UNI2 & 0.372 & 0.205 & 0.166 & [0.123, 0.215] & 44.7 \\
+SurGen & HISTAI-CRC-B1 & Virchow2 & 0.339 & 0.215 & 0.124 & [0.072, 0.180] & 36.6 \\
+SurGen & HISTAI-CRC-B1 & Phikon-v2 & 0.321 & 0.174 & 0.148 & [0.097, 0.200] & 46.0 \\
+SurGen & HISTAI-CRC-B1 & Prov-GigaPath & 0.318 & 0.233 & 0.085 & [0.037, 0.133] & 26.8 \\
+\midrule
+SurGen & HISTAI-CRC-B2 & UNI2 & 0.372 & 0.227 & 0.145 & [0.044, 0.383] & 39.0 \\
+SurGen & HISTAI-CRC-B2 & Virchow2 & 0.339 & 0.133 & 0.205 & [0.074, 0.263] & 60.6 \\
+SurGen & HISTAI-CRC-B2 & Phikon-v2 & 0.321 & 0.484 & -0.163 & [-0.209, 0.231] & -50.8 \\
+SurGen & HISTAI-CRC-B2 & Prov-GigaPath & 0.318 & 0.245 & 0.073 & [-0.132, 0.137] & 23.0 \\
+\midrule
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
