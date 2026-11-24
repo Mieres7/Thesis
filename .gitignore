@@ -4,7 +4,7 @@ __pycache__/
 venv/
 venv_eval/
 
-models/
+/models/
 embeddings_logs/
 patches_logs/
 

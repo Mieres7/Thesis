@@ -1,6 +1,6 @@
 # Reproducibilidad - Tesis: Evaluación de Foundation Models en Patología Digital
 
-Código de la tesis de título: extracción de patches, generación de embeddings y evaluación de *foundation models* (UNI2, Virchow2, Phikon-v2, Prov-GigaPath) en tareas de clasificación de cáncer de mama y colorrectal.
+Código de la tesis de título: extracción de patches, generación de embeddings y evaluación de _foundation models_ (UNI2, Virchow2, Phikon-v2, Prov-GigaPath) en tareas de clasificación de cáncer de mama y colorrectal.
 
 ## Estructura
 
@@ -51,7 +51,7 @@ python data_prep/build_filtered_configs.py
 python extraction/patch_extractor_opt.py config_files/patches_<dataset>_filtered.yaml
 ```
 
-Genera HDF5 con `patches` + `coords` y `extraction_stats.csv` (filtro de tejido vía máscara GPU + filtro de saturación). Los logs quedan en `logs/patches/`.
+Genera HDF5 con `patches` + `coords` y `extraction_stats.csv` (filtro de tejido vía máscara GPU). Los logs quedan en `logs/patches/`.
 
 ### 3. Embeddings
 
@@ -79,7 +79,7 @@ La configuración de tareas, modelos y split (CV vs. fijo) se centraliza en `eva
 
 ### 5. Figuras del capítulo 6
 
-Los notebooks de `patches_explorer/` permiten calibrar los filtros de extracción (tejido, saturación) y visualizar patches por dataset. Las figuras y tablas del capítulo 6 se generan con los scripts de `tareas_cap6/` del repositorio de escritura de la tesis.
+Los notebooks de `patches_explorer/` permiten calibrar los filtros de extracción (tejido) y visualizar patches por dataset. Las figuras y tablas del capítulo 6 se generan con los scripts de `tareas_cap6/` del repositorio de escritura de la tesis.
 
 ## Dependencias
 
